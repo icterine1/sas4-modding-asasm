@@ -1,0 +1,94 @@
+class
+ refid "o16864"
+ instance QName(PackageNamespace(""), "o16864")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o16864"
+   refid "o16864/instance/init"
+   param QName(PackageNamespace(""), "o7118")
+   param QName(PackageNamespace(""), "o11951")
+   flag HAS_PARAM_NAMES
+   paramname "o1234"
+   paramname "o20828"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("o16864"), "o1234")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PrivateNamespace("o16864"), "o20828")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o16864"), "o1234") type QName(PackageNamespace(""), "o7118") value Null() end
+  trait slot QName(PrivateNamespace("o16864"), "o20828") type QName(PackageNamespace(""), "o11951") value Null() end
+  trait method QName(PackageNamespace(""), "o6798")
+   method
+    name "o6798"
+    refid "o16864/instance/o6798"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "o7331")
+    flag HAS_PARAM_NAMES
+    paramname "assetID"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o6510")
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace(""), "o6510")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o6510")
+      setlocal2
+
+      getlocal2
+      getlex              QName(PrivateNamespace("o16864"), "o20828")
+      callpropvoid        QName(PackageNamespace(""), "o2380"), 1
+
+      getlocal2
+      getlocal1
+      getlex              QName(PrivateNamespace("o16864"), "o1234")
+      callpropvoid        QName(PackageNamespace(""), "initialise"), 2
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o16864/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

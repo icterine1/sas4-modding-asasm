@@ -1,0 +1,189 @@
+class
+ refid "com.codecatalyst.promise:Deferred"
+ instance QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.codecatalyst.promise:Deferred")
+  iinit
+   name "com.codecatalyst.promise:Deferred/Deferred"
+   refid "com.codecatalyst.promise:Deferred/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "Resolver")
+     constructprop       QName(PackageInternalNs("com.codecatalyst.promise"), "Resolver"), 0
+     initproperty        QName(ProtectedNamespace("com.codecatalyst.promise:Deferred"), "resolver")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "promise")
+   method
+    name "com.codecatalyst.promise:Deferred/promise/get"
+    refid "com.codecatalyst.promise:Deferred/instance/promise/getter"
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.codecatalyst.promise:Deferred"), "resolver")
+      getproperty         QName(PackageNamespace(""), "promise")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(ProtectedNamespace("com.codecatalyst.promise:Deferred"), "resolver") type QName(PackageInternalNs("com.codecatalyst.promise"), "Resolver") end
+  trait method QName(PackageNamespace(""), "resolve")
+   method
+    name "com.codecatalyst.promise:Deferred/resolve"
+    refid "com.codecatalyst.promise:Deferred/instance/resolve"
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.codecatalyst.promise:Deferred"), "resolver")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "reject")
+   method
+    name "com.codecatalyst.promise:Deferred/reject"
+    refid "com.codecatalyst.promise:Deferred/instance/reject"
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "reason"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.codecatalyst.promise:Deferred"), "resolver")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "reject"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.codecatalyst.promise:Deferred/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "resolve") flag FINAL dispid 3
+  method
+   name "com.codecatalyst.promise:Deferred/resolve"
+   refid "com.codecatalyst.promise:Deferred/class/resolve"
+   param null
+   returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+   flag HAS_PARAM_NAMES
+   paramname "value"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     construct           0
+     coerce              QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+     setlocal2
+
+     getlocal2
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "promise")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "reject") flag FINAL dispid 4
+  method
+   name "com.codecatalyst.promise:Deferred/reject"
+   refid "com.codecatalyst.promise:Deferred/class/reject"
+   param null
+   returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+   flag HAS_PARAM_NAMES
+   paramname "reason"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     construct           0
+     coerce              QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+     setlocal2
+
+     getlocal2
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "reject"), 1
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "promise")
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

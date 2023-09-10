@@ -1,0 +1,75 @@
+class
+ refid "o5279"
+ instance QName(PackageNamespace(""), "o5279")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o5279"
+   refid "o5279/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlex              QName(PackageNamespace(""), "o718")
+     getproperty         QName(PackageNamespace(""), "o20522")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     constructsuper      1
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "url") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o20522") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o5279/instance/initialise"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "url"
+    paramname "o20522"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "url")
+
+      getlocal0
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "o20522")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o5279/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

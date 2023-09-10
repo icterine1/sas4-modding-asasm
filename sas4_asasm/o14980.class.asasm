@@ -1,0 +1,162 @@
+class
+ refid "o14980"
+ instance QName(PackageNamespace(""), "o14980")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o14980/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o14980/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "2.1alpha"
+    findproperty        QName(PackageNamespace(""), "o7464")
+    swap
+    initproperty        QName(PackageNamespace(""), "o7464")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o7464") type QName(PackageNamespace(""), "String") end
+ trait const QName(PackageNamespace(""), "o3976") type QName(PackageNamespace(""), "int") value Integer(65535) end
+ trait const QName(PackageNamespace(""), "o14248") type QName(PackageNamespace(""), "Number") value Double(3.141592653589793) end
+ trait const QName(PackageNamespace(""), "o2517") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o11198") type QName(PackageNamespace(""), "Number") value Double(0.1) end
+ trait const QName(PackageNamespace(""), "o7902") type QName(PackageNamespace(""), "Number") value Double(2) end
+ trait const QName(PackageNamespace(""), "o19489") type QName(PackageNamespace(""), "Number") value Double(0.01) end
+ trait const QName(PackageNamespace(""), "o11220") type QName(PackageNamespace(""), "Number") value Double(0.005) end
+ trait const QName(PackageNamespace(""), "o4846") type QName(PackageNamespace(""), "Number") value Double(0.03490658503988659) end
+ trait const QName(PackageNamespace(""), "o18506") type QName(PackageNamespace(""), "Number") value Double(0.04) end
+ trait const QName(PackageNamespace(""), "o18832") type QName(PackageNamespace(""), "int") value Integer(32) end
+ trait const QName(PackageNamespace(""), "o7954") type QName(PackageNamespace(""), "int") value Integer(32) end
+ trait const QName(PackageNamespace(""), "o13419") type QName(PackageNamespace(""), "Number") value Double(1) end
+ trait const QName(PackageNamespace(""), "o19867") type QName(PackageNamespace(""), "Number") value Double(0.2) end
+ trait const QName(PackageNamespace(""), "o2501") type QName(PackageNamespace(""), "Number") value Double(0.13962634015954637) end
+ trait const QName(PackageNamespace(""), "o15431") type QName(PackageNamespace(""), "Number") value Double(2) end
+ trait const QName(PackageNamespace(""), "o11833") type QName(PackageNamespace(""), "Number") value Double(4) end
+ trait const QName(PackageNamespace(""), "o8844") type QName(PackageNamespace(""), "Number") value Double(1.5707963267948966) end
+ trait const QName(PackageNamespace(""), "o4371") type QName(PackageNamespace(""), "Number") value Double(2.4674011002723396) end
+ trait const QName(PackageNamespace(""), "o15581") type QName(PackageNamespace(""), "Number") value Double(0.2) end
+ trait method QName(PackageNamespace(""), "o14184")
+  method
+   name "o14184"
+   refid "o14980/class/o14184"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o18604"
+   paramname "o16428"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     getlocal2
+     multiply
+     callproperty        QName(PackageNamespace(""), "sqrt"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o4112")
+  method
+   name "o4112"
+   refid "o14980/class/o4112"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o2023"
+   paramname "o625"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     getlocal2
+     ifngt               L7
+
+     getlocal1
+     jump                L8
+
+L7:
+     getlocal2
+L8:
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait const QName(PackageNamespace(""), "o13975") type QName(PackageNamespace(""), "Number") value Double(0.5) end
+ trait const QName(PackageNamespace(""), "o930") type QName(PackageNamespace(""), "Number") value Double(0.01) end
+ trait const QName(PackageNamespace(""), "o13328") type QName(PackageNamespace(""), "Number") value Double(0.03490658503988659) end
+ trait method QName(PackageNamespace(""), "o12199")
+  method
+   name "o12199"
+   refid "o14980/class/o12199"
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "o12395"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     iftrue              L8
+
+     findpropstrict      QName(PackageNamespace(""), "Error")
+     pushstring          "Assertion Failed"
+     constructprop       QName(PackageNamespace(""), "Error"), 1
+     throw
+
+L8:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

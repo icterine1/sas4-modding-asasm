@@ -1,0 +1,142 @@
+method
+ name "o20094.as$0:anonymous"
+ refid "o20094/instance/o20094/instance/o3857/inline_method#0"
+ param QName(PackageNamespace(""), "Boolean")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 6
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "o14017")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "o14017")
+
+   getlex              QName(PackageInternalNs(""), "o14017")
+   iffalse             L87
+
+   getlex              QName(PrivateNamespace("o20094"), "o57")
+   callpropvoid        QName(PackageNamespace(""), "stop"), 0
+
+   pushfalse
+   findproperty        QName(PackageNamespace(""), "o1708")
+   swap
+   setproperty         QName(PackageNamespace(""), "o1708")
+
+   getlex              QName(PackageInternalNs(""), "o20416")
+   pushfalse
+   setproperty         QName(PackageNamespace(""), "o12514")
+
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o7923")
+   pushfalse
+   callpropvoid        QName(PackageNamespace(""), "o3196"), 1
+
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o7923")
+   dup
+   getproperty         QName(PackageNamespace(""), "o5532")
+   convert_d
+   decrement
+   setproperty         QName(PackageNamespace(""), "o5532")
+
+   getlex              QName(PackageInternalNs(""), "o20416")
+   callpropvoid        QName(PackageNamespace(""), "o1258"), 0
+
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o202")
+   callpropvoid        QName(PackageNamespace(""), "o11362"), 0
+
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o202")
+   getlex              QName(PackageNamespace(""), "o4189")
+   getlex              QName(PackageNamespace(""), "o4189")
+   getproperty         QName(PackageNamespace(""), "o12328")
+   callproperty        QName(PackageNamespace(""), "o4718"), 1
+   callpropvoid        QName(PackageNamespace(""), "o11612"), 1
+
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o202")
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o7923")
+   callpropvoid        QName(PackageNamespace(""), "o19266"), 1
+
+   getlex              QName(PackageInternalNs(""), "o20416")
+   getproperty         QName(PrivateNamespace("o20094"), "o16989")
+   getlex              QName(PackageInternalNs(""), "o20416")
+   getproperty         QName(PackageNamespace(""), "o1258")
+   callpropvoid        QName(PackageNamespace(""), "o198"), 1
+
+   getlex              QName(PrivateNamespace("o20094"), "o4383")
+   iffalse             L58
+
+   getlex              QName(PrivateNamespace("o20094"), "o4383")
+   pushstring          "click"
+   getlex              QName(ProtectedNamespace("o20094"), "o14312")
+   pushfalse
+   pushbyte            0
+   pushtrue
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+L58:
+   getlex              QName(PrivateNamespace("o20094"), "o11602")
+   iffalse             L67
+
+   getlex              QName(PrivateNamespace("o20094"), "o11602")
+   pushstring          "click"
+   getlex              QName(ProtectedNamespace("o20094"), "o12573")
+   pushfalse
+   pushbyte            0
+   pushtrue
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+L67:
+   getlex              QName(PrivateNamespace("o20094"), "o20452")
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L79
+
+   pop
+   getlex              QName(PrivateNamespace("o20094"), "o19419")
+   getproperty         QName(PackageNamespace(""), "o7923")
+   getproperty         QName(PackageNamespace(""), "o14250")
+   pushbyte            0
+   equals
+L79:
+   iffalse             L84
+
+   findpropstrict      QName(ProtectedNamespace("o20094"), "o12065")
+   pushnull
+   callpropvoid        QName(ProtectedNamespace("o20094"), "o12065"), 1
+
+   jump                L86
+
+L84:
+   findpropstrict      QName(PrivateNamespace("o20094"), "o13021")
+   callpropvoid        QName(PrivateNamespace("o20094"), "o13021"), 0
+
+L86:
+   jump                L94
+
+L87:
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o10093")
+   getproperty         QName(PackageNamespace(""), "o16989")
+   pushstring          "Strongbox error"
+   pushstring          "Error opening strongbox, try again"
+   newfunction         "o20094/instance/o20094/instance/o3857/inline_method#1"
+   callpropvoid        QName(PackageNamespace(""), "o12407"), 3
+
+L94:
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "o14017") slotid 1 type QName(PackageNamespace(""), "Boolean") end
+ end ; body
+end ; method

@@ -1,0 +1,90 @@
+class
+ refid "o5192"
+ instance QName(PackageNamespace(""), "o5192")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o5192"
+   refid "o5192/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o15573"
+   paramname "o14170"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     pushnull
+     ifne                L11
+
+     getlocal0
+     pushbyte            -1
+     setproperty         QName(PackageNamespace(""), "position")
+
+     jump                L16
+
+L11:
+     getlocal0
+     getlocal1
+     getlex              QName(PackageNamespace(""), "int")
+     astypelate
+     setproperty         QName(PackageNamespace(""), "position")
+
+L16:
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o14170")
+
+     getlocal2
+     pushbyte            1
+     ifnle               L27
+
+     pushbyte            0
+     findproperty        QName(PackageNamespace(""), "o9664")
+     swap
+     setproperty         QName(PackageNamespace(""), "o9664")
+
+     jump                L35
+
+L27:
+     getlex              QName(PackageNamespace(""), "position")
+     getlocal2
+     pushbyte            1
+     subtract
+     divide
+     findproperty        QName(PackageNamespace(""), "o9664")
+     swap
+     setproperty         QName(PackageNamespace(""), "o9664")
+
+L35:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "position") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o14170") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o9664") type QName(PackageNamespace(""), "Number") value Integer(0) end
+ end ; instance
+ cinit
+  refid "o5192/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

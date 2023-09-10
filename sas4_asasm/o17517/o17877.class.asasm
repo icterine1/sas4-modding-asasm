@@ -1,0 +1,214 @@
+class
+ refid "o17517/o17877"
+ instance QName(PrivateNamespace("FilePrivateNS:o17517"), "o17877")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o17877"
+   refid "o17517/o17877/instance/init"
+   param QName(PackageNamespace(""), "o17517")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o32"
+   paramname "o15818"
+   paramname "o18502"
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o32")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o15818")
+
+     getlocal0
+     pushbyte            3
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o13673")
+
+     getlocal3
+     pushbyte            0
+     ifngt               L20
+
+     getlocal3
+     findproperty        QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o13673")
+     swap
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o13673")
+
+L20:
+     getlocal1
+     getlocal1
+     getlex              QName(PackageNamespace(""), "o2777")
+     getproperty         QName(PackageNamespace(""), "o268")
+     getlex              QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o5378")
+     callpropvoid        QName(PackageNamespace(""), "o16280"), 3
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o13673") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o15818") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o32") type QName(PackageNamespace(""), "o17517") end
+  trait method QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o5378")
+   method
+    name "o5378"
+    refid "o17517/o17877/instance/o17517/o17877/instance/o5378"
+    param QName(PackageNamespace(""), "o19312")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12568"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal3
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6431")
+      pushnull
+      equals
+      dup
+      iftrue              L13
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o9968")
+L13:
+      dup
+      iftrue              L19
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o2344")
+      not
+L19:
+      iffalse             L21
+
+      returnvoid
+
+L21:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6431")
+      getlex              QName(PackageNamespace(""), "o18442")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o18442")
+      setlocal2
+
+      getlocal2
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L38
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o6955")
+      pushfalse
+      equals
+L38:
+      dup
+      iffalse             L45
+
+      pop
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "o8289"), 0
+      pushfalse
+      equals
+L45:
+      iffalse             L94
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o6691")
+      pushnull
+      equals
+      not
+      dup
+      iffalse             L58
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o6691")
+      callproperty        QName(Namespace("o5264"), "o8289"), 0
+      not
+L58:
+      iffalse             L83
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o13427")
+      getlex              QName(PackageNamespace(""), "o2130")
+      pushstring          "assets.effects.enemyHit.Shocker"
+      getlex              QName(PackageNamespace(""), "o11381")
+      getproperty         QName(PackageNamespace(""), "o2131")
+      newarray            2
+      callproperty        QName(PackageNamespace(""), "o11961"), 2
+      getlex              QName(PackageNamespace(""), "o2130")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o2130")
+      setlocal3
+
+      getlocal3
+      pushnull
+      ifeq                L83
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o11954")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o6691")
+      callpropvoid        QName(Namespace("o5448"), "align"), 2
+
+L83:
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o8361")
+      getlocal2
+      getlex              QName(PackageNamespace(""), "o4016")
+      callproperty        QName(PackageNamespace(""), "o10062"), 0
+      getlex              QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o15818")
+      getlex              QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o13673")
+      getlex              QName(PrivateNamespace("FilePrivateNS:o17517:o17877"), "o32")
+      callproperty        QName(PackageNamespace(""), "initialise"), 3
+      callpropvoid        QName(PackageNamespace(""), "o5725"), 2
+
+L94:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o17517/o17877/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

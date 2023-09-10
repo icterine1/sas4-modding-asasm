@@ -1,0 +1,47 @@
+class
+ refid "o14213"
+ instance QName(PackageNamespace(""), "o14213")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o14213/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o14213/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o8949")
+    swap
+    initproperty        QName(PackageNamespace(""), "o8949")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o8949") type QName(PackageNamespace(""), "int") end
+end ; class

@@ -1,0 +1,90 @@
+class
+ refid "o14719"
+ instance QName(PackageNamespace(""), "o14719")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o14719/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o14719/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o9044") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o832") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o9965") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o1901") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o6411") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait method QName(PackageNamespace(""), "o160")
+  method
+   name "o160"
+   refid "o14719/class/o160"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o20659"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     convert_i
+     lookupswitch        L15, [L5, L7, L13, L9, L11]
+
+L5:
+     pushstring          "Helmet"
+     returnvalue
+
+L7:
+     pushstring          "Vest"
+     returnvalue
+
+L9:
+     pushstring          "Gloves"
+     returnvalue
+
+L11:
+     pushstring          "Boots"
+     returnvalue
+
+L13:
+     pushstring          "Pants"
+     returnvalue
+
+L15:
+     pushstring          "???"
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

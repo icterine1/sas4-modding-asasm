@@ -1,0 +1,852 @@
+class
+ refid "o16958"
+ instance QName(PackageNamespace(""), "o16958")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o16958"
+   refid "o16958/instance/init"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal1
+
+     findpropstrict      QName(PackageNamespace(""), "o20021")
+     constructprop       QName(PackageNamespace(""), "o20021"), 0
+     findproperty        QName(PackageNamespace(""), "o17937")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17937")
+
+     getlocal0
+     constructsuper      0
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o20021")
+     applytype           1
+     pushbyte            2
+     construct           1
+     findproperty        QName(PackageNamespace(""), "o6942")
+     swap
+     setproperty         QName(PackageNamespace(""), "o6942")
+
+     pushbyte            0
+     setlocal1
+
+     jump                L29
+
+L22:
+     label
+     getlex              QName(PackageNamespace(""), "o6942")
+     getlocal1
+     findpropstrict      QName(PackageNamespace(""), "o20021")
+     constructprop       QName(PackageNamespace(""), "o20021"), 0
+     setproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+     inclocal_i          1
+L29:
+     getlocal1
+     pushbyte            2
+     iflt                L22
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o3836")
+   method
+    name "o3836"
+    refid "o16958/instance/o3836"
+    param QName(PackageNamespace(""), "o19967")
+    param QName(PackageNamespace(""), "o12362")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "o12362")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12249"
+    paramname "o18723"
+    paramname "o18151"
+    paramname "o8548"
+    paramname "o11200"
+    body
+     maxstack 6
+     localcount 27
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            20
+
+      pushnull
+      setlocal            24
+
+      pushnull
+      setlocal            14
+
+      pushnan
+      setlocal            25
+
+      pushnan
+      setlocal            17
+
+      pushnan
+      setlocal            23
+
+      pushnan
+      setlocal            12
+
+      pushnan
+      setlocal            15
+
+      pushnan
+      setlocal            13
+
+      pushnan
+      setlocal            18
+
+      pushnan
+      setlocal            9
+
+      pushnan
+      setlocal            21
+
+      pushnan
+      setlocal            8
+
+      pushnan
+      setlocal            10
+
+      pushnan
+      setlocal            6
+
+      pushnan
+      setlocal            7
+
+      pushnan
+      setlocal            16
+
+      pushnan
+      setlocal            11
+
+      pushnan
+      setlocal            26
+
+      pushnan
+      setlocal            19
+
+      pushnan
+      setlocal            22
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o13593")
+      pushbyte            0
+      ifne                L49
+
+      returnvoid
+
+L49:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o3804")
+      convert_i
+      pushint             1
+      subtract_i
+      lookupswitch        L648, [L55, L249, L648, L448]
+
+L55:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o11266")
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            18
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            9
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6942")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("o11266", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            21
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            8
+
+      getlocal            21
+      getlocal            18
+      subtract
+      convert_d
+      setlocal            10
+
+      getlocal            8
+      getlocal            9
+      subtract
+      convert_d
+      setlocal            6
+
+      getlocal            10
+      getlocal            10
+      multiply
+      getlocal            6
+      getlocal            6
+      multiply
+      add
+      convert_d
+      dup
+      setlocal            7
+
+      getlex              QName(PackageNamespace(""), "Number")
+      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
+      getlex              QName(PackageNamespace(""), "Number")
+      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
+      multiply
+      ifngt               L192
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      convert_d
+      setlocal            16
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      getlocal            10
+      getlocal            16
+      divide
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      getlocal            6
+      getlocal            16
+      divide
+      setproperty         QName(PackageNamespace(""), "y")
+
+      jump                L198
+
+L192:
+      getlex              QName(PackageNamespace(""), "o17937")
+      pushbyte            1
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "y")
+
+L198:
+      getlocal            18
+      getlocal3
+      getlex              QName(PackageNamespace(""), "o17937")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      convert_d
+      setlocal            11
+
+      getlocal            9
+      getlocal3
+      getlex              QName(PackageNamespace(""), "o17937")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            26
+
+      getlocal            21
+      getlocal            5
+      getlex              QName(PackageNamespace(""), "o17937")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      subtract
+      convert_d
+      setlocal            19
+
+      getlocal            8
+      getlocal            5
+      getlex              QName(PackageNamespace(""), "o17937")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      subtract
+      convert_d
+      setlocal            22
+
+      getlex              QName(PackageNamespace(""), "o6942")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushdouble          0.5
+      getlocal            11
+      getlocal            19
+      add
+      multiply
+      setproperty         Multiname("x", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PackageNamespace(""), "o6942")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushdouble          0.5
+      getlocal            26
+      getlocal            22
+      add
+      multiply
+      setproperty         Multiname("y", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      jump                L648
+
+L249:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o17991")
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            25
+
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            17
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o11266")
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            23
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            12
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      getlocal            25
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      getlocal            17
+      setproperty         QName(PackageNamespace(""), "y")
+
+      pushbyte            0
+      setlocal            20
+
+      jump                L443
+
+L342:
+      label
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6942")
+      getlocal            20
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("o11266", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            15
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            13
+
+      getlex              QName(PackageNamespace(""), "o6942")
+      getlocal            20
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal            15
+      pushdouble          0.5
+      getlocal3
+      getlocal            15
+      getlocal            23
+      subtract
+      getlocal            25
+      multiply
+      subtract
+      getlocal            13
+      getlocal            12
+      subtract
+      getlocal            17
+      multiply
+      subtract
+      getlocal            5
+      subtract
+      multiply
+      getlocal            25
+      multiply
+      add
+      setproperty         Multiname("x", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PackageNamespace(""), "o6942")
+      getlocal            20
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal            13
+      pushdouble          0.5
+      getlocal3
+      getlocal            15
+      getlocal            23
+      subtract
+      getlocal            25
+      multiply
+      subtract
+      getlocal            13
+      getlocal            12
+      subtract
+      getlocal            17
+      multiply
+      subtract
+      getlocal            5
+      subtract
+      multiply
+      getlocal            17
+      multiply
+      add
+      setproperty         Multiname("y", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      inclocal_i          20
+L443:
+      getlocal            20
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o13593")
+      iflt                L342
+
+      jump                L648
+
+L448:
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o17991")
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            25
+
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            17
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o11266")
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            23
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            12
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      getlocal            25
+      negate
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PackageNamespace(""), "o17937")
+      getlocal            17
+      negate
+      setproperty         QName(PackageNamespace(""), "y")
+
+      pushbyte            0
+      setlocal            20
+
+      jump                L644
+
+L543:
+      label
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            14
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6942")
+      getlocal            20
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("o11266", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            24
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            15
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      add
+      getlocal            14
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            24
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      convert_d
+      setlocal            13
+
+      getlex              QName(PackageNamespace(""), "o6942")
+      getlocal            20
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal            15
+      pushdouble          0.5
+      getlocal            5
+      getlocal            15
+      getlocal            23
+      subtract
+      getlocal            25
+      multiply
+      subtract
+      getlocal            13
+      getlocal            12
+      subtract
+      getlocal            17
+      multiply
+      subtract
+      getlocal3
+      subtract
+      multiply
+      getlocal            25
+      multiply
+      add
+      setproperty         Multiname("x", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PackageNamespace(""), "o6942")
+      getlocal            20
+      getproperty         MultinameL([PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal            13
+      pushdouble          0.5
+      getlocal            5
+      getlocal            15
+      getlocal            23
+      subtract
+      getlocal            25
+      multiply
+      subtract
+      getlocal            13
+      getlocal            12
+      subtract
+      getlocal            17
+      multiply
+      subtract
+      getlocal3
+      subtract
+      multiply
+      getlocal            17
+      multiply
+      add
+      setproperty         Multiname("y", [PrivateNamespace("o16958"), ProtectedNamespace("o16958"), StaticProtectedNs("o16958"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16958"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      inclocal_i          20
+L644:
+      getlocal            20
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o13593")
+      iflt                L543
+
+L648:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PackageNamespace(""), "o17937") type QName(PackageNamespace(""), "o20021") end
+  trait slot QName(PackageNamespace(""), "o6942") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o20021")>) end
+ end ; instance
+ cinit
+  refid "o16958/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

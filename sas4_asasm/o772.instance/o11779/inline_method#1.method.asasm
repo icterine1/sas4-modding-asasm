@@ -1,0 +1,69 @@
+method
+ name "o13068"
+ refid "o772/instance/o11779/inline_method#1"
+ param QName(PackageNamespace(""), "o2041")
+ param QName(PackageNamespace(""), "o2041")
+ returns QName(PackageNamespace(""), "Number")
+ body
+  maxstack 4
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "x")
+   getlex              QName(PackageInternalNs(""), "o13595")
+   subtract
+   pushbyte            2
+   callproperty        QName(PackageNamespace(""), "pow"), 2
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "y")
+   getlex              QName(PackageInternalNs(""), "o12200")
+   subtract
+   pushbyte            2
+   callproperty        QName(PackageNamespace(""), "pow"), 2
+   add
+   convert_d
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "x")
+   getlex              QName(PackageInternalNs(""), "o13595")
+   subtract
+   pushbyte            2
+   callproperty        QName(PackageNamespace(""), "pow"), 2
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "y")
+   getlex              QName(PackageInternalNs(""), "o12200")
+   subtract
+   pushbyte            2
+   callproperty        QName(PackageNamespace(""), "pow"), 2
+   add
+   convert_d
+   setlocal            4
+
+   getlocal3
+   getlocal            4
+   ifnlt               L39
+
+   pushbyte            -1
+   returnvalue
+
+L39:
+   getlocal3
+   getlocal            4
+   ifngt               L44
+
+   pushbyte            1
+   returnvalue
+
+L44:
+   pushbyte            0
+   returnvalue
+  end ; code
+ end ; body
+end ; method

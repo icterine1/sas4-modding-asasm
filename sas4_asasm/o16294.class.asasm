@@ -1,0 +1,173 @@
+class
+ refid "o16294"
+ instance QName(PackageNamespace(""), "o16294")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o16294/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o16294/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "stringMap_enc_bin$44cf828a23c4ba59a1c66e4b38f39ed7-1178961835")
+    findproperty        QName(PrivateNamespace("o16294"), "c20973")
+    swap
+    setproperty         QName(PrivateNamespace("o16294"), "c20973")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("o16294"), "o9721") type QName(PackageNamespace(""), "Array") value Null() end
+ trait slot QName(PrivateNamespace("o16294"), "c20973") type QName(PackageNamespace(""), "Class") end
+ trait method QName(PackageNamespace(""), "o8087")
+  method
+   name "o8087"
+   refid "o16294/class/o8087"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "index"
+   body
+    maxstack 7
+    localcount 9
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushnull
+     setlocal2
+
+     pushnull
+     setlocal3
+
+     pushbyte            0
+     setlocal            5
+
+     pushnull
+     setlocal            4
+
+     getlex              QName(PrivateNamespace("o16294"), "o9721")
+     pushnull
+     ifne                L79
+
+     findpropstrict      QName(PrivateNamespace("o16294"), "c20973")
+     constructprop       QName(PrivateNamespace("o16294"), "c20973"), 0
+     getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+     astypelate
+     coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+     setlocal2
+
+     pushstring          ""
+     coerce_s
+     setlocal3
+
+     pushbyte            0
+     setlocal            5
+
+     jump                L39
+
+L25:
+     label
+     getlocal3
+     getlex              QName(PackageNamespace(""), "String")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "readByte"), 0
+     getlocal            5
+     add
+     pushshort           256
+     modulo
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "fromCharCode"), 1
+     add
+     coerce_s
+     setlocal3
+
+     inclocal_i          5
+L39:
+     getlocal            5
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     iflt                L25
+
+     pushstring          ""
+     coerce_s
+     setlocal            4
+
+     pushbyte            0
+     setlocal            8
+
+     pushbyte            35
+     pushbyte            95
+     pushbyte            83
+     pushbyte            84
+     pushbyte            82
+     pushbyte            95
+     pushbyte            35
+     newarray            7
+     setlocal            7
+
+     jump                L71
+
+L58:
+     label
+     getlocal            7
+     getlocal            8
+     nextvalue
+     convert_i
+     setlocal            6
+
+     getlocal            4
+     getlex              QName(PackageNamespace(""), "String")
+     getlocal            6
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "fromCharCode"), 1
+     add
+     coerce_s
+     setlocal            4
+
+L71:
+     hasnext2            7, 8
+     iftrue              L58
+
+     getlocal3
+     getlocal            4
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+     findproperty        QName(PrivateNamespace("o16294"), "o9721")
+     swap
+     setproperty         QName(PrivateNamespace("o16294"), "o9721")
+
+L79:
+     getlex              QName(PrivateNamespace("o16294"), "o9721")
+     getlocal1
+     getproperty         MultinameL([PrivateNamespace("o16294"), StaticProtectedNs("o16294"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16294"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

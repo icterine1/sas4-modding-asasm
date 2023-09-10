@@ -1,0 +1,99 @@
+class
+ refid "o12030"
+ instance QName(PackageNamespace(""), "o12030")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o12030/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "int")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o4616")
+     swap
+     setproperty         QName(PackageNamespace(""), "o4616")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "id") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "o4616") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) end
+  trait slot QName(PackageNamespace(""), "o6615") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o1718") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait method QName(PackageNamespace(""), "o20374")
+   method
+    name "o20374"
+    refid "o12030/instance/o20374"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushint             2147483647
+      setlocal2
+
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(PackageNamespace(""), "o4616")
+      setlocal3
+
+      jump                L20
+
+L9:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      convert_i
+      setlocal1
+
+      getlocal1
+      getlocal2
+      ifnlt               L20
+
+      getlocal1
+      setlocal2
+
+L20:
+      hasnext2            3, 4
+      iftrue              L9
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o12030/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

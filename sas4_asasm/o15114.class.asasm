@@ -1,0 +1,846 @@
+class
+ refid "o15114"
+ instance QName(PackageNamespace(""), "o15114")
+  extends QName(PackageNamespace(""), "o17586")
+  flag SEALED
+  iinit
+   name "o15114"
+   refid "o15114/instance/init"
+   param QName(PackageNamespace(""), "Number")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Integer(0)
+   paramname "o30"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o20021")
+     constructprop       QName(PackageNamespace(""), "o20021"), 0
+     findproperty        QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+     swap
+     setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+
+     getlocal0
+     constructsuper      0
+
+     pushbyte            0
+     findproperty        QName(Namespace("http://www.box2d.org/ns/b2internal"), "o3804")
+     swap
+     setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o3804")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o2747") flag OVERRIDE
+   method
+    name "o2747"
+    refid "o15114/instance/o2747"
+    returns QName(PackageNamespace(""), "o17586")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o15114")
+      constructprop       QName(PackageNamespace(""), "o15114"), 0
+      coerce              QName(PackageNamespace(""), "o17586")
+      setlocal1
+
+      getlocal1
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "o18596"), 1
+
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o18596") flag OVERRIDE
+   method
+    name "o18596"
+    refid "o15114/instance/o18596"
+    param QName(PackageNamespace(""), "o17586")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal2
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "o18596"), 1
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o15114")
+      istypelate
+      iffalse             L20
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o15114")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o15114")
+      setlocal2
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getlocal2
+      getproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      callpropvoid        QName(PackageNamespace(""), "o13101"), 1
+
+L20:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o14704") flag OVERRIDE
+   method
+    name "o14704"
+    refid "o15114/instance/o14704"
+    param QName(PackageNamespace(""), "o12362")
+    param QName(PackageNamespace(""), "o20021")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "transform"
+    paramname "o12676"
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            4
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      convert_d
+      setlocal            5
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      convert_d
+      setlocal3
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            5
+      subtract
+      convert_d
+      setlocal            5
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal3
+      subtract
+      convert_d
+      setlocal3
+
+      getlocal            5
+      getlocal            5
+      multiply
+      getlocal3
+      getlocal3
+      multiply
+      add
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      lessequals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4566") flag OVERRIDE
+   method
+    name "o4566"
+    refid "o15114/instance/o4566"
+    param QName(PackageNamespace(""), "o14303")
+    param QName(PackageNamespace(""), "o13148")
+    param QName(PackageNamespace(""), "o12362")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "o12476"
+    paramname "o7616"
+    paramname "transform"
+    body
+     maxstack 4
+     localcount 16
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            13
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            13
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            13
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      convert_d
+      setlocal            14
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            13
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            13
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      convert_d
+      setlocal            5
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o12282")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            14
+      subtract
+      convert_d
+      setlocal            12
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o12282")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            5
+      subtract
+      convert_d
+      setlocal            9
+
+      getlocal            12
+      getlocal            12
+      multiply
+      getlocal            9
+      getlocal            9
+      multiply
+      add
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      subtract
+      convert_d
+      setlocal            7
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o14457")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o12282")
+      getproperty         QName(PackageNamespace(""), "x")
+      subtract
+      convert_d
+      setlocal            11
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o14457")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o12282")
+      getproperty         QName(PackageNamespace(""), "y")
+      subtract
+      convert_d
+      setlocal            15
+
+      getlocal            12
+      getlocal            11
+      multiply
+      getlocal            9
+      getlocal            15
+      multiply
+      add
+      convert_d
+      setlocal            4
+
+      getlocal            11
+      getlocal            11
+      multiply
+      getlocal            15
+      getlocal            15
+      multiply
+      add
+      convert_d
+      setlocal            6
+
+      getlocal            4
+      getlocal            4
+      multiply
+      getlocal            6
+      getlocal            7
+      multiply
+      subtract
+      convert_d
+      dup
+      setlocal            10
+
+      pushbyte            0
+      lessthan
+      dup
+      iftrue              L126
+
+      pop
+      getlocal            6
+      getlex              QName(PackageNamespace(""), "Number")
+      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
+      lessthan
+L126:
+      iffalse             L129
+
+      pushfalse
+      returnvalue
+
+L129:
+      getlocal            4
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            10
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      add
+      negate
+      convert_d
+      setlocal            8
+
+      pushbyte            0
+      getlocal            8
+      lessequals
+      dup
+      iffalse             L149
+
+      pop
+      getlocal            8
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o544")
+      getlocal            6
+      multiply
+      lessequals
+L149:
+      iffalse             L160
+
+      getlocal            8
+      getlocal            6
+      divide
+      convert_d
+      setlocal            8
+
+      getlocal1
+      getlocal            8
+      setproperty         QName(PackageNamespace(""), "o9664")
+
+      pushtrue
+      returnvalue
+
+L160:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o7379") flag OVERRIDE
+   method
+    name "o7379"
+    refid "o15114/instance/o7379"
+    param QName(PackageNamespace(""), "o1693")
+    param QName(PackageNamespace(""), "o12362")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o3664"
+    paramname "transform"
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o13707")
+      coerce              QName(PackageNamespace(""), "o9729")
+      setlocal            5
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      convert_d
+      setlocal            4
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o19549")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o20685")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      convert_d
+      setlocal3
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o8628")
+      getlocal            4
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      subtract
+      getlocal3
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      subtract
+      callpropvoid        QName(PackageNamespace(""), "o18596"), 2
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o18391")
+      getlocal            4
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      add
+      getlocal3
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      add
+      callpropvoid        QName(PackageNamespace(""), "o18596"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o14604") flag OVERRIDE
+   method
+    name "o14604"
+    refid "o15114/instance/o14604"
+    param QName(PackageNamespace(""), "o14127")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o6257"
+    paramname "o16036"
+    body
+     maxstack 6
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getlocal2
+      pushdouble          3.141592653589793
+      multiply
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      setproperty         QName(PackageNamespace(""), "o7191")
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o1906")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      callpropvoid        QName(PackageNamespace(""), "o13101"), 1
+
+      getlocal1
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o7191")
+      pushdouble          0.5
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      add
+      add
+      multiply
+      setproperty         QName(PackageNamespace(""), "I")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o5496") flag OVERRIDE
+   method
+    name "o5496"
+    refid "o15114/instance/o5496"
+    param QName(PackageNamespace(""), "o20021")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "o12362")
+    param QName(PackageNamespace(""), "o20021")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o1654"
+    paramname "o2913"
+    paramname "o20521"
+    paramname "o9412"
+    body
+     maxstack 5
+     localcount 11
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o10852")
+      getlocal3
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      callproperty        QName(PackageNamespace(""), "o1026"), 2
+      coerce              QName(PackageNamespace(""), "o20021")
+      setlocal            8
+
+      getlex              QName(PackageNamespace(""), "o10852")
+      getlocal1
+      getlocal            8
+      callproperty        QName(PackageNamespace(""), "o10111"), 2
+      getlocal2
+      subtract
+      negate
+      convert_d
+      dup
+      setlocal            7
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      negate
+      getlex              QName(PackageNamespace(""), "Number")
+      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
+      add
+      ifnlt               L26
+
+      pushbyte            0
+      returnvalue
+
+L26:
+      getlocal            7
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      ifngt               L38
+
+      getlocal            4
+      getlocal            8
+      callpropvoid        QName(PackageNamespace(""), "o13101"), 1
+
+      pushdouble          3.141592653589793
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      returnvalue
+
+L38:
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      multiply
+      convert_d
+      setlocal            10
+
+      getlocal            7
+      getlocal            7
+      multiply
+      convert_d
+      setlocal            5
+
+      getlocal            10
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            7
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      divide
+      callproperty        QName(PackageNamespace(""), "asin"), 1
+      pushdouble          3.141592653589793
+      pushbyte            2
+      divide
+      add
+      multiply
+      getlocal            7
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            10
+      getlocal            5
+      subtract
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      multiply
+      add
+      convert_d
+      setlocal            9
+
+      pushdouble          -0.6666666666666666
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal            10
+      getlocal            5
+      subtract
+      pushdouble          1.5
+      callproperty        QName(PackageNamespace(""), "pow"), 2
+      multiply
+      getlocal            9
+      divide
+      convert_d
+      setlocal            6
+
+      getlocal            4
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal            6
+      multiply
+      add
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal            4
+      getlocal            8
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal            6
+      multiply
+      add
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal            9
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o17927")
+   method
+    name "o17927"
+    refid "o15114/instance/o17927"
+    returns QName(PackageNamespace(""), "o20021")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o12888")
+   method
+    name "o12888"
+    refid "o15114/instance/o12888"
+    param QName(PackageNamespace(""), "o20021")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "position"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "o13101"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o10060")
+   method
+    name "o10060"
+    refid "o15114/instance/o10060"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o16580")
+   method
+    name "o16580"
+    refid "o15114/instance/o16580"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o30"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      findproperty        QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      swap
+      setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o15114/instance/initialise"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Integer(0)
+    paramname "o30"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      findproperty        QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+      swap
+      setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o4879")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17446") type QName(PackageNamespace(""), "o20021") end
+ end ; instance
+ cinit
+  refid "o15114/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,56 @@
+class
+ refid "com.ninjakiwi.gateway.net:Api/ObjectNamePair"
+ instance QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("Api.as$20:ObjectNamePair")
+  iinit
+   name "Api.as$20:ObjectNamePair/ObjectNamePair"
+   refid "com.ninjakiwi.gateway.net:Api/ObjectNamePair/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "object"
+   paramname "name"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     initproperty        QName(PackageNamespace(""), "object")
+
+     getlocal0
+     getlocal2
+     initproperty        QName(PackageNamespace(""), "name")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "object") type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageNamespace(""), "name") type QName(PackageNamespace(""), "String") end
+ end ; instance
+ cinit
+  name ""
+  refid "com.ninjakiwi.gateway.net:Api/ObjectNamePair/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

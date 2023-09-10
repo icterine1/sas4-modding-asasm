@@ -1,0 +1,35 @@
+method
+ name "o4868.as$3:anonymous"
+ refid "o4868/instance/o12318/inline_method"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 5
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlocal1
+   iffalse             L11
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   findpropstrict      QName(PrivateNamespace("o4868"), "o12599")
+   getlocal1
+   pushstring          "scores"
+   getproperty         MultinameL([PrivateNamespace("o4868"), ProtectedNamespace("o4868"), StaticProtectedNs("o4868"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4868"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushtrue
+   callproperty        QName(PrivateNamespace("o4868"), "o12599"), 2
+   setproperty         QName(PackageNamespace(""), "data")
+
+   jump                L14
+
+L11:
+   getlex              QName(PackageInternalNs(""), "promise")
+   newarray            0
+   setproperty         QName(PackageNamespace(""), "data")
+
+L14:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

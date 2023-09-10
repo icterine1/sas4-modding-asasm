@@ -1,0 +1,47 @@
+method
+ name "o9602.as$4:anonymous"
+ refid "o9602/instance/o4509/inline_method#0"
+ param QName(PackageNamespace(""), "o8621")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 4
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "o11722")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "o11722")
+
+   findpropstrict      QName(PackageNamespace(""), "o14818")
+   constructprop       QName(PackageNamespace(""), "o14818"), 0
+   coerce              QName(PackageNamespace(""), "o14818")
+   getlocal2
+   swap
+   setslot             2
+
+   getlex              QName(PackageInternalNs(""), "o9721")
+   pushnull
+   getlex              QName(PackageNamespace(""), "o12927")
+   getproperty         QName(PackageNamespace(""), "o5422")
+   newfunction         "o9602/instance/o4509/inline_method#1"
+   callpropvoid        QName(PackageNamespace(""), "o19926"), 3
+
+   getlex              QName(PackageInternalNs(""), "o9721")
+   getlex              QName(PackageInternalNs(""), "o11722")
+   pushfalse
+   callpropvoid        QName(PackageNamespace(""), "initialise"), 2
+
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "o11722") slotid 1 type QName(PackageNamespace(""), "o8621") end
+  trait slot QName(PackageInternalNs(""), "o9721") slotid 2 type QName(PackageNamespace(""), "o14818") end
+ end ; body
+end ; method

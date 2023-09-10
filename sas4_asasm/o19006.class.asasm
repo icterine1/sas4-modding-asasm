@@ -1,0 +1,70 @@
+class
+ refid "o19006"
+ instance QName(PackageNamespace(""), "o19006")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o19006/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o1693")
+     constructprop       QName(PackageNamespace(""), "o1693"), 0
+     findproperty        QName(PackageNamespace(""), "o3664")
+     swap
+     setproperty         QName(PackageNamespace(""), "o3664")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o14207")
+   method
+    name "o14207"
+    refid "o19006/instance/o14207"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o10703")
+      pushnull
+      equals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PackageNamespace(""), "o18152") end
+  trait slot QName(PackageNamespace(""), "o3664") type QName(PackageNamespace(""), "o1693") end
+  trait slot QName(PackageNamespace(""), "parent") type QName(PackageNamespace(""), "o19006") end
+  trait slot QName(PackageNamespace(""), "o10703") type QName(PackageNamespace(""), "o19006") end
+  trait slot QName(PackageNamespace(""), "o10612") type QName(PackageNamespace(""), "o19006") end
+ end ; instance
+ cinit
+  refid "o19006/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

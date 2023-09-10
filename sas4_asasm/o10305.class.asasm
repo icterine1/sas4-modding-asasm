@@ -1,0 +1,96 @@
+class
+ refid "o10305"
+ instance QName(PackageNamespace(""), "o10305")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o10305/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o10305/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o13203") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "body") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o1753") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o10684") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o18301") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "min") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "max") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait method QName(PackageNamespace(""), "o2107")
+  method
+   name "o2107"
+   refid "o10305/class/o2107"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o10559"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     convert_i
+     pushint             1
+     subtract_i
+     lookupswitch        L17, [L7, L9, L11, L13, L15]
+
+L7:
+     pushbyte            0
+     returnvalue
+
+L9:
+     pushbyte            1
+     returnvalue
+
+L11:
+     pushbyte            3
+     returnvalue
+
+L13:
+     pushbyte            4
+     returnvalue
+
+L15:
+     pushbyte            2
+     returnvalue
+
+L17:
+     findpropstrict      QName(PackageNamespace(""), "Error")
+     pushstring          "Invalid equipment slot"
+     constructprop       QName(PackageNamespace(""), "Error"), 1
+     throw
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

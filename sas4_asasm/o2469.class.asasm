@@ -1,0 +1,134 @@
+class
+ refid "o2469"
+ instance QName(PackageNamespace(""), "o2469")
+  extends QName(PackageNamespace(""), "o1492")
+  flag SEALED
+  iinit
+   name "o2469"
+   refid "o2469/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o15787")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o15787"), 1
+     findproperty        QName(PrivateNamespace("o2469"), "o927")
+     swap
+     setproperty         QName(PrivateNamespace("o2469"), "o927")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o2469"), "o927") type QName(PackageNamespace(""), "o15787") end
+  trait getter QName(PackageNamespace(""), "o12894")
+   method
+    name "o12894"
+    refid "o2469/instance/o12894/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o2469"), "o927")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "o12894")
+   method
+    name "o12894"
+    refid "o2469/instance/o12894/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o2469"), "o927")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "value")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o1220") flag OVERRIDE
+   method
+    name "o1220"
+    refid "o2469/instance/o1220"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o11967"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsuper           QName(PackageNamespace(""), "o1220"), 1
+      coerce_s
+      setlocal2
+
+      getlocal2
+      pushstring          "[healAmountTotalPercent]"
+      findpropstrict      QName(PackageNamespace(""), "o11801")
+      getlocal1
+      getlex              QName(PrivateNamespace("o2469"), "o927")
+      getproperty         QName(PackageNamespace(""), "value")
+      multiply
+      callproperty        QName(PackageNamespace(""), "o11801"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal2
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o2469/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

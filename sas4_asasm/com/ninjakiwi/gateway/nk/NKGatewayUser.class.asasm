@@ -1,0 +1,909 @@
+class
+ refid "com.ninjakiwi.gateway.nk:NKGatewayUser"
+ instance QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGatewayUser")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser")
+  iinit
+   name "com.ninjakiwi.gateway.nk:NKGatewayUser/NKGatewayUser"
+   refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   flag NEED_ACTIVATION
+   flag HAS_PARAM_NAMES
+   paramname "nkBarUser"
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 5
+    maxscopedepth 8
+    code
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     getscopeobject      1
+     getlocal1
+     setslot             1
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace("org.osflash.signals"), "Signal")
+     constructprop       QName(PackageNamespace("org.osflash.signals"), "Signal"), 0
+     initproperty        QName(PackageNamespace(""), "logOutSignal")
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace("org.osflash.signals"), "Signal")
+     getlex              QName(PackageNamespace(""), "Object")
+     constructprop       QName(PackageNamespace("org.osflash.signals"), "Signal"), 1
+     initproperty        QName(PackageNamespace(""), "gotItemsSignal")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlex              QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+     getscopeobject      1
+     getslot             1
+     pushstring          "loginInfo"
+     getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), PackageNamespace(""), PrivateNamespace("NKGatewayUser.as$6"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKGatewayUser")])
+     callproperty        QName(PackageNamespace(""), "importFromAnotherApplicationDomain"), 1
+     initproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "login")
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace("com.ninjakiwi.gateway.net"), "Api")
+     getscopeobject      1
+     getslot             1
+     constructprop       QName(PackageNamespace("com.ninjakiwi.gateway.net"), "Api"), 1
+     initproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+
+     getlocal0
+     getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+     pushstring          "logOutSignal.add"
+     newobject           0
+     pushwith
+     newfunction         "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/init/inline_method#0"
+     dup
+     getscopeobject      2
+     swap
+     setproperty         QName(PackageNamespace(""), "loggedOut")
+
+     popscope
+     callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+     getlocal0
+     getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+     pushstring          "gotItemsSignal.add"
+     newobject           0
+     pushwith
+     newfunction         "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/init/inline_method#1"
+     dup
+     getscopeobject      2
+     swap
+     setproperty         QName(PackageNamespace(""), "gotItem")
+
+     popscope
+     callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace("com.ninjakiwi.gateway.save"), "UserData")
+     getlocal0
+     getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+     pushstring          "saveData"
+     callproperty        QName(PackageNamespace(""), "getProperty"), 1
+     constructprop       QName(PackageNamespace("com.ninjakiwi.gateway.save"), "UserData"), 1
+     initproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "data")
+
+     returnvoid
+    end ; code
+    trait slot QName(PackageInternalNs("com.ninjakiwi.gateway.nk"), "nkBarUser") slotid 1 type QName(PackageNamespace(""), "Object") end
+   end ; body
+  end ; method
+  trait const QName(PackageNamespace(""), "logOutSignal") type QName(PackageNamespace("org.osflash.signals"), "Signal") end
+  trait const QName(PackageNamespace(""), "gotItemsSignal") type QName(PackageNamespace("org.osflash.signals"), "Signal") end
+  trait slot QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api") type QName(PackageNamespace("com.ninjakiwi.gateway.net"), "Api") end
+  trait slot QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "login") type QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo") end
+  trait slot QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "data") type QName(PackageNamespace("com.ninjakiwi.gateway.save"), "UserData") end
+  trait getter QName(PackageNamespace(""), "loginInfo")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/loginInfo/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/loginInfo/getter"
+    returns QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "login")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "saveData")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/saveData/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/saveData/getter"
+    returns QName(PackageNamespace("com.ninjakiwi.gateway.save"), "UserData")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "data")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "inventory")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/inventory/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/inventory/getter"
+    returns QName(PackageNamespace(""), "Object")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "inventory"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "profileData")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/profileData/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/profileData/getter"
+    returns QName(PackageNamespace(""), "Object")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "rawData"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "coins")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/coins/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/coins/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "coins.value"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "awesome")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/awesome/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/awesome/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "awesome.value"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "igcAmount")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/igcAmount/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/igcAmount/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "igcAmount.value"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "igcID")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/igcID/get"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/igcID/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "igcID.value"
+      callproperty        QName(PackageNamespace(""), "getProperty"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "save")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/save"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/save"
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "save"
+      callproperty        QName(PackageNamespace(""), "call"), 1
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "showLeaderboard")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/showLeaderboard"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/showLeaderboard"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "boardID"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "showLeaderboard"
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "showAchievements")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/showAchievements"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/showAchievements"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "showAchievements"
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "showItemsToBuy")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/showItemsToBuy"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/showItemsToBuy"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "items"
+    body
+     maxstack 4
+     localcount 7
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal3
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            4
+
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushbyte            0
+      setlocal            5
+
+      getlocal1
+      coerce_a
+      setlocal            6
+
+      jump                L56
+
+L17:
+      label
+      getlocal            6
+      getlocal            5
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal3
+
+      getlocal3
+      getproperty         Multiname("id", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), PackageNamespace(""), PrivateNamespace("NKGatewayUser.as$6"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKGatewayUser")])
+      getlex              QName(PackageNamespace(""), "int")
+      istypelate
+      iffalse             L56
+
+      getlocal3
+      getproperty         Multiname("id", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), PackageNamespace(""), PrivateNamespace("NKGatewayUser.as$6"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKGatewayUser")])
+      getlocal3
+      pushstring          "quantity"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "hasOwnProperty"), 1
+      iffalse             L38
+
+      getlocal3
+      getproperty         Multiname("quantity", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), PackageNamespace(""), PrivateNamespace("NKGatewayUser.as$6"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKGatewayUser")])
+      coerce_a
+      jump                L40
+
+L38:
+      pushbyte            1
+      coerce_a
+L40:
+      getlocal3
+      pushstring          "maxQuantity"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "hasOwnProperty"), 1
+      iffalse             L48
+
+      getlocal3
+      getproperty         Multiname("maxQuantity", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), PackageNamespace(""), PrivateNamespace("NKGatewayUser.as$6"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKGatewayUser")])
+      coerce_a
+      jump                L50
+
+L48:
+      pushbyte            0
+      coerce_a
+L50:
+      newarray            3
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            4
+
+      getlocal2
+      getlocal            4
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L56:
+      hasnext2            6, 5
+      iftrue              L17
+
+      kill                6
+      kill                5
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "store.showItems"
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "awardIgc")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/awardIgc"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/awardIgc"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "amount"
+    paramname "scheme"
+    paramname "reason"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "awardIgc"
+      getlocal1
+      getlocal2
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "call"), 4
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "buyIgcItem")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/buyIgcItem"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/buyIgcItem"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "itemID"
+    paramname "cost"
+    paramname "instanceLabel"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "buyIgcItem"
+      getlocal1
+      getlocal2
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "call"), 4
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "consumeIgcItem")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/consumeIgcItem"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/consumeIgcItem"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "itemUuid"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "consumeIgcItem"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "buyNKCoinsItem")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/buyNKCoinsItem"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/buyNKCoinsItem"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "itemID"
+    paramname "instanceLabel"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "buyItem"
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "call"), 3
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "buyNKCoinsItems")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/buyNKCoinsItems"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/buyNKCoinsItems"
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "itemDefs"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "buyItems"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "consumeNKCoinsItem")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/consumeNKCoinsItem"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/consumeNKCoinsItem"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "itemUuid"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "consumeItem"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "submitScore")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/submitScore"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/submitScore"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "score"
+    paramname "boardId"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "submitScore"
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "call"), 3
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setAchievement")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/setAchievement"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/setAchievement"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "achievementId"
+    paramname "percentComplete"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "setAchievement"
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "call"), 3
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "awardAwesome")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/awardAwesome"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/awardAwesome"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "awesome"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "awardAwesome"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "remoteTrack")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/remoteTrack"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/remoteTrack"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional False()
+    paramname "category"
+    paramname "action"
+    paramname "num"
+    paramname "division"
+    paramname "tag"
+    paramname "clan"
+    paramname "forceSubmit"
+    body
+     maxstack 10
+     localcount 8
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "remoteTrack"
+      getlocal1
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      getlocal            6
+      getlocal            7
+      callproperty        QName(PackageNamespace(""), "call"), 8
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "checkDailyReward")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/checkDailyReward"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/checkDailyReward"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "rewardID"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "checkDailyReward"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "claimDailyReward")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/claimDailyReward"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/claimDailyReward"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_PARAM_NAMES
+    paramname "rewardID"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "claimDailyReward"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "checkAndUpdateConsecutiveDailyLogins")
+   method
+    name "com.ninjakiwi.gateway.nk:NKGatewayUser/checkAndUpdateConsecutiveDailyLogins"
+    refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/checkAndUpdateConsecutiveDailyLogins"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Integer(0)
+    paramname "gameSlot"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGatewayUser"), "api")
+      pushstring          "checkAndUpdateConsecutiveDailyLogins"
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "call"), 2
+      callproperty        QName(PackageNamespace(""), "when"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.ninjakiwi.gateway.nk:NKGatewayUser/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,201 @@
+class
+ refid "o17729"
+ instance QName(PackageNamespace(""), "o17729")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o17729"
+   refid "o17729/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o797") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "o8463") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "x") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PackageNamespace(""), "y") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PackageNamespace(""), "o3458") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "alpha") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait method QName(PackageNamespace(""), "o2008")
+   method
+    name "o2008"
+    refid "o17729/instance/o2008"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o3458")
+      pushbyte            0
+      ifnle               L13
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "alpha")
+      swap
+      setproperty         QName(PackageNamespace(""), "alpha")
+
+      pushbyte            1
+      findproperty        QName(PackageNamespace(""), "o3458")
+      swap
+      setproperty         QName(PackageNamespace(""), "o3458")
+
+L13:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o20013")
+   method
+    name "o20013"
+    refid "o17729/instance/o20013"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o3458")
+      pushbyte            0
+      ifnge               L9
+
+      pushbyte            -5
+      findproperty        QName(PackageNamespace(""), "o3458")
+      swap
+      setproperty         QName(PackageNamespace(""), "o3458")
+
+L9:
+      getlex              QName(PackageNamespace(""), "alpha")
+      pushbyte            0
+      lessequals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o7658")
+   method
+    name "o7658"
+    refid "o17729/instance/o7658"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12969"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o3458")
+      pushbyte            0
+      equals
+      dup
+      iftrue              L11
+
+      pop
+      getlocal1
+      pushbyte            0
+      equals
+L11:
+      iffalse             L13
+
+      returnvoid
+
+L13:
+      findpropstrict      QName(PackageNamespace(""), "alpha")
+      dup
+      getproperty         QName(PackageNamespace(""), "alpha")
+      getlex              QName(PackageNamespace(""), "o3458")
+      getlocal1
+      multiply
+      add
+      setproperty         QName(PackageNamespace(""), "alpha")
+
+      getlex              QName(PackageNamespace(""), "alpha")
+      pushbyte            0
+      ifnle               L33
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "alpha")
+      swap
+      setproperty         QName(PackageNamespace(""), "alpha")
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "o3458")
+      swap
+      setproperty         QName(PackageNamespace(""), "o3458")
+
+      jump                L44
+
+L33:
+      getlex              QName(PackageNamespace(""), "alpha")
+      pushbyte            1
+      ifnge               L44
+
+      pushbyte            1
+      findproperty        QName(PackageNamespace(""), "alpha")
+      swap
+      setproperty         QName(PackageNamespace(""), "alpha")
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "o3458")
+      swap
+      setproperty         QName(PackageNamespace(""), "o3458")
+
+L44:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o17729/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o11996") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o17115") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o1464") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o11660") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o13897") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o8847") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "o2019") type QName(PackageNamespace(""), "int") value Integer(6) end
+ trait const QName(PackageNamespace(""), "o8601") type QName(PackageNamespace(""), "int") value Integer(7) end
+ trait const QName(PackageNamespace(""), "o20619") type QName(PackageNamespace(""), "int") value Integer(8) end
+ trait const QName(PackageNamespace(""), "o5095") type QName(PackageNamespace(""), "int") value Integer(9) end
+ trait const QName(PackageNamespace(""), "o11028") type QName(PackageNamespace(""), "int") value Integer(10) end
+ trait const QName(PackageNamespace(""), "o526") type QName(PackageNamespace(""), "int") value Integer(11) end
+end ; class

@@ -1,0 +1,42 @@
+method
+ name "com.codecatalyst.promise:Promise/some/com.codecatalyst.promise:process/com.codecatalyst.promise:onReject"
+ refid "com.codecatalyst.promise:Promise/class/some/inline_method#2"
+ param null
+ flag HAS_PARAM_NAMES
+ paramname "reason"
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 5
+  maxscopedepth 5
+  code
+   findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToReject")
+   dup
+   setlocal2
+
+   getproperty         QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToReject")
+   decrement
+   setlocal3
+
+   getlocal2
+   getlocal3
+   setproperty         QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToReject")
+
+   kill                3
+   kill                2
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToReject")
+   pushbyte            0
+   ifne                L19
+
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "deferred")
+   findpropstrict      QName(PackageNamespace(""), "Error")
+   pushstring          "Too few Promises were resolved."
+   constructprop       QName(PackageNamespace(""), "Error"), 1
+   callpropvoid        QName(PackageNamespace(""), "reject"), 1
+
+L19:
+   getlocal1
+   throw
+  end ; code
+ end ; body
+end ; method

@@ -1,0 +1,45 @@
+script
+ sinit
+  refid "o6701/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    dup
+    pushscope
+
+    newclass            "o6701"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o6701")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "o6701/o8374"
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o6701"), "o8374")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o6701")
+  #include "o6701.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o6701"), "o8374")
+  #include "o6701/o8374.class.asasm"
+ end ; trait
+end ; script

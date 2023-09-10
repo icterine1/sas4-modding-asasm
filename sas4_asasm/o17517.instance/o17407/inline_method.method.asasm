@@ -1,0 +1,46 @@
+method
+ name "o17517.as$13:anonymous"
+ refid "o17517/instance/o17407/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushbyte            0
+   setlocal3
+
+   getlex              QName(PackageInternalNs(""), "o140")
+   setlocal2
+
+   jump                L23
+
+L5:
+   label
+   getlocal2
+   getlocal3
+   nextvalue
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal1
+
+   findpropstrict      QName(PackageNamespace(""), "o169")
+   getlocal1
+   pushbyte            0
+   getproperty         MultinameL([PrivateNamespace("o17517"), ProtectedNamespace("o17517"), StaticProtectedNs("o17517"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o17517"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal1
+   pushbyte            1
+   getproperty         MultinameL([PrivateNamespace("o17517"), ProtectedNamespace("o17517"), StaticProtectedNs("o17517"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o17517"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageInternalNs(""), "o14584")
+   callproperty        QName(PackageNamespace(""), "o169"), 3
+   getlocal0
+   call                0
+   pop
+L23:
+   hasnext2            2, 3
+   iftrue              L5
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

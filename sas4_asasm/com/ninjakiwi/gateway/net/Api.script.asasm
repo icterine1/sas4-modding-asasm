@@ -1,0 +1,42 @@
+script
+ sinit
+  name ""
+  refid "com.ninjakiwi.gateway.net:Api/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("Api", [PackageNamespace("com.ninjakiwi.gateway.net")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.ninjakiwi.gateway.net:Api"
+    popscope
+    initproperty        QName(PackageNamespace("com.ninjakiwi.gateway.net"), "Api")
+
+    findpropstrict      Multiname("ObjectNamePair", [PrivateNamespace("Api.as$20")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.ninjakiwi.gateway.net:Api/ObjectNamePair"
+    popscope
+    initproperty        QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("com.ninjakiwi.gateway.net"), "Api")
+  #include "Api.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+  #include "Api/ObjectNamePair.class.asasm"
+ end ; trait
+end ; script

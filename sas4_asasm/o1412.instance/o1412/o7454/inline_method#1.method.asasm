@@ -1,0 +1,36 @@
+method
+ name "o1412.as$2:anonymous"
+ refid "o1412/instance/o1412/o7454/inline_method#1"
+ param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o3643")>)
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getproperty         QName(PackageNamespace(""), "o12514")
+   dup
+   iftrue              L9
+
+   pop
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getproperty         QName(PackageNamespace(""), "enabled")
+   pushfalse
+   equals
+L9:
+   iffalse             L11
+
+   returnvoid
+
+L11:
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o13824")
+   callpropvoid        QName(PackageNamespace(""), "o17175"), 2
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

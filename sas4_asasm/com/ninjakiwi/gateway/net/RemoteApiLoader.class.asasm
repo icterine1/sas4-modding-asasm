@@ -1,0 +1,319 @@
+class
+ refid "com.ninjakiwi.gateway.net:RemoteApiLoader"
+ instance QName(PackageNamespace("com.ninjakiwi.gateway.net"), "RemoteApiLoader")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader")
+  iinit
+   name "com.ninjakiwi.gateway.net:RemoteApiLoader/RemoteApiLoader"
+   refid "com.ninjakiwi.gateway.net:RemoteApiLoader/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Object")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   paramname "url"
+   paramname "urlParams"
+   paramname "policyUrl"
+   body
+    maxstack 3
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     findpropstrict      QName(PrivateNamespace("RemoteApiLoader.as$24"), "RemoteApiLoaderConfig")
+     constructprop       QName(PrivateNamespace("RemoteApiLoader.as$24"), "RemoteApiLoaderConfig"), 0
+     initproperty        QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     pushnull
+     equals
+     dup
+     iftrue              L17
+
+     pop
+     getlocal2
+     pushnull
+     equals
+L17:
+     iffalse             L22
+
+     findpropstrict      QName(PackageNamespace(""), "UninitializedError")
+     pushstring          "RemoteApiLoader::RemoteApiLoader( ) - required argument was null"
+     constructprop       QName(PackageNamespace(""), "UninitializedError"), 1
+     throw
+
+L22:
+     getlocal0
+     getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "url")
+
+     getlocal0
+     getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+     getlocal0
+     getlocal2
+     callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "parseParams"), 1
+     setproperty         QName(PackageNamespace(""), "urlParams")
+
+     getlocal0
+     getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "policyUrl")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config") type QName(PrivateNamespace("RemoteApiLoader.as$24"), "RemoteApiLoaderConfig") end
+  trait method QName(PrivateNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "parseParams")
+   method
+    name "com.ninjakiwi.gateway.net:RemoteApiLoader/private:parseParams"
+    refid "com.ninjakiwi.gateway.net:RemoteApiLoader/instance/com.ninjakiwi.gateway.net:RemoteApiLoader/instance/parseParams"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace("flash.net"), "URLVariables")
+    flag HAS_PARAM_NAMES
+    paramname "params"
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal3
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLVariables")
+      constructprop       QName(PackageNamespace("flash.net"), "URLVariables"), 0
+      coerce              QName(PackageNamespace("flash.net"), "URLVariables")
+      setlocal2
+
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      coerce_a
+      setlocal            5
+
+      jump                L27
+
+L15:
+      label
+      getlocal            5
+      getlocal            4
+      nextname
+      coerce_s
+      setlocal3
+
+      getlocal2
+      getlocal3
+      getlocal1
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), PrivateNamespace("RemoteApiLoader.as$24"), ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), PackageNamespace(""), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:RemoteApiLoader")])
+      setproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), PrivateNamespace("RemoteApiLoader.as$24"), ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), PackageNamespace(""), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:RemoteApiLoader")])
+
+L27:
+      hasnext2            5, 4
+      iftrue              L15
+
+      kill                5
+      kill                4
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "load")
+   method
+    name "com.ninjakiwi.gateway.net:RemoteApiLoader/load"
+    refid "com.ninjakiwi.gateway.net:RemoteApiLoader/instance/load"
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+      setslot             1
+
+      getscopeobject      1
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setslot             5
+
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+      constructprop       QName(PackageNamespace("com.codecatalyst.promise"), "Deferred"), 0
+      coerce              QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+      setslot             1
+
+L19:
+      getlex              QName(PackageNamespace("flash.system"), "Security")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+      getproperty         QName(PackageNamespace(""), "url")
+      callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
+
+L24:
+      jump                L38
+
+L25:
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal2
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      popscope
+      kill                2
+L38:
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+      getproperty         QName(PackageNamespace(""), "policyUrl")
+      pushnull
+      ifeq                L43
+
+L43:
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+      getproperty         QName(PackageNamespace(""), "url")
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setslot             2
+
+      getscopeobject      1
+      getslot             2
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+      getproperty         QName(PackageNamespace(""), "urlParams")
+      setproperty         QName(PackageNamespace(""), "data")
+
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("flash.system"), "ApplicationDomain")
+      constructprop       QName(PackageNamespace("flash.system"), "ApplicationDomain"), 0
+      coerce              QName(PackageNamespace("flash.system"), "ApplicationDomain")
+      setslot             3
+
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("flash.system"), "LoaderContext")
+      pushfalse
+      getscopeobject      1
+      getslot             3
+      constructprop       QName(PackageNamespace("flash.system"), "LoaderContext"), 2
+      coerce              QName(PackageNamespace("flash.system"), "LoaderContext")
+      setslot             4
+
+      getscopeobject      1
+      findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+      constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setslot             5
+
+      getscopeobject      1
+      getslot             5
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "Event")
+      getproperty         QName(PackageNamespace(""), "COMPLETE")
+      newobject           0
+      pushwith
+      newfunction         "com.ninjakiwi.gateway.net:RemoteApiLoader/instance/load/inline_method#0"
+      dup
+      getscopeobject      2
+      swap
+      setproperty         QName(PackageNamespace(""), "loadComplete")
+
+      popscope
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getscopeobject      1
+      getslot             5
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      getlex              QName(PackageNamespace("flash.events"), "IOErrorEvent")
+      getproperty         QName(PackageNamespace(""), "IO_ERROR")
+      newobject           0
+      pushwith
+      newfunction         "com.ninjakiwi.gateway.net:RemoteApiLoader/instance/load/inline_method#1"
+      dup
+      getscopeobject      2
+      swap
+      setproperty         QName(PackageNamespace(""), "loadFailed")
+
+      popscope
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getscopeobject      1
+      getslot             5
+      getscopeobject      1
+      getslot             2
+      getscopeobject      1
+      getslot             4
+      callpropvoid        QName(PackageNamespace(""), "load"), 2
+
+      getscopeobject      1
+      getslot             1
+      getproperty         QName(PackageNamespace(""), "promise")
+      returnvalue
+     end ; code
+     try from L19 to L24 target L25 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "err") end
+     trait slot QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "result") slotid 1 type QName(PackageNamespace("com.codecatalyst.promise"), "Deferred") end
+     trait slot QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "request") slotid 2 type QName(PackageNamespace("flash.net"), "URLRequest") end
+     trait slot QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "newAppDomain") slotid 3 type QName(PackageNamespace("flash.system"), "ApplicationDomain") end
+     trait slot QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "context") slotid 4 type QName(PackageNamespace("flash.system"), "LoaderContext") end
+     trait slot QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "loader") slotid 5 type QName(PackageNamespace("flash.display"), "Loader") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.ninjakiwi.gateway.net:RemoteApiLoader/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

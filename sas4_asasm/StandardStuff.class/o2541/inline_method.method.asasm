@@ -1,0 +1,38 @@
+method
+ name "StandardStuff.as$0:anonymous"
+ refid "StandardStuff/class/o2541/inline_method"
+ param QName(PackageNamespace("flash.events"), "ContextMenuEvent")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 1
+  code
+L0:
+   getlex              QName(PackageNamespace("flash.system"), "System")
+   getlex              QName(PackageNamespace(""), "o3011")
+   getproperty         QName(PackageNamespace(""), "o12006")
+   callpropvoid        QName(PackageNamespace(""), "setClipboard"), 1
+
+L4:
+   jump                L13
+
+L5:
+   newcatch            0
+   dup
+   setlocal3
+
+   dup
+   pushscope
+
+   swap
+   setslot             1
+
+   popscope
+L13:
+   returnvoid
+  end ; code
+  try from L0 to L4 target L5 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
+ end ; body
+end ; method

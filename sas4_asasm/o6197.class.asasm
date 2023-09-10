@@ -1,0 +1,94 @@
+class
+ refid "o6197"
+ instance QName(PackageNamespace(""), "o6197")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o6197"
+   refid "o6197/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o6197"), "o16593")
+     swap
+     setproperty         QName(PrivateNamespace("o6197"), "o16593")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o20868") type QName(PackageNamespace(""), "o1492") end
+  trait slot QName(PrivateNamespace("o6197"), "o16593") type QName(PackageNamespace(""), "o16123") end
+  trait getter QName(PackageNamespace(""), "level")
+   method
+    name "level"
+    refid "o6197/instance/level/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6197"), "o16593")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "level")
+   method
+    name "level"
+    refid "o6197/instance/level/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6197"), "o16593")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "value")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o6197/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

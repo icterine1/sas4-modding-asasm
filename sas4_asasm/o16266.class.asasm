@@ -1,0 +1,75 @@
+class
+ refid "o16266"
+ instance QName(PackageNamespace(""), "o16266")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o16266"
+   refid "o16266/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlex              QName(PackageNamespace(""), "TYPE")
+     constructsuper      1
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "body") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o16266/instance/initialise"
+    param QName(PackageNamespace(""), "uint")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "body"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "body")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o16266/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "BodyDestroyEvent"
+    findproperty        QName(PackageNamespace(""), "TYPE")
+    swap
+    initproperty        QName(PackageNamespace(""), "TYPE")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "TYPE") type QName(PackageNamespace(""), "String") end
+end ; class

@@ -1,0 +1,155 @@
+class
+ refid "o12805"
+ instance QName(PackageNamespace(""), "o12805")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o12805"
+   refid "o12805/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o594"
+   paramname "o14678"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o12805"), "o6231")
+     swap
+     setproperty         QName(PrivateNamespace("o12805"), "o6231")
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o12805"), "o12127")
+     swap
+     setproperty         QName(PrivateNamespace("o12805"), "o12127")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o594") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "o14678") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PrivateNamespace("o12805"), "o6231") type QName(PackageNamespace(""), "o16123") end
+  trait slot QName(PrivateNamespace("o12805"), "o12127") type QName(PackageNamespace(""), "o16123") end
+  trait getter QName(PackageNamespace(""), "o16527")
+   method
+    name "o16527"
+    refid "o12805/instance/o16527/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o12805"), "o6231")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "o20915")
+   method
+    name "o20915"
+    refid "o12805/instance/o20915/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o12805"), "o12127")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "o16527")
+   method
+    name "o16527"
+    refid "o12805/instance/o16527/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o12805"), "o6231")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "value")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "o20915")
+   method
+    name "o20915"
+    refid "o12805/instance/o20915/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o12805"), "o12127")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "value")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o12805/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

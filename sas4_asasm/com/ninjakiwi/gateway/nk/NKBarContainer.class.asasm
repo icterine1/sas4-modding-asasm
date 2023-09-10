@@ -1,0 +1,203 @@
+class
+ refid "com.ninjakiwi.gateway.nk:NKBarContainer"
+ instance QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKBarContainer")
+  extends QName(PackageNamespace("flash.display"), "Sprite")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer")
+  iinit
+   name "com.ninjakiwi.gateway.nk:NKBarContainer/NKBarContainer"
+   refid "com.ninjakiwi.gateway.nk:NKBarContainer/instance/init"
+   flag NEED_ACTIVATION
+   body
+    maxstack 5
+    localcount 2
+    initscopedepth 10
+    maxscopedepth 13
+    code
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal1
+
+     pushscope
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace("org.osflash.signals"), "Signal")
+     constructprop       QName(PackageNamespace("org.osflash.signals"), "Signal"), 0
+     initproperty        QName(PackageNamespace(""), "retrySignal")
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace("com.ninjakiwi.nkBar.assets"), "NKBar_Loader")
+     constructprop       QName(PackageNamespace("com.ninjakiwi.nkBar.assets"), "NKBar_Loader"), 0
+     initproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+
+     getlocal0
+     constructsuper      0
+
+     findpropstrict      QName(PackageNamespace(""), "addChild")
+     getlocal0
+     getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+     callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+     getlocal0
+     getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+     getproperty         QName(PackageNamespace(""), "failed_mc")
+     getproperty         Multiname("tryAgain_mc", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), PackageNamespace(""), PrivateNamespace("NKBarContainer.as$84"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     pushtrue
+     setproperty         Multiname("buttonMode", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), PackageNamespace(""), PrivateNamespace("NKBarContainer.as$84"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+     getlocal0
+     getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+     getproperty         QName(PackageNamespace(""), "failed_mc")
+     getproperty         Multiname("tryAgain_mc", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), PackageNamespace(""), PrivateNamespace("NKBarContainer.as$84"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+     getlex              QName(PackageNamespace("flash.events"), "MouseEvent")
+     getproperty         QName(PackageNamespace(""), "CLICK")
+     newobject           0
+     pushwith
+     newfunction         "com.ninjakiwi.gateway.nk:NKBarContainer/instance/init/inline_method"
+     dup
+     getscopeobject      2
+     swap
+     setproperty         QName(PackageNamespace(""), "tryAgain")
+
+     popscope
+     callpropvoid        Multiname("addEventListener", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), PackageNamespace(""), PrivateNamespace("NKBarContainer.as$84"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")]), 2
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(PackageNamespace(""), "retrySignal") type QName(PackageNamespace("org.osflash.signals"), "Signal") end
+  trait const QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator") type QName(PackageNamespace("com.ninjakiwi.nkBar.assets"), "NKBar_Loader") end
+  trait method QName(PackageInternalNs("com.ninjakiwi.gateway.nk"), "showStatus")
+   method
+    name "com.ninjakiwi.gateway.nk:NKBarContainer/com.ninjakiwi.gateway.nk:showStatus"
+    refid "com.ninjakiwi.gateway.nk:NKBarContainer/instance/com.ninjakiwi.gateway.nk:showStatus"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "status"
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+      setlocal3
+
+      pushfalse
+      setlocal            4
+
+      pushfalse
+      setlocal            5
+
+      pushbyte            0
+      setlocal2
+
+      jump                L45
+
+L12:
+      label
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getChildAt"), 1
+      coerce              QName(PackageNamespace("flash.display"), "DisplayObject")
+      setlocal3
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "name")
+      pushstring          "_mc"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            -1
+      equals
+      setlocal            4
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "name")
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pushbyte            0
+      equals
+      setlocal            5
+
+      getlocal3
+      getlocal            4
+      convert_b
+      dup
+      iftrue              L41
+
+      pop
+      getlocal            5
+      convert_b
+L41:
+      setproperty         QName(PackageNamespace(""), "visible")
+
+      getlocal2
+      increment_i
+      setlocal2
+
+L45:
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+      getproperty         QName(PackageNamespace(""), "numChildren")
+      iflt                L12
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageInternalNs("com.ninjakiwi.gateway.nk"), "showErrorMessage")
+   method
+    name "com.ninjakiwi.gateway.nk:NKBarContainer/com.ninjakiwi.gateway.nk:showErrorMessage"
+    refid "com.ninjakiwi.gateway.nk:NKBarContainer/instance/com.ninjakiwi.gateway.nk:showErrorMessage"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "message"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 9
+     maxscopedepth 10
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), "indicator")
+      getproperty         QName(PackageNamespace(""), "failed_mc")
+      getproperty         Multiname("message_txt", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), PackageNamespace(""), PrivateNamespace("NKBarContainer.as$84"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+      getlocal1
+      setproperty         Multiname("text", [PrivateNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), PackageNamespace(""), PrivateNamespace("NKBarContainer.as$84"), PackageNamespace("com.ninjakiwi.gateway.nk"), PackageInternalNs("com.ninjakiwi.gateway.nk"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("com.ninjakiwi.gateway.nk:NKBarContainer"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher")])
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.ninjakiwi.gateway.nk:NKBarContainer/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 8
+   maxscopedepth 9
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

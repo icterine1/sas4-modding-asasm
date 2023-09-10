@@ -1,0 +1,80 @@
+method
+ name "o18442.as$0:anonymous"
+ refid "o18442/instance/o5725/inline_method#0"
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 4
+  localcount 1
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   pushscope
+
+   getlex              QName(PrivateNamespace("o18442"), "o11184")
+   pushnull
+   ifeq                L11
+
+   getlex              QName(PrivateNamespace("o18442"), "o11184")
+   callpropvoid        QName(PackageNamespace(""), "o15428"), 0
+
+   pushnull
+   findproperty        QName(PrivateNamespace("o18442"), "o11184")
+   swap
+   setproperty         QName(PrivateNamespace("o18442"), "o11184")
+
+L11:
+   getlex              QName(PackageNamespace(""), "o6955")
+   pushfalse
+   ifne                L25
+
+   getlex              QName(PackageNamespace(""), "o19820")
+   pushfalse
+   ifne                L21
+
+   getlex              QName(PackageNamespace(""), "o16166")
+   callpropvoid        QName(Namespace("o7331"), "play"), 0
+
+   findpropstrict      QName(PackageNamespace(""), "o1941")
+   callpropvoid        QName(PackageNamespace(""), "o1941"), 0
+
+L21:
+   pushfalse
+   findproperty        QName(PrivateNamespace("o18442"), "o17161")
+   swap
+   setproperty         QName(PrivateNamespace("o18442"), "o17161")
+
+L25:
+   pushbyte            -1
+   findproperty        QName(PrivateNamespace("o18442"), "o15971")
+   swap
+   setproperty         QName(PrivateNamespace("o18442"), "o15971")
+
+   getlex              QName(PackageNamespace(""), "o19820")
+   pushfalse
+   equals
+   pop
+   getlex              QName(PackageNamespace(""), "o17050")
+   dup
+   iftrue              L38
+
+   pop
+   getlex              QName(PackageNamespace(""), "o18691")
+L38:
+   iffalse             L47
+
+   getlex              QName(PackageNamespace(""), "o1051")
+   getlex              QName(PackageNamespace(""), "o19505")
+   pushbyte            3
+   newfunction         "o18442/instance/o5725/inline_method#1"
+   callproperty        QName(PackageNamespace(""), "o9310"), 3
+   findproperty        QName(PrivateNamespace("o18442"), "o14835")
+   swap
+   setproperty         QName(PrivateNamespace("o18442"), "o14835")
+
+L47:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

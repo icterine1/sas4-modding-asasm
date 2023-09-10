@@ -1,0 +1,44 @@
+method
+ name "com.codecatalyst.util:optionally"
+ refid "com.codecatalyst.util:optionally"
+ param QName(PackageNamespace(""), "Function")
+ param QName(PackageNamespace(""), "Array")
+ param QName(PackageNamespace(""), "int")
+ flag HAS_OPTIONAL
+ flag HAS_PARAM_NAMES
+ optional Integer(0)
+ paramname "targetFunction"
+ paramname "parameters"
+ paramname "requiredParameters"
+ body
+  maxstack 5
+  localcount 5
+  initscopedepth 1
+  maxscopedepth 2
+  code
+   getlocal0
+   pushscope
+
+   getlex              QName(PackageNamespace(""), "Math")
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "length")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   callproperty        QName(PackageNamespace(""), "min"), 2
+   getlocal3
+   callproperty        QName(PackageNamespace(""), "max"), 2
+   convert_i
+   setlocal            4
+
+   getlocal1
+   pushnull
+   getlocal2
+   pushbyte            0
+   getlocal            4
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "apply"), 2
+   returnvalue
+  end ; code
+ end ; body
+end ; method

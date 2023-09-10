@@ -1,0 +1,89 @@
+class
+ refid "o2149"
+ instance QName(PackageNamespace(""), "o2149")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o2149"
+   refid "o2149/instance/init"
+   param QName(PackageNamespace(""), "o6212")
+   param QName(PackageNamespace("flash.utils"), "ByteArray")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional False()
+   optional False()
+   optional Integer(-1)
+   optional True()
+   paramname "o20488"
+   paramname "data"
+   paramname "o9112"
+   paramname "o15752"
+   paramname "o5856"
+   paramname "o5081"
+   body
+    maxstack 2
+    localcount 7
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "o20488")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "data")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "o9112")
+
+     getlocal0
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "o15752")
+
+     getlocal0
+     getlocal            5
+     setproperty         QName(PackageNamespace(""), "o5856")
+
+     getlocal0
+     getlocal            6
+     setproperty         QName(PackageNamespace(""), "o5081")
+
+     getlocal0
+     getlex              QName(PackageNamespace(""), "o4384")
+     getproperty         QName(PackageNamespace(""), "o20630")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     constructsuper      1
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o20488") type QName(PackageNamespace(""), "o6212") value Null() end
+  trait slot QName(PackageNamespace(""), "data") type QName(PackageNamespace("flash.utils"), "ByteArray") value Null() end
+  trait slot QName(PackageNamespace(""), "o9112") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o15752") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o5856") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PackageNamespace(""), "o5081") type QName(PackageNamespace(""), "Boolean") value True() end
+ end ; instance
+ cinit
+  refid "o2149/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,278 @@
+class
+ refid "com.ninjakiwi.gateway.net:Api"
+ instance QName(PackageNamespace("com.ninjakiwi.gateway.net"), "Api")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.ninjakiwi.gateway.net:Api")
+  iinit
+   name "com.ninjakiwi.gateway.net:Api/Api"
+   refid "com.ninjakiwi.gateway.net:Api/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_PARAM_NAMES
+   paramname "sourceObject"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), "_api")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), "_api") type QName(PackageNamespace(""), "Object") end
+  trait method QName(PackageNamespace(""), "getProperty")
+   method
+    name "com.ninjakiwi.gateway.net:Api/getProperty"
+    refid "com.ninjakiwi.gateway.net:Api/instance/getProperty"
+    param QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "propertyName"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), "_api")
+      getlocal1
+      callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.net:Api"), "resolve"), 2
+      coerce              QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+      setlocal2
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "object")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "name")
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "setProperty")
+   method
+    name "com.ninjakiwi.gateway.net:Api/setProperty"
+    refid "com.ninjakiwi.gateway.net:Api/instance/setProperty"
+    param QName(PackageNamespace(""), "String")
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "propertyName"
+    paramname "newValue"
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), "_api")
+      getlocal1
+      callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.net:Api"), "resolve"), 2
+      coerce              QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+      setlocal3
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "object")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "name")
+      getlocal2
+      setproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "call")
+   method
+    name "com.ninjakiwi.gateway.net:Api/call"
+    refid "com.ninjakiwi.gateway.net:Api/instance/call"
+    param QName(PackageNamespace(""), "String")
+    flag NEED_REST
+    flag HAS_PARAM_NAMES
+    paramname "functionName"
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), "_api")
+      getlocal1
+      callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.net:Api"), "resolve"), 2
+      coerce              QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+      setlocal3
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "object")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "name")
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+      coerce              QName(PackageNamespace(""), "Function")
+      dup
+      setlocal            4
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "object")
+      getlocal2
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "apply"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("com.ninjakiwi.gateway.net:Api"), "resolve")
+   method
+    name "com.ninjakiwi.gateway.net:Api/private:resolve"
+    refid "com.ninjakiwi.gateway.net:Api/instance/com.ninjakiwi.gateway.net:Api/instance/resolve"
+    param QName(PackageNamespace(""), "Object")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+    flag HAS_PARAM_NAMES
+    paramname "object"
+    paramname "propertyName"
+    body
+     maxstack 5
+     localcount 7
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      coerce_s
+      setlocal            6
+
+      getlocal1
+      coerce_a
+      setlocal3
+
+      getlocal2
+      pushstring          "."
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            4
+
+      pushbyte            0
+      setlocal            5
+
+      jump                L30
+
+L16:
+      label
+      getlocal            4
+      getlocal            5
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+      coerce_s
+      setlocal            6
+
+      getlocal3
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+      coerce_a
+      setlocal3
+
+      getlocal            5
+      increment_i
+      setlocal            5
+
+L30:
+      getlocal            5
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      subtract
+      iflt                L16
+
+      findpropstrict      QName(PrivateNamespace("Api.as$20"), "ObjectNamePair")
+      getlocal3
+      getlocal            4
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      subtract
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+      constructprop       QName(PrivateNamespace("Api.as$20"), "ObjectNamePair"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("com.ninjakiwi.gateway.net:Api"), "callFunctionOnObject")
+   method
+    name "com.ninjakiwi.gateway.net:Api/private:callFunctionOnObject"
+    refid "com.ninjakiwi.gateway.net:Api/instance/com.ninjakiwi.gateway.net:Api/instance/callFunctionOnObject"
+    param null
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Array")
+    flag HAS_PARAM_NAMES
+    paramname "object"
+    paramname "functionName"
+    paramname "args"
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("com.ninjakiwi.gateway.net:Api"), ProtectedNamespace("com.ninjakiwi.gateway.net:Api"), PackageNamespace(""), PrivateNamespace("Api.as$20"), PackageNamespace("com.ninjakiwi.gateway.net"), PackageInternalNs("com.ninjakiwi.gateway.net"), Namespace("http://adobe.com/AS3/2006/builtin"), StaticProtectedNs("com.ninjakiwi.gateway.net:Api")])
+      coerce              QName(PackageNamespace(""), "Function")
+      dup
+      setlocal            4
+
+      getlocal1
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "apply"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.ninjakiwi.gateway.net:Api/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

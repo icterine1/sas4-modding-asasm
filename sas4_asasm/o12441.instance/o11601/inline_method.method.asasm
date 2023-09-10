@@ -1,0 +1,36 @@
+method
+ name "o11647"
+ refid "o12441/instance/o11601/inline_method"
+ param null
+ returns QName(PackageNamespace(""), "Boolean")
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageInternalNs(""), "o15697")
+   getlocal1
+   callproperty        QName(Namespace("o13430"), "o3272"), 1
+   getlex              QName(PackageNamespace(""), "o11359")
+   astypelate
+   coerce              QName(PackageNamespace(""), "o11359")
+   setlocal2
+
+   getlocal2
+   getlex              QName(PackageInternalNs(""), "o12676")
+   callproperty        QName(PackageNamespace(""), "o14704"), 1
+   iffalse             L16
+
+   getlex              QName(PackageInternalNs(""), "o5734")
+   getglobalscope
+   getlocal2
+   call                1
+   returnvalue
+
+L16:
+   pushtrue
+   returnvalue
+  end ; code
+ end ; body
+end ; method

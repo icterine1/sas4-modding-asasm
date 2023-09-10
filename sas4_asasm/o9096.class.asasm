@@ -1,0 +1,244 @@
+class
+ refid "o9096"
+ instance QName(PackageNamespace(""), "o9096")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o9096/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o9096/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "0123456789abcdef"
+    findproperty        QName(PrivateNamespace("o9096"), "o19160")
+    swap
+    setproperty         QName(PrivateNamespace("o9096"), "o19160")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "o16995")
+  method
+   name "o16995"
+   refid "o9096/class/o16995"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "x"
+   paramname "o14380"
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     getlocal2
+     lshift
+     getlocal1
+     pushbyte            32
+     getlocal2
+     subtract
+     urshift
+     bitor
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o2314")
+  method
+   name "o2314"
+   refid "o9096/class/o2314"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "uint")
+   flag HAS_PARAM_NAMES
+   paramname "x"
+   paramname "o14380"
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushbyte            32
+     getlocal2
+     subtract
+     convert_i
+     setlocal3
+
+     getlocal1
+     getlocal3
+     lshift
+     getlocal1
+     pushbyte            32
+     getlocal3
+     subtract
+     urshift
+     bitor
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait slot QName(PrivateNamespace("o9096"), "o19160") type QName(PackageNamespace(""), "String") end
+ trait method QName(PackageNamespace(""), "o15277")
+  method
+   name "o15277"
+   refid "o9096/class/o15277"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional False()
+   paramname "o14380"
+   paramname "o5257"
+   body
+    maxstack 6
+    localcount 6
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal            4
+
+     pushbyte            0
+     setlocal            5
+
+     pushstring          ""
+     coerce_s
+     setlocal3
+
+     getlocal2
+     iffalse             L49
+
+     pushbyte            0
+     setlocal            4
+
+     jump                L45
+
+L14:
+     label
+     getlocal3
+     getlex              QName(PrivateNamespace("o9096"), "o19160")
+     getlocal1
+     pushbyte            3
+     getlocal            4
+     subtract
+     pushbyte            8
+     multiply
+     pushbyte            4
+     add
+     rshift
+     pushbyte            15
+     bitand
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+     getlex              QName(PrivateNamespace("o9096"), "o19160")
+     getlocal1
+     pushbyte            3
+     getlocal            4
+     subtract
+     pushbyte            8
+     multiply
+     rshift
+     pushbyte            15
+     bitand
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+     add
+     add
+     coerce_s
+     setlocal3
+
+     inclocal_i          4
+L45:
+     getlocal            4
+     pushbyte            4
+     iflt                L14
+
+     jump                L82
+
+L49:
+     pushbyte            0
+     setlocal            5
+
+     jump                L79
+
+L52:
+     label
+     getlocal3
+     getlex              QName(PrivateNamespace("o9096"), "o19160")
+     getlocal1
+     getlocal            5
+     pushbyte            8
+     multiply
+     pushbyte            4
+     add
+     rshift
+     pushbyte            15
+     bitand
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+     getlex              QName(PrivateNamespace("o9096"), "o19160")
+     getlocal1
+     getlocal            5
+     pushbyte            8
+     multiply
+     rshift
+     pushbyte            15
+     bitand
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
+     add
+     add
+     coerce_s
+     setlocal3
+
+     inclocal_i          5
+L79:
+     getlocal            5
+     pushbyte            4
+     iflt                L52
+
+L82:
+     getlocal3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,37 @@
+method
+ name "o11088.as$7:anonymous"
+ refid "o11088/o16625/instance/o11088/o16625/o8483/inline_method#2"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "profileData")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o11088:o16625"), "o18399")
+   iffalse             L7
+
+   pushstring          "dialogMessage.vipMessages.msgZombdroidsXmas"
+   jump                L8
+
+L7:
+   pushstring          "dialogMessage.vipMessages.msgZombdroids"
+L8:
+   callproperty        QName(PackageNamespace(""), "o10206"), 1
+   coerce_s
+   setlocal1
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o20488")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o11088:o16625"), "o19069")
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "o2251"), 2
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

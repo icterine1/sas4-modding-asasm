@@ -1,0 +1,227 @@
+class
+ refid "o1850"
+ instance QName(PackageNamespace(""), "o1850")
+  extends QName(PackageNamespace(""), "o5304")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o1850")
+  iinit
+   refid "o1850/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o16677")
+   method
+    name "o16677"
+    refid "o1850/instance/o16677"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Integer(-1)
+    paramname "o7298"
+    paramname "o10209"
+    paramname "o20117"
+    paramname "o6067"
+    paramname "o9087"
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "o11521"), 1
+      findpropstrict      QName(PrivateNamespace("o1850"), "o11533")
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(PrivateNamespace("o1850"), "o11533"), 4
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o1666")
+   method
+    name "o1666"
+    refid "o1850/instance/o1666"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Integer(-1)
+    paramname "o7298"
+    paramname "o10209"
+    paramname "o20117"
+    paramname "o6067"
+    paramname "o9087"
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "o1148"), 1
+      findpropstrict      QName(PrivateNamespace("o1850"), "o11533")
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(PrivateNamespace("o1850"), "o11533"), 4
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o1850"), "o11533")
+   method
+    name "o11533"
+    refid "o1850/instance/o1850/instance/o11533"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o10209"
+    paramname "o20117"
+    paramname "o6067"
+    paramname "o9087"
+    body
+     maxstack 4
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            5
+
+      getlocal            4
+      pushbyte            -1
+      ifngt               L19
+
+      getlex              QName(PackageNamespace(""), "o16166")
+      callproperty        QName(Namespace("o7331"), "o12950"), 0
+      convert_i
+      dup
+      setlocal            5
+
+      pushbyte            0
+      ifeq                L19
+
+      getlex              QName(PackageNamespace(""), "o16166")
+      getlocal            4
+      getlocal            5
+      divide
+      setproperty         QName(Namespace("o7331"), "frameRate")
+
+L19:
+      getlex              QName(PackageNamespace(""), "o6691")
+      getproperty         QName(Namespace("o4332"), "position")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PackageNamespace(""), "o6691")
+      getproperty         QName(Namespace("o4332"), "position")
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlex              QName(PackageNamespace(""), "o6691")
+      getlocal3
+      setproperty         QName(Namespace("o4332"), "o16990")
+
+      getlex              QName(PackageNamespace(""), "o6691")
+      pushtrue
+      setproperty         QName(Namespace("o4332"), "o9824")
+
+      getlex              QName(PackageNamespace(""), "o16166")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o1490")
+      getproperty         QName(PackageNamespace(""), "o16612")
+      getlex              QName(PrivateNamespace("o1850"), "o12233")
+      callpropvoid        QName(Namespace("o12600"), "o19926"), 3
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o1850"), "o12233")
+   method
+    name "o12233"
+    refid "o1850/instance/o1850/instance/o12233"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "o7367"
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o13640")
+      callpropvoid        QName(PackageNamespace(""), "o13640"), 0
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o1850/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o3922") type QName(PackageNamespace(""), "int") value Integer(0) end
+end ; class

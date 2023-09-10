@@ -1,0 +1,54 @@
+script
+ sinit
+  name ""
+  refid "com.codecatalyst.promise:Consequence/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("Consequence", [PackageInternalNs("com.codecatalyst.promise")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.codecatalyst.promise:Consequence"
+    popscope
+    initproperty        QName(PackageInternalNs("com.codecatalyst.promise"), "Consequence")
+
+    findpropstrict      Multiname("CallbackQueue", [PrivateNamespace("Consequence.as$15")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.codecatalyst.promise:Consequence/CallbackQueue"
+    popscope
+    initproperty        QName(PrivateNamespace("Consequence.as$15"), "CallbackQueue")
+
+    findpropstrict      Multiname("Callback", [PrivateNamespace("Consequence.as$15")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.codecatalyst.promise:Consequence/Callback"
+    popscope
+    initproperty        QName(PrivateNamespace("Consequence.as$15"), "Callback")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageInternalNs("com.codecatalyst.promise"), "Consequence")
+  #include "Consequence.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("Consequence.as$15"), "CallbackQueue")
+  #include "Consequence/CallbackQueue.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("Consequence.as$15"), "Callback")
+  #include "Consequence/Callback.class.asasm"
+ end ; trait
+end ; script

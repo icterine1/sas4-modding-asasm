@@ -1,0 +1,98 @@
+class
+ refid "o2041"
+ instance QName(PackageNamespace(""), "o2041")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o2041"
+   refid "o2041/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "id"
+   paramname "x"
+   paramname "y"
+   paramname "name"
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushstring          ""
+     findproperty        QName(PackageNamespace(""), "name")
+     swap
+     setproperty         QName(PackageNamespace(""), "name")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "id")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "x")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "y")
+
+     getlocal0
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "name")
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o2041")
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o2041")
+     applytype           1
+     astypelate
+     findproperty        QName(PackageNamespace(""), "o16079")
+     swap
+     setproperty         QName(PackageNamespace(""), "o16079")
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("flash.utils"), "Dictionary")
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     getlex              QName(PackageNamespace("flash.utils"), "Dictionary")
+     astypelate
+     findproperty        QName(PackageNamespace(""), "o13403")
+     swap
+     setproperty         QName(PackageNamespace(""), "o13403")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "id") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "x") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "y") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "name") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o16079") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o2041")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o13403") type QName(PackageNamespace("flash.utils"), "Dictionary") value Null() end
+ end ; instance
+ cinit
+  refid "o2041/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

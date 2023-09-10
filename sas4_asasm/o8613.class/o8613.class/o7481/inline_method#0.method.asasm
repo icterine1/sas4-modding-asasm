@@ -1,0 +1,56 @@
+method
+ name "o8613.as$2:anonymous"
+ refid "o8613/class/o8613/class/o7481/inline_method#0"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 10
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace("flash.net"), "URLLoader")
+   getglobalscope
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "target")
+   call                1
+   coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "data")
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   coerce              QName(PackageNamespace(""), "Object")
+   dup
+   setlocal            4
+
+   pushstring          "users"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushbyte            0
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "Object")
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   findpropstrict      QName(PackageNamespace(""), "o9433")
+   getlex              QName(PackageNamespace(""), "parseInt")
+   getglobalscope
+   getlex              QName(PackageInternalNs(""), "o11630")
+   call                1
+   getlocal2
+   pushstring          "username"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushnull
+   pushnull
+   pushstring          "Kong"
+   pushnull
+   pushtrue
+   pushnull
+   constructprop       QName(PackageNamespace(""), "o9433"), 8
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

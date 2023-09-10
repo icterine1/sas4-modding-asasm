@@ -1,0 +1,29 @@
+script
+ sinit
+  refid "LiveOpType/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 2
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "LiveOpType"
+    popscope
+    initproperty        QName(PackageNamespace(""), "LiveOpType")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "LiveOpType")
+  #include "LiveOpType.class.asasm"
+ end ; trait
+end ; script

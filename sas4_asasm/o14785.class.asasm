@@ -1,0 +1,430 @@
+class
+ refid "o14785"
+ instance QName(PackageNamespace(""), "o14785")
+  extends QName(PackageNamespace(""), "o4023")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o14785")
+  iinit
+   name "o14785"
+   refid "o14785/instance/init"
+   param QName(PackageNamespace(""), "o14200")
+   flag HAS_PARAM_NAMES
+   paramname "data"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("o14785"), "o19419")
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "o20488")
+     getproperty         QName(PackageNamespace(""), "o10608")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o7923")
+     getproperty         QName(PackageNamespace(""), "level")
+     setproperty         QName(PackageNamespace(""), "level")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o14785"), "o19419") type QName(PackageNamespace(""), "o14200") end
+  trait slot QName(PrivateNamespace("o14785"), "o3093") type QName(PackageNamespace(""), "o10346") end
+  trait slot QName(PrivateNamespace("o14785"), "o408") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PrivateNamespace("o14785"), "o5262") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PrivateNamespace("o14785"), "o19324") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PrivateNamespace("o14785"), "o9922")
+   method
+    name "o9922"
+    refid "o14785/instance/o14785/instance/o9922"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(ProtectedNamespace("o4023"), "o16989")
+      pushbyte            31
+      setproperty         QName(PackageNamespace(""), "screen")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o14785"), "o11048") flag OVERRIDE
+   method
+    name "o11048"
+    refid "o14785/instance/o14785:o11048"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o10346")
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("o4023"), "o16989")
+      getlex              QName(PrivateNamespace("o14785"), "o9922")
+      constructprop       QName(PackageNamespace(""), "o10346"), 3
+      findproperty        QName(PrivateNamespace("o14785"), "o3093")
+      swap
+      setproperty         QName(PrivateNamespace("o14785"), "o3093")
+
+      findpropstrict      QName(PrivateNamespace("o14785"), "o92")
+      pushfalse
+      callpropvoid        QName(PrivateNamespace("o14785"), "o92"), 1
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o2719")
+      pushshort           213
+      callpropvoid        QName(PackageNamespace(""), "o10907"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o14785"), "o6662") flag OVERRIDE
+   method
+    name "o6662"
+    refid "o14785/instance/o14785:o6662"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnan
+      setlocal2
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(ProtectedNamespace("o6539"), "o6662"), 1
+      getlex              QName(PackageNamespace(""), "asset")
+      pushnull
+      ifne                L11
+
+      returnvoid
+
+L11:
+      getlex              QName(PrivateNamespace("o14785"), "o408")
+      pushfalse
+      ifne                L26
+
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      callproperty        QName(PackageNamespace(""), "o12333"), 0
+      convert_d
+      setlocal2
+
+      getlocal2
+      pushbyte            1
+      ifne                L25
+
+      pushtrue
+      findproperty        QName(PrivateNamespace("o14785"), "o19324")
+      swap
+      setproperty         QName(PrivateNamespace("o14785"), "o19324")
+
+L25:
+      jump                L29
+
+L26:
+      getlex              QName(PrivateNamespace("o14785"), "o5262")
+      convert_d
+      setlocal2
+
+L29:
+      getlex              QName(PrivateNamespace("o14785"), "o19324")
+      dup
+      iffalse             L36
+
+      pop
+      getlex              QName(PrivateNamespace("o14785"), "o408")
+      pushfalse
+      equals
+L36:
+      dup
+      iffalse             L45
+
+      pop
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      getproperty         QName(PackageNamespace(""), "o2685")
+      pushnull
+      equals
+      not
+L45:
+      iffalse             L58
+
+      pushtrue
+      findproperty        QName(PrivateNamespace("o14785"), "o408")
+      swap
+      setproperty         QName(PrivateNamespace("o14785"), "o408")
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      getproperty         QName(PackageNamespace(""), "o2685")
+      pushnull
+      getlex              QName(PackageNamespace(""), "o9782")
+      getproperty         QName(PackageNamespace(""), "o11785")
+      getlex              QName(PrivateNamespace("o14785"), "o1354")
+      callpropvoid        QName(PackageNamespace(""), "o16280"), 3
+
+L58:
+      getlocal0
+      getlocal2
+      getlex              QName(PrivateNamespace("o14785"), "o408")
+      callpropvoid        QName(PackageNamespace(""), "o3243"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o14785"), "o1354")
+   method
+    name "o1354"
+    refid "o14785/instance/o14785/instance/o1354"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal2
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      getproperty         QName(PackageNamespace(""), "o2685")
+      pushnull
+      ifeq                L22
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      getproperty         QName(PackageNamespace(""), "o2685")
+      getproperty         QName(PackageNamespace(""), "o10591")
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("o14785"), ProtectedNamespace("o14785"), StaticProtectedNs("o14785"), StaticProtectedNs("o4023"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14785"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "o8443")
+      setlocal2
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o951")
+      findproperty        QName(PrivateNamespace("o14785"), "o5262")
+      swap
+      setproperty         QName(PrivateNamespace("o14785"), "o5262")
+
+L22:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o14785"), "o154") flag OVERRIDE
+   method
+    name "o154"
+    refid "o14785/instance/o14785:o154"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      callsupervoid       QName(ProtectedNamespace("o6539"), "o154"), 0
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      callpropvoid        QName(PackageNamespace(""), "o154"), 0
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o14785"), "o9492") flag OVERRIDE
+   method
+    name "o9492"
+    refid "o14785/instance/o14785:o9492"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PrivateNamespace("o14785"), "o92")
+      pushtrue
+      callpropvoid        QName(PrivateNamespace("o14785"), "o92"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o14785"), "o92")
+   method
+    name "o92"
+    refid "o14785/instance/o14785/instance/o92"
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o781"
+    body
+     maxstack 5
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      callproperty        QName(PackageNamespace(""), "o18702"), 0
+      coerce              QName(PackageNamespace(""), "o69")
+      setlocal2
+
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "o14279"), 1
+
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      getproperty         QName(PackageNamespace(""), "o4643")
+      iffalse             L15
+
+      pushstring          "LoadingIntro"
+      jump                L17
+
+L15:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o7219")
+L17:
+      coerce_s
+      setlocal3
+
+      findpropstrict      QName(ProtectedNamespace("o4023"), "o4095")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1007")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toUpperCase"), 0
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o6393")
+      getlocal3
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      getproperty         QName(PackageNamespace(""), "o4643")
+      callpropvoid        QName(ProtectedNamespace("o4023"), "o4095"), 4
+
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "o92"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13640") flag OVERRIDE
+   method
+    name "o13640"
+    refid "o14785/instance/o13640"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o14785"), "o3093")
+      callpropvoid        QName(PackageNamespace(""), "o13640"), 0
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      getproperty         QName(PackageNamespace(""), "o2685")
+      pushnull
+      ifeq                L16
+
+      getlex              QName(PrivateNamespace("o14785"), "o19419")
+      getproperty         QName(PackageNamespace(""), "o202")
+      getproperty         QName(PackageNamespace(""), "o2685")
+      getlex              QName(PackageNamespace(""), "o9782")
+      getproperty         QName(PackageNamespace(""), "o11785")
+      getlex              QName(PrivateNamespace("o14785"), "o1354")
+      callpropvoid        QName(PackageNamespace(""), "o12657"), 2
+
+L16:
+      pushnull
+      findproperty        QName(PrivateNamespace("o14785"), "o19419")
+      swap
+      setproperty         QName(PrivateNamespace("o14785"), "o19419")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o14785"), "o3093")
+      swap
+      setproperty         QName(PrivateNamespace("o14785"), "o3093")
+
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "o13640"), 0
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o14785/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

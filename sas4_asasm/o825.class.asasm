@@ -1,0 +1,101 @@
+class
+ refid "o825"
+ instance QName(PackageNamespace(""), "o825")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o825"
+   refid "o825/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     findpropstrict      QName(PackageNamespace(""), "o7705")
+     constructprop       QName(PackageNamespace(""), "o7705"), 0
+     findproperty        QName(PackageNamespace(""), "o10236")
+     swap
+     setproperty         QName(PackageNamespace(""), "o10236")
+
+     findpropstrict      QName(PackageNamespace(""), "o7705")
+     constructprop       QName(PackageNamespace(""), "o7705"), 0
+     findproperty        QName(PackageNamespace(""), "o11718")
+     swap
+     setproperty         QName(PackageNamespace(""), "o11718")
+
+     findpropstrict      QName(PackageNamespace(""), "o7705")
+     constructprop       QName(PackageNamespace(""), "o7705"), 0
+     findproperty        QName(PackageNamespace(""), "o12328")
+     swap
+     setproperty         QName(PackageNamespace(""), "o12328")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o10236") type QName(PackageNamespace(""), "o7705") end
+  trait slot QName(PackageNamespace(""), "o11718") type QName(PackageNamespace(""), "o7705") end
+  trait slot QName(PackageNamespace(""), "o12328") type QName(PackageNamespace(""), "o7705") end
+  trait method QName(PackageNamespace(""), "o19126")
+   method
+    name "o19126"
+    refid "o825/instance/o19126"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "o7705")
+    flag HAS_PARAM_NAMES
+    paramname "version"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      convert_i
+      pushint             1
+      subtract_i
+      lookupswitch        L13, [L7, L9, L11]
+
+L7:
+      getlex              QName(PackageNamespace(""), "o10236")
+      returnvalue
+
+L9:
+      getlex              QName(PackageNamespace(""), "o11718")
+      returnvalue
+
+L11:
+      getlex              QName(PackageNamespace(""), "o12328")
+      returnvalue
+
+L13:
+      pushnull
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o825/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

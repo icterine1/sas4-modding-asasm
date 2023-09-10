@@ -1,0 +1,120 @@
+class
+ refid "o2038"
+ instance QName(PackageNamespace(""), "o2038")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o2038"
+   refid "o2038/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     findproperty        QName(PackageNamespace(""), "o12372")
+     swap
+     setproperty         QName(PackageNamespace(""), "o12372")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o12372") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait method QName(PackageNamespace(""), "o9694")
+   method
+    name "o9694"
+    refid "o2038/instance/o9694"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "o11614")
+    flag HAS_PARAM_NAMES
+    paramname "o3359"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o12372")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("o2038"), ProtectedNamespace("o2038"), StaticProtectedNs("o2038"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o2038"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o2038/class/init"
+  body
+   maxstack 6
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "Diamond"
+    pushstring          "Platinum"
+    pushstring          "Gold"
+    pushstring          "Silver"
+    pushstring          "Bronze"
+    newarray            5
+    findproperty        QName(PackageNamespace(""), "o2017")
+    swap
+    setproperty         QName(PackageNamespace(""), "o2017")
+
+    pushint             7918572
+    pushint             16777215
+    pushint             16763648
+    pushint             13355979
+    pushint             10840848
+    newarray            5
+    findproperty        QName(PackageNamespace(""), "o6854")
+    swap
+    setproperty         QName(PackageNamespace(""), "o6854")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o2017") type QName(PackageNamespace(""), "Array") end
+ trait slot QName(PackageNamespace(""), "o6854") type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "o3159")
+  method
+   name "o3159"
+   refid "o2038/class/o3159"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "position"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "o2017")
+     getlocal1
+     getproperty         MultinameL([PrivateNamespace("o2038"), StaticProtectedNs("o2038"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o2038"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

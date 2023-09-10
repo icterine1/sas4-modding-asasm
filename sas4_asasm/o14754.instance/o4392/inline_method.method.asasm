@@ -1,0 +1,46 @@
+method
+ name "o14754.as$4:anonymous"
+ refid "o14754/instance/o4392/inline_method"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 6
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageInternalNs(""), "o17327")
+   getproperty         QName(PackageNamespace(""), "data")
+   coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+   setlocal            5
+
+   getlex              QName(PackageNamespace(""), "o14634")
+   getlocal            5
+   callproperty        QName(PackageNamespace(""), "o6318"), 1
+   coerce_s
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlocal2
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   coerce              QName(PackageNamespace(""), "Object")
+   setlocal            4
+
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlocal            4
+   pushstring          "data"
+   getproperty         MultinameL([PrivateNamespace("o14754"), ProtectedNamespace("o14754"), StaticProtectedNs("o14754"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14754"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   coerce              QName(PackageNamespace(""), "Object")
+   setlocal3
+
+   getlex              QName(PackageInternalNs(""), "o9336")
+   findpropstrict      QName(PackageNamespace(""), "o8560")
+   getlocal3
+   callproperty        QName(PackageNamespace(""), "o8560"), 1
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

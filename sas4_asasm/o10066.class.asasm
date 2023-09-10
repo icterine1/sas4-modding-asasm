@@ -1,0 +1,75 @@
+class
+ refid "o10066"
+ instance QName(PackageNamespace(""), "o10066")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o10066"
+   refid "o10066/instance/init"
+   param QName(PackageNamespace(""), "Array")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional False()
+   optional Integer(-1)
+   paramname "o2024"
+   paramname "o8617"
+   paramname "o13769"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     newarray            0
+     findproperty        QName(PackageNamespace(""), "o17350")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17350")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "concat"), 0
+     findproperty        QName(PackageNamespace(""), "o17350")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17350")
+
+     getlocal2
+     findproperty        QName(PackageNamespace(""), "o12005")
+     swap
+     setproperty         QName(PackageNamespace(""), "o12005")
+
+     getlocal3
+     findproperty        QName(PackageNamespace(""), "o9901")
+     swap
+     setproperty         QName(PackageNamespace(""), "o9901")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o17350") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageNamespace(""), "o5820") type QName(PackageNamespace(""), "Boolean") value True() end
+  trait slot QName(PackageNamespace(""), "o6535") type QName(PackageNamespace(""), "Boolean") value True() end
+  trait slot QName(PackageNamespace(""), "o12005") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o9901") type QName(PackageNamespace(""), "int") value Integer(-1) end
+ end ; instance
+ cinit
+  refid "o10066/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

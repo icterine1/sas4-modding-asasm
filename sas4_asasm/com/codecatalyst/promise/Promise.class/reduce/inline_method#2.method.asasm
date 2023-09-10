@@ -1,0 +1,73 @@
+method
+ name "com.codecatalyst.promise:Promise/reduce/com.codecatalyst.promise:process/com.codecatalyst.promise:reduceFnWrapper"
+ refid "com.codecatalyst.promise:Promise/class/reduce/inline_method#2"
+ param null
+ param null
+ param QName(PackageNamespace(""), "uint")
+ param QName(PackageNamespace(""), "Array")
+ returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+ flag NEED_ACTIVATION
+ flag HAS_PARAM_NAMES
+ paramname "previousValueOrPromise"
+ paramname "currentValueOrPromise"
+ paramname "currentIndex"
+ paramname "array"
+ body
+  maxstack 3
+  localcount 6
+  initscopedepth 6
+  maxscopedepth 7
+  code
+   newactivation
+   dup
+   setlocal            5
+
+   pushscope
+
+   getscopeobject      0
+   pushnull
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             5
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+   getscopeobject      0
+   getlocal2
+   setslot             2
+
+   getscopeobject      0
+   getlocal3
+   setslot             3
+
+   getscopeobject      0
+   getlocal            4
+   setslot             4
+
+   getscopeobject      0
+   newfunction         "com.codecatalyst.promise:Promise/class/reduce/inline_method#3"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             5
+
+   getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+   getscopeobject      0
+   getslot             1
+   getscopeobject      0
+   getslot             2
+   newarray            2
+   callproperty        QName(PackageNamespace(""), "all"), 1
+   findpropstrict      QName(PackageNamespace("com.codecatalyst.util"), "spread")
+   getscopeobject      0
+   getslot             5
+   callproperty        QName(PackageNamespace("com.codecatalyst.util"), "spread"), 1
+   callproperty        QName(PackageNamespace(""), "then"), 1
+   returnvalue
+  end ; code
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "previousValueOrPromise") slotid 1 end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "currentValueOrPromise") slotid 2 end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "currentIndex") slotid 3 type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "array") slotid 4 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "execute") slotid 5 type QName(PackageNamespace(""), "Function") end
+ end ; body
+end ; method

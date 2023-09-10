@@ -1,0 +1,90 @@
+class
+ refid "o871"
+ instance QName(PackageNamespace(""), "o871")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o871/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o871/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o2562") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o2760") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait method QName(PackageNamespace(""), "o18804")
+  method
+   name "o18804"
+   refid "o871/class/o18804"
+   param null
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "id"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     setlocal2
+
+     jump                L14
+
+L5:
+     label
+     pushstring          "Normal Ranking"
+     returnvalue
+
+L8:
+     label
+     pushstring          "Threshold Ranking"
+     returnvalue
+
+L11:
+     label
+     pushstring          "Not Setup"
+     returnvalue
+
+L14:
+     pushbyte            0
+     getlocal2
+     ifstricteq          L5
+
+     pushbyte            1
+     getlocal2
+     ifstricteq          L8
+
+     jump                L11
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,45 @@
+method
+ name "com.codecatalyst.promise:Promise/all/com.codecatalyst.promise:process/com.codecatalyst.promise:resolve/com.codecatalyst.promise:fulfill"
+ refid "com.codecatalyst.promise:Promise/class/all/inline_method#2"
+ param null
+ flag HAS_PARAM_NAMES
+ paramname "value"
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 6
+  maxscopedepth 6
+  code
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "results")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "index")
+   getlocal1
+   setproperty         MultinameL([PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+
+   findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToResolve")
+   dup
+   setlocal2
+
+   getproperty         QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToResolve")
+   decrement
+   dup
+   setlocal3
+
+   getlocal2
+   getlocal3
+   setproperty         QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToResolve")
+
+   kill                3
+   kill                2
+   pushbyte            0
+   ifne                L21
+
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "deferred")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "results")
+   callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+L21:
+   getlocal1
+   returnvalue
+  end ; code
+ end ; body
+end ; method

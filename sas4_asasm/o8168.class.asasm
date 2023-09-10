@@ -1,0 +1,167 @@
+class
+ refid "o8168"
+ instance QName(PackageNamespace(""), "o8168")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o8168/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o13540")
+   method
+    name "o13540"
+    refid "o8168/instance/o13540"
+    param QName(PackageNamespace(""), "o11359")
+    param QName(PackageNamespace(""), "o11359")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "o9712"
+    paramname "o13724"
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o18997"), 0
+      coerce              QName(PackageNamespace(""), "o11501")
+      setlocal            5
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "o18997"), 0
+      coerce              QName(PackageNamespace(""), "o11501")
+      setlocal3
+
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o7509")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o7509")
+      equals
+      dup
+      iffalse             L23
+
+      pop
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o7509")
+      pushbyte            0
+      equals
+      not
+L23:
+      iffalse             L29
+
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o7509")
+      pushbyte            0
+      greaterthan
+      returnvalue
+
+L29:
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o251")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o11755")
+      bitand
+      pushbyte            0
+      equals
+      not
+      dup
+      iffalse             L48
+
+      pop
+      getlocal            5
+      getproperty         QName(PackageNamespace(""), "o11755")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o251")
+      bitand
+      pushbyte            0
+      equals
+      not
+L48:
+      convert_b
+      dup
+      setlocal            4
+
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o5784")
+   method
+    name "o5784"
+    refid "o8168/instance/o5784"
+    param null
+    param QName(PackageNamespace(""), "o11359")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "o18152"
+    paramname "fixture"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      iftrue              L6
+
+      pushtrue
+      returnvalue
+
+L6:
+      findpropstrict      QName(PackageNamespace(""), "o13540")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o11359")
+      astypelate
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "o13540"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o8168/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlocal0
+    construct           0
+    findproperty        QName(Namespace("http://www.box2d.org/ns/b2internal"), "o5130")
+    swap
+    setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o5130")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(Namespace("http://www.box2d.org/ns/b2internal"), "o5130") type QName(PackageNamespace(""), "o8168") end
+end ; class

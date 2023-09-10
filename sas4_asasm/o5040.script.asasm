@@ -1,0 +1,33 @@
+script
+ sinit
+  refid "o5040/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "Event")
+    dup
+    pushscope
+
+    newclass            "o5040"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o5040")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o5040")
+  #include "o5040.class.asasm"
+ end ; trait
+end ; script

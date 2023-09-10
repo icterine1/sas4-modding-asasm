@@ -1,0 +1,96 @@
+class
+ refid "o8860"
+ instance QName(PackageNamespace(""), "o8860")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o8860"
+   refid "o8860/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "o17517")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Integer(0)
+   paramname "o1024"
+   paramname "o32"
+   paramname "o815"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlex              QName(PackageNamespace(""), "o291")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     constructsuper      1
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "o1024")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o32")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "o815")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o1024") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o32") type QName(PackageNamespace(""), "o17517") end
+  trait slot QName(PackageNamespace(""), "o815") type QName(PackageNamespace(""), "int") end
+  trait method QName(PackageNamespace(""), "o18407")
+   method
+    name "o18407"
+    refid "o8860/instance/o18407"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o815")
+      pushbyte            0
+      greaterthan
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o8860/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o291")
+    swap
+    setproperty         QName(PackageNamespace(""), "o291")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o291") type QName(PackageNamespace(""), "int") end
+end ; class

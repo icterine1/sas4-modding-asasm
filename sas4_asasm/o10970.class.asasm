@@ -1,0 +1,205 @@
+class
+ refid "o10970"
+ instance QName(PackageNamespace(""), "o10970")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o10970/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o10970/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o5723") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o20285") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o4256") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o2671") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o7095") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "o10015") type QName(PackageNamespace(""), "int") value Integer(21) end
+ trait const QName(PackageNamespace(""), "o9960") type QName(PackageNamespace(""), "int") value Integer(19) end
+ trait const QName(PackageNamespace(""), "o19039") type QName(PackageNamespace(""), "int") value Integer(20) end
+ trait const QName(PackageNamespace(""), "o1766") type QName(PackageNamespace(""), "int") value Integer(22) end
+ trait const QName(PackageNamespace(""), "o18794") type QName(PackageNamespace(""), "int") value Integer(23) end
+ trait const QName(PackageNamespace(""), "o14481") type QName(PackageNamespace(""), "int") value Integer(24) end
+ trait const QName(PackageNamespace(""), "o1036") type QName(PackageNamespace(""), "int") value Integer(25) end
+ trait const QName(PackageNamespace(""), "o22") type QName(PackageNamespace(""), "int") value Integer(26) end
+ trait const QName(PackageNamespace(""), "o8819") type QName(PackageNamespace(""), "int") value Integer(28) end
+ trait const QName(PackageNamespace(""), "o7340") type QName(PackageNamespace(""), "int") value Integer(29) end
+ trait const QName(PackageNamespace(""), "o16067") type QName(PackageNamespace(""), "int") value Integer(30) end
+ trait const QName(PackageNamespace(""), "o8822") type QName(PackageNamespace(""), "int") value Integer(31) end
+ trait const QName(PackageNamespace(""), "o3415") type QName(PackageNamespace(""), "int") value Integer(32) end
+ trait method QName(PackageNamespace(""), "o16458")
+  method
+   name "o16458"
+   refid "o10970/class/o16458"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "screen"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     setlocal2
+
+     jump                L47
+
+L5:
+     label
+     pushstring          "Select character"
+     returnvalue
+
+L8:
+     label
+     pushstring          "Character Info"
+     returnvalue
+
+L11:
+     label
+     pushstring          "Equipment"
+     returnvalue
+
+L14:
+     label
+     pushstring          "Skills"
+     returnvalue
+
+L17:
+     label
+     pushstring          "Select Game Mode Screen"
+     returnvalue
+
+L20:
+     label
+     pushstring          "Select New Character Class"
+     returnvalue
+
+L23:
+     label
+     pushstring          "Single Player Map Select"
+     returnvalue
+
+L26:
+     label
+     pushstring          "Lobby"
+     returnvalue
+
+L29:
+     label
+     pushstring          "Blank"
+     returnvalue
+
+L32:
+     label
+     pushstring          "Select Game Mode MP"
+     returnvalue
+
+L35:
+     label
+     pushstring          "Select Game Mode Private Match"
+     returnvalue
+
+L38:
+     label
+     pushstring          "Purchase Powerups Single Player"
+     returnvalue
+
+L41:
+     label
+     pushstring          "Purchase Powerups Multiplayer Screen"
+     returnvalue
+
+L44:
+     label
+     pushstring          "???"
+     returnvalue
+
+L47:
+     pushbyte            1
+     getlocal2
+     ifstricteq          L5
+
+     pushbyte            2
+     getlocal2
+     ifstricteq          L8
+
+     pushbyte            3
+     getlocal2
+     ifstricteq          L11
+
+     pushbyte            4
+     getlocal2
+     ifstricteq          L14
+
+     pushbyte            5
+     getlocal2
+     ifstricteq          L17
+
+     pushbyte            21
+     getlocal2
+     ifstricteq          L20
+
+     pushbyte            19
+     getlocal2
+     ifstricteq          L23
+
+     pushbyte            20
+     getlocal2
+     ifstricteq          L26
+
+     pushbyte            22
+     getlocal2
+     ifstricteq          L29
+
+     pushbyte            23
+     getlocal2
+     ifstricteq          L32
+
+     pushbyte            24
+     getlocal2
+     ifstricteq          L35
+
+     pushbyte            25
+     getlocal2
+     ifstricteq          L38
+
+     pushbyte            26
+     getlocal2
+     ifstricteq          L41
+
+     jump                L44
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

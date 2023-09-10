@@ -1,0 +1,195 @@
+method
+ name "o4868.as$2:anonymous"
+ refid "o4868/instance/o9495/inline_method"
+ param QName(PackageNamespace(""), "Array")
+ param QName(PackageNamespace(""), "Array")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 5
+  localcount 14
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal            6
+
+   pushbyte            0
+   setlocal3
+
+   pushfalse
+   setlocal            4
+
+   newarray            0
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal            7
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifngt               L44
+
+   getlocal2
+   getlex              QName(PrivateNamespace("o4868"), "o2448")
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal2
+
+   getlocal2
+   pushbyte            0
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   getlex              QName(PackageInternalNs(""), "o6631")
+   callproperty        QName(PackageNamespace(""), "min"), 2
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 2
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal            7
+
+   pushbyte            0
+   setlocal            9
+
+   getlocal            7
+   setlocal            8
+
+   jump                L42
+
+L33:
+   label
+   getlocal            8
+   getlocal            9
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o19551")
+   dup
+   setlocal            6
+
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "o8367")
+
+L42:
+   hasnext2            8, 9
+   iftrue              L33
+
+L44:
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   greaterthan
+   dup
+   iffalse             L55
+
+   pop
+   getlocal            7
+   getproperty         QName(PackageNamespace(""), "length")
+   getlex              QName(PackageInternalNs(""), "o6631")
+   lessthan
+L55:
+   iffalse             L117
+
+   getlex              QName(PackageInternalNs(""), "o6631")
+   getlocal            7
+   getproperty         QName(PackageNamespace(""), "length")
+   subtract
+   convert_i
+   setlocal3
+
+   getlocal1
+   getlex              QName(PrivateNamespace("o4868"), "o2448")
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal1
+
+   pushbyte            0
+   setlocal            13
+
+   getlocal1
+   setlocal            12
+
+   jump                L115
+
+L72:
+   label
+   getlocal            12
+   getlocal            13
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o19551")
+   setlocal            5
+
+   pushfalse
+   setlocal            4
+
+   pushbyte            0
+   setlocal            11
+
+   getlocal2
+   setlocal            10
+
+   jump                L99
+
+L85:
+   label
+   getlocal            10
+   getlocal            11
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o19551")
+   setlocal            6
+
+   getlocal            5
+   getproperty         QName(PackageNamespace(""), "o11630")
+   getlocal            6
+   getproperty         QName(PackageNamespace(""), "o11630")
+   ifne                L99
+
+   pushtrue
+   setlocal            4
+
+   jump                L101
+
+L99:
+   hasnext2            10, 11
+   iftrue              L85
+
+L101:
+   getlocal            4
+   pushfalse
+   equals
+   dup
+   iffalse             L111
+
+   pop
+   getlocal            7
+   getproperty         QName(PackageNamespace(""), "length")
+   getlex              QName(PackageInternalNs(""), "o6631")
+   lessthan
+L111:
+   iffalse             L115
+
+   getlocal            7
+   getlocal            5
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L115:
+   hasnext2            12, 13
+   iftrue              L72
+
+L117:
+   getlocal            7
+   getproperty         QName(PackageNamespace(""), "length")
+   getlex              QName(PackageInternalNs(""), "o6631")
+   ifngt               L125
+
+   findpropstrict      QName(PackageNamespace(""), "Error")
+   pushstring          "Too many scores?"
+   constructprop       QName(PackageNamespace(""), "Error"), 1
+   throw
+
+L125:
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlocal            7
+   getlex              QName(PrivateNamespace("o4868"), "sort")
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

@@ -1,0 +1,772 @@
+class
+ refid "o1065"
+ instance QName(PackageNamespace(""), "o1065")
+  extends QName(PackageNamespace(""), "o10590")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o1065")
+  iinit
+   name "o1065"
+   refid "o1065/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o1065"), "o20302") type QName(PackageNamespace(""), "o444") end
+  trait slot QName(PrivateNamespace("o1065"), "o12832") type QName(PackageNamespace(""), "o444") end
+  trait slot QName(PrivateNamespace("o1065"), "o16984") type QName(PackageNamespace(""), "o16124") end
+  trait method QName(PackageNamespace(""), "o14655") flag OVERRIDE
+   method
+    name "o14655"
+    refid "o1065/instance/o14655"
+    param QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGatewayUser")
+    param QName(PackageNamespace(""), "o14200")
+    returns QName(PackageNamespace(""), "o16124")
+    flag HAS_PARAM_NAMES
+    paramname "o14050"
+    paramname "o19419"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: initForUser"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlex              QName(PrivateNamespace("o1065"), "o16984")
+      pushnull
+      ifeq                L12
+
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Promise should be null"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+L12:
+      findpropstrict      QName(PackageNamespace(""), "o16124")
+      constructprop       QName(PackageNamespace(""), "o16124"), 0
+      findproperty        QName(PrivateNamespace("o1065"), "o16984")
+      swap
+      setproperty         QName(PrivateNamespace("o1065"), "o16984")
+
+      getlocal1
+      findproperty        QName(ProtectedNamespace("o10590"), "o10047")
+      swap
+      setproperty         QName(ProtectedNamespace("o10590"), "o10047")
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "o444")
+      applytype           1
+      construct           0
+      findproperty        QName(ProtectedNamespace("o15621"), "o9805")
+      swap
+      setproperty         QName(ProtectedNamespace("o15621"), "o9805")
+
+      findpropstrict      QName(PackageNamespace(""), "o13489")
+      callpropvoid        QName(PackageNamespace(""), "o13489"), 0
+
+      getlex              QName(ProtectedNamespace("o10590"), "o10047")
+      pushnull
+      ifeq                L36
+
+      findpropstrict      QName(ProtectedNamespace("o1065"), "o4470")
+      callpropvoid        QName(ProtectedNamespace("o1065"), "o4470"), 0
+
+      jump                L39
+
+L36:
+      getlex              QName(PrivateNamespace("o1065"), "o16984")
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "data")
+
+L39:
+      getlex              QName(PrivateNamespace("o1065"), "o16984")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o1065"), "o4470")
+   method
+    name "o4470"
+    refid "o1065/instance/o1065:o4470"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: loadKongStartupInvetoryItems"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "kong")
+      getlex              QName(PrivateNamespace("o1065"), "o5397")
+      callpropvoid        QName(PackageNamespace(""), "requestUserItemList"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o1065"), "o5397")
+   method
+    name "o5397"
+    refid "o1065/instance/o1065/instance/o5397"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o19613"
+    body
+     maxstack 4
+     localcount 9
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal2
+
+      pushbyte            0
+      setlocal            6
+
+      pushnull
+      setlocal            7
+
+      pushnull
+      setlocal            4
+
+      pushbyte            0
+      setlocal3
+
+      pushnull
+      setlocal            5
+
+      pushnull
+      setlocal            8
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: loadKongStartupInvetoryItemsComplete start"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlocal1
+      pushstring          "success"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushtrue
+      ifne                L91
+
+      getlocal1
+      pushstring          "data"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L79
+
+L32:
+      label
+      getlocal2
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "Object")
+      dup
+      setlocal            7
+
+      pushstring          "id"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            4
+
+      getlocal            7
+      pushstring          "identifier"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_i
+      setlocal3
+
+      getlocal            7
+      pushstring          "data"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            5
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "item: kongProductID:"
+      getlocal3
+      add
+      pushstring          ", uid:"
+      add
+      getlocal            4
+      add
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      findpropstrict      QName(PackageNamespace(""), "o444")
+      constructprop       QName(PackageNamespace(""), "o444"), 0
+      coerce              QName(PackageNamespace(""), "o444")
+      dup
+      setlocal            8
+
+      getlocal            4
+      setproperty         QName(PackageNamespace(""), "o5689")
+
+      getlocal            8
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "o6671"), 1
+
+      getlocal            8
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "o20414"), 1
+
+      getlex              QName(ProtectedNamespace("o15621"), "o9805")
+      getlocal            8
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L79:
+      getlocal            6
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L32
+
+      getlex              QName(PrivateNamespace("o1065"), "o16984")
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "data")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o1065"), "o16984")
+      swap
+      setproperty         QName(PrivateNamespace("o1065"), "o16984")
+
+      jump                L95
+
+L91:
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Error loading inventory. Please refresh the page"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+L95:
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "profileData")
+      getproperty         QName(PackageNamespace(""), "o15894")
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "o3501")
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: loadKongStartupInvetoryItemsComplete end"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o1065"), "o18167") flag OVERRIDE
+   method
+    name "o18167"
+    refid "o1065/instance/o1065:o18167"
+    param QName(PackageNamespace(""), "o444")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o14660"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: onStartServerPurchase"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlocal1
+      findproperty        QName(PrivateNamespace("o1065"), "o20302")
+      swap
+      setproperty         QName(PrivateNamespace("o1065"), "o20302")
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "kong")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o5693")
+      getlex              QName(PrivateNamespace("o1065"), "o11038")
+      callpropvoid        QName(PackageNamespace(""), "purchaseItem"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o1065"), "o11038")
+   method
+    name "o11038"
+    refid "o1065/instance/o1065/instance/o11038"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o19613"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushstring          "success"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_b
+      setlocal2
+
+      getlocal2
+      iffalse             L13
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "onStartServerPurchaseComplete success"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      jump                L16
+
+L13:
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "onStartServerPurchaseComplete failed or success"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+L16:
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "kong")
+      getlex              QName(PrivateNamespace("o1065"), "o4528")
+      callpropvoid        QName(PackageNamespace(""), "requestUserItemList"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o1065"), "o4528")
+   method
+    name "o4528"
+    refid "o1065/instance/o1065/instance/o4528"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o19613"
+    body
+     maxstack 7
+     localcount 12
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal3
+
+      pushbyte            0
+      setlocal            7
+
+      pushnull
+      setlocal            8
+
+      pushnull
+      setlocal            5
+
+      pushbyte            0
+      setlocal            4
+
+      pushnull
+      setlocal            6
+
+      pushfalse
+      setlocal2
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: requestUserItemListComplete"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: Item List..."
+      call                1
+      pop
+      getlocal1
+      pushstring          "success"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushtrue
+      ifne                L150
+
+      getlocal1
+      pushstring          "data"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal3
+
+      pushbyte            0
+      setlocal            7
+
+      jump                L124
+
+L37:
+      label
+      getlocal3
+      getlocal            7
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "Object")
+      dup
+      setlocal            8
+
+      pushstring          "id"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            5
+
+      getlocal            8
+      pushstring          "identifier"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_i
+      setlocal            4
+
+      getlocal            8
+      pushstring          "data"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            6
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: item: kongProductID:"
+      getlocal            4
+      add
+      pushstring          ", uid:"
+      add
+      getlocal            5
+      add
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlocal            4
+      getlex              QName(PrivateNamespace("o1065"), "o20302")
+      getproperty         QName(PackageNamespace(""), "o5693")
+      equals
+      dup
+      iffalse             L79
+
+      pop
+      getlex              QName(PackageNamespace(""), "o19419")
+      getlocal            5
+      callproperty        QName(PackageNamespace(""), "o12911"), 1
+      pushfalse
+      equals
+L79:
+      iffalse             L123
+
+      pushfalse
+      setlocal2
+
+      pushbyte            0
+      setlocal            11
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("o15621"), "o9805")
+      setlocal            10
+
+      jump                L101
+
+L88:
+      label
+      getlocal            10
+      getlocal            11
+      nextvalue
+      coerce              QName(PackageNamespace(""), "o444")
+      dup
+      setlocal            9
+
+      getproperty         QName(PackageNamespace(""), "o5689")
+      getlocal            5
+      ifne                L101
+
+      pushtrue
+      setlocal2
+
+      jump                L103
+
+L101:
+      hasnext2            10, 11
+      iftrue              L88
+
+L103:
+      getlocal2
+      pushfalse
+      ifne                L123
+
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: Found Item that matched purchase: "
+      getlocal            4
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      add
+      pushstring          ": "
+      add
+      getlocal            5
+      add
+      call                1
+      pop
+      findpropstrict      QName(ProtectedNamespace("o15621"), "o11865")
+      getlocal            4
+      getlocal            5
+      callpropvoid        QName(ProtectedNamespace("o15621"), "o11865"), 2
+
+      returnvoid
+
+L123:
+      inclocal_i          7
+L124:
+      getlocal            7
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L37
+
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: Item not found that matched purchase: "
+      getlocal            4
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      add
+      pushstring          ": "
+      add
+      getlocal            5
+      add
+      call                1
+      pop
+      findpropstrict      QName(PackageNamespace(""), "dispatchData")
+      findpropstrict      QName(PackageNamespace(""), "o19869")
+      getlex              QName(PackageNamespace(""), "o19869")
+      getproperty         QName(PackageNamespace(""), "o17670")
+      getlex              QName(PrivateNamespace("o1065"), "o20302")
+      pushstring          "PURCHASE_CANCELLED"
+      pushstring          "Transaction Cancelled"
+      constructprop       QName(PackageNamespace(""), "o19869"), 4
+      callpropvoid        QName(PackageNamespace(""), "dispatchData"), 1
+
+      jump                L164
+
+L150:
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: Request item list after purchase failed"
+      call                1
+      pop
+      findpropstrict      QName(PackageNamespace(""), "dispatchData")
+      findpropstrict      QName(PackageNamespace(""), "o19869")
+      getlex              QName(PackageNamespace(""), "o19869")
+      getproperty         QName(PackageNamespace(""), "o17670")
+      getlex              QName(PrivateNamespace("o1065"), "o20302")
+      pushstring          "Cancelled"
+      pushstring          "Unable to load inventory"
+      constructprop       QName(PackageNamespace(""), "o19869"), 4
+      callpropvoid        QName(PackageNamespace(""), "dispatchData"), 1
+
+L164:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o1065"), "o11850") flag OVERRIDE
+   method
+    name "o11850"
+    refid "o1065/instance/o1065:o11850"
+    param QName(PackageNamespace(""), "o444")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o14660"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: onServerCoinConsume"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("o1065"), "o12832")
+
+      getlex              QName(PackageNamespace(""), "parseInt")
+      getglobalscope
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o5689")
+      call                1
+      convert_d
+      setlocal2
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: onServerCoinConsume2: "
+      getlocal2
+      add
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "kong")
+      getlocal2
+      getlex              QName(PrivateNamespace("o1065"), "o7052")
+      callpropvoid        QName(PackageNamespace(""), "useItem"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o1065"), "o7052")
+   method
+    name "o7052"
+    refid "o1065/instance/o1065/instance/o7052"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o19613"
+    body
+     maxstack 9
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal2
+
+      pushnull
+      setlocal3
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "KP: useItemComplete"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      getlocal1
+      pushstring          "success"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      iffalse             L30
+
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: Request use item after purchase success"
+      pushstring          "Remaining uses"
+      getlocal1
+      pushstring          "remaining_uses"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushstring          "usage record id"
+      getlocal1
+      pushstring          "usage_record_id"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      call                5
+      pop
+      findpropstrict      QName(ProtectedNamespace("o15621"), "o15349")
+      getlex              QName(PrivateNamespace("o1065"), "o12832")
+      callpropvoid        QName(ProtectedNamespace("o15621"), "o15349"), 1
+
+      jump                L66
+
+L30:
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: Request use item after purchase failed"
+      pushstring          "Error:"
+      getlocal1
+      pushstring          "error"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal1
+      pushstring          "error_description"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      call                4
+      pop
+      getlocal1
+      pushstring          "error"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushnull
+      ifne                L49
+
+      pushstring          "Unknown error"
+      jump                L52
+
+L49:
+      getlocal1
+      pushstring          "error"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+L52:
+      coerce_s
+      setlocal2
+
+      getlocal1
+      pushstring          "error_description"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushnull
+      ifne                L61
+
+      pushstring          "Unknown description"
+      jump                L64
+
+L61:
+      getlocal1
+      pushstring          "error_description"
+      getproperty         MultinameL([PrivateNamespace("o1065"), ProtectedNamespace("o1065"), StaticProtectedNs("o1065"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1065"), Namespace("http://adobe.com/AS3/2006/builtin")])
+L64:
+      coerce_s
+      setlocal3
+
+L66:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o1065/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,96 @@
+method
+ name "o14801.as$1:anonymous"
+ refid "o14801/instance/o15785/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 5
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "data")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "data")
+
+   getlex              QName(PackageInternalNs(""), "data")
+   pushnull
+   ifne                L14
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o14478")
+   setproperty         QName(PackageNamespace(""), "data")
+
+   jump                L60
+
+L14:
+   getlex              QName(PackageInternalNs(""), "data")
+   pushstring          "rank"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             2
+
+   findpropstrict      QName(PackageNamespace(""), "o5192")
+   getlex              QName(PackageInternalNs(""), "o2162")
+   pushstring          "rank"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageInternalNs(""), "o2162")
+   pushstring          "total"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   constructprop       QName(PackageNamespace(""), "o5192"), 2
+   coerce              QName(PackageNamespace(""), "o5192")
+   getlocal2
+   swap
+   setslot             3
+
+   getlex              QName(PackageInternalNs(""), "o2562")
+   getproperty         QName(PackageNamespace(""), "position")
+   pushbyte            1
+   add
+   findproperty        QName(PackageNamespace(""), "o15427")
+   swap
+   setproperty         QName(PackageNamespace(""), "o15427")
+
+   getlex              QName(PackageInternalNs(""), "o2562")
+   getproperty         QName(PackageNamespace(""), "o14170")
+   findproperty        QName(PackageNamespace(""), "o640")
+   swap
+   setproperty         QName(PackageNamespace(""), "o640")
+
+   getlex              QName(PackageInternalNs(""), "o14478")
+   getproperty         QName(PackageNamespace(""), "o12422")
+   iffalse             L57
+
+   getlex              QName(PackageNamespace(""), "o8613")
+   getlex              QName(PackageInternalNs(""), "o11630")
+   getlex              QName(PackageNamespace(""), "o7376")
+   getlex              QName(PackageInternalNs(""), "o11630")
+   newarray            1
+   callproperty        QName(PackageNamespace(""), "o5710"), 3
+   newfunction         "o14801/instance/o15785/inline_method#2"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+   jump                L60
+
+L57:
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o14478")
+   setproperty         QName(PackageNamespace(""), "data")
+
+L60:
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "data") slotid 1 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o2162") slotid 2 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o2562") slotid 3 type QName(PackageNamespace(""), "o5192") end
+ end ; body
+end ; method

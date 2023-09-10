@@ -1,0 +1,70 @@
+class
+ refid "o708"
+ instance QName(PackageNamespace(""), "o708")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o708"
+   refid "o708/instance/init"
+   param QName(PackageNamespace(""), "uint")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "body"
+   paramname "x"
+   paramname "y"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "body")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "x")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "y")
+
+     getlocal0
+     getlex              QName(PackageNamespace(""), "TYPE")
+     constructsuper      1
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "body") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "x") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "y") type QName(PackageNamespace(""), "Number") value Integer(0) end
+ end ; instance
+ cinit
+  refid "o708/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "BodyPosition"
+    findproperty        QName(PackageNamespace(""), "TYPE")
+    swap
+    initproperty        QName(PackageNamespace(""), "TYPE")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "TYPE") type QName(PackageNamespace(""), "String") end
+end ; class

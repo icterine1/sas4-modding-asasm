@@ -1,0 +1,234 @@
+class
+ refid "o7897"
+ instance QName(PackageNamespace(""), "o7897")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o7897"
+   refid "o7897/instance/init#0"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o12853") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o5252") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o17615") type QName(PackageNamespace(""), "String") value Null() end
+  trait method QName(PackageNamespace(""), "init")
+   method
+    name "init"
+    refid "o7897/instance/init#1"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o15601"
+    body
+     maxstack 5
+     localcount 14
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal            9
+
+      pushnull
+      setlocal            5
+
+      pushnull
+      setlocal            4
+
+      pushnull
+      setlocal            6
+
+      pushnull
+      setlocal2
+
+      pushbyte            0
+      setlocal            8
+
+      pushstring          ""
+      findproperty        QName(PackageNamespace(""), "o17615")
+      swap
+      setproperty         QName(PackageNamespace(""), "o17615")
+
+      pushbyte            0
+      setlocal            13
+
+      getlocal1
+      setlocal            12
+
+      jump                L133
+
+L23:
+      label
+      getlocal            12
+      getlocal            13
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal3
+
+      getlocal3
+      getlex              QName(PackageNamespace(""), "o9115")
+      getproperty         QName(PackageNamespace(""), "date")
+      getproperty         MultinameL([PrivateNamespace("o7897"), ProtectedNamespace("o7897"), StaticProtectedNs("o7897"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7897"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            9
+
+      getlocal3
+      getlex              QName(PackageNamespace(""), "o9115")
+      getproperty         QName(PackageNamespace(""), "o17977")
+      getproperty         MultinameL([PrivateNamespace("o7897"), ProtectedNamespace("o7897"), StaticProtectedNs("o7897"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7897"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            5
+
+      getlocal3
+      getlex              QName(PackageNamespace(""), "o9115")
+      getproperty         QName(PackageNamespace(""), "o8398")
+      getproperty         MultinameL([PrivateNamespace("o7897"), ProtectedNamespace("o7897"), StaticProtectedNs("o7897"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7897"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal            4
+
+      getlocal            8
+      pushbyte            0
+      ifne                L58
+
+      getlocal            9
+      findproperty        QName(PackageNamespace(""), "o12853")
+      swap
+      setproperty         QName(PackageNamespace(""), "o12853")
+
+      getlocal            5
+      findproperty        QName(PackageNamespace(""), "o5252")
+      swap
+      setproperty         QName(PackageNamespace(""), "o5252")
+
+L58:
+      getlocal            4
+      pushstring          "[NL]"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal            6
+
+      pushstring          ""
+      coerce_s
+      setlocal            4
+
+      getlex              QName(PackageNamespace(""), "String")
+      pushshort           149
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "fromCharCode"), 1
+      coerce_s
+      setlocal2
+
+      pushstring          "*"
+      coerce_s
+      setlocal2
+
+      pushbyte            0
+      setlocal            11
+
+      getlocal            6
+      setlocal            10
+
+      jump                L112
+
+L79:
+      label
+      getlocal            10
+      getlocal            11
+      nextvalue
+      coerce_s
+      dup
+      setlocal            7
+
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifne                L99
+
+      getlocal            4
+      pushstring          "   "
+      getlocal            7
+      add
+      pushstring          "\n"
+      add
+      add
+      coerce_s
+      setlocal            4
+
+      jump                L112
+
+L99:
+      getlocal            4
+      pushstring          "   "
+      getlocal2
+      add
+      pushstring          " "
+      add
+      getlocal            7
+      add
+      pushstring          "\n"
+      add
+      add
+      coerce_s
+      setlocal            4
+
+L112:
+      hasnext2            10, 11
+      iftrue              L79
+
+      findpropstrict      QName(PackageNamespace(""), "o17615")
+      dup
+      getproperty         QName(PackageNamespace(""), "o17615")
+      pushstring          "<FONT COLOR='#FFFFFF'>"
+      getlocal            9
+      add
+      pushstring          "</FONT>"
+      add
+      pushstring          "\n"
+      add
+      pushstring          "<FONT SIZE='11'>"
+      add
+      getlocal            4
+      add
+      pushstring          "</FONT>\n\n"
+      add
+      add
+      setproperty         QName(PackageNamespace(""), "o17615")
+
+      inclocal_i          8
+L133:
+      hasnext2            12, 13
+      iftrue              L23
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o7897/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

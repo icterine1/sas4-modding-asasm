@@ -1,0 +1,85 @@
+script
+ sinit
+  refid "o1009/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "DisplayObject")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "InteractiveObject")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "Sprite")
+    dup
+    pushscope
+
+    newclass            "o1009"
+    popscope
+    popscope
+    popscope
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o1009")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o8023")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o7848")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o17517")
+    dup
+    pushscope
+
+    newclass            "o1009/o18944"
+    popscope
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o1009"), "o18944")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "o1009/o18933"
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o1009"), "o18933")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o1009")
+  #include "o1009.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o1009"), "o18944")
+  #include "o1009/o18944.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o1009"), "o18933")
+  #include "o1009/o18933.class.asasm"
+ end ; trait
+end ; script

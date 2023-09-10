@@ -1,0 +1,37 @@
+method
+ name "o6708.as$1:anonymous"
+ refid "o6708/instance/o19191/inline_method#3"
+ param QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+ param QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+ returns QName(PackageNamespace(""), "Number")
+ body
+  maxstack 2
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "size")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "size")
+   ifngt               L7
+
+   pushbyte            -1
+   returnvalue
+
+L7:
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "size")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "size")
+   ifnlt               L14
+
+   pushbyte            1
+   returnvalue
+
+L14:
+   pushbyte            0
+   returnvalue
+  end ; code
+ end ; body
+end ; method

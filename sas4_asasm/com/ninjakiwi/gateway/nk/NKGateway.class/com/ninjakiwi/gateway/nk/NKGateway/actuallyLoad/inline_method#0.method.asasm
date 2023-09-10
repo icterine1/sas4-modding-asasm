@@ -1,0 +1,34 @@
+method
+ name ""
+ refid "com.ninjakiwi.gateway.nk:NKGateway/class/com.ninjakiwi.gateway.nk:NKGateway/actuallyLoad/inline_method#0"
+ param QName(PackageNamespace("flash.display"), "DisplayObject")
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "barSwf"
+ body
+  maxstack 3
+  localcount 2
+  initscopedepth 5
+  maxscopedepth 6
+  code
+   getlocal0
+   pushscope
+
+   getlex              QName(PackageNamespace(""), "container")
+   pushstring          "none"
+   callpropvoid        QName(PackageInternalNs("com.ninjakiwi.gateway.nk"), "showStatus"), 1
+
+   getlex              QName(PackageNamespace(""), "container")
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+   getlex              QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGateway"), "loadResult")
+   findpropstrict      QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGateway")
+   getlocal1
+   constructprop       QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGateway"), 1
+   callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

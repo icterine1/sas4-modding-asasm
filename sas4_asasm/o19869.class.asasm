@@ -1,0 +1,119 @@
+class
+ refid "o19869"
+ instance QName(PackageNamespace(""), "o19869")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o19869"
+   refid "o19869/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "o444")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   optional Null()
+   paramname "type"
+   paramname "o19898"
+   paramname "error"
+   paramname "o1216"
+   body
+    maxstack 3
+    localcount 5
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushstring          "ERROR NOT SET"
+     findproperty        QName(PackageNamespace(""), "error")
+     swap
+     setproperty         QName(PackageNamespace(""), "error")
+
+     pushstring          "MESSAGE NOT SET"
+     findproperty        QName(PackageNamespace(""), "o1216")
+     swap
+     setproperty         QName(PackageNamespace(""), "o1216")
+
+     getlocal0
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     constructsuper      1
+
+     getlocal0
+     getlocal3
+     pushnull
+     ifne                L20
+
+     pushstring          "Unknown error"
+     jump                L21
+
+L20:
+     getlocal3
+L21:
+     setproperty         QName(PackageNamespace(""), "error")
+
+     getlocal0
+     getlocal            4
+     pushnull
+     ifne                L28
+
+     pushstring          "Unknown error"
+     jump                L29
+
+L28:
+     getlocal            4
+L29:
+     setproperty         QName(PackageNamespace(""), "o1216")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o19898")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o19898") type QName(PackageNamespace(""), "o444") end
+  trait slot QName(PackageNamespace(""), "error") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o1216") type QName(PackageNamespace(""), "String") end
+ end ; instance
+ cinit
+  refid "o19869/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o6389")
+    swap
+    setproperty         QName(PackageNamespace(""), "o6389")
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o17670")
+    swap
+    setproperty         QName(PackageNamespace(""), "o17670")
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o391")
+    swap
+    setproperty         QName(PackageNamespace(""), "o391")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o6389") type QName(PackageNamespace(""), "int") end
+ trait slot QName(PackageNamespace(""), "o17670") type QName(PackageNamespace(""), "int") end
+ trait slot QName(PackageNamespace(""), "o391") type QName(PackageNamespace(""), "int") end
+end ; class

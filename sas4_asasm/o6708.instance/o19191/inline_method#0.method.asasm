@@ -1,0 +1,104 @@
+method
+ name "o18868"
+ refid "o6708/instance/o19191/inline_method#0"
+ param QName(PackageNamespace(""), "String")
+ returns QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+ body
+  maxstack 4
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal3
+
+   getlocal1
+   pushstring          "::"
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+   pushstring          "."
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
+   pushstring          "/"
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+   pushstring          "."
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
+   coerce_s
+   setlocal1
+
+   getlex              QName(PackageInternalNs(""), "o9699")
+   getlocal1
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushnull
+   ifeq                L22
+
+   getlex              QName(PackageInternalNs(""), "o9699")
+   getlocal1
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   returnvalue
+
+L22:
+   getlocal1
+   pushstring          "."
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "o2626")
+   coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+   setlocal            4
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            1
+   ifngt               L52
+
+   getlocal2
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "concat"), 0
+   pushbyte            0
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            1
+   subtract
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+   pushstring          "."
+   callproperty        Multiname("join", [PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")]), 1
+   coerce_s
+   setlocal3
+
+   getlex              QName(PackageInternalNs(""), "o18868")
+   getglobalscope
+   getlocal3
+   call                1
+   coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+   setlocal            4
+
+L52:
+   getlocal            4
+   pushnull
+   ifne                L58
+
+   getlex              QName(PackageInternalNs(""), "o2626")
+   coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+   setlocal            4
+
+L58:
+   getlex              QName(PackageInternalNs(""), "o9699")
+   getlocal1
+   findpropstrict      QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+   getlocal1
+   constructprop       QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack"), 1
+   setproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+   getlocal            4
+   getproperty         QName(PackageNamespace(""), "o19726")
+   getlex              QName(PackageInternalNs(""), "o9699")
+   getlocal1
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlex              QName(PackageInternalNs(""), "o9699")
+   getlocal1
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   returnvalue
+  end ; code
+ end ; body
+end ; method

@@ -1,0 +1,177 @@
+class
+ refid "o7374"
+ instance QName(PackageNamespace(""), "o7374")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o7374"
+   refid "o7374/instance/init#0"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o9344") type QName(PackageNamespace(""), "o6596") end
+  trait slot QName(PackageNamespace(""), "o8919") type QName(PackageNamespace(""), "o6596") end
+  trait slot QName(PackageNamespace(""), "o5281") type QName(PackageNamespace(""), "o6596") end
+  trait slot QName(PackageNamespace(""), "o19789") type QName(PackageNamespace(""), "o6596") end
+  trait slot QName(PackageNamespace(""), "o3007") type QName(PackageNamespace(""), "o6596") end
+  trait slot QName(PackageNamespace(""), "o17861") type QName(PackageNamespace(""), "o6596") end
+  trait slot QName(PackageNamespace(""), "o2032") type QName(PackageNamespace(""), "o6596") end
+  trait method QName(PrivateNamespace("o7374"), "o6030")
+   method
+    name "o6030"
+    refid "o7374/instance/o7374/instance/init/o6030"
+    param QName(PackageNamespace(""), "o2693")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "o6596")
+    flag HAS_PARAM_NAMES
+    paramname "o19552"
+    paramname "o124"
+    body
+     maxstack 8
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushstring          "loot.rollDropRates."
+      getlocal2
+      add
+      pushstring          "."
+      add
+      coerce_s
+      setlocal3
+
+      findpropstrict      QName(PackageNamespace(""), "o6596")
+      getlocal1
+      getlocal3
+      pushstring          "dropClassId"
+      add
+      callproperty        QName(PackageNamespace(""), "o3554"), 1
+      getlocal1
+      getlocal3
+      pushstring          "cash"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      getlocal1
+      getlocal3
+      pushstring          "consumable"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      getlocal1
+      getlocal3
+      pushstring          "strongbox"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      constructprop       QName(PackageNamespace(""), "o6596"), 4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init")
+   method
+    name "init"
+    refid "o7374/instance/init#1"
+    param QName(PackageNamespace(""), "o2693")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o19552"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "regular"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o9344")
+      swap
+      setproperty         QName(PackageNamespace(""), "o9344")
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "subBoss"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o8919")
+      swap
+      setproperty         QName(PackageNamespace(""), "o8919")
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "boss"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o5281")
+      swap
+      setproperty         QName(PackageNamespace(""), "o5281")
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "area"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o19789")
+      swap
+      setproperty         QName(PackageNamespace(""), "o19789")
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "weaponsCache"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o3007")
+      swap
+      setproperty         QName(PackageNamespace(""), "o3007")
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "cash"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o17861")
+      swap
+      setproperty         QName(PackageNamespace(""), "o17861")
+
+      findpropstrict      QName(PrivateNamespace("o7374"), "o6030")
+      getlocal1
+      pushstring          "regularHighRollerPowerup"
+      callproperty        QName(PrivateNamespace("o7374"), "o6030"), 2
+      findproperty        QName(PackageNamespace(""), "o2032")
+      swap
+      setproperty         QName(PackageNamespace(""), "o2032")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o7374/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

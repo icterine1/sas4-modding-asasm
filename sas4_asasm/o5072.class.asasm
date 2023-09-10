@@ -1,0 +1,349 @@
+class
+ refid "o5072"
+ instance QName(PackageNamespace(""), "o5072")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o5072"
+   refid "o5072/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o11913"
+   paramname "o19121"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     pushnull
+     ifeq                L13
+
+     findpropstrict      QName(PrivateNamespace("o5072"), "o20696")
+     getlocal1
+     callproperty        QName(PrivateNamespace("o5072"), "o20696"), 1
+     findproperty        QName(PackageNamespace(""), "start")
+     swap
+     setproperty         QName(PackageNamespace(""), "start")
+
+L13:
+     getlocal2
+     pushnull
+     ifeq                L22
+
+     findpropstrict      QName(PrivateNamespace("o5072"), "o20696")
+     getlocal2
+     callproperty        QName(PrivateNamespace("o5072"), "o20696"), 1
+     findproperty        QName(PackageNamespace(""), "end")
+     swap
+     setproperty         QName(PackageNamespace(""), "end")
+
+L22:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "start") type QName(PackageNamespace(""), "Date") value Null() end
+  trait slot QName(PackageNamespace(""), "end") type QName(PackageNamespace(""), "Date") value Null() end
+  trait method QName(PackageNamespace(""), "o18084")
+   method
+    name "o18084"
+    refid "o5072/instance/o18084"
+    returns QName(PackageNamespace(""), "o5072")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o5072")
+      pushnull
+      pushnull
+      constructprop       QName(PackageNamespace(""), "o5072"), 2
+      coerce              QName(PackageNamespace(""), "o5072")
+      setlocal1
+
+      getlocal1
+      findpropstrict      QName(PackageNamespace(""), "Date")
+      getlex              QName(PackageNamespace(""), "start")
+      getproperty         QName(PackageNamespace(""), "time")
+      constructprop       QName(PackageNamespace(""), "Date"), 1
+      setproperty         QName(PackageNamespace(""), "start")
+
+      getlocal1
+      findpropstrict      QName(PackageNamespace(""), "Date")
+      getlex              QName(PackageNamespace(""), "end")
+      getproperty         QName(PackageNamespace(""), "time")
+      pushbyte            60
+      subtract
+      constructprop       QName(PackageNamespace(""), "Date"), 1
+      setproperty         QName(PackageNamespace(""), "end")
+
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "o13779")
+   method
+    name "o13779"
+    refid "o5072/instance/o13779/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      pushnull
+      ifne                L9
+
+      pushfalse
+      returnvalue
+
+L9:
+      getlex              QName(PackageNamespace(""), "start")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      lessequals
+      dup
+      iffalse             L26
+
+      pop
+      getlex              QName(PackageNamespace(""), "end")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      greaterequals
+L26:
+      iffalse             L29
+
+      pushtrue
+      returnvalue
+
+L29:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4574")
+   method
+    name "o4574"
+    refid "o5072/instance/o4574"
+    param QName(PackageNamespace(""), "Date")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "date"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "time")
+      convert_d
+      setlocal2
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "start")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      greaterequals
+      dup
+      iffalse             L17
+
+      pop
+      getlocal2
+      getlex              QName(PackageNamespace(""), "end")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      lessequals
+L17:
+      iffalse             L20
+
+      pushtrue
+      returnvalue
+
+L20:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o7237")
+   method
+    name "o7237"
+    refid "o5072/instance/o7237"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      pushnull
+      ifne                L9
+
+      pushfalse
+      returnvalue
+
+L9:
+      getlex              QName(PackageNamespace(""), "end")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      greaterequals
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o5337")
+   method
+    name "o5337"
+    refid "o5072/instance/o5337"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      convert_i
+      setlocal3
+
+      getlex              QName(PackageNamespace(""), "end")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      convert_i
+      setlocal1
+
+      getlocal1
+      getlocal3
+      subtract
+      convert_i
+      setlocal2
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o5072"), "o20696")
+   method
+    name "o20696"
+    refid "o5072/instance/o5072/instance/o20696"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "Date")
+    flag HAS_PARAM_NAMES
+    paramname "o18642"
+    body
+     maxstack 9
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushstring          " "
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushstring          "-"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
+      pushstring          ":"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      pushstring          "-"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
+      pushstring          "-"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      findpropstrict      QName(PackageNamespace(""), "Date")
+      getlex              QName(PackageNamespace(""), "Date")
+      getlocal2
+      pushbyte            0
+      getproperty         MultinameL([PrivateNamespace("o5072"), ProtectedNamespace("o5072"), StaticProtectedNs("o5072"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5072"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_d
+      getlocal2
+      pushbyte            1
+      getproperty         MultinameL([PrivateNamespace("o5072"), ProtectedNamespace("o5072"), StaticProtectedNs("o5072"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5072"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushbyte            1
+      subtract
+      getlocal2
+      pushbyte            2
+      getproperty         MultinameL([PrivateNamespace("o5072"), ProtectedNamespace("o5072"), StaticProtectedNs("o5072"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5072"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal2
+      pushbyte            3
+      getproperty         MultinameL([PrivateNamespace("o5072"), ProtectedNamespace("o5072"), StaticProtectedNs("o5072"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5072"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal2
+      pushbyte            4
+      getproperty         MultinameL([PrivateNamespace("o5072"), ProtectedNamespace("o5072"), StaticProtectedNs("o5072"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5072"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal2
+      pushbyte            5
+      getproperty         MultinameL([PrivateNamespace("o5072"), ProtectedNamespace("o5072"), StaticProtectedNs("o5072"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5072"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      callproperty        QName(PackageNamespace(""), "UTC"), 6
+      constructprop       QName(PackageNamespace(""), "Date"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o5072/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

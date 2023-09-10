@@ -1,0 +1,75 @@
+method
+ name "com.codecatalyst.promise:Promise/reduce/com.codecatalyst.promise:process"
+ refid "com.codecatalyst.promise:Promise/class/reduce/inline_method#1"
+ param QName(PackageNamespace(""), "Array")
+ returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+ flag NEED_ACTIVATION
+ flag HAS_PARAM_NAMES
+ paramname "promisesOrValues"
+ body
+  maxstack 4
+  localcount 3
+  initscopedepth 5
+  maxscopedepth 6
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   getscopeobject      0
+   pushnull
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             2
+
+   getscopeobject      0
+   pushundefined
+   coerce_a
+   setslot             3
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+   getscopeobject      0
+   newfunction         "com.codecatalyst.promise:Promise/class/reduce/inline_method#2"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             2
+
+   getlex              QName(PackageNamespace(""), "rest")
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifngt               L38
+
+   getscopeobject      0
+   getlex              QName(PackageNamespace(""), "rest")
+   pushbyte            0
+   getproperty         MultinameL([PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+   coerce_a
+   setslot             3
+
+   findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "reduceArray")
+   getscopeobject      0
+   getslot             1
+   getscopeobject      0
+   getslot             2
+   getscopeobject      0
+   getslot             3
+   callproplex         QName(PackageInternalNs("com.codecatalyst.promise"), "reduceArray"), 3
+   returnvalue
+
+L38:
+   findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "reduceArray")
+   getscopeobject      0
+   getslot             1
+   getscopeobject      0
+   getslot             2
+   callproplex         QName(PackageInternalNs("com.codecatalyst.promise"), "reduceArray"), 2
+   returnvalue
+  end ; code
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "promisesOrValues") slotid 1 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "reduceFnWrapper") slotid 2 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "initialValue") slotid 3 end
+ end ; body
+end ; method

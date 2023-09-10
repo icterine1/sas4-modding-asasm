@@ -1,0 +1,42 @@
+script
+ sinit
+  name ""
+  refid "com.ninjakiwi.gateway.net:RemoteApiLoader/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("RemoteApiLoader", [PackageNamespace("com.ninjakiwi.gateway.net")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.ninjakiwi.gateway.net:RemoteApiLoader"
+    popscope
+    initproperty        QName(PackageNamespace("com.ninjakiwi.gateway.net"), "RemoteApiLoader")
+
+    findpropstrict      Multiname("RemoteApiLoaderConfig", [PrivateNamespace("RemoteApiLoader.as$24")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.ninjakiwi.gateway.net:RemoteApiLoader/RemoteApiLoaderConfig"
+    popscope
+    initproperty        QName(PrivateNamespace("RemoteApiLoader.as$24"), "RemoteApiLoaderConfig")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("com.ninjakiwi.gateway.net"), "RemoteApiLoader")
+  #include "RemoteApiLoader.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("RemoteApiLoader.as$24"), "RemoteApiLoaderConfig")
+  #include "RemoteApiLoader/RemoteApiLoaderConfig.class.asasm"
+ end ; trait
+end ; script

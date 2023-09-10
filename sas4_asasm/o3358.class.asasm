@@ -1,0 +1,78 @@
+class
+ refid "o3358"
+ instance QName(PackageNamespace(""), "o3358")
+  extends QName(PackageNamespace(""), "o8023")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o3358")
+  iinit
+   name "o3358"
+   refid "o3358/instance/init"
+   param QName(PackageNamespace("flash.display"), "DisplayObject")
+   param QName(PackageNamespace(""), "o1885")
+   flag HAS_PARAM_NAMES
+   paramname "stage"
+   paramname "o18929"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o18509")
+     constructprop       QName(PackageNamespace(""), "o18509"), 0
+     findproperty        QName(PackageNamespace(""), "o10720")
+     swap
+     setproperty         QName(PackageNamespace(""), "o10720")
+
+     findpropstrict      QName(PackageNamespace(""), "o18509")
+     pushbyte            1
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o18509"), 2
+     findproperty        QName(PackageNamespace(""), "o2179")
+     swap
+     setproperty         QName(PackageNamespace(""), "o2179")
+
+     findpropstrict      QName(PackageNamespace(""), "o18509")
+     constructprop       QName(PackageNamespace(""), "o18509"), 0
+     findproperty        QName(PackageNamespace(""), "o1523")
+     swap
+     setproperty         QName(PackageNamespace(""), "o1523")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "stage")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o18929")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o10720") type QName(PackageNamespace(""), "o18509") end
+  trait slot QName(PackageNamespace(""), "o2179") type QName(PackageNamespace(""), "o18509") end
+  trait slot QName(PackageNamespace(""), "o1523") type QName(PackageNamespace(""), "o18509") end
+  trait slot QName(PackageNamespace(""), "stage") type QName(PackageNamespace("flash.display"), "DisplayObject") value Null() end
+  trait slot QName(PackageNamespace(""), "o18929") type QName(PackageNamespace(""), "o1885") value Null() end
+ end ; instance
+ cinit
+  refid "o3358/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

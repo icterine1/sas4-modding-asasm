@@ -1,0 +1,30 @@
+script
+ sinit
+  name ""
+  refid "com.ninjakiwi.gateway.save:UserData/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("UserData", [PackageNamespace("com.ninjakiwi.gateway.save")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.ninjakiwi.gateway.save:UserData"
+    popscope
+    initproperty        QName(PackageNamespace("com.ninjakiwi.gateway.save"), "UserData")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("com.ninjakiwi.gateway.save"), "UserData")
+  #include "UserData.class.asasm"
+ end ; trait
+end ; script

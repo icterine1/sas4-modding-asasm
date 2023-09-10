@@ -1,0 +1,56 @@
+method
+ name "o14754.as$7:anonymous"
+ refid "o14754/o18283/instance/init/inline_method#1"
+ param QName(PackageNamespace(""), "o5279")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal2
+
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "url")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o14754"), "url")
+   ifne                L31
+
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "o20522")
+   findproperty        QName(PrivateNamespace("FilePrivateNS:o14754:o18283"), "o20522")
+   swap
+   setproperty         QName(PrivateNamespace("FilePrivateNS:o14754:o18283"), "o20522")
+
+   getlex              QName(PrivateNamespace("FilePrivateNS:o14754:o18283"), "o20522")
+   pushbyte            1
+   greaterequals
+   dup
+   iffalse             L21
+
+   pop
+   getlex              QName(PackageNamespace(""), "parent")
+   pushnull
+   equals
+   not
+L21:
+   iffalse             L31
+
+   getlex              QName(PackageNamespace(""), "parent")
+   coerce              QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "parent")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o14754"), "o19505")
+   callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
+
+   findpropstrict      QName(PackageNamespace(""), "o3901")
+   getlocal2
+   callpropvoid        QName(PackageNamespace(""), "o3901"), 1
+
+L31:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

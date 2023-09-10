@@ -1,0 +1,77 @@
+method
+ name "com.codecatalyst.promise:Promise/log/com.codecatalyst.promise:onRejected"
+ refid "com.codecatalyst.promise:Promise/instance/log/inline_method#1"
+ param null
+ flag NEED_ACTIVATION
+ flag HAS_PARAM_NAMES
+ paramname "reason"
+ body
+  maxstack 5
+  localcount 4
+  initscopedepth 6
+  maxscopedepth 9
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+L7:
+   getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "category")
+   getlex              QName(PackageNamespace("com.codecatalyst.promise.logger"), "LogLevel")
+   getproperty         QName(PackageNamespace(""), "ERROR")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "identifier")
+   coerce_a
+   dup
+   iftrue              L18
+
+   pop
+   pushstring          "Promise"
+   coerce_a
+L18:
+   pushstring          " rejected with reason: "
+   add
+   getscopeobject      0
+   getslot             1
+   add
+   callpropvoid        QName(PackageNamespace(""), "log"), 3
+
+L24:
+   jump                L40
+
+L25:
+   getlocal2
+   pushscope
+
+   newcatch            0
+   dup
+   setlocal3
+
+   dup
+   pushscope
+
+   swap
+   setslot             1
+
+   findpropstrict      QName(PrivateNamespace("com.codecatalyst.promise:Promise"), "scheduleRethrowError")
+   getscopeobject      1
+   getslot             1
+   callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Promise"), "scheduleRethrowError"), 1
+
+   popscope
+   kill                3
+L40:
+   getscopeobject      0
+   getslot             1
+   throw
+  end ; code
+  try from L7 to L24 target L25 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "error") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "reason") slotid 1 end
+ end ; body
+end ; method

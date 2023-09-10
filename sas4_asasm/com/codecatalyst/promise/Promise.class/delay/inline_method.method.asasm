@@ -1,0 +1,24 @@
+method
+ name "com.codecatalyst.promise:Promise/delay/com.codecatalyst.promise:timerCompleteHandler"
+ refid "com.codecatalyst.promise:Promise/class/delay/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 1
+  initscopedepth 4
+  maxscopedepth 4
+  code
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "timer")
+   getlex              QName(PackageNamespace("flash.events"), "TimerEvent")
+   getproperty         QName(PackageNamespace(""), "TIMER_COMPLETE")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "timerCompleteHandler")
+   callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "deferred")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "promiseOrValue")
+   callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

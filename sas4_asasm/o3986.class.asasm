@@ -1,0 +1,290 @@
+class
+ refid "o3986"
+ instance QName(PackageNamespace(""), "o3986")
+  extends QName(PackageNamespace(""), "o8023")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o3986")
+  iinit
+   refid "o3986/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     findproperty        QName(PackageNamespace(""), "o17656")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17656")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o17656") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait slot QName(PrivateNamespace("o3986"), "o19969") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PrivateNamespace("o3986"), "o12254")
+   method
+    name "o12254"
+    refid "o3986/instance/o3986/instance/o12254"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 2
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "call preloadAugments"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4530")
+   method
+    name "o4530"
+    refid "o3986/instance/o4530"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "o16124")
+    flag NEED_ACTIVATION
+    flag HAS_PARAM_NAMES
+    paramname "id"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 2
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal2
+
+      pushscope
+
+      findpropstrict      QName(PackageInternalNs(""), "id")
+      getlocal1
+      setproperty         QName(PackageInternalNs(""), "id")
+
+      findpropstrict      QName(PackageNamespace(""), "o16124")
+      constructprop       QName(PackageNamespace(""), "o16124"), 0
+      coerce              QName(PackageNamespace(""), "o16124")
+      getlocal2
+      swap
+      setslot             2
+
+      getlex              QName(PrivateNamespace("o3986"), "o19969")
+      iffalse             L23
+
+      getlex              QName(PackageInternalNs(""), "promise")
+      getlex              QName(PackageNamespace(""), "o17656")
+      getlex              QName(PackageInternalNs(""), "id")
+      getproperty         MultinameL([PrivateNamespace("o3986"), ProtectedNamespace("o3986"), StaticProtectedNs("o3986"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o3986"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      setproperty         QName(PackageNamespace(""), "data")
+
+      jump                L27
+
+L23:
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "call preloadAugments"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+L27:
+      getlex              QName(PackageInternalNs(""), "promise")
+      returnvalue
+     end ; code
+     trait slot QName(PackageInternalNs(""), "id") slotid 1 type QName(PackageNamespace(""), "int") end
+     trait slot QName(PackageInternalNs(""), "promise") slotid 2 type QName(PackageNamespace(""), "o16124") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o11969")
+   method
+    name "o11969"
+    refid "o3986/instance/o11969"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "o16124")
+    flag HAS_PARAM_NAMES
+    paramname "type"
+    paramname "grade"
+    body
+     maxstack 2
+     localcount 9
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal3
+
+      findpropstrict      QName(PackageNamespace(""), "o16124")
+      constructprop       QName(PackageNamespace(""), "o16124"), 0
+      coerce              QName(PackageNamespace(""), "o16124")
+      setlocal            4
+
+      pushfalse
+      setlocal            5
+
+      pushbyte            0
+      setlocal            8
+
+      getlex              QName(PackageNamespace(""), "o17656")
+      setlocal            7
+
+      jump                L45
+
+L15:
+      label
+      getlocal            7
+      getlocal            8
+      nextname
+      convert_i
+      setlocal            6
+
+      getlex              QName(PackageNamespace(""), "o17656")
+      getlocal            6
+      getproperty         MultinameL([PrivateNamespace("o3986"), ProtectedNamespace("o3986"), StaticProtectedNs("o3986"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o3986"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "o2347")
+      setlocal3
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "type")
+      getlocal1
+      equals
+      dup
+      iffalse             L37
+
+      pop
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "grade")
+      getlocal2
+      equals
+L37:
+      iffalse             L45
+
+      getlocal            4
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "id")
+      setproperty         QName(PackageNamespace(""), "data")
+
+      pushtrue
+      setlocal            5
+
+      jump                L47
+
+L45:
+      hasnext2            7, 8
+      iftrue              L15
+
+L47:
+      getlocal            5
+      pushfalse
+      ifne                L53
+
+      getlocal            4
+      pushbyte            -1
+      setproperty         QName(PackageNamespace(""), "data")
+
+L53:
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o17623")
+   method
+    name "o17623"
+    refid "o3986/instance/o17623"
+    returns QName(PackageNamespace(""), "o16124")
+    flag NEED_ACTIVATION
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 2
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o16124")
+      constructprop       QName(PackageNamespace(""), "o16124"), 0
+      coerce              QName(PackageNamespace(""), "o16124")
+      getlocal1
+      swap
+      setslot             1
+
+      pushnull
+      coerce              QName(PackageNamespace(""), "o16124")
+      getlocal1
+      swap
+      setslot             2
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o970")
+      pushbyte            15
+      callproperty        QName(PackageNamespace(""), "o17485"), 1
+      coerce              QName(PackageNamespace(""), "o16124")
+      getlocal1
+      swap
+      setslot             2
+
+      jump                L27
+
+L27:
+      getlex              QName(PackageInternalNs(""), "o5174")
+      newfunction         "o3986/instance/o17623/inline_method"
+      callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+      getlex              QName(PackageInternalNs(""), "promise")
+      returnvalue
+     end ; code
+     trait slot QName(PackageInternalNs(""), "promise") slotid 1 type QName(PackageNamespace(""), "o16124") end
+     trait slot QName(PackageInternalNs(""), "o5174") slotid 2 type QName(PackageNamespace(""), "o16124") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o3986/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

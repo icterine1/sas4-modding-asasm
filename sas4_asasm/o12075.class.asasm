@@ -1,0 +1,157 @@
+class
+ refid "o12075"
+ instance QName(PackageNamespace(""), "o12075")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o12075/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o12075/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "o7521")
+  method
+   name "o7521"
+   refid "o12075/class/o7521"
+   param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o18509")>)
+   returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o18509")>)>)
+   flag HAS_PARAM_NAMES
+   paramname "o16528"
+   body
+    maxstack 5
+    localcount 10
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushnull
+     setlocal2
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o18509")
+     applytype           1
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o18509")
+     applytype           1
+     applytype           1
+     astypelate
+     coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o18509")>)>)
+     setlocal            4
+
+     findpropstrict      QName(PackageNamespace(""), "o7406")
+     getlocal1
+     constructprop       QName(PackageNamespace(""), "o7406"), 1
+     coerce              QName(PackageNamespace(""), "o7406")
+     setlocal            7
+
+     getlex              QName(PackageNamespace(""), "o20938")
+     getlocal            7
+     callproperty        QName(PackageNamespace(""), "o5908"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     dup
+     setlocal            5
+
+     pushnull
+     ifne                L45
+
+     findpropstrict      QName(PackageNamespace(""), "o7406")
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "concat"), 0
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "reverse"), 0
+     constructprop       QName(PackageNamespace(""), "o7406"), 1
+     coerce              QName(PackageNamespace(""), "o7406")
+     setlocal            7
+
+     getlex              QName(PackageNamespace(""), "o20938")
+     getlocal            7
+     callproperty        QName(PackageNamespace(""), "o5908"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal            5
+
+L45:
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o18509")
+     applytype           1
+     applytype           1
+     construct           0
+     coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o18509")>)>)
+     setlocal3
+
+     getlocal            5
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     ifngt               L79
+
+     getlex              QName(PackageNamespace(""), "o20938")
+     getlocal            5
+     callproperty        QName(PackageNamespace(""), "o13361"), 1
+     coerce              QName(PackageNamespace(""), "Array")
+     setlocal2
+
+     pushbyte            0
+     setlocal            9
+
+     getlocal2
+     setlocal            8
+
+     jump                L77
+
+L67:
+     label
+     getlocal            8
+     getlocal            9
+     nextvalue
+     coerce              QName(PackageNamespace(""), "o7406")
+     setlocal            6
+
+     getlocal            4
+     getlocal            6
+     getproperty         QName(PackageNamespace(""), "o2625")
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L77:
+     hasnext2            8, 9
+     iftrue              L67
+
+L79:
+     getlocal            4
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

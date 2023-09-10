@@ -1,0 +1,122 @@
+method
+ name "o7231.as$0:anonymous"
+ refid "o7231/instance/o7554/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 6
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "o15460")
+   getproperty         QName(PackageNamespace(""), "o4078")
+   coerce              QName(PackageNamespace(""), "o18509")
+   setlocal1
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o13236")
+   getproperty         QName(PackageNamespace(""), "x")
+   getlex              QName(PackageInternalNs(""), "o1915")
+   pushbyte            50
+   multiply
+   multiply
+   getlex              QName(PackageNamespace(""), "Math")
+   callproperty        QName(PackageNamespace(""), "random"), 0
+   pushbyte            20
+   multiply
+   add
+   pushbyte            10
+   subtract
+   getlex              QName(PrivateNamespace("o7231"), "o14767")
+   getproperty         QName(PackageNamespace(""), "x")
+   add
+   setproperty         QName(PackageNamespace(""), "x")
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o13236")
+   getproperty         QName(PackageNamespace(""), "y")
+   getlex              QName(PackageInternalNs(""), "o1915")
+   pushbyte            50
+   multiply
+   multiply
+   getlex              QName(PackageNamespace(""), "Math")
+   callproperty        QName(PackageNamespace(""), "random"), 0
+   pushbyte            20
+   multiply
+   add
+   pushbyte            10
+   subtract
+   getlex              QName(PrivateNamespace("o7231"), "o14767")
+   getproperty         QName(PackageNamespace(""), "y")
+   add
+   setproperty         QName(PackageNamespace(""), "y")
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o13427")
+   getlex              QName(PackageNamespace(""), "o2130")
+   pushstring          "assets.maps.zombieEgg.bossEggSpikeLongCracks"
+   getlex              QName(PackageNamespace(""), "o11381")
+   getproperty         QName(PackageNamespace(""), "o8973")
+   getlex              QName(PackageNamespace(""), "Math")
+   callproperty        QName(PackageNamespace(""), "random"), 0
+   pushbyte            4
+   multiply
+   newarray            3
+   callproperty        QName(PackageNamespace(""), "o11961"), 2
+   getlex              QName(PackageNamespace(""), "o2130")
+   astypelate
+   coerce              QName(PackageNamespace(""), "o2130")
+   setlocal2
+
+   getlocal2
+   pushnull
+   ifeq                L77
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o6691")
+   getproperty         QName(Namespace("o4332"), "position")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "x")
+   setproperty         QName(PackageNamespace(""), "x")
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o6691")
+   getproperty         QName(Namespace("o4332"), "position")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "y")
+   setproperty         QName(PackageNamespace(""), "y")
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o6691")
+   getlex              QName(PackageInternalNs(""), "o13236")
+   getproperty         QName(PackageNamespace(""), "rotation")
+   setproperty         QName(Namespace("o4332"), "rotation")
+
+L77:
+   getlex              QName(PackageInternalNs(""), "o1915")
+   convert_d
+   increment
+   findpropstrict      QName(PackageInternalNs(""), "o1915")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o1915")
+
+   getlex              QName(PackageInternalNs(""), "o1915")
+   getlex              QName(PackageInternalNs(""), "o18446")
+   ifne                L94
+
+   findpropstrict      QName(PrivateNamespace("o7231"), "o2606")
+   getlex              QName(PackageInternalNs(""), "o7597")
+   callpropvoid        QName(PrivateNamespace("o7231"), "o2606"), 1
+
+   getlex              QName(PackageNamespace(""), "o1051")
+   getlex              QName(PackageInternalNs(""), "o19505")
+   getlex              QName(PrivateNamespace("o7231"), "o14326")
+   getlex              QName(PackageNamespace(""), "o10962")
+   callpropvoid        QName(PackageNamespace(""), "o9310"), 3
+
+L94:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

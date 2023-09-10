@@ -1,0 +1,100 @@
+method
+ name "o10330.as$1:anonymous"
+ refid "o10330/instance/o13201/inline_method#1"
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ flag NEED_REST
+ body
+  maxstack 3
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "o10303")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "o10303")
+
+   getlex              QName(PackageInternalNs(""), "o10303")
+   coerce              QName(PackageNamespace(""), "Array")
+   getlocal2
+   swap
+   setslot             2
+
+   pushbyte            0
+   setlocal            4
+
+   getlex              QName(PackageInternalNs(""), "o8881")
+   setlocal3
+
+   jump                L54
+
+L17:
+   label
+   getlocal3
+   getlocal            4
+   nextvalue
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             3
+
+   getlex              QName(PackageInternalNs(""), "o12036")
+   getlex              QName(PackageNamespace(""), "o9433")
+   astypelate
+   coerce              QName(PackageNamespace(""), "o9433")
+   getlocal2
+   swap
+   setslot             4
+
+   getlex              QName(PackageInternalNs(""), "o14050")
+   pushnull
+   ifeq                L54
+
+   findpropstrict      QName(PrivateNamespace("o10330"), "o11324")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   callproperty        QName(PackageNamespace(""), "o104"), 0
+   getlex              QName(PackageInternalNs(""), "o20434")
+   callproperty        QName(PrivateNamespace("o10330"), "o11324"), 2
+   findproperty        QName(PackageInternalNs(""), "o1386")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o1386")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   pushnull
+   ifeq                L54
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "name")
+   setproperty         QName(PackageNamespace(""), "o10615")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o5578")
+   setproperty         QName(PackageNamespace(""), "o15820")
+
+L54:
+   hasnext2            3, 4
+   iftrue              L17
+
+   getlex              QName(PackageNamespace(""), "o8613")
+   getlex              QName(PackageInternalNs(""), "o4702")
+   getlex              QName(PackageInternalNs(""), "o7376")
+   callproperty        QName(PackageNamespace(""), "o13887"), 2
+   newfunction         "o10330/instance/o13201/inline_method#2"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "o10303") slotid 1 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs(""), "o8881") slotid 2 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs(""), "o12036") slotid 3 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o14050") slotid 4 type QName(PackageNamespace(""), "o9433") end
+ end ; body
+end ; method

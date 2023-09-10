@@ -1,0 +1,346 @@
+class
+ refid "o6708"
+ instance QName(PackageNamespace(""), "o6708")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o6708"
+   refid "o6708/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     pushtrue
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 1
+     findproperty        QName(PrivateNamespace("o6708"), "o8042")
+     swap
+     setproperty         QName(PrivateNamespace("o6708"), "o8042")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o6708"), "o16554") type QName(PackageNamespace("flash.utils"), "Timer") value Null() end
+  trait slot QName(PrivateNamespace("o6708"), "o13025") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PrivateNamespace("o6708"), "o8042") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait method QName(PrivateNamespace("o6708"), "o7664")
+   method
+    name "o7664"
+    refid "o6708/instance/o6708/instance/o7664"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "o12568"
+    body
+     maxstack 3
+     localcount 7
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal3
+
+      pushnull
+      setlocal            4
+
+      pushbyte            0
+      setlocal            6
+
+      getlex              QName(PackageNamespace("flash.sampler"), "getSamples")
+      getglobalscope
+      call                0
+      setlocal            5
+
+      jump                L77
+
+L13:
+      label
+      getlocal            5
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace("flash.sampler"), "Sample")
+      setlocal2
+
+      getlocal2
+      pushnull
+      equals
+      dup
+      iftrue              L29
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "time")
+      pushbyte            0
+      lessthan
+L29:
+      dup
+      iftrue              L36
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "time")
+      getlex              QName(PrivateNamespace("o6708"), "o13025")
+      lessthan
+L36:
+      iftrue              L77
+
+      getlocal2
+      getlex              QName(PackageNamespace("flash.sampler"), "NewObjectSample")
+      istypelate
+      iffalse             L62
+
+      getlex              QName(PackageNamespace("flash.sampler"), "NewObjectSample")
+      getglobalscope
+      getlocal2
+      call                1
+      coerce              QName(PackageNamespace("flash.sampler"), "NewObjectSample")
+      setlocal3
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "object")
+      pushundefined
+      ifeq                L61
+
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "stack")
+      pushnull
+      ifeq                L61
+
+      getlex              QName(PrivateNamespace("o6708"), "o8042")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "object")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "stack")
+      setproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+L61:
+      jump                L72
+
+L62:
+      getlocal2
+      getlex              QName(PackageNamespace("flash.sampler"), "DeleteObjectSample")
+      istypelate
+      iffalse             L72
+
+      getlex              QName(PackageNamespace("flash.sampler"), "DeleteObjectSample")
+      getglobalscope
+      getlocal2
+      call                1
+      coerce              QName(PackageNamespace("flash.sampler"), "DeleteObjectSample")
+      setlocal            4
+
+L72:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "time")
+      findproperty        QName(PrivateNamespace("o6708"), "o13025")
+      swap
+      setproperty         QName(PrivateNamespace("o6708"), "o13025")
+
+L77:
+      hasnext2            5, 6
+      iftrue              L13
+
+      getlex              QName(PackageNamespace("flash.sampler"), "clearSamples")
+      getglobalscope
+      call                0
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19191")
+   method
+    name "o19191"
+    refid "o6708/instance/o19191"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 2
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal1
+
+      pushscope
+
+      findproperty        QName(PackageInternalNs(""), "o18868")
+      newfunction         "o6708/instance/o19191/inline_method#0"
+      setproperty         QName(PackageInternalNs(""), "o18868")
+
+      findproperty        QName(PackageInternalNs(""), "o18994")
+      newfunction         "o6708/instance/o19191/inline_method#1"
+      setproperty         QName(PackageInternalNs(""), "o18994")
+
+      getlex              QName(PackageNamespace("flash.system"), "System")
+      callpropvoid        QName(PackageNamespace(""), "gc"), 0
+
+      findpropstrict      QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+      pushstring          "root"
+      constructprop       QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack"), 1
+      coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+      getlocal1
+      swap
+      setslot             1
+
+      findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+      constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "Dictionary")
+      getlocal1
+      swap
+      setslot             2
+
+      getlex              QName(PackageInternalNs(""), "o9699")
+      pushstring          "root"
+      getlex              QName(PackageInternalNs(""), "o2626")
+      setproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PrivateNamespace("FilePrivateNS:o6708"), "o1742")
+      applytype           1
+      construct           0
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PrivateNamespace("FilePrivateNS:o6708"), "o1742")>)
+      getlocal1
+      swap
+      setslot             3
+
+      pushbyte            0
+      setlocal3
+
+      getlex              QName(PrivateNamespace("o6708"), "o8042")
+      setlocal2
+
+      jump                L59
+
+L44:
+      label
+      getlocal2
+      getlocal3
+      nextname
+      getlocal1
+      swap
+      setslot             6
+
+      getlex              QName(PackageInternalNs(""), "o18994")
+      getglobalscope
+      getlex              QName(PackageInternalNs(""), "object")
+      getlex              QName(PrivateNamespace("o6708"), "o8042")
+      getlex              QName(PackageInternalNs(""), "object")
+      getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      call                2
+      pop
+L59:
+      hasnext2            2, 3
+      iftrue              L44
+
+      pushbyte            0
+      setlocal            5
+
+      getlex              QName(PackageInternalNs(""), "o9699")
+      setlocal            4
+
+      jump                L94
+
+L66:
+      label
+      getlocal            4
+      getlocal            5
+      nextvalue
+      coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+      getlocal1
+      swap
+      setslot             7
+
+      getlex              QName(PackageInternalNs(""), "o6157")
+      getlex              QName(PackageInternalNs(""), "o6157")
+      getproperty         QName(PackageNamespace(""), "o9215")
+      newfunction         "o6708/instance/o19191/inline_method#2"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+      setproperty         QName(PackageNamespace(""), "o9215")
+
+      getlex              QName(PackageInternalNs(""), "o6157")
+      getlex              QName(PackageInternalNs(""), "o6157")
+      getproperty         QName(PackageNamespace(""), "o19726")
+      newfunction         "o6708/instance/o19191/inline_method#3"
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
+      setproperty         QName(PackageNamespace(""), "o19726")
+
+      getlex              QName(PackageInternalNs(""), "o6157")
+      getproperty         QName(PackageNamespace(""), "o19726")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L94
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      pushstring          "asdasdasds"
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+L94:
+      hasnext2            4, 5
+      iftrue              L66
+
+      getlex              QName(PackageInternalNs(""), "o2626")
+      callproperty        QName(PackageNamespace(""), "toString"), 0
+      coerce_s
+      getlocal1
+      swap
+      setslot             8
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "FileReference")
+      constructprop       QName(PackageNamespace("flash.net"), "FileReference"), 0
+      coerce              QName(PackageNamespace("flash.net"), "FileReference")
+      getlocal1
+      swap
+      setslot             9
+
+      getlex              QName(PackageInternalNs(""), "o15133")
+      getlex              QName(PackageInternalNs(""), "o12476")
+      callpropvoid        QName(PackageNamespace(""), "save"), 1
+
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs(""), "o2626") slotid 1 type QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack") end
+     trait slot QName(PackageInternalNs(""), "o9699") slotid 2 type QName(PackageNamespace("flash.utils"), "Dictionary") end
+     trait slot QName(PackageInternalNs(""), "o9215") slotid 3 type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PrivateNamespace("FilePrivateNS:o6708"), "o1742")>) end
+     trait slot QName(PackageInternalNs(""), "o18868") slotid 4 end
+     trait slot QName(PackageInternalNs(""), "o18994") slotid 5 end
+     trait slot QName(PackageInternalNs(""), "object") slotid 6 end
+     trait slot QName(PackageInternalNs(""), "o6157") slotid 7 type QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack") end
+     trait slot QName(PackageInternalNs(""), "o12476") slotid 8 type QName(PackageNamespace(""), "String") end
+     trait slot QName(PackageInternalNs(""), "o15133") slotid 9 type QName(PackageNamespace("flash.net"), "FileReference") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o6708/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,87 @@
+class
+ refid "o13407"
+ instance QName(PackageNamespace(""), "o13407")
+  extends QName(PackageNamespace("flash.events"), "EventDispatcher")
+  implements QName(PackageNamespace(""), "o12752")
+  flag SEALED
+  iinit
+   name "o13407"
+   refid "o13407/instance/init"
+   param QName(PackageNamespace("flash.utils"), "ByteArray")
+   flag HAS_PARAM_NAMES
+   paramname "o14447"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     pushnull
+     ifeq                L14
+
+     getlex              QName(PackageNamespace("flash.system"), "WorkerDomain")
+     getproperty         QName(PackageNamespace(""), "current")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "createWorker"), 1
+     findproperty        QName(PackageNamespace(""), "o9182")
+     swap
+     setproperty         QName(PackageNamespace(""), "o9182")
+
+L14:
+     getlex              QName(PackageNamespace("flash.system"), "Worker")
+     getproperty         QName(PackageNamespace(""), "current")
+     getlex              QName(PackageNamespace(""), "o9182")
+     callproperty        QName(PackageNamespace(""), "createMessageChannel"), 1
+     findproperty        QName(PackageNamespace(""), "o5964")
+     swap
+     setproperty         QName(PackageNamespace(""), "o5964")
+
+     getlex              QName(PackageNamespace(""), "o9182")
+     getlex              QName(PackageNamespace("flash.system"), "Worker")
+     getproperty         QName(PackageNamespace(""), "current")
+     callproperty        QName(PackageNamespace(""), "createMessageChannel"), 1
+     findproperty        QName(PackageNamespace(""), "o17787")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17787")
+
+     getlex              QName(PackageNamespace(""), "o9182")
+     pushstring          "out"
+     getlex              QName(PackageNamespace(""), "o17787")
+     callpropvoid        QName(PackageNamespace(""), "setSharedProperty"), 2
+
+     getlex              QName(PackageNamespace(""), "o9182")
+     pushstring          "in"
+     getlex              QName(PackageNamespace(""), "o5964")
+     callpropvoid        QName(PackageNamespace(""), "setSharedProperty"), 2
+
+     getlex              QName(PackageNamespace(""), "o9182")
+     callpropvoid        QName(PackageNamespace(""), "start"), 0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o9182") type QName(PackageNamespace("flash.system"), "Worker") value Null() end
+  trait slot QName(PackageNamespace(""), "o5964") type QName(PackageNamespace("flash.system"), "MessageChannel") value Null() end
+  trait slot QName(PackageNamespace(""), "o17787") type QName(PackageNamespace("flash.system"), "MessageChannel") value Null() end
+ end ; instance
+ cinit
+  refid "o13407/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

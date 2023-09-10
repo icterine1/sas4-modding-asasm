@@ -1,0 +1,175 @@
+class
+ refid "o12243"
+ instance QName(PackageNamespace(""), "o12243")
+  extends QName(PackageNamespace(""), "o3052")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o12243")
+  iinit
+   name "o12243"
+   refid "o12243/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "o2693")
+   flag HAS_PARAM_NAMES
+   paramname "o19686"
+   paramname "o19552"
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o15787")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o15787"), 1
+     findproperty        QName(PrivateNamespace("o12243"), "o13506")
+     swap
+     setproperty         QName(PrivateNamespace("o12243"), "o13506")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     getlocal2
+     callsupervoid       QName(PackageNamespace(""), "init"), 2
+     getlex              QName(PrivateNamespace("o12243"), "o13506")
+     getlocal2
+     getlocal1
+     pushstring          "freeTurrets"
+     add
+     callproperty        QName(PackageNamespace(""), "o17521"), 1
+     setproperty         QName(PackageNamespace(""), "value")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o12243"), "o13506") type QName(PackageNamespace(""), "o15787") end
+  trait getter QName(PackageNamespace(""), "o70")
+   method
+    name "o70"
+    refid "o12243/instance/o70/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o12243"), "o13506")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13260") flag OVERRIDE
+   method
+    name "o13260"
+    refid "o12243/instance/o13260"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "profileData")
+      getproperty         QName(PackageNamespace(""), "o7923")
+      getproperty         QName(PackageNamespace(""), "o3525")
+      coerce              QName(PackageNamespace(""), "o9503")
+      setlocal1
+
+      getlocal1
+      pushbyte            4
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      getlocal1
+      pushbyte            5
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      getlocal1
+      pushbyte            6
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      getlocal1
+      pushbyte            7
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      getlocal1
+      pushbyte            8
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      getlocal1
+      pushbyte            9
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      getlocal1
+      pushbyte            10
+      getlex              QName(PackageNamespace(""), "o70")
+      callpropvoid        QName(PackageNamespace(""), "o780"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o3309") flag OVERRIDE
+   method
+    name "o3309"
+    refid "o12243/instance/o3309"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o6778"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(ProtectedNamespace("o3052"), "o12267")
+      getlocal1
+      pushstring          "[FREE_TURRETS]"
+      getlex              QName(PackageNamespace(""), "o70")
+      callproperty        QName(ProtectedNamespace("o3052"), "o12267"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o12243/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

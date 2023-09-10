@@ -1,0 +1,33 @@
+script
+ sinit
+  refid "o2059/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "Event")
+    dup
+    pushscope
+
+    newclass            "o2059"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o2059")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o2059")
+  #include "o2059.class.asasm"
+ end ; trait
+end ; script

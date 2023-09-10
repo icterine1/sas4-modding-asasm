@@ -1,0 +1,72 @@
+class
+ refid "o2555"
+ instance QName(PackageNamespace(""), "o2555")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o2555/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o2555/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "o17203")
+  method
+   name "o17203"
+   refid "o2555/class/o17203"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "url"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o17061")
+     iffalse             L9
+
+     pushstring          "http://"
+     getlocal1
+     add
+     returnvalue
+
+L9:
+     pushstring          "https://"
+     getlocal1
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

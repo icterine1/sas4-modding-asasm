@@ -1,0 +1,357 @@
+class
+ refid "o7251"
+ instance QName(PackageNamespace(""), "o7251")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o7251/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o7251/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o20319") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o3038") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o11006") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o9661") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o14273") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o20185") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait method QName(PackageNamespace(""), "o3402")
+  method
+   name "o3402"
+   refid "o7251/class/o3402"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "o18631")
+   flag HAS_PARAM_NAMES
+   paramname "o1783"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "o14200")
+     getproperty         QName(PackageNamespace(""), "o19505")
+     getproperty         QName(PackageNamespace(""), "o5292")
+     getproperty         QName(PackageNamespace(""), "o418")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "o18182"), 1
+     coerce              QName(PackageNamespace(""), "o18631")
+     setlocal2
+
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o1990")
+  method
+   name "o1990"
+   refid "o7251/class/o1990"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "o18631")
+   flag HAS_PARAM_NAMES
+   paramname "o1783"
+   paramname "o16173"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o18631")
+     getlocal1
+     constructprop       QName(PackageNamespace(""), "o18631"), 1
+     coerce              QName(PackageNamespace(""), "o18631")
+     setlocal3
+
+     getlocal2
+     convert_i
+     pushint             1
+     subtract_i
+     lookupswitch        L21, [L12, L15, L18]
+
+L12:
+     getlocal3
+     pushtrue
+     setproperty         QName(PackageNamespace(""), "o2233")
+
+L15:
+     getlocal3
+     pushtrue
+     setproperty         QName(PackageNamespace(""), "o7581")
+
+L18:
+     getlocal3
+     pushtrue
+     setproperty         QName(PackageNamespace(""), "o405")
+
+L21:
+     getlocal3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o20313")
+  method
+   name "o20313"
+   refid "o7251/class/o20313"
+   param QName(PackageNamespace(""), "o14096")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   optional Integer(-1)
+   optional False()
+   optional False()
+   optional Integer(-1)
+   paramname "o2752"
+   paramname "o12062"
+   paramname "o19901"
+   paramname "o1419"
+   paramname "o16173"
+   body
+    maxstack 2
+    localcount 7
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushfalse
+     setlocal            6
+
+     getlocal1
+     iffalse             L33
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o2752")
+     getproperty         QName(PackageNamespace(""), "id")
+     convert_i
+     setlocal2
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o2752")
+     getproperty         QName(PackageNamespace(""), "o19901")
+     convert_b
+     setlocal3
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o1419")
+     convert_b
+     setlocal            4
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o4752")
+     convert_i
+     setlocal            5
+
+     findpropstrict      QName(PackageNamespace(""), "o3402")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o2752")
+     getproperty         QName(PackageNamespace(""), "id")
+     callproperty        QName(PackageNamespace(""), "o3402"), 1
+     getproperty         QName(PackageNamespace(""), "o8044")
+     convert_b
+     setlocal            6
+
+     jump                L39
+
+L33:
+     findpropstrict      QName(PackageNamespace(""), "o3402")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "o3402"), 1
+     getproperty         QName(PackageNamespace(""), "o8044")
+     convert_b
+     setlocal            6
+
+L39:
+     getlocal3
+     iffalse             L43
+
+     pushstring          "Premium"
+     returnvalue
+
+L43:
+     getlocal            6
+     iffalse             L51
+
+     getlocal            4
+     iffalse             L49
+
+     pushstring          "None"
+     returnvalue
+
+L49:
+     pushstring          "Championship"
+     returnvalue
+
+L51:
+     getlocal            5
+     convert_i
+     pushint             1
+     subtract_i
+     lookupswitch        L62, [L56, L58, L60]
+
+L56:
+     pushstring          "Halloween"
+     returnvalue
+
+L58:
+     pushstring          "Christmas"
+     returnvalue
+
+L60:
+     pushstring          "Easter"
+     returnvalue
+
+L62:
+     pushstring          "None"
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o19044")
+  method
+   name "o19044"
+   refid "o7251/class/o19044"
+   param QName(PackageNamespace(""), "o1253")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   optional Integer(-1)
+   optional False()
+   optional False()
+   optional Integer(-1)
+   paramname "o4256"
+   paramname "o12062"
+   paramname "o19901"
+   paramname "o1419"
+   paramname "o16173"
+   body
+    maxstack 2
+    localcount 7
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushfalse
+     setlocal            6
+
+     getlocal1
+     iffalse             L22
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o10239")
+     getproperty         QName(Namespace("o12420"), "id")
+     convert_i
+     setlocal2
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o10239")
+     getproperty         QName(Namespace("o12420"), "o19901")
+     convert_b
+     setlocal3
+
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o1419")
+     convert_b
+     setlocal            4
+
+     pushbyte            -1
+     setlocal            5
+
+L22:
+     getlocal            4
+     iffalse             L26
+
+     pushstring          "None"
+     returnvalue
+
+L26:
+     getlocal3
+     iffalse             L30
+
+     pushstring          "Premium"
+     returnvalue
+
+L30:
+     getlocal            6
+     iffalse             L34
+
+     pushstring          "Championship"
+     returnvalue
+
+L34:
+     getlocal            5
+     convert_i
+     pushint             1
+     subtract_i
+     lookupswitch        L45, [L39, L41, L43]
+
+L39:
+     pushstring          "Halloween"
+     returnvalue
+
+L41:
+     pushstring          "Christmas"
+     returnvalue
+
+L43:
+     pushstring          "Easter"
+     returnvalue
+
+L45:
+     pushstring          "None"
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

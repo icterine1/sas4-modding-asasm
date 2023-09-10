@@ -1,0 +1,411 @@
+class
+ refid "o11063"
+ instance QName(PackageNamespace(""), "o11063")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o11063"
+   refid "o11063/instance/init"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal1
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "Boolean")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o10321")
+     swap
+     setproperty         QName(PackageNamespace(""), "o10321")
+
+     getlocal0
+     constructsuper      0
+
+     pushbyte            0
+     setlocal1
+
+     jump                L21
+
+L16:
+     label
+     getlex              QName(PackageNamespace(""), "o10321")
+     pushfalse
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     inclocal_i          1
+L21:
+     getlocal1
+     getlex              QName(PackageNamespace(""), "o14794")
+     getproperty         QName(PackageNamespace(""), "o20268")
+     ifle                L16
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o20892") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o4654") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o458") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o14559") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o8848") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o20667") type QName(PackageNamespace(""), "int") value Integer(20) end
+  trait slot QName(PackageNamespace(""), "o8800") type QName(PackageNamespace(""), "int") value Integer(4) end
+  trait slot QName(PackageNamespace(""), "o10321") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "Boolean")>) end
+  trait slot QName(PackageNamespace(""), "o2202") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o11931") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait method QName(PackageNamespace(""), "o19580")
+   method
+    name "o19580"
+    refid "o11063/instance/o19580"
+    returns QName(PackageNamespace(""), "Array")
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal1
+
+      newarray            0
+      coerce              QName(PackageNamespace(""), "Array")
+      setlocal2
+
+      pushbyte            0
+      setlocal1
+
+      jump                L21
+
+L10:
+      label
+      getlex              QName(PackageNamespace(""), "o10321")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("o11063"), ProtectedNamespace("o11063"), StaticProtectedNs("o11063"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o11063"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      iffalse             L20
+
+      getlocal2
+      getlocal1
+      pushbyte            1
+      add
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L20:
+      inclocal_i          1
+L21:
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o10321")
+      getproperty         QName(PackageNamespace(""), "length")
+      iflt                L10
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o6966")
+   method
+    name "o6966"
+    refid "o11063/instance/o6966"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7023"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      findproperty        QName(PackageNamespace(""), "o20892")
+      swap
+      setproperty         QName(PackageNamespace(""), "o20892")
+
+      pushbyte            17
+      setlocal2
+
+      getlocal1
+      getlocal2
+      greaterequals
+      findproperty        QName(PackageNamespace(""), "o14559")
+      swap
+      setproperty         QName(PackageNamespace(""), "o14559")
+
+      getlocal1
+      pushbyte            6
+      greaterequals
+      dup
+      iffalse             L24
+
+      pop
+      getlocal1
+      pushbyte            9
+      equals
+      not
+L24:
+      dup
+      iffalse             L31
+
+      pop
+      getlocal1
+      pushbyte            10
+      equals
+      not
+L31:
+      dup
+      iffalse             L38
+
+      pop
+      getlocal1
+      pushbyte            19
+      equals
+      not
+L38:
+      dup
+      iffalse             L45
+
+      pop
+      getlocal1
+      pushbyte            20
+      equals
+      not
+L45:
+      findproperty        QName(PackageNamespace(""), "o458")
+      swap
+      setproperty         QName(PackageNamespace(""), "o458")
+
+      getlex              QName(PackageNamespace(""), "o14559")
+      iffalse             L57
+
+      getlocal1
+      pushbyte            11
+      subtract
+      findproperty        QName(PackageNamespace(""), "o4654")
+      swap
+      setproperty         QName(PackageNamespace(""), "o4654")
+
+      jump                L61
+
+L57:
+      getlocal1
+      findproperty        QName(PackageNamespace(""), "o4654")
+      swap
+      setproperty         QName(PackageNamespace(""), "o4654")
+
+L61:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o8385")
+   method
+    name "o8385"
+    refid "o11063/instance/o8385"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o14559")
+      dup
+      iffalse             L21
+
+      pop
+      getlex              QName(PackageNamespace(""), "o4654")
+      pushbyte            6
+      equals
+      dup
+      iftrue              L15
+
+      pop
+      getlex              QName(PackageNamespace(""), "o4654")
+      pushbyte            7
+      equals
+L15:
+      dup
+      iftrue              L21
+
+      pop
+      getlex              QName(PackageNamespace(""), "o4654")
+      pushbyte            16
+      equals
+L21:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o2724")
+   method
+    name "o2724"
+    refid "o11063/instance/o2724"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>)
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "String")
+      applytype           1
+      construct           0
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>)
+      setlocal1
+
+      getlocal1
+      pushstring          "Shambler"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Stalker"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Spitter"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Runner"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Bloater"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Shielder"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Zombdroid Servant (subboss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Zombdroid Soldier (subboss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "worm (not in ui)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "spewWorm (not in ui)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Regurgitator (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Necrosis (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Zombie Mech (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Wicker (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Devastator (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Necrosis Spawn (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "Loaderbot (subboss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Zombdroid Servant (subboss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Zombdroid Soldier (subboss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "--- (don't select)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "--- (don't select)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Regurgitator (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Necrosis (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Zombie Mech (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Wicker (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Devastator (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Necrosis Spawn (boss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      pushstring          "V2 Loaderbot (subboss)"
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o11063/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

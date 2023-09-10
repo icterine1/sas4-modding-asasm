@@ -1,0 +1,51 @@
+method
+ name "o2445.as$1:anonymous"
+ refid "o2445/instance/o18859/inline_method"
+ param QName(PackageNamespace(""), "String")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   findpropstrict      QName(PrivateNamespace("o2445"), "o8289")
+   callproperty        QName(PrivateNamespace("o2445"), "o8289"), 0
+   iffalse             L4
+
+   returnvoid
+
+L4:
+   getlocal1
+   pushstring          "STATUS_COMPILED"
+   ifne                L11
+
+   findpropstrict      QName(PrivateNamespace("o2445"), "o19824")
+   getlex              QName(PackageInternalNs(""), "o9066")
+   callpropvoid        QName(PrivateNamespace("o2445"), "o19824"), 1
+
+   jump                L23
+
+L11:
+   getlocal1
+   pushstring          "STATUS_COMPILING"
+   ifne                L19
+
+   getlex              QName(PackageNamespace(""), "o16989")
+   pushstring          "Competition compiling"
+   pushstring          "Try returning to this screen in a few minutes"
+   callpropvoid        QName(PackageNamespace(""), "o12407"), 2
+
+   jump                L23
+
+L19:
+   getlex              QName(PackageNamespace(""), "o16989")
+   pushstring          "Competition error"
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "o12407"), 2
+
+L23:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

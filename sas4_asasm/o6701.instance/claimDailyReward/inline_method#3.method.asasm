@@ -1,0 +1,29 @@
+method
+ name "o16460"
+ refid "o6701/instance/claimDailyReward/inline_method#3"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 6
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   findpropstrict      QName(PrivateNamespace("o6701"), "o5923")
+   pushstring          "claimDailyReward failed"
+   callpropvoid        QName(PrivateNamespace("o6701"), "o5923"), 1
+
+   findpropstrict      QName(PackageNamespace(""), "claimDailyReward")
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlex              QName(PackageInternalNs(""), "o7189")
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o19625")
+   pushbyte            1
+   add
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "claimDailyReward"), 5
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

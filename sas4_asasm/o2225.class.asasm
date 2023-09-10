@@ -1,0 +1,180 @@
+class
+ refid "o2225"
+ instance QName(PackageNamespace(""), "o2225")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o2225/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o2225/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o14851") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o6833") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o14889") type QName(PackageNamespace(""), "int") value Integer(55) end
+ trait const QName(PackageNamespace(""), "o9552") type QName(PackageNamespace(""), "int") value Integer(56) end
+ trait const QName(PackageNamespace(""), "o1551") type QName(PackageNamespace(""), "int") value Integer(57) end
+ trait const QName(PackageNamespace(""), "o2273") type QName(PackageNamespace(""), "int") value Integer(58) end
+ trait const QName(PackageNamespace(""), "o6012") type QName(PackageNamespace(""), "int") value Integer(59) end
+ trait const QName(PackageNamespace(""), "o11114") type QName(PackageNamespace(""), "int") value Integer(60) end
+ trait const QName(PackageNamespace(""), "o7690") type QName(PackageNamespace(""), "int") value Integer(61) end
+ trait const QName(PackageNamespace(""), "o6946") type QName(PackageNamespace(""), "int") value Integer(62) end
+ trait const QName(PackageNamespace(""), "o16844") type QName(PackageNamespace(""), "int") value Integer(1000) end
+ trait method QName(PackageNamespace(""), "o716")
+  method
+   name "o716"
+   refid "o2225/class/o716"
+   param null
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o20963"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     setlocal2
+
+     jump                L41
+
+L5:
+     label
+     pushstring          "Bounty"
+     returnvalue
+
+L8:
+     label
+     pushstring          "Bounty"
+     returnvalue
+
+L11:
+     label
+     pushstring          "Custom Championship"
+     returnvalue
+
+L14:
+     label
+     pushstring          "Storm of Bullets"
+     returnvalue
+
+L17:
+     label
+     pushstring          "Elite Squads"
+     returnvalue
+
+L20:
+     label
+     pushstring          "Lone Wolf"
+     returnvalue
+
+L23:
+     label
+     pushstring          "SAS Blitz"
+     returnvalue
+
+L26:
+     label
+     pushstring          "Daily Quest: Singleplayer Wins"
+     returnvalue
+
+L29:
+     label
+     pushstring          "Daily Quest: Multiplayer Wins"
+     returnvalue
+
+L32:
+     label
+     pushstring          "Super Event Boss Kills "
+     returnvalue
+
+L35:
+     label
+     pushstring          "Dynamic Event"
+     returnvalue
+
+L38:
+     label
+     pushstring          "Wrong TaskType Supplied"
+     returnvalue
+
+L41:
+     pushbyte            0
+     getlocal2
+     ifstricteq          L5
+
+     pushbyte            1
+     getlocal2
+     ifstricteq          L8
+
+     pushbyte            55
+     getlocal2
+     ifstricteq          L11
+
+     pushbyte            56
+     getlocal2
+     ifstricteq          L14
+
+     pushbyte            57
+     getlocal2
+     ifstricteq          L17
+
+     pushbyte            58
+     getlocal2
+     ifstricteq          L20
+
+     pushbyte            59
+     getlocal2
+     ifstricteq          L23
+
+     pushbyte            60
+     getlocal2
+     ifstricteq          L26
+
+     pushbyte            61
+     getlocal2
+     ifstricteq          L29
+
+     pushbyte            62
+     getlocal2
+     ifstricteq          L32
+
+     pushshort           1000
+     getlocal2
+     ifstricteq          L35
+
+     jump                L38
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

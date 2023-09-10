@@ -1,0 +1,33 @@
+method
+ name "o11736"
+ refid "o6701/instance/claimDailyReward/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   findpropstrict      QName(PrivateNamespace("o6701"), "o5923")
+   pushstring          "claimDailyReward ok"
+   callpropvoid        QName(PrivateNamespace("o6701"), "o5923"), 1
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   pushfalse
+   setproperty         QName(PackageNamespace(""), "o12405")
+
+   getlocal1
+   pushstring          "success"
+   getproperty         MultinameL([PrivateNamespace("o6701"), ProtectedNamespace("o6701"), StaticProtectedNs("o6701"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6701"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_b
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlocal2
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

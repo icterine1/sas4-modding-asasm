@@ -1,0 +1,32 @@
+method
+ name "o772.as$4:anonymous"
+ refid "o772/instance/o772/instance/o2948/inline_method"
+ param null
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlocal1
+   getproperty         Multiname("body", [PrivateNamespace("o772"), ProtectedNamespace("o772"), StaticProtectedNs("o772"), StaticProtectedNs("o13848"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o772"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushbyte            -1
+   ifne                L8
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "data")
+
+   jump                L11
+
+L8:
+   getlex              QName(PackageInternalNs(""), "promise")
+   pushfalse
+   setproperty         QName(PackageNamespace(""), "data")
+
+L11:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

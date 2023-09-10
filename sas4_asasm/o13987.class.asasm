@@ -1,0 +1,147 @@
+class
+ refid "o13987"
+ instance QName(PackageNamespace(""), "o13987")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o13987/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o13987/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o10442") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o16041") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "energy") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o5317") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o15610") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "o5645") type QName(PackageNamespace(""), "int") value Integer(6) end
+ trait const QName(PackageNamespace(""), "o5338") type QName(PackageNamespace(""), "int") value Integer(7) end
+ trait const QName(PackageNamespace(""), "o8073") type QName(PackageNamespace(""), "int") value Integer(8) end
+ trait const QName(PackageNamespace(""), "min") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "max") type QName(PackageNamespace(""), "int") value Integer(8) end
+ trait method QName(PackageNamespace(""), "o8975")
+  method
+   name "o8975"
+   refid "o13987/class/o8975"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o3"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     convert_i
+     pushint             5
+     subtract_i
+     lookupswitch        L13, [L9, L7, L11]
+
+L7:
+     pushbyte            2
+     returnvalue
+
+L9:
+     pushbyte            3
+     returnvalue
+
+L11:
+     pushbyte            4
+     returnvalue
+
+L13:
+     getlocal1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o160")
+  method
+   name "o160"
+   refid "o13987/class/o160"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o3"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     convert_i
+     pushint             1
+     subtract_i
+     lookupswitch        L21, [L7, L9, L11, L13, L15, L17, L19]
+
+L7:
+     pushstring          "physical"
+     returnvalue
+
+L9:
+     pushstring          "thermal"
+     returnvalue
+
+L11:
+     pushstring          "energy"
+     returnvalue
+
+L13:
+     pushstring          "chemical"
+     returnvalue
+
+L15:
+     pushstring          "shock"
+     returnvalue
+
+L17:
+     pushstring          "cryo"
+     returnvalue
+
+L19:
+     pushstring          "necro"
+     returnvalue
+
+L21:
+     pushstring          "???"
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

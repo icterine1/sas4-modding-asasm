@@ -1,0 +1,150 @@
+class
+ refid "o5792"
+ instance QName(PackageNamespace(""), "o5792")
+  extends QName(PackageNamespace(""), "o3052")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o5792")
+  iinit
+   name "o5792"
+   refid "o5792/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "o2693")
+   flag HAS_PARAM_NAMES
+   paramname "o19686"
+   paramname "o19552"
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o5792"), "o9446")
+     swap
+     setproperty         QName(PrivateNamespace("o5792"), "o9446")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     getlocal2
+     callsupervoid       QName(PackageNamespace(""), "init"), 2
+     getlex              QName(PrivateNamespace("o5792"), "o9446")
+     getlocal2
+     getlocal1
+     pushstring          "maxGrenades"
+     add
+     callproperty        QName(PackageNamespace(""), "o3554"), 1
+     setproperty         QName(PackageNamespace(""), "value")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o5792"), "o9446") type QName(PackageNamespace(""), "o16123") end
+  trait getter QName(PackageNamespace(""), "o17888")
+   method
+    name "o17888"
+    refid "o5792/instance/o17888/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o5792"), "o9446")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13260") flag OVERRIDE
+   method
+    name "o13260"
+    refid "o5792/instance/o13260"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "profileData")
+      getproperty         QName(PackageNamespace(""), "o7923")
+      getproperty         QName(PackageNamespace(""), "o13012")
+      getproperty         QName(PackageNamespace(""), "o220")
+      getlex              QName(PackageNamespace(""), "o17888")
+      ifnlt               L17
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "profileData")
+      getproperty         QName(PackageNamespace(""), "o7923")
+      getproperty         QName(PackageNamespace(""), "o13012")
+      getlex              QName(PackageNamespace(""), "o17888")
+      setproperty         QName(PackageNamespace(""), "o220")
+
+L17:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o3309") flag OVERRIDE
+   method
+    name "o3309"
+    refid "o5792/instance/o3309"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o6778"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(ProtectedNamespace("o3052"), "o679")
+      getlocal1
+      pushstring          "[MAX_GRENADES]"
+      getlex              QName(PackageNamespace(""), "o17888")
+      callproperty        QName(ProtectedNamespace("o3052"), "o679"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o5792/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

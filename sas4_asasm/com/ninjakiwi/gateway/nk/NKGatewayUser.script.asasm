@@ -1,0 +1,30 @@
+script
+ sinit
+  name ""
+  refid "com.ninjakiwi.gateway.nk:NKGatewayUser/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("NKGatewayUser", [PackageNamespace("com.ninjakiwi.gateway.nk")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.ninjakiwi.gateway.nk:NKGatewayUser"
+    popscope
+    initproperty        QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGatewayUser")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGatewayUser")
+  #include "NKGatewayUser.class.asasm"
+ end ; trait
+end ; script

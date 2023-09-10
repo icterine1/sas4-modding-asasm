@@ -1,0 +1,67 @@
+class
+ refid "o6882"
+ instance QName(PackageNamespace(""), "o6882")
+  extends QName(PackageNamespace(""), "o5497")
+  flag SEALED
+  iinit
+   name "o6882"
+   refid "o6882/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "o5072")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   paramname "type"
+   paramname "o5897"
+   paramname "o4018"
+   paramname "o245"
+   paramname "o12654"
+   body
+    maxstack 5
+    localcount 6
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "type")
+
+     getlocal0
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "o245")
+
+     getlocal0
+     getlocal2
+     getlocal3
+     pushnull
+     getlocal            5
+     constructsuper      4
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "type") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o245") type QName(PackageNamespace(""), "String") value Null() end
+ end ; instance
+ cinit
+  refid "o6882/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

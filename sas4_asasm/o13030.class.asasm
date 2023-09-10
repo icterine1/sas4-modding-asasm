@@ -1,0 +1,187 @@
+class
+ refid "o13030"
+ instance QName(PackageNamespace(""), "o13030")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o13030"
+   refid "o13030/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o13030/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o7372") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o17998") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o6023") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o6924") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o13656") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "o2467") type QName(PackageNamespace(""), "int") value Integer(6) end
+ trait const QName(PackageNamespace(""), "o20210") type QName(PackageNamespace(""), "int") value Integer(7) end
+ trait const QName(PackageNamespace(""), "o17635") type QName(PackageNamespace(""), "int") value Integer(8) end
+ trait const QName(PackageNamespace(""), "o19125") type QName(PackageNamespace(""), "int") value Integer(10) end
+ trait const QName(PackageNamespace(""), "o17469") type QName(PackageNamespace(""), "int") value Integer(9) end
+ trait const QName(PackageNamespace(""), "o13325") type QName(PackageNamespace(""), "int") value Integer(11) end
+ trait const QName(PackageNamespace(""), "o10406") type QName(PackageNamespace(""), "int") value Integer(12) end
+ trait const QName(PackageNamespace(""), "o20026") type QName(PackageNamespace(""), "int") value Integer(13) end
+ trait const QName(PackageNamespace(""), "o4410") type QName(PackageNamespace(""), "int") value Integer(14) end
+ trait const QName(PackageNamespace(""), "o14398") type QName(PackageNamespace(""), "int") value Integer(15) end
+ trait method QName(PackageNamespace(""), "o2809")
+  method
+   name "o2809"
+   refid "o13030/class/o2809"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o14985"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toUpperCase"), 0
+     coerce_s
+     setlocal1
+
+     getlocal1
+     pushstring          "CONTROL_OFFICER"
+     ifne                L11
+
+     pushbyte            1
+     returnvalue
+
+L11:
+     getlocal1
+     pushstring          "MANTIS_PILOT"
+     ifne                L16
+
+     pushbyte            2
+     returnvalue
+
+L16:
+     getlocal1
+     pushstring          "COMBOT"
+     ifne                L21
+
+     pushbyte            3
+     returnvalue
+
+L21:
+     getlocal1
+     pushstring          "INFECTED_COMBOT"
+     ifne                L26
+
+     pushbyte            4
+     returnvalue
+
+L26:
+     getlocal1
+     pushstring          "FRIGHTENED_CIVILIAN"
+     ifne                L31
+
+     pushbyte            5
+     returnvalue
+
+L31:
+     getlocal1
+     pushstring          "VIP"
+     ifne                L36
+
+     pushbyte            6
+     returnvalue
+
+L36:
+     getlocal1
+     pushstring          "HOSPITAL_ADMIN"
+     ifne                L41
+
+     pushbyte            7
+     returnvalue
+
+L41:
+     getlocal1
+     pushstring          "ASSAULT"
+     ifne                L46
+
+     pushbyte            8
+     returnvalue
+
+L46:
+     getlocal1
+     pushstring          "MEDIC"
+     ifne                L51
+
+     pushbyte            10
+     returnvalue
+
+L51:
+     getlocal1
+     pushstring          "HEAVY"
+     ifne                L56
+
+     pushbyte            9
+     returnvalue
+
+L56:
+     getlocal1
+     pushstring          "CHEREK_GRIN"
+     ifne                L61
+
+     pushbyte            11
+     returnvalue
+
+L61:
+     getlocal1
+     pushstring          "ACTIVE_CHARACTER"
+     ifne                L66
+
+     pushbyte            -1
+     returnvalue
+
+L66:
+     getlocal1
+     pushstring          "Christmas"
+     ifne                L71
+
+     pushbyte            -1
+     returnvalue
+
+L71:
+     findpropstrict      QName(PackageNamespace(""), "Error")
+     pushstring          "Unknown icon code"
+     constructprop       QName(PackageNamespace(""), "Error"), 1
+     throw
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

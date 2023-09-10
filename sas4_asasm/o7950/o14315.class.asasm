@@ -1,0 +1,158 @@
+class
+ refid "o7950/o14315"
+ instance QName(PrivateNamespace("FilePrivateNS:o7950"), "o14315")
+  extends QName(PackageNamespace(""), "o15755")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("FilePrivateNS:o7950:o14315")
+  iinit
+   refid "o7950/o14315/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o7321") type QName(PackageNamespace(""), "o4332") end
+  trait method QName(PackageNamespace(""), "o16955") flag OVERRIDE
+   method
+    name "o16955"
+    refid "o7950/o14315/instance/o16955"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "o7218"
+    paramname "o10303"
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "o16955"), 1
+      pushstring          "terminal"
+      findproperty        QName(PackageNamespace(""), "name")
+      swap
+      setproperty         QName(PackageNamespace(""), "name")
+
+      findpropstrict      QName(PackageNamespace(""), "name")
+      dup
+      getproperty         QName(PackageNamespace(""), "name")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readUTF"), 0
+      add
+      setproperty         QName(PackageNamespace(""), "name")
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal3
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o9721")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "o12831"), 1
+      findproperty        QName(PackageNamespace(""), "o7321")
+      swap
+      setproperty         QName(PackageNamespace(""), "o7321")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19115") flag OVERRIDE
+   method
+    name "o19115"
+    refid "o7950/o14315/instance/o19115"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("o8023"), "o5836")
+      iffalse             L6
+
+      returnvoid
+
+L6:
+      getlex              QName(PackageNamespace(""), "o7321")
+      iffalse             L10
+
+      getlex              QName(PackageNamespace(""), "o7321")
+      callpropvoid        QName(Namespace("o5264"), "o19115"), 0
+
+L10:
+      pushnull
+      findproperty        QName(PackageNamespace(""), "o7321")
+      swap
+      setproperty         QName(PackageNamespace(""), "o7321")
+
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "o19115"), 0
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o7950/o14315/class/init"
+  body
+   maxstack 6
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushbyte            1
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o19845")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "Terminal Name"
+    newarray            4
+    pushbyte            2
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o2013")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "Terminal Image"
+    newarray            4
+    newarray            2
+    findproperty        QName(PackageNamespace(""), "o20272")
+    swap
+    setproperty         QName(PackageNamespace(""), "o20272")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o20272") type QName(PackageNamespace(""), "Array") end
+end ; class

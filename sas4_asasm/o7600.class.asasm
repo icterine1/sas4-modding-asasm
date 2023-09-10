@@ -1,0 +1,166 @@
+class
+ refid "o7600"
+ instance QName(PackageNamespace(""), "o7600")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o7600"
+   refid "o7600/instance/init"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "o11680"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("o7600"), "o11680")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o7600"), "o11680") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait method QName(PackageNamespace(""), "o11478")
+   method
+    name "o11478"
+    refid "o7600/instance/o11478"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o11680"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("o7600"), "o11680")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o16682")
+   method
+    name "o16682"
+    refid "o7600/instance/o16682"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o7600"), "o11680")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "random")
+   method
+    name "random"
+    refid "o7600/instance/random"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "random")
+      getlex              QName(PrivateNamespace("o7600"), "o11680")
+      convert_d
+      dup
+      increment
+      findpropstrict      QName(PrivateNamespace("o7600"), "o11680")
+      swap
+      setproperty         QName(PrivateNamespace("o7600"), "o11680")
+
+      callproperty        QName(PackageNamespace(""), "o10418"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o3471")
+   method
+    name "o3471"
+    refid "o7600/instance/o3471"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "min"
+    paramname "max"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "random")
+      getlex              QName(PrivateNamespace("o7600"), "o11680")
+      convert_d
+      dup
+      increment
+      findpropstrict      QName(PrivateNamespace("o7600"), "o11680")
+      swap
+      setproperty         QName(PrivateNamespace("o7600"), "o11680")
+
+      callproperty        QName(PackageNamespace(""), "o10418"), 1
+      getlocal2
+      getlocal1
+      subtract
+      multiply
+      getlocal1
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o7600/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

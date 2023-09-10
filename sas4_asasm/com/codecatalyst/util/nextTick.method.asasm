@@ -1,0 +1,66 @@
+method
+ name "com.codecatalyst.util:nextTick"
+ refid "com.codecatalyst.util:nextTick"
+ param QName(PackageNamespace(""), "Function")
+ param QName(PackageNamespace(""), "Array")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ flag HAS_OPTIONAL
+ flag HAS_PARAM_NAMES
+ optional Null()
+ paramname "callback"
+ paramname "parameters"
+ body
+  maxstack 4
+  localcount 4
+  initscopedepth 2
+  maxscopedepth 4
+  code
+   getlocal0
+   pushscope
+
+   newactivation
+   dup
+   setlocal3
+
+   pushscope
+
+   getscopeobject      1
+   pushnull
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             3
+
+   getscopeobject      1
+   pushbyte            0
+   setslot             4
+
+   getscopeobject      1
+   getlocal1
+   setslot             1
+
+   getscopeobject      1
+   getlocal2
+   setslot             2
+
+   getscopeobject      1
+   newfunction         "com.codecatalyst.util:nextTick/inline_method"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             3
+
+   getscopeobject      1
+   findpropstrict      QName(PackageNamespace("flash.utils"), "setInterval")
+   getscopeobject      1
+   getslot             3
+   pushbyte            0
+   callproperty        QName(PackageNamespace("flash.utils"), "setInterval"), 2
+   convert_i
+   setslot             4
+
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "callback") slotid 1 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "parameters") slotid 2 type QName(PackageNamespace(""), "Array") value Null() end
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "execute") slotid 3 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "intervalId") slotid 4 type QName(PackageNamespace(""), "int") end
+ end ; body
+end ; method

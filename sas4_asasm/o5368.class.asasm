@@ -1,0 +1,250 @@
+class
+ refid "o5368"
+ instance QName(PackageNamespace(""), "o5368")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o5368/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o5368"), "o13156") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("o5368"), "o14170") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("o5368"), "o5950") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "Function")>) value Null() end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o5368/instance/initialise"
+    param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o16124")>)
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o20630"
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "length")
+      findproperty        QName(PrivateNamespace("o5368"), "o14170")
+      swap
+      setproperty         QName(PrivateNamespace("o5368"), "o14170")
+
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      setlocal3
+
+      jump                L21
+
+L12:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "o16124")
+      setlocal2
+
+      getlocal2
+      getlex              QName(PrivateNamespace("o5368"), "o8412")
+      callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+L21:
+      hasnext2            3, 4
+      iftrue              L12
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o5368"), "o8412")
+   method
+    name "o8412"
+    refid "o5368/instance/o5368/instance/o8412"
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "data"
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o5368"), "o13156")
+      convert_d
+      increment
+      findpropstrict      QName(PrivateNamespace("o5368"), "o13156")
+      swap
+      setproperty         QName(PrivateNamespace("o5368"), "o13156")
+
+      findpropstrict      QName(PackageNamespace(""), "o11021")
+      callproperty        QName(PackageNamespace(""), "o11021"), 0
+      iffalse             L35
+
+      getlex              QName(PrivateNamespace("o5368"), "o5950")
+      pushnull
+      ifeq                L35
+
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(PrivateNamespace("o5368"), "o5950")
+      setlocal3
+
+      jump                L29
+
+L19:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Function")
+      setlocal2
+
+      getlocal2
+      getlocal0
+      call                0
+      pop
+L29:
+      hasnext2            3, 4
+      iftrue              L19
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o5368"), "o5950")
+      swap
+      setproperty         QName(PrivateNamespace("o5368"), "o5950")
+
+L35:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "defer")
+   method
+    name "defer"
+    refid "o5368/instance/defer"
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "call"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o11021")
+      callproperty        QName(PackageNamespace(""), "o11021"), 0
+      iffalse             L13
+
+      getlocal1
+      getlocal0
+      call                0
+      pop
+      pushnull
+      coerce              QName(PackageNamespace(""), "Function")
+      setlocal1
+
+      jump                L32
+
+L13:
+      getlex              QName(PrivateNamespace("o5368"), "o5950")
+      pushnull
+      ifne                L29
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "Function")
+      applytype           1
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "Function")
+      applytype           1
+      astypelate
+      findproperty        QName(PrivateNamespace("o5368"), "o5950")
+      swap
+      setproperty         QName(PrivateNamespace("o5368"), "o5950")
+
+L29:
+      getlex              QName(PrivateNamespace("o5368"), "o5950")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L32:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o11021")
+   method
+    name "o11021"
+    refid "o5368/instance/o11021"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o5368"), "o13156")
+      getlex              QName(PrivateNamespace("o5368"), "o14170")
+      ifeq                L7
+
+      pushfalse
+      returnvalue
+
+L7:
+      pushtrue
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o5368/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

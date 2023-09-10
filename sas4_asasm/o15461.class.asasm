@@ -1,0 +1,109 @@
+class
+ refid "o15461"
+ instance QName(PackageNamespace(""), "o15461")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o15461"
+   refid "o15461/instance/init"
+   body
+    maxstack 4
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("flash.display3D.textures"), "Texture")
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     findproperty        QName(PackageNamespace(""), "o13700")
+     swap
+     setproperty         QName(PackageNamespace(""), "o13700")
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("flash.display3D"), "VertexBuffer3D")
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     findproperty        QName(PackageNamespace(""), "o1280")
+     swap
+     setproperty         QName(PackageNamespace(""), "o1280")
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o18509")
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     findproperty        QName(PackageNamespace(""), "o6828")
+     swap
+     setproperty         QName(PackageNamespace(""), "o6828")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o13700") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("flash.display3D.textures"), "Texture")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o1280") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("flash.display3D"), "VertexBuffer3D")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o6828") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o18509")>) value Null() end
+  trait method QName(PackageNamespace(""), "add")
+   method
+    name "add"
+    refid "o15461/instance/add"
+    param QName(PackageNamespace("flash.display3D.textures"), "Texture")
+    param QName(PackageNamespace("flash.display3D"), "VertexBuffer3D")
+    param QName(PackageNamespace(""), "o18509")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o20188"
+    paramname "o2717"
+    paramname "o8270"
+    body
+     maxstack 2
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o13700")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlex              QName(PackageNamespace(""), "o6828")
+      getlocal3
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlex              QName(PackageNamespace(""), "o1280")
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o15461/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

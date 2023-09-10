@@ -1,0 +1,53 @@
+method
+ name "o6051.as$2:anonymous"
+ refid "o6051/instance/o11612/inline_method#0"
+ param QName(PackageNamespace(""), "Object")
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "Number")
+ body
+  maxstack 3
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal1
+   getproperty         Multiname("o20133", [PrivateNamespace("o6051"), ProtectedNamespace("o6051"), StaticProtectedNs("o6051"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6051"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageInternalNs(""), "o20133")
+   getproperty         QName(PackageNamespace(""), "value")
+   subtract
+   callproperty        QName(PackageNamespace(""), "abs"), 1
+   convert_d
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "Math")
+   getlocal2
+   getproperty         Multiname("o20133", [PrivateNamespace("o6051"), ProtectedNamespace("o6051"), StaticProtectedNs("o6051"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6051"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageInternalNs(""), "o20133")
+   getproperty         QName(PackageNamespace(""), "value")
+   subtract
+   callproperty        QName(PackageNamespace(""), "abs"), 1
+   convert_d
+   setlocal            4
+
+   getlocal3
+   getlocal            4
+   ifnlt               L23
+
+   pushbyte            -1
+   returnvalue
+
+L23:
+   getlocal3
+   getlocal            4
+   ifngt               L28
+
+   pushbyte            1
+   returnvalue
+
+L28:
+   pushbyte            0
+   returnvalue
+  end ; code
+ end ; body
+end ; method

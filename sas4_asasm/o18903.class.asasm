@@ -1,0 +1,485 @@
+class
+ refid "o18903"
+ instance QName(PackageNamespace(""), "o18903")
+  extends QName(PackageNamespace(""), "o9743")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o18903")
+  iinit
+   name "o18903"
+   refid "o18903/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o18903"), "o17419") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o4215")>) end
+  trait slot QName(PrivateNamespace("o18903"), "o20029") type QName(PackageNamespace(""), "o15625") end
+  trait slot QName(PrivateNamespace("o18903"), "o1934") type QName(PackageNamespace(""), "o15625") end
+  trait slot QName(PrivateNamespace("o18903"), "o1030") type QName(PackageNamespace("flash.text"), "TextField") end
+  trait slot QName(PrivateNamespace("o18903"), "o7871") type QName(PackageNamespace("flash.text"), "TextField") end
+  trait slot QName(PrivateNamespace("o18903"), "o10198") type QName(PackageNamespace("flash.text"), "TextField") end
+  trait slot QName(PrivateNamespace("o18903"), "o12931") type QName(PackageNamespace("flash.display"), "MovieClip") end
+  trait slot QName(PrivateNamespace("o18903"), "o2120") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PrivateNamespace("o18903"), "loader") type QName(PackageNamespace("flash.display"), "Loader") end
+  trait method QName(PrivateNamespace("o18903"), "o11271")
+   method
+    name "o11271"
+    refid "o18903/instance/o18903/instance/o11271"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o14531"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      pushnull
+      ifeq                L10
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o18903"), "o16706")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+L10:
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o7484")
+      pushstring          "/img/"
+      add
+      getlocal1
+      add
+      coerce_s
+      setlocal3
+
+      getlex              QName(PrivateNamespace("o18903"), "o12931")
+      pushbyte            0
+      getlex              QName(PrivateNamespace("o18903"), "o12931")
+      getproperty         QName(PackageNamespace(""), "numChildren")
+      pushbyte            1
+      subtract
+      callpropvoid        QName(PackageNamespace(""), "removeChildren"), 2
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal3
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal2
+
+      findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+      constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+      findproperty        QName(PrivateNamespace("o18903"), "loader")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "loader")
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o18903"), "o16706")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o18903"), "o16706")
+   method
+    name "o16706"
+    refid "o18903/instance/o18903/instance/o16706"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12568"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o18903"), "o12931")
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o18903"), "o16706")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "loader")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "loader")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o16384")
+   method
+    name "o16384"
+    refid "o18903/instance/o16384"
+    param QName(PackageNamespace("flash.display"), "MovieClip")
+    param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o4215")>)
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "asset"
+    paramname "o17419"
+    body
+     maxstack 6
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "init"), 1
+      getlocal0
+      getlocal2
+      setproperty         QName(PrivateNamespace("o18903"), "o17419")
+
+      getlex              QName(ProtectedNamespace("o9743"), "o9679")
+      pushstring          "btnPrev"
+      getlex              QName(PackageNamespace(""), "container")
+      callproperty        QName(PackageNamespace(""), "o17578"), 2
+      findproperty        QName(PrivateNamespace("o18903"), "o20029")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o20029")
+
+      getlex              QName(ProtectedNamespace("o9743"), "o9679")
+      pushstring          "btnNext"
+      getlex              QName(PackageNamespace(""), "container")
+      callproperty        QName(PackageNamespace(""), "o17578"), 2
+      findproperty        QName(PrivateNamespace("o18903"), "o1934")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o1934")
+
+      getlex              QName(PrivateNamespace("o18903"), "o20029")
+      pushstring          "click"
+      getlex              QName(PrivateNamespace("o18903"), "o20561")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      getlex              QName(PrivateNamespace("o18903"), "o1934")
+      pushstring          "click"
+      getlex              QName(PrivateNamespace("o18903"), "o5552")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      getlex              QName(PackageNamespace(""), "container")
+      pushstring          "title"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.text"), "TextField")
+      astypelate
+      findproperty        QName(PrivateNamespace("o18903"), "o1030")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o1030")
+
+      getlex              QName(PackageNamespace(""), "container")
+      pushstring          "date"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.text"), "TextField")
+      astypelate
+      findproperty        QName(PrivateNamespace("o18903"), "o7871")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o7871")
+
+      getlex              QName(PackageNamespace(""), "container")
+      pushstring          "description"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.text"), "TextField")
+      astypelate
+      findproperty        QName(PrivateNamespace("o18903"), "o10198")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o10198")
+
+      getlex              QName(PackageNamespace(""), "container")
+      pushstring          "imagesContainer"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.display"), "MovieClip")
+      astypelate
+      findproperty        QName(PrivateNamespace("o18903"), "o12931")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o12931")
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      ifnle               L78
+
+      getlex              QName(PrivateNamespace("o18903"), "o20029")
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "visible")
+
+      getlex              QName(PrivateNamespace("o18903"), "o1934")
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "visible")
+
+L78:
+      findpropstrict      QName(PackageNamespace(""), "o12948")
+      pushbyte            0
+      callpropvoid        QName(PackageNamespace(""), "o12948"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o18903"), "o20561")
+   method
+    name "o20561"
+    refid "o18903/instance/o18903/instance/o20561"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o12948")
+      getlex              QName(PrivateNamespace("o18903"), "o2120")
+      pushbyte            1
+      add
+      callpropvoid        QName(PackageNamespace(""), "o12948"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o18903"), "o5552")
+   method
+    name "o5552"
+    refid "o18903/instance/o18903/instance/o5552"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o12948")
+      getlex              QName(PrivateNamespace("o18903"), "o2120")
+      pushbyte            1
+      subtract
+      callpropvoid        QName(PackageNamespace(""), "o12948"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o12948")
+   method
+    name "o12948"
+    refid "o18903/instance/o12948"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7023"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      findproperty        QName(PrivateNamespace("o18903"), "o2120")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o2120")
+
+      getlex              QName(PrivateNamespace("o18903"), "o20029")
+      getlocal1
+      getlex              QName(PrivateNamespace("o18903"), "o17419")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            1
+      subtract
+      lessthan
+      setproperty         QName(PackageNamespace(""), "enabled")
+
+      getlex              QName(PrivateNamespace("o18903"), "o1934")
+      getlocal1
+      pushbyte            0
+      greaterthan
+      setproperty         QName(PackageNamespace(""), "enabled")
+
+      getlex              QName(PrivateNamespace("o18903"), "o17419")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("o18903"), ProtectedNamespace("o18903"), StaticProtectedNs("o18903"), StaticProtectedNs("o9743"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o18903"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce              QName(PackageNamespace(""), "o4215")
+      setlocal2
+
+      getlex              QName(PrivateNamespace("o18903"), "o7871")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "date")
+      setproperty         QName(PackageNamespace(""), "text")
+
+      getlex              QName(PrivateNamespace("o18903"), "o1030")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o17977")
+      setproperty         QName(PackageNamespace(""), "text")
+
+      getlex              QName(PrivateNamespace("o18903"), "o10198")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o8398")
+      setproperty         QName(PackageNamespace(""), "text")
+
+      findpropstrict      QName(PrivateNamespace("o18903"), "o11271")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o7957")
+      callpropvoid        QName(PrivateNamespace("o18903"), "o11271"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13640") flag OVERRIDE
+   method
+    name "o13640"
+    refid "o18903/instance/o13640"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o18903"), "o20029")
+      pushstring          "click"
+      getlex              QName(PrivateNamespace("o18903"), "o20561")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      getlex              QName(PrivateNamespace("o18903"), "o1934")
+      pushstring          "click"
+      getlex              QName(PrivateNamespace("o18903"), "o5552")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      pushnull
+      ifeq                L18
+
+      getlex              QName(PrivateNamespace("o18903"), "loader")
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o18903"), "o16706")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+L18:
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o17419")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o17419")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o20029")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o20029")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o1934")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o1934")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o1030")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o1030")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o7871")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o7871")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o10198")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o10198")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "o12931")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "o12931")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o18903"), "loader")
+      swap
+      setproperty         QName(PrivateNamespace("o18903"), "loader")
+
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "o13640"), 0
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o18903/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,66 @@
+method
+ name "o10330.as$11:anonymous"
+ refid "o10330/instance/o840/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_REST
+ body
+  maxstack 2
+  localcount 6
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushbyte            0
+   setlocal3
+
+   pushbyte            0
+   setlocal            5
+
+   getlocal1
+   setlocal            4
+
+   jump                L29
+
+L7:
+   label
+   getlocal            4
+   getlocal            5
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o14801")
+   setlocal2
+
+   getlocal2
+   callproperty        QName(PackageNamespace(""), "o10340"), 0
+   convert_i
+   setlocal3
+
+   getlocal3
+   pushbyte            0
+   ifnlt               L24
+
+   getlocal2
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "o17811")
+
+   jump                L26
+
+L24:
+   getlocal3
+   setlocal3
+
+L26:
+   getlocal2
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "o14423")
+
+L29:
+   hasnext2            4, 5
+   iftrue              L7
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

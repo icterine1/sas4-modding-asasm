@@ -1,0 +1,60 @@
+method
+ name "com.codecatalyst.promise:Promise/always/com.codecatalyst.promise:onRejected"
+ refid "com.codecatalyst.promise:Promise/instance/always/inline_method#1"
+ param null
+ flag NEED_ACTIVATION
+ flag HAS_PARAM_NAMES
+ paramname "reason"
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 6
+  maxscopedepth 9
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+L7:
+   findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "onCompleted")
+   callproplex         QName(PackageInternalNs("com.codecatalyst.promise"), "onCompleted"), 0
+   pop
+L10:
+   jump                L26
+
+L11:
+   getlocal2
+   pushscope
+
+   newcatch            0
+   dup
+   setlocal3
+
+   dup
+   pushscope
+
+   swap
+   setslot             1
+
+   findpropstrict      QName(PrivateNamespace("com.codecatalyst.promise:Promise"), "scheduleRethrowError")
+   getscopeobject      1
+   getslot             1
+   callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Promise"), "scheduleRethrowError"), 1
+
+   popscope
+   kill                3
+L26:
+   getscopeobject      0
+   getslot             1
+   throw
+  end ; code
+  try from L7 to L10 target L11 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "error") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "reason") slotid 1 end
+ end ; body
+end ; method

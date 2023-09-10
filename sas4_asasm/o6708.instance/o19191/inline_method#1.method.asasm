@@ -1,0 +1,104 @@
+method
+ name "o18994"
+ refid "o6708/instance/o19191/inline_method#1"
+ param null
+ param QName(PackageNamespace(""), "Array")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 6
+  localcount 6
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal3
+
+   pushnull
+   setlocal            4
+
+   pushbyte            0
+   setlocal            5
+
+   jump                L9
+
+L7:
+   label
+   inclocal_i          5
+L9:
+   getlocal            5
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   lessthan
+   dup
+   iffalse             L31
+
+   pop
+   getlocal2
+   getlocal            5
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("o9266", [PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushnull
+   equals
+   dup
+   iftrue              L31
+
+   pop
+   getlocal2
+   getlocal            5
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("name", [PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushstring          "com.ninjakiwi.blister.utils::Mem$/create"
+   equals
+L31:
+   iftrue              L7
+
+   getlocal            5
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   ifnlt               L72
+
+   getlex              QName(PackageInternalNs(""), "o18868")
+   getglobalscope
+   getlocal2
+   getlocal            5
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("name", [PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   call                1
+   coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "Pack")
+   setlocal3
+
+   findpropstrict      QName(PrivateNamespace("FilePrivateNS:o6708"), "o1742")
+   getlex              QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+   getglobalscope
+   getlocal1
+   call                1
+   getlex              QName(PackageNamespace("flash.sampler"), "getSize")
+   getglobalscope
+   getlocal1
+   call                1
+   getlocal2
+   getlocal            5
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("o9266", [PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal2
+   getlocal            5
+   getproperty         MultinameL([PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("o8995", [PrivateNamespace("o6708"), ProtectedNamespace("o6708"), StaticProtectedNs("o6708"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6708"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   constructprop       QName(PrivateNamespace("FilePrivateNS:o6708"), "o1742"), 4
+   coerce              QName(PrivateNamespace("FilePrivateNS:o6708"), "o1742")
+   setlocal            4
+
+   getlex              QName(PackageInternalNs(""), "o9215")
+   getlocal            4
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "o9215")
+   getlocal            4
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L72:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

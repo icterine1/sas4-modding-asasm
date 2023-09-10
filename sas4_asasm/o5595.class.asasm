@@ -1,0 +1,66 @@
+class
+ refid "o5595"
+ instance QName(PackageNamespace(""), "o5595")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o5595"
+   refid "o5595/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional False()
+   optional False()
+   paramname "type"
+   paramname "o17594"
+   paramname "o16113"
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     constructsuper      3
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o5595/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "buttonDown"
+    findproperty        QName(PackageNamespace(""), "o19618")
+    swap
+    initproperty        QName(PackageNamespace(""), "o19618")
+
+    pushstring          "indexChanged"
+    findproperty        QName(PackageNamespace(""), "o16737")
+    swap
+    initproperty        QName(PackageNamespace(""), "o16737")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o19618") type QName(PackageNamespace(""), "String") end
+ trait const QName(PackageNamespace(""), "o16737") type QName(PackageNamespace(""), "String") end
+end ; class

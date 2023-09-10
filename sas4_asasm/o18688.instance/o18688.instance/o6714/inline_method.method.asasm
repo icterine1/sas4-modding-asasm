@@ -1,0 +1,59 @@
+method
+ name "o18688.as$0:anonymous"
+ refid "o18688/instance/o18688/instance/o6714/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageInternalNs(""), "promise")
+   getproperty         QName(PackageNamespace(""), "data")
+   findproperty        QName(PrivateNamespace("o18688"), "o17666")
+   swap
+   setproperty         QName(PrivateNamespace("o18688"), "o17666")
+
+   pushnull
+   findproperty        QName(PackageNamespace(""), "o183")
+   swap
+   setproperty         QName(PackageNamespace(""), "o183")
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageNamespace(""), "o14506")
+   astypelate
+   coerce              QName(PackageNamespace(""), "o14506")
+   setlocal1
+
+   getlocal1
+   pushnull
+   ifeq                L22
+
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "o11333")
+   findproperty        QName(PackageNamespace(""), "o183")
+   swap
+   setproperty         QName(PackageNamespace(""), "o183")
+
+L22:
+   getlex              QName(PrivateNamespace("o18688"), "o8700")
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifngt               L29
+
+   findpropstrict      QName(PrivateNamespace("o18688"), "o6714")
+   callpropvoid        QName(PrivateNamespace("o18688"), "o6714"), 0
+
+   jump                L33
+
+L29:
+   pushfalse
+   findproperty        QName(PrivateNamespace("o18688"), "running")
+   swap
+   setproperty         QName(PrivateNamespace("o18688"), "running")
+
+L33:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

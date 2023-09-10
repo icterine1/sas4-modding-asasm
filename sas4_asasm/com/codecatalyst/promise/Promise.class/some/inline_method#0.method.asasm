@@ -1,0 +1,165 @@
+method
+ name "com.codecatalyst.promise:Promise/some/com.codecatalyst.promise:process"
+ refid "com.codecatalyst.promise:Promise/class/some/inline_method#0"
+ param QName(PackageNamespace(""), "Array")
+ returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+ flag NEED_ACTIVATION
+ flag HAS_PARAM_NAMES
+ paramname "promisesOrValues"
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 5
+  maxscopedepth 6
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   getscopeobject      0
+   pushnull
+   coerce              QName(PackageNamespace(""), "Array")
+   setslot             2
+
+   getscopeobject      0
+   pushbyte            0
+   convert_u
+   setslot             3
+
+   getscopeobject      0
+   pushbyte            0
+   convert_u
+   setslot             4
+
+   getscopeobject      0
+   pushnull
+   coerce              QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+   setslot             5
+
+   getscopeobject      0
+   pushbyte            0
+   convert_u
+   setslot             8
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+   getscopeobject      0
+   newarray            0
+   coerce              QName(PackageNamespace(""), "Array")
+   setslot             2
+
+   getscopeobject      0
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "howMany")
+   convert_u
+   setslot             3
+
+   getscopeobject      0
+   getscopeobject      0
+   getslot             1
+   getproperty         QName(PackageNamespace(""), "length")
+   getscopeobject      0
+   getslot             3
+   subtract
+   pushbyte            1
+   add
+   convert_u
+   setslot             4
+
+   getscopeobject      0
+   findpropstrict      QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+   constructprop       QName(PackageNamespace("com.codecatalyst.promise"), "Deferred"), 0
+   coerce              QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+   setslot             5
+
+   getscopeobject      0
+   getslot             1
+   getproperty         QName(PackageNamespace(""), "length")
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "howMany")
+   ifnlt               L63
+
+   getscopeobject      0
+   getslot             5
+   findpropstrict      QName(PackageNamespace(""), "Error")
+   pushstring          "Too few Promises were resolved."
+   constructprop       QName(PackageNamespace(""), "Error"), 1
+   callpropvoid        QName(PackageNamespace(""), "reject"), 1
+
+   jump                L108
+
+L63:
+   getscopeobject      0
+   newfunction         "com.codecatalyst.promise:Promise/class/some/inline_method#1"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             6
+
+   getscopeobject      0
+   newfunction         "com.codecatalyst.promise:Promise/class/some/inline_method#2"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             7
+
+   getscopeobject      0
+   pushbyte            0
+   convert_u
+   setslot             8
+
+   jump                L102
+
+L76:
+   label
+   getscopeobject      0
+   getslot             8
+   getscopeobject      0
+   getslot             1
+   in
+   iffalse             L95
+
+   getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+   getscopeobject      0
+   getslot             1
+   getscopeobject      0
+   getslot             8
+   getproperty         MultinameL([PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+   callproperty        QName(PackageNamespace(""), "when"), 1
+   getscopeobject      0
+   getslot             6
+   getscopeobject      0
+   getslot             7
+   callpropvoid        QName(PackageNamespace(""), "then"), 2
+
+L95:
+   getscopeobject      0
+   getslot             8
+   increment
+   convert_u
+   getscopeobject      0
+   swap
+   setslot             8
+
+L102:
+   getscopeobject      0
+   getslot             8
+   getscopeobject      0
+   getslot             1
+   getproperty         QName(PackageNamespace(""), "length")
+   iflt                L76
+
+L108:
+   getscopeobject      0
+   getslot             5
+   getproperty         QName(PackageNamespace(""), "promise")
+   returnvalue
+  end ; code
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "promisesOrValues") slotid 1 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "values") slotid 2 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToResolve") slotid 3 type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "remainingToReject") slotid 4 type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "deferred") slotid 5 type QName(PackageNamespace("com.codecatalyst.promise"), "Deferred") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "onResolve") slotid 6 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "onReject") slotid 7 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "index") slotid 8 type QName(PackageNamespace(""), "uint") end
+ end ; body
+end ; method

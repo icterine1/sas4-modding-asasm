@@ -1,0 +1,44 @@
+method
+ name "o9602.as$1:anonymous"
+ refid "o9602/instance/initialise/inline_method#1"
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 3
+  localcount 1
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   pushscope
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "stage")
+   pushstring          "keyDown"
+   newfunction         "o9602/instance/initialise/inline_method#2"
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "stage")
+   pushstring          "keyUp"
+   newfunction         "o9602/instance/initialise/inline_method#3"
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "stage")
+   pushstring          "mouseWheel"
+   getlex              QName(PrivateNamespace("o9602"), "o2902")
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+   findpropstrict      QName(PackageNamespace(""), "o2641")
+   getlex              QName(PackageInternalNs(""), "o9721")
+   getlex              QName(PackageInternalNs(""), "promise")
+   callpropvoid        QName(PackageNamespace(""), "o2641"), 2
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

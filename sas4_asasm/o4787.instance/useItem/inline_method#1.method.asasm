@@ -1,0 +1,38 @@
+method
+ name "o3488"
+ refid "o4787/instance/useItem/inline_method#1"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "trace")
+   getglobalscope
+   pushstring          "urlLoader_complete"
+   call                1
+   pop
+   getlex              QName(PackageInternalNs(""), "o17327")
+   getproperty         QName(PackageNamespace(""), "data")
+   coerce_s
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "trace")
+   getglobalscope
+   pushstring          "urlLoader_complete: "
+   getlocal2
+   add
+   call                1
+   pop
+   getlex              QName(PackageInternalNs(""), "o5734")
+   getglobalscope
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlocal2
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   call                1
+   returnvoid
+  end ; code
+ end ; body
+end ; method

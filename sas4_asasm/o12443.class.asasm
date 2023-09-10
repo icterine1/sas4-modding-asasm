@@ -1,0 +1,137 @@
+class
+ refid "o12443"
+ instance QName(PackageNamespace(""), "o12443")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o12443"
+   refid "o12443/instance/init"
+   param QName(PackageNamespace(""), "o18442")
+   flag HAS_PARAM_NAMES
+   paramname "o18481"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     pushnull
+     ifeq                L28
+
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o20133")
+     setproperty         QName(PackageNamespace(""), "o7743")
+
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "type")
+     setproperty         QName(PackageNamespace(""), "o9899")
+
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "grade")
+     pushbyte            0
+     greaterthan
+     setproperty         QName(PackageNamespace(""), "o4084")
+
+     getlocal0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o19831")
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     greaterthan
+     setproperty         QName(PackageNamespace(""), "o16277")
+
+L28:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o9899") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "o4084") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PackageNamespace(""), "o16277") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PackageNamespace(""), "o7743") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait getter QName(PackageNamespace(""), "o5766")
+   method
+    name "o5766"
+    refid "o12443/instance/o5766/getter"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o9899")
+      pushbyte            11
+      equals
+      dup
+      iffalse             L9
+
+      pop
+      getlex              QName(PackageNamespace(""), "o4084")
+L9:
+      dup
+      iffalse             L13
+
+      pop
+      getlex              QName(PackageNamespace(""), "o16277")
+L13:
+      iffalse             L16
+
+      pushtrue
+      returnvalue
+
+L16:
+      getlex              QName(PackageNamespace(""), "o9899")
+      pushbyte            14
+      equals
+      dup
+      iffalse             L23
+
+      pop
+      getlex              QName(PackageNamespace(""), "o4084")
+L23:
+      dup
+      iffalse             L27
+
+      pop
+      getlex              QName(PackageNamespace(""), "o16277")
+L27:
+      iffalse             L30
+
+      pushtrue
+      returnvalue
+
+L30:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o12443/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

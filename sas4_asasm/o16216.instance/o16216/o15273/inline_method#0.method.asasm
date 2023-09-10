@@ -1,0 +1,62 @@
+method
+ name "o16216.as$0:anonymous"
+ refid "o16216/instance/o16216:o15273/inline_method#0"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace("flash.net"), "URLLoader")
+   getglobalscope
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "target")
+   call                1
+   coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "data")
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   coerce              QName(PackageNamespace(""), "Object")
+   setlocal3
+
+   getlocal3
+   pushstring          "data"
+   getproperty         MultinameL([PrivateNamespace("o16216"), ProtectedNamespace("o16216"), StaticProtectedNs("o16216"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16216"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageNamespace(""), "Array")
+   istypelate
+   dup
+   iffalse             L29
+
+   pop
+   getlocal3
+   pushstring          "data"
+   getproperty         MultinameL([PrivateNamespace("o16216"), ProtectedNamespace("o16216"), StaticProtectedNs("o16216"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16216"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageNamespace(""), "Array")
+   astypelate
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   equals
+L29:
+   iffalse             L34
+
+   findpropstrict      QName(ProtectedNamespace("o16216"), "o16192")
+   pushfalse
+   callpropvoid        QName(ProtectedNamespace("o16216"), "o16192"), 1
+
+   jump                L37
+
+L34:
+   findpropstrict      QName(ProtectedNamespace("o16216"), "o16192")
+   pushtrue
+   callpropvoid        QName(ProtectedNamespace("o16216"), "o16192"), 1
+
+L37:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

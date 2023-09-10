@@ -1,0 +1,198 @@
+class
+ refid "o14506"
+ instance QName(PackageNamespace(""), "o14506")
+  extends QName(PackageNamespace(""), "o16124")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o14506")
+  iinit
+   refid "o14506/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o11333") value Null() end
+  trait setter QName(PackageNamespace(""), "data") flag OVERRIDE
+   method
+    name "data"
+    refid "o14506/instance/data/setter"
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o11021")
+      callproperty        QName(PackageNamespace(""), "o11021"), 0
+      iffalse             L6
+
+      returnvoid
+
+L6:
+      getlocal1
+      findproperty        QName(ProtectedNamespace("o16124"), "o3610")
+      swap
+      setproperty         QName(ProtectedNamespace("o16124"), "o3610")
+
+      getlex              QName(ProtectedNamespace("o16124"), "o5950")
+      pushnull
+      ifeq                L45
+
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(ProtectedNamespace("o16124"), "o5950")
+      setlocal3
+
+      jump                L39
+
+L18:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "Function")
+      setlocal2
+
+      getlex              QName(PackageNamespace(""), "o11333")
+      pushnull
+      ifne                L33
+
+      getlocal2
+      getlocal0
+      getlex              QName(PackageNamespace(""), "data")
+      call                1
+      pop
+      jump                L39
+
+L33:
+      getlocal2
+      getlocal0
+      getlex              QName(PackageNamespace(""), "data")
+      getlex              QName(PackageNamespace(""), "o11333")
+      call                2
+      pop
+L39:
+      hasnext2            3, 4
+      iftrue              L18
+
+      pushnull
+      findproperty        QName(ProtectedNamespace("o16124"), "o5950")
+      swap
+      setproperty         QName(ProtectedNamespace("o16124"), "o5950")
+
+L45:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "defer") flag OVERRIDE
+   method
+    name "defer"
+    refid "o14506/instance/defer"
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "call"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o11021")
+      callproperty        QName(PackageNamespace(""), "o11021"), 0
+      iffalse             L24
+
+      getlex              QName(PackageNamespace(""), "o11333")
+      pushnull
+      ifne                L14
+
+      getlocal1
+      getlocal0
+      getlex              QName(PackageNamespace(""), "data")
+      call                1
+      pop
+      jump                L20
+
+L14:
+      getlocal1
+      getlocal0
+      getlex              QName(PackageNamespace(""), "data")
+      getlex              QName(PackageNamespace(""), "o11333")
+      call                2
+      pop
+L20:
+      pushnull
+      coerce              QName(PackageNamespace(""), "Function")
+      setlocal1
+
+      jump                L43
+
+L24:
+      getlex              QName(ProtectedNamespace("o16124"), "o5950")
+      pushnull
+      ifne                L40
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "Function")
+      applytype           1
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "Function")
+      applytype           1
+      astypelate
+      findproperty        QName(ProtectedNamespace("o16124"), "o5950")
+      swap
+      setproperty         QName(ProtectedNamespace("o16124"), "o5950")
+
+L40:
+      getlex              QName(ProtectedNamespace("o16124"), "o5950")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L43:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o14506/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

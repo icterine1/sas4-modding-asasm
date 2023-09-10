@@ -1,0 +1,44 @@
+method
+ name "o12329.as$0:anonymous"
+ refid "orphan_method_321"
+ param QName(PackageNamespace("flash.events"), "KeyboardEvent")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "keyCode")
+   pushshort           192
+   ifne                L9
+
+   getlex              QName(PackageNamespace(""), "visible")
+   not
+   findproperty        QName(PackageNamespace(""), "visible")
+   swap
+   setproperty         QName(PackageNamespace(""), "visible")
+
+L9:
+   getlex              QName(PackageNamespace(""), "visible")
+   iffalse             L16
+
+   getlex              QName(PackageNamespace(""), "stage")
+   pushstring          "keyDown"
+   getlex              QName(PrivateNamespace("o12329"), "o20303")
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+   jump                L20
+
+L16:
+   getlex              QName(PackageNamespace(""), "stage")
+   pushstring          "keyDown"
+   getlex              QName(PrivateNamespace("o12329"), "o20303")
+   callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+L20:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

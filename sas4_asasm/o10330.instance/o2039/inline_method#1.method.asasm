@@ -1,0 +1,294 @@
+method
+ name "o10330.as$9:anonymous"
+ refid "o10330/instance/o2039/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 6
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "o20668")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "o20668")
+
+   getlex              QName(PackageInternalNs(""), "o20668")
+   iffalse             L160
+
+   getlex              QName(PackageInternalNs(""), "o20668")
+   pushstring          "scores"
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             2
+
+   getlex              QName(PackageInternalNs(""), "object")
+   pushstring          "equal"
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             3
+
+   pushbyte            0
+   getlocal2
+   swap
+   setslot             4
+
+   pushbyte            0
+   getlocal2
+   swap
+   setslot             5
+
+   pushbyte            0
+   setlocal            4
+
+   getlex              QName(PackageInternalNs(""), "o13566")
+   setlocal3
+
+   jump                L158
+
+L36:
+   label
+   getlocal3
+   getlocal            4
+   nextvalue
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             6
+
+   getlex              QName(PackageInternalNs(""), "o6564")
+   getlex              QName(PackageInternalNs(""), "o12582")
+   getproperty         QName(PackageNamespace(""), "length")
+   ifnlt               L158
+
+   getlex              QName(PackageNamespace(""), "Math")
+   getlex              QName(PackageInternalNs(""), "o12582")
+   getlex              QName(PackageInternalNs(""), "o6564")
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("o2760", [PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushbyte            100
+   multiply
+   callproperty        QName(PackageNamespace(""), "round"), 1
+   convert_i
+   getlocal2
+   swap
+   setslot             7
+
+   getlex              QName(PackageInternalNs(""), "o6475")
+   dup
+   iffalse             L67
+
+   pop
+   getlex              QName(PackageInternalNs(""), "o1360")
+   getlex              QName(PackageInternalNs(""), "o5473")
+   equals
+L67:
+   iffalse             L152
+
+   findpropstrict      QName(PackageNamespace(""), "o3643")
+   constructprop       QName(PackageNamespace(""), "o3643"), 0
+   coerce              QName(PackageNamespace(""), "o3643")
+   getlocal2
+   swap
+   setslot             8
+
+   findpropstrict      QName(PackageNamespace(""), "o19551")
+   getlex              QName(PackageInternalNs(""), "o6475")
+   pushstring          "userID"
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageInternalNs(""), "o6475")
+   pushstring          "score"
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageInternalNs(""), "o6475")
+   pushstring          "metadata"
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   constructprop       QName(PackageNamespace(""), "o19551"), 3
+   coerce              QName(PackageNamespace(""), "o19551")
+   getlocal2
+   swap
+   setslot             9
+
+   getlex              QName(PackageInternalNs(""), "o14050")
+   dup
+   iffalse             L100
+
+   pop
+   findpropstrict      QName(PrivateNamespace("o10330"), "o8145")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o11630")
+   getlex              QName(PackageInternalNs(""), "o20434")
+   callproperty        QName(PrivateNamespace("o10330"), "o8145"), 2
+   pushfalse
+   equals
+L100:
+   iffalse             L146
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o3735")
+   setproperty         QName(PackageNamespace(""), "o10615")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o11630")
+   setproperty         QName(PackageNamespace(""), "o799")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "o2562")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o19189")
+   setproperty         QName(PackageNamespace(""), "o19189")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o12762")
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+   setproperty         QName(PackageNamespace(""), "o15820")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14050")
+   getproperty         QName(PackageNamespace(""), "o1727")
+   setproperty         QName(PackageNamespace(""), "o1727")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o12582")
+   getlex              QName(PackageInternalNs(""), "o6564")
+   getproperty         MultinameL([PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("o2760", [PrivateNamespace("o10330"), ProtectedNamespace("o10330"), StaticProtectedNs("o10330"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10330"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   setproperty         QName(PackageNamespace(""), "o19730")
+
+   getlex              QName(PackageInternalNs(""), "o20434")
+   getlex              QName(PackageInternalNs(""), "o1386")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlex              QName(PackageInternalNs(""), "o9106")
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getproperty         QName(PackageNamespace(""), "o799")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getproperty         QName(PackageNamespace(""), "o799")
+   getlex              QName(PackageInternalNs(""), "o14235")
+   ifne                L146
+
+   pushtrue
+   findproperty        QName(PackageInternalNs(""), "o15164")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o15164")
+
+L146:
+   getlex              QName(PackageInternalNs(""), "o6564")
+   convert_d
+   increment
+   findpropstrict      QName(PackageInternalNs(""), "o6564")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o6564")
+
+L152:
+   getlex              QName(PackageInternalNs(""), "o5473")
+   convert_d
+   increment
+   findpropstrict      QName(PackageInternalNs(""), "o5473")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o5473")
+
+L158:
+   hasnext2            3, 4
+   iftrue              L36
+
+L160:
+   findpropstrict      QName(PackageNamespace(""), "o3643")
+   constructprop       QName(PackageNamespace(""), "o3643"), 0
+   coerce              QName(PackageNamespace(""), "o3643")
+   getlocal2
+   swap
+   setslot             8
+
+   getlex              QName(PackageInternalNs(""), "o15164")
+   pushfalse
+   ifne                L205
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o19014")
+   setproperty         QName(PackageNamespace(""), "o10615")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o14235")
+   setproperty         QName(PackageNamespace(""), "o799")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   pushshort           10000
+   setproperty         QName(PackageNamespace(""), "o2562")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o2845")
+   getproperty         QName(PackageNamespace(""), "o19189")
+   pushbyte            0
+   ifnlt               L185
+
+   pushbyte            0
+   jump                L187
+
+L185:
+   getlex              QName(PackageInternalNs(""), "o2845")
+   getproperty         QName(PackageNamespace(""), "o19189")
+L187:
+   setproperty         QName(PackageNamespace(""), "o19189")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o5584")
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+   setproperty         QName(PackageNamespace(""), "o15820")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getlex              QName(PackageInternalNs(""), "o2618")
+   setproperty         QName(PackageNamespace(""), "o1727")
+
+   getlex              QName(PackageInternalNs(""), "o1386")
+   pushbyte            1
+   setproperty         QName(PackageNamespace(""), "o19730")
+
+   getlex              QName(PackageInternalNs(""), "o20434")
+   getlex              QName(PackageInternalNs(""), "o1386")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlex              QName(PackageInternalNs(""), "o9106")
+   getlex              QName(PackageInternalNs(""), "o1386")
+   getproperty         QName(PackageNamespace(""), "o799")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L205:
+   getlex              QName(PackageNamespace(""), "o8613")
+   getlex              QName(PackageInternalNs(""), "o9106")
+   getlex              QName(PackageInternalNs(""), "o7376")
+   callproperty        QName(PackageNamespace(""), "o13887"), 2
+   newfunction         "o10330/instance/o2039/inline_method#2"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "o20668") slotid 1 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "object") slotid 2 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o13566") slotid 3 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o6564") slotid 4 type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageInternalNs(""), "o5473") slotid 5 type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageInternalNs(""), "o6475") slotid 6 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o1360") slotid 7 type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageInternalNs(""), "o1386") slotid 8 type QName(PackageNamespace(""), "o3643") end
+  trait slot QName(PackageInternalNs(""), "o14050") slotid 9 type QName(PackageNamespace(""), "o19551") end
+ end ; body
+end ; method

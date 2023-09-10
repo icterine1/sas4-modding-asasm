@@ -1,0 +1,242 @@
+method
+ name "o14754.as$1:anonymous"
+ refid "o14754/instance/initialise/inline_method#0"
+ param QName(PackageNamespace("flash.utils"), "ByteArray")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 9
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "data")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "data")
+
+   getlex              QName(PackageInternalNs(""), "data")
+   getlex              QName(PackageInternalNs(""), "data")
+   getproperty         QName(PackageNamespace(""), "length")
+   callproperty        QName(PackageNamespace(""), "readUTFBytes"), 1
+   pushstring          "/"
+   add
+   findproperty        QName(PackageNamespace(""), "o7484")
+   swap
+   setproperty         QName(PackageNamespace(""), "o7484")
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o17061")
+   iffalse             L26
+
+   getlex              QName(PackageNamespace(""), "o2555")
+   pushstring          "nk-static-replica.github.io/assets-nkstatic/Games/gameswfs/sas4/download/"
+   callproperty        QName(PackageNamespace(""), "o17203"), 1
+   findproperty        QName(PackageNamespace(""), "o7484")
+   swap
+   setproperty         QName(PackageNamespace(""), "o7484")
+
+   jump                L33
+
+L26:
+   getlex              QName(PackageNamespace(""), "o2555")
+   pushstring          "nk-static-replica.github.io/assets-nkstatic/Games/gameswfs/sas4/download/"
+   callproperty        QName(PackageNamespace(""), "o17203"), 1
+   findproperty        QName(PackageNamespace(""), "o7484")
+   swap
+   setproperty         QName(PackageNamespace(""), "o7484")
+
+   jump                L33
+
+L33:
+   findpropstrict      QName(PackageNamespace(""), "o2784")
+   getlex              QName(PackageNamespace(""), "loader")
+   getlex              QName(PackageNamespace(""), "o7484")
+   pushstring          "val/"
+   add
+   constructprop       QName(PackageNamespace(""), "o2784"), 2
+   findproperty        QName(PackageNamespace(""), "o13413")
+   swap
+   setproperty         QName(PackageNamespace(""), "o13413")
+
+   getlex              QName(PackageNamespace(""), "o7484")
+   pushstring          "scripts/"
+   add
+   findproperty        QName(PackageNamespace(""), "o252")
+   swap
+   setproperty         QName(PackageNamespace(""), "o252")
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             2
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             3
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             4
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             5
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             6
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             7
+
+   getlex              QName(PackageNamespace(""), "o16905")
+   pushnull
+   ifeq                L101
+
+   getlex              QName(PackageNamespace(""), "loader")
+   getlex              QName(PackageNamespace(""), "o7484")
+   pushstring          "localization/"
+   add
+   getlex              QName(PackageNamespace(""), "o16905")
+   add
+   pushstring          ".csv?"
+   add
+   getlex              QName(PackageNamespace(""), "Math")
+   callproperty        QName(PackageNamespace(""), "random"), 0
+   pushshort           10000
+   multiply
+   convert_i
+   add
+   callproperty        QName(Namespace("o3135"), "o17485"), 1
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             7
+
+   jump                L111
+
+L101:
+   findpropstrict      QName(PackageNamespace(""), "o16124")
+   constructprop       QName(PackageNamespace(""), "o16124"), 0
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             7
+
+   getlex              QName(PackageInternalNs(""), "o3731")
+   findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+   constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+   setproperty         QName(PackageNamespace(""), "data")
+
+L111:
+   getlex              QName(PackageNamespace(""), "o970")
+   pushbyte            0
+   getlex              QName(PackageNamespace(""), "o16619")
+   callproperty        QName(PackageNamespace(""), "o7982"), 2
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             2
+
+   getlex              QName(PackageNamespace(""), "o970")
+   pushbyte            1
+   getlex              QName(PackageNamespace(""), "o5830")
+   callproperty        QName(PackageNamespace(""), "o7982"), 2
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             3
+
+   getlex              QName(PackageNamespace(""), "o970")
+   pushbyte            2
+   getlex              QName(PackageNamespace(""), "o7689")
+   callproperty        QName(PackageNamespace(""), "o7982"), 2
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             4
+
+   getlex              QName(PackageNamespace(""), "o970")
+   pushbyte            3
+   getlex              QName(PackageNamespace(""), "o11461")
+   callproperty        QName(PackageNamespace(""), "o7982"), 2
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             5
+
+   getlex              QName(PackageNamespace(""), "o970")
+   pushbyte            5
+   callproperty        QName(PackageNamespace(""), "o17485"), 1
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             6
+
+   jump                L151
+
+L151:
+   findpropstrict      QName(PackageNamespace(""), "o4392")
+   callproperty        QName(PackageNamespace(""), "o4392"), 0
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             8
+
+   getlex              QName(PackageNamespace(""), "o5773")
+   callproperty        QName(PackageNamespace(""), "getServerTime"), 0
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal2
+   swap
+   setslot             9
+
+   findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+   constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+   findproperty        QName(PrivateNamespace("o14754"), "o14885")
+   swap
+   setproperty         QName(PrivateNamespace("o14754"), "o14885")
+
+   getlex              QName(PackageNamespace(""), "o15714")
+   getlex              QName(PackageInternalNs(""), "o13608")
+   getlex              QName(PackageInternalNs(""), "o9074")
+   getlex              QName(PackageInternalNs(""), "o4024")
+   getlex              QName(PackageInternalNs(""), "o308")
+   getlex              QName(PackageInternalNs(""), "o18969")
+   getlex              QName(PackageInternalNs(""), "o3731")
+   getlex              QName(PackageInternalNs(""), "o270")
+   getlex              QName(PackageInternalNs(""), "o8802")
+   newarray            8
+   newfunction         "o14754/instance/initialise/inline_method#1"
+   callpropvoid        QName(PackageNamespace(""), "o18684"), 2
+
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "data") slotid 1 type QName(PackageNamespace("flash.utils"), "ByteArray") end
+  trait slot QName(PackageInternalNs(""), "o13608") slotid 2 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o9074") slotid 3 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o4024") slotid 4 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o308") slotid 5 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o18969") slotid 6 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o3731") slotid 7 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o270") slotid 8 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o8802") slotid 9 type QName(PackageNamespace(""), "o16124") end
+ end ; body
+end ; method

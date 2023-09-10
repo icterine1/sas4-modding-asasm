@@ -1,0 +1,31 @@
+method
+ name "o4868.as$1:anonymous"
+ refid "o4868/instance/o15694/inline_method"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageInternalNs(""), "o10486")
+   iffalse             L5
+
+   getlex              QName(PackageInternalNs(""), "o10486")
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "o19189")
+
+L5:
+   getlex              QName(PackageNamespace(""), "o14200")
+   getproperty         QName(PackageNamespace(""), "o19505")
+   callpropvoid        QName(PackageNamespace(""), "saveData"), 0
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

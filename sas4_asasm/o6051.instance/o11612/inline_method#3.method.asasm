@@ -1,0 +1,104 @@
+method
+ name "o6051.as$5:anonymous"
+ refid "o6051/instance/o11612/inline_method#3"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   findpropstrict      QName(PackageNamespace(""), "o20401")
+   constructprop       QName(PackageNamespace(""), "o20401"), 0
+   coerce              QName(PackageNamespace(""), "o20401")
+   setlocal1
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o5915")
+   iffalse             L9
+
+   pushbyte            0
+   jump                L10
+
+L9:
+   pushbyte            1
+L10:
+   setproperty         QName(PackageNamespace(""), "type")
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o5915")
+   iffalse             L19
+
+   getlex              QName(PackageInternalNs(""), "o9039")
+   getlex              QName(PackageNamespace(""), "o8347")
+   astypelate
+   getproperty         QName(PackageNamespace(""), "id")
+   jump                L23
+
+L19:
+   getlex              QName(PackageInternalNs(""), "o9039")
+   getlex              QName(PackageNamespace(""), "o14809")
+   astypelate
+   getproperty         QName(PackageNamespace(""), "id")
+L23:
+   setproperty         QName(PackageNamespace(""), "o11876")
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "grade")
+   setproperty         QName(PackageNamespace(""), "grade")
+
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "o20140"), 0
+
+   pushbyte            0
+   setlocal            4
+
+   getlex              QName(PackageInternalNs(""), "o17656")
+   setlocal3
+
+   jump                L49
+
+L34:
+   label
+   getlocal3
+   getlocal            4
+   nextvalue
+   convert_i
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "o10609")
+   iffalse             L46
+
+   getlocal1
+   pushbyte            -1
+   callpropvoid        QName(PackageNamespace(""), "o14893"), 1
+
+   jump                L49
+
+L46:
+   getlocal1
+   getlocal2
+   callpropvoid        QName(PackageNamespace(""), "o14893"), 1
+
+L49:
+   hasnext2            3, 4
+   iftrue              L34
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o3436")
+   getproperty         QName(PackageNamespace(""), "value")
+   setproperty         QName(PackageNamespace(""), "o3257")
+
+   getlocal1
+   getlex              QName(PackageInternalNs(""), "o11158")
+   getproperty         QName(PackageNamespace(""), "value")
+   setproperty         QName(PackageNamespace(""), "o8031")
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlocal1
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

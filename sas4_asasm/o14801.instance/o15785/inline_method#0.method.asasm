@@ -1,0 +1,63 @@
+method
+ name "o14801.as$0:anonymous"
+ refid "o14801/instance/o15785/inline_method#0"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushbyte            0
+   setlocal2
+
+   getlocal1
+   pushnull
+   ifne                L9
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o14478")
+   setproperty         QName(PackageNamespace(""), "data")
+
+   jump                L34
+
+L9:
+   getlocal1
+   pushstring          "wallet"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushstring          "currencies"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageNamespace(""), "o7376")
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_i
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "isNaN")
+   getglobalscope
+   getlocal2
+   call                1
+   pushfalse
+   ifne                L28
+
+   getlex              QName(PackageInternalNs(""), "o14478")
+   getlocal2
+   setproperty         QName(PackageNamespace(""), "o14209")
+
+   jump                L31
+
+L28:
+   getlex              QName(PackageInternalNs(""), "o14478")
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "o14209")
+
+L31:
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o14478")
+   setproperty         QName(PackageNamespace(""), "data")
+
+L34:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

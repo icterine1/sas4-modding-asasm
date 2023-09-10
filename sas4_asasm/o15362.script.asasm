@@ -1,0 +1,81 @@
+script
+ sinit
+  refid "o15362/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 7
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "DisplayObject")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "InteractiveObject")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.display"), "Sprite")
+    dup
+    pushscope
+
+    newclass            "o15362"
+    popscope
+    popscope
+    popscope
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o15362")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o8023")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o15755")
+    dup
+    pushscope
+
+    newclass            "o15362/o9232"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o15362"), "o9232")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "o15362/o2219"
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o15362"), "o2219")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o15362")
+  #include "o15362.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o15362"), "o9232")
+  #include "o15362/o9232.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o15362"), "o2219")
+  #include "o15362/o2219.class.asasm"
+ end ; trait
+end ; script

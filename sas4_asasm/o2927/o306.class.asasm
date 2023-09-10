@@ -1,0 +1,159 @@
+class
+ refid "o2927/o306"
+ instance QName(PrivateNamespace("FilePrivateNS:o2927"), "o306")
+  extends QName(PackageNamespace(""), "o15755")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("FilePrivateNS:o2927:o306")
+  iinit
+   refid "o2927/o306/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "postMessage")
+   method
+    name "postMessage"
+    refid "o2927/o306/instance/postMessage"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o18765"
+    paramname "o1216"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+      constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+      coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+      setlocal3
+
+      getlocal3
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "writeByte"), 1
+
+      getlocal3
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
+
+      getlocal3
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "writeUTF"), 1
+
+      findpropstrict      QName(PackageNamespace(""), "dispatchData")
+      findpropstrict      QName(PackageNamespace(""), "o2149")
+      getlocal0
+      getlocal3
+      pushfalse
+      pushtrue
+      constructprop       QName(PackageNamespace(""), "o2149"), 4
+      callpropvoid        QName(PackageNamespace(""), "dispatchData"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o20630") flag OVERRIDE
+   method
+    name "o20630"
+    refid "o2927/o306/instance/o20630"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "time"
+    paramname "data"
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      pushnull
+      setlocal            5
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      convert_i
+      dup
+      setlocal            4
+
+      convert_i
+      pushint             1
+      subtract_i
+      lookupswitch        L29, [L15]
+
+L15:
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal3
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readUTF"), 0
+      coerce_s
+      setlocal            5
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o20488")
+      getlocal3
+      getlocal            5
+      callpropvoid        QName(PackageNamespace(""), "o9885"), 2
+
+L29:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o2927/o306/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    newarray            0
+    findproperty        QName(PackageNamespace(""), "o20272")
+    swap
+    setproperty         QName(PackageNamespace(""), "o20272")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o20272") type QName(PackageNamespace(""), "Array") end
+ trait const QName(PrivateNamespace("FilePrivateNS:o2927:o306"), "o2155") type QName(PackageNamespace(""), "int") value Integer(1) end
+end ; class

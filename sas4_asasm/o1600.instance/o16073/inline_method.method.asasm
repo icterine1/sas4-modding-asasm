@@ -1,0 +1,112 @@
+method
+ name "o1600.as$0:anonymous"
+ refid "o1600/instance/o16073/inline_method"
+ param QName(PackageNamespace(""), "int")
+ param null
+ returns QName(PackageNamespace(""), "o16124")
+ body
+  maxstack 8
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal3
+
+   getlocal1
+   pushbyte            0
+   ifeq                L66
+
+   getlocal2
+   getproperty         Multiname("x", [PrivateNamespace("o1600"), ProtectedNamespace("o1600"), StaticProtectedNs("o1600"), StaticProtectedNs("o17693"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1600"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushbyte            0
+   ifne                L14
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o18885")
+   setproperty         QName(PackageNamespace(""), "data")
+
+   pushnull
+   returnvalue
+
+L14:
+   getlex              QName(PackageInternalNs(""), "o18885")
+   getlocal2
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlex              QName(PackageInternalNs(""), "o18885")
+   getproperty         QName(PackageNamespace(""), "length")
+   getlex              QName(PackageInternalNs(""), "o18640")
+   ifnge               L26
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o18885")
+   setproperty         QName(PackageNamespace(""), "data")
+
+   pushnull
+   returnvalue
+
+L26:
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o20600")
+   getlocal2
+   getproperty         Multiname("fixture", [PrivateNamespace("o1600"), ProtectedNamespace("o1600"), StaticProtectedNs("o1600"), StaticProtectedNs("o17693"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1600"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   callproperty        QName(PackageNamespace(""), "o3546"), 1
+   coerce              QName(PackageNamespace(""), "o4039")
+   setlocal3
+
+   getlocal2
+   getproperty         Multiname("entity", [PrivateNamespace("o1600"), ProtectedNamespace("o1600"), StaticProtectedNs("o1600"), StaticProtectedNs("o17693"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1600"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlex              QName(PackageNamespace(""), "o7848")
+   istypelate
+   not
+   dup
+   iftrue              L56
+
+   pop
+   getlocal3
+   pushnull
+   equals
+   not
+   dup
+   iffalse             L56
+
+   pop
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "o6365")
+   getlex              QName(PackageInternalNs(""), "o12500")
+   bitand
+   pushbyte            0
+   equals
+   not
+L56:
+   iffalse             L62
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o18885")
+   setproperty         QName(PackageNamespace(""), "data")
+
+   pushnull
+   returnvalue
+
+L62:
+   getlex              QName(PackageInternalNs(""), "filter")
+   getlocal2
+   getproperty         Multiname("entity", [PrivateNamespace("o1600"), ProtectedNamespace("o1600"), StaticProtectedNs("o1600"), StaticProtectedNs("o17693"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1600"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L66:
+   findpropstrict      QName(PackageNamespace(""), "o8859")
+   getlex              QName(PackageInternalNs(""), "startX")
+   getlex              QName(PackageInternalNs(""), "startY")
+   getlex              QName(PackageInternalNs(""), "endX")
+   getlex              QName(PackageInternalNs(""), "endY")
+   getlex              QName(PackageInternalNs(""), "o6365")
+   getlex              QName(PackageInternalNs(""), "mask")
+   getlex              QName(PackageInternalNs(""), "filter")
+   callproperty        QName(PackageNamespace(""), "o8859"), 7
+   returnvalue
+  end ; code
+ end ; body
+end ; method

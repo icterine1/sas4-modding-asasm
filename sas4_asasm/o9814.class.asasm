@@ -1,0 +1,116 @@
+class
+ refid "o9814"
+ instance QName(PackageNamespace(""), "o9814")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o9814"
+   refid "o9814/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o9814/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o20122") type QName(PackageNamespace(""), "int") value Integer(-1) end
+ trait const QName(PackageNamespace(""), "o20780") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o18339") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o6763") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o12284") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "o13029") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o16374") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait method QName(PackageNamespace(""), "o1818")
+  method
+   name "o1818"
+   refid "o9814/class/o1818"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "type"
+   body
+    maxstack 1
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal2
+
+     getlocal1
+     convert_i
+     lookupswitch        L27, [L22, L13, L7, L19, L16, L10, L25]
+
+L7:
+     pushbyte            2
+     setlocal2
+
+     jump                L27
+
+L10:
+     pushbyte            4
+     setlocal2
+
+     jump                L27
+
+L13:
+     pushbyte            1
+     setlocal2
+
+     jump                L27
+
+L16:
+     pushbyte            -1
+     setlocal2
+
+     jump                L27
+
+L19:
+     pushbyte            3
+     setlocal2
+
+     jump                L27
+
+L22:
+     pushbyte            0
+     setlocal2
+
+     jump                L27
+
+L25:
+     pushbyte            5
+     setlocal2
+
+L27:
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

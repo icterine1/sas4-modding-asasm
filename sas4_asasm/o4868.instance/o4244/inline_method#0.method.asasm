@@ -1,0 +1,104 @@
+method
+ name "o4868.as$5:anonymous"
+ refid "o4868/instance/o4244/inline_method#0"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 4
+  localcount 5
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "o12568")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "o12568")
+
+   getlex              QName(PackageNamespace("flash.net"), "URLLoader")
+   getglobalscope
+   getlex              QName(PackageInternalNs(""), "o12568")
+   getproperty         QName(PackageNamespace(""), "target")
+   call                1
+   coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+   getlocal2
+   swap
+   setslot             2
+
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlex              QName(PackageInternalNs(""), "loader")
+   getproperty         QName(PackageNamespace(""), "data")
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   getlocal2
+   swap
+   setslot             3
+
+   newarray            0
+   coerce              QName(PackageNamespace(""), "Array")
+   getlocal2
+   swap
+   setslot             4
+
+   pushbyte            0
+   setlocal            4
+
+   getlex              QName(PackageInternalNs(""), "o15410")
+   setlocal3
+
+   jump                L46
+
+L33:
+   label
+   getlocal3
+   getlocal            4
+   nextvalue
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             5
+
+   getlex              QName(PackageInternalNs(""), "o17406")
+   getlex              QName(PackageInternalNs(""), "o8367")
+   pushstring          "user_id"
+   getproperty         MultinameL([PrivateNamespace("o4868"), ProtectedNamespace("o4868"), StaticProtectedNs("o4868"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4868"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L46:
+   hasnext2            3, 4
+   iftrue              L33
+
+   getlex              QName(PackageInternalNs(""), "o17406")
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifne                L56
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   newarray            0
+   setproperty         QName(PackageNamespace(""), "data")
+
+   jump                L63
+
+L56:
+   getlex              QName(PackageNamespace(""), "o8613")
+   getlex              QName(PrivateNamespace("o4868"), "o11630")
+   getlex              QName(PrivateNamespace("o4868"), "o7376")
+   getlex              QName(PackageInternalNs(""), "o17406")
+   callproperty        QName(PackageNamespace(""), "o5710"), 3
+   newfunction         "o4868/instance/o4244/inline_method#1"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+L63:
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "o12568") slotid 1 type QName(PackageNamespace("flash.events"), "Event") end
+  trait slot QName(PackageInternalNs(""), "loader") slotid 2 type QName(PackageNamespace("flash.net"), "URLLoader") end
+  trait slot QName(PackageInternalNs(""), "o15410") slotid 3 end
+  trait slot QName(PackageInternalNs(""), "o17406") slotid 4 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs(""), "o8367") slotid 5 type QName(PackageNamespace(""), "Object") end
+ end ; body
+end ; method

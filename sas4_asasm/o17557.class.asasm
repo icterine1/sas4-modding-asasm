@@ -1,0 +1,309 @@
+class
+ refid "o17557"
+ instance QName(PackageNamespace(""), "o17557")
+  extends QName(PackageNamespace("flash.events"), "EventDispatcher")
+  flag SEALED
+  iinit
+   name "o17557"
+   refid "o17557/instance/init"
+   param QName(PackageNamespace("flash.system"), "MessageChannel")
+   param QName(PackageNamespace("flash.system"), "MessageChannel")
+   flag HAS_PARAM_NAMES
+   paramname "o5964"
+   paramname "o17787"
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("flash.system"), "MessageChannel")
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     findproperty        QName(PrivateNamespace("o17557"), "o2591")
+     swap
+     setproperty         QName(PrivateNamespace("o17557"), "o2591")
+
+     getlex              QName(PackageNamespace(""), "Mem")
+     getlocal0
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace("flash.system"), "MessageChannel")
+     applytype           1
+     callproperty        QName(PackageNamespace(""), "create"), 2
+     findproperty        QName(PrivateNamespace("o17557"), "o18700")
+     swap
+     setproperty         QName(PrivateNamespace("o17557"), "o18700")
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "o5964")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PrivateNamespace("o17557"), "o17787")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o5964") type QName(PackageNamespace("flash.system"), "MessageChannel") value Null() end
+  trait slot QName(PrivateNamespace("o17557"), "o17787") type QName(PackageNamespace("flash.system"), "MessageChannel") value Null() end
+  trait slot QName(PrivateNamespace("o17557"), "o2591") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("flash.system"), "MessageChannel")>) value Null() end
+  trait slot QName(PrivateNamespace("o17557"), "o18700") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace("flash.system"), "MessageChannel")>) value Null() end
+  trait method QName(PackageNamespace(""), "o7339")
+   method
+    name "o7339"
+    refid "o17557/instance/o7339"
+    param QName(PackageNamespace("flash.system"), "Worker")
+    returns QName(PackageNamespace("flash.system"), "MessageChannel")
+    flag HAS_PARAM_NAMES
+    paramname "o9182"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getlex              QName(PackageNamespace("flash.system"), "Worker")
+      getproperty         QName(PackageNamespace(""), "current")
+      callproperty        QName(PackageNamespace(""), "createMessageChannel"), 1
+      coerce              QName(PackageNamespace("flash.system"), "MessageChannel")
+      setlocal2
+
+      getlocal2
+      pushstring          "channelMessage"
+      getlex              QName(PackageNamespace(""), "o10274")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlex              QName(PrivateNamespace("o17557"), "o18700")
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o10274")
+   method
+    name "o10274"
+    refid "o17557/instance/o10274"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12568"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      getlex              QName(PackageNamespace("flash.system"), "MessageChannel")
+      astypelate
+      coerce              QName(PackageNamespace("flash.system"), "MessageChannel")
+      setlocal2
+
+      jump                L14
+
+L9:
+      label
+      findpropstrict      QName(PackageNamespace(""), "send")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "receive"), 0
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+L14:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "messageAvailable")
+      iftrue              L9
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o3940")
+   method
+    name "o3940"
+    refid "o17557/instance/o3940"
+    param QName(PackageNamespace("flash.system"), "Worker")
+    returns QName(PackageNamespace("flash.system"), "MessageChannel")
+    flag HAS_PARAM_NAMES
+    paramname "o9182"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("flash.system"), "Worker")
+      getproperty         QName(PackageNamespace(""), "current")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "createMessageChannel"), 1
+      coerce              QName(PackageNamespace("flash.system"), "MessageChannel")
+      setlocal2
+
+      getlex              QName(PrivateNamespace("o17557"), "o2591")
+      getlocal2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "send")
+   method
+    name "send"
+    refid "o17557/instance/send"
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_REST
+    flag HAS_PARAM_NAMES
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            4
+
+      getlocal1
+      setlocal3
+
+      jump                L15
+
+L7:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      setlocal2
+
+      getlex              QName(PackageNamespace(""), "o5964")
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+L15:
+      hasnext2            3, 4
+      iftrue              L7
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o14061")
+   method
+    name "o14061"
+    refid "o17557/instance/o14061"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o17557"), "o17787")
+      getproperty         QName(PackageNamespace(""), "messageAvailable")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "receive")
+   method
+    name "receive"
+    refid "o17557/instance/receive"
+    param QName(PackageNamespace(""), "Boolean")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional False()
+    paramname "o8426"
+    body
+     maxstack 2
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o17557"), "o17787")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "receive"), 1
+      setlocal3
+
+      pushbyte            0
+      setlocal            5
+
+      getlex              QName(PrivateNamespace("o17557"), "o2591")
+      setlocal            4
+
+      jump                L20
+
+L11:
+      label
+      getlocal            4
+      getlocal            5
+      nextvalue
+      coerce              QName(PackageNamespace("flash.system"), "MessageChannel")
+      setlocal2
+
+      getlocal2
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "send"), 1
+
+L20:
+      hasnext2            4, 5
+      iftrue              L11
+
+      getlocal3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o17557/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

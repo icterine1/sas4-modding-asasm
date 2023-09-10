@@ -1,0 +1,72 @@
+class
+ refid "o3665"
+ instance QName(PackageNamespace(""), "o3665")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o3665"
+   refid "o3665/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "o7848")
+   flag HAS_PARAM_NAMES
+   paramname "name"
+   paramname "o12137"
+   paramname "entity"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlex              QName(PackageNamespace(""), "o18670")
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     constructsuper      1
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "name")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o12137")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "entity")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "name") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o12137") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "entity") type QName(PackageNamespace(""), "o7848") end
+ end ; instance
+ cinit
+  refid "o3665/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o18670")
+    swap
+    setproperty         QName(PackageNamespace(""), "o18670")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o18670") type QName(PackageNamespace(""), "int") end
+end ; class

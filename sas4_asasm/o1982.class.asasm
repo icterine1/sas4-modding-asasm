@@ -1,0 +1,78 @@
+class
+ refid "o1982"
+ instance QName(PackageNamespace(""), "o1982")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o1982"
+   refid "o1982/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o18339") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "o7219") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o17977") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o12043") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o8398") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o9938") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "o160")
+   method
+    name "o160"
+    refid "o1982/instance/o160"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o4407"
+    paramname "o14678"
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o8000")
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "o6008"), 1
+      coerce_s
+      setlocal3
+
+      getlocal1
+      pushstring          "[ManufacturerName]"
+      getlocal3
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o1982/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,59 @@
+method
+ name "o14801.as$2:anonymous"
+ refid "o14801/instance/o15785/inline_method#2"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal2
+
+   pushbyte            0
+   setlocal3
+
+   getlocal1
+   pushnull
+   ifeq                L31
+
+   getlocal1
+   pushstring          "scores"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushstring          "equal"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal2
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifngt               L31
+
+   getlocal2
+   pushbyte            0
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushstring          "score"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_i
+   setlocal3
+
+   getlocal3
+   pushbyte            0
+   ifngt               L31
+
+   getlex              QName(PackageInternalNs(""), "o14478")
+   getlocal3
+   setproperty         QName(PackageNamespace(""), "o19189")
+
+L31:
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageInternalNs(""), "o14478")
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

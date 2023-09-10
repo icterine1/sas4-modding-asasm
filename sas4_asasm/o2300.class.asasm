@@ -1,0 +1,82 @@
+class
+ refid "o2300"
+ instance QName(PackageNamespace(""), "o2300")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o2300"
+   refid "o2300/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Boolean")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "o13229"
+   paramname "o5261"
+   paramname "o7549"
+   paramname "o10084"
+   body
+    maxstack 2
+    localcount 5
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushstring          ""
+     findproperty        QName(PackageNamespace(""), "o17583")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17583")
+
+     pushstring          ""
+     findproperty        QName(PackageNamespace(""), "o7021")
+     swap
+     setproperty         QName(PackageNamespace(""), "o7021")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     findproperty        QName(PackageNamespace(""), "o17583")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17583")
+
+     getlocal2
+     findproperty        QName(PackageNamespace(""), "o7021")
+     swap
+     setproperty         QName(PackageNamespace(""), "o7021")
+
+     getlocal3
+     findproperty        QName(PackageNamespace(""), "o9468")
+     swap
+     setproperty         QName(PackageNamespace(""), "o9468")
+
+     getlocal            4
+     findproperty        QName(PackageNamespace(""), "o13214")
+     swap
+     setproperty         QName(PackageNamespace(""), "o13214")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o17583") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o7021") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o9468") type QName(PackageNamespace(""), "Function") value Null() end
+  trait slot QName(PackageNamespace(""), "o13214") type QName(PackageNamespace(""), "Boolean") value False() end
+ end ; instance
+ cinit
+  refid "o2300/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

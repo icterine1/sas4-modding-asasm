@@ -1,0 +1,112 @@
+class
+ refid "o19140"
+ instance QName(PackageNamespace(""), "o19140")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o19140"
+   refid "o19140/instance/init"
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_PARAM_NAMES
+   paramname "o6475"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o19140"), "o2526")
+     swap
+     setproperty         QName(PrivateNamespace("o19140"), "o2526")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal1
+     pushstring          "MaxHighScoresRecorded"
+     getproperty         MultinameL([PrivateNamespace("o19140"), ProtectedNamespace("o19140"), StaticProtectedNs("o19140"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19140"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     pushnull
+     ifeq                L21
+
+     getlocal1
+     pushstring          "MaxHighScoresRecorded"
+     getproperty         MultinameL([PrivateNamespace("o19140"), ProtectedNamespace("o19140"), StaticProtectedNs("o19140"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19140"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     findproperty        QName(PackageNamespace(""), "o17679")
+     swap
+     setproperty         QName(PackageNamespace(""), "o17679")
+
+L21:
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o19140"), "o2526") type QName(PackageNamespace(""), "o16123") end
+  trait getter QName(PackageNamespace(""), "o17679")
+   method
+    name "o17679"
+    refid "o19140/instance/o17679/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("o19140"), "o2526")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "o17679")
+   method
+    name "o17679"
+    refid "o19140/instance/o17679/setter"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("o19140"), "o2526")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "value")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o19140/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,185 @@
+class
+ refid "o709"
+ instance QName(PackageNamespace(""), "o709")
+  extends QName(PackageNamespace(""), "o3052")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o709")
+  iinit
+   name "o709"
+   refid "o709/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "o2693")
+   flag HAS_PARAM_NAMES
+   paramname "o19686"
+   paramname "o19552"
+   body
+    maxstack 5
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o709"), "o12945")
+     swap
+     setproperty         QName(PrivateNamespace("o709"), "o12945")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     getlocal2
+     callsupervoid       QName(PackageNamespace(""), "init"), 2
+     getlex              QName(PrivateNamespace("o709"), "o12945")
+     getlocal2
+     getlocal1
+     pushstring          "fullHDAmmoClips"
+     add
+     callproperty        QName(PackageNamespace(""), "o3554"), 1
+     setproperty         QName(PackageNamespace(""), "value")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o709"), "o12945") type QName(PackageNamespace(""), "o16123") end
+  trait getter QName(PackageNamespace(""), "o11499")
+   method
+    name "o11499"
+    refid "o709/instance/o11499/getter"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o709"), "o12945")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13260") flag OVERRIDE
+   method
+    name "o13260"
+    refid "o709/instance/o13260"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 7
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal1
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "profileData")
+      getproperty         QName(PackageNamespace(""), "o7923")
+      coerce              QName(PackageNamespace(""), "o9145")
+      setlocal2
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "o1819"), 0
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o14096")>)
+      setlocal            4
+
+      pushbyte            0
+      setlocal            6
+
+      getlocal            4
+      setlocal            5
+
+      jump                L41
+
+L19:
+      label
+      getlocal            5
+      getlocal            6
+      nextvalue
+      coerce              QName(PackageNamespace(""), "o14096")
+      setlocal3
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o17638")
+      getlocal3
+      callproperty        QName(PackageNamespace(""), "o8567"), 1
+      coerce              QName(PackageNamespace(""), "o6679")
+      setlocal1
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o17383")
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o11344")
+      getlex              QName(PackageNamespace(""), "o11499")
+      multiply
+      add
+      getlocal1
+      swap
+      setproperty         QName(PackageNamespace(""), "o17383")
+
+L41:
+      hasnext2            5, 6
+      iftrue              L19
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o3309") flag OVERRIDE
+   method
+    name "o3309"
+    refid "o709/instance/o3309"
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o6778"
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(ProtectedNamespace("o3052"), "o679")
+      getlocal1
+      pushstring          "[FULL_HD_AMMO_CLIPS]"
+      getlex              QName(PackageNamespace(""), "o11499")
+      callproperty        QName(ProtectedNamespace("o3052"), "o679"), 3
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o709/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,187 @@
+class
+ refid "com.codecatalyst.promise:Consequence/CallbackQueue"
+ instance QName(PrivateNamespace("Consequence.as$15"), "CallbackQueue")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("Consequence.as$15:CallbackQueue")
+  iinit
+   name "Consequence.as$15:CallbackQueue/CallbackQueue"
+   refid "com.codecatalyst.promise:Consequence/CallbackQueue/instance/init"
+   body
+    maxstack 3
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     findpropstrict      QName(PackageNamespace(""), "Array")
+     pushshort           10000
+     constructprop       QName(PackageNamespace(""), "Array"), 1
+     initproperty        QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbacks")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbacks") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "intervalId") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbackCount") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait method QName(PackageNamespace(""), "schedule")
+   method
+    name "Consequence.as$15:CallbackQueue/schedule"
+    refid "com.codecatalyst.promise:Consequence/CallbackQueue/instance/schedule"
+    param QName(PackageNamespace(""), "Function")
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "callback"
+    paramname "parameters"
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbacks")
+      getlocal0
+      dup
+      setlocal            4
+
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbackCount")
+      convert_d
+      dup
+      increment
+      setlocal            5
+
+      getlocal            4
+      getlocal            5
+      setproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbackCount")
+
+      kill                5
+      kill                4
+      setlocal3
+
+      getlocal3
+      findpropstrict      QName(PrivateNamespace("Consequence.as$15"), "Callback")
+      getlocal1
+      getlocal2
+      constructprop       QName(PrivateNamespace("Consequence.as$15"), "Callback"), 2
+      setproperty         MultinameL([PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Consequence.as$15"), PrivateNamespace("Consequence.as$15:CallbackQueue"), ProtectedNamespace("Consequence.as$15:CallbackQueue"), StaticProtectedNs("Consequence.as$15:CallbackQueue")])
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbackCount")
+      pushbyte            1
+      ifne                L35
+
+      getlocal0
+      findpropstrict      QName(PackageNamespace("flash.utils"), "setInterval")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "execute")
+      pushbyte            0
+      callproperty        QName(PackageNamespace("flash.utils"), "setInterval"), 2
+      initproperty        QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "intervalId")
+
+L35:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "execute")
+   method
+    name "Consequence.as$15:CallbackQueue/protected:execute"
+    refid "com.codecatalyst.promise:Consequence/CallbackQueue/instance/Consequence.as$15:CallbackQueue:execute"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace("flash.utils"), "clearInterval")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "intervalId")
+      callpropvoid        QName(PackageNamespace("flash.utils"), "clearInterval"), 1
+
+      pushbyte            0
+      convert_u
+      setlocal1
+
+      jump                L27
+
+L10:
+      label
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbacks")
+      getlocal1
+      getproperty         MultinameL([PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Consequence.as$15"), PrivateNamespace("Consequence.as$15:CallbackQueue"), ProtectedNamespace("Consequence.as$15:CallbackQueue"), StaticProtectedNs("Consequence.as$15:CallbackQueue")])
+      getlex              QName(PrivateNamespace("Consequence.as$15"), "Callback")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "execute"), 0
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbacks")
+      getlocal1
+      pushnull
+      setproperty         MultinameL([PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PrivateNamespace("Consequence.as$15"), PrivateNamespace("Consequence.as$15:CallbackQueue"), ProtectedNamespace("Consequence.as$15:CallbackQueue"), StaticProtectedNs("Consequence.as$15:CallbackQueue")])
+
+      getlocal1
+      increment
+      convert_u
+      setlocal1
+
+L27:
+      getlocal1
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbackCount")
+      iflt                L10
+
+      getlocal0
+      pushbyte            0
+      initproperty        QName(ProtectedNamespace("Consequence.as$15:CallbackQueue"), "queuedCallbackCount")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.codecatalyst.promise:Consequence/CallbackQueue/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    findproperty        QName(PackageNamespace(""), "instance")
+    getlocal0
+    construct           0
+    initproperty        QName(PackageNamespace(""), "instance")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "instance") slotid 1 type QName(PrivateNamespace("Consequence.as$15"), "CallbackQueue") end
+end ; class

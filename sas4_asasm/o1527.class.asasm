@@ -1,0 +1,125 @@
+class
+ refid "o1527"
+ instance QName(PackageNamespace(""), "o1527")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o1527/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o1527/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o5164") type QName(PackageNamespace(""), "int") value Integer(-1) end
+ trait const QName(PackageNamespace(""), "o12302") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait method QName(PackageNamespace(""), "o15317")
+  method
+   name "o15317"
+   refid "o1527/class/o15317"
+   param QName(PackageNamespace(""), "int")
+   param null
+   returns QName(PackageNamespace(""), "Boolean")
+   flag HAS_PARAM_NAMES
+   paramname "o486"
+   paramname "o1216"
+   body
+    maxstack 3
+    localcount 8
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushfalse
+     setlocal            5
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "o14128")
+     setlocal            4
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "o476")
+     getproperty         QName(PackageNamespace(""), "o16679")
+     pushnull
+     ifne                L15
+
+     getlocal            5
+     returnvalue
+
+L15:
+     pushbyte            0
+     setlocal            7
+
+     getlex              QName(PackageNamespace(""), "o14200")
+     getproperty         QName(PackageNamespace(""), "o19505")
+     getproperty         QName(PackageNamespace(""), "o5292")
+     getproperty         QName(PackageNamespace(""), "o16679")
+     getproperty         QName(PackageNamespace(""), "o12738")
+     setlocal            6
+
+     jump                L45
+
+L24:
+     label
+     getlocal            6
+     getlocal            7
+     nextvalue
+     coerce              QName(PackageNamespace(""), "o14801")
+     setlocal3
+
+     getlocal3
+     getproperty         QName(PackageNamespace(""), "o11392")
+     getlex              QName(PackageNamespace(""), "o14128")
+     astypelate
+     coerce              QName(PackageNamespace(""), "o14128")
+     dup
+     setlocal            4
+
+     iffalse             L45
+
+     getlocal            4
+     getlocal1
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "o12187"), 2
+     iffalse             L45
+
+     pushtrue
+     setlocal            5
+
+L45:
+     hasnext2            6, 7
+     iftrue              L24
+
+     getlocal            5
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

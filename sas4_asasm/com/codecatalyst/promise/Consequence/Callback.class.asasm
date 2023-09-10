@@ -1,0 +1,84 @@
+class
+ refid "com.codecatalyst.promise:Consequence/Callback"
+ instance QName(PrivateNamespace("Consequence.as$15"), "Callback")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("Consequence.as$15:Callback")
+  iinit
+   name "Consequence.as$15:Callback/Callback"
+   refid "com.codecatalyst.promise:Consequence/Callback/instance/init"
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Array")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   paramname "closure"
+   paramname "parameters"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     initproperty        QName(ProtectedNamespace("Consequence.as$15:Callback"), "closure")
+
+     getlocal0
+     getlocal2
+     initproperty        QName(ProtectedNamespace("Consequence.as$15:Callback"), "parameters")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(ProtectedNamespace("Consequence.as$15:Callback"), "closure") type QName(PackageNamespace(""), "Function") end
+  trait slot QName(ProtectedNamespace("Consequence.as$15:Callback"), "parameters") type QName(PackageNamespace(""), "Array") end
+  trait method QName(PackageNamespace(""), "execute")
+   method
+    name "Consequence.as$15:Callback/execute"
+    refid "com.codecatalyst.promise:Consequence/Callback/instance/execute"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:Callback"), "closure")
+      pushnull
+      getlocal0
+      getproperty         QName(ProtectedNamespace("Consequence.as$15:Callback"), "parameters")
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "apply"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.codecatalyst.promise:Consequence/Callback/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

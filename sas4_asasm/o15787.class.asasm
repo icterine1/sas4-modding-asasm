@@ -1,0 +1,120 @@
+class
+ refid "o15787"
+ instance QName(PackageNamespace(""), "o15787")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o15787"
+   refid "o15787/instance/init"
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "value"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "value")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o15787"), "o12395") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("o15787"), "o17768") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("o15787"), "o9412") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("o15787"), "o4512") type QName(PackageNamespace(""), "Number") end
+  trait setter QName(PackageNamespace(""), "value")
+   method
+    name "value"
+    refid "o15787/instance/value/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o20659"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o16038")
+      callproperty        QName(PackageNamespace(""), "o8040"), 0
+      findproperty        QName(PrivateNamespace("o15787"), "o12395")
+      swap
+      setproperty         QName(PrivateNamespace("o15787"), "o12395")
+
+      getlocal1
+      getlex              QName(PrivateNamespace("o15787"), "o12395")
+      subtract
+      findproperty        QName(PrivateNamespace("o15787"), "o17768")
+      swap
+      setproperty         QName(PrivateNamespace("o15787"), "o17768")
+
+      getlex              QName(PackageNamespace(""), "o16038")
+      callproperty        QName(PackageNamespace(""), "o8040"), 0
+      findproperty        QName(PrivateNamespace("o15787"), "o9412")
+      swap
+      setproperty         QName(PrivateNamespace("o15787"), "o9412")
+
+      getlocal1
+      getlex              QName(PrivateNamespace("o15787"), "o9412")
+      subtract
+      findproperty        QName(PrivateNamespace("o15787"), "o4512")
+      swap
+      setproperty         QName(PrivateNamespace("o15787"), "o4512")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "value")
+   method
+    name "value"
+    refid "o15787/instance/value/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o15787"), "o12395")
+      getlex              QName(PrivateNamespace("o15787"), "o17768")
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o15787/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

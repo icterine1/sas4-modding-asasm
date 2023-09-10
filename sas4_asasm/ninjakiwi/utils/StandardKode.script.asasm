@@ -1,0 +1,33 @@
+script
+ sinit
+  refid "ninjakiwi.utils:StandardKode/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    dup
+    pushscope
+
+    newclass            "ninjakiwi.utils:StandardKode"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace("ninjakiwi.utils"), "StandardKode")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("ninjakiwi.utils"), "StandardKode")
+  #include "StandardKode.class.asasm"
+ end ; trait
+end ; script

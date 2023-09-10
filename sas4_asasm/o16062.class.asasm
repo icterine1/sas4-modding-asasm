@@ -1,0 +1,179 @@
+class
+ refid "o16062"
+ instance QName(PackageNamespace(""), "o16062")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o16062"
+   refid "o16062/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o6882")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o14399")
+     swap
+     setproperty         QName(PackageNamespace(""), "o14399")
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o19173")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o16679")
+     swap
+     setproperty         QName(PackageNamespace(""), "o16679")
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o3241")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o2416")
+     swap
+     setproperty         QName(PackageNamespace(""), "o2416")
+
+     findpropstrict      QName(PackageNamespace(""), "o16373")
+     constructprop       QName(PackageNamespace(""), "o16373"), 0
+     findproperty        QName(PackageNamespace(""), "o15026")
+     swap
+     setproperty         QName(PackageNamespace(""), "o15026")
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o11614")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o13988")
+     swap
+     setproperty         QName(PackageNamespace(""), "o13988")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o14399") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o6882")>) end
+  trait slot QName(PackageNamespace(""), "o16679") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o19173")>) end
+  trait slot QName(PackageNamespace(""), "o2416") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o3241")>) end
+  trait slot QName(PackageNamespace(""), "o15026") type QName(PackageNamespace(""), "o16373") end
+  trait slot QName(PackageNamespace(""), "o15128") type QName(PackageNamespace(""), "o5307") end
+  trait slot QName(PackageNamespace(""), "o9392") type QName(PackageNamespace(""), "o1611") end
+  trait slot QName(PackageNamespace(""), "o9095") type QName(PackageNamespace(""), "o4233") end
+  trait slot QName(PackageNamespace(""), "o15115") type QName(PackageNamespace(""), "o2524") end
+  trait slot QName(PackageNamespace(""), "o5215") type QName(PackageNamespace(""), "o5263") end
+  trait slot QName(PackageNamespace(""), "o13988") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o11614")>) end
+  trait slot QName(PackageNamespace(""), "o7205") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait method QName(PackageNamespace(""), "o3413")
+   method
+    name "o3413"
+    refid "o16062/instance/o3413"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "o638")
+    flag HAS_PARAM_NAMES
+    paramname "o5661"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o7205")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("o16062"), ProtectedNamespace("o16062"), StaticProtectedNs("o16062"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o16062"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlex              QName(PackageNamespace(""), "o638")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o15751")
+   method
+    name "o15751"
+    refid "o16062/instance/o15751"
+    returns TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o19173")>)
+    body
+     maxstack 2
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "o19173")
+      applytype           1
+      construct           0
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o19173")>)
+      setlocal2
+
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(PackageNamespace(""), "o16679")
+      setlocal3
+
+      jump                L33
+
+L13:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      coerce              QName(PackageNamespace(""), "o19173")
+      setlocal1
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "type")
+      pushbyte            0
+      equals
+      dup
+      iffalse             L29
+
+      pop
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o5897")
+      getproperty         QName(PackageNamespace(""), "o13779")
+L29:
+      iffalse             L33
+
+      getlocal2
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L33:
+      hasnext2            3, 4
+      iftrue              L13
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o16062/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

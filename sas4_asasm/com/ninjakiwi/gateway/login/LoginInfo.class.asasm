@@ -1,0 +1,279 @@
+class
+ refid "com.ninjakiwi.gateway.login:LoginInfo"
+ instance QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.ninjakiwi.gateway.login:LoginInfo")
+  iinit
+   name "com.ninjakiwi.gateway.login:LoginInfo/LoginInfo"
+   refid "com.ninjakiwi.gateway.login:LoginInfo/instance/init"
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "id"
+   paramname "name"
+   paramname "token"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     initproperty        QName(PackageNamespace(""), "id")
+
+     getlocal0
+     getlocal2
+     initproperty        QName(PackageNamespace(""), "name")
+
+     getlocal0
+     getlocal3
+     initproperty        QName(PackageNamespace(""), "token")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "id") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "name") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "token") type QName(PackageNamespace(""), "String") end
+  trait method QName(PackageNamespace(""), "toString")
+   method
+    name "com.ninjakiwi.gateway.login:LoginInfo/toString"
+    refid "com.ninjakiwi.gateway.login:LoginInfo/instance/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      pushstring          "\n"
+      coerce_s
+      setlocal1
+
+      pushstring          "\x09"
+      coerce_s
+      setlocal2
+
+      pushstring          "[Object LoginInfo] : {"
+      getlocal1
+      add
+      getlocal2
+      add
+      pushstring          "id: "
+      add
+      getlocal2
+      add
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "id")
+      add
+      getlocal1
+      add
+      getlocal2
+      add
+      pushstring          "name: "
+      add
+      getlocal2
+      add
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "name")
+      add
+      getlocal1
+      add
+      getlocal2
+      add
+      pushstring          "token: "
+      add
+      getlocal2
+      add
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "token")
+      add
+      getlocal1
+      add
+      pushstring          "}"
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "matches")
+   method
+    name "com.ninjakiwi.gateway.login:LoginInfo/matches"
+    refid "com.ninjakiwi.gateway.login:LoginInfo/instance/matches"
+    param QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "otherOne"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushnull
+      ifne                L7
+
+      pushfalse
+      returnvalue
+
+L7:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "id")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      equals
+      dup
+      iffalse             L20
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "token")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "token")
+      equals
+L20:
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.ninjakiwi.gateway.login:LoginInfo/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "importFromAnotherApplicationDomain") flag FINAL dispid 3
+  method
+   name "com.ninjakiwi.gateway.login:LoginInfo/importFromAnotherApplicationDomain"
+   refid "com.ninjakiwi.gateway.login:LoginInfo/class/importFromAnotherApplicationDomain"
+   param QName(PackageNamespace(""), "Object")
+   returns QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+   flag HAS_PARAM_NAMES
+   paramname "loginInfo"
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 3
+    maxscopedepth 6
+    code
+     getlocal0
+     pushscope
+
+     pushnull
+     coerce              QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+     setlocal2
+
+L5:
+     getlocal0
+     findpropstrict      QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString")
+     getlocal1
+     getproperty         Multiname("id", [PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), PackageNamespace("com.ninjakiwi.gateway.login"), PrivateNamespace("LoginInfo.as$23"), PackageNamespace(""), PackageInternalNs("com.ninjakiwi.gateway.login"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.login:LoginInfo"), StaticProtectedNs("com.ninjakiwi.gateway.login:LoginInfo")])
+     callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString"), 1
+     findpropstrict      QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString")
+     getlocal1
+     getproperty         Multiname("name", [PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), PackageNamespace("com.ninjakiwi.gateway.login"), PrivateNamespace("LoginInfo.as$23"), PackageNamespace(""), PackageInternalNs("com.ninjakiwi.gateway.login"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.login:LoginInfo"), StaticProtectedNs("com.ninjakiwi.gateway.login:LoginInfo")])
+     callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString"), 1
+     findpropstrict      QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString")
+     getlocal1
+     getproperty         Multiname("token", [PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), PackageNamespace("com.ninjakiwi.gateway.login"), PrivateNamespace("LoginInfo.as$23"), PackageNamespace(""), PackageInternalNs("com.ninjakiwi.gateway.login"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.ninjakiwi.gateway.login:LoginInfo"), StaticProtectedNs("com.ninjakiwi.gateway.login:LoginInfo")])
+     callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString"), 1
+     construct           3
+     coerce              QName(PackageNamespace("com.ninjakiwi.gateway.login"), "LoginInfo")
+     setlocal2
+
+L21:
+     jump                L33
+
+L22:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal3
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     popscope
+     kill                3
+L33:
+     getlocal2
+     returnvalue
+    end ; code
+    try from L5 to L21 target L22 type QName(PackageNamespace(""), "Error") name QName(PackageNamespace(""), "err") end
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("com.ninjakiwi.gateway.login:LoginInfo"), "validString") flag FINAL dispid 4
+  method
+   name "com.ninjakiwi.gateway.login:LoginInfo/private:validString"
+   refid "com.ninjakiwi.gateway.login:LoginInfo/class/com.ninjakiwi.gateway.login:LoginInfo/class/importFromAnotherApplicationDomain/validString"
+   param null
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "value"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     getlex              QName(PackageNamespace(""), "String")
+     astypelate
+     coerce_s
+     setlocal2
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "length")
+     pushbyte            0
+     ifne                L15
+
+     findpropstrict      QName(PackageNamespace(""), "VerifyError")
+     pushstring          "invalid"
+     constructprop       QName(PackageNamespace(""), "VerifyError"), 1
+     throw
+
+L15:
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

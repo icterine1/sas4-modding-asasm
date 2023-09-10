@@ -1,0 +1,26 @@
+method
+ name ""
+ refid "com.ninjakiwi.gateway.nk:NKGateway/instance/init/inline_method#2"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "newUser"
+ body
+  maxstack 3
+  localcount 2
+  initscopedepth 6
+  maxscopedepth 7
+  code
+   getlocal0
+   pushscope
+
+   getlex              QName(PackageNamespace(""), "newUserFinishedLoadingSignal")
+   findpropstrict      QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGatewayUser")
+   getlocal1
+   constructprop       QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGatewayUser"), 1
+   callpropvoid        QName(PackageNamespace(""), "dispatch"), 1
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

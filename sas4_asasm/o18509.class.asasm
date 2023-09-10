@@ -1,0 +1,902 @@
+class
+ refid "o18509"
+ instance QName(PackageNamespace(""), "o18509")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o18509"
+   refid "o18509/instance/init"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Integer(0)
+   optional Integer(0)
+   paramname "x"
+   paramname "y"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "x")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "y")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "x") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "y") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o18509/instance/initialise"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Integer(0)
+    optional Integer(0)
+    paramname "x"
+    paramname "y"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal0
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "o3215")
+   method
+    name "o3215"
+    refid "o18509/instance/o3215/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o13092"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      multiply
+      add
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      divide
+      convert_d
+      setlocal2
+
+      findpropstrict      QName(PackageNamespace(""), "x")
+      dup
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal2
+      multiply
+      setproperty         QName(PackageNamespace(""), "x")
+
+      findpropstrict      QName(PackageNamespace(""), "y")
+      dup
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal2
+      multiply
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "o3215")
+   method
+    name "o3215"
+    refid "o18509/instance/o3215/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      multiply
+      add
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "o17573")
+   method
+    name "o17573"
+    refid "o18509/instance/o17573/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      multiply
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o17903")
+   method
+    name "o17903"
+    refid "o18509/instance/o17903"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12618"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "x")
+      dup
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal1
+      multiply
+      setproperty         QName(PackageNamespace(""), "x")
+
+      findpropstrict      QName(PackageNamespace(""), "y")
+      dup
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal1
+      multiply
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "rotation")
+   method
+    name "rotation"
+    refid "o18509/instance/rotation/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o16934"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      multiply
+      add
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      convert_d
+      setlocal2
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "cos"), 1
+      multiply
+      findproperty        QName(PackageNamespace(""), "x")
+      swap
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "sin"), 1
+      multiply
+      findproperty        QName(PackageNamespace(""), "y")
+      swap
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait getter QName(PackageNamespace(""), "rotation")
+   method
+    name "rotation"
+    refid "o18509/instance/rotation/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "x")
+      callproperty        QName(PackageNamespace(""), "atan2"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o14528")
+   method
+    name "o14528"
+    refid "o18509/instance/o14528"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      multiply
+      add
+      callproperty        QName(PackageNamespace(""), "sqrt"), 1
+      convert_d
+      setlocal1
+
+      findpropstrict      QName(PackageNamespace(""), "x")
+      dup
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal1
+      divide
+      setproperty         QName(PackageNamespace(""), "x")
+
+      findpropstrict      QName(PackageNamespace(""), "y")
+      dup
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal1
+      divide
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "rotate")
+   method
+    name "rotate"
+    refid "o18509/instance/rotate"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7728"
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "sin"), 1
+      convert_d
+      setlocal3
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "cos"), 1
+      convert_d
+      setlocal2
+
+      getlex              QName(PackageNamespace(""), "x")
+      getlocal2
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal3
+      multiply
+      subtract
+      convert_d
+      setlocal            4
+
+      getlex              QName(PackageNamespace(""), "x")
+      getlocal3
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal2
+      multiply
+      add
+      findproperty        QName(PackageNamespace(""), "y")
+      swap
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal            4
+      findproperty        QName(PackageNamespace(""), "x")
+      swap
+      setproperty         QName(PackageNamespace(""), "x")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19203")
+   method
+    name "o19203"
+    refid "o18509/instance/o19203"
+    param QName(PackageNamespace(""), "o18509")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      callproperty        QName(PackageNamespace(""), "atan2"), 2
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "x")
+      callproperty        QName(PackageNamespace(""), "atan2"), 2
+      subtract
+      convert_d
+      setlocal2
+
+      getlocal2
+      pushdouble          3.141592653589793
+      ifngt               L26
+
+      getlocal2
+      pushbyte            2
+      pushdouble          3.141592653589793
+      multiply
+      subtract
+      convert_d
+      setlocal2
+
+      jump                L37
+
+L26:
+      getlocal2
+      pushdouble          3.141592653589793
+      negate
+      ifnlt               L37
+
+      getlocal2
+      pushbyte            2
+      pushdouble          3.141592653589793
+      multiply
+      add
+      convert_d
+      setlocal2
+
+L37:
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13655")
+   method
+    name "o13655"
+    refid "o18509/instance/o13655"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o16934"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "Math")
+      getlex              QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "x")
+      callproperty        QName(PackageNamespace(""), "atan2"), 2
+      subtract
+      pushbyte            2
+      pushdouble          3.141592653589793
+      multiply
+      modulo
+      convert_d
+      setlocal2
+
+      getlocal2
+      pushdouble          3.141592653589793
+      ifngt               L25
+
+      getlocal2
+      pushbyte            2
+      pushdouble          3.141592653589793
+      multiply
+      subtract
+      convert_d
+      setlocal2
+
+      jump                L36
+
+L25:
+      getlocal2
+      pushdouble          3.141592653589793
+      negate
+      ifnle               L36
+
+      getlocal2
+      pushbyte            2
+      pushdouble          3.141592653589793
+      multiply
+      add
+      convert_d
+      setlocal2
+
+L36:
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4010")
+   method
+    name "o4010"
+    refid "o18509/instance/o4010"
+    returns QName(PackageNamespace(""), "o18509")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o18509")
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace(""), "o18509")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o18509")
+      setlocal1
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "y")
+      negate
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "x")
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o10018")
+   method
+    name "o10018"
+    refid "o18509/instance/o10018"
+    param QName(PackageNamespace(""), "o18509")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      multiply
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      multiply
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "add")
+   method
+    name "add"
+    refid "o18509/instance/add"
+    param QName(PackageNamespace(""), "o18509")
+    returns QName(PackageNamespace(""), "o18509")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o18509")
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace(""), "o18509")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o18509")
+      setlocal2
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "x")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      add
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      add
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o2413")
+   method
+    name "o2413"
+    refid "o18509/instance/o2413"
+    param QName(PackageNamespace(""), "o18509")
+    returns QName(PackageNamespace(""), "o18509")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o18509")
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace(""), "o18509")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o18509")
+      setlocal2
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "x")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      subtract
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      subtract
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o20646")
+   method
+    name "o20646"
+    refid "o18509/instance/o20646"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "o18509")
+    flag HAS_PARAM_NAMES
+    paramname "o12618"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Mem")
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o18509")
+      callproperty        QName(PackageNamespace(""), "create"), 2
+      getlex              QName(PackageNamespace(""), "o18509")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o18509")
+      setlocal2
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "x")
+      getlocal1
+      multiply
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal1
+      multiply
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o18820")
+   method
+    name "o18820"
+    refid "o18509/instance/o18820"
+    param QName(PackageNamespace(""), "o18509")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "x")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "y")
+      multiply
+      getlex              QName(PackageNamespace(""), "y")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "x")
+      multiply
+      subtract
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o7277")
+   method
+    name "o7277"
+    refid "o18509/instance/o7277"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o5149"
+    paramname "o3215"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "cos"), 1
+      getlocal2
+      multiply
+      findproperty        QName(PackageNamespace(""), "x")
+      swap
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PackageNamespace(""), "Math")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "sin"), 1
+      getlocal2
+      multiply
+      findproperty        QName(PackageNamespace(""), "y")
+      swap
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o18509/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "o18683")
+  method
+   name "o18683"
+   refid "o18509/class/o18683"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o1264"
+   paramname "o5903"
+   paramname "o2275"
+   paramname "o424"
+   body
+    maxstack 7
+    localcount 7
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal3
+     getlocal3
+     multiply
+     getlocal2
+     getlocal            4
+     multiply
+     add
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     getlocal1
+     multiply
+     getlocal2
+     getlocal2
+     multiply
+     add
+     callproperty        QName(PackageNamespace(""), "sqrt"), 1
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal3
+     getlocal3
+     multiply
+     getlocal            4
+     getlocal            4
+     multiply
+     add
+     callproperty        QName(PackageNamespace(""), "sqrt"), 1
+     multiply
+     divide
+     callproperty        QName(PackageNamespace(""), "acos"), 1
+     convert_d
+     setlocal            5
+
+     getlocal3
+     getlocal3
+     multiply
+     getlocal2
+     negate
+     getlocal            4
+     multiply
+     add
+     pushbyte            0
+     greaterthan
+     dup
+     setlocal            6
+
+     iftrue              L50
+
+     getlocal            5
+     negate
+     convert_d
+     setlocal            5
+
+L50:
+     getlocal            5
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

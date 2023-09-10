@@ -1,0 +1,200 @@
+method
+ name "o1412.as$0:anonymous"
+ refid "o1412/instance/o1412/o3006/inline_method"
+ param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o3643")>)
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 12
+  localcount 10
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushbyte            0
+   setlocal            7
+
+   pushfalse
+   setlocal3
+
+   pushfalse
+   setlocal            4
+
+   pushnull
+   setlocal            6
+
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getproperty         QName(PackageNamespace(""), "o12514")
+   dup
+   iftrue              L17
+
+   pop
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getproperty         QName(PackageNamespace(""), "enabled")
+   pushfalse
+   equals
+L17:
+   iffalse             L19
+
+   returnvoid
+
+L19:
+   getlex              QName(PackageInternalNs(""), "o11390")
+   pushstring          "Leaderboard: "
+   getlex              QName(PackageNamespace(""), "o10486")
+   callproperty        QName(PackageNamespace(""), "o16776"), 0
+   add
+   callpropvoid        QName(PackageNamespace(""), "o10706"), 1
+
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifne                L33
+
+   getlex              QName(PackageInternalNs(""), "o11390")
+   pushbyte            0
+   callpropvoid        QName(PackageNamespace(""), "o7928"), 1
+
+   jump                L39
+
+L33:
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getlocal1
+   pushbyte            0
+   getproperty         MultinameL([PrivateNamespace("o1412"), ProtectedNamespace("o1412"), StaticProtectedNs("o1412"), StaticProtectedNs("o15625"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1412"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getproperty         Multiname("o14626", [PrivateNamespace("o1412"), ProtectedNamespace("o1412"), StaticProtectedNs("o1412"), StaticProtectedNs("o15625"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1412"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   callpropvoid        QName(PackageNamespace(""), "o7928"), 1
+
+L39:
+   getlex              QName(PackageInternalNs(""), "o11390")
+   pushtrue
+   callpropvoid        QName(PackageNamespace(""), "o10550"), 1
+
+   getlex              QName(PackageInternalNs(""), "o11390")
+   callpropvoid        QName(PackageNamespace(""), "o12578"), 0
+
+   pushbyte            0
+   setlocal            5
+
+   pushbyte            0
+   setlocal            9
+
+   getlocal1
+   setlocal            8
+
+   jump                L134
+
+L51:
+   label
+   getlocal            8
+   getlocal            9
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o3643")
+   setlocal2
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o19189")
+   pushbyte            0
+   ifeq                L134
+
+   pushbyte            0
+   setlocal            7
+
+   pushfalse
+   setlocal3
+
+   pushfalse
+   setlocal            4
+
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o20860")
+   iffalse             L75
+
+   getlex              QName(PackageNamespace(""), "o10486")
+   callproperty        QName(PackageNamespace(""), "o14373"), 0
+   convert_i
+   setlocal            7
+
+   jump                L81
+
+L75:
+   getlex              QName(PackageNamespace(""), "o10486")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o19730")
+   callproperty        QName(PackageNamespace(""), "o8893"), 1
+   convert_i
+   setlocal            7
+
+L81:
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o15820")
+   coerce_s
+   dup
+   setlocal            6
+
+   pushnull
+   ifne                L91
+
+   pushstring          "Kong"
+   coerce_s
+   setlocal            6
+
+L91:
+   getlocal            5
+   pushbyte            0
+   greaterequals
+   dup
+   iffalse             L100
+
+   pop
+   getlocal            5
+   pushbyte            2
+   lessequals
+L100:
+   iffalse             L103
+
+   pushtrue
+   setlocal3
+
+L103:
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o799")
+   getlex              QName(PackageNamespace(""), "o14200")
+   getproperty         QName(PackageNamespace(""), "o19505")
+   getproperty         QName(PackageNamespace(""), "o15894")
+   getproperty         QName(PackageNamespace(""), "o4848")
+   getproperty         QName(PackageNamespace(""), "o12485")
+   ifne                L113
+
+   pushtrue
+   setlocal            4
+
+L113:
+   getlex              QName(PackageInternalNs(""), "o11390")
+   getlocal            5
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o15820")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o10615")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o19189")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o19730")
+   getlocal            7
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o2562")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o20860")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o1727")
+   getlocal3
+   getlocal            4
+   callpropvoid        QName(PackageNamespace(""), "o2698"), 11
+
+   inclocal_i          5
+L134:
+   hasnext2            8, 9
+   iftrue              L51
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

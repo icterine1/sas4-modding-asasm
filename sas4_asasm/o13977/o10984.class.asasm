@@ -1,0 +1,228 @@
+class
+ refid "o13977/o10984"
+ instance QName(PrivateNamespace("FilePrivateNS:o13977"), "o10984")
+  extends QName(PackageNamespace(""), "o11386")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("FilePrivateNS:o13977:o10984")
+  iinit
+   refid "o13977/o10984/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o16955")
+   method
+    name "o16955"
+    refid "o13977/o10984/instance/o16955"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "o5973"
+    paramname "o10303"
+    body
+     maxstack 4
+     localcount 9
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            8
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      convert_b
+      setlocal3
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      convert_b
+      setlocal            6
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      convert_b
+      setlocal            7
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      convert_b
+      setlocal            4
+
+      pushfalse
+      setlocal            5
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "bytesAvailable")
+      pushbyte            0
+      ifngt               L32
+
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "readByte"), 0
+      convert_b
+      setlocal            5
+
+L32:
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o10217")
+      findproperty        QName(PackageNamespace(""), "mask")
+      swap
+      setproperty         QName(PackageNamespace(""), "mask")
+
+      getlocal3
+      iffalse             L49
+
+      findpropstrict      QName(PackageNamespace(""), "mask")
+      dup
+      getproperty         QName(PackageNamespace(""), "mask")
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o17798")
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o42")
+      bitor
+      bitxor
+      setproperty         QName(PackageNamespace(""), "mask")
+
+L49:
+      getlocal            6
+      iffalse             L58
+
+      findpropstrict      QName(PackageNamespace(""), "mask")
+      dup
+      getproperty         QName(PackageNamespace(""), "mask")
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o2823")
+      bitxor
+      setproperty         QName(PackageNamespace(""), "mask")
+
+L58:
+      getlocal            7
+      iffalse             L67
+
+      findpropstrict      QName(PackageNamespace(""), "mask")
+      dup
+      getproperty         QName(PackageNamespace(""), "mask")
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o32")
+      bitxor
+      setproperty         QName(PackageNamespace(""), "mask")
+
+L67:
+      getlocal            4
+      iffalse             L76
+
+      findpropstrict      QName(PackageNamespace(""), "mask")
+      dup
+      getproperty         QName(PackageNamespace(""), "mask")
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o12624")
+      bitxor
+      setproperty         QName(PackageNamespace(""), "mask")
+
+L76:
+      getlocal            5
+      iffalse             L85
+
+      findpropstrict      QName(PackageNamespace(""), "mask")
+      dup
+      getproperty         QName(PackageNamespace(""), "mask")
+      getlex              QName(PackageNamespace(""), "o8723")
+      getproperty         QName(PackageNamespace(""), "o3732")
+      bitxor
+      setproperty         QName(PackageNamespace(""), "mask")
+
+L85:
+      getlocal0
+      getlocal1
+      getlocal            8
+      callsupervoid       QName(PackageNamespace(""), "o20950"), 2
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o13977/o10984/class/init"
+  body
+   maxstack 10
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushbyte            1
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o2013")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "physics graph"
+    newarray            4
+    pushbyte            2
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o14773")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "projectiles pass thru"
+    newarray            4
+    pushbyte            3
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o14773")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "enemies pass thru"
+    newarray            4
+    pushbyte            4
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o14773")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "players pass thru"
+    newarray            4
+    pushbyte            115
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o14773")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "survivors pass thru"
+    newarray            4
+    pushbyte            6
+    getlex              QName(PackageNamespace(""), "o17243")
+    getproperty         QName(PackageNamespace(""), "o14773")
+    getlex              QName(PackageNamespace(""), "o13351")
+    getproperty         QName(PackageNamespace(""), "o10420")
+    pushstring          "ai soldiers pass thru"
+    newarray            4
+    newarray            6
+    findproperty        QName(PackageNamespace(""), "o20272")
+    swap
+    setproperty         QName(PackageNamespace(""), "o20272")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o20272") type QName(PackageNamespace(""), "Array") end
+end ; class

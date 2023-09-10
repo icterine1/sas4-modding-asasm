@@ -1,0 +1,157 @@
+class
+ refid "o1424"
+ instance QName(PackageNamespace(""), "o1424")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o1424/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o1424/class/init"
+  body
+   maxstack 10
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "APlus"
+    pushstring          "A"
+    pushstring          "AMinus"
+    pushstring          "BPlus"
+    pushstring          "B"
+    pushstring          "BMinus"
+    pushstring          "CPlus"
+    pushstring          "C"
+    pushstring          "CMinus"
+    newarray            9
+    findproperty        QName(PackageNamespace(""), "o4036")
+    swap
+    initproperty        QName(PackageNamespace(""), "o4036")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o16961") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "A") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o5404") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o2969") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait const QName(PackageNamespace(""), "B") type QName(PackageNamespace(""), "int") value Integer(4) end
+ trait const QName(PackageNamespace(""), "o18773") type QName(PackageNamespace(""), "int") value Integer(5) end
+ trait const QName(PackageNamespace(""), "o11002") type QName(PackageNamespace(""), "int") value Integer(6) end
+ trait const QName(PackageNamespace(""), "C") type QName(PackageNamespace(""), "int") value Integer(7) end
+ trait const QName(PackageNamespace(""), "o4442") type QName(PackageNamespace(""), "int") value Integer(8) end
+ trait const QName(PackageNamespace(""), "o4036") type QName(PackageNamespace(""), "Array") end
+ trait method QName(PackageNamespace(""), "o377")
+  method
+   name "o377"
+   refid "o1424/class/o377"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o13739"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushstring          "F"
+     coerce_s
+     setlocal2
+
+     getlocal1
+     convert_i
+     lookupswitch        L40, [L8, L12, L16, L20, L24, L28, L32, L36, L40]
+
+L8:
+     pushstring          "A+"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L12:
+     pushstring          "A"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L16:
+     pushstring          "A-"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L20:
+     pushstring          "B+"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L24:
+     pushstring          "B"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L28:
+     pushstring          "B-"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L32:
+     pushstring          "C+"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L36:
+     pushstring          "C"
+     coerce_s
+     setlocal2
+
+     jump                L43
+
+L40:
+     pushstring          "C-"
+     coerce_s
+     setlocal2
+
+L43:
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

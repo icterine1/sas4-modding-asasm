@@ -1,0 +1,327 @@
+class
+ refid "o20852"
+ instance QName(PackageNamespace(""), "o20852")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o20852"
+   refid "o20852/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o20852/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o7105") type QName(PackageNamespace(""), "Number") value Double(57.2957795) end
+ trait const QName(PackageNamespace(""), "o1530") type QName(PackageNamespace(""), "Number") value Double(0.0174532) end
+ trait method QName(PackageNamespace(""), "o3471")
+  method
+   name "o3471"
+   refid "o20852/class/o3471"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o16321"
+   paramname "o14731"
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "Math")
+     getlex              QName(PackageNamespace(""), "Math")
+     callproperty        QName(PackageNamespace(""), "random"), 0
+     getlocal2
+     getlocal1
+     subtract
+     pushbyte            1
+     add
+     multiply
+     callproperty        QName(PackageNamespace(""), "floor"), 1
+     getlocal1
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "random")
+  method
+   name "random"
+   refid "o20852/class/random"
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o14731"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o3471")
+     pushbyte            0
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "o3471"), 2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o17418")
+  method
+   name "o17418"
+   refid "o20852/class/o17418"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o3910"
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "Math")
+     callproperty        QName(PackageNamespace(""), "random"), 0
+     pushint             2147483647
+     multiply
+     getlocal1
+     pushbyte            1
+     add
+     modulo
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o17542")
+  method
+   name "o17542"
+   refid "o20852/class/o17542"
+   param QName(PackageNamespace("flash.display"), "DisplayObject")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "target"
+   paramname "o6619"
+   paramname "o4314"
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal3
+     getlocal2
+     divide
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "height")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "width")
+     divide
+     ifngt               L16
+
+     getlocal2
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "width")
+     divide
+     jump                L20
+
+L16:
+     getlocal3
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "height")
+     divide
+L20:
+     convert_d
+     setlocal            4
+
+     getlocal1
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "scaleX")
+
+     getlocal1
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "scaleY")
+
+     getlex              QName(PackageNamespace(""), "o20355")
+     getlocal1
+     getlocal            4
+     callpropvoid        QName(PackageNamespace(""), "o3935"), 2
+
+     getlocal1
+     getlocal2
+     pushbyte            2
+     divide
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "width")
+     pushbyte            2
+     divide
+     subtract
+     setproperty         QName(PackageNamespace(""), "x")
+
+     getlocal1
+     getlocal3
+     pushbyte            2
+     divide
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "height")
+     pushbyte            2
+     divide
+     subtract
+     setproperty         QName(PackageNamespace(""), "y")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o8678")
+  method
+   name "o8678"
+   refid "o20852/class/o8678"
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o14466"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     pushbyte            10
+     multiply
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     convert_i
+     setlocal2
+
+     getlocal2
+     pushbyte            10
+     divide
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o2906")
+  method
+   name "o2906"
+   refid "o20852/class/o2906"
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o14466"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "Math")
+     getlocal1
+     pushbyte            100
+     multiply
+     callproperty        QName(PackageNamespace(""), "round"), 1
+     convert_i
+     setlocal2
+
+     getlocal2
+     pushbyte            100
+     divide
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o928")
+  method
+   name "o928"
+   refid "o20852/class/o928"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   returns QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o1264"
+   paramname "o5903"
+   paramname "o2275"
+   paramname "o424"
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal1
+     getlocal3
+     subtract
+     getlocal1
+     getlocal3
+     subtract
+     multiply
+     getlocal2
+     getlocal            4
+     subtract
+     getlocal2
+     getlocal            4
+     subtract
+     multiply
+     add
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

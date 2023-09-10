@@ -1,0 +1,142 @@
+class
+ refid "o19173"
+ instance QName(PackageNamespace(""), "o19173")
+  extends QName(PackageNamespace(""), "o5497")
+  flag SEALED
+  iinit
+   name "o19173"
+   refid "o19173/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o7631")>)
+   param QName(PackageNamespace(""), "o5072")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   optional Null()
+   optional Null()
+   optional Integer(0)
+   paramname "type"
+   paramname "o3354"
+   paramname "o9938"
+   paramname "o5897"
+   paramname "o18188"
+   paramname "o4018"
+   paramname "o4628"
+   paramname "o4277"
+   paramname "o18732"
+   body
+    maxstack 5
+    localcount 10
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushstring          ""
+     findproperty        QName(PackageNamespace(""), "o3700")
+     swap
+     setproperty         QName(PackageNamespace(""), "o3700")
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "type")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o3354")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "o9938")
+
+     getlocal0
+     getlocal            5
+     setproperty         QName(PackageNamespace(""), "o18188")
+
+     getlocal0
+     getlocal            8
+     setproperty         QName(PackageNamespace(""), "o3700")
+
+     getlocal1
+     pushbyte            3
+     equals
+     not
+     findproperty        QName(PackageNamespace(""), "o19688")
+     swap
+     setproperty         QName(PackageNamespace(""), "o19688")
+
+     getlocal0
+     getlocal            4
+     getlocal            6
+     getlocal            7
+     getlocal            9
+     constructsuper      4
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "type") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o3354") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o9938") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o7631")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o18188") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PackageNamespace(""), "o3700") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o19688") type QName(PackageNamespace(""), "Boolean") value True() end
+  trait method QName(PackageNamespace(""), "o20093")
+   method
+    name "o20093"
+    refid "o19173/instance/o20093"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      coerce              QName(PackageNamespace(""), "o14754")
+      setlocal2
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o15020")
+      coerce              QName(PackageNamespace(""), "Date")
+      setlocal1
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o15020")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      getlex              QName(PackageNamespace(""), "o5897")
+      getproperty         QName(PackageNamespace(""), "end")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
+      greaterthan
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o19173/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

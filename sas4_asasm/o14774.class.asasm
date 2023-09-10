@@ -1,0 +1,154 @@
+class
+ refid "o14774"
+ instance QName(PackageNamespace(""), "o14774")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o14774/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o14774"), "o1168") type QName(PackageNamespace("flash.display"), "DisplayObject") end
+  trait slot QName(PrivateNamespace("o14774"), "o19976") type QName(PackageNamespace("flash.display"), "LoaderInfo") end
+  trait slot QName(PackageNamespace(""), "o16316") type QName(PackageNamespace(""), "Function") end
+  trait method QName(PackageNamespace(""), "o8858")
+   method
+    name "o8858"
+    refid "o14774/instance/o8858"
+    param QName(PackageNamespace("flash.display"), "DisplayObject")
+    param QName(PackageNamespace("flash.display"), "LoaderInfo")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o1168"
+    paramname "loaderInfo"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("o14774"), "o1168")
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("o14774"), "o19976")
+      pushnull
+      ifeq                L10
+
+      returnvoid
+
+L10:
+      getlocal0
+      getlocal2
+      setproperty         QName(PrivateNamespace("o14774"), "o19976")
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "uncaughtErrorEvents")
+      pushstring          "uncaughtError"
+      getlex              QName(PrivateNamespace("o14774"), "o16903")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o14774"), "o16903")
+   method
+    name "o16903"
+    refid "o14774/instance/o14774/instance/o8858/o16903"
+    param QName(PackageNamespace("flash.events"), "UncaughtErrorEvent")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12568"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal2
+
+      getlex              QName(PackageNamespace(""), "o16316")
+      pushnull
+      ifeq                L12
+
+      getlex              QName(PackageNamespace(""), "o16316")
+      getglobalscope
+      getlocal1
+      call                1
+      pop
+L12:
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "error")
+      getlex              QName(PackageNamespace(""), "Error")
+      istypelate
+      iftrue              L37
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "error")
+      getlex              QName(PackageNamespace("flash.events"), "ErrorEvent")
+      istypelate
+      iffalse             L33
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "error")
+      getlex              QName(PackageNamespace("flash.events"), "ErrorEvent")
+      astypelate
+      coerce              QName(PackageNamespace("flash.events"), "ErrorEvent")
+      setlocal2
+
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "errorID")
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+      jump                L37
+
+L33:
+      findpropstrict      QName(PackageNamespace(""), "o8339")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "error")
+      callpropvoid        QName(PackageNamespace(""), "o8339"), 1
+
+L37:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o14774/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

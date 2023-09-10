@@ -1,0 +1,37 @@
+method
+ name "o17528.as$1:anonymous"
+ refid "o17528/instance/o10598/inline_method#1"
+ param QName(PackageNamespace(""), "o45")
+ param QName(PackageNamespace(""), "o45")
+ returns QName(PackageNamespace(""), "Number")
+ body
+  maxstack 2
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "o16990")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o16990")
+   ifnlt               L7
+
+   pushbyte            -1
+   returnvalue
+
+L7:
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "o16990")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "o16990")
+   ifngt               L14
+
+   pushbyte            1
+   returnvalue
+
+L14:
+   pushbyte            0
+   returnvalue
+  end ; code
+ end ; body
+end ; method

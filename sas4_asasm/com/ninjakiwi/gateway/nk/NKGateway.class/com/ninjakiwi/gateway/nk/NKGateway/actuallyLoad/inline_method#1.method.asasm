@@ -1,0 +1,39 @@
+method
+ name ""
+ refid "com.ninjakiwi.gateway.nk:NKGateway/class/com.ninjakiwi.gateway.nk:NKGateway/actuallyLoad/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "error"
+ body
+  maxstack 4
+  localcount 2
+  initscopedepth 5
+  maxscopedepth 6
+  code
+   getlocal0
+   pushscope
+
+   getlex              QName(PackageNamespace(""), "container")
+   pushstring          "failed"
+   callpropvoid        QName(PackageInternalNs("com.ninjakiwi.gateway.nk"), "showStatus"), 1
+
+   getlex              QName(PackageNamespace(""), "container")
+   getproperty         QName(PackageNamespace(""), "retrySignal")
+   getlex              QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGateway"), "actuallyLoad")
+   callpropvoid        QName(PackageNamespace(""), "addOnce"), 1
+
+   getlex              QName(PackageNamespace(""), "container")
+   pushstring          "Couldn't connect to Ninja Kiwi ("
+   findpropstrict      QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGateway"), "inspectError")
+   getlocal1
+   callproperty        QName(PrivateNamespace("com.ninjakiwi.gateway.nk:NKGateway"), "inspectError"), 1
+   add
+   pushstring          ")"
+   add
+   callpropvoid        QName(PackageInternalNs("com.ninjakiwi.gateway.nk"), "showErrorMessage"), 1
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

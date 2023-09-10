@@ -1,0 +1,159 @@
+class
+ refid "o12696"
+ instance QName(PackageNamespace(""), "o12696")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o12696/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o12696/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o14454") type QName(PackageNamespace(""), "int") value Integer(0) end
+ trait const QName(PackageNamespace(""), "o9045") type QName(PackageNamespace(""), "int") value Integer(1) end
+ trait const QName(PackageNamespace(""), "o2263") type QName(PackageNamespace(""), "int") value Integer(2) end
+ trait const QName(PackageNamespace(""), "o16921") type QName(PackageNamespace(""), "int") value Integer(3) end
+ trait method QName(PackageNamespace(""), "o5840")
+  method
+   name "o5840"
+   refid "o12696/class/o5840"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o16173"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "o476")
+     getproperty         QName(PackageNamespace(""), "o9392")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "o4683"), 1
+     coerce              QName(PackageNamespace(""), "o20567")
+     setlocal2
+
+     getlocal2
+     iffalse             L15
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "id")
+     returnvalue
+
+L15:
+     pushbyte            0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o19628")
+  method
+   name "o19628"
+   refid "o12696/class/o19628"
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o16173"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "o476")
+     getproperty         QName(PackageNamespace(""), "o9392")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "o1131"), 1
+     coerce              QName(PackageNamespace(""), "o20567")
+     setlocal2
+
+     getlocal2
+     iffalse             L17
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "name")
+     pushstring          " Edition"
+     add
+     returnvalue
+
+L17:
+     pushstring          ""
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o20082")
+  method
+   name "o20082"
+   refid "o12696/class/o20082"
+   returns QName(PackageNamespace(""), "int")
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "o476")
+     getproperty         QName(PackageNamespace(""), "o9392")
+     callproperty        QName(PackageNamespace(""), "o16643"), 0
+     iffalse             L15
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "o476")
+     getproperty         QName(PackageNamespace(""), "o9392")
+     callproperty        QName(PackageNamespace(""), "o7908"), 0
+     getproperty         QName(PackageNamespace(""), "id")
+     returnvalue
+
+L15:
+     pushbyte            0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

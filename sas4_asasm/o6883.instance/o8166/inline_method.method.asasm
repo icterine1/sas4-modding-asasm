@@ -1,0 +1,91 @@
+method
+ name "o6883.as$0:anonymous"
+ refid "o6883/instance/o8166/inline_method"
+ param QName(PackageNamespace("flash.utils"), "ByteArray")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 6
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   pushnull
+   setlocal2
+
+   pushbyte            0
+   setlocal3
+
+L4:
+   getlocal1
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "position")
+
+   jump                L20
+
+L8:
+   label
+   findpropstrict      QName(PackageNamespace(""), "o3667")
+   constructprop       QName(PackageNamespace(""), "o3667"), 0
+   coerce              QName(PackageNamespace(""), "o3667")
+   setlocal2
+
+   getlocal2
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+   getlex              QName(PackageNamespace(""), "o19457")
+   getlocal2
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   inclocal_i          3
+L20:
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "bytesAvailable")
+   pushbyte            0
+   ifgt                L8
+
+   pushtrue
+   findproperty        QName(PrivateNamespace("o6883"), "o15688")
+   swap
+   setproperty         QName(PrivateNamespace("o6883"), "o15688")
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   getlex              QName(PackageNamespace(""), "o19457")
+   setproperty         QName(PackageNamespace(""), "data")
+
+L31:
+   jump                L53
+
+L32:
+   newcatch            0
+   dup
+   setlocal            5
+
+   dup
+   pushscope
+
+   swap
+   setslot             1
+
+   getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+   getlex              QName(PackageNamespace(""), "o3667")
+   applytype           1
+   construct           0
+   findproperty        QName(PackageNamespace(""), "o19457")
+   swap
+   setproperty         QName(PackageNamespace(""), "o19457")
+
+   findpropstrict      QName(PackageNamespace(""), "Error")
+   pushstring          "MapSummaryManager maps.bin format updated. Need to resave all maps. Map index: "
+   getlocal3
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+   add
+   constructprop       QName(PackageNamespace(""), "Error"), 1
+   throw
+
+L53:
+   returnvoid
+  end ; code
+  try from L4 to L31 target L32 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
+ end ; body
+end ; method

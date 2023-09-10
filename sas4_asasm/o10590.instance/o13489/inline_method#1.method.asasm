@@ -1,0 +1,84 @@
+method
+ name "o11736"
+ refid "o10590/instance/o13489/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 9
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushbyte            0
+   setlocal3
+
+   pushbyte            0
+   setlocal            6
+
+   pushbyte            0
+   setlocal2
+
+   getlocal1
+   getlex              QName(PackageNamespace(""), "Array")
+   astypelate
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal            5
+
+   pushbyte            0
+   setlocal            8
+
+   getlocal            5
+   setlocal            7
+
+   jump                L49
+
+L16:
+   label
+   getlocal            7
+   getlocal            8
+   nextvalue
+   coerce              QName(PackageNamespace(""), "Object")
+   dup
+   setlocal            4
+
+   pushstring          "id"
+   getproperty         MultinameL([PrivateNamespace("o10590"), ProtectedNamespace("o10590"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10590"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_i
+   setlocal3
+
+   getlocal            4
+   pushstring          "cost"
+   getproperty         MultinameL([PrivateNamespace("o10590"), ProtectedNamespace("o10590"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10590"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_i
+   dup
+   setlocal            6
+
+   setlocal2
+
+   getlocal            4
+   pushstring          "salecost"
+   getproperty         MultinameL([PrivateNamespace("o10590"), ProtectedNamespace("o10590"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10590"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushnull
+   ifeq                L44
+
+   getlocal            4
+   pushstring          "salecost"
+   getproperty         MultinameL([PrivateNamespace("o10590"), ProtectedNamespace("o10590"), StaticProtectedNs("o10590"), StaticProtectedNs("o15621"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o10590"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_i
+   setlocal2
+
+L44:
+   findpropstrict      QName(ProtectedNamespace("o15621"), "o6944")
+   getlocal3
+   getlocal            6
+   getlocal2
+   callpropvoid        QName(ProtectedNamespace("o15621"), "o6944"), 3
+
+L49:
+   hasnext2            7, 8
+   iftrue              L16
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

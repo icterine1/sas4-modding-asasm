@@ -1,0 +1,77 @@
+class
+ refid "o11501"
+ instance QName(PackageNamespace(""), "o11501")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o11501/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o2747")
+   method
+    name "o2747"
+    refid "o11501/instance/o2747"
+    returns QName(PackageNamespace(""), "o11501")
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o11501")
+      constructprop       QName(PackageNamespace(""), "o11501"), 0
+      coerce              QName(PackageNamespace(""), "o11501")
+      setlocal1
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o11755")
+      setproperty         QName(PackageNamespace(""), "o11755")
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o251")
+      setproperty         QName(PackageNamespace(""), "o251")
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o7509")
+      setproperty         QName(PackageNamespace(""), "o7509")
+
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PackageNamespace(""), "o11755") type QName(PackageNamespace(""), "uint") value Integer(1) end
+  trait slot QName(PackageNamespace(""), "o251") type QName(PackageNamespace(""), "uint") value Integer(65535) end
+  trait slot QName(PackageNamespace(""), "o7509") type QName(PackageNamespace(""), "int") value Integer(0) end
+ end ; instance
+ cinit
+  refid "o11501/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

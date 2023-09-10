@@ -1,0 +1,132 @@
+class
+ refid "o10108"
+ instance QName(PackageNamespace(""), "o10108")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o10108/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o12395") type QName(PackageNamespace(""), "o5173") value Null() end
+  trait slot QName(PackageNamespace(""), "o17768") type QName(PackageNamespace(""), "o5173") value Null() end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o10108/instance/initialise"
+    param QName(PackageNamespace(""), "o5173")
+    param QName(PackageNamespace(""), "o5173")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12395"
+    paramname "o17768"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "o12395")
+
+      getlocal0
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "o17768")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19691")
+   method
+    name "o19691"
+    refid "o10108/instance/o19691"
+    param QName(PackageNamespace(""), "o5173")
+    param QName(PackageNamespace(""), "o5173")
+    returns QName(PackageNamespace(""), "Boolean")
+    flag HAS_PARAM_NAMES
+    paramname "o12395"
+    paramname "o17768"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "o12395")
+      getlocal1
+      equals
+      dup
+      iffalse             L13
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "o17768")
+      getlocal2
+      equals
+L13:
+      dup
+      iftrue              L27
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "o12395")
+      getlocal2
+      equals
+      dup
+      iffalse             L27
+
+      pop
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "o17768")
+      getlocal1
+      equals
+L27:
+      iffalse             L30
+
+      pushtrue
+      returnvalue
+
+L30:
+      pushfalse
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o10108/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

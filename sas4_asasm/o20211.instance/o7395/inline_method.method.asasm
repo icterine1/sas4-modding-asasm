@@ -1,0 +1,100 @@
+method
+ name "o20211.as$0:anonymous"
+ refid "o20211/instance/o7395/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 6
+  localcount 6
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   pushnull
+   setlocal1
+
+   getlex              QName(PackageNamespace(""), "Mem")
+   getlocal0
+   getlex              QName(PackageNamespace("flash.display"), "Loader")
+   callproperty        QName(PackageNamespace(""), "create"), 2
+   getlex              QName(PackageNamespace("flash.display"), "Loader")
+   astypelate
+   coerce              QName(PackageNamespace("flash.display"), "Loader")
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "Mem")
+   getlocal0
+   getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+   callproperty        QName(PackageNamespace(""), "create"), 2
+   getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+   astypelate
+   coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+   setlocal2
+
+   getlocal2
+   getlex              QName(PackageInternalNs(""), "o17426")
+   getproperty         QName(PackageNamespace(""), "data")
+   callpropvoid        QName(PackageNamespace(""), "writeBytes"), 1
+
+L22:
+   getlocal3
+   getlocal2
+   callpropvoid        QName(PackageNamespace(""), "loadBytes"), 1
+
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+   pushstring          "complete"
+   getlex              QName(PrivateNamespace("o20211"), "o17064")
+   pushfalse
+   pushbyte            0
+   pushtrue
+   callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+   getlex              QName(PrivateNamespace("o20211"), "o3670")
+   getlex              QName(PackageInternalNs(""), "o1337")
+   callpropvoid        QName(Namespace("o3135"), "o7245"), 1
+
+L36:
+   jump                L64
+
+L37:
+   newcatch            0
+   dup
+   setlocal            5
+
+   dup
+   pushscope
+
+   swap
+   setslot             1
+
+   getlex              QName(PackageInternalNs(""), "o1337")
+   pushnull
+   ifne                L49
+
+   pushstring          "null"
+   jump                L56
+
+L49:
+   getlex              QName(PackageInternalNs(""), "o1337")
+   getlex              QName(PackageInternalNs(""), "o1337")
+   pushstring          "/"
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "lastIndexOf"), 1
+   pushbyte            1
+   add
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 1
+L56:
+   coerce_s
+   setlocal1
+
+   findpropstrict      QName(PackageNamespace(""), "Error")
+   pushstring          "addLibrary error: "
+   getlocal1
+   add
+   constructprop       QName(PackageNamespace(""), "Error"), 1
+   throw
+
+L64:
+   returnvoid
+  end ; code
+  try from L22 to L36 target L37 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
+ end ; body
+end ; method

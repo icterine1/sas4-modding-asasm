@@ -1,0 +1,38 @@
+method
+ name "com.codecatalyst.promise:Promise/any/com.codecatalyst.promise:transform"
+ refid "com.codecatalyst.promise:Promise/class/any/inline_method#1"
+ param null
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "reason"
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 4
+  maxscopedepth 4
+  code
+   getlocal1
+   getlex              QName(PackageNamespace(""), "Error")
+   istypelate
+   dup
+   iffalse             L10
+
+   pop
+   getlocal1
+   getproperty         Multiname("message", [PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+   pushstring          "Too few Promises were resolved."
+   equals
+L10:
+   iffalse             L15
+
+   findpropstrict      QName(PackageNamespace(""), "Error")
+   pushstring          "No Promises were resolved."
+   constructprop       QName(PackageNamespace(""), "Error"), 1
+   throw
+
+L15:
+   getlocal1
+   throw
+  end ; code
+ end ; body
+end ; method

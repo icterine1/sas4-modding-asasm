@@ -1,0 +1,122 @@
+class
+ refid "o9433"
+ instance QName(PackageNamespace(""), "o9433")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o9433"
+   refid "o9433/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace("flash.utils"), "Dictionary")
+   flag HAS_PARAM_NAMES
+   paramname "id"
+   paramname "name"
+   paramname "o32"
+   paramname "clan"
+   paramname "o5578"
+   paramname "o7701"
+   paramname "o6443"
+   paramname "o1727"
+   body
+    maxstack 2
+    localcount 9
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "id")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "name")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "o32")
+
+     getlocal0
+     getlocal            4
+     setproperty         QName(PackageNamespace(""), "clan")
+
+     getlocal0
+     getlocal            5
+     setproperty         QName(PackageNamespace(""), "o5578")
+
+     getlocal0
+     getlocal            6
+     setproperty         QName(PackageNamespace(""), "o7701")
+
+     getlocal0
+     getlocal            7
+     setproperty         QName(PackageNamespace(""), "o6443")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "id") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "name") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o32") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "clan") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o5578") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o7701") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "o6443") type QName(PackageNamespace(""), "Boolean") end
+  trait slot QName(PackageNamespace(""), "o1727") type QName(PackageNamespace("flash.utils"), "Dictionary") value Null() end
+  trait method QName(PackageNamespace(""), "o104")
+   method
+    name "o104"
+    refid "o9433/instance/o104"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o6443")
+      iffalse             L9
+
+      pushstring          "kong_"
+      getlex              QName(PackageNamespace(""), "id")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      add
+      returnvalue
+
+L9:
+      getlex              QName(PackageNamespace(""), "id")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o9433/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

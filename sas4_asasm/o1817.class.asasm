@@ -1,0 +1,237 @@
+class
+ refid "o1817"
+ instance QName(PackageNamespace(""), "o1817")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o1817/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o1817/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait method QName(PackageNamespace(""), "o18607")
+  method
+   name "o18607"
+   refid "o1817/class/o18607"
+   param QName(PackageNamespace(""), "Object")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o7616"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace(""), "JSON")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "stringify"), 1
+     coerce_s
+     setlocal2
+
+     findpropstrict      QName(PrivateNamespace("o1817"), "o13526")
+     getlocal2
+     callproperty        QName(PrivateNamespace("o1817"), "o13526"), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PrivateNamespace("o1817"), "o13526")
+  method
+   name "o13526"
+   refid "o1817/class/o1817/class/o13526"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o7616"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
+     constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
+     coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+     setlocal3
+
+     getlocal3
+     getlocal1
+     callpropvoid        QName(PackageNamespace(""), "writeUTFBytes"), 1
+
+     getlocal3
+     callpropvoid        QName(PackageNamespace(""), "compress"), 0
+
+     getlocal3
+     pushbyte            0
+     setproperty         QName(PackageNamespace(""), "position")
+
+     getlex              QName(PackageNamespace(""), "o13335")
+     getlocal3
+     callproperty        QName(PackageNamespace(""), "o17389"), 1
+     coerce_s
+     setlocal2
+
+     getlocal2
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "o5114")
+  method
+   name "o5114"
+   refid "o1817/class/o5114"
+   param QName(PackageNamespace(""), "String")
+   flag HAS_PARAM_NAMES
+   paramname "o7616"
+   body
+    maxstack 3
+    localcount 10
+    initscopedepth 0
+    maxscopedepth 3
+    code
+     getlocal0
+     pushscope
+
+     pushnull
+     setlocal            4
+
+     pushnull
+     coerce              QName(PackageNamespace(""), "Object")
+     setlocal3
+
+L7:
+     getlex              QName(PackageNamespace(""), "o13335")
+     getlocal1
+     callproperty        QName(PackageNamespace(""), "o19437"), 1
+     coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+     dup
+     setlocal            4
+
+     callpropvoid        QName(PackageNamespace(""), "uncompress"), 0
+
+     getlocal            4
+     pushbyte            0
+     setproperty         QName(PackageNamespace(""), "position")
+
+L17:
+     jump                L39
+
+L18:
+     getlocal0
+     pushscope
+
+     newcatch            0
+     dup
+     setlocal            7
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     findpropstrict      QName(PackageNamespace(""), "o8339")
+     pushstring          "Squeeze::decodeCompressedJSON() Failed to decompress the Base64 input string"
+     getlex              QName(PackageInternalNs(""), "o7367")
+     getproperty         Multiname("o1216", [PrivateNamespace("o1817"), StaticProtectedNs("o1817"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1817"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     callpropvoid        QName(PackageNamespace(""), "o8339"), 2
+
+     findpropstrict      QName(PackageNamespace(""), "Error")
+     pushstring          "Squeeze::decodeCompressedJSON() Failed to decompress the Base64 input string "
+     getlex              QName(PackageInternalNs(""), "o7367")
+     getproperty         Multiname("o1216", [PrivateNamespace("o1817"), StaticProtectedNs("o1817"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1817"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     add
+     constructprop       QName(PackageNamespace(""), "Error"), 1
+     throw
+
+L39:
+     getlocal            4
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "length")
+     callproperty        QName(PackageNamespace(""), "readUTFBytes"), 1
+     convert_s
+     coerce_s
+     setlocal2
+
+L46:
+     getlex              QName(PackageNamespace(""), "JSON")
+     getlocal2
+     callproperty        QName(PackageNamespace(""), "parse"), 1
+     coerce              QName(PackageNamespace(""), "Object")
+     setlocal3
+
+L51:
+     jump                L73
+
+L52:
+     getlocal0
+     pushscope
+
+     newcatch            1
+     dup
+     setlocal            9
+
+     dup
+     pushscope
+
+     swap
+     setslot             1
+
+     findpropstrict      QName(PackageNamespace(""), "o8339")
+     pushstring          "Squeeze::decodeCompressedJSON() failed to decode json"
+     getlex              QName(PackageInternalNs(""), "o7367")
+     getproperty         Multiname("o1216", [PrivateNamespace("o1817"), StaticProtectedNs("o1817"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1817"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     callpropvoid        QName(PackageNamespace(""), "o8339"), 2
+
+     findpropstrict      QName(PackageNamespace(""), "Error")
+     pushstring          "Squeeze::decodeCompressedJSON() failed to decode json "
+     getlex              QName(PackageInternalNs(""), "o7367")
+     getproperty         Multiname("o1216", [PrivateNamespace("o1817"), StaticProtectedNs("o1817"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1817"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     add
+     constructprop       QName(PackageNamespace(""), "Error"), 1
+     throw
+
+L73:
+     getlocal3
+     returnvalue
+    end ; code
+    try from L7 to L17 target L18 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
+    try from L46 to L51 target L52 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
+   end ; body
+  end ; method
+ end ; trait
+end ; class

@@ -1,0 +1,90 @@
+class
+ refid "o7276/o18740"
+ instance QName(PrivateNamespace("FilePrivateNS:o7276"), "o18740")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o18740"
+   refid "o7276/o18740/instance/init"
+   param QName(PackageNamespace(""), "o6212")
+   param QName(PackageNamespace(""), "o7276")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "o20488"
+   paramname "o14443"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o20488")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o14443")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o20488") type QName(PackageNamespace(""), "o6212") end
+  trait slot QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o14443") type QName(PackageNamespace(""), "o7276") end
+  trait method QName(PackageNamespace(""), "o5111")
+   method
+    name "o5111"
+    refid "o7276/o18740/instance/o5111"
+    param QName(PackageNamespace(""), "Object")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o14443")
+      getlex              QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o20488")
+      callpropvoid        QName(PackageNamespace(""), "o7609"), 1
+
+      pushnull
+      findproperty        QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o20488")
+      swap
+      setproperty         QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o20488")
+
+      pushnull
+      findproperty        QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o14443")
+      swap
+      setproperty         QName(PrivateNamespace("FilePrivateNS:o7276:o18740"), "o14443")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o7276/o18740/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

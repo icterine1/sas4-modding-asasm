@@ -1,0 +1,142 @@
+class
+ refid "o473"
+ instance QName(PackageNamespace(""), "o473")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o473/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o14556") type QName(PackageNamespace(""), "int") value Integer(1) end
+  trait slot QName(PackageNamespace(""), "o12917") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o16396") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o8270") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "scale") type QName(PackageNamespace(""), "uint") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o20917") type QName(PackageNamespace(""), "o14748") end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o473/instance/initialise"
+    param null
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "uint")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "assetID"
+    paramname "frame"
+    paramname "x"
+    paramname "y"
+    paramname "width"
+    paramname "height"
+    paramname "o12917"
+    paramname "o16396"
+    paramname "o8270"
+    paramname "scale"
+    paramname "quality"
+    body
+     maxstack 7
+     localcount 12
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal            7
+      setproperty         QName(PackageNamespace(""), "o12917")
+
+      getlocal0
+      getlocal            8
+      setproperty         QName(PackageNamespace(""), "o16396")
+
+      getlocal0
+      getlocal            9
+      setproperty         QName(PackageNamespace(""), "o8270")
+
+      getlocal0
+      getlocal            10
+      setproperty         QName(PackageNamespace(""), "scale")
+
+      getlocal0
+      getlex              QName(PackageNamespace(""), "o17541")
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "o13617"), 2
+      setproperty         QName(PackageNamespace(""), "o20917")
+
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "o20917")
+      getlocal2
+      getlocal3
+      getlocal            4
+      getlocal            5
+      getlocal            6
+      getlocal            11
+      callpropvoid        QName(PackageNamespace(""), "initialise"), 6
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o5953")
+   method
+    name "o5953"
+    refid "o473/instance/o5953"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      findproperty        QName(PackageNamespace(""), "o20917")
+      swap
+      setproperty         QName(PackageNamespace(""), "o20917")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o473/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

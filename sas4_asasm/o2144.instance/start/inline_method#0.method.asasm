@@ -1,0 +1,42 @@
+method
+ name "o2144.as$6:anonymous"
+ refid "o2144/instance/start/inline_method#0"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 1
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(ProtectedNamespace("o8023"), "o5836")
+   iftrue              L16
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   callpropvoid        QName(PackageNamespace(""), "o132"), 0
+
+   findpropstrict      QName(PackageNamespace(""), "o7629")
+   callproperty        QName(PackageNamespace(""), "o7629"), 0
+   pushbyte            1
+   ifngt               L15
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o4812")
+   getproperty         QName(PackageNamespace(""), "ui")
+   getproperty         QName(PackageNamespace(""), "o4676")
+   callpropvoid        QName(PackageNamespace(""), "play"), 0
+
+L15:
+   jump                L19
+
+L16:
+   findpropstrict      QName(PackageNamespace(""), "o3517")
+   pushnull
+   callpropvoid        QName(PackageNamespace(""), "o3517"), 1
+
+L19:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

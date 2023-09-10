@@ -1,0 +1,672 @@
+class
+ refid "o19433"
+ instance QName(PackageNamespace(""), "o19433")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o19433"
+   refid "o19433/instance/init"
+   param QName(PackageNamespace(""), "o2693")
+   flag HAS_PARAM_NAMES
+   paramname "o5162"
+   body
+    maxstack 4
+    localcount 5
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushbyte            0
+     setlocal2
+
+     pushbyte            0
+     setlocal3
+
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     pushbyte            100
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     findproperty        QName(PrivateNamespace("o19433"), "o5633")
+     swap
+     initproperty        QName(PrivateNamespace("o19433"), "o5633")
+
+     getlocal0
+     constructsuper      0
+
+     findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
+     constructprop       QName(PackageNamespace("flash.utils"), "Dictionary"), 0
+     findproperty        QName(PrivateNamespace("o19433"), "o12981")
+     swap
+     setproperty         QName(PrivateNamespace("o19433"), "o12981")
+
+     findpropstrict      QName(PrivateNamespace("o19433"), "o14439")
+     getlocal1
+     pushstring          "assault"
+     callpropvoid        QName(PrivateNamespace("o19433"), "o14439"), 2
+
+     findpropstrict      QName(PrivateNamespace("o19433"), "o14439")
+     getlocal1
+     pushstring          "medic"
+     callpropvoid        QName(PrivateNamespace("o19433"), "o14439"), 2
+
+     findpropstrict      QName(PrivateNamespace("o19433"), "o14439")
+     getlocal1
+     pushstring          "heavy"
+     callpropvoid        QName(PrivateNamespace("o19433"), "o14439"), 2
+
+     pushbyte            0
+     setlocal            4
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o16123")
+     applytype           1
+     construct           0
+     findproperty        QName(PrivateNamespace("o19433"), "o6923")
+     swap
+     setproperty         QName(PrivateNamespace("o19433"), "o6923")
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "o16123")
+     applytype           1
+     construct           0
+     findproperty        QName(PrivateNamespace("o19433"), "o7418")
+     swap
+     setproperty         QName(PrivateNamespace("o19433"), "o7418")
+
+     pushbyte            0
+     setlocal3
+
+     jump                L77
+
+L50:
+     label
+     getlocal1
+     pushstring          "xpLevel.lv"
+     getlocal3
+     pushbyte            1
+     add
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     add
+     callproperty        QName(PackageNamespace(""), "o3554"), 1
+     convert_i
+     setlocal2
+
+     getlocal            4
+     getlocal2
+     add
+     convert_i
+     setlocal            4
+
+     getlex              QName(PrivateNamespace("o19433"), "o6923")
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     getlocal2
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     getlex              QName(PrivateNamespace("o19433"), "o7418")
+     findpropstrict      QName(PackageNamespace(""), "o16123")
+     getlocal            4
+     constructprop       QName(PackageNamespace(""), "o16123"), 1
+     callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+     inclocal_i          3
+L77:
+     getlocal3
+     getlex              QName(PrivateNamespace("o19433"), "o5633")
+     getproperty         QName(PackageNamespace(""), "value")
+     iflt                L50
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o19433"), "o12981") type QName(PackageNamespace("flash.utils"), "Dictionary") end
+  trait const QName(PrivateNamespace("o19433"), "o5633") type QName(PackageNamespace(""), "o16123") end
+  trait slot QName(PrivateNamespace("o19433"), "o6923") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o16123")>) end
+  trait slot QName(PrivateNamespace("o19433"), "o7418") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o16123")>) end
+  trait method QName(PackageNamespace(""), "o19598")
+   method
+    name "o19598"
+    refid "o19433/instance/o19598"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o19433"), "o5633")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o19433"), "o14439")
+   method
+    name "o14439"
+    refid "o19433/instance/o19433/instance/o14439"
+    param QName(PackageNamespace(""), "o2693")
+    param QName(PackageNamespace(""), "String")
+    returns QName(PackageNamespace(""), "o1832")
+    flag HAS_PARAM_NAMES
+    paramname "o5162"
+    paramname "o6615"
+    body
+     maxstack 5
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal3
+
+      findpropstrict      QName(PackageNamespace(""), "o1832")
+      constructprop       QName(PackageNamespace(""), "o1832"), 0
+      coerce              QName(PackageNamespace(""), "o1832")
+      setlocal            4
+
+      pushstring          "class."
+      getlocal2
+      add
+      pushstring          "."
+      add
+      coerce_s
+      setlocal            5
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "id"
+      add
+      callproperty        QName(PackageNamespace(""), "o3554"), 1
+      setproperty         QName(PackageNamespace(""), "id")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "className"
+      add
+      callproperty        QName(PackageNamespace(""), "o9009"), 1
+      setproperty         QName(PackageNamespace(""), "name")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "classDescription"
+      add
+      callproperty        QName(PackageNamespace(""), "o9009"), 1
+      setproperty         QName(PackageNamespace(""), "o7962")
+
+      getlocal            4
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "String")
+      applytype           1
+      construct           0
+      setproperty         QName(PackageNamespace(""), "o1491")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "startingHealth"
+      add
+      callproperty        QName(PackageNamespace(""), "o3554"), 1
+      setproperty         QName(PackageNamespace(""), "o13167")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "mass"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      setproperty         QName(PackageNamespace(""), "o7191")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "speedBase"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      setproperty         QName(PackageNamespace(""), "o10483")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "sprintSpeedMod"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      setproperty         QName(PackageNamespace(""), "o19592")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "maxStamina"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      setproperty         QName(PackageNamespace(""), "o14377")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "staminaDepletionRate"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      setproperty         QName(PackageNamespace(""), "o1508")
+
+      getlocal            4
+      getlocal1
+      getlocal            5
+      pushstring          "staminaRegen"
+      add
+      callproperty        QName(PackageNamespace(""), "o17521"), 1
+      setproperty         QName(PackageNamespace(""), "o1430")
+
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o7191")
+      pushbyte            0
+      equals
+      dup
+      iftrue              L102
+
+      pop
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o10483")
+      pushbyte            0
+      equals
+L102:
+      dup
+      iftrue              L109
+
+      pop
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o19592")
+      pushbyte            0
+      equals
+L109:
+      dup
+      iftrue              L116
+
+      pop
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o14377")
+      pushbyte            0
+      equals
+L116:
+      dup
+      iftrue              L123
+
+      pop
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o1508")
+      pushbyte            0
+      equals
+L123:
+      dup
+      iftrue              L130
+
+      pop
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o1430")
+      pushbyte            0
+      equals
+L130:
+      iffalse             L135
+
+      findpropstrict      QName(PackageNamespace(""), "Error")
+      pushstring          "Invalid character class data"
+      constructprop       QName(PackageNamespace(""), "Error"), 1
+      throw
+
+L135:
+      pushbyte            0
+      setlocal3
+
+      jump                L153
+
+L138:
+      label
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "o1491")
+      getlocal1
+      getlocal            5
+      pushstring          "level."
+      add
+      getlocal3
+      pushbyte            1
+      add
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      add
+      callproperty        QName(PackageNamespace(""), "o9009"), 1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          3
+L153:
+      getlocal3
+      pushbyte            100
+      iflt                L138
+
+      getlex              QName(PrivateNamespace("o19433"), "o12981")
+      getlocal            4
+      getproperty         QName(PackageNamespace(""), "id")
+      getlocal            4
+      setproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlocal            4
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o16413")
+   method
+    name "o16413"
+    refid "o19433/instance/o16413"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "o1832")
+    flag HAS_PARAM_NAMES
+    paramname "o4978"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o19433"), "o12981")
+      getlocal1
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlex              QName(PackageNamespace(""), "o1832")
+      astypelate
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4458")
+   method
+    name "o4458"
+    refid "o19433/instance/o4458"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    flag HAS_PARAM_NAMES
+    paramname "o7211"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      pushbyte            0
+      setlocal2
+
+      jump                L17
+
+L7:
+      label
+      getlocal1
+      getlex              QName(PrivateNamespace("o19433"), "o7418")
+      getlocal2
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("value", [PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      ifnlt               L16
+
+      getlocal2
+      returnvalue
+
+L16:
+      inclocal_i          2
+L17:
+      getlocal2
+      getlex              QName(PrivateNamespace("o19433"), "o5633")
+      getproperty         QName(PackageNamespace(""), "value")
+      iflt                L7
+
+      getlex              QName(PrivateNamespace("o19433"), "o5633")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o10554")
+   method
+    name "o10554"
+    refid "o19433/instance/o10554"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "int")
+    flag HAS_PARAM_NAMES
+    paramname "level"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o19433"), "o7418")
+      getlocal1
+      pushbyte            1
+      subtract
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("value", [PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4481")
+   method
+    name "o4481"
+    refid "o19433/instance/o4481"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o7211"
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o4458"), 1
+      convert_i
+      setlocal2
+
+      getlocal2
+      getlex              QName(PrivateNamespace("o19433"), "o5633")
+      getproperty         QName(PackageNamespace(""), "value")
+      ifne                L13
+
+      pushdouble          1.79769313486231571e+308
+      returnvalue
+
+L13:
+      declocal_i          2
+      getlex              QName(PrivateNamespace("o19433"), "o7418")
+      getlocal2
+      pushbyte            1
+      add
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("value", [PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_i
+      setlocal3
+
+      getlocal3
+      getlocal1
+      subtract
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o7275")
+   method
+    name "o7275"
+    refid "o19433/instance/o7275"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o7211"
+    body
+     maxstack 3
+     localcount 7
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o4458"), 1
+      convert_i
+      setlocal3
+
+      getlocal3
+      pushbyte            100
+      ifne                L12
+
+      pushbyte            1
+      returnvalue
+
+L12:
+      declocal_i          3
+      getlex              QName(PrivateNamespace("o19433"), "o7418")
+      getlocal3
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("value", [PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_i
+      setlocal2
+
+      getlex              QName(PrivateNamespace("o19433"), "o7418")
+      getlocal3
+      pushbyte            1
+      add
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getproperty         Multiname("value", [PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      convert_i
+      setlocal            5
+
+      getlocal1
+      getlocal2
+      subtract
+      getlocal            5
+      getlocal2
+      subtract
+      divide
+      convert_d
+      dup
+      setlocal            4
+
+      pushshort           1000
+      multiply
+      convert_i
+      dup
+      setlocal            6
+
+      pushshort           1000
+      divide
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o5711")
+   method
+    name "o5711"
+    refid "o19433/instance/o5711"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o4978"
+    paramname "level"
+    body
+     maxstack 3
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o16413"), 1
+      coerce              QName(PackageNamespace(""), "o1832")
+      setlocal3
+
+      getlocal3
+      pushnull
+      ifne                L12
+
+      pushstring          "Class not found"
+      returnvalue
+
+L12:
+      getlocal2
+      pushbyte            0
+      lessequals
+      dup
+      iftrue              L23
+
+      pop
+      getlocal2
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o1491")
+      getproperty         QName(PackageNamespace(""), "length")
+      greaterthan
+L23:
+      iffalse             L26
+
+      pushstring          "Invalid level"
+      returnvalue
+
+L26:
+      getlocal3
+      getproperty         QName(PackageNamespace(""), "o1491")
+      getlocal2
+      pushbyte            1
+      subtract
+      getproperty         MultinameL([PrivateNamespace("o19433"), ProtectedNamespace("o19433"), StaticProtectedNs("o19433"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o19433"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o19433/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,153 @@
+class
+ refid "o18639"
+ instance QName(PackageNamespace(""), "o18639")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o18639/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o18639"), "o3929") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PrivateNamespace("o18639"), "call") type QName(PackageNamespace(""), "Function") value Null() end
+  trait slot QName(PrivateNamespace("o18639"), "promise") type QName(PackageNamespace(""), "o16124") value Null() end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o18639/instance/initialise"
+    param QName(PackageNamespace(""), "Function")
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "call"
+    paramname "o11333"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("o18639"), "call")
+
+      findpropstrict      QName(PrivateNamespace("o18639"), "o14085")
+      pushnull
+      getlocal2
+      callpropvoid        QName(PrivateNamespace("o18639"), "o14085"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o18639"), "o14085")
+   method
+    name "o14085"
+    refid "o18639/instance/o18639/instance/o14085"
+    param null
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    optional Null()
+    paramname "data"
+    paramname "o11333"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o18639"), "o3929")
+      convert_d
+      increment
+      findpropstrict      QName(PrivateNamespace("o18639"), "o3929")
+      swap
+      setproperty         QName(PrivateNamespace("o18639"), "o3929")
+
+      getlocal2
+      pushnull
+      ifne                L20
+
+      getlex              QName(PrivateNamespace("o18639"), "call")
+      getglobalscope
+      getlex              QName(PrivateNamespace("o18639"), "o3929")
+      getlocal1
+      call                2
+      findproperty        QName(PrivateNamespace("o18639"), "promise")
+      swap
+      setproperty         QName(PrivateNamespace("o18639"), "promise")
+
+      jump                L29
+
+L20:
+      getlex              QName(PrivateNamespace("o18639"), "call")
+      getglobalscope
+      getlex              QName(PrivateNamespace("o18639"), "o3929")
+      getlocal1
+      getlocal2
+      call                3
+      findproperty        QName(PrivateNamespace("o18639"), "promise")
+      swap
+      setproperty         QName(PrivateNamespace("o18639"), "promise")
+
+L29:
+      getlex              QName(PrivateNamespace("o18639"), "promise")
+      pushnull
+      ifeq                L36
+
+      getlex              QName(PrivateNamespace("o18639"), "promise")
+      getlex              QName(PrivateNamespace("o18639"), "o14085")
+      callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+      jump                L40
+
+L36:
+      pushnull
+      findproperty        QName(PrivateNamespace("o18639"), "call")
+      swap
+      setproperty         QName(PrivateNamespace("o18639"), "call")
+
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o18639/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

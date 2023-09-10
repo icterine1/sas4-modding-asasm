@@ -1,0 +1,131 @@
+method
+ name "o18475.as$0:anonymous"
+ refid "o18475/instance/initialise/inline_method"
+ param QName(PackageNamespace("flash.utils"), "ByteArray")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 5
+  localcount 7
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal            4
+
+   pushnull
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "o20272")
+   pushnull
+   ifeq                L78
+
+   getlex              QName(PackageNamespace(""), "Mem")
+   getlocal0
+   getlex              QName(PackageNamespace(""), "Array")
+   callproperty        QName(PackageNamespace(""), "create"), 2
+   coerce              QName(PackageNamespace(""), "Array")
+   setlocal            4
+
+   pushbyte            0
+   setlocal            6
+
+   getlex              QName(PackageInternalNs(""), "o20272")
+   setlocal            5
+
+   jump                L71
+
+L18:
+   label
+   getlocal            5
+   getlocal            6
+   nextvalue
+   convert_i
+   setlocal3
+
+   getlocal3
+   convert_i
+   pushint             1
+   subtract_i
+   lookupswitch        L71, [L34, L44, L71, L29, L49, L39]
+
+L29:
+   getlocal            4
+   getlocal1
+   callproperty        QName(PackageNamespace(""), "readBoolean"), 0
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   jump                L71
+
+L34:
+   getlocal            4
+   getlocal1
+   callproperty        QName(PackageNamespace(""), "readByte"), 0
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   jump                L71
+
+L39:
+   getlocal            4
+   getlocal1
+   callproperty        QName(PackageNamespace(""), "readShort"), 0
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   jump                L71
+
+L44:
+   getlocal            4
+   getlocal1
+   callproperty        QName(PackageNamespace(""), "readInt"), 0
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   jump                L71
+
+L49:
+   getlex              QName(PackageNamespace(""), "Mem")
+   getlocal0
+   getlex              QName(PackageNamespace("flash.utils"), "ByteArray")
+   callproperty        QName(PackageNamespace(""), "create"), 2
+   coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
+   setlocal2
+
+   getlocal1
+   getlocal2
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "position")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "length")
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "position")
+   subtract
+   callpropvoid        QName(PackageNamespace(""), "readBytes"), 3
+
+   getlocal2
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "position")
+
+   getlocal            4
+   getlocal2
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L71:
+   hasnext2            5, 6
+   iftrue              L18
+
+   getlex              QName(PackageInternalNs(""), "call")
+   pushnull
+   getlocal            4
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "apply"), 2
+
+   jump                L83
+
+L78:
+   getlex              QName(PackageInternalNs(""), "call")
+   getglobalscope
+   getlocal1
+   call                1
+   pop
+L83:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

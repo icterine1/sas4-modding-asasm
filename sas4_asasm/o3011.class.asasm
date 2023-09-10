@@ -1,0 +1,59 @@
+class
+ refid "o3011"
+ instance QName(PackageNamespace(""), "o3011")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o3011/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o3011/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    pushstring          "SAS4"
+    findproperty        QName(PackageNamespace(""), "o17649")
+    swap
+    initproperty        QName(PackageNamespace(""), "o17649")
+
+    pushstring          "2014"
+    findproperty        QName(PackageNamespace(""), "o12651")
+    swap
+    initproperty        QName(PackageNamespace(""), "o12651")
+
+    pushstring          "0.1"
+    findproperty        QName(PackageNamespace(""), "o12006")
+    swap
+    initproperty        QName(PackageNamespace(""), "o12006")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o17649") type QName(PackageNamespace(""), "String") end
+ trait const QName(PackageNamespace(""), "o12651") type QName(PackageNamespace(""), "String") end
+ trait const QName(PackageNamespace(""), "o17404") type QName(PackageNamespace(""), "Boolean") value True() end
+ trait const QName(PackageNamespace(""), "o12006") type QName(PackageNamespace(""), "String") end
+end ; class

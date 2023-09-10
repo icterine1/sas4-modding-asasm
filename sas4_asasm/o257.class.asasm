@@ -1,0 +1,253 @@
+class
+ refid "o257"
+ instance QName(PackageNamespace(""), "o257")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o257"
+   refid "o257/instance/init"
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   flag HAS_PARAM_NAMES
+   paramname "o4273"
+   paramname "o20230"
+   body
+    maxstack 3
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     findpropstrict      QName(PrivateNamespace("o257"), "o8997")
+     getlocal1
+     getlocal2
+     callpropvoid        QName(PrivateNamespace("o257"), "o8997"), 2
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o257"), "o13473") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PrivateNamespace("o257"), "o2271") type QName(PackageNamespace(""), "Number") value Double(0.5) end
+  trait slot QName(PrivateNamespace("o257"), "o3910") type QName(PackageNamespace(""), "Number") value Integer(4000000) end
+  trait slot QName(PrivateNamespace("o257"), "o2073") type QName(PackageNamespace(""), "Number") value Integer(250000) end
+  trait method QName(PrivateNamespace("o257"), "o8997")
+   method
+    name "o8997"
+    refid "o257/instance/o257/instance/o8997"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o4273"
+    paramname "o20230"
+    body
+     maxstack 3
+     localcount 9
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o32")
+      pushnull
+      equals
+      dup
+      iftrue              L14
+
+      pop
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o32")
+      getproperty         QName(PackageNamespace(""), "o6691")
+      pushnull
+      equals
+L14:
+      iffalse             L16
+
+      returnvoid
+
+L16:
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o32")
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getproperty         QName(Namespace("o4332"), "position")
+      getproperty         QName(PackageNamespace(""), "x")
+      convert_d
+      setlocal            5
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o32")
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getproperty         QName(Namespace("o4332"), "position")
+      getproperty         QName(PackageNamespace(""), "y")
+      convert_d
+      setlocal            8
+
+      getlocal1
+      getlocal            5
+      subtract
+      convert_d
+      setlocal            4
+
+      getlocal2
+      getlocal            8
+      subtract
+      convert_d
+      setlocal            7
+
+      getlocal            4
+      getlocal            4
+      multiply
+      getlocal            7
+      getlocal            7
+      multiply
+      add
+      convert_d
+      setlocal3
+
+      getlocal3
+      getlex              QName(PrivateNamespace("o257"), "o3910")
+      ifngt               L56
+
+      getlex              QName(PrivateNamespace("o257"), "o3910")
+      convert_d
+      setlocal3
+
+      jump                L62
+
+L56:
+      getlocal3
+      getlex              QName(PrivateNamespace("o257"), "o2073")
+      ifnlt               L62
+
+      getlex              QName(PrivateNamespace("o257"), "o2073")
+      convert_d
+      setlocal3
+
+L62:
+      pushbyte            1
+      getlocal3
+      divide
+      convert_d
+      dup
+      setlocal            6
+
+      pushdouble          2.49999999999999989e-07
+      subtract
+      pushdouble          3.74999999999999967e-06
+      divide
+      convert_d
+      dup
+      setlocal            6
+
+      findproperty        QName(PrivateNamespace("o257"), "o2271")
+      swap
+      setproperty         QName(PrivateNamespace("o257"), "o2271")
+
+      getlocal            4
+      pushshort           150
+      lessthan
+      dup
+      iffalse             L87
+
+      pop
+      getlocal            4
+      pushshort           -150
+      greaterthan
+L87:
+      iffalse             L91
+
+      pushdouble          0
+      setlocal            4
+
+      jump                L98
+
+L91:
+      getlocal            4
+      pushshort           150
+      subtract
+      pushshort           150
+      divide
+      convert_d
+      setlocal            4
+
+L98:
+      getlocal            4
+      pushbyte            -1
+      ifnlt               L104
+
+      pushdouble          -1
+      setlocal            4
+
+      jump                L109
+
+L104:
+      getlocal            4
+      pushbyte            1
+      ifngt               L109
+
+      pushdouble          1
+      setlocal            4
+
+L109:
+      getlocal            4
+      findproperty        QName(PrivateNamespace("o257"), "o13473")
+      swap
+      setproperty         QName(PrivateNamespace("o257"), "o13473")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o10088")
+   method
+    name "o10088"
+    refid "o257/instance/o10088"
+    returns QName(PackageNamespace("flash.media"), "SoundTransform")
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      setlocal1
+
+      findpropstrict      QName(PackageNamespace("flash.media"), "SoundTransform")
+      getlex              QName(PrivateNamespace("o257"), "o2271")
+      getlex              QName(PrivateNamespace("o257"), "o13473")
+      constructprop       QName(PackageNamespace("flash.media"), "SoundTransform"), 2
+      coerce              QName(PackageNamespace("flash.media"), "SoundTransform")
+      setlocal1
+
+      getlocal1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o257/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,74 @@
+class
+ refid "o7880"
+ instance QName(PackageNamespace(""), "o7880")
+  extends QName(PackageNamespace("flash.events"), "Event")
+  flag SEALED
+  iinit
+   name "o7880"
+   refid "o7880/instance/init"
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Boolean")
+   flag HAS_PARAM_NAMES
+   paramname "o12568"
+   paramname "o13662"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal1
+     callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+     constructsuper      1
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o13662")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o13662") type QName(PackageNamespace(""), "Boolean") end
+ end ; instance
+ cinit
+  refid "o7880/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o6138")
+    swap
+    setproperty         QName(PackageNamespace(""), "o6138")
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o12162")
+    swap
+    setproperty         QName(PackageNamespace(""), "o12162")
+
+    getlex              QName(PackageNamespace(""), "o19504")
+    callproperty        QName(PackageNamespace(""), "o4386"), 0
+    findproperty        QName(PackageNamespace(""), "o10443")
+    swap
+    setproperty         QName(PackageNamespace(""), "o10443")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PackageNamespace(""), "o6138") type QName(PackageNamespace(""), "int") end
+ trait slot QName(PackageNamespace(""), "o12162") type QName(PackageNamespace(""), "int") end
+ trait slot QName(PackageNamespace(""), "o10443") type QName(PackageNamespace(""), "int") end
+end ; class

@@ -1,0 +1,175 @@
+class
+ refid "o10400"
+ instance QName(PackageNamespace(""), "o10400")
+  extends QName(PackageNamespace(""), "o12306")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o10400")
+  iinit
+   name "o10400"
+   refid "o10400/instance/init#0"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o10400"), "o9905") type QName(PackageNamespace("flash.text"), "TextField") end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    name "init"
+    refid "o10400/instance/init#1"
+    param QName(PackageNamespace("flash.display"), "MovieClip")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "asset"
+    body
+     maxstack 6
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "init"), 1
+      getlex              QName(PackageNamespace(""), "container")
+      pushstring          "txtDelete"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.text"), "TextField")
+      astypelate
+      findproperty        QName(PrivateNamespace("o10400"), "o9905")
+      swap
+      setproperty         QName(PrivateNamespace("o10400"), "o9905")
+
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      pushstring          ""
+      setproperty         QName(PackageNamespace(""), "text")
+
+      getlex              QName(PackageNamespace(""), "o20173")
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "enabled")
+
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      pushstring          "change"
+      getlex              QName(PrivateNamespace("o10400"), "o13773")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o10400"), "o13773")
+   method
+    name "o13773"
+    refid "o10400/instance/o10400/instance/o13773"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getproperty         QName(PackageNamespace(""), "text")
+      pushstring          "\n"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      setproperty         QName(PackageNamespace(""), "text")
+
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getproperty         QName(PackageNamespace(""), "text")
+      pushstring          "\n\r"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      setproperty         QName(PackageNamespace(""), "text")
+
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getproperty         QName(PackageNamespace(""), "text")
+      pushstring          "\r"
+      pushstring          ""
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      setproperty         QName(PackageNamespace(""), "text")
+
+      getlex              QName(PackageNamespace(""), "o20173")
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      getproperty         QName(PackageNamespace(""), "text")
+      pushstring          "delete"
+      equals
+      setproperty         QName(PackageNamespace(""), "enabled")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13640") flag OVERRIDE
+   method
+    name "o13640"
+    refid "o10400/instance/o13640"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o10400"), "o9905")
+      pushstring          "change"
+      getlex              QName(PrivateNamespace("o10400"), "o13773")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      pushnull
+      findproperty        QName(PrivateNamespace("o10400"), "o9905")
+      swap
+      setproperty         QName(PrivateNamespace("o10400"), "o9905")
+
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "o13640"), 0
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o10400/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

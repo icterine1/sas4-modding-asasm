@@ -1,0 +1,334 @@
+class
+ refid "com.codecatalyst.promise:Consequence"
+ instance QName(PackageInternalNs("com.codecatalyst.promise"), "Consequence")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.codecatalyst.promise:Consequence")
+  iinit
+   name "com.codecatalyst.promise:Consequence/Consequence"
+   refid "com.codecatalyst.promise:Consequence/instance/init"
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace(""), "Function")
+   flag HAS_PARAM_NAMES
+   paramname "onFulfilled"
+   paramname "onRejected"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     initproperty        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "onFulfilled")
+
+     getlocal0
+     getlocal2
+     initproperty        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "onRejected")
+
+     getlocal0
+     findpropstrict      QName(PackageInternalNs("com.codecatalyst.promise"), "Resolver")
+     constructprop       QName(PackageInternalNs("com.codecatalyst.promise"), "Resolver"), 0
+     initproperty        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait getter QName(PackageNamespace(""), "promise")
+   method
+    name "com.codecatalyst.promise:Consequence/promise/get"
+    refid "com.codecatalyst.promise:Consequence/instance/promise/getter"
+    returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+      getproperty         QName(PackageNamespace(""), "promise")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver") type QName(PackageInternalNs("com.codecatalyst.promise"), "Resolver") value Null() end
+  trait slot QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "onFulfilled") type QName(PackageNamespace(""), "Function") value Null() end
+  trait slot QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "onRejected") type QName(PackageNamespace(""), "Function") value Null() end
+  trait method QName(PackageNamespace(""), "trigger")
+   method
+    name "com.codecatalyst.promise:Consequence/trigger"
+    refid "com.codecatalyst.promise:Consequence/instance/trigger"
+    param QName(PackageNamespace(""), "String")
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "action"
+    paramname "value"
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      jump                L25
+
+L3:
+      label
+      getlocal0
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "onFulfilled")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+      getproperty         QName(PackageNamespace(""), "resolve")
+      callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "propagate"), 3
+
+      jump                L43
+
+L13:
+      label
+      getlocal0
+      getlocal2
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "onRejected")
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+      getproperty         QName(PackageNamespace(""), "reject")
+      callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "propagate"), 3
+
+      jump                L43
+
+L23:
+      label
+      jump                L43
+
+L25:
+      getlocal1
+      setlocal3
+
+      getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "CompletionAction")
+      getproperty         QName(PackageNamespace(""), "FULFILL")
+      getlocal3
+      ifstrictne          L33
+
+      pushshort           0
+      jump                L41
+
+L33:
+      getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "CompletionAction")
+      getproperty         QName(PackageNamespace(""), "REJECT")
+      getlocal3
+      ifstrictne          L39
+
+      pushshort           1
+      jump                L41
+
+L39:
+      jump                L40
+
+L40:
+      pushshort           2
+L41:
+      kill                3
+      lookupswitch        L23, [L3, L13, L23]
+
+L43:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "propagate")
+   method
+    name "com.codecatalyst.promise:Consequence/private:propagate"
+    refid "com.codecatalyst.promise:Consequence/instance/com.codecatalyst.promise:Consequence/instance/propagate"
+    param null
+    param QName(PackageNamespace(""), "Function")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    paramname "callback"
+    paramname "resolverMethod"
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "Function")
+      istypelate
+      iffalse             L14
+
+      getlocal0
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "transform")
+      getlocal1
+      getlocal2
+      newarray            2
+      callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "schedule"), 2
+
+      jump                L19
+
+L14:
+      getlocal3
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "call"), 2
+
+L19:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "transform")
+   method
+    name "com.codecatalyst.promise:Consequence/private:transform"
+    refid "com.codecatalyst.promise:Consequence/instance/com.codecatalyst.promise:Consequence/instance/transform"
+    param null
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    paramname "callback"
+    body
+     maxstack 4
+     localcount 5
+     initscopedepth 5
+     maxscopedepth 10
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal3
+
+      pushscope
+
+      getscopeobject      1
+      getlocal1
+      setslot             1
+
+      getscopeobject      1
+      getlocal2
+      setslot             2
+
+L12:
+      getlocal0
+      getproperty         QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+      findpropstrict      QName(PackageNamespace("com.codecatalyst.util"), "optionally")
+      getscopeobject      1
+      getslot             2
+      getscopeobject      1
+      getslot             1
+      newarray            1
+      callproperty        QName(PackageNamespace("com.codecatalyst.util"), "optionally"), 2
+      callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+L22:
+      jump                L40
+
+L23:
+      getlocal0
+      pushscope
+
+      getlocal3
+      pushscope
+
+      newcatch            0
+      dup
+      setlocal            4
+
+      dup
+      pushscope
+
+      swap
+      setslot             1
+
+      getlex              QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "resolver")
+      getscopeobject      2
+      getslot             1
+      callpropvoid        QName(PackageNamespace(""), "reject"), 1
+
+      popscope
+      kill                4
+L40:
+      returnvoid
+     end ; code
+     try from L12 to L22 target L23 type null name QName(PackageNamespace(""), "error") end
+     trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "value") slotid 1 end
+     trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "callback") slotid 2 type QName(PackageNamespace(""), "Function") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "schedule")
+   method
+    name "com.codecatalyst.promise:Consequence/private:schedule"
+    refid "com.codecatalyst.promise:Consequence/instance/com.codecatalyst.promise:Consequence/instance/schedule"
+    param QName(PackageNamespace(""), "Function")
+    param QName(PackageNamespace(""), "Array")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional Null()
+    paramname "callback"
+    paramname "parameters"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 4
+     maxscopedepth 5
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("Consequence.as$15"), "CallbackQueue")
+      getproperty         QName(PackageNamespace(""), "instance")
+      getlocal1
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "schedule"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  name ""
+  refid "com.codecatalyst.promise:Consequence/class/init"
+  body
+   maxstack 1
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

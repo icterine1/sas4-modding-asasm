@@ -1,0 +1,111 @@
+class
+ refid "o7848/o11310"
+ instance QName(PrivateNamespace("FilePrivateNS:o7848"), "o11310")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o11310"
+   refid "o7848/o11310/instance/init"
+   param QName(PackageNamespace(""), "o7848")
+   param QName(PackageNamespace(""), "Object")
+   flag HAS_PARAM_NAMES
+   paramname "entity"
+   paramname "o4001"
+   body
+    maxstack 2
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "entity")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "o4001")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "entity") type QName(PackageNamespace(""), "o7848") end
+  trait slot QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "o4001") type QName(PackageNamespace(""), "Object") end
+  trait method QName(PackageNamespace(""), "o5111")
+   method
+    name "o5111"
+    refid "o7848/o11310/instance/o5111"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "o4001")
+      getproperty         Multiname("value", [PrivateNamespace("FilePrivateNS:o7848:o11310"), ProtectedNamespace("FilePrivateNS:o7848:o11310"), StaticProtectedNs("FilePrivateNS:o7848:o11310"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o7848"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushbyte            0
+      ifeq                L11
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "entity")
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getlex              QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "o4001")
+      getproperty         Multiname("value", [PrivateNamespace("FilePrivateNS:o7848:o11310"), ProtectedNamespace("FilePrivateNS:o7848:o11310"), StaticProtectedNs("FilePrivateNS:o7848:o11310"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o7848"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
+      setproperty         QName(Namespace("o4332"), "rotation")
+
+L11:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19115")
+   method
+    name "o19115"
+    refid "o7848/o11310/instance/o19115"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      pushnull
+      setproperty         QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "entity")
+
+      getlocal0
+      pushnull
+      setproperty         QName(PrivateNamespace("FilePrivateNS:o7848:o11310"), "o4001")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o7848/o11310/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

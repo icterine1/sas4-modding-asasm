@@ -1,0 +1,55 @@
+method
+ name "o8613.as$0:anonymous"
+ refid "o8613/class/o8613/class/o8667/inline_method#0"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 10
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace("flash.net"), "URLLoader")
+   getglobalscope
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "target")
+   call                1
+   coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "JSON")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "data")
+   callproperty        QName(PackageNamespace(""), "parse"), 1
+   coerce              QName(PackageNamespace(""), "Object")
+   setlocal3
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   findpropstrict      QName(PackageNamespace(""), "o9433")
+   getlocal3
+   pushstring          "user_id"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal3
+   pushstring          "username"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal3
+   pushstring          "avatar"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal3
+   pushstring          "clan_id"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal3
+   pushstring          "clan_name"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   getlocal3
+   pushstring          "clan_logo"
+   getproperty         MultinameL([PrivateNamespace("o8613"), StaticProtectedNs("o8613"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o8613"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushfalse
+   pushnull
+   constructprop       QName(PackageNamespace(""), "o9433"), 8
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

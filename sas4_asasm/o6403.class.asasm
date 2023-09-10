@@ -1,0 +1,198 @@
+class
+ refid "o6403"
+ instance QName(PackageNamespace(""), "o6403")
+  extends QName(PackageNamespace(""), "o2415")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o6403")
+  iinit
+   name "o6403"
+   refid "o6403/instance/init"
+   param QName(PackageNamespace(""), "o12600")
+   param QName(PackageNamespace(""), "o2415")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Integer(600)
+   paramname "parent"
+   paramname "o12849"
+   paramname "o6758"
+   body
+    maxstack 4
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PrivateNamespace("o6403"), "o12849")
+
+     getlocal0
+     getlocal3
+     getlocal3
+     multiply
+     setproperty         QName(PackageNamespace(""), "o10286")
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("o6403"), "parent")
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "x")
+     findproperty        QName(PackageNamespace(""), "x")
+     swap
+     setproperty         QName(PackageNamespace(""), "x")
+
+     getlocal2
+     getproperty         QName(PackageNamespace(""), "y")
+     findproperty        QName(PackageNamespace(""), "y")
+     swap
+     setproperty         QName(PackageNamespace(""), "y")
+
+     getlex              QName(PackageNamespace(""), "o1051")
+     getlocal1
+     pushdouble          0.03333333333333333
+     getlex              QName(PackageNamespace(""), "o7664")
+     callproperty        QName(PackageNamespace(""), "o4767"), 3
+     findproperty        QName(PrivateNamespace("o6403"), "o16554")
+     swap
+     setproperty         QName(PrivateNamespace("o6403"), "o16554")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o6403"), "o12849") type QName(PackageNamespace(""), "o2415") value Null() end
+  trait slot QName(PackageNamespace(""), "o14276") type QName(PackageNamespace(""), "Number") value Integer(10) end
+  trait slot QName(PrivateNamespace("o6403"), "o16554") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PrivateNamespace("o6403"), "parent") type QName(PackageNamespace(""), "o12600") value Null() end
+  trait slot QName(PackageNamespace(""), "o10286") type QName(PackageNamespace(""), "Number") value Double(40000) end
+  trait method QName(PackageNamespace(""), "o7664")
+   method
+    name "o7664"
+    refid "o6403/instance/o7664"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6403"), "o12849")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlex              QName(PackageNamespace(""), "x")
+      subtract
+      convert_d
+      setlocal2
+
+      getlex              QName(PrivateNamespace("o6403"), "o12849")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlex              QName(PackageNamespace(""), "y")
+      subtract
+      convert_d
+      setlocal1
+
+      getlocal2
+      getlocal2
+      multiply
+      getlocal1
+      getlocal1
+      multiply
+      add
+      getlex              QName(PackageNamespace(""), "o10286")
+      ifngt               L34
+
+      getlex              QName(PrivateNamespace("o6403"), "o12849")
+      getproperty         QName(PackageNamespace(""), "x")
+      findproperty        QName(PackageNamespace(""), "x")
+      swap
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlex              QName(PrivateNamespace("o6403"), "o12849")
+      getproperty         QName(PackageNamespace(""), "y")
+      findproperty        QName(PackageNamespace(""), "y")
+      swap
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+
+L34:
+      findpropstrict      QName(PackageNamespace(""), "x")
+      dup
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal2
+      getlex              QName(PackageNamespace(""), "o14276")
+      divide
+      add
+      setproperty         QName(PackageNamespace(""), "x")
+
+      findpropstrict      QName(PackageNamespace(""), "y")
+      dup
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o14276")
+      divide
+      add
+      setproperty         QName(PackageNamespace(""), "y")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19997")
+   method
+    name "o19997"
+    refid "o6403/instance/o19997"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlex              QName(PrivateNamespace("o6403"), "o16554")
+      callpropvoid        QName(PackageNamespace(""), "o19115"), 1
+
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlex              QName(PrivateNamespace("o6403"), "parent")
+      pushdouble          0.03333333333333333
+      getlex              QName(PackageNamespace(""), "o7664")
+      callproperty        QName(PackageNamespace(""), "o4767"), 3
+      findproperty        QName(PrivateNamespace("o6403"), "o16554")
+      swap
+      setproperty         QName(PrivateNamespace("o6403"), "o16554")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o6403/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "o109") type QName(PackageNamespace(""), "Number") value Integer(10) end
+end ; class

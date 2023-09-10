@@ -1,0 +1,30 @@
+script
+ sinit
+  name ""
+  refid "com.codecatalyst.promise:Promise/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("Promise", [PackageNamespace("com.codecatalyst.promise")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.codecatalyst.promise:Promise"
+    popscope
+    initproperty        QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+  #include "Promise.class.asasm"
+ end ; trait
+end ; script

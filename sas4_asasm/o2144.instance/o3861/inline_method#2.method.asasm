@@ -1,0 +1,66 @@
+method
+ name "o2144.as$5:anonymous"
+ refid "o2144/instance/o3861/inline_method#2"
+ param QName(PackageNamespace(""), "o8621")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "o12584")
+   getlex              QName(PackageInternalNs(""), "o236")
+   getlex              QName(PackageInternalNs(""), "client")
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "o12584")
+   getproperty         QName(PackageNamespace(""), "length")
+   modulo
+   getproperty         MultinameL([PrivateNamespace("o2144"), ProtectedNamespace("o2144"), StaticProtectedNs("o2144"), StaticProtectedNs("o14519"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o2144"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "o9884")
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "o32")
+   getproperty         QName(PackageNamespace(""), "body")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "x")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "y")
+   callpropvoid        QName(PackageNamespace(""), "o8564"), 2
+
+   getlex              QName(PackageInternalNs(""), "o32")
+   getlex              QName(PackageNamespace(""), "o17517")
+   istypelate
+   dup
+   iffalse             L32
+
+   pop
+   getlex              QName(PackageInternalNs(""), "o32")
+   getproperty         QName(PackageNamespace(""), "o5973")
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   getproperty         QName(PackageNamespace(""), "o2685")
+   getproperty         QName(PackageNamespace(""), "id")
+   equals
+L32:
+   iffalse             L44
+
+   getlex              QName(PackageNamespace(""), "o17517")
+   getglobalscope
+   getlex              QName(PackageInternalNs(""), "o32")
+   call                1
+   findpropstrict      QName(PackageNamespace(""), "o18509")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "x")
+   getlocal2
+   getproperty         QName(PackageNamespace(""), "y")
+   constructprop       QName(PackageNamespace(""), "o18509"), 2
+   callpropvoid        QName(PackageNamespace(""), "o15315"), 1
+
+L44:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

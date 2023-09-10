@@ -1,0 +1,70 @@
+method
+ name "com.codecatalyst.promise:Promise/map/com.codecatalyst.promise:process/com.codecatalyst.promise:resolve"
+ refid "com.codecatalyst.promise:Promise/class/map/inline_method#1"
+ param null
+ param QName(PackageNamespace(""), "uint")
+ returns QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+ flag NEED_ACTIVATION
+ flag HAS_PARAM_NAMES
+ paramname "item"
+ paramname "index"
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 6
+  maxscopedepth 7
+  code
+   newactivation
+   dup
+   setlocal3
+
+   pushscope
+
+   getscopeobject      0
+   pushnull
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             3
+
+   getscopeobject      0
+   pushnull
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             4
+
+   getscopeobject      0
+   getlocal1
+   setslot             1
+
+   getscopeobject      0
+   getlocal2
+   setslot             2
+
+   getscopeobject      0
+   newfunction         "com.codecatalyst.promise:Promise/class/map/inline_method#2"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             3
+
+   getscopeobject      0
+   newfunction         "com.codecatalyst.promise:Promise/class/map/inline_method#3"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             4
+
+   getlex              QName(PackageNamespace("com.codecatalyst.promise"), "Promise")
+   getscopeobject      0
+   getslot             1
+   callproperty        QName(PackageNamespace(""), "when"), 1
+   getscopeobject      0
+   getslot             3
+   callproperty        QName(PackageNamespace(""), "then"), 1
+   getscopeobject      0
+   getslot             4
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "deferred")
+   getproperty         QName(PackageNamespace(""), "reject")
+   callproperty        QName(PackageNamespace(""), "then"), 2
+   returnvalue
+  end ; code
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "item") slotid 1 end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "index") slotid 2 type QName(PackageNamespace(""), "uint") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "transform") slotid 3 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.promise"), "fulfill") slotid 4 type QName(PackageNamespace(""), "Function") end
+ end ; body
+end ; method

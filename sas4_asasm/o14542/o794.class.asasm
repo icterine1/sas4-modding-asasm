@@ -1,0 +1,115 @@
+class
+ refid "o14542/o794"
+ instance QName(PrivateNamespace("FilePrivateNS:o14542"), "o794")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o794"
+   refid "o14542/o794/instance/init"
+   param QName(PackageNamespace(""), "Class")
+   flag HAS_PARAM_NAMES
+   paramname "type"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     newarray            0
+     findproperty        QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771")
+     swap
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "type")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771") type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "type") type QName(PackageNamespace(""), "Class") value Null() end
+  trait method QName(PackageNamespace(""), "get")
+   method
+    name "get"
+    refid "o14542/o794/instance/get"
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L9
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "pop"), 0
+      returnvalue
+
+L9:
+      findpropstrict      QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "type")
+      constructprop       QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "type"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13640")
+   method
+    name "o13640"
+    refid "o14542/o794/instance/o13640"
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o16171"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushshort           1000
+      ifnle               L9
+
+      getlex              QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o4771")
+      getlocal1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L9:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o14542/o794/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PrivateNamespace("FilePrivateNS:o14542:o794"), "o2266") type QName(PackageNamespace(""), "int") value Integer(1000) end
+end ; class

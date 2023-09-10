@@ -1,0 +1,142 @@
+method
+ name "o17517.as$5:anonymous"
+ refid "o17517/instance/o5933/inline_method#0"
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 3
+  localcount 2
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal1
+
+   pushscope
+
+   newarray            0
+   coerce              QName(PackageNamespace(""), "Array")
+   getlocal1
+   swap
+   setslot             1
+
+   pushnull
+   coerce              QName(PackageNamespace(""), "o12420")
+   getlocal1
+   swap
+   setslot             2
+
+   pushnull
+   coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o2347")>)
+   getlocal1
+   swap
+   setslot             3
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o9511")
+   getlex              QName(PackageInternalNs(""), "o12925")
+   getproperty         QName(PackageNamespace(""), "o11876")
+   callproperty        QName(PackageNamespace(""), "o12203"), 1
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal1
+   swap
+   setslot             4
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   newfunction         "o17517/instance/o5933/inline_method#1"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+   getlex              QName(PackageInternalNs(""), "o19165")
+   getlex              QName(PackageInternalNs(""), "promise")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   getlex              QName(PackageInternalNs(""), "o12925")
+   getproperty         QName(PackageNamespace(""), "o631")
+   convert_i
+   getlocal1
+   swap
+   setslot             5
+
+   getlex              QName(PackageInternalNs(""), "o2758")
+   pushbyte            0
+   ifngt               L92
+
+   getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+   getlex              QName(PackageNamespace(""), "o2347")
+   applytype           1
+   construct           0
+   coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o2347")>)
+   getlocal1
+   swap
+   setslot             3
+
+   pushbyte            0
+   findproperty        QName(PackageInternalNs(""), "o20822")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o20822")
+
+   jump                L89
+
+L57:
+   label
+   getlex              QName(PackageInternalNs(""), "o12925")
+   getlex              QName(PackageInternalNs(""), "o20822")
+   callproperty        QName(PackageNamespace(""), "o4530"), 1
+   convert_i
+   getlocal1
+   swap
+   setslot             6
+
+   getlex              QName(PackageInternalNs(""), "o4589")
+   pushbyte            0
+   ifnge               L83
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o9986")
+   getlex              QName(PackageInternalNs(""), "o4589")
+   callproperty        QName(PackageNamespace(""), "o4530"), 1
+   coerce              QName(PackageNamespace(""), "o16124")
+   getlocal1
+   swap
+   setslot             4
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   newfunction         "o17517/instance/o5933/inline_method#2"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+   getlex              QName(PackageInternalNs(""), "o19165")
+   getlex              QName(PackageInternalNs(""), "promise")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L83:
+   getlex              QName(PackageInternalNs(""), "o20822")
+   convert_d
+   increment
+   findpropstrict      QName(PackageInternalNs(""), "o20822")
+   swap
+   setproperty         QName(PackageInternalNs(""), "o20822")
+
+L89:
+   getlex              QName(PackageInternalNs(""), "o20822")
+   getlex              QName(PackageInternalNs(""), "o2758")
+   iflt                L57
+
+L92:
+   getlex              QName(PackageNamespace(""), "o15714")
+   getlex              QName(PackageInternalNs(""), "o19165")
+   newfunction         "o17517/instance/o5933/inline_method#3"
+   callpropvoid        QName(PackageNamespace(""), "o18684"), 2
+
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "o19165") slotid 1 type QName(PackageNamespace(""), "Array") end
+  trait slot QName(PackageInternalNs(""), "o10239") slotid 2 type QName(PackageNamespace(""), "o12420") end
+  trait slot QName(PackageInternalNs(""), "o17656") slotid 3 type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "o2347")>) end
+  trait slot QName(PackageInternalNs(""), "promise") slotid 4 type QName(PackageNamespace(""), "o16124") end
+  trait slot QName(PackageInternalNs(""), "o2758") slotid 5 type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageInternalNs(""), "o4589") slotid 6 type QName(PackageNamespace(""), "int") end
+ end ; body
+end ; method

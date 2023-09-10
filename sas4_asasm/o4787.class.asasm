@@ -1,0 +1,655 @@
+class
+ refid "o4787"
+ instance QName(PackageNamespace(""), "o4787")
+  extends QName(PackageNamespace("flash.events"), "EventDispatcher")
+  flag SEALED
+  iinit
+   refid "o4787/instance/init#0"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushstring          "KONG_EVENT_USER_CHANGED"
+     findproperty        QName(PackageNamespace(""), "KONG_EVENT_USER_CHANGED")
+     swap
+     initproperty        QName(PackageNamespace(""), "KONG_EVENT_USER_CHANGED")
+
+     pushstring          "1619c86b-03ac-44aa-9ea4-9e514bd08f02"
+     findproperty        QName(PrivateNamespace("o4787"), "o14014")
+     swap
+     initproperty        QName(PrivateNamespace("o4787"), "o14014")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait const QName(PackageNamespace(""), "KONG_EVENT_USER_CHANGED") type QName(PackageNamespace(""), "String") end
+  trait const QName(PrivateNamespace("o4787"), "o14014") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PrivateNamespace("o4787"), "kongregate") value Null() end
+  trait slot QName(PrivateNamespace("o4787"), "o15049") type QName(PackageNamespace("flash.display"), "DisplayObjectContainer") end
+  trait slot QName(PrivateNamespace("o4787"), "o18025") type QName(PackageNamespace(""), "String") end
+  trait getter QName(PrivateNamespace("o4787"), "o5287")
+   method
+    name "o5287"
+    refid "o4787/instance/o4787/instance/o5287/getter"
+    returns QName(PackageNamespace(""), "Object")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "kongregate")
+      pushstring          "services"
+      getproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "init")
+   method
+    name "init"
+    refid "o4787/instance/init#1"
+    param QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o9651"
+    body
+     maxstack 3
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      findproperty        QName(PrivateNamespace("o4787"), "o15049")
+      swap
+      setproperty         QName(PrivateNamespace("o4787"), "o15049")
+
+      getlex              QName(PrivateNamespace("o4787"), "o15049")
+      getproperty         QName(PackageNamespace(""), "loaderInfo")
+      getproperty         QName(PackageNamespace(""), "parameters")
+      pushstring          "kongregate_api_path"
+      getproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      coerce_s
+      setlocal3
+
+      pushstring          ""
+      pushstring          "KongTest"
+      ifne                L19
+
+      pushstring          "http://www.kongregate.com/flash/API_AS3_Local.swf"
+      coerce_s
+      setlocal3
+
+L19:
+      getlex              QName(PackageNamespace("flash.system"), "Security")
+      getlocal3
+      callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal3
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      setlocal            4
+
+      findpropstrict      QName(PackageNamespace("flash.display"), "Loader")
+      constructprop       QName(PackageNamespace("flash.display"), "Loader"), 0
+      coerce              QName(PackageNamespace("flash.display"), "Loader")
+      setlocal2
+
+      getlocal1
+      getlocal2
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "contentLoaderInfo")
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o4787"), "o18963")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlocal2
+      getlocal            4
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o4787"), "o18963")
+   method
+    name "o18963"
+    refid "o4787/instance/o4787/instance/o18963"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12568"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "target")
+      pushstring          "content"
+      getproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      findproperty        QName(PrivateNamespace("o4787"), "kongregate")
+      swap
+      setproperty         QName(PrivateNamespace("o4787"), "kongregate")
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callpropvoid        Multiname("connect", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "isGuest")
+   method
+    name "isGuest"
+    refid "o4787/instance/isGuest"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("isGuest", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getKongUsername")
+   method
+    name "getKongUsername"
+    refid "o4787/instance/getKongUsername"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getUsername", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getKongUserId")
+   method
+    name "getKongUserId"
+    refid "o4787/instance/getKongUserId"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getUserId", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "getKongGameAuthToken")
+   method
+    name "getKongGameAuthToken"
+    refid "o4787/instance/getKongGameAuthToken"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getGameAuthToken", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "showRegistrationBox")
+   method
+    name "showRegistrationBox"
+    refid "o4787/instance/showRegistrationBox"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("isGuest", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      iffalse             L8
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callpropvoid        Multiname("showRegistrationBox", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+
+      jump                L13
+
+L8:
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG: showRegistrationBox() was called even though the user is logged into Kong"
+      call                1
+      pop
+L13:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "submitStat")
+   method
+    name "submitStat"
+    refid "o4787/instance/submitStat"
+    param QName(PackageNamespace(""), "String")
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o17898"
+    paramname "value"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "kongregate")
+      pushstring          "stats"
+      getproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal1
+      getlocal2
+      callpropvoid        Multiname("submit", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "purchaseItem")
+   method
+    name "purchaseItem"
+    refid "o4787/instance/purchaseItem"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12062"
+    paramname "o5734"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "kongregate")
+      pushstring          "mtx"
+      getproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      newarray            1
+      getlocal2
+      callpropvoid        Multiname("purchaseItems", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "requestUserItemList")
+   method
+    name "requestUserItemList"
+    refid "o4787/instance/requestUserItemList"
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o5734"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "kongregate")
+      pushstring          "mtx"
+      getproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getUsername", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      getlocal1
+      callpropvoid        Multiname("requestUserItemList", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "useItem")
+   method
+    name "useItem"
+    refid "o4787/instance/useItem"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    flag HAS_PARAM_NAMES
+    paramname "o3557"
+    paramname "o5734"
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 2
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal3
+
+      pushscope
+
+      findpropstrict      QName(PackageInternalNs(""), "o3557")
+      getlocal1
+      setproperty         QName(PackageInternalNs(""), "o3557")
+
+      findpropstrict      QName(PackageInternalNs(""), "o5734")
+      getlocal2
+      setproperty         QName(PackageInternalNs(""), "o5734")
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLVariables")
+      constructprop       QName(PackageNamespace("flash.net"), "URLVariables"), 0
+      coerce              QName(PackageNamespace("flash.net"), "URLVariables")
+      getlocal3
+      swap
+      setslot             3
+
+      getlex              QName(PackageInternalNs(""), "o20272")
+      pushstring          "api_key"
+      getlex              QName(PrivateNamespace("o4787"), "o14014")
+      setproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getGameAuthToken", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      coerce_s
+      getlocal3
+      swap
+      setslot             4
+
+      getlex              QName(PackageInternalNs(""), "o20272")
+      pushstring          "game_auth_token"
+      getlex              QName(PackageInternalNs(""), "o19853")
+      setproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getUserId", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      coerce_s
+      getlocal3
+      swap
+      setslot             5
+
+      getlex              QName(PackageInternalNs(""), "o20272")
+      pushstring          "user_id"
+      getlex              QName(PackageInternalNs(""), "o799")
+      setproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PackageInternalNs(""), "o20272")
+      pushstring          "id"
+      getlex              QName(PackageInternalNs(""), "o3557")
+      setproperty         MultinameL([PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      pushstring          "http://api.kongregate.com/api/use_item.json"
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      coerce              QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal3
+      swap
+      setslot             6
+
+      getlex              QName(PackageInternalNs(""), "o5624")
+      getlex              QName(PackageInternalNs(""), "o20272")
+      setproperty         QName(PackageNamespace(""), "data")
+
+      getlex              QName(PackageInternalNs(""), "o5624")
+      pushstring          "POST"
+      setproperty         QName(PackageNamespace(""), "method")
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+      getlocal3
+      swap
+      setslot             7
+
+      getlex              QName(PackageInternalNs(""), "o17327")
+      pushstring          "text"
+      setproperty         QName(PackageNamespace(""), "dataFormat")
+
+      getlex              QName(PackageInternalNs(""), "o17327")
+      pushstring          "complete"
+      newfunction         "o4787/instance/useItem/inline_method#0"
+      getlocal0
+      call                0
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlex              QName(PackageInternalNs(""), "o17327")
+      getlex              QName(PackageInternalNs(""), "o5624")
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs(""), "o3557") slotid 1 type QName(PackageNamespace(""), "Number") end
+     trait slot QName(PackageInternalNs(""), "o5734") slotid 2 type QName(PackageNamespace(""), "Function") end
+     trait slot QName(PackageInternalNs(""), "o20272") slotid 3 type QName(PackageNamespace("flash.net"), "URLVariables") end
+     trait slot QName(PackageInternalNs(""), "o19853") slotid 4 type QName(PackageNamespace(""), "String") end
+     trait slot QName(PackageInternalNs(""), "o799") slotid 5 type QName(PackageNamespace(""), "String") end
+     trait slot QName(PackageInternalNs(""), "o5624") slotid 6 type QName(PackageNamespace("flash.net"), "URLRequest") end
+     trait slot QName(PackageInternalNs(""), "o17327") slotid 7 type QName(PackageNamespace("flash.net"), "URLLoader") end
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o4787"), "o1289")
+   method
+    name "o1289"
+    refid "o4787/instance/o4787/instance/o1289"
+    param QName(PackageNamespace("flash.errors"), "IOError")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 6
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG IOERROR"
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "errorID")
+      getlocal1
+      getproperty         Multiname("o1216", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "name")
+      call                4
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o4787"), "o6954")
+   method
+    name "o6954"
+    refid "o4787/instance/o4787/instance/o6954"
+    param QName(PackageNamespace(""), "SecurityError")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 6
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "trace")
+      getglobalscope
+      pushstring          "KONG Security Error"
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "errorID")
+      getlocal1
+      getproperty         Multiname("o1216", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")])
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "name")
+      call                4
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "startPollingForUserChange")
+   method
+    name "startPollingForUserChange"
+    refid "o4787/instance/startPollingForUserChange"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getUserId", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      findproperty        QName(PrivateNamespace("o4787"), "o18025")
+      swap
+      setproperty         QName(PrivateNamespace("o4787"), "o18025")
+
+      getlex              QName(PrivateNamespace("o4787"), "o15049")
+      pushstring          "enterFrame"
+      getlex              QName(PrivateNamespace("o4787"), "pollForUserChange")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o4787"), "pollForUserChange")
+   method
+    name "pollForUserChange"
+    refid "o4787/instance/o4787/instance/pollForUserChange"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o4787"), "o5287")
+      callproperty        Multiname("getUserId", [PrivateNamespace("o4787"), ProtectedNamespace("o4787"), StaticProtectedNs("o4787"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4787"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
+      coerce_s
+      setlocal2
+
+      getlocal2
+      getlex              QName(PrivateNamespace("o4787"), "o18025")
+      ifeq                L18
+
+      getlocal2
+      findproperty        QName(PrivateNamespace("o4787"), "o18025")
+      swap
+      setproperty         QName(PrivateNamespace("o4787"), "o18025")
+
+      findpropstrict      QName(PackageNamespace(""), "dispatchEvent")
+      findpropstrict      QName(PackageNamespace("flash.events"), "Event")
+      getlex              QName(PackageNamespace(""), "KONG_EVENT_USER_CHANGED")
+      constructprop       QName(PackageNamespace("flash.events"), "Event"), 1
+      callpropvoid        QName(PackageNamespace(""), "dispatchEvent"), 1
+
+L18:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o4787/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

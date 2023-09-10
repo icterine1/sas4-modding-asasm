@@ -1,0 +1,343 @@
+class
+ refid "o9626"
+ instance QName(PackageNamespace(""), "o9626")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o9626"
+   refid "o9626/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o18591") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "o1978") type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageNamespace(""), "o19298") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o18067") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o7001") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o12584") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o7642") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o10245") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o16530") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait slot QName(PackageNamespace(""), "o19585") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>) value Null() end
+  trait method QName(PackageNamespace(""), "load")
+   method
+    name "load"
+    refid "o9626/instance/load"
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "data"
+    body
+     maxstack 2
+     localcount 11
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal            6
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      findproperty        QName(PackageNamespace(""), "o18591")
+      swap
+      setproperty         QName(PackageNamespace(""), "o18591")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readUTF"), 0
+      findproperty        QName(PackageNamespace(""), "o1978")
+      swap
+      setproperty         QName(PackageNamespace(""), "o1978")
+
+      getlex              QName(PackageNamespace(""), "o1978")
+      pushnull
+      ifne                L21
+
+      pushstring          "NOT SET"
+      findproperty        QName(PackageNamespace(""), "o1978")
+      swap
+      setproperty         QName(PackageNamespace(""), "o1978")
+
+L21:
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o19298")
+      swap
+      setproperty         QName(PackageNamespace(""), "o19298")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            5
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L41
+
+L35:
+      label
+      getlex              QName(PackageNamespace(""), "o19298")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L41:
+      getlocal            6
+      getlocal            5
+      iflt                L35
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o18067")
+      swap
+      setproperty         QName(PackageNamespace(""), "o18067")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal2
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L64
+
+L58:
+      label
+      getlex              QName(PackageNamespace(""), "o18067")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L64:
+      getlocal            6
+      getlocal2
+      iflt                L58
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o7001")
+      swap
+      setproperty         QName(PackageNamespace(""), "o7001")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            9
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L87
+
+L81:
+      label
+      getlex              QName(PackageNamespace(""), "o7001")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L87:
+      getlocal            6
+      getlocal            9
+      iflt                L81
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o12584")
+      swap
+      setproperty         QName(PackageNamespace(""), "o12584")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            4
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L110
+
+L104:
+      label
+      getlex              QName(PackageNamespace(""), "o12584")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L110:
+      getlocal            6
+      getlocal            4
+      iflt                L104
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o7642")
+      swap
+      setproperty         QName(PackageNamespace(""), "o7642")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            7
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L133
+
+L127:
+      label
+      getlex              QName(PackageNamespace(""), "o7642")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L133:
+      getlocal            6
+      getlocal            7
+      iflt                L127
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o10245")
+      swap
+      setproperty         QName(PackageNamespace(""), "o10245")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            10
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L156
+
+L150:
+      label
+      getlex              QName(PackageNamespace(""), "o10245")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L156:
+      getlocal            6
+      getlocal            10
+      iflt                L150
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o16530")
+      swap
+      setproperty         QName(PackageNamespace(""), "o16530")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal3
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L179
+
+L173:
+      label
+      getlex              QName(PackageNamespace(""), "o16530")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L179:
+      getlocal            6
+      getlocal3
+      iflt                L173
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "int")
+      applytype           1
+      construct           0
+      findproperty        QName(PackageNamespace(""), "o19585")
+      swap
+      setproperty         QName(PackageNamespace(""), "o19585")
+
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      convert_i
+      setlocal            8
+
+      pushbyte            0
+      setlocal            6
+
+      jump                L202
+
+L196:
+      label
+      getlex              QName(PackageNamespace(""), "o19585")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "readShort"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+      inclocal_i          6
+L202:
+      getlocal            6
+      getlocal            8
+      iflt                L196
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o9626/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

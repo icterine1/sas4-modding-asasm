@@ -1,0 +1,24 @@
+method
+ name ""
+ refid "com.ninjakiwi.gateway.nk:NKGatewayUser/instance/init/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "itemData"
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 6
+  maxscopedepth 7
+  code
+   getlocal0
+   pushscope
+
+   getlex              QName(PackageNamespace(""), "gotItemsSignal")
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "dispatch"), 1
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

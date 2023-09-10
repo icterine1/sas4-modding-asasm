@@ -1,0 +1,399 @@
+class
+ refid "o10187"
+ instance QName(PackageNamespace(""), "o10187")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o10187")
+  iinit
+   refid "o10187/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o15637")
+   method
+    name "o15637"
+    refid "o10187/instance/o15637"
+    param QName(PackageNamespace(""), "o18851")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o3120"
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13858")
+   method
+    name "o13858"
+    refid "o10187/instance/o13858"
+    param QName(PackageNamespace(""), "o13202")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o8868"
+    body
+     maxstack 1
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o20577")
+   method
+    name "o20577"
+    refid "o10187/instance/o20577"
+    param QName(PackageNamespace(""), "o5173")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "body"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o5528")
+      constructprop       QName(PackageNamespace(""), "o5528"), 0
+      coerce              QName(PackageNamespace(""), "o5528")
+      setlocal2
+
+      getlocal2
+      getlocal0
+      setproperty         QName(PackageNamespace(""), "o19954")
+
+      getlocal2
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "body")
+
+      getlocal2
+      getlex              QName(ProtectedNamespace("o10187"), "o5970")
+      setproperty         QName(PackageNamespace(""), "o4321")
+
+      getlocal2
+      pushnull
+      setproperty         QName(PackageNamespace(""), "o19330")
+
+      getlocal2
+      findproperty        QName(ProtectedNamespace("o10187"), "o5970")
+      swap
+      setproperty         QName(ProtectedNamespace("o10187"), "o5970")
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o4321")
+      iffalse             L29
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o4321")
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "o19330")
+
+L29:
+      getlex              QName(ProtectedNamespace("o10187"), "o3965")
+      convert_d
+      increment
+      findpropstrict      QName(ProtectedNamespace("o10187"), "o3965")
+      swap
+      setproperty         QName(ProtectedNamespace("o10187"), "o3965")
+
+      getlocal2
+      getlocal1
+      getproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20786")
+      setproperty         QName(PackageNamespace(""), "o1408")
+
+      getlocal2
+      pushnull
+      setproperty         QName(PackageNamespace(""), "o2611")
+
+      getlocal1
+      getlocal2
+      setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20786")
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      iffalse             L52
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "o2611")
+
+L52:
+      getlocal1
+      dup
+      getproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o9558")
+      convert_d
+      increment
+      setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o9558")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13086")
+   method
+    name "o13086"
+    refid "o10187/instance/o13086"
+    param QName(PackageNamespace(""), "o5173")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "body"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20786")
+      coerce              QName(PackageNamespace(""), "o5528")
+      setlocal2
+
+      jump                L12
+
+L7:
+      label
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      coerce              QName(PackageNamespace(""), "o5528")
+      setlocal2
+
+L12:
+      getlocal2
+      dup
+      iffalse             L21
+
+      pop
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o19954")
+      getlocal0
+      equals
+      not
+L21:
+      iftrue              L7
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o19330")
+      iffalse             L30
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o19330")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o4321")
+      setproperty         QName(PackageNamespace(""), "o4321")
+
+L30:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o4321")
+      iffalse             L38
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o4321")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o19330")
+      setproperty         QName(PackageNamespace(""), "o19330")
+
+L38:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      iffalse             L46
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o2611")
+      setproperty         QName(PackageNamespace(""), "o2611")
+
+L46:
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o2611")
+      iffalse             L54
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o2611")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      setproperty         QName(PackageNamespace(""), "o1408")
+
+L54:
+      getlex              QName(ProtectedNamespace("o10187"), "o5970")
+      getlocal2
+      ifne                L62
+
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o4321")
+      findproperty        QName(ProtectedNamespace("o10187"), "o5970")
+      swap
+      setproperty         QName(ProtectedNamespace("o10187"), "o5970")
+
+L62:
+      getlocal1
+      getproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20786")
+      getlocal2
+      ifne                L70
+
+      getlocal1
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "o1408")
+      setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20786")
+
+L70:
+      getlocal1
+      dup
+      getproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o9558")
+      convert_d
+      decrement
+      setproperty         QName(Namespace("http://www.box2d.org/ns/b2internal"), "o9558")
+
+      getlex              QName(ProtectedNamespace("o10187"), "o3965")
+      convert_d
+      decrement
+      findpropstrict      QName(ProtectedNamespace("o10187"), "o3965")
+      swap
+      setproperty         QName(ProtectedNamespace("o10187"), "o3965")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13552")
+   method
+    name "o13552"
+    refid "o10187/instance/o13552"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      jump                L8
+
+L3:
+      label
+      findpropstrict      QName(PackageNamespace(""), "o13086")
+      getlex              QName(ProtectedNamespace("o10187"), "o5970")
+      getproperty         QName(PackageNamespace(""), "body")
+      callpropvoid        QName(PackageNamespace(""), "o13086"), 1
+
+L8:
+      getlex              QName(ProtectedNamespace("o10187"), "o5970")
+      iftrue              L3
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o10535")
+   method
+    name "o10535"
+    refid "o10187/instance/o10535"
+    returns QName(PackageNamespace(""), "o10187")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o1570")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o18346")
+   method
+    name "o18346"
+    refid "o10187/instance/o18346"
+    returns QName(PackageNamespace(""), "o12441")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20914")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13137")
+   method
+    name "o13137"
+    refid "o10187/instance/o13137"
+    returns QName(PackageNamespace(""), "o5528")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(ProtectedNamespace("o10187"), "o5970")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(Namespace("http://www.box2d.org/ns/b2internal"), "o1570") type QName(PackageNamespace(""), "o10187") end
+  trait slot QName(Namespace("http://www.box2d.org/ns/b2internal"), "o3174") type QName(PackageNamespace(""), "o10187") end
+  trait slot QName(ProtectedNamespace("o10187"), "o5970") type QName(PackageNamespace(""), "o5528") end
+  trait slot QName(ProtectedNamespace("o10187"), "o3965") type QName(PackageNamespace(""), "int") end
+  trait slot QName(Namespace("http://www.box2d.org/ns/b2internal"), "o20914") type QName(PackageNamespace(""), "o12441") end
+ end ; instance
+ cinit
+  refid "o10187/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

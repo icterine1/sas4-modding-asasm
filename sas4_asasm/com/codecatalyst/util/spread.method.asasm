@@ -1,0 +1,54 @@
+method
+ name "com.codecatalyst.util:spread"
+ refid "com.codecatalyst.util:spread"
+ param QName(PackageNamespace(""), "Function")
+ param null
+ returns QName(PackageNamespace(""), "Function")
+ flag NEED_ACTIVATION
+ flag HAS_OPTIONAL
+ flag HAS_PARAM_NAMES
+ optional Null()
+ paramname "targetFunction"
+ paramname "scope"
+ body
+  maxstack 2
+  localcount 4
+  initscopedepth 2
+  maxscopedepth 4
+  code
+   getlocal0
+   pushscope
+
+   newactivation
+   dup
+   setlocal3
+
+   pushscope
+
+   getscopeobject      1
+   pushnull
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             3
+
+   getscopeobject      1
+   getlocal1
+   setslot             1
+
+   getscopeobject      1
+   getlocal2
+   setslot             2
+
+   getscopeobject      1
+   newfunction         "com.codecatalyst.util:spread/inline_method"
+   coerce              QName(PackageNamespace(""), "Function")
+   setslot             3
+
+   getscopeobject      1
+   getslot             3
+   returnvalue
+  end ; code
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "targetFunction") slotid 1 type QName(PackageNamespace(""), "Function") end
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "scope") slotid 2 value Null() end
+  trait slot QName(PackageInternalNs("com.codecatalyst.util"), "execute") slotid 3 type QName(PackageNamespace(""), "Function") end
+ end ; body
+end ; method

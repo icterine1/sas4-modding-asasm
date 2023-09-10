@@ -1,0 +1,155 @@
+class
+ refid "Mem/o8986"
+ instance QName(PrivateNamespace("FilePrivateNS:Mem"), "o8986")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o8986"
+   refid "Mem/o8986/instance/init"
+   param null
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_PARAM_NAMES
+   paramname "o20606"
+   paramname "o9266"
+   paramname "o8995"
+   body
+    maxstack 2
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PrivateNamespace("FilePrivateNS:Mem"), "o8986")
+     applytype           1
+     construct           0
+     findproperty        QName(PackageNamespace(""), "o19726")
+     swap
+     setproperty         QName(PackageNamespace(""), "o19726")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "o20606")
+
+     getlocal0
+     getlocal3
+     setproperty         QName(PackageNamespace(""), "o8995")
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "o9266")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o20606") value Null() end
+  trait slot QName(PackageNamespace(""), "o8995") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o9266") type QName(PackageNamespace(""), "String") value Null() end
+  trait slot QName(PackageNamespace(""), "parent") type QName(PrivateNamespace("FilePrivateNS:Mem"), "o8986") value Null() end
+  trait slot QName(PackageNamespace(""), "o19726") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PrivateNamespace("FilePrivateNS:Mem"), "o8986")>) end
+  trait method QName(PackageNamespace(""), "toString")
+   method
+    name "toString"
+    refid "Mem/o8986/instance/toString"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 5
+     localcount 5
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+      getlex              QName(PackageNamespace(""), "String")
+      applytype           1
+      construct           0
+      coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>)
+      setlocal1
+
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(PackageNamespace(""), "o19726")
+      setlocal3
+
+      jump                L23
+
+L13:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      coerce              QName(PrivateNamespace("FilePrivateNS:Mem"), "o8986")
+      setlocal2
+
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "toString"), 0
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L23:
+      hasnext2            3, 4
+      iftrue              L13
+
+      pushstring          "{\"class\":\""
+      getlex              QName(PackageNamespace("flash.utils"), "getQualifiedClassName")
+      getglobalscope
+      getlex              QName(PackageNamespace(""), "o20606")
+      call                1
+      add
+      pushstring          "\",\"file\":\""
+      add
+      getlex              QName(PackageNamespace(""), "o9266")
+      add
+      pushstring          "\",\"line\":"
+      add
+      getlex              QName(PackageNamespace(""), "o8995")
+      add
+      getlex              QName(PackageNamespace(""), "o19726")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifngt               L51
+
+      pushstring          ",\"children\":["
+      getlocal1
+      pushstring          ","
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
+      add
+      pushstring          "]"
+      add
+      jump                L52
+
+L51:
+      pushstring          ""
+L52:
+      add
+      pushstring          "}"
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "Mem/o8986/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

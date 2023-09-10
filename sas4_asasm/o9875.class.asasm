@@ -1,0 +1,167 @@
+class
+ refid "o9875"
+ instance QName(PackageNamespace(""), "o9875")
+  extends QName(PackageNamespace(""), "o1492")
+  flag SEALED
+  iinit
+   name "o9875"
+   refid "o9875/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o15787")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o15787"), 1
+     findproperty        QName(PrivateNamespace("o9875"), "o20125")
+     swap
+     setproperty         QName(PrivateNamespace("o9875"), "o20125")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o9875"), "o20125") type QName(PackageNamespace(""), "o15787") end
+  trait getter QName(PackageNamespace(""), "o2310")
+   method
+    name "o2310"
+    refid "o9875/instance/o2310/getter"
+    returns QName(PackageNamespace(""), "Number")
+    body
+     maxstack 1
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o9875"), "o20125")
+      getproperty         QName(PackageNamespace(""), "value")
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait setter QName(PackageNamespace(""), "o2310")
+   method
+    name "o2310"
+    refid "o9875/instance/o2310/setter"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o9875"), "o20125")
+      getlocal1
+      setproperty         QName(PackageNamespace(""), "value")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o2185")
+   method
+    name "o2185"
+    refid "o9875/instance/o2185"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "Number")
+    flag HAS_PARAM_NAMES
+    paramname "o11967"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      pushbyte            0
+      ifne                L7
+
+      pushbyte            0
+      returnvalue
+
+L7:
+      getlex              QName(PrivateNamespace("o9875"), "o20125")
+      getproperty         QName(PackageNamespace(""), "value")
+      getlocal1
+      multiply
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o1220") flag OVERRIDE
+   method
+    name "o1220"
+    refid "o9875/instance/o1220"
+    param QName(PackageNamespace(""), "int")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "o11967"
+    body
+     maxstack 5
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsuper           QName(PackageNamespace(""), "o1220"), 1
+      coerce_s
+      setlocal2
+
+      getlocal2
+      pushstring          "[augmentationXPBonusTotalPercent]"
+      findpropstrict      QName(PackageNamespace(""), "o11342")
+      findpropstrict      QName(PackageNamespace(""), "o2185")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o2185"), 1
+      callproperty        QName(PackageNamespace(""), "o11342"), 1
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "replace"), 2
+      coerce_s
+      setlocal2
+
+      getlocal2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o9875/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,195 @@
+class
+ refid "o14754/o18283"
+ instance QName(PrivateNamespace("FilePrivateNS:o14754"), "o18283")
+  extends QName(PackageNamespace("flash.display"), "Sprite")
+  flag SEALED
+  iinit
+   name "o18283"
+   refid "o14754/o18283/instance/init"
+   param QName(PackageNamespace(""), "String")
+   flag NEED_ACTIVATION
+   flag HAS_PARAM_NAMES
+   paramname "url"
+   body
+    maxstack 4
+    localcount 3
+    initscopedepth 0
+    maxscopedepth 2
+    code
+     getlocal0
+     pushscope
+
+     newactivation
+     dup
+     setlocal2
+
+     pushscope
+
+     findpropstrict      QName(PrivateNamespace("FilePrivateNS:o14754"), "url")
+     getlocal1
+     setproperty         QName(PrivateNamespace("FilePrivateNS:o14754"), "url")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal2
+     swap
+     setslot             2
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "loader")
+     pushnull
+     getlex              QName(PackageNamespace(""), "o718")
+     getproperty         QName(PackageNamespace(""), "o5422")
+     newfunction         "o14754/o18283/instance/init/inline_method#0"
+     callpropvoid        QName(Namespace("o12600"), "o19926"), 3
+
+     findpropstrict      QName(PackageNamespace(""), "o8023")
+     constructprop       QName(PackageNamespace(""), "o8023"), 0
+     coerce              QName(PackageNamespace(""), "o12600")
+     getlocal2
+     swap
+     setslot             3
+
+     getlex              QName(PackageNamespace(""), "o4519")
+     getproperty         QName(PackageNamespace(""), "o8116")
+     getproperty         QName(PackageNamespace(""), "loader")
+     getlex              QName(PrivateNamespace("FilePrivateNS:o14754"), "o2154")
+     getlex              QName(PackageNamespace(""), "o718")
+     getproperty         QName(PackageNamespace(""), "o20522")
+     newfunction         "o14754/o18283/instance/init/inline_method#1"
+     callpropvoid        QName(Namespace("o12600"), "o16280"), 3
+
+     findpropstrict      QName(PackageNamespace(""), "addEventListener")
+     pushstring          "enterFrame"
+     getlex              QName(PackageNamespace(""), "draw")
+     callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+     returnvoid
+    end ; code
+    trait slot QName(PrivateNamespace("FilePrivateNS:o14754"), "url") slotid 1 type QName(PackageNamespace(""), "String") end
+    trait slot QName(PrivateNamespace("FilePrivateNS:o14754"), "o19505") slotid 2 type QName(PrivateNamespace("FilePrivateNS:o14754"), "o18283") end
+    trait slot QName(PrivateNamespace("FilePrivateNS:o14754"), "o2154") slotid 3 type QName(PackageNamespace(""), "o12600") end
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("FilePrivateNS:o14754:o18283"), "o20522") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait method QName(PackageNamespace(""), "o3901")
+   method
+    name "o3901"
+    refid "o14754/o18283/instance/o3901"
+    param QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o17588"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      setlocal2
+
+      pushbyte            0
+      setlocal2
+
+      jump                L16
+
+L7:
+      label
+      getlocal1
+      getlocal2
+      callproperty        QName(PackageNamespace(""), "getChildAt"), 1
+      getlocal2
+      pushbyte            33
+      multiply
+      setproperty         QName(PackageNamespace(""), "y")
+
+      inclocal_i          2
+L16:
+      getlocal2
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "numChildren")
+      iflt                L7
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "draw")
+   method
+    name "draw"
+    refid "o14754/o18283/instance/draw"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o12568"
+    body
+     maxstack 5
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      callpropvoid        QName(PackageNamespace(""), "clear"), 0
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      pushint             16777215
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "beginFill"), 2
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      pushbyte            0
+      pushshort           200
+      pushbyte            30
+      callpropvoid        QName(PackageNamespace(""), "drawRect"), 4
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      callpropvoid        QName(PackageNamespace(""), "endFill"), 0
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      pushbyte            0
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "beginFill"), 2
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      pushbyte            3
+      pushbyte            3
+      pushshort           194
+      getlex              QName(PrivateNamespace("FilePrivateNS:o14754:o18283"), "o20522")
+      multiply
+      pushbyte            24
+      callpropvoid        QName(PackageNamespace(""), "drawRect"), 4
+
+      getlex              QName(PackageNamespace(""), "graphics")
+      callpropvoid        QName(PackageNamespace(""), "endFill"), 0
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o14754/o18283/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

@@ -1,0 +1,90 @@
+class
+ refid "o20202"
+ instance QName(PackageNamespace(""), "o20202")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o20202/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o20202/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("o20202"), "o13261") type QName(PackageNamespace(""), "Class") end
+ trait method QName(PackageNamespace(""), "o15355")
+  method
+   name "o15355"
+   refid "o20202/class/o15355"
+   returns QName(PackageNamespace(""), "o14727")
+   body
+    maxstack 4
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushnull
+     setlocal1
+
+     pushfalse
+     dup
+     iffalse             L10
+
+     pop
+     getlex              QName(PackageNamespace(""), "Main")
+     getproperty         QName(PackageNamespace(""), "o15767")
+L10:
+     iffalse             L26
+
+     findpropstrict      QName(PackageNamespace(""), "o13407")
+     findpropstrict      QName(PrivateNamespace("o20202"), "o13261")
+     constructprop       QName(PrivateNamespace("o20202"), "o13261"), 0
+     constructprop       QName(PackageNamespace(""), "o13407"), 1
+     coerce              QName(PackageNamespace(""), "o13407")
+     setlocal1
+
+     findpropstrict      QName(PackageNamespace(""), "o20324")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o5964")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o17787")
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "o9182")
+     constructprop       QName(PackageNamespace(""), "o20324"), 3
+     returnvalue
+
+L26:
+     findpropstrict      QName(PackageNamespace(""), "o493")
+     constructprop       QName(PackageNamespace(""), "o493"), 0
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

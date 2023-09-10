@@ -1,0 +1,117 @@
+method
+ name "com.codecatalyst.promise:Promise/reduce/com.codecatalyst.promise:reduceArray"
+ refid "com.codecatalyst.promise:Promise/class/reduce/inline_method#0"
+ param QName(PackageNamespace(""), "Array")
+ param QName(PackageNamespace(""), "Function")
+ flag NEED_REST
+ flag HAS_PARAM_NAMES
+ paramname "array"
+ paramname "reduceFunction"
+ body
+  maxstack 6
+  localcount 7
+  initscopedepth 4
+  maxscopedepth 4
+  code
+   pushbyte            0
+   convert_u
+   setlocal            4
+
+   getlocal1
+   getproperty         QName(PackageNamespace(""), "length")
+   convert_u
+   setlocal            5
+
+   pushnull
+   coerce_a
+   setlocal            6
+
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "length")
+   pushbyte            0
+   ifne                L41
+
+   pushbyte            0
+   convert_u
+   setlocal            4
+
+   jump                L37
+
+L18:
+   label
+   getlocal            4
+   getlocal1
+   in
+   iffalse             L33
+
+   getlocal1
+   getlocal            4
+   getproperty         MultinameL([PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+   coerce_a
+   setlocal            6
+
+   getlocal            4
+   increment
+   convert_u
+   setlocal            4
+
+   jump                L40
+
+L33:
+   getlocal            4
+   increment
+   convert_u
+   setlocal            4
+
+L37:
+   getlocal            4
+   getlocal            5
+   iflt                L18
+
+L40:
+   jump                L46
+
+L41:
+   getlocal3
+   pushbyte            0
+   getproperty         MultinameL([PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+   coerce_a
+   setlocal            6
+
+L46:
+   jump                L67
+
+L47:
+   label
+   getlocal            4
+   getlocal1
+   in
+   iffalse             L67
+
+   getlocal2
+   getglobalscope
+   getlocal            6
+   getlocal1
+   getlocal            4
+   getproperty         MultinameL([PrivateNamespace("com.codecatalyst.promise:Promise"), PackageNamespace(""), PackageNamespace("com.codecatalyst.promise"), PrivateNamespace("Promise.as$14"), PackageInternalNs("com.codecatalyst.promise"), Namespace("http://adobe.com/AS3/2006/builtin"), ProtectedNamespace("com.codecatalyst.promise:Promise"), StaticProtectedNs("com.codecatalyst.promise:Promise")])
+   getlocal            4
+   getlocal1
+   call                4
+   coerce_a
+   setlocal            6
+
+   getlocal            4
+   increment
+   convert_u
+   setlocal            4
+
+L67:
+   getlocal            4
+   getlocal            5
+   iflt                L47
+
+   getlocal            6
+   returnvalue
+  end ; code
+ end ; body
+end ; method

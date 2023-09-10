@@ -1,0 +1,169 @@
+class
+ refid "o18475"
+ instance QName(PackageNamespace(""), "o18475")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o18475/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "bytesNeeded") type QName(PackageNamespace(""), "int") value Integer(-1) end
+  trait slot QName(PackageNamespace(""), "call") type QName(PackageNamespace(""), "Function") value Null() end
+  trait method QName(PackageNamespace(""), "initialise")
+   method
+    name "initialise"
+    refid "o18475/instance/initialise"
+    param QName(PackageNamespace(""), "Array")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag NEED_ACTIVATION
+    flag HAS_PARAM_NAMES
+    paramname "o20272"
+    paramname "call"
+    body
+     maxstack 3
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 2
+     code
+      getlocal0
+      pushscope
+
+      newactivation
+      dup
+      setlocal            5
+
+      pushscope
+
+      findpropstrict      QName(PackageInternalNs(""), "o20272")
+      getlocal1
+      setproperty         QName(PackageInternalNs(""), "o20272")
+
+      findpropstrict      QName(PackageInternalNs(""), "call")
+      getlocal2
+      setproperty         QName(PackageInternalNs(""), "call")
+
+      getlex              QName(PackageInternalNs(""), "o20272")
+      pushnull
+      ifeq                L71
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "bytesNeeded")
+      swap
+      setproperty         QName(PackageNamespace(""), "bytesNeeded")
+
+      pushbyte            0
+      setlocal            4
+
+      getlex              QName(PackageInternalNs(""), "o20272")
+      setlocal3
+
+      jump                L69
+
+L24:
+      label
+      getlocal3
+      getlocal            4
+      nextvalue
+      convert_i
+      getlocal            5
+      swap
+      setslot             3
+
+      getlex              QName(PackageInternalNs(""), "o1903")
+      convert_i
+      pushint             1
+      subtract_i
+      lookupswitch        L69, [L44, L58, L69, L37, L65, L51]
+
+L37:
+      findpropstrict      QName(PackageNamespace(""), "bytesNeeded")
+      dup
+      getproperty         QName(PackageNamespace(""), "bytesNeeded")
+      pushbyte            1
+      add
+      setproperty         QName(PackageNamespace(""), "bytesNeeded")
+
+      jump                L69
+
+L44:
+      findpropstrict      QName(PackageNamespace(""), "bytesNeeded")
+      dup
+      getproperty         QName(PackageNamespace(""), "bytesNeeded")
+      pushbyte            1
+      add
+      setproperty         QName(PackageNamespace(""), "bytesNeeded")
+
+      jump                L69
+
+L51:
+      findpropstrict      QName(PackageNamespace(""), "bytesNeeded")
+      dup
+      getproperty         QName(PackageNamespace(""), "bytesNeeded")
+      pushbyte            2
+      add
+      setproperty         QName(PackageNamespace(""), "bytesNeeded")
+
+      jump                L69
+
+L58:
+      findpropstrict      QName(PackageNamespace(""), "bytesNeeded")
+      dup
+      getproperty         QName(PackageNamespace(""), "bytesNeeded")
+      pushbyte            4
+      add
+      setproperty         QName(PackageNamespace(""), "bytesNeeded")
+
+      jump                L69
+
+L65:
+      pushbyte            -1
+      findproperty        QName(PackageNamespace(""), "bytesNeeded")
+      swap
+      setproperty         QName(PackageNamespace(""), "bytesNeeded")
+
+L69:
+      hasnext2            3, 4
+      iftrue              L24
+
+L71:
+      getlocal0
+      newfunction         "o18475/instance/initialise/inline_method"
+      setproperty         QName(PackageNamespace(""), "call")
+
+      returnvoid
+     end ; code
+     trait slot QName(PackageInternalNs(""), "o20272") slotid 1 type QName(PackageNamespace(""), "Array") end
+     trait slot QName(PackageInternalNs(""), "call") slotid 2 type QName(PackageNamespace(""), "Function") end
+     trait slot QName(PackageInternalNs(""), "o1903") slotid 3 type QName(PackageNamespace(""), "int") end
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o18475/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

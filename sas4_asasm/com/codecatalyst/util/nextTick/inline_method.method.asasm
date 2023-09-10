@@ -1,0 +1,23 @@
+method
+ name "com.codecatalyst.util:nextTick/com.codecatalyst.util:execute"
+ refid "com.codecatalyst.util:nextTick/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 1
+  initscopedepth 2
+  maxscopedepth 2
+  code
+   findpropstrict      QName(PackageNamespace("flash.utils"), "clearInterval")
+   getlex              QName(PackageInternalNs("com.codecatalyst.util"), "intervalId")
+   callpropvoid        QName(PackageNamespace("flash.utils"), "clearInterval"), 1
+
+   getlex              QName(PackageInternalNs("com.codecatalyst.util"), "callback")
+   pushnull
+   getlex              QName(PackageInternalNs("com.codecatalyst.util"), "parameters")
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "apply"), 2
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

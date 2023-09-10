@@ -1,0 +1,54 @@
+class
+ refid "com.codecatalyst.promise:CompletionAction"
+ instance QName(PackageInternalNs("com.codecatalyst.promise"), "CompletionAction")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("com.codecatalyst.promise:CompletionAction")
+  iinit
+   name "com.codecatalyst.promise:CompletionAction/CompletionAction"
+   refid "com.codecatalyst.promise:CompletionAction/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  name ""
+  refid "com.codecatalyst.promise:CompletionAction/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    findproperty        QName(PackageNamespace(""), "FULFILL")
+    pushstring          "fulfill"
+    initproperty        QName(PackageNamespace(""), "FULFILL")
+
+    findproperty        QName(PackageNamespace(""), "REJECT")
+    pushstring          "reject"
+    initproperty        QName(PackageNamespace(""), "REJECT")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait const QName(PackageNamespace(""), "FULFILL") slotid 1 type QName(PackageNamespace(""), "String") value Utf8("fulfill") end
+ trait const QName(PackageNamespace(""), "REJECT") slotid 2 type QName(PackageNamespace(""), "String") value Utf8("reject") end
+end ; class

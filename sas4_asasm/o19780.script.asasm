@@ -1,0 +1,33 @@
+script
+ sinit
+  refid "o19780/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o3052")
+    dup
+    pushscope
+
+    newclass            "o19780"
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o19780")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o19780")
+  #include "o19780.class.asasm"
+ end ; trait
+end ; script

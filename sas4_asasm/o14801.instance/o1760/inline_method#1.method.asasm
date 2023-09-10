@@ -1,0 +1,99 @@
+method
+ name "o14801.as$5:anonymous"
+ refid "o14801/instance/o1760/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ flag NEED_ACTIVATION
+ body
+  maxstack 3
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 1
+  code
+   newactivation
+   dup
+   setlocal2
+
+   pushscope
+
+   findpropstrict      QName(PackageInternalNs(""), "data")
+   getlocal1
+   setproperty         QName(PackageInternalNs(""), "data")
+
+   getlex              QName(PackageInternalNs(""), "data")
+   pushnull
+   ifne                L14
+
+   getlex              QName(PackageInternalNs(""), "o19016")
+   pushstring          "ERROR: Can only compile on production?"
+   setproperty         QName(PackageNamespace(""), "data")
+
+   jump                L58
+
+L14:
+   getlex              QName(PackageInternalNs(""), "data")
+   pushstring          "status"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce              QName(PackageNamespace(""), "Object")
+   getlocal2
+   swap
+   setslot             2
+
+   getlex              QName(PackageInternalNs(""), "o16705")
+   pushstring          "target"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce_s
+   getlocal2
+   swap
+   setslot             3
+
+   getlex              QName(PackageInternalNs(""), "o16705")
+   pushstring          "status"
+   getproperty         MultinameL([PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   coerce_s
+   getlocal2
+   swap
+   setslot             4
+
+   getlex              QName(PackageInternalNs(""), "o2778")
+   pushstring          "STATUS_COMPILED"
+   ifne                L55
+
+   getlex              QName(PackageInternalNs(""), "o14478")
+   callproperty        QName(PackageNamespace(""), "o20093"), 0
+   convert_b
+   getlocal2
+   swap
+   setslot             5
+
+   getlex              QName(PackageInternalNs(""), "o7237")
+   iffalse             L50
+
+   pushtrue
+   findproperty        QName(PackageNamespace(""), "o13174")
+   swap
+   setproperty         QName(PackageNamespace(""), "o13174")
+
+L50:
+   findpropstrict      QName(PackageNamespace(""), "o15785")
+   callproperty        QName(PackageNamespace(""), "o15785"), 0
+   newfunction         "o14801/instance/o1760/inline_method#2"
+   callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+   jump                L58
+
+L55:
+   getlex              QName(PackageInternalNs(""), "o19016")
+   getlex              QName(PackageInternalNs(""), "o2778")
+   setproperty         QName(PackageNamespace(""), "data")
+
+L58:
+   returnvoid
+  end ; code
+  trait slot QName(PackageInternalNs(""), "data") slotid 1 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "o16705") slotid 2 type QName(PackageNamespace(""), "Object") end
+  trait slot QName(PackageInternalNs(""), "target") slotid 3 type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageInternalNs(""), "o2778") slotid 4 type QName(PackageNamespace(""), "String") end
+  trait slot QName(PackageInternalNs(""), "o7237") slotid 5 type QName(PackageNamespace(""), "Boolean") end
+ end ; body
+end ; method

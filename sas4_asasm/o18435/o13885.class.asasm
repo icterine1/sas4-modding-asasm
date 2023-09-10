@@ -1,0 +1,90 @@
+class
+ refid "o18435/o13885"
+ instance QName(PrivateNamespace("FilePrivateNS:o18435"), "o13885")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o13885"
+   refid "o18435/o13885/instance/init"
+   param QName(PackageNamespace(""), "o14506")
+   flag HAS_PARAM_NAMES
+   paramname "promise"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "promise")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "promise") type QName(PackageNamespace(""), "o14506") end
+  trait method QName(PackageNamespace(""), "defer")
+   method
+    name "defer"
+    refid "o18435/o13885/instance/defer"
+    param null
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7310"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      getproperty         Multiname("body", [PrivateNamespace("FilePrivateNS:o18435:o13885"), ProtectedNamespace("FilePrivateNS:o18435:o13885"), StaticProtectedNs("FilePrivateNS:o18435:o13885"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o18435"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
+      pushbyte            -1
+      ifne                L10
+
+      getlex              QName(PackageNamespace(""), "promise")
+      pushtrue
+      setproperty         QName(PackageNamespace(""), "data")
+
+      jump                L13
+
+L10:
+      getlex              QName(PackageNamespace(""), "promise")
+      pushfalse
+      setproperty         QName(PackageNamespace(""), "data")
+
+L13:
+      pushnull
+      findproperty        QName(PackageNamespace(""), "promise")
+      swap
+      setproperty         QName(PackageNamespace(""), "promise")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o18435/o13885/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

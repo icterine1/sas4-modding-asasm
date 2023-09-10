@@ -1,0 +1,147 @@
+class
+ refid "o18316"
+ instance QName(PackageNamespace(""), "o18316")
+  extends QName(PackageNamespace(""), "o16541")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o18316")
+  iinit
+   name "o18316"
+   refid "o18316/instance/init"
+   param QName(PackageNamespace(""), "o3047")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "Boolean")
+   param QName(PackageNamespace(""), "Number")
+   param QName(PackageNamespace(""), "int")
+   param QName(PackageNamespace(""), "int")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional False()
+   optional Double(1)
+   optional Integer(0)
+   optional Integer(0)
+   paramname "o20160"
+   paramname "o5230"
+   paramname "o9899"
+   paramname "o9533"
+   paramname "o12898"
+   paramname "o18183"
+   paramname "o17625"
+   paramname "o3600"
+   paramname "o11432"
+   paramname "o2840"
+   paramname "o12555"
+   body
+    maxstack 12
+    localcount 12
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal1
+     getlocal2
+     getlocal3
+     getlocal            4
+     getlocal            5
+     getlocal            6
+     getlocal            7
+     getlocal            8
+     getlocal            9
+     getlocal            10
+     getlocal            11
+     constructsuper      11
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(ProtectedNamespace("o18316"), "o7506") flag OVERRIDE
+   method
+    name "o7506"
+    refid "o18316/instance/o18316:o7506"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(ProtectedNamespace("o16541"), "o8515")
+      callpropvoid        QName(ProtectedNamespace("o16541"), "o8515"), 0
+
+      getlex              QName(ProtectedNamespace("o16541"), "o16831")
+      pushbyte            0
+      pushbyte            1
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
+
+      getlex              QName(ProtectedNamespace("o16541"), "o6242")
+      getlex              QName(ProtectedNamespace("o16541"), "o6242")
+      getlex              QName(ProtectedNamespace("o16541"), "o11432")
+      divide
+      getlex              QName(ProtectedNamespace("o16541"), "o6242")
+      subtract
+      getlex              QName(ProtectedNamespace("o16541"), "o17884")
+      getlex              QName(ProtectedNamespace("o16541"), "o12898")
+      divide
+      multiply
+      add
+      findproperty        QName(ProtectedNamespace("o16541"), "o7038")
+      swap
+      setproperty         QName(ProtectedNamespace("o16541"), "o7038")
+
+      findpropstrict      QName(ProtectedNamespace("o16541"), "o17884")
+      dup
+      getproperty         QName(ProtectedNamespace("o16541"), "o17884")
+      getlex              QName(ProtectedNamespace("o16541"), "o7038")
+      add
+      setproperty         QName(ProtectedNamespace("o16541"), "o17884")
+
+      getlex              QName(ProtectedNamespace("o16541"), "o16831")
+      getproperty         QName(PackageNamespace(""), "length")
+      pushbyte            0
+      ifne                L35
+
+      findpropstrict      QName(PackageNamespace(""), "o19115")
+      callpropvoid        QName(PackageNamespace(""), "o19115"), 0
+
+      jump                L40
+
+L35:
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlocal0
+      getlex              QName(ProtectedNamespace("o16541"), "o7038")
+      getlex              QName(ProtectedNamespace("o18316"), "o7506")
+      callpropvoid        QName(PackageNamespace(""), "o9310"), 3
+
+L40:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o18316/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

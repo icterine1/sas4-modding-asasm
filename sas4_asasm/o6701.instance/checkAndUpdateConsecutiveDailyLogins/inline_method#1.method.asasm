@@ -1,0 +1,35 @@
+method
+ name "o11736"
+ refid "o6701/instance/checkAndUpdateConsecutiveDailyLogins/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 4
+  localcount 3
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   findpropstrict      QName(PrivateNamespace("o6701"), "o5923")
+   pushstring          "checkAndUpdateConsecutiveDailyLogins ok"
+   callpropvoid        QName(PrivateNamespace("o6701"), "o5923"), 1
+
+   getlocal1
+   pushstring          "days"
+   getproperty         MultinameL([PrivateNamespace("o6701"), ProtectedNamespace("o6701"), StaticProtectedNs("o6701"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6701"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_i
+   setlocal2
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlocal2
+   setproperty         QName(PackageNamespace(""), "o717")
+
+   findpropstrict      QName(PackageNamespace(""), "checkDailyReward")
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlex              QName(PackageInternalNs(""), "o7189")
+   getlex              QName(PackageInternalNs(""), "promise")
+   callpropvoid        QName(PackageNamespace(""), "checkDailyReward"), 3
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

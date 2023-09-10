@@ -1,0 +1,49 @@
+script
+ sinit
+  refid "o1600/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o8023")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o17693")
+    dup
+    pushscope
+
+    newclass            "o1600"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o1600")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "o1600/o20063"
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o1600"), "o20063")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o1600")
+  #include "o1600.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o1600"), "o20063")
+  #include "o1600/o20063.class.asasm"
+ end ; trait
+end ; script

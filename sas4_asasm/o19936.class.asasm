@@ -1,0 +1,83 @@
+class
+ refid "o19936"
+ instance QName(PackageNamespace(""), "o19936")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o19936/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o20021")
+     constructprop       QName(PackageNamespace(""), "o20021"), 0
+     findproperty        QName(PackageNamespace(""), "o5121")
+     swap
+     setproperty         QName(PackageNamespace(""), "o5121")
+
+     findpropstrict      QName(PackageNamespace(""), "o4673")
+     constructprop       QName(PackageNamespace(""), "o4673"), 0
+     findproperty        QName(PackageNamespace(""), "id")
+     swap
+     setproperty         QName(PackageNamespace(""), "id")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait method QName(PackageNamespace(""), "o18596")
+   method
+    name "o18596"
+    refid "o19936/instance/o18596"
+    param QName(PackageNamespace(""), "o19936")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o3316"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o5121")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o5121")
+      callpropvoid        QName(PackageNamespace(""), "o13101"), 1
+
+      getlex              QName(PackageNamespace(""), "id")
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "id")
+      callpropvoid        QName(PackageNamespace(""), "o18596"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait slot QName(PackageNamespace(""), "o5121") type QName(PackageNamespace(""), "o20021") end
+  trait slot QName(PackageNamespace(""), "id") type QName(PackageNamespace(""), "o4673") end
+ end ; instance
+ cinit
+  refid "o19936/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

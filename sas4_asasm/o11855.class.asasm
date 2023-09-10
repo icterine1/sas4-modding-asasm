@@ -1,0 +1,202 @@
+class
+ refid "o11855"
+ instance QName(PackageNamespace(""), "o11855")
+  extends QName(PackageNamespace("flash.display"), "MovieClip")
+  flag SEALED
+  iinit
+   name "o11855"
+   refid "o11855/instance/init#0"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o4546") type QName(PackageNamespace(""), "Function") end
+  trait method QName(PackageNamespace(""), "init")
+   method
+    name "init"
+    refid "o11855/instance/init#1"
+    param QName(PackageNamespace(""), "int")
+    param QName(PackageNamespace(""), "Function")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "assetID"
+    paramname "o4546"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      pushstring          "removedFromStage"
+      getlex              QName(PrivateNamespace("o11855"), "o7675")
+      pushfalse
+      pushbyte            0
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
+
+      getlocal0
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "o4546")
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o5830")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o9009"), 1
+      coerce_s
+      setlocal3
+
+      getlocal3
+      pushnull
+      ifeq                L29
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o1234")
+      getlocal3
+      callproperty        QName(Namespace("o7118"), "o11690"), 1
+      getlex              QName(PrivateNamespace("o11855"), "o2622")
+      callpropvoid        QName(PackageNamespace(""), "defer"), 1
+
+L29:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o11855"), "o2622")
+   method
+    name "o2622"
+    refid "o11855/instance/o11855/instance/o2622"
+    param QName(PackageNamespace(""), "Class")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o6987"
+    body
+     maxstack 4
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal1
+      construct           0
+      coerce              QName(PackageNamespace(""), "Object")
+      setlocal2
+
+      getlocal0
+      getlocal2
+      getlex              QName(PackageNamespace("flash.display"), "MovieClip")
+      astypelate
+      callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+      getlex              QName(PackageNamespace(""), "o4546")
+      pushnull
+      ifeq                L25
+
+      getlex              QName(PackageNamespace(""), "o4546")
+      getglobalscope
+      getlocal2
+      getlex              QName(PackageNamespace("flash.display"), "MovieClip")
+      astypelate
+      call                1
+      pop
+      pushnull
+      findproperty        QName(PackageNamespace(""), "o4546")
+      swap
+      setproperty         QName(PackageNamespace(""), "o4546")
+
+L25:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o11855"), "o7675")
+   method
+    name "o7675"
+    refid "o11855/instance/o11855/instance/o7675"
+    param QName(PackageNamespace("flash.events"), "Event")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "o7367"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      pushstring          "removedFromStage"
+      getlex              QName(PrivateNamespace("o11855"), "o7675")
+      callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
+
+      pushnull
+      findproperty        QName(PackageNamespace(""), "o4546")
+      swap
+      setproperty         QName(PackageNamespace(""), "o4546")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o19115")
+   method
+    name "o19115"
+    refid "o11855/instance/o19115"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushnull
+      findproperty        QName(PackageNamespace(""), "o4546")
+      swap
+      setproperty         QName(PackageNamespace(""), "o4546")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o11855/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

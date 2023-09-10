@@ -1,0 +1,281 @@
+class
+ refid "o736"
+ instance QName(PackageNamespace(""), "o736")
+  extends QName(PackageNamespace(""), "o8535")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o736")
+  iinit
+   name "o736"
+   refid "o736/instance/init#0"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     pushbyte            3
+     findproperty        QName(PackageNamespace(""), "o14075")
+     swap
+     setproperty         QName(PackageNamespace(""), "o14075")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o19948") type QName(PackageNamespace(""), "int") end
+  trait slot QName(PackageNamespace(""), "grade") type QName(PackageNamespace(""), "int") value Integer(1) end
+  trait slot QName(PackageNamespace(""), "o4990") type QName(PackageNamespace(""), "int") value Integer(1) end
+  trait slot QName(PackageNamespace(""), "o14075") type QName(PackageNamespace(""), "int") value Integer(3) end
+  trait slot QName(PackageNamespace(""), "o11262") type QName(PackageNamespace(""), "int") value Integer(3) end
+  trait slot QName(PackageNamespace(""), "o2397") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o2138") type QName(PackageNamespace(""), "Boolean") value False() end
+  trait slot QName(PackageNamespace(""), "o263") type QName(PackageNamespace(""), "int") value Integer(0) end
+  trait method QName(PackageNamespace(""), "init") flag OVERRIDE
+   method
+    name "init"
+    refid "o736/instance/init#1"
+    param QName(PackageNamespace("flash.display"), "MovieClip")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "asset"
+    body
+     maxstack 2
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      callsupervoid       QName(PackageNamespace(""), "init"), 1
+      getlocal1
+      pushbyte            1
+      callpropvoid        QName(PackageNamespace(""), "gotoAndStop"), 1
+
+      getlocal0
+      callpropvoid        QName(PackageNamespace(""), "o5175"), 0
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(ProtectedNamespace("o736"), "draw") flag OVERRIDE
+   method
+    name "draw"
+    refid "o736/instance/o736:draw"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 7
+     localcount 6
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      callsupervoid       QName(ProtectedNamespace("o8535"), "draw"), 0
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "asset")
+      pushstring          "lblNew"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.display"), "MovieClip")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "MovieClip")
+      setlocal1
+
+      getlocal1
+      pushnull
+      ifeq                L18
+
+      getlocal1
+      getlex              QName(PackageNamespace(""), "o2397")
+      setproperty         QName(PackageNamespace(""), "visible")
+
+L18:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "asset")
+      pushstring          "grade"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.display"), "MovieClip")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "MovieClip")
+      setlocal2
+
+      getlocal2
+      pushnull
+      ifeq                L34
+
+      getlocal2
+      getlex              QName(PackageNamespace(""), "grade")
+      pushbyte            1
+      add
+      callpropvoid        QName(PackageNamespace(""), "gotoAndStop"), 1
+
+L34:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "asset")
+      pushstring          "lblGrade"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.text"), "TextField")
+      astypelate
+      coerce              QName(PackageNamespace("flash.text"), "TextField")
+      dup
+      setlocal            5
+
+      pushnull
+      ifeq                L49
+
+      getlocal            5
+      getlex              QName(PackageNamespace(""), "grade")
+      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
+      setproperty         QName(PackageNamespace(""), "text")
+
+L49:
+      findpropstrict      QName(PackageNamespace(""), "o20565")
+      getlocal0
+      constructprop       QName(PackageNamespace(""), "o20565"), 1
+      coerce              QName(PackageNamespace(""), "o20565")
+      setlocal3
+
+      getlocal3
+      pushstring          "aug"
+      getlex              QName(PackageNamespace(""), "o4990")
+      getlex              QName(PackageNamespace(""), "o11262")
+      pushstring          "on"
+      pushstring          "off"
+      getlex              QName(PackageNamespace(""), "o14075")
+      callpropvoid        QName(PackageNamespace(""), "o5877"), 6
+
+      getlex              QName(PackageNamespace(""), "o3700")
+      pushnull
+      ifeq                L69
+
+      getlex              QName(PackageNamespace(""), "o3700")
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "enabled")
+      setproperty         QName(PackageNamespace(""), "visible")
+
+L69:
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "asset")
+      pushstring          "eliteCore"
+      callproperty        QName(PackageNamespace(""), "getChildByName"), 1
+      getlex              QName(PackageNamespace("flash.display"), "MovieClip")
+      astypelate
+      coerce              QName(PackageNamespace("flash.display"), "MovieClip")
+      dup
+      setlocal            4
+
+      pushnull
+      ifeq                L86
+
+      getlocal            4
+      getlocal0
+      getproperty         QName(PackageNamespace(""), "o263")
+      pushbyte            0
+      greaterthan
+      setproperty         QName(PackageNamespace(""), "visible")
+
+L86:
+      getlex              QName(PackageNamespace(""), "enabled")
+      pushfalse
+      ifne                L100
+
+      getlex              QName(PackageNamespace(""), "o2138")
+      iffalse             L96
+
+      getlocal0
+      getlex              QName(PackageNamespace(""), "asset")
+      pushstring          "disabledBlank"
+      callpropvoid        QName(ProtectedNamespace("o16681"), "o19614"), 2
+
+      jump                L100
+
+L96:
+      getlocal0
+      getlex              QName(PackageNamespace(""), "asset")
+      pushstring          "disabled"
+      callpropvoid        QName(ProtectedNamespace("o16681"), "o19614"), 2
+
+L100:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o13640") flag OVERRIDE
+   method
+    name "o13640"
+    refid "o736/instance/o13640"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "o19948")
+      swap
+      setproperty         QName(PackageNamespace(""), "o19948")
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "grade")
+      swap
+      setproperty         QName(PackageNamespace(""), "grade")
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "o4990")
+      swap
+      setproperty         QName(PackageNamespace(""), "o4990")
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "o14075")
+      swap
+      setproperty         QName(PackageNamespace(""), "o14075")
+
+      pushbyte            0
+      findproperty        QName(PackageNamespace(""), "o11262")
+      swap
+      setproperty         QName(PackageNamespace(""), "o11262")
+
+      pushfalse
+      findproperty        QName(PackageNamespace(""), "o2397")
+      swap
+      setproperty         QName(PackageNamespace(""), "o2397")
+
+      getlocal0
+      callsupervoid       QName(PackageNamespace(""), "o13640"), 0
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o736/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

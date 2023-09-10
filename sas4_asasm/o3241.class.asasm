@@ -1,0 +1,56 @@
+class
+ refid "o3241"
+ instance QName(PackageNamespace(""), "o3241")
+  extends QName(PackageNamespace(""), "o5497")
+  flag SEALED
+  iinit
+   name "o3241"
+   refid "o3241/instance/init"
+   param QName(PackageNamespace(""), "o5072")
+   param QName(PackageNamespace(""), "String")
+   param QName(PackageNamespace(""), "int")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Integer(100)
+   paramname "o5897"
+   paramname "url"
+   paramname "o12665"
+   body
+    maxstack 5
+    localcount 4
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     getlocal2
+     setproperty         QName(PackageNamespace(""), "url")
+
+     getlocal0
+     getlocal1
+     pushnull
+     pushnull
+     getlocal3
+     constructsuper      4
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "url") type QName(PackageNamespace(""), "String") value Null() end
+ end ; instance
+ cinit
+  refid "o3241/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

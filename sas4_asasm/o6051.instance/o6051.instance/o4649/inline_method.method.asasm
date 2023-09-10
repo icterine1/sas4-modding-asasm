@@ -1,0 +1,52 @@
+method
+ name "o6051.as$1:anonymous"
+ refid "o6051/instance/o6051/instance/o4649/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushbyte            0
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o9511")
+   getproperty         QName(PackageNamespace(""), "o4256")
+   setlocal2
+
+   jump                L24
+
+L8:
+   label
+   getlocal2
+   getlocal3
+   nextvalue
+   setlocal1
+
+   getlocal1
+   getproperty         Multiname("o18072", [PrivateNamespace("o6051"), ProtectedNamespace("o6051"), StaticProtectedNs("o6051"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6051"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   pushbyte            2
+   ifnle               L21
+
+   getlex              QName(PrivateNamespace("o6051"), "o4256")
+   getlocal1
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+   jump                L24
+
+L21:
+   getlex              QName(PrivateNamespace("o6051"), "o1468")
+   getlocal1
+   callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L24:
+   hasnext2            2, 3
+   iftrue              L8
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

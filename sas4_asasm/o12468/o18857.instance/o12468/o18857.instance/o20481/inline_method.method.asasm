@@ -1,0 +1,80 @@
+method
+ name "o12468.as$0:anonymous"
+ refid "o12468/o18857/instance/o12468/o18857/instance/o20481/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 2
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "o1051")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o9518")
+   callpropvoid        QName(PackageNamespace(""), "o19115"), 1
+
+   getlex              QName(PackageNamespace(""), "o1051")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o2921")
+   callpropvoid        QName(PackageNamespace(""), "o19115"), 1
+
+   getlex              QName(PackageNamespace(""), "o1051")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o19205")
+   callpropvoid        QName(PackageNamespace(""), "o19115"), 1
+
+   getlex              QName(PackageNamespace(""), "o1051")
+   getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20898")
+   callpropvoid        QName(PackageNamespace(""), "o19115"), 1
+
+   pushtrue
+   findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12270")
+   swap
+   setproperty         QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12270")
+
+   getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o17872")
+   iftrue              L45
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "profileData")
+   getproperty         QName(PackageNamespace(""), "o202")
+   pushfalse
+   setproperty         QName(PackageNamespace(""), "o10740")
+
+   pushbyte            0
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   getproperty         QName(PackageNamespace(""), "o2685")
+   getproperty         QName(PackageNamespace(""), "o10591")
+   setlocal2
+
+   jump                L43
+
+L32:
+   label
+   getlocal2
+   getlocal3
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o8443")
+   setlocal1
+
+   getlocal1
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "o19189")
+
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "o2236"), 0
+
+L43:
+   hasnext2            2, 3
+   iftrue              L32
+
+L45:
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   callpropvoid        QName(PackageNamespace(""), "o14994"), 0
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

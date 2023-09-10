@@ -1,0 +1,295 @@
+class
+ refid "o9213"
+ instance QName(PackageNamespace(""), "o9213")
+  extends QName(PackageNamespace(""), "o19785")
+  flag SEALED
+  iinit
+   name "o9213"
+   refid "o9213/instance/init"
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     findpropstrict      QName(PackageNamespace(""), "o15787")
+     pushbyte            0
+     constructprop       QName(PackageNamespace(""), "o15787"), 1
+     findproperty        QName(PackageNamespace(""), "o10825")
+     swap
+     setproperty         QName(PackageNamespace(""), "o10825")
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "o4256") type QName(PackageNamespace(""), "o1253") end
+  trait slot QName(PackageNamespace(""), "o17193") type QName(PackageNamespace(""), "Number") value Integer(0) end
+  trait slot QName(PackageNamespace(""), "o10825") type QName(PackageNamespace(""), "o15787") end
+  trait method QName(PackageNamespace(""), "o18239")
+   method
+    name "o18239"
+    refid "o9213/instance/o18239"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_PARAM_NAMES
+    paramname "value"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o3580")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o3580"), 1
+      findpropstrict      QName(PackageNamespace(""), "o11353")
+      getlocal1
+      callproperty        QName(PackageNamespace(""), "o11353"), 1
+      add
+      findpropstrict      QName(PackageNamespace(""), "o9342")
+      callproperty        QName(PackageNamespace(""), "o9342"), 0
+      add
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o18406")
+   method
+    name "o18406"
+    refid "o9213/instance/o18406"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o11353")
+      getlex              QName(PackageNamespace(""), "o8872")
+      pushtrue
+      callproperty        QName(PackageNamespace(""), "o11353"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o18698")
+   method
+    name "o18698"
+    refid "o9213/instance/o18698"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o18239")
+      findpropstrict      QName(PackageNamespace(""), "o5250")
+      callproperty        QName(PackageNamespace(""), "o5250"), 0
+      callproperty        QName(PackageNamespace(""), "o18239"), 1
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o11353") flag OVERRIDE
+   method
+    name "o11353"
+    refid "o9213/instance/o11353"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "String")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional False()
+    paramname "value"
+    paramname "o13558"
+    body
+     maxstack 3
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal0
+      getlocal1
+      getlocal2
+      callsuper           QName(PackageNamespace(""), "o11353"), 2
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o17342") flag OVERRIDE
+   method
+    name "o17342"
+    refid "o9213/instance/o17342"
+    returns QName(PackageNamespace(""), "Boolean")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o7246")
+      convert_i
+      pushint             16
+      subtract_i
+      lookupswitch        L11, [L7, L9]
+
+L7:
+      pushfalse
+      returnvalue
+
+L9:
+      pushfalse
+      returnvalue
+
+L11:
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "o17342"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4241") flag OVERRIDE
+   method
+    name "o4241"
+    refid "o9213/instance/o4241"
+    returns QName(PackageNamespace(""), "int")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o7246")
+      convert_i
+      pushint             16
+      subtract_i
+      lookupswitch        L11, [L7, L9]
+
+L7:
+      pushbyte            0
+      returnvalue
+
+L9:
+      pushbyte            0
+      returnvalue
+
+L11:
+      getlocal0
+      callsuper           QName(PackageNamespace(""), "o4241"), 0
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o9342") flag OVERRIDE
+   method
+    name "o9342"
+    refid "o9213/instance/o9342"
+    returns QName(PackageNamespace(""), "String")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o7246")
+      convert_i
+      pushint             10
+      subtract_i
+      lookupswitch        L27, [L25, L27, L27, L27, L27, L27, L7, L9, L11, L13, L15, L27, L23, L19, L17, L21]
+
+L7:
+      pushstring          ""
+      returnvalue
+
+L9:
+      pushstring          ""
+      returnvalue
+
+L11:
+      pushstring          " hp/sec"
+      returnvalue
+
+L13:
+      pushstring          " e/sec"
+      returnvalue
+
+L15:
+      pushstring          "%"
+      returnvalue
+
+L17:
+      pushstring          "%"
+      returnvalue
+
+L19:
+      pushstring          "%"
+      returnvalue
+
+L21:
+      pushstring          "%"
+      returnvalue
+
+L23:
+      pushstring          "%"
+      returnvalue
+
+L25:
+      pushstring          "%"
+      returnvalue
+
+L27:
+      pushstring          ""
+      returnvalue
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o9213/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

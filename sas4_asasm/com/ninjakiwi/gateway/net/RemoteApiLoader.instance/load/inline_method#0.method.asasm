@@ -1,0 +1,25 @@
+method
+ name ""
+ refid "com.ninjakiwi.gateway.net:RemoteApiLoader/instance/load/inline_method#0"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "event"
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 6
+  maxscopedepth 7
+  code
+   getlocal0
+   pushscope
+
+   getlex              QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "result")
+   getlex              QName(PackageInternalNs("com.ninjakiwi.gateway.net"), "loader")
+   getproperty         QName(PackageNamespace(""), "content")
+   callpropvoid        QName(PackageNamespace(""), "resolve"), 1
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

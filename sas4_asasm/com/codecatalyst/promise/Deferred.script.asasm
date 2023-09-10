@@ -1,0 +1,30 @@
+script
+ sinit
+  name ""
+  refid "com.codecatalyst.promise:Deferred/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("Deferred", [PackageNamespace("com.codecatalyst.promise")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "com.codecatalyst.promise:Deferred"
+    popscope
+    initproperty        QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("com.codecatalyst.promise"), "Deferred")
+  #include "Deferred.class.asasm"
+ end ; trait
+end ; script

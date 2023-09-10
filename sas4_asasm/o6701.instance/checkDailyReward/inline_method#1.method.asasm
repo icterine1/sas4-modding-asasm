@@ -1,0 +1,302 @@
+method
+ name "o11736"
+ refid "o6701/instance/checkDailyReward/inline_method#1"
+ param QName(PackageNamespace(""), "Object")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 7
+  localcount 11
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   pushnull
+   setlocal            6
+
+   pushnull
+   setlocal            7
+
+   pushnull
+   setlocal3
+
+   pushnull
+   setlocal            8
+
+   getlocal1
+   pushstring          "available"
+   getproperty         MultinameL([PrivateNamespace("o6701"), ProtectedNamespace("o6701"), StaticProtectedNs("o6701"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6701"), Namespace("http://adobe.com/AS3/2006/builtin")])
+   convert_b
+   dup
+   setlocal            5
+
+   iffalse             L17
+
+   pushstring          ""
+   jump                L20
+
+L17:
+   getlocal1
+   pushstring          "hoursToWait"
+   getproperty         MultinameL([PrivateNamespace("o6701"), ProtectedNamespace("o6701"), StaticProtectedNs("o6701"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6701"), Namespace("http://adobe.com/AS3/2006/builtin")])
+L20:
+   coerce_s
+   setlocal            4
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlocal            5
+   setproperty         QName(PackageNamespace(""), "o4995")
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   pushfalse
+   setproperty         QName(PackageNamespace(""), "o4900")
+
+   getlocal            5
+   dup
+   iffalse             L36
+
+   pop
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getproperty         QName(PackageNamespace(""), "o17808")
+   pushfalse
+   equals
+L36:
+   dup
+   iffalse             L41
+
+   pop
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+L41:
+   dup
+   iffalse             L47
+
+   pop
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o476")
+L47:
+   dup
+   iffalse             L54
+
+   pop
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o476")
+   getproperty         QName(PackageNamespace(""), "o9095")
+L54:
+   iffalse             L184
+
+   findpropstrict      QName(PackageNamespace(""), "Date")
+   constructprop       QName(PackageNamespace(""), "Date"), 0
+   coerce              QName(PackageNamespace(""), "Date")
+   setlocal            6
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o15020")
+   iffalse             L68
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o15020")
+   coerce              QName(PackageNamespace(""), "Date")
+   setlocal            6
+
+L68:
+   getlocal            6
+   pushnull
+   ifeq                L184
+
+   findpropstrict      QName(PackageNamespace(""), "Date")
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCFullYear"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCMonth"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCDate"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCHours"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCMinutes"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCSeconds"), 0
+   constructprop       QName(PackageNamespace(""), "Date"), 6
+   coerce              QName(PackageNamespace(""), "Date")
+   setlocal            7
+
+   findpropstrict      QName(PackageNamespace(""), "Date")
+   getlocal            7
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getFullYear"), 0
+   getlocal            7
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getMonth"), 0
+   getlocal            7
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getDate"), 0
+   constructprop       QName(PackageNamespace(""), "Date"), 3
+   coerce              QName(PackageNamespace(""), "Date")
+   setlocal3
+
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "date")
+   pushbyte            1
+   add
+   getlocal3
+   swap
+   setproperty         QName(PackageNamespace(""), "date")
+
+   findpropstrict      QName(PackageNamespace(""), "Date")
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCFullYear"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCMonth"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCDate"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCHours"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCMinutes"), 0
+   getlocal            6
+   callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getUTCSeconds"), 0
+   constructprop       QName(PackageNamespace(""), "Date"), 6
+   coerce              QName(PackageNamespace(""), "Date")
+   dup
+   setlocal            8
+
+   getproperty         QName(PackageNamespace(""), "time")
+   getlex              QName(PackageNamespace(""), "o14200")
+   getproperty         QName(PackageNamespace(""), "o19505")
+   getproperty         QName(PackageNamespace(""), "data")
+   getproperty         QName(PackageNamespace(""), "o12368")
+   getproperty         QName(PackageNamespace(""), "time")
+   greaterthan
+   dup
+   iftrue              L138
+
+   pop
+   getlex              QName(PackageNamespace(""), "o14200")
+   getproperty         QName(PackageNamespace(""), "o19505")
+   getproperty         QName(PackageNamespace(""), "data")
+   getproperty         QName(PackageNamespace(""), "o12368")
+   getproperty         QName(PackageNamespace(""), "time")
+   pushbyte            0
+   lessequals
+L138:
+   iffalse             L184
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o476")
+   getproperty         QName(PackageNamespace(""), "o9095")
+   getproperty         QName(PackageNamespace(""), "o3662")
+   setproperty         QName(PackageNamespace(""), "o6333")
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "o17808")
+
+   pushbyte            0
+   setlocal            10
+
+   getlex              QName(PackageNamespace(""), "o14200")
+   getproperty         QName(PackageNamespace(""), "o19505")
+   getproperty         QName(PackageNamespace(""), "data")
+   getproperty         QName(PackageNamespace(""), "o11400")
+   setlocal            9
+
+   jump                L175
+
+L157:
+   label
+   getlocal            9
+   getlocal            10
+   nextvalue
+   coerce              QName(PackageNamespace(""), "o9145")
+   setlocal2
+
+   getlocal2
+   iffalse             L175
+
+   getlocal2
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o476")
+   getproperty         QName(PackageNamespace(""), "o9095")
+   getproperty         QName(PackageNamespace(""), "o3662")
+   setproperty         QName(PackageNamespace(""), "o6333")
+
+   getlocal2
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "o17808")
+
+L175:
+   hasnext2            9, 10
+   iftrue              L157
+
+   getlex              QName(PackageNamespace(""), "o14200")
+   getproperty         QName(PackageNamespace(""), "o19505")
+   getproperty         QName(PackageNamespace(""), "data")
+   getproperty         QName(PackageNamespace(""), "o12368")
+   getlocal3
+   getproperty         QName(PackageNamespace(""), "time")
+   setproperty         QName(PackageNamespace(""), "time")
+
+L184:
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getproperty         QName(PackageNamespace(""), "o6333")
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o476")
+   getproperty         QName(PackageNamespace(""), "o9095")
+   getproperty         QName(PackageNamespace(""), "o3662")
+   ifngt               L200
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o476")
+   getproperty         QName(PackageNamespace(""), "o9095")
+   getproperty         QName(PackageNamespace(""), "o3662")
+   setproperty         QName(PackageNamespace(""), "o6333")
+
+   jump                L207
+
+L200:
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getproperty         QName(PackageNamespace(""), "o6333")
+   pushbyte            0
+   ifnle               L207
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   pushbyte            0
+   setproperty         QName(PackageNamespace(""), "o6333")
+
+L207:
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getproperty         QName(PackageNamespace(""), "o6333")
+   pushbyte            0
+   ifngt               L214
+
+   pushtrue
+   jump                L215
+
+L214:
+   pushfalse
+L215:
+   setproperty         QName(PackageNamespace(""), "o13308")
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   pushfalse
+   setproperty         QName(PackageNamespace(""), "o12667")
+
+   getlex              QName(PackageInternalNs(""), "o10608")
+   getlocal            4
+   setproperty         QName(PackageNamespace(""), "o17349")
+
+   getlex              QName(PackageInternalNs(""), "promise")
+   pushtrue
+   setproperty         QName(PackageNamespace(""), "data")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

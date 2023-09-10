@@ -1,0 +1,61 @@
+script
+ sinit
+  refid "o20213/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace("flash.events"), "EventDispatcher")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "o16681")
+    dup
+    pushscope
+
+    newclass            "o20213"
+    popscope
+    popscope
+    popscope
+    initproperty        QName(PackageNamespace(""), "o20213")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "o20213/o12009"
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o20213"), "o12009")
+
+    getscopeobject      0
+    getlex              QName(PackageNamespace(""), "Object")
+    dup
+    pushscope
+
+    newclass            "o20213/o19566"
+    popscope
+    initproperty        QName(PrivateNamespace("FilePrivateNS:o20213"), "o19566")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace(""), "o20213")
+  #include "o20213.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o20213"), "o12009")
+  #include "o20213/o12009.class.asasm"
+ end ; trait
+ trait class QName(PrivateNamespace("FilePrivateNS:o20213"), "o19566")
+  #include "o20213/o19566.class.asasm"
+ end ; trait
+end ; script

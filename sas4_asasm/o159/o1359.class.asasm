@@ -1,0 +1,82 @@
+class
+ refid "o159/o1359"
+ instance QName(PrivateNamespace("FilePrivateNS:o159"), "o1359")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   name "o1359"
+   refid "o159/o1359/instance/init"
+   param QName(PackageNamespace(""), "o16124")
+   returns QName(PackageNamespace(""), "void")
+   flag HAS_PARAM_NAMES
+   paramname "promise"
+   body
+    maxstack 2
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "promise")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PackageNamespace(""), "promise") type QName(PackageNamespace(""), "o16124") end
+  trait method QName(PackageNamespace(""), "o5111")
+   method
+    name "o5111"
+    refid "o159/o1359/instance/o5111"
+    param QName(PackageNamespace("flash.utils"), "ByteArray")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "data"
+    body
+     maxstack 2
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PackageNamespace(""), "o8621")
+      constructprop       QName(PackageNamespace(""), "o8621"), 0
+      coerce              QName(PackageNamespace(""), "o8621")
+      setlocal2
+
+      getlocal2
+      getlocal1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      getlex              QName(PackageNamespace(""), "promise")
+      getlocal2
+      setproperty         QName(PackageNamespace(""), "data")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o159/o1359/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class

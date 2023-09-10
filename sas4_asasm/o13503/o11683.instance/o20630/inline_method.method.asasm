@@ -1,0 +1,43 @@
+method
+ name "o13503.as$3:anonymous"
+ refid "o13503/o11683/instance/o20630/inline_method"
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 1
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   callpropvoid        QName(PackageNamespace(""), "o14994"), 0
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   getproperty         QName(PackageNamespace(""), "multiplayer")
+   iffalse             L23
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o13206")
+   getproperty         QName(PackageNamespace(""), "o2685")
+   callproperty        QName(PackageNamespace(""), "o7629"), 0
+   pushbyte            4
+   ifnge               L23
+
+   getlex              QName(PackageNamespace(""), "o17517")
+   getproperty         QName(PackageNamespace(""), "o12955")
+   pushfalse
+   ifne                L23
+
+   getlex              QName(PackageNamespace(""), "o4519")
+   getproperty         QName(PackageNamespace(""), "o8116")
+   getproperty         QName(PackageNamespace(""), "o12094")
+   pushshort           391
+   pushbyte            1
+   callpropvoid        QName(PackageNamespace(""), "setAchievement"), 2
+
+L23:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

@@ -1,0 +1,59 @@
+method
+ name "o14754.as$0:anonymous"
+ refid "orphan_method_319"
+ param QName(PackageNamespace("flash.events"), "Event")
+ returns QName(PackageNamespace(""), "void")
+ body
+  maxstack 3
+  localcount 4
+  initscopedepth 0
+  maxscopedepth 0
+  code
+   getlex              QName(PackageNamespace(""), "o18929")
+   getproperty         QName(PackageNamespace(""), "width")
+   getlex              QName(PackageInternalNs(""), "stage")
+   getproperty         QName(PackageNamespace(""), "stageWidth")
+   divide
+   convert_d
+   setlocal2
+
+   getlex              QName(PackageNamespace(""), "o18929")
+   getproperty         QName(PackageNamespace(""), "height")
+   getlex              QName(PackageInternalNs(""), "stage")
+   getproperty         QName(PackageNamespace(""), "stageHeight")
+   divide
+   convert_d
+   setlocal3
+
+   getlex              QName(PackageNamespace(""), "debugView")
+   getlex              QName(PackageNamespace(""), "o18929")
+   getproperty         QName(PackageNamespace(""), "x")
+   negate
+   getlocal2
+   divide
+   setproperty         QName(PackageNamespace(""), "x")
+
+   getlex              QName(PackageNamespace(""), "debugView")
+   getlex              QName(PackageNamespace(""), "o18929")
+   getproperty         QName(PackageNamespace(""), "y")
+   negate
+   getlocal3
+   divide
+   setproperty         QName(PackageNamespace(""), "y")
+
+   getlex              QName(PackageNamespace(""), "debugView")
+   pushbyte            1
+   getlocal2
+   divide
+   setproperty         QName(PackageNamespace(""), "scaleX")
+
+   getlex              QName(PackageNamespace(""), "debugView")
+   pushbyte            1
+   getlocal3
+   divide
+   setproperty         QName(PackageNamespace(""), "scaleY")
+
+   returnvoid
+  end ; code
+ end ; body
+end ; method

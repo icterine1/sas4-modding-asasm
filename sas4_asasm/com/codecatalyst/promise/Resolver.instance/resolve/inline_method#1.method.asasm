@@ -1,0 +1,29 @@
+method
+ name ""
+ refid "com.codecatalyst.promise:Resolver/instance/resolve/inline_method#1"
+ param null
+ returns QName(PackageNamespace(""), "void")
+ flag HAS_PARAM_NAMES
+ paramname "reason"
+ body
+  maxstack 2
+  localcount 2
+  initscopedepth 5
+  maxscopedepth 5
+  code
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "isHandled")
+   iftrue              L8
+
+   findproperty        QName(PackageInternalNs("com.codecatalyst.promise"), "isHandled")
+   pushtrue
+   setproperty         QName(PackageInternalNs("com.codecatalyst.promise"), "isHandled")
+
+   getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "self")
+   getlocal1
+   callpropvoid        QName(PackageNamespace(""), "reject"), 1
+
+L8:
+   returnvoid
+  end ; code
+ end ; body
+end ; method

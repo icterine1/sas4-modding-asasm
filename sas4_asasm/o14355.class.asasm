@@ -1,0 +1,124 @@
+class
+ refid "o14355"
+ instance QName(PackageNamespace(""), "o14355")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  iinit
+   refid "o14355/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  refid "o14355/class/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 1
+   code
+    getlocal0
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "WorldWorker_swf$7d3a5c06abf1833f0a0db37228cbc3222127680311")
+    findproperty        QName(PrivateNamespace("o14355"), "o16448")
+    swap
+    setproperty         QName(PrivateNamespace("o14355"), "o16448")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("o14355"), "o16448") type QName(PackageNamespace(""), "Class") end
+ trait method QName(PackageNamespace(""), "o11715")
+  method
+   name "o11715"
+   refid "o14355/class/o11715"
+   param QName(PackageNamespace(""), "Function")
+   param QName(PackageNamespace("flash.display"), "DisplayObjectContainer")
+   returns QName(PackageNamespace(""), "o20139")
+   flag HAS_OPTIONAL
+   flag HAS_PARAM_NAMES
+   optional Null()
+   paramname "o16316"
+   paramname "o17588"
+   body
+    maxstack 3
+    localcount 6
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     pushnull
+     setlocal            4
+
+     pushnull
+     setlocal            5
+
+     pushnull
+     setlocal3
+
+     getlex              QName(PackageNamespace(""), "Main")
+     getproperty         QName(PackageNamespace(""), "o15767")
+     iffalse             L30
+
+     findpropstrict      QName(PackageNamespace(""), "o13407")
+     findpropstrict      QName(PrivateNamespace("o14355"), "o16448")
+     constructprop       QName(PrivateNamespace("o14355"), "o16448"), 0
+     constructprop       QName(PackageNamespace(""), "o13407"), 1
+     coerce              QName(PackageNamespace(""), "o13407")
+     setlocal            4
+
+     findpropstrict      QName(PackageNamespace(""), "o1974")
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "o5964")
+     getlocal            4
+     getproperty         QName(PackageNamespace(""), "o17787")
+     constructprop       QName(PackageNamespace(""), "o1974"), 2
+     coerce              QName(PackageNamespace(""), "o1974")
+     dup
+     setlocal            5
+
+     getlocal1
+     setproperty         QName(PackageNamespace(""), "o16316")
+
+     getlocal            5
+     returnvalue
+
+L30:
+     findpropstrict      QName(PackageNamespace(""), "o5165")
+     constructprop       QName(PackageNamespace(""), "o5165"), 0
+     coerce              QName(PackageNamespace(""), "o5165")
+     setlocal3
+
+     getlocal2
+     pushnull
+     ifeq                L40
+
+     getlocal2
+     getlocal3
+     callpropvoid        QName(PackageNamespace(""), "addChild"), 1
+
+L40:
+     getlocal3
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

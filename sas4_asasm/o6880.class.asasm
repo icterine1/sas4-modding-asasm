@@ -1,0 +1,450 @@
+class
+ refid "o6880"
+ instance QName(PackageNamespace(""), "o6880")
+  extends QName(PackageNamespace(""), "o8023")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("o6880")
+  iinit
+   name "o6880"
+   refid "o6880/instance/init"
+   param QName(PackageNamespace(""), "o4332")
+   flag HAS_PARAM_NAMES
+   paramname "o6691"
+   body
+    maxstack 18
+    localcount 2
+    initscopedepth 0
+    maxscopedepth 1
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+     getlex              QName(PackageNamespace(""), "Number")
+     applytype           1
+     getlocal0
+     pushbyte            1
+     pushbyte            0
+     pushbyte            0
+     pushbyte            0
+     pushbyte            0
+     pushbyte            1
+     pushbyte            0
+     pushbyte            0
+     pushbyte            0
+     pushbyte            0
+     pushbyte            1
+     pushbyte            0
+     pushbyte            0
+     pushbyte            0
+     pushbyte            0
+     pushbyte            1
+     newarray            16
+     call                1
+     findproperty        QName(PrivateNamespace("o6880"), "o8154")
+     swap
+     setproperty         QName(PrivateNamespace("o6880"), "o8154")
+
+     getlocal0
+     constructsuper      0
+
+     getlocal0
+     getlocal1
+     setproperty         QName(PrivateNamespace("o6880"), "o6691")
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+  trait slot QName(PrivateNamespace("o6880"), "o6691") type QName(PackageNamespace(""), "o4332") end
+  trait slot QName(PrivateNamespace("o6880"), "o8630") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("o6880"), "o16388") type QName(PackageNamespace(""), "Number") end
+  trait slot QName(PrivateNamespace("o6880"), "o8154") type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "Number")>) end
+  trait const QName(PrivateNamespace("o6880"), "o12947") type QName(PackageNamespace(""), "int") value Integer(15) end
+  trait method QName(PackageNamespace(""), "o2008")
+   method
+    name "o2008"
+    refid "o6880/instance/o2008"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional False()
+    paramname "o8630"
+    paramname "o9226"
+    body
+     maxstack 6
+     localcount 3
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlocal2
+      iffalse             L9
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o11954")
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      callpropvoid        QName(Namespace("o5448"), "o9226"), 1
+
+L9:
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      pushbyte            1
+      setproperty         QName(Namespace("o4332"), "o2158")
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("o6880"), "o8630")
+
+      pushbyte            0
+      findproperty        QName(PrivateNamespace("o6880"), "o16388")
+      swap
+      setproperty         QName(PrivateNamespace("o6880"), "o16388")
+
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlocal0
+      pushdouble          0.03333333333333333
+      getlex              QName(PrivateNamespace("o6880"), "o4813")
+      getlocal1
+      pushbyte            30
+      multiply
+      pushbyte            1
+      add
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "o4767"), 5
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o6880"), "o4813")
+   method
+    name "o4813"
+    refid "o6880/instance/o6880/instance/o4813"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6880"), "o16388")
+      getlex              QName(PrivateNamespace("o6880"), "o8630")
+      ifngt               L9
+
+      getlex              QName(PrivateNamespace("o6880"), "o8630")
+      findproperty        QName(PrivateNamespace("o6880"), "o16388")
+      swap
+      setproperty         QName(PrivateNamespace("o6880"), "o16388")
+
+L9:
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getproperty         QName(Namespace("o4332"), "colorTransform")
+      pushnull
+      ifeq                L18
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getproperty         QName(Namespace("o4332"), "colorTransform")
+      findproperty        QName(PrivateNamespace("o6880"), "o8154")
+      swap
+      setproperty         QName(PrivateNamespace("o6880"), "o8154")
+
+L18:
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      pushbyte            15
+      getlex              QName(PrivateNamespace("o6880"), "o16388")
+      getlex              QName(PrivateNamespace("o6880"), "o8630")
+      divide
+      setproperty         MultinameL([PrivateNamespace("o6880"), ProtectedNamespace("o6880"), StaticProtectedNs("o6880"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6880"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      setproperty         QName(Namespace("o4332"), "colorTransform")
+
+      findpropstrict      QName(PrivateNamespace("o6880"), "o16388")
+      dup
+      getproperty         QName(PrivateNamespace("o6880"), "o16388")
+      pushdouble          0.03333333333333333
+      add
+      setproperty         QName(PrivateNamespace("o6880"), "o16388")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o20013")
+   method
+    name "o20013"
+    refid "o6880/instance/o20013"
+    param QName(PackageNamespace(""), "Number")
+    param QName(PackageNamespace(""), "Boolean")
+    param QName(PackageNamespace(""), "Boolean")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_OPTIONAL
+    flag HAS_PARAM_NAMES
+    optional False()
+    optional False()
+    paramname "o8630"
+    paramname "o17695"
+    paramname "o17013"
+    body
+     maxstack 6
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      pushbyte            1
+      setproperty         QName(Namespace("o4332"), "o2158")
+
+      getlocal0
+      getlocal1
+      setproperty         QName(PrivateNamespace("o6880"), "o8630")
+
+      pushbyte            0
+      findproperty        QName(PrivateNamespace("o6880"), "o16388")
+      swap
+      setproperty         QName(PrivateNamespace("o6880"), "o16388")
+
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlocal0
+      pushdouble          0.03333333333333333
+      getlex              QName(PrivateNamespace("o6880"), "o5871")
+      getlocal1
+      pushbyte            30
+      multiply
+      pushbyte            1
+      add
+      pushtrue
+      callpropvoid        QName(PackageNamespace(""), "o4767"), 5
+
+      getlocal2
+      iffalse             L30
+
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlocal0
+      getlocal1
+      getlex              QName(PrivateNamespace("o6880"), "o17454")
+      callpropvoid        QName(PackageNamespace(""), "o9310"), 3
+
+L30:
+      getlocal3
+      iffalse             L38
+
+      getlex              QName(PackageNamespace(""), "o1051")
+      getlocal0
+      getlocal1
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getproperty         QName(Namespace("o5264"), "o19115")
+      callpropvoid        QName(PackageNamespace(""), "o9310"), 3
+
+L38:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o6880"), "o5871")
+   method
+    name "o5871"
+    refid "o6880/instance/o6880/instance/o5871"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 5
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6880"), "o16388")
+      getlex              QName(PrivateNamespace("o6880"), "o8630")
+      ifngt               L9
+
+      getlex              QName(PrivateNamespace("o6880"), "o8630")
+      findproperty        QName(PrivateNamespace("o6880"), "o16388")
+      swap
+      setproperty         QName(PrivateNamespace("o6880"), "o16388")
+
+L9:
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getproperty         QName(Namespace("o4332"), "colorTransform")
+      pushnull
+      ifeq                L18
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getproperty         QName(Namespace("o4332"), "colorTransform")
+      findproperty        QName(PrivateNamespace("o6880"), "o8154")
+      swap
+      setproperty         QName(PrivateNamespace("o6880"), "o8154")
+
+L18:
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      pushbyte            15
+      pushbyte            1
+      getlex              QName(PrivateNamespace("o6880"), "o16388")
+      getlex              QName(PrivateNamespace("o6880"), "o8630")
+      divide
+      subtract
+      setproperty         MultinameL([PrivateNamespace("o6880"), ProtectedNamespace("o6880"), StaticProtectedNs("o6880"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6880"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      setproperty         QName(Namespace("o4332"), "colorTransform")
+
+      findpropstrict      QName(PrivateNamespace("o6880"), "o16388")
+      dup
+      getproperty         QName(PrivateNamespace("o6880"), "o16388")
+      pushdouble          0.03333333333333333
+      add
+      setproperty         QName(PrivateNamespace("o6880"), "o16388")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("o6880"), "o17454")
+   method
+    name "o17454"
+    refid "o6880/instance/o6880/instance/o17454"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 2
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o11954")
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      callpropvoid        QName(Namespace("o5448"), "o17454"), 1
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o890")
+   method
+    name "o890"
+    refid "o6880/instance/o890"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      pushbyte            15
+      pushbyte            1
+      setproperty         MultinameL([PrivateNamespace("o6880"), ProtectedNamespace("o6880"), StaticProtectedNs("o6880"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6880"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      setproperty         QName(Namespace("o4332"), "colorTransform")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o12339")
+   method
+    name "o12339"
+    refid "o6880/instance/o12339"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 3
+     localcount 1
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      pushbyte            15
+      pushbyte            0
+      setproperty         MultinameL([PrivateNamespace("o6880"), ProtectedNamespace("o6880"), StaticProtectedNs("o6880"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6880"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      setproperty         QName(Namespace("o4332"), "colorTransform")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PackageNamespace(""), "o4236")
+   method
+    name "o4236"
+    refid "o6880/instance/o4236"
+    param QName(PackageNamespace(""), "Number")
+    returns QName(PackageNamespace(""), "void")
+    flag HAS_PARAM_NAMES
+    paramname "alpha"
+    body
+     maxstack 3
+     localcount 2
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      pushbyte            1
+      setproperty         QName(Namespace("o4332"), "o2158")
+
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      pushbyte            15
+      getlocal1
+      setproperty         MultinameL([PrivateNamespace("o6880"), ProtectedNamespace("o6880"), StaticProtectedNs("o6880"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6880"), Namespace("http://adobe.com/AS3/2006/builtin")])
+
+      getlex              QName(PrivateNamespace("o6880"), "o6691")
+      getlex              QName(PrivateNamespace("o6880"), "o8154")
+      setproperty         QName(Namespace("o4332"), "colorTransform")
+
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+ end ; instance
+ cinit
+  refid "o6880/class/init"
+  body
+   maxstack 0
+   localcount 1
+   initscopedepth 0
+   maxscopedepth 0
+   code
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+end ; class
