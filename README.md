@@ -43,11 +43,15 @@ After pulling this repository, you can build the SWF by running `asm_swf.ps1`. A
 
 ### Editing the SWF
 
-While it is technically possible to edit the raw `.asasm` files, doing so is quite tedious. It is recommended to build the SWF (see previous section for details) and then edit it using [FFDec](https://github.com/jindrapetrik/jpexs-decompiler/tree/master).
+While it is technically possible to edit the raw `.asasm` files, doing so is quite tedious. It is recommended to build the SWF (see previous section for details) and then edit it using FFDec.
 
 ### Pushing changes
 
-Once you feel like pushing your changes, you must update  `sas4_asasm` according; in other words, disassemble the SWF you just edited. This can be done by running `disasm_swf.ps1 --src <path to swf you edited>`
+Once you feel like pushing your changes, you must update  `sas4_asasm` accordingly; in other words, disassemble the SWF you just edited. This can be done by running `disasm_swf.ps1 --src <path to swf you edited>`
+
+### Merge conflicts
+
+In general, try to structure branches and Git history in a way that avoids merge conflicts. Even if there are no merge conflicts, you should still open the SWF in FFDec to make sure the modified packages look right. If you do encounter merge conflicts, resolving them by going through the `.asasm` files is likely going to be very messy. It's probably better to open the SWF of each branch in FFDec and look at the decompiled Actionscript of each package that has merge conflicts to figure out how to resolve them.
 
 ## Setup/Dependencies
 
