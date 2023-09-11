@@ -1,4 +1,4 @@
-# SAS4 Modding ASASMs
+# SAS4 Modding .asasm Files
 
 This repository is a stand-in for a working actionscript project.
 
@@ -56,6 +56,10 @@ Once you feel like pushing your changes, you must update  `sas4_asasm` according
 It is highly recommended to use [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3) to run the powershell scripts. Windows by default comes with Powershell 5, which may still work, but compatibility with Powershell 5 is not maintained.
 
 You must have [RABCDasm](https://github.com/CyberShadow/RABCDAsm) installed (make sure it is in your PATH) for the scripts to work.
+
+### Git Config
+
+After cloning the repository, run `git config --local include.path ../.git_config` so that the Git config settings in `.git_config` get applied.
 
 ### Other
 
