@@ -10,8 +10,8 @@ function PrintMessage {
     Write-Output "----------------------------------------------"
 }
 
-if (git status --porcelain) {
-    Write-Warning "There are unstaged changes, which may be overwritten when disassembling the swf. Are you sure you want to proceed?" -WarningAction Inquire
+if (git status --porcelain | Where {$_ -match 'sas4_asasm/'}) {
+    Write-Warning "There are unstaged changes in sas4_asasm/, which may be overwritten when disassembling the swf. Are you sure you want to proceed?" -WarningAction Inquire
 }
 
 $asasmPath = "sas4_asasm"
