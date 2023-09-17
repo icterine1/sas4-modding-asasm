@@ -9,7 +9,7 @@ function PrintMessage {
 PrintMessage -message "Cleaning build folder"
 
 $buildPath = "build"
-[void](Remove-Item -Recurse -Force $buildPath)
+[void](Remove-Item -Recurse -Force $buildPath -ErrorAction SilentlyContinue)
 try {
     [void](mkdir $buildPath)
 } catch {

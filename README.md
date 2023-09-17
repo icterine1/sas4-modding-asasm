@@ -69,4 +69,6 @@ After cloning the repository, run `git config --local include.path ../.git_confi
 
 Use [FFDec](https://github.com/jindrapetrik/jpexs-decompiler/tree/master) to decompile, inspect, edit, and debug SWF files.
 
-The [Debug Flash Player](https://archive.org/details/flashplayer_32_sa_debug_2) can be useful for debugging and viewing errors, but it runs significantly slower.
+Play the SWF using the [Standalone Flash Projector](https://archive.org/details/adobe-flash-player-projector). You will need to use the persistence.swf method to log in.
+
+The [Debug Flash Projector](https://archive.org/details/flashplayer_32_sa_debug_2) can be useful for debugging and viewing errors, but it runs significantly slower.
