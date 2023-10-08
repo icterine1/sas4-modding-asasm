@@ -1,0 +1,156 @@
+class
+ refid "debug:Logger"
+ instance QName(PackageNamespace("debug"), "Logger")
+  extends QName(PackageNamespace(""), "Object")
+  flag SEALED
+  flag PROTECTEDNS
+  protectedns ProtectedNamespace("debug:Logger")
+  iinit
+   name "debug:Logger/Logger"
+   refid "debug:Logger/instance/init"
+   body
+    maxstack 1
+    localcount 1
+    initscopedepth 4
+    maxscopedepth 5
+    code
+     getlocal0
+     pushscope
+
+     getlocal0
+     constructsuper      0
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; instance
+ cinit
+  name ""
+  refid "debug:Logger/class/init"
+  body
+   maxstack 3
+   localcount 1
+   initscopedepth 3
+   maxscopedepth 4
+   code
+    getlocal0
+    pushscope
+
+    findproperty        QName(PrivateNamespace("debug:Logger"), "messages")
+    getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
+    getlex              QName(PackageNamespace(""), "String")
+    applytype           1
+    construct           0
+    setproperty         QName(PrivateNamespace("debug:Logger"), "messages")
+
+    findproperty        QName(PrivateNamespace("debug:Logger"), "dtf")
+    findpropstrict      QName(PackageNamespace("flash.globalization"), "DateTimeFormatter")
+    pushstring          "en-US"
+    constructprop       QName(PackageNamespace("flash.globalization"), "DateTimeFormatter"), 1
+    initproperty        QName(PrivateNamespace("debug:Logger"), "dtf")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait slot QName(PrivateNamespace("debug:Logger"), "messages") slotid 1 type TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>) end
+ trait const QName(PrivateNamespace("debug:Logger"), "dtf") slotid 2 type QName(PackageNamespace("flash.globalization"), "DateTimeFormatter") end
+ trait method QName(PrivateNamespace("debug:Logger"), "getCurrentTime") flag FINAL dispid 3
+  method
+   name "debug:Logger/private/getCurrentTime"
+   refid "debug:Logger/class/debug:Logger/class/getCurrentTime"
+   returns QName(PackageNamespace(""), "String")
+   body
+    maxstack 2
+    localcount 1
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     getlocal0
+     pushscope
+
+     getlex              QName(PrivateNamespace("debug:Logger"), "dtf")
+     findpropstrict      QName(PackageNamespace(""), "Date")
+     constructprop       QName(PackageNamespace(""), "Date"), 0
+     callproperty        Multiname("format", [PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("debug"), PackageInternalNs("debug"), PrivateNamespace("debug:Logger"), ProtectedNamespace("debug:Logger"), StaticProtectedNs("debug:Logger"), PrivateNamespace("Logger.as$1410")]), 1
+     returnvalue
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "log") flag FINAL dispid 4
+  method
+   name "debug:Logger/log"
+   refid "debug:Logger/class/log"
+   param QName(PackageNamespace(""), "String")
+   returns QName(PackageNamespace(""), "void")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     getlocal0
+     pushscope
+
+     debug               1, "message", 0, 0
+     getlex              QName(PrivateNamespace("debug:Logger"), "messages")
+     findpropstrict      QName(PrivateNamespace("debug:Logger"), "getCurrentTime")
+     callproperty        QName(PrivateNamespace("debug:Logger"), "getCurrentTime"), 0
+     pushstring          " "
+     add
+     getlocal1
+     add
+     callpropvoid        Multiname("push", [PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("debug"), PackageInternalNs("debug"), PrivateNamespace("debug:Logger"), ProtectedNamespace("debug:Logger"), StaticProtectedNs("debug:Logger"), PrivateNamespace("Logger.as$1410")]), 1
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+ trait method QName(PackageNamespace(""), "save") flag FINAL dispid 5
+  method
+   name "debug:Logger/save"
+   refid "debug:Logger/class/save"
+   param QName(PackageNamespace("flash.events"), "KeyboardEvent")
+   body
+    maxstack 3
+    localcount 2
+    initscopedepth 3
+    maxscopedepth 4
+    code
+     getlocal0
+     pushscope
+
+     debug               1, "param1", 0, 0
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "ctrlKey")
+     not
+     iffalse             L8
+
+     returnvoid
+
+L8:
+     getlocal1
+     getproperty         QName(PackageNamespace(""), "charCode")
+     pushbyte            108
+     ifeq                L13
+
+     returnvoid
+
+L13:
+     findpropstrict      QName(PackageNamespace("flash.net"), "FileReference")
+     constructprop       QName(PackageNamespace("flash.net"), "FileReference"), 0
+     getlex              QName(PrivateNamespace("debug:Logger"), "messages")
+     pushstring          "\n"
+     callproperty        Multiname("join", [PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin"), PackageNamespace("debug"), PackageInternalNs("debug"), PrivateNamespace("debug:Logger"), ProtectedNamespace("debug:Logger"), StaticProtectedNs("debug:Logger"), PrivateNamespace("Logger.as$1410")]), 1
+     pushstring          "hydar.json"
+     callpropvoid        QName(PackageNamespace(""), "save"), 2
+
+     returnvoid
+    end ; code
+   end ; body
+  end ; method
+ end ; trait
+end ; class

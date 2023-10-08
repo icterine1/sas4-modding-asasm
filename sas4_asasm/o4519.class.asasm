@@ -21,6 +21,10 @@ class
      getlocal0
      constructsuper      0
 
+     getlex              QName(PackageNamespace("debug"), "Logger")
+     pushstring          "test"
+     callpropvoid        QName(PackageNamespace(""), "log"), 1
+
      getlex              QName(PackageNamespace("flash.system"), "Security")
      pushstring          "*"
      callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
@@ -70,6 +74,12 @@ class
       getlex              QName(PackageNamespace(""), "o14634")
       callpropvoid        QName(PackageNamespace(""), "test"), 0
 
+      getlex              QName(PackageNamespace(""), "stage")
+      pushstring          "keyUp"
+      getlex              QName(PackageNamespace("debug"), "Logger")
+      getproperty         QName(PackageNamespace(""), "save")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
       getlex              QName(PackageNamespace(""), "o4519")
       getlex              QName(PackageNamespace(""), "stage")
       setproperty         QName(PackageNamespace(""), "stage")
@@ -80,32 +90,32 @@ class
       pushstring          "isOnKong"
       getproperty         MultinameL([PrivateNamespace("o4519"), ProtectedNamespace("o4519"), StaticProtectedNs("o4519"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4519"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifne                L21
+      ifne                L26
 
       pushfalse
-      jump                L26
+      jump                L31
 
-L21:
+L26:
       getlex              QName(PackageNamespace(""), "stage")
       getproperty         QName(PackageNamespace(""), "loaderInfo")
       getproperty         QName(PackageNamespace(""), "parameters")
       pushstring          "isOnKong"
       getproperty         MultinameL([PrivateNamespace("o4519"), ProtectedNamespace("o4519"), StaticProtectedNs("o4519"), StaticProtectedNs("flash.display:MovieClip"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4519"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L26:
+L31:
       findproperty        QName(PackageNamespace(""), "o17061")
       swap
       setproperty         QName(PackageNamespace(""), "o17061")
 
       pushstring          ""
       pushstring          "KongTest"
-      ifne                L36
+      ifne                L41
 
       pushtrue
       findproperty        QName(PackageNamespace(""), "o17061")
       swap
       setproperty         QName(PackageNamespace(""), "o17061")
 
-L36:
+L41:
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0
       getlex              QName(PackageNamespace(""), "o14754")
@@ -129,22 +139,22 @@ L36:
       callpropvoid        QName(PackageNamespace(""), "init"), 1
 
       getlex              QName(PackageNamespace(""), "o17061")
-      iffalse             L61
+      iffalse             L66
 
       getlex              QName(PackageNamespace(""), "HostIconMovieClip")
       pushbyte            2
       setproperty         QName(PackageNamespace(""), "gotoFrameIndex")
 
-      jump                L64
+      jump                L69
 
-L61:
+L66:
       getlex              QName(PackageNamespace(""), "HostIconMovieClip")
       pushbyte            1
       setproperty         QName(PackageNamespace(""), "gotoFrameIndex")
 
-L64:
+L69:
       getlex              QName(PackageNamespace(""), "o17061")
-      iffalse             L74
+      iffalse             L79
 
       findpropstrict      QName(PackageNamespace(""), "o4787")
       constructprop       QName(PackageNamespace(""), "o4787"), 0
@@ -156,17 +166,17 @@ L64:
       getlex              QName(PackageNamespace(""), "stage")
       callpropvoid        QName(PackageNamespace(""), "init"), 1
 
-L74:
+L79:
       getlex              QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "o9745")
-      iffalse             L80
+      iffalse             L85
 
       findpropstrict      QName(PackageNamespace(""), "initialise")
       callpropvoid        QName(PackageNamespace(""), "initialise"), 0
 
-      jump                L86
+      jump                L91
 
-L80:
+L85:
       getlex              QName(PackageNamespace(""), "o8116")
       pushnull
       getlex              QName(PackageNamespace(""), "o14795")
@@ -174,7 +184,7 @@ L80:
       newfunction         "o4519/instance/o4464/inline_method"
       callpropvoid        QName(PackageNamespace(""), "o19926"), 3
 
-L86:
+L91:
       findpropstrict      QName(PackageNamespace(""), "removeEventListener")
       pushstring          "addedToStage"
       getlex              QName(PackageNamespace(""), "o4464")

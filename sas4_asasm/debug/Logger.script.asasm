@@ -1,0 +1,30 @@
+script
+ sinit
+  name ""
+  refid "debug:Logger/init"
+  body
+   maxstack 2
+   localcount 1
+   initscopedepth 1
+   maxscopedepth 3
+   code
+    getlocal0
+    pushscope
+
+    findpropstrict      Multiname("Logger", [PackageNamespace("debug")])
+    getlex              QName(PackageNamespace(""), "Object")
+    pushscope
+
+    getlex              QName(PackageNamespace(""), "Object")
+    newclass            "debug:Logger"
+    popscope
+    initproperty        QName(PackageNamespace("debug"), "Logger")
+
+    returnvoid
+   end ; code
+  end ; body
+ end ; method
+ trait class QName(PackageNamespace("debug"), "Logger") slotid 1
+  #include "Logger.class.asasm"
+ end ; trait
+end ; script
