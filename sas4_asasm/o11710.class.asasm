@@ -1015,54 +1015,51 @@ L265:
      returnvalue
 
 L271:
-     jump                L321
-
-L272:
      label
      getlocal            25
      pushbyte            -1
-     ifne                L291
+     ifne                L290
 
      getlocal            17
      pushbyte            1
      subtract
      pushbyte            0
-     ifnge               L285
+     ifnge               L284
 
      getlocal            17
      pushbyte            1
      subtract
-     jump                L288
+     jump                L287
 
-L285:
+L284:
      getlocal            11
      pushbyte            1
      subtract
-L288:
+L287:
      convert_i
      setlocal            24
 
-     jump                L303
+     jump                L302
 
-L291:
+L290:
      getlocal            17
      pushbyte            1
      add
      getlocal            11
-     ifnlt               L300
+     ifnlt               L299
 
      getlocal            17
      pushbyte            1
      add
-     jump                L301
+     jump                L300
 
+L299:
+     pushbyte            0
 L300:
-     pushbyte            0
-L301:
      convert_i
      setlocal            24
 
-L303:
+L302:
      findpropstrict      QName(PackageNamespace(""), "o4773")
      getlocal2
      getlocal3
@@ -1075,7 +1072,7 @@ L303:
      setlocal            16
 
      getlocal            8
-     ifngt               L320
+     ifngt               L319
 
      getlocal            24
      setlocal            17
@@ -1083,15 +1080,9 @@ L303:
      getlocal            16
      setlocal            8
 
-     jump                L321
+     jump                L271
 
-L320:
-     jump                L322
-
-L321:
-     jump                L272
-
-L322:
+L319:
      getlocal1
      pushbyte            0
      getlocal            17
@@ -2479,9 +2470,6 @@ L133:
      getlocal0
      pushscope
 
-     pushnull
-     setlocal            9
-
      pushnan
      setlocal            10
 
@@ -2650,9 +2638,9 @@ L133:
      pushbyte            0
      setlocal            20
 
-     jump                L191
+     jump                L189
 
-L145:
+L143:
      label
      getlocal            33
      getlocal            20
@@ -2694,14 +2682,14 @@ L145:
      setlocal            15
 
      getlocal            21
-     ifngt               L183
+     ifngt               L181
 
      returnvoid
 
-L183:
+L181:
      getlocal            15
      getlocal            8
-     ifngt               L190
+     ifngt               L188
 
      getlocal            15
      setlocal            8
@@ -2709,12 +2697,12 @@ L183:
      getlocal            20
      setlocal            28
 
-L190:
+L188:
      inclocal_i          20
-L191:
+L189:
      getlocal            20
      getlocal            7
-     iflt                L145
+     iflt                L143
 
      getlocal            28
      dup
@@ -2723,16 +2711,16 @@ L191:
      pushbyte            1
      add
      getlocal            7
-     ifnlt               L205
+     ifnlt               L203
 
      getlocal            26
      pushbyte            1
      add
-     jump                L206
+     jump                L204
 
-L205:
+L203:
      pushbyte            0
-L206:
+L204:
      convert_i
      setlocal            19
 
@@ -2751,7 +2739,7 @@ L206:
      getlocal            8
      getlex              QName(PackageNamespace(""), "Number")
      getproperty         QName(PackageNamespace(""), "MIN_VALUE")
-     ifnlt               L270
+     ifnlt               L268
 
      getlocal1
      pushbyte            1
@@ -2809,7 +2797,7 @@ L206:
 
      returnvoid
 
-L270:
+L268:
      getlocal            18
      getlocal            13
      getproperty         QName(PackageNamespace(""), "x")
@@ -2860,7 +2848,7 @@ L270:
 
      getlocal            30
      pushbyte            0
-     ifnle               L386
+     ifnle               L384
 
      getlocal            18
      getlocal            13
@@ -2884,11 +2872,11 @@ L270:
      getlocal            21
      getlocal            21
      multiply
-     ifngt               L343
+     ifngt               L341
 
      returnvoid
 
-L343:
+L341:
      getlocal1
      pushbyte            1
      setproperty         QName(PackageNamespace(""), "o13593")
@@ -2939,12 +2927,12 @@ L343:
      pushbyte            0
      setproperty         Multiname("key", [PrivateNamespace("o11710"), StaticProtectedNs("o11710"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o11710"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-     jump                L540
+     jump                L538
 
-L386:
+L384:
      getlocal            29
      pushbyte            0
-     ifnle               L456
+     ifnle               L454
 
      getlocal            18
      getlocal            22
@@ -2968,11 +2956,11 @@ L386:
      getlocal            21
      getlocal            21
      multiply
-     ifngt               L413
+     ifngt               L411
 
      returnvoid
 
-L413:
+L411:
      getlocal1
      pushbyte            1
      setproperty         QName(PackageNamespace(""), "o13593")
@@ -3023,9 +3011,9 @@ L413:
      pushbyte            0
      setproperty         Multiname("key", [PrivateNamespace("o11710"), StaticProtectedNs("o11710"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o11710"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-     jump                L540
+     jump                L538
 
-L456:
+L454:
      pushdouble          0.5
      getlocal            13
      getproperty         QName(PackageNamespace(""), "x")
@@ -3068,11 +3056,11 @@ L456:
      setlocal            8
 
      getlocal            21
-     ifngt               L497
+     ifngt               L495
 
      returnvoid
 
-L497:
+L495:
      getlocal1
      pushbyte            1
      setproperty         QName(PackageNamespace(""), "o13593")
@@ -3124,7 +3112,7 @@ L497:
      pushbyte            0
      setproperty         Multiname("key", [PrivateNamespace("o11710"), StaticProtectedNs("o11710"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o11710"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L540:
+L538:
      returnvoid
     end ; code
    end ; body

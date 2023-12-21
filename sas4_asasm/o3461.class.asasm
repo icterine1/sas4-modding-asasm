@@ -1476,9 +1476,6 @@ L90:
       getlocal0
       pushscope
 
-      pushnull
-      setlocal3
-
       pushnan
       setlocal            5
 
@@ -1494,9 +1491,9 @@ L90:
       getlex              QName(PrivateNamespace("o3461"), "o17918")
       setlocal            6
 
-      jump                L40
+      jump                L38
 
-L15:
+L13:
       label
       getlocal            6
       getlocal            7
@@ -1508,7 +1505,7 @@ L15:
       getlocal            5
       getproperty         MultinameL([PrivateNamespace("o3461"), ProtectedNamespace("o3461"), StaticProtectedNs("o3461"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o3461"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifeq                L40
+      ifeq                L38
 
       getlex              QName(PrivateNamespace("o3461"), "o17918")
       getlocal            5
@@ -1527,9 +1524,9 @@ L15:
       getlocal2
       setproperty         Multiname("soundTransform", [PrivateNamespace("o3461"), ProtectedNamespace("o3461"), StaticProtectedNs("o3461"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o3461"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L40:
+L38:
       hasnext2            6, 7
-      iftrue              L15
+      iftrue              L13
 
       pushbyte            0
       setlocal            9
@@ -1537,9 +1534,9 @@ L40:
       getlex              QName(PrivateNamespace("o3461"), "o7628")
       setlocal            8
 
-      jump                L70
+      jump                L68
 
-L47:
+L45:
       label
       getlocal            8
       getlocal            9
@@ -1554,7 +1551,7 @@ L47:
 
       getlocal1
       pushnull
-      ifeq                L70
+      ifeq                L68
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "soundTransform")
@@ -1569,9 +1566,9 @@ L47:
       getlocal2
       setproperty         QName(PackageNamespace(""), "soundTransform")
 
-L70:
+L68:
       hasnext2            8, 9
-      iftrue              L47
+      iftrue              L45
 
       returnvoid
      end ; code
@@ -1777,18 +1774,15 @@ L19:
       pushnull
       setlocal1
 
-      pushnull
-      setlocal2
-
       pushbyte            0
       setlocal            4
 
       getlex              QName(PrivateNamespace("o3461"), "o7427")
       setlocal3
 
-      jump                L19
+      jump                L17
 
-L11:
+L9:
       label
       getlocal3
       getlocal            4
@@ -1799,9 +1793,9 @@ L11:
       getlocal1
       callpropvoid        QName(PackageNamespace(""), "stop"), 0
 
-L19:
+L17:
       hasnext2            3, 4
-      iftrue              L11
+      iftrue              L9
 
       findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
       pushtrue
@@ -1816,9 +1810,9 @@ L19:
       getlex              QName(PrivateNamespace("o3461"), "o19005")
       setlocal            5
 
-      jump                L40
+      jump                L38
 
-L32:
+L30:
       label
       getlocal            5
       getlocal            6
@@ -1829,9 +1823,9 @@ L32:
       getlocal1
       callpropvoid        QName(PackageNamespace(""), "stop"), 0
 
-L40:
+L38:
       hasnext2            5, 6
-      iftrue              L32
+      iftrue              L30
 
       findpropstrict      QName(PackageNamespace("flash.utils"), "Dictionary")
       pushtrue
@@ -1852,9 +1846,9 @@ L40:
       getlex              QName(PrivateNamespace("o3461"), "o7628")
       setlocal            7
 
-      jump                L65
+      jump                L63
 
-L57:
+L55:
       label
       getlocal            7
       getlocal            8
@@ -1865,9 +1859,9 @@ L57:
       getlocal1
       callpropvoid        QName(PackageNamespace(""), "stop"), 0
 
-L65:
+L63:
       hasnext2            7, 8
-      iftrue              L57
+      iftrue              L55
 
       pushfalse
       findproperty        QName(PackageNamespace(""), "o12964")

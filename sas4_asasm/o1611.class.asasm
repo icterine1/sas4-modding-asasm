@@ -128,7 +128,7 @@ L39:
       getlocal            6
       pushstring          "NightmareBrackets"
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
-      iffalse             L57
+      iffalse             L62
 
       getlocal            6
       pushstring          "NightmareBrackets"
@@ -147,7 +147,6 @@ L39:
       getlex              QName(PackageNamespace(""), "o8974")
       callpropvoid        QName(PrivateNamespace("o1611"), "o16504"), 1
 
-L57:
       jump                L62
 
 L58:
@@ -247,10 +246,10 @@ L133:
       getlocal1
       pushstring          "FestivalHoliday"
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
-      iffalse             L219
+      iffalse             L228
 
       getlex              QName(PrivateNamespace("o1611"), "o7131")
-      iffalse             L219
+      iffalse             L228
 
       pushbyte            0
       setlocal            13
@@ -260,7 +259,7 @@ L133:
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
       setlocal            12
 
-      jump                L176
+      jump                L185
 
 L146:
       label
@@ -279,7 +278,7 @@ L146:
       dup
       setlocal            8
 
-      iffalse             L176
+      iffalse             L185
 
       getlex              QName(PrivateNamespace("o1611"), "o7131")
       findpropstrict      QName(PackageNamespace(""), "o20567")
@@ -300,6 +299,18 @@ L146:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
 L176:
+      pushstring          "Halloween"
+      getlocal2
+      ifne                L185
+
+      getlex              QName(PrivateNamespace("o1611"), "o7131")
+      findpropstrict      QName(PackageNamespace(""), "o20567")
+      pushstring          "Halloween2"
+      getlocal            8
+      constructprop       QName(PackageNamespace(""), "o20567"), 2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L185:
       hasnext2            12, 13
       iftrue              L146
 
@@ -309,9 +320,9 @@ L176:
       getlex              QName(PrivateNamespace("o1611"), "o7131")
       setlocal            14
 
-      jump                L193
+      jump                L202
 
-L183:
+L192:
       label
       getlocal            14
       getlocal            15
@@ -321,16 +332,16 @@ L183:
       setlocal            9
 
       getproperty         QName(PackageNamespace(""), "o13779")
-      iffalse             L193
+      iffalse             L202
 
       inclocal_i          7
-L193:
+L202:
       hasnext2            14, 15
-      iftrue              L183
+      iftrue              L192
 
       getlocal            7
       pushbyte            1
-      ifngt               L219
+      ifngt               L228
 
       pushbyte            0
       setlocal            17
@@ -338,9 +349,9 @@ L193:
       getlex              QName(PrivateNamespace("o1611"), "o7131")
       setlocal            16
 
-      jump                L212
+      jump                L221
 
-L203:
+L212:
       label
       getlocal            16
       getlocal            17
@@ -352,20 +363,20 @@ L203:
       pushfalse
       setproperty         QName(PackageNamespace(""), "o13779")
 
-L212:
+L221:
       hasnext2            16, 17
-      iftrue              L203
+      iftrue              L212
 
       getlex              QName(PackageNamespace(""), "trace")
       getglobalscope
       pushstring          "More than on Festival Holiday active in SKU settings, disabling all"
       call                1
       pop
-L219:
+L228:
       getlocal1
       pushstring          "ServerMessage"
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
-      iffalse             L247
+      iffalse             L256
 
       getlocal1
       pushstring          "ServerMessage"
@@ -394,7 +405,7 @@ L219:
       swap
       setproperty         QName(PackageNamespace(""), "o18749")
 
-L247:
+L256:
       returnvoid
      end ; code
     end ; body
@@ -472,18 +483,15 @@ L8:
       getlocal0
       pushscope
 
-      pushint             2147483647
-      setlocal2
-
       pushbyte            0
       setlocal            5
 
       getlocal1
       setlocal            4
 
-      jump                L22
+      jump                L20
 
-L9:
+L7:
       label
       getlocal            4
       getlocal            5
@@ -492,17 +500,17 @@ L9:
       setlocal3
 
       getlocal3
-      getlocal2
-      ifnge               L22
+      pushint             2147483647
+      ifnge               L20
 
       findpropstrict      QName(PackageNamespace(""), "Error")
       pushstring          "MP rank matching values are incorrect"
       constructprop       QName(PackageNamespace(""), "Error"), 1
       throw
 
-L22:
+L20:
       hasnext2            4, 5
-      iftrue              L9
+      iftrue              L7
 
       returnvoid
      end ; code

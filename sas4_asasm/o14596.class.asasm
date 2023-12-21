@@ -1282,22 +1282,19 @@ L56:
       getproperty         QName(PackageNamespace(""), "o2752")
       getproperty         QName(PackageNamespace(""), "o19901")
 L62:
-      iffalse             L70
+      iffalse             L69
 
-      jump                L64
-
-L64:
       getlex              QName(ProtectedNamespace("o11191"), "o16989")
       pushstring          "Selling premium weapon"
       pushstring          "You are not able to sell premium items."
       getlex              QName(PrivateNamespace("o14596"), "o3459")
       callpropvoid        QName(PackageNamespace(""), "o12407"), 3
 
-      jump                L82
+      jump                L81
 
-L70:
+L69:
       getlex              QName(ProtectedNamespace("o11191"), "o6791")
-      iffalse             L78
+      iffalse             L77
 
       getlex              QName(ProtectedNamespace("o11191"), "o16989")
       pushstring          "Selling equipped weapon"
@@ -1305,15 +1302,15 @@ L70:
       getlex              QName(PrivateNamespace("o14596"), "o12709")
       callpropvoid        QName(PackageNamespace(""), "o17139"), 3
 
-      jump                L82
+      jump                L81
 
-L78:
+L77:
       getlocal0
       getlex              QName(ProtectedNamespace("o11191"), "o15023")
       getproperty         QName(PackageNamespace(""), "o2120")
       callpropvoid        QName(ProtectedNamespace("o14596"), "o5400"), 1
 
-L82:
+L81:
       returnvoid
      end ; code
     end ; body

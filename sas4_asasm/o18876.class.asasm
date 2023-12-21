@@ -208,9 +208,7 @@ class
      pushfalse
      setproperty         QName(PackageNamespace(""), "o14251")
 
-     jump                L313
-
-L85:
+L84:
      label
      getlocal            15
      getlex              QName(PrivateNamespace("o18876"), "o15234")
@@ -247,14 +245,14 @@ L85:
      getlex              QName(PrivateNamespace("o18876"), "o1460")
      getproperty         QName(PackageNamespace(""), "distance")
      pushbyte            0
-     ifnle               L118
+     ifnle               L117
 
      pushdouble          1
      setlocal            16
 
-     jump                L314
+     jump                L311
 
-L118:
+L117:
      getlex              QName(PrivateNamespace("o18876"), "o48")
      getlex              QName(PrivateNamespace("o18876"), "o6684")
      getlocal2
@@ -272,21 +270,21 @@ L118:
      setlocal            4
 
      pushbyte            0
-     ifnle               L137
+     ifnle               L136
 
      pushdouble          1
      setlocal            16
 
-     jump                L314
+     jump                L311
 
-L137:
+L136:
      getlocal            7
      pushbyte            0
-     ifne                L164
+     ifne                L163
 
      getlocal            4
      getlocal            5
-     ifngt               L154
+     ifngt               L153
 
      getlex              QName(PackageNamespace(""), "o10852")
      getlocal            5
@@ -299,9 +297,9 @@ L137:
      convert_d
      setlocal            17
 
-     jump                L164
+     jump                L163
 
-L154:
+L153:
      getlex              QName(PackageNamespace(""), "o10852")
      getlocal            4
      getlocal            10
@@ -313,28 +311,25 @@ L154:
      convert_d
      setlocal            17
 
-L164:
+L163:
      getlocal            4
      getlocal            17
      subtract
      pushdouble          0.5
      getlocal            10
      multiply
-     ifnlt               L178
+     ifnlt               L176
 
      getlocal            7
      pushbyte            0
-     ifne                L177
+     ifne                L311
 
      pushdouble          1
      setlocal            16
 
-     jump                L314
+     jump                L311
 
-L177:
-     jump                L314
-
-L178:
+L176:
      getlocal            16
      setlocal            9
 
@@ -366,25 +361,23 @@ L178:
      setlocal            13
 
      getlocal            17
-     ifnge               L206
+     ifnge               L204
 
      pushdouble          1
      setlocal            16
 
-     jump                L314
+     jump                L311
 
-L206:
+L204:
      pushbyte            0
      setlocal            18
 
-     jump                L284
-
-L209:
+L206:
      label
      getlocal            18
      pushbyte            1
      bitand
-     iffalse             L230
+     iffalse             L227
 
      getlocal3
      getlocal            17
@@ -402,9 +395,9 @@ L209:
      convert_d
      setlocal            20
 
-     jump                L237
+     jump                L234
 
-L230:
+L227:
      pushdouble          0.5
      getlocal3
      getlocal            19
@@ -413,7 +406,7 @@ L230:
      convert_d
      setlocal            20
 
-L237:
+L234:
      getlocal            15
      getlex              QName(PrivateNamespace("o18876"), "o15234")
      getlocal            20
@@ -439,17 +432,17 @@ L237:
      pushdouble          0.025
      getlocal            10
      multiply
-     ifnlt               L263
+     ifnlt               L260
 
      getlocal            20
      setlocal            9
 
-     jump                L285
+     jump                L282
 
-L263:
+L260:
      getlocal            12
      getlocal            17
-     ifngt               L271
+     ifngt               L268
 
      getlocal            20
      setlocal3
@@ -457,16 +450,16 @@ L263:
      getlocal            12
      setlocal            6
 
-     jump                L275
+     jump                L272
 
-L271:
+L268:
      getlocal            20
      setlocal            19
 
      getlocal            12
      setlocal            13
 
-L275:
+L272:
      inclocal_i          18
      getlex              QName(PrivateNamespace("o18876"), "o16232")
      increment
@@ -476,12 +469,11 @@ L275:
 
      getlocal            18
      pushbyte            50
-     ifeq                L285
+     ifeq                L282
 
-L284:
-     jump                L209
+     jump                L206
 
-L285:
+L282:
      getlex              QName(PackageNamespace(""), "o10852")
      getlex              QName(PrivateNamespace("o18876"), "o18862")
      getlocal            18
@@ -499,7 +491,7 @@ L285:
      add
      getlocal            16
      multiply
-     iflt                L314
+     iflt                L311
 
      getlocal            9
      setlocal            16
@@ -513,12 +505,11 @@ L285:
 
      getlocal            7
      pushshort           1000
-     ifeq                L314
+     ifeq                L311
 
-L313:
-     jump                L85
+     jump                L84
 
-L314:
+L311:
      getlex              QName(PackageNamespace(""), "o10852")
      getlex              QName(PrivateNamespace("o18876"), "o7399")
      getlocal            7

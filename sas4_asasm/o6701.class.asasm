@@ -1266,22 +1266,84 @@ L44:
       pushfalse
       equals
 L75:
-      iffalse             L77
+      iffalse             L130
 
-      jump                L77
+      getlex              QName(PackageNamespace(""), "o12485")
+      coerce_s
+      setlocal            5
 
-L77:
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+      dup
+      setlocal            4
+
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o6701"), "o18466")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlocal            4
+      pushstring          "ioError"
+      getlex              QName(PrivateNamespace("o6701"), "o786")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlex              QName(PackageNamespace(""), "o2555")
+      pushstring          "ninjakiwi.com"
+      callproperty        QName(PackageNamespace(""), "o17203"), 1
+      coerce_s
+      setlocal            10
+
+      getlocal            4
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal            10
+      pushstring          "/api/v1/users/"
+      add
+      getlocal            5
+      add
+      pushstring          "/friends.json"
+      add
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLLoader")
+      constructprop       QName(PackageNamespace("flash.net"), "URLLoader"), 0
+      coerce              QName(PackageNamespace("flash.net"), "URLLoader")
+      dup
+      setlocal            9
+
+      pushstring          "complete"
+      getlex              QName(PrivateNamespace("o6701"), "o10341")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlocal            9
+      pushstring          "ioError"
+      getlex              QName(PrivateNamespace("o6701"), "o786")
+      callpropvoid        QName(PackageNamespace(""), "addEventListener"), 2
+
+      getlocal            9
+      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
+      getlocal            10
+      pushstring          "/api/v1/users/"
+      add
+      getlocal            5
+      add
+      pushstring          "/following.json"
+      add
+      constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
+      callpropvoid        QName(PackageNamespace(""), "load"), 1
+
+L130:
       getlocal2
-      iffalse             L133
+      iffalse             L185
 
       findpropstrict      QName(PackageNamespace(""), "o8339")
       pushstring          "NKUserHelper::nkUser 2"
       callpropvoid        QName(PackageNamespace(""), "o8339"), 1
 
-L82:
+L135:
       getlex              QName(PrivateNamespace("o6701"), "o620")
       pushnull
-      ifne                L114
+      ifne                L167
 
       findpropstrict      QName(PackageNamespace(""), "o8339")
       pushstring          "NKUserHelper::nkUser 3 save"
@@ -1290,22 +1352,22 @@ L82:
       getlocal0
       getproperty         QName(PrivateNamespace("o6701"), "o7590")
       pushnull
-      ifne                L96
+      ifne                L149
 
       newobject           0
       coerce              QName(PackageNamespace(""), "Object")
       setlocal3
 
-      jump                L101
+      jump                L154
 
-L96:
+L149:
       getlex              QName(PackageNamespace(""), "o1817")
       getlex              QName(PrivateNamespace("o6701"), "o7590")
       callproperty        QName(PackageNamespace(""), "o5114"), 1
       coerce              QName(PackageNamespace(""), "Object")
       setlocal3
 
-L101:
+L154:
       getlocal0
       getlocal3
       callproperty        QName(PackageNamespace(""), "save"), 1
@@ -1322,15 +1384,15 @@ L101:
       getlocal            7
       callpropvoid        QName(PackageNamespace(""), "o13151"), 1
 
-L114:
+L167:
       findpropstrict      QName(PackageNamespace(""), "o8339")
       pushstring          "NKUserHelper::nkUser 4"
       callpropvoid        QName(PackageNamespace(""), "o8339"), 1
 
-L117:
-      jump                L132
+L170:
+      jump                L188
 
-L118:
+L171:
       getlocal0
       pushscope
 
@@ -1351,19 +1413,16 @@ L118:
       getlex              QName(PackageInternalNs(""), "o19631")
       throw
 
-L132:
-      jump                L136
-
-L133:
+L185:
       findpropstrict      QName(PackageNamespace(""), "o8339")
       pushstring          "NKUserHelper::nkUser 5"
       callpropvoid        QName(PackageNamespace(""), "o8339"), 1
 
-L136:
+L188:
       getlocal            8
       returnvalue
      end ; code
-     try from L82 to L117 target L118 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
+     try from L135 to L170 target L171 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
     end ; body
    end ; method
   end ; trait
@@ -2818,16 +2877,15 @@ L82:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2889")
       pushdouble          0.5
-      ifnle               L87
+      ifnle               L112
 
       inclocal_i          12
-L87:
-      jump                L106
+      jump                L112
 
 L88:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o6228")
-      iffalse             L106
+      iffalse             L112
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2889")
@@ -2846,10 +2904,9 @@ L101:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2889")
       pushdouble          0.5
-      ifnle               L106
+      ifnle               L112
 
       inclocal_i          3
-L106:
       jump                L112
 
 L107:
@@ -2957,9 +3014,6 @@ L153:
       pushbyte            0
       setlocal            5
 
-      pushbyte            3
-      setlocal2
-
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5292")
       getproperty         QName(PackageNamespace(""), "o20827")
@@ -2973,9 +3027,9 @@ L153:
       getproperty         QName(PackageNamespace(""), "o20687")
       setlocal            8
 
-      jump                L48
+      jump                L46
 
-L24:
+L22:
       label
       getlocal            8
       getlocal            9
@@ -2998,24 +3052,24 @@ L24:
       dup
       setlocal            7
 
-      getlocal2
-      ifnge               L48
+      pushbyte            3
+      ifnge               L46
 
-      getlocal2
+      pushbyte            3
       setlocal            7
 
-      jump                L50
+      jump                L48
+
+L46:
+      hasnext2            8, 9
+      iftrue              L22
 
 L48:
-      hasnext2            8, 9
-      iftrue              L24
-
-L50:
       findpropstrict      QName(PackageNamespace(""), "setAchievement")
       pushshort           491
       findpropstrict      QName(PrivateNamespace("o6701"), "o15053")
       getlocal            7
-      getlocal2
+      pushbyte            3
       callproperty        QName(PrivateNamespace("o6701"), "o15053"), 2
       callpropvoid        QName(PackageNamespace(""), "setAchievement"), 2
 
@@ -4346,9 +4400,6 @@ L93:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       returnvoid
      end ; code
     end ; body

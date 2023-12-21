@@ -415,44 +415,38 @@ L24:
       setlocal3
 
       pushdouble          0
-      setlocal            7
-
-      pushdouble          0
       setlocal2
 
       getlocal1
       convert_i
       pushint             1
       subtract_i
-      lookupswitch        L52, [L40, L40, L52, L52, L52, L52, L46, L40]
+      lookupswitch        L49, [L38, L38, L49, L49, L49, L49, L44, L38]
 
-L40:
+L38:
       getlocal            4
       getlex              QName(PackageNamespace(""), "o15192")
       multiply
       convert_d
       setlocal2
 
-      jump                L52
+      jump                L49
 
-L46:
+L44:
       getlocal            4
       getlex              QName(PackageNamespace(""), "o15192")
       multiply
       convert_d
       setlocal2
 
-      jump                L52
-
-L52:
+L49:
       getlocal1
       pushbyte            7
-      ifne                L57
+      ifne                L54
 
       getlocal1
-      setlocal1
-
-L57:
+      pop
+L54:
       getlocal            4
       getlocal2
       add
@@ -468,9 +462,9 @@ L57:
       getlex              QName(PrivateNamespace("o8608"), "o17656")
       setlocal            8
 
-      jump                L100
+      jump                L97
 
-L69:
+L66:
       label
       getlocal            8
       getlocal            9
@@ -481,24 +475,24 @@ L69:
       getlocal1
       getlocal            5
       getproperty         QName(PackageNamespace(""), "type")
-      ifne                L100
+      ifne                L97
 
       getlocal1
       convert_i
       pushint             5
       subtract_i
-      lookupswitch        L90, [L84]
+      lookupswitch        L87, [L81]
 
-L84:
+L81:
       getlocal3
-      getlocal            7
+      pushdouble          0
       add
       convert_d
       setlocal3
 
-      jump                L100
+      jump                L97
 
-L90:
+L87:
       getlocal3
       getlocal            6
       getlocal            5
@@ -510,9 +504,9 @@ L90:
       convert_d
       setlocal3
 
-L100:
+L97:
       hasnext2            8, 9
-      iftrue              L69
+      iftrue              L66
 
       getlocal3
       returnvalue

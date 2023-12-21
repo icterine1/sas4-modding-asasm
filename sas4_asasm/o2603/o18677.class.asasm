@@ -80,8 +80,7 @@ L15:
 
       pushshort           1200
       convert_d
-      setlocal            10
-
+      pop
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "o9869")
@@ -153,7 +152,7 @@ L15:
       getproperty         QName(PackageNamespace(""), "y")
       callpropvoid        QName(PackageNamespace(""), "o8564"), 2
 
-      getlocal            10
+      pushshort           1200
       dup
       findproperty        QName(PrivateNamespace("FilePrivateNS:o2603:o18677"), "o1589")
       swap

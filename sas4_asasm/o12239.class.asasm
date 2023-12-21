@@ -3146,8 +3146,7 @@ L1468:
       iffalse             L1496
 
       getlocal            16
-      setlocal            16
-
+      pop
       getlocal            18
       getproperty         QName(PackageNamespace(""), "o9854")
       convert_i
@@ -6137,13 +6136,12 @@ L47:
       getlex              QName(PrivateNamespace("o12239"), "o6934")
       getproperty         QName(PackageNamespace(""), "currentFrame")
       getlocal            12
-      ifeq                L92
+      ifeq                L111
 
       getlex              QName(PrivateNamespace("o12239"), "o6934")
       getlocal            12
       callpropvoid        QName(PackageNamespace(""), "gotoAndStop"), 1
 
-L92:
       jump                L111
 
 L93:
@@ -6276,7 +6274,7 @@ L32:
 
       getlex              QName(PrivateNamespace("o12239"), "o6851")
       getlocal1
-      ifeq                L70
+      ifeq                L78
 
       pushbyte            0
       setlocal            4
@@ -6315,15 +6313,13 @@ L64:
       add
       callpropvoid        QName(PackageNamespace(""), "gotoAndPlay"), 1
 
-L70:
-      jump                L74
+      jump                L78
 
 L71:
       getlex              QName(PrivateNamespace("o12239"), "o16437")
       pushfalse
       setproperty         QName(PackageNamespace(""), "visible")
 
-L74:
       jump                L78
 
 L75:
@@ -7027,67 +7023,52 @@ L6:
       getlocal0
       pushscope
 
-      pushbyte            1
-      setlocal            5
-
-      pushbyte            2
-      setlocal            6
-
-      pushbyte            3
-      setlocal            8
-
-      pushbyte            4
-      setlocal            7
-
-      pushbyte            5
-      setlocal            4
-
       getlocal1
-      getlocal            5
-      ifne                L20
+      pushbyte            1
+      ifne                L10
 
       findpropstrict      QName(PackageNamespace(""), "o11848")
       getlocal2
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "o11848"), 2
 
-      jump                L43
+      jump                L33
 
-L20:
+L10:
       getlocal1
-      getlocal            6
-      ifne                L28
+      pushbyte            2
+      ifne                L18
 
       findpropstrict      QName(PackageNamespace(""), "o17681")
       getlocal2
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "o17681"), 2
 
-      jump                L43
+      jump                L33
 
-L28:
+L18:
       getlocal1
-      getlocal            8
-      ifne                L36
+      pushbyte            3
+      ifne                L26
 
       findpropstrict      QName(PackageNamespace(""), "o12132")
       getlocal2
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "o12132"), 2
 
-      jump                L43
+      jump                L33
 
-L36:
+L26:
       getlocal1
-      getlocal            7
-      ifne                L43
+      pushbyte            4
+      ifne                L33
 
       findpropstrict      QName(PackageNamespace(""), "o18524")
       getlocal2
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "o18524"), 2
 
-L43:
+L33:
       returnvoid
      end ; code
     end ; body

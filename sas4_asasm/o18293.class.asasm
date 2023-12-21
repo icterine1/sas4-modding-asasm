@@ -710,8 +710,7 @@ L18:
 
      pushshort           255
      convert_d
-     setlocal3
-
+     pop
      pushdouble          0
      setlocal2
 
@@ -732,7 +731,7 @@ L13:
      pushbyte            8
      divide
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charCodeAt"), 1
-     getlocal3
+     pushshort           255
      bitand
      pushbyte            24
      getlocal2

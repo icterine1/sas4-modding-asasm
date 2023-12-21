@@ -692,28 +692,25 @@ L189:
      convert_i
      pushint             1
      subtract_i
-     lookupswitch        L49, [L18, L10, L41, L41, L41, L49, L41]
+     lookupswitch        L46, [L17, L10, L39, L39, L39, L46, L39]
 
 L10:
      findpropstrict      QName(PackageNamespace(""), "o15839")
      callproperty        QName(PackageNamespace(""), "o15839"), 0
      getproperty         QName(PackageNamespace(""), "o9777")
      pushfalse
-     ifne                L17
+     ifne                L48
 
      pushfalse
      returnvalue
 
 L17:
-     jump                L51
-
-L18:
      getlex              QName(PackageNamespace(""), "o14200")
      getproperty         QName(PackageNamespace(""), "o19505")
      getproperty         QName(PackageNamespace(""), "o202")
      getproperty         QName(PackageNamespace(""), "o10211")
      dup
-     iffalse             L30
+     iffalse             L29
 
      pop
      findpropstrict      QName(PackageNamespace(""), "o15839")
@@ -721,26 +718,23 @@ L18:
      getproperty         QName(PackageNamespace(""), "o17507")
      pushfalse
      equals
-L30:
-     iffalse             L33
+L29:
+     iffalse             L32
 
      pushfalse
      returnvalue
 
-L33:
+L32:
      findpropstrict      QName(PackageNamespace(""), "o15839")
      callproperty        QName(PackageNamespace(""), "o15839"), 0
      getproperty         QName(PackageNamespace(""), "o19086")
      pushfalse
-     ifne                L40
+     ifne                L48
 
      pushfalse
      returnvalue
 
-L40:
-     jump                L51
-
-L41:
+L39:
      findpropstrict      QName(PackageNamespace(""), "o15839")
      callproperty        QName(PackageNamespace(""), "o15839"), 0
      getproperty         QName(PackageNamespace(""), "o732")
@@ -750,24 +744,21 @@ L41:
      pushfalse
      returnvalue
 
-L48:
-     jump                L51
-
-L49:
+L46:
      pushfalse
      returnvalue
 
-L51:
+L48:
      findpropstrict      QName(PackageNamespace(""), "o15839")
      callproperty        QName(PackageNamespace(""), "o15839"), 0
      getproperty         QName(PackageNamespace(""), "o18381")
      pushfalse
-     ifne                L58
+     ifne                L55
 
      pushfalse
      returnvalue
 
-L58:
+L55:
      pushtrue
      returnvalue
     end ; code

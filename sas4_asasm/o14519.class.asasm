@@ -216,9 +216,6 @@ class
       getlex              QName(ProtectedNamespace("o14519"), "o18811")
       callpropvoid        QName(PackageNamespace(""), "o12042"), 3
 
-      jump                L56
-
-L56:
       findpropstrict      QName(PackageNamespace(""), "o12042")
       pushbyte            -6
       pushbyte            1
@@ -315,18 +312,18 @@ L56:
 
       getlocal1
       pushnull
-      ifeq                L163
+      ifeq                L162
 
-L140:
+L139:
       getlex              QName(PrivateNamespace("o14519"), "o14361")
       getlocal1
       getlocal2
       callpropvoid        QName(PackageNamespace(""), "connect"), 2
 
-L144:
-      jump                L162
+L143:
+      jump                L182
 
-L145:
+L144:
       getlocal0
       pushscope
 
@@ -349,10 +346,9 @@ L145:
       callpropvoid        QName(PackageNamespace(""), "o3517"), 0
 
       popscope
-L162:
-      jump                L183
+      jump                L182
 
-L163:
+L162:
       findpropstrict      QName(PackageNamespace(""), "o15777")
       getlex              QName(PackageNamespace(""), "o18621")
       getproperty         QName(PackageNamespace(""), "o8741")
@@ -377,7 +373,7 @@ L163:
       pushbyte            0
       callpropvoid        QName(ProtectedNamespace("o14519"), "o6110"), 1
 
-L183:
+L182:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "stage")
@@ -387,7 +383,7 @@ L183:
 
       returnvoid
      end ; code
-     try from L140 to L144 target L145 type QName(PackageNamespace(""), "SecurityError") name QName(PackageInternalNs(""), "o7367") end
+     try from L139 to L143 target L144 type QName(PackageNamespace(""), "SecurityError") name QName(PackageInternalNs(""), "o7367") end
     end ; body
    end ; method
   end ; trait
@@ -424,11 +420,8 @@ L7:
       returnvoid
 
 L11:
-      pushshort           202
-      setlocal3
-
       findpropstrict      QName(PackageNamespace(""), "writeShort")
-      getlocal3
+      pushshort           202
       callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
 
       findpropstrict      QName(PackageNamespace(""), "writeShort")
@@ -454,9 +447,9 @@ L11:
       getlex              QName(PackageNamespace(""), "o18098")
       setlocal            4
 
-      jump                L43
+      jump                L41
 
-L34:
+L32:
       label
       getlocal            4
       getlocal            5
@@ -468,9 +461,9 @@ L34:
       getlocal2
       callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
 
-L43:
+L41:
       hasnext2            4, 5
-      iftrue              L34
+      iftrue              L32
 
       findpropstrict      QName(PackageNamespace(""), "o15777")
       getlex              QName(PackageNamespace(""), "o18621")

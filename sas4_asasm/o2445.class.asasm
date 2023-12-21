@@ -93,8 +93,7 @@ class
       ifne                L30
 
       getlocal1
-      setlocal1
-
+      pop
 L30:
       getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
       getlex              QName(PackageNamespace(""), "o1412")
@@ -253,8 +252,7 @@ L28:
       iffalse             L70
 
       getlocal2
-      setlocal2
-
+      pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o9854")
       convert_i
@@ -268,7 +266,7 @@ L60:
       getlocal2
       callpropvoid        QName(PrivateNamespace("o2445"), "o12530"), 2
 
-      jump                L69
+      jump                L74
 
 L65:
       findpropstrict      QName(PrivateNamespace("o2445"), "o17363")
@@ -1003,7 +1001,7 @@ L362:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o2889")
       pushdouble          0.01
-      ifnle               L382
+      ifnle               L426
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o11453")
@@ -1023,7 +1021,6 @@ L362:
       callproperty        QName(PrivateNamespace("o2445"), "o15053"), 2
       callpropvoid        QName(PackageNamespace(""), "setAchievement"), 2
 
-L382:
       jump                L426
 
 L383:

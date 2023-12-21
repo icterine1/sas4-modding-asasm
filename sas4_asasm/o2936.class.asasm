@@ -1286,7 +1286,7 @@ L31:
       setproperty         QName(PrivateNamespace("o2936"), "o2422")
 
       getlex              QName(PrivateNamespace("o2936"), "o16162")
-      iftrue              L46
+      iftrue              L51
 
       getlex              QName(ProtectedNamespace("o2936"), "o19021")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "slice"), 0
@@ -1299,7 +1299,6 @@ L31:
       swap
       setproperty         QName(PrivateNamespace("o2936"), "o16162")
 
-L46:
       jump                L51
 
 L47:
@@ -1795,7 +1794,7 @@ L15:
       swap
       setproperty         QName(PrivateNamespace("o2936"), "o11721")
 
-      jump                L83
+      jump                L99
 
 L39:
       getlex              QName(PrivateNamespace("o2936"), "o17353")
@@ -1854,7 +1853,6 @@ L74:
       swap
       setproperty         QName(PrivateNamespace("o2936"), "o11721")
 
-L83:
       jump                L99
 
 L84:
@@ -2054,7 +2052,7 @@ L26:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o18200")
 L38:
-      iffalse             L44
+      iffalse             L56
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o6691")
@@ -2062,7 +2060,6 @@ L38:
       getproperty         QName(PackageNamespace(""), "o5032")
       setproperty         QName(Namespace("o4332"), "o16990")
 
-L44:
       jump                L56
 
 L45:
@@ -2453,7 +2450,7 @@ L97:
 
       getlex              QName(ProtectedNamespace("o2936"), "o402")
       pushbyte            10
-      ifnle               L25
+      ifnle               L32
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -2463,7 +2460,6 @@ L97:
       pushbyte            1
       callpropvoid        QName(PackageNamespace(""), "play"), 1
 
-L25:
       jump                L32
 
 L26:
@@ -3091,19 +3087,16 @@ L62:
       getlocal0
       pushscope
 
-      pushdouble          1
-      setlocal1
-
       findpropstrict      QName(ProtectedNamespace("o2936"), "o16836")
       dup
       getproperty         QName(ProtectedNamespace("o2936"), "o16836")
-      getlocal1
+      pushdouble          1
       subtract
       setproperty         QName(ProtectedNamespace("o2936"), "o16836")
 
       getlex              QName(ProtectedNamespace("o2936"), "o16836")
       pushbyte            0
-      ifnge               L21
+      ifnge               L19
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -3113,14 +3106,14 @@ L62:
       callproperty        QName(PrivateNamespace("o2936"), "o10403"), 1
       setproperty         QName(PackageNamespace(""), "o19411")
 
-      jump                L24
+      jump                L22
 
-L21:
+L19:
       getlex              QName(PackageNamespace(""), "o1051")
       getlex              QName(ProtectedNamespace("o2936"), "o1215")
       callpropvoid        QName(PackageNamespace(""), "o19115"), 1
 
-L24:
+L22:
       returnvoid
      end ; code
     end ; body

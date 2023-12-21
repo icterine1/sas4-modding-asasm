@@ -66,19 +66,13 @@ class
       coerce              QName(PackageNamespace(""), "o19006")
       setlocal3
 
-      pushdouble          0.1
-      setlocal            5
-
-      pushdouble          0.1
-      setlocal            4
-
       getlocal3
       getproperty         QName(PackageNamespace(""), "o3664")
       getproperty         QName(PackageNamespace(""), "o8628")
       getlocal1
       getproperty         QName(PackageNamespace(""), "o8628")
       getproperty         QName(PackageNamespace(""), "x")
-      getlocal            5
+      pushdouble          0.1
       subtract
       setproperty         QName(PackageNamespace(""), "x")
 
@@ -88,7 +82,7 @@ class
       getlocal1
       getproperty         QName(PackageNamespace(""), "o8628")
       getproperty         QName(PackageNamespace(""), "y")
-      getlocal            4
+      pushdouble          0.1
       subtract
       setproperty         QName(PackageNamespace(""), "y")
 
@@ -98,7 +92,7 @@ class
       getlocal1
       getproperty         QName(PackageNamespace(""), "o18391")
       getproperty         QName(PackageNamespace(""), "x")
-      getlocal            5
+      pushdouble          0.1
       add
       setproperty         QName(PackageNamespace(""), "x")
 
@@ -108,7 +102,7 @@ class
       getlocal1
       getproperty         QName(PackageNamespace(""), "o18391")
       getproperty         QName(PackageNamespace(""), "y")
-      getlocal            4
+      pushdouble          0.1
       add
       setproperty         QName(PackageNamespace(""), "y")
 
@@ -492,7 +486,7 @@ L10:
       getlex              QName(PrivateNamespace("o7665"), "o15155")
       setproperty         MultinameL([PrivateNamespace("o7665"), ProtectedNamespace("o7665"), StaticProtectedNs("o7665"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7665"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-      jump                L61
+      jump                L60
 
 L24:
       label
@@ -507,11 +501,11 @@ L24:
       getproperty         QName(PackageNamespace(""), "o3664")
       getlocal2
       callproperty        QName(PackageNamespace(""), "o15642"), 1
-      iffalse             L61
+      iffalse             L60
 
       getlocal            4
       callproperty        QName(PackageNamespace(""), "o14207"), 0
-      iffalse             L49
+      iffalse             L48
 
       getlocal1
       getlocal0
@@ -521,14 +515,11 @@ L24:
       dup
       setlocal            6
 
-      iftrue              L48
+      iftrue              L60
 
       returnvoid
 
 L48:
-      jump                L61
-
-L49:
       getlocal            5
       getlocal3
       inclocal_i          3
@@ -543,7 +534,7 @@ L49:
       getproperty         QName(PackageNamespace(""), "o10612")
       setproperty         MultinameL([PrivateNamespace("o7665"), ProtectedNamespace("o7665"), StaticProtectedNs("o7665"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7665"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L61:
+L60:
       getlocal3
       pushbyte            0
       ifgt                L24
@@ -1252,7 +1243,7 @@ L176:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o3664")
       callproperty        QName(PackageNamespace(""), "o19221"), 1
-      iftrue              L200
+      iftrue              L217
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o3664")
@@ -1275,7 +1266,6 @@ L176:
       getlocal2
       iftrue              L176
 
-L200:
       jump                L217
 
 L201:
@@ -1422,7 +1412,7 @@ L55:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o3664")
       callproperty        QName(PackageNamespace(""), "o19221"), 1
-      iftrue              L81
+      iftrue              L92
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "parent")
@@ -1433,7 +1423,6 @@ L79:
       getlocal2
       iftrue              L55
 
-L81:
       jump                L92
 
 L82:

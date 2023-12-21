@@ -927,15 +927,12 @@ L55:
      getlocal0
      pushscope
 
-     pushdouble          100
-     setlocal2
-
      getlex              QName(PackageNamespace(""), "Math")
-     getlocal2
+     pushdouble          100
      getlocal1
      multiply
      callproperty        QName(PackageNamespace(""), "round"), 1
-     getlocal2
+     pushdouble          100
      divide
      convert_d
      setlocal1
@@ -1169,8 +1166,7 @@ L74:
      ifne                L79
 
      getlocal            4
-     setlocal            4
-
+     pop
 L79:
      getlocal            6
      not

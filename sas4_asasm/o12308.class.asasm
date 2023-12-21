@@ -103,7 +103,7 @@ class
       getproperty         QName(PackageNamespace(""), "o7446")
       setlocal3
 
-      jump                L53
+      jump                L52
 
 L8:
       label
@@ -116,7 +116,7 @@ L8:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o1718")
       pushbyte            0
-      ifnge               L45
+      ifnge               L44
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o1718")
@@ -140,33 +140,30 @@ L24:
       pushbyte            90
       lessequals
 L35:
-      iffalse             L44
+      iffalse             L52
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o1718")
       pushbyte            32
       add
       getlocal1
-      ifne                L44
+      ifne                L52
 
       getlocal2
       returnvalue
 
 L44:
-      jump                L53
-
-L45:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o4616")
       getlocal1
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
       pushbyte            0
-      ifnge               L53
+      ifnge               L52
 
       getlocal2
       returnvalue
 
-L53:
+L52:
       hasnext2            3, 4
       iftrue              L8
 

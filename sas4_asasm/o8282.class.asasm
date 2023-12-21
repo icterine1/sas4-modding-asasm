@@ -150,9 +150,6 @@ class
       pushbyte            0
       setlocal            5
 
-      pushnull
-      setlocal            7
-
       getlocal0
       getlocal1
       callsupervoid       QName(PackageNamespace(""), "init"), 1
@@ -227,9 +224,9 @@ class
       pushbyte            0
       setlocal            5
 
-      jump                L98
+      jump                L96
 
-L72:
+L70:
       label
       findpropstrict      QName(PackageNamespace(""), "o11343")
       constructprop       QName(PackageNamespace(""), "o11343"), 0
@@ -261,10 +258,10 @@ L72:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
       inclocal_i          5
-L98:
+L96:
       getlocal            5
       getlex              QName(ProtectedNamespace("o8282"), "o13425")
-      iflt                L72
+      iflt                L70
 
       getlex              QName(PrivateNamespace("o8282"), "o7750")
       getlocal3
@@ -284,9 +281,9 @@ L98:
       pushbyte            0
       setlocal            5
 
-      jump                L143
+      jump                L141
 
-L116:
+L114:
       label
       findpropstrict      QName(PackageNamespace(""), "o11343")
       constructprop       QName(PackageNamespace(""), "o11343"), 0
@@ -320,10 +317,10 @@ L116:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
       inclocal_i          5
-L143:
+L141:
       getlocal            5
       getlex              QName(ProtectedNamespace("o8282"), "o13425")
-      iflt                L116
+      iflt                L114
 
       getlex              QName(PrivateNamespace("o8282"), "o7750")
       getlocal            4
@@ -581,13 +578,12 @@ L30:
       getlex              QName(ProtectedNamespace("o8282"), "o10149")
       callpropvoid        QName(PackageNamespace(""), "o12157"), 0
 
-      jump                L30
+      jump                L39
 
 L28:
       getlex              QName(ProtectedNamespace("o8282"), "o19684")
       callpropvoid        QName(PackageNamespace(""), "o12157"), 0
 
-L30:
       jump                L39
 
 L31:

@@ -305,15 +305,13 @@ L96:
 
       pushtrue
       dup
-      iffalse             L15
-
+      pop
       pop
       getlex              QName(PrivateNamespace("o12539"), "o19419")
       getproperty         QName(PackageNamespace(""), "o202")
       getproperty         QName(PackageNamespace(""), "o18339")
       pushbyte            1
       equals
-L15:
       iffalse             L31
 
       getlex              QName(PrivateNamespace("o12539"), "o19419")
@@ -329,14 +327,13 @@ L15:
       pushbyte            20
       setproperty         QName(PackageNamespace(""), "screen")
 
-      jump                L30
+      jump                L35
 
 L27:
       getlex              QName(ProtectedNamespace("o10639"), "o19689")
       pushbyte            26
       setproperty         QName(PackageNamespace(""), "screen")
 
-L30:
       jump                L35
 
 L31:
@@ -541,9 +538,6 @@ L27:
       setproperty         QName(PackageNamespace(""), "screen")
 
 L30:
-      jump                L31
-
-L31:
       returnvoid
      end ; code
     end ; body

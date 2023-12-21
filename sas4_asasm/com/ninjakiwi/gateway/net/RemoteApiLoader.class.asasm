@@ -208,9 +208,15 @@ L38:
       getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
       getproperty         QName(PackageNamespace(""), "policyUrl")
       pushnull
-      ifeq                L43
+      ifeq                L48
 
-L43:
+      getlex              QName(PackageNamespace("flash.system"), "Security")
+      getlocal0
+      getproperty         QName(ProtectedNamespace("com.ninjakiwi.gateway.net:RemoteApiLoader"), "_config")
+      getproperty         QName(PackageNamespace(""), "policyUrl")
+      callpropvoid        QName(PackageNamespace(""), "loadPolicyFile"), 1
+
+L48:
       getscopeobject      1
       findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
       getlocal0

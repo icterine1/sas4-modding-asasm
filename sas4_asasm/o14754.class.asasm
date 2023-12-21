@@ -266,7 +266,7 @@ L12:
       setproperty         QName(PrivateNamespace("o14754"), "o4313")
 
       getlocal2
-      iffalse             L28
+      iffalse             L27
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -276,9 +276,7 @@ L12:
       getproperty         QName(PackageNamespace(""), "time")
       callpropvoid        QName(PackageNamespace(""), "o982"), 1
 
-      jump                L28
-
-L28:
+L27:
       returnvoid
      end ; code
     end ; body
@@ -573,9 +571,6 @@ L16:
       getlex              QName(PrivateNamespace("o14754"), "o5986")
       callpropvoid        QName(Namespace("o12600"), "o16280"), 3
 
-      jump                L57
-
-L57:
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0
       getlex              QName(PackageNamespace(""), "o1357")
@@ -621,9 +616,6 @@ L57:
       constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
       setproperty         QName(PackageNamespace(""), "data")
 
-      jump                L95
-
-L95:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "stage")
       getproperty         QName(PackageNamespace(""), "loaderInfo")
@@ -647,9 +639,9 @@ L95:
       getproperty         QName(PackageNamespace(""), "o2108")
       setlocal            4
 
-      jump                L146
+      jump                L144
 
-L114:
+L112:
       label
       getlocal            4
       getlocal            5
@@ -663,7 +655,7 @@ L114:
       getlex              QName(PackageInternalNs(""), "o12072")
       getproperty         MultinameL([PrivateNamespace("o14754"), ProtectedNamespace("o14754"), StaticProtectedNs("o14754"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14754"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifne                L146
+      ifne                L144
 
       getlex              QName(PackageNamespace(""), "o15711")
       getproperty         QName(PackageNamespace(""), "o2108")
@@ -676,7 +668,7 @@ L114:
 
       getlex              QName(PackageInternalNs(""), "o9412")
       pushnull
-      ifeq                L146
+      ifeq                L144
 
       getlex              QName(PackageNamespace(""), "o20291")
       getlex              QName(PackageInternalNs(""), "o12072")
@@ -687,9 +679,9 @@ L114:
       callproperty        Multiname("o13465", [PrivateNamespace("o14754"), ProtectedNamespace("o14754"), StaticProtectedNs("o14754"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14754"), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
       setproperty         MultinameL([PrivateNamespace("o14754"), ProtectedNamespace("o14754"), StaticProtectedNs("o14754"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14754"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L146:
+L144:
       hasnext2            4, 5
-      iftrue              L114
+      iftrue              L112
 
       getlex              QName(PackageInternalNs(""), "stage")
       pushstring          "keyDown"
@@ -783,7 +775,7 @@ L146:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o15026")
       getlex              QName(PackageNamespace(""), "o2555")
-      pushstring          "nk-static-replica.github.io/assets-nkstatic/Games/gameswfs/sas4/download/banners/SAS4-LightBox-Ad-InGame.jpg"
+      pushstring          "assets.nkstatic.com/Games/gameswfs/sas4/download/banners/SAS4-LightBox-Ad-InGame.jpg"
       callproperty        QName(PackageNamespace(""), "o17203"), 1
       setproperty         QName(PackageNamespace(""), "o606")
 
@@ -1053,14 +1045,8 @@ L218:
 
       pushtrue
       dup
-      iftrue              L42
-
       pop
-      pushstring          ""
-      pushstring          "production"
-      equals
-L42:
-      iffalse             L53
+      iffalse             L49
 
       findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
       getlex              QName(PackageNamespace(""), "o2555")
@@ -1072,9 +1058,9 @@ L42:
       swap
       setslot             4
 
-      jump                L66
+      jump                L62
 
-L53:
+L49:
       findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
       getlex              QName(PackageNamespace(""), "o2555")
       pushstring          "static-api-staging.ninjakiwi.com/nkapi/skusettings/032751109890dd014836faed471950d3.json?v="
@@ -1089,7 +1075,7 @@ L53:
       swap
       setslot             4
 
-L66:
+L62:
       getlex              QName(PackageInternalNs(""), "o17327")
       getlex              QName(PackageInternalNs(""), "o15386")
       callpropvoid        QName(PackageNamespace(""), "load"), 1
@@ -1303,9 +1289,6 @@ L66:
       setproperty         QName(PackageNamespace(""), "o17388")
 
 L61:
-      jump                L62
-
-L62:
       getlex              QName(PackageInternalNs(""), "promise")
       returnvalue
      end ; code

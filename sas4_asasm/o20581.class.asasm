@@ -301,7 +301,7 @@ class
       callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
 
       getlex              QName(PrivateNamespace("o20581"), "o2006")
-      iffalse             L208
+      iffalse             L244
 
       getlex              QName(PrivateNamespace("o20581"), "o2006")
       pushfalse
@@ -310,7 +310,6 @@ class
       getlex              QName(PrivateNamespace("o20581"), "o2006")
       callpropvoid        QName(PackageNamespace(""), "stop"), 0
 
-L208:
       jump                L244
 
 L209:
@@ -421,11 +420,8 @@ L17:
       returnvoid
 
 L19:
-      jump                L20
-
-L20:
       getlex              QName(PrivateNamespace("o20581"), "o5915")
-      iffalse             L47
+      iffalse             L46
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -439,7 +435,7 @@ L20:
       getlocal3
       getlex              QName(PackageNamespace(""), "o14413")
       getproperty         QName(PackageNamespace(""), "o20705")
-      ifngt               L40
+      ifngt               L39
 
       getlocal0
       getproperty         QName(PrivateNamespace("o20581"), "o16989")
@@ -447,9 +443,9 @@ L20:
       pushstring          "You do not have enough inventory space to craft this weapon. Sell some weapons to make room to craft this item."
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
 
-      jump                L46
+      jump                L70
 
-L40:
+L39:
       getlocal0
       getproperty         QName(PrivateNamespace("o20581"), "o16989")
       pushstring          "Confirm Crafting"
@@ -457,10 +453,9 @@ L40:
       getlex              QName(PrivateNamespace("o20581"), "o2956")
       callpropvoid        QName(PackageNamespace(""), "o13483"), 3
 
-L46:
-      jump                L71
+      jump                L70
 
-L47:
+L46:
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
       getproperty         QName(PackageNamespace(""), "o7923")
@@ -473,7 +468,7 @@ L47:
       getlocal2
       getlex              QName(PackageNamespace(""), "o14413")
       getproperty         QName(PackageNamespace(""), "o8383")
-      ifngt               L65
+      ifngt               L64
 
       getlocal0
       getproperty         QName(PrivateNamespace("o20581"), "o16989")
@@ -481,9 +476,9 @@ L47:
       pushstring          "You do not have enough inventory space to craft this armor. Sell some armor to make room to craft this armor item"
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
 
-      jump                L71
+      jump                L70
 
-L65:
+L64:
       getlocal0
       getproperty         QName(PrivateNamespace("o20581"), "o16989")
       pushstring          "Confirm Crafting"
@@ -491,7 +486,7 @@ L65:
       getlex              QName(PrivateNamespace("o20581"), "o2956")
       callpropvoid        QName(PackageNamespace(""), "o13483"), 3
 
-L71:
+L70:
       returnvoid
      end ; code
     end ; body
@@ -512,7 +507,7 @@ L71:
       pushscope
 
       getlex              QName(PrivateNamespace("o20581"), "o5915")
-      iffalse             L254
+      iffalse             L253
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -529,7 +524,7 @@ L71:
       setproperty         QName(PackageNamespace(""), "o1419")
 
       getlex              QName(PrivateNamespace("o20581"), "o3492")
-      iffalse             L253
+      iffalse             L479
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -615,9 +610,6 @@ L55:
       returnvoid
 
 L96:
-      jump                L97
-
-L97:
       getlex              QName(PrivateNamespace("o20581"), "o3492")
       callpropvoid        QName(PackageNamespace(""), "o315"), 0
 
@@ -773,15 +765,15 @@ L97:
       setproperty         QName(PackageNamespace(""), "visible")
 
       getlex              QName(PrivateNamespace("o20581"), "o1902")
-      iffalse             L241
+      iffalse             L240
 
       getlex              QName(PrivateNamespace("o20581"), "o1902")
       pushfalse
       setproperty         QName(PackageNamespace(""), "visible")
 
-L241:
+L240:
       getlex              QName(PrivateNamespace("o20581"), "o7002")
-      iffalse             L253
+      iffalse             L479
 
       getlex              QName(PrivateNamespace("o20581"), "o2006")
       pushbyte            0
@@ -796,10 +788,9 @@ L241:
       swap
       setproperty         QName(PrivateNamespace("o20581"), "o14876")
 
-L253:
-      jump                L480
+      jump                L479
 
-L254:
+L253:
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
       getproperty         QName(PackageNamespace(""), "o15894")
@@ -814,7 +805,7 @@ L254:
       setproperty         QName(PackageNamespace(""), "o1419")
 
       getlex              QName(PrivateNamespace("o20581"), "o5346")
-      iffalse             L480
+      iffalse             L479
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -830,7 +821,7 @@ L254:
       callproperty        QName(PackageNamespace(""), "o5504"), 2
       lessthan
       dup
-      iftrue              L296
+      iftrue              L295
 
       pop
       getlex              QName(PackageNamespace(""), "o14200")
@@ -846,8 +837,8 @@ L254:
       getproperty         QName(Namespace("o12420"), "o9421")
       callproperty        QName(PackageNamespace(""), "o12625"), 2
       lessthan
-L296:
-      iffalse             L329
+L295:
+      iffalse             L328
 
       getlocal0
       getproperty         QName(PrivateNamespace("o20581"), "o16989")
@@ -883,7 +874,7 @@ L296:
 
       returnvoid
 
-L329:
+L328:
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
       getproperty         QName(PackageNamespace(""), "o15894")
@@ -1028,15 +1019,15 @@ L329:
       setproperty         QName(PackageNamespace(""), "visible")
 
       getlex              QName(PrivateNamespace("o20581"), "o1902")
-      iffalse             L463
+      iffalse             L462
 
       getlex              QName(PrivateNamespace("o20581"), "o1902")
       pushfalse
       setproperty         QName(PackageNamespace(""), "visible")
 
-L463:
+L462:
       getlex              QName(PrivateNamespace("o20581"), "o7002")
-      iffalse             L480
+      iffalse             L479
 
       getlex              QName(PrivateNamespace("o20581"), "o2006")
       pushbyte            0
@@ -1056,7 +1047,7 @@ L463:
       pushtrue
       call                1
       pop
-L480:
+L479:
       returnvoid
      end ; code
     end ; body
@@ -1352,13 +1343,12 @@ L75:
 
 L80:
       getlex              QName(PrivateNamespace("o20581"), "o18409")
-      iffalse             L85
+      iffalse             L211
 
       getlex              QName(PrivateNamespace("o20581"), "o18409")
       pushfalse
       setproperty         QName(PackageNamespace(""), "visible")
 
-L85:
       jump                L211
 
 L86:
@@ -1432,14 +1422,13 @@ L135:
 
 L137:
       getlex              QName(PrivateNamespace("o20581"), "o3797")
-      iffalse             L143
+      iffalse             L158
 
       getlex              QName(PrivateNamespace("o20581"), "o3797")
       pushstring          "click"
       getlex              QName(PrivateNamespace("o20581"), "o16082")
       callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
 
-L143:
       jump                L158
 
 L144:
@@ -1692,16 +1681,6 @@ L335:
 L338:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5588")
-      pushbyte            100
-      ifngt               L344
-
-      pushbyte            100
-      jump                L346
-
-L344:
-      getlocal1
-      getproperty         QName(PackageNamespace(""), "o5588")
-L346:
       convert_i
       setlocal3
 
@@ -1816,13 +1795,12 @@ L54:
 
 L59:
       getlex              QName(PrivateNamespace("o20581"), "o18409")
-      iffalse             L64
+      iffalse             L176
 
       getlex              QName(PrivateNamespace("o20581"), "o18409")
       pushfalse
       setproperty         QName(PackageNamespace(""), "visible")
 
-L64:
       jump                L176
 
 L65:
@@ -1884,14 +1862,13 @@ L107:
 
 L109:
       getlex              QName(PrivateNamespace("o20581"), "o3797")
-      iffalse             L115
+      iffalse             L130
 
       getlex              QName(PrivateNamespace("o20581"), "o3797")
       pushstring          "click"
       getlex              QName(PrivateNamespace("o20581"), "o16082")
       callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
 
-L115:
       jump                L130
 
 L116:
@@ -2012,16 +1989,6 @@ L200:
       pushstring          "Approx Drop Lvl: "
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5588")
-      pushbyte            100
-      ifngt               L208
-
-      pushbyte            100
-      jump                L210
-
-L208:
-      getlocal1
-      getproperty         QName(PackageNamespace(""), "o5588")
-L210:
       add
       setproperty         QName(PackageNamespace(""), "text")
 

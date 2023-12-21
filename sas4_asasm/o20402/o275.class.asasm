@@ -428,13 +428,10 @@ L162:
       returnvoid
 
 L10:
-      pushdouble          0.03333333333333333
-      setlocal2
-
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o20402:o275"), "o13508")
       dup
       getproperty         QName(PrivateNamespace("FilePrivateNS:o20402:o275"), "o13508")
-      getlocal2
+      pushdouble          0.03333333333333333
       add
       setproperty         QName(PrivateNamespace("FilePrivateNS:o20402:o275"), "o13508")
 
@@ -497,22 +494,22 @@ L10:
       pushbyte            2
       greaterthan
       dup
-      iffalse             L77
+      iffalse             L75
 
       pop
       getlex              QName(PrivateNamespace("FilePrivateNS:o20402:o275"), "o1263")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
       greaterthan
-L77:
-      iffalse             L148
+L75:
+      iffalse             L146
 
       pushbyte            0
       setlocal3
 
-      jump                L144
+      jump                L142
 
-L81:
+L79:
       label
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -528,7 +525,7 @@ L81:
       setlocal            4
 
       dup
-      iffalse             L105
+      iffalse             L103
 
       pop
       getlocal            4
@@ -539,9 +536,9 @@ L81:
       getproperty         QName(Namespace("o4332"), "position")
       getproperty         QName(PackageNamespace(""), "y")
       greaterthan
-L105:
+L103:
       dup
-      iffalse             L118
+      iffalse             L116
 
       pop
       getlocal            4
@@ -554,9 +551,9 @@ L105:
       pushbyte            65
       subtract
       greaterthan
-L118:
+L116:
       dup
-      iffalse             L131
+      iffalse             L129
 
       pop
       getlocal            4
@@ -569,8 +566,8 @@ L118:
       pushbyte            65
       add
       lessthan
-L131:
-      iffalse             L143
+L129:
+      iffalse             L141
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -584,15 +581,15 @@ L131:
       callproperty        QName(PackageNamespace(""), "initialise"), 3
       callpropvoid        QName(PackageNamespace(""), "o5725"), 2
 
-L143:
+L141:
       inclocal_i          3
-L144:
+L142:
       getlocal3
       getlex              QName(PrivateNamespace("FilePrivateNS:o20402:o275"), "o1263")
       getproperty         QName(PackageNamespace(""), "length")
-      iflt                L81
+      iflt                L79
 
-L148:
+L146:
       returnvoid
      end ; code
     end ; body

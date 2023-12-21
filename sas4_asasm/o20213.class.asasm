@@ -1917,9 +1917,6 @@ L55:
       returnvoid
 
 L6:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -1972,9 +1969,6 @@ L6:
       returnvoid
 
 L6:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -2110,9 +2104,6 @@ L40:
       returnvoid
 
 L6:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -2165,9 +2156,6 @@ L6:
       returnvoid
 
 L6:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -2220,9 +2208,6 @@ L6:
       returnvoid
 
 L6:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -2275,9 +2260,6 @@ L6:
       returnvoid
 
 L6:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -2346,9 +2328,6 @@ L15:
       returnvoid
 
 L17:
-      pushdouble          3
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -2407,9 +2386,6 @@ L17:
       returnvoid
 
 L6:
-      pushdouble          2
-      setlocal            4
-
       getlocal2
       getlex              QName(PrivateNamespace("o20213"), "o6098")
       multiply
@@ -3112,9 +3088,6 @@ L43:
       pushscope
 
       pushnull
-      setlocal            9
-
-      pushnull
       setlocal            7
 
       pushnull
@@ -3134,11 +3107,11 @@ L43:
 
       getlex              QName(PrivateNamespace("o20213"), "enabled")
       pushfalse
-      ifne                L20
+      ifne                L18
 
       returnvoid
 
-L20:
+L18:
       findpropstrict      QName(PrivateNamespace("o20213"), "o15208")
       callpropvoid        QName(PrivateNamespace("o20213"), "o15208"), 0
 
@@ -3159,9 +3132,9 @@ L20:
       getlex              QName(PrivateNamespace("o20213"), "o15374")
       setlocal            13
 
-      jump                L157
+      jump                L155
 
-L35:
+L33:
       label
       getlocal            13
       getlocal            14
@@ -3197,11 +3170,11 @@ L35:
       getlocal            10
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
       pushbyte            0
-      ifnlt               L77
+      ifnlt               L75
 
       getlocal            7
       callproperty        QName(PackageNamespace(""), "o20013"), 0
-      iffalse             L77
+      iffalse             L75
 
       pushnull
       coerce              QName(PackageNamespace(""), "o17729")
@@ -3211,10 +3184,10 @@ L35:
       getlocal            10
       deleteproperty      MultinameL([PrivateNamespace("o20213"), ProtectedNamespace("o20213"), StaticProtectedNs("o20213"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20213"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pop
-L77:
+L75:
       getlocal            7
       pushnull
-      ifeq                L157
+      ifeq                L155
 
       getlex              QName(PrivateNamespace("o20213"), "o2799")
       getlocal            7
@@ -3245,7 +3218,7 @@ L77:
       negate
       lessthan
       dup
-      iftrue              L112
+      iftrue              L110
 
       pop
       getlocal2
@@ -3253,18 +3226,18 @@ L77:
       getlocal            4
       add
       greaterthan
-L112:
+L110:
       dup
-      iftrue              L119
+      iftrue              L117
 
       pop
       getlocal            5
       getlocal            4
       negate
       lessthan
-L119:
+L117:
       dup
-      iftrue              L127
+      iftrue              L125
 
       pop
       getlocal            5
@@ -3272,8 +3245,8 @@ L119:
       getlocal            4
       add
       greaterthan
-L127:
-      iftrue              L157
+L125:
+      iftrue              L155
 
       getlocal            7
       getlocal1
@@ -3311,9 +3284,9 @@ L127:
       getlocal            8
       callpropvoid        QName(PackageNamespace(""), "draw"), 3
 
-L157:
+L155:
       hasnext2            13, 14
-      iftrue              L35
+      iftrue              L33
 
       returnvoid
      end ; code

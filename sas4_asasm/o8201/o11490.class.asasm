@@ -1125,13 +1125,10 @@ L221:
       getlocal0
       pushscope
 
-      pushdouble          1
-      setlocal1
-
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o8201:o11490"), "o13508")
       dup
       getproperty         QName(PrivateNamespace("FilePrivateNS:o8201:o11490"), "o13508")
-      getlocal1
+      pushdouble          1
       add
       setproperty         QName(PrivateNamespace("FilePrivateNS:o8201:o11490"), "o13508")
 
@@ -3512,7 +3509,7 @@ L30:
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o8201:o11490"), "o5772")
       pushbyte            3
-      ifne                L45
+      ifne                L69
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -3520,7 +3517,6 @@ L30:
       getproperty         QName(PackageNamespace(""), "o202")
       callpropvoid        QName(PackageNamespace(""), "o10318"), 0
 
-L45:
       jump                L69
 
 L46:

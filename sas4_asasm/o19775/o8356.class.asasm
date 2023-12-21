@@ -958,12 +958,9 @@ L22:
       getlocal0
       pushscope
 
-      pushdouble          0
-      setlocal3
-
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156")
       getlex              QName(PrivateNamespace("FilePrivateNS:o19775"), "o18246")
-      getlocal3
+      pushdouble          0
       pushbyte            1
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156"), 3
 
@@ -986,7 +983,107 @@ L22:
       setproperty         QName(PackageNamespace(""), "y")
 
       getlocal2
-      getlocal3
+      pushdouble          0
+      callpropvoid        QName(PackageNamespace(""), "rotate"), 1
+
+      getlex              QName(PackageNamespace(""), "o4519")
+      getproperty         QName(PackageNamespace(""), "o8116")
+      getproperty         QName(PackageNamespace(""), "o13427")
+      getlex              QName(PackageNamespace(""), "o2130")
+      pushstring          "assets.effects.explosion1"
+      newarray            1
+      callproperty        QName(PackageNamespace(""), "o11961"), 2
+      getlex              QName(PackageNamespace(""), "o2130")
+      astypelate
+      coerce              QName(PackageNamespace(""), "o2130")
+      setlocal1
+
+      getlocal1
+      pushnull
+      ifeq                L68
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getproperty         QName(Namespace("o4332"), "position")
+      getlex              QName(PackageNamespace(""), "body")
+      getproperty         QName(PackageNamespace(""), "o2697")
+      getproperty         QName(PackageNamespace(""), "x")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "x")
+      add
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getproperty         QName(Namespace("o4332"), "position")
+      getlex              QName(PackageNamespace(""), "body")
+      getproperty         QName(PackageNamespace(""), "o2697")
+      getproperty         QName(PackageNamespace(""), "y")
+      getlocal2
+      getproperty         QName(PackageNamespace(""), "y")
+      add
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6691")
+      pushdouble          0
+      setproperty         QName(Namespace("o4332"), "rotation")
+
+      getlocal1
+      getproperty         QName(PackageNamespace(""), "o6691")
+      getlex              QName(PackageNamespace(""), "o11381")
+      getproperty         QName(PackageNamespace(""), "o1041")
+      setproperty         QName(Namespace("o4332"), "o16990")
+
+L68:
+      returnvoid
+     end ; code
+    end ; body
+   end ; method
+  end ; trait
+  trait method QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o1704")
+   method
+    name "o1704"
+    refid "o19775/o8356/instance/o19775/o8356/o1704"
+    returns QName(PackageNamespace(""), "void")
+    body
+     maxstack 4
+     localcount 4
+     initscopedepth 0
+     maxscopedepth 1
+     code
+      getlocal0
+      pushscope
+
+      findpropstrict      QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156")
+      getlex              QName(PrivateNamespace("FilePrivateNS:o19775"), "o18246")
+      pushdouble          2.356194490192345
+      pushbyte            1
+      callpropvoid        QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156"), 3
+
+      findpropstrict      QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o14055")
+      callpropvoid        QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o14055"), 0
+
+      getlex              QName(PackageNamespace(""), "o15460")
+      getproperty         QName(PackageNamespace(""), "o4078")
+      coerce              QName(PackageNamespace(""), "o18509")
+      setlocal2
+
+      getlocal2
+      pushbyte            30
+      getlex              QName(ProtectedNamespace("o18442"), "o20384")
+      callproperty        QName(PackageNamespace(""), "random"), 0
+      pushbyte            20
+      multiply
+      add
+      setproperty         QName(PackageNamespace(""), "x")
+
+      getlocal2
+      pushbyte            0
+      setproperty         QName(PackageNamespace(""), "y")
+
+      getlocal2
+      pushdouble          2.356194490192345
       callpropvoid        QName(PackageNamespace(""), "rotate"), 1
 
       getlex              QName(PackageNamespace(""), "o4519")
@@ -1029,7 +1126,7 @@ L22:
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o6691")
-      getlocal3
+      pushdouble          2.356194490192345
       setproperty         QName(Namespace("o4332"), "rotation")
 
       getlocal1
@@ -1039,109 +1136,6 @@ L22:
       setproperty         QName(Namespace("o4332"), "o16990")
 
 L70:
-      returnvoid
-     end ; code
-    end ; body
-   end ; method
-  end ; trait
-  trait method QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o1704")
-   method
-    name "o1704"
-    refid "o19775/o8356/instance/o19775/o8356/o1704"
-    returns QName(PackageNamespace(""), "void")
-    body
-     maxstack 4
-     localcount 4
-     initscopedepth 0
-     maxscopedepth 1
-     code
-      getlocal0
-      pushscope
-
-      pushdouble          2.356194490192345
-      setlocal3
-
-      findpropstrict      QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156")
-      getlex              QName(PrivateNamespace("FilePrivateNS:o19775"), "o18246")
-      getlocal3
-      pushbyte            1
-      callpropvoid        QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156"), 3
-
-      findpropstrict      QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o14055")
-      callpropvoid        QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o14055"), 0
-
-      getlex              QName(PackageNamespace(""), "o15460")
-      getproperty         QName(PackageNamespace(""), "o4078")
-      coerce              QName(PackageNamespace(""), "o18509")
-      setlocal2
-
-      getlocal2
-      pushbyte            30
-      getlex              QName(ProtectedNamespace("o18442"), "o20384")
-      callproperty        QName(PackageNamespace(""), "random"), 0
-      pushbyte            20
-      multiply
-      add
-      setproperty         QName(PackageNamespace(""), "x")
-
-      getlocal2
-      pushbyte            0
-      setproperty         QName(PackageNamespace(""), "y")
-
-      getlocal2
-      getlocal3
-      callpropvoid        QName(PackageNamespace(""), "rotate"), 1
-
-      getlex              QName(PackageNamespace(""), "o4519")
-      getproperty         QName(PackageNamespace(""), "o8116")
-      getproperty         QName(PackageNamespace(""), "o13427")
-      getlex              QName(PackageNamespace(""), "o2130")
-      pushstring          "assets.effects.explosion1"
-      newarray            1
-      callproperty        QName(PackageNamespace(""), "o11961"), 2
-      getlex              QName(PackageNamespace(""), "o2130")
-      astypelate
-      coerce              QName(PackageNamespace(""), "o2130")
-      setlocal1
-
-      getlocal1
-      pushnull
-      ifeq                L72
-
-      getlocal1
-      getproperty         QName(PackageNamespace(""), "o6691")
-      getproperty         QName(Namespace("o4332"), "position")
-      getlex              QName(PackageNamespace(""), "body")
-      getproperty         QName(PackageNamespace(""), "o2697")
-      getproperty         QName(PackageNamespace(""), "x")
-      getlocal2
-      getproperty         QName(PackageNamespace(""), "x")
-      add
-      setproperty         QName(PackageNamespace(""), "x")
-
-      getlocal1
-      getproperty         QName(PackageNamespace(""), "o6691")
-      getproperty         QName(Namespace("o4332"), "position")
-      getlex              QName(PackageNamespace(""), "body")
-      getproperty         QName(PackageNamespace(""), "o2697")
-      getproperty         QName(PackageNamespace(""), "y")
-      getlocal2
-      getproperty         QName(PackageNamespace(""), "y")
-      add
-      setproperty         QName(PackageNamespace(""), "y")
-
-      getlocal1
-      getproperty         QName(PackageNamespace(""), "o6691")
-      getlocal3
-      setproperty         QName(Namespace("o4332"), "rotation")
-
-      getlocal1
-      getproperty         QName(PackageNamespace(""), "o6691")
-      getlex              QName(PackageNamespace(""), "o11381")
-      getproperty         QName(PackageNamespace(""), "o1041")
-      setproperty         QName(Namespace("o4332"), "o16990")
-
-L72:
       returnvoid
      end ; code
     end ; body
@@ -1161,12 +1155,9 @@ L72:
       getlocal0
       pushscope
 
-      pushdouble          4.71238898038469
-      setlocal3
-
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156")
       getlex              QName(PrivateNamespace("FilePrivateNS:o19775"), "o18246")
-      getlocal3
+      pushdouble          4.71238898038469
       pushbyte            1
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o19775:o8356"), "o12156"), 3
 
@@ -1192,7 +1183,7 @@ L72:
       setproperty         QName(PackageNamespace(""), "y")
 
       getlocal2
-      getlocal3
+      pushdouble          4.71238898038469
       callpropvoid        QName(PackageNamespace(""), "rotate"), 1
 
       getlex              QName(PackageNamespace(""), "o4519")
@@ -1209,7 +1200,7 @@ L72:
 
       getlocal1
       pushnull
-      ifeq                L72
+      ifeq                L70
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o6691")
@@ -1235,7 +1226,7 @@ L72:
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o6691")
-      getlocal3
+      pushdouble          4.71238898038469
       setproperty         QName(Namespace("o4332"), "rotation")
 
       getlocal1
@@ -1244,7 +1235,7 @@ L72:
       getproperty         QName(PackageNamespace(""), "o1041")
       setproperty         QName(Namespace("o4332"), "o16990")
 
-L72:
+L70:
       returnvoid
      end ; code
     end ; body

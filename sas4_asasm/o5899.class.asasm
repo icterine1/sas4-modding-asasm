@@ -145,13 +145,10 @@ L36:
       returnvalue
 
 L69:
-      pushbyte            20
-      setlocal            8
-
       getlocal2
       getproperty         QName(PackageNamespace(""), "length")
-      getlocal            8
-      ifngt               L91
+      pushbyte            20
+      ifngt               L89
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -164,7 +161,7 @@ L69:
       getproperty         QName(ProtectedNamespace("o328"), "o16989")
       pushstring          "Invalid name"
       pushstring          "The maximum character name length is "
-      getlocal            8
+      pushbyte            20
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
       add
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
@@ -172,7 +169,7 @@ L69:
       pushfalse
       returnvalue
 
-L91:
+L89:
       getlex              QName(PrivateNamespace("o5899"), "o19419")
       getlex              QName(PrivateNamespace("o5899"), "o19419")
       getproperty         QName(PackageNamespace(""), "o202")
@@ -193,7 +190,7 @@ L91:
 
       getlex              QName(PrivateNamespace("o5899"), "o19419")
       getproperty         QName(PackageNamespace(""), "o4539")
-      iffalse             L135
+      iffalse             L133
 
       pushbyte            0
       setlocal            12
@@ -203,9 +200,9 @@ L91:
       callproperty        QName(PackageNamespace(""), "o11952"), 0
       setlocal            11
 
-      jump                L133
+      jump                L131
 
-L117:
+L115:
       label
       getlocal            11
       getlocal            12
@@ -217,7 +214,7 @@ L117:
       getlocal            10
       getproperty         QName(PackageNamespace(""), "o5693")
       callproperty        QName(PackageNamespace(""), "o1224"), 1
-      iffalse             L133
+      iffalse             L131
 
       findpropstrict      QName(PrivateNamespace("o5899"), "o18488")
       getlocal            4
@@ -225,25 +222,25 @@ L117:
       getproperty         QName(PackageNamespace(""), "o5693")
       callpropvoid        QName(PrivateNamespace("o5899"), "o18488"), 2
 
-L133:
+L131:
       hasnext2            11, 12
-      iftrue              L117
+      iftrue              L115
 
-L135:
+L133:
       getlocal            4
       getproperty         QName(PackageNamespace(""), "o7211")
       pushbyte            1
       greaterthan
       dup
-      iftrue              L146
+      iftrue              L144
 
       pop
       getlocal            4
       getproperty         QName(PackageNamespace(""), "o20170")
       pushint             100000
       greaterthan
-L146:
-      iffalse             L162
+L144:
+      iffalse             L160
 
       getlex              QName(PrivateNamespace("o5899"), "o19419")
       getproperty         QName(PackageNamespace(""), "o2719")
@@ -261,10 +258,10 @@ L146:
       pushtrue
       callpropvoid        QName(PackageNamespace(""), "o8337"), 3
 
-L162:
+L160:
       getlex              QName(PrivateNamespace("o5899"), "o19419")
       getproperty         QName(PackageNamespace(""), "o1029")
-      iffalse             L172
+      iffalse             L170
 
       getlex              QName(PrivateNamespace("o5899"), "o19419")
       pushfalse
@@ -274,14 +271,14 @@ L162:
       pushbyte            6
       setproperty         QName(PackageNamespace(""), "screen")
 
-      jump                L175
+      jump                L173
 
-L172:
+L170:
       getlex              QName(ProtectedNamespace("o328"), "o19689")
       pushbyte            3
       setproperty         QName(PackageNamespace(""), "screen")
 
-L175:
+L173:
       pushtrue
       returnvalue
      end ; code

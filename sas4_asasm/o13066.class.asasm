@@ -430,12 +430,9 @@ L39:
       getlocal1
       setproperty         QName(PackageNamespace(""), "o20822")
 
-      pushbyte            12
-      setlocal            11
-
       getlocal            4
       getlocal            5
-      ifne                L17
+      ifne                L15
 
       getlex              QName(PrivateNamespace("o13066"), "o9659")
       pushstring          "Max grade"
@@ -445,9 +442,9 @@ L39:
       coerce_s
       setlocal            7
 
-      jump                L24
+      jump                L22
 
-L17:
+L15:
       getlex              QName(PrivateNamespace("o13066"), "o9659")
       pushstring          "Upgrade for $"
       getlex              QName(PackageNamespace(""), "o16724")
@@ -456,7 +453,7 @@ L17:
       add
       setproperty         QName(PackageNamespace(""), "text")
 
-L24:
+L22:
       getlex              QName(PackageNamespace(""), "o20173")
       getlocal            4
       getlocal            5
@@ -507,7 +504,7 @@ L24:
       getlocal            5
       pushstring          "on"
       pushstring          "off"
-      getlocal            11
+      pushbyte            12
       callpropvoid        QName(PackageNamespace(""), "o5877"), 6
 
       findpropstrict      QName(PackageNamespace(""), "o9072")

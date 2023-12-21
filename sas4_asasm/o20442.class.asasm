@@ -320,9 +320,6 @@ L37:
       setproperty         QName(PackageNamespace(""), "screen")
 
 L40:
-      jump                L41
-
-L41:
       returnvoid
      end ; code
     end ; body
@@ -361,7 +358,7 @@ L41:
       pushstring          "Match name must be greater than two characters."
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
 
-      jump                L60
+      jump                L59
 
 L16:
       getlex              QName(ProtectedNamespace("o20442"), "o4253")
@@ -374,7 +371,7 @@ L16:
       pushstring          "Match name must be less than twenty characters."
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
 
-      jump                L60
+      jump                L59
 
 L25:
       getlex              QName(ProtectedNamespace("o20442"), "o4253")
@@ -388,7 +385,7 @@ L25:
       pushstring          "Can't contain the word nightmare."
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
 
-      jump                L60
+      jump                L59
 
 L35:
       getlocal2
@@ -424,9 +421,6 @@ L56:
       setproperty         QName(PackageNamespace(""), "screen")
 
 L59:
-      jump                L60
-
-L60:
       returnvoid
      end ; code
     end ; body
@@ -656,7 +650,7 @@ L134:
       getproperty         QName(PackageNamespace(""), "o202")
       getproperty         QName(PackageNamespace(""), "o18339")
       pushbyte            2
-      ifne                L40
+      ifne                L39
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o202")
@@ -693,12 +687,9 @@ L35:
       setproperty         QName(PackageNamespace(""), "screen")
 
 L38:
-      jump                L39
-
-L39:
       returnvoid
 
-L40:
+L39:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "profileData")
@@ -730,7 +721,7 @@ L40:
       getlocal2
       getproperty         QName(PackageNamespace(""), "data")
       callproperty        QName(PackageNamespace(""), "o12697"), 0
-      iffalse             L77
+      iffalse             L76
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "data")
@@ -740,17 +731,14 @@ L40:
       pushbyte            20
       setproperty         QName(PackageNamespace(""), "screen")
 
-      jump                L80
+      jump                L79
 
-L77:
+L76:
       getlex              QName(ProtectedNamespace("o20442"), "o19689")
       pushbyte            26
       setproperty         QName(PackageNamespace(""), "screen")
 
-L80:
-      jump                L81
-
-L81:
+L79:
       returnvoid
      end ; code
     end ; body
@@ -783,7 +771,7 @@ L81:
       getproperty         QName(PackageNamespace(""), "o202")
       getproperty         QName(PackageNamespace(""), "o18339")
       pushbyte            2
-      ifne                L40
+      ifne                L39
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o202")
@@ -820,12 +808,9 @@ L35:
       setproperty         QName(PackageNamespace(""), "screen")
 
 L38:
-      jump                L39
-
-L39:
       returnvoid
 
-L40:
+L39:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "profileData")
@@ -861,7 +846,7 @@ L40:
       getlocal2
       getproperty         QName(PackageNamespace(""), "data")
       callproperty        QName(PackageNamespace(""), "o12697"), 0
-      iffalse             L81
+      iffalse             L80
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "data")
@@ -871,17 +856,14 @@ L40:
       pushbyte            20
       setproperty         QName(PackageNamespace(""), "screen")
 
-      jump                L84
+      jump                L83
 
-L81:
+L80:
       getlex              QName(ProtectedNamespace("o20442"), "o19689")
       pushbyte            26
       setproperty         QName(PackageNamespace(""), "screen")
 
-L84:
-      jump                L85
-
-L85:
+L83:
       returnvoid
      end ; code
     end ; body

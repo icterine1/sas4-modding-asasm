@@ -786,7 +786,7 @@ L51:
 
       getlex              QName(PackageNamespace(""), "o6691")
       pushnull
-      ifeq                L84
+      ifeq                L87
 
       getlocal3
       getlocal            9
@@ -797,7 +797,7 @@ L51:
       dup
       setlocal            7
 
-      iffalse             L84
+      iffalse             L87
 
       findpropstrict      QName(PackageNamespace(""), "o7231")
       constructprop       QName(PackageNamespace(""), "o7231"), 0
@@ -818,7 +818,6 @@ L51:
       getlocal0
       callpropvoid        QName(PackageNamespace(""), "o7554"), 2
 
-L84:
       jump                L87
 
 L85:
@@ -971,11 +970,8 @@ L54:
       coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
       setlocal3
 
-      pushbyte            2
-      setlocal2
-
       getlocal3
-      getlocal2
+      pushbyte            2
       callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
 
       getlocal0

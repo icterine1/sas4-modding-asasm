@@ -746,7 +746,7 @@ L6:
       getlocal            4
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-      jump                L16
+      jump                L27
 
 L11:
       getlocal2
@@ -755,7 +755,6 @@ L11:
       add
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L16:
       jump                L27
 
 L17:
@@ -1178,7 +1177,7 @@ L258:
       getlex              QName(PackageNamespace(""), "o16978")
       setlocal            25
 
-      jump                L351
+      jump                L350
 
 L263:
       label
@@ -1198,7 +1197,7 @@ L263:
       convert_i
       pushint             1
       subtract_i
-      lookupswitch        L351, [L343, L335, L351, L279, L311, L303, L327, L295, L287, L319]
+      lookupswitch        L350, [L343, L335, L350, L279, L311, L303, L327, L295, L287, L319]
 
 L279:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1209,7 +1208,7 @@ L279:
       pushstring          "HMG Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L287:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1220,7 +1219,7 @@ L287:
       pushstring          "Zeus Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L295:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1231,7 +1230,7 @@ L295:
       pushstring          "Flame Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L303:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1242,7 +1241,7 @@ L303:
       pushstring          "HIKS Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L311:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1253,7 +1252,7 @@ L311:
       pushstring          "Cryo Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L319:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1264,7 +1263,7 @@ L319:
       pushstring          "Plasma Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L327:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1275,7 +1274,7 @@ L327:
       pushstring          "Missle Turrets"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L335:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1286,7 +1285,7 @@ L335:
       pushstring          "Cryo Grenades"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
+      jump                L350
 
 L343:
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
@@ -1297,14 +1296,12 @@ L343:
       pushstring          "Frag Grenades"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-      jump                L351
-
-L351:
+L350:
       hasnext2            25, 26
       iftrue              L263
 
       getlocal3
-      iffalse             L362
+      iffalse             L361
 
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
       getlocal1
@@ -1314,9 +1311,9 @@ L351:
       pushstring          "Revive Tokens"
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-L362:
+L361:
       getlocal2
-      iffalse             L375
+      iffalse             L374
 
       findpropstrict      QName(PrivateNamespace("o11614"), "o3895")
       getlocal1
@@ -1330,27 +1327,27 @@ L362:
       add
       callpropvoid        QName(PrivateNamespace("o11614"), "o3895"), 5
 
-L375:
+L374:
       getlocal            20
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifne                L381
+      ifne                L380
 
       pushstring          ""
       returnvalue
 
-L381:
+L380:
       getlocal            20
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            1
-      ifne                L389
+      ifne                L388
 
       getlocal            20
       pushbyte            0
       getproperty         MultinameL([PrivateNamespace("o11614"), ProtectedNamespace("o11614"), StaticProtectedNs("o11614"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o11614"), Namespace("http://adobe.com/AS3/2006/builtin")])
       returnvalue
 
-L389:
+L388:
       getlocal            20
       getlocal            20
       getproperty         QName(PackageNamespace(""), "length")
@@ -1361,7 +1358,7 @@ L389:
       setlocal            21
 
       getlocal1
-      iffalse             L417
+      iffalse             L416
 
       getlocal            20
       getlocal            20
@@ -1384,7 +1381,7 @@ L389:
       add
       returnvalue
 
-L417:
+L416:
       getlocal            20
       pushstring          "\n"
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1

@@ -18,14 +18,6 @@ class
      getlocal0
      constructsuper      0
 
-     getlex              QName(PackageNamespace("flash.system"), "Security")
-     pushstring          "*"
-     callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
-
-     getlex              QName(PackageNamespace("flash.system"), "Security")
-     pushstring          "https://nk-static-replica.github.io/crossdomain.xml"
-     callpropvoid        QName(PackageNamespace(""), "loadPolicyFile"), 1
-
      getlex              QName(PackageNamespace("flash.system"), "Worker")
      getproperty         QName(PackageNamespace(""), "isSupported")
      findproperty        QName(PackageNamespace(""), "o15767")
@@ -59,17 +51,14 @@ class
       getlocal0
       pushscope
 
-      pushnull
-      setlocal2
-
       getlex              QName(PackageNamespace(""), "Main")
       getlocal0
       getproperty         QName(PackageNamespace(""), "stage")
       setproperty         QName(PackageNamespace(""), "stage")
 
-      jump                L49
+      jump                L47
 
-L9:
+L7:
       getlocal0
       pushscope
 
@@ -88,54 +77,51 @@ L9:
       coerce              QName(PackageNamespace("flash.text"), "TextField")
       setlocal2
 
-      getlocal2
+      pushnull
       pushstring          "You can only have one instance of the game running at a time: \n"
       getlex              QName(PackageInternalNs(""), "o19631")
       getproperty         Multiname("o1216", [PrivateNamespace("Main"), ProtectedNamespace("Main"), StaticProtectedNs("Main"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:Main"), Namespace("http://adobe.com/AS3/2006/builtin")])
       add
       setproperty         QName(PackageNamespace(""), "text")
 
-      getlocal2
+      pushnull
       pushint             65280
       setproperty         QName(PackageNamespace(""), "textColor")
 
-      getlocal2
+      pushnull
       pushshort           800
       setproperty         QName(PackageNamespace(""), "width")
 
-      getlocal2
+      pushnull
       pushtrue
       setproperty         QName(PackageNamespace(""), "multiline")
 
-      getlocal2
+      pushnull
       pushshort           260
       setproperty         QName(PackageNamespace(""), "x")
 
-      getlocal2
+      pushnull
       pushshort           300
       setproperty         QName(PackageNamespace(""), "y")
 
       getlocal0
-      getlocal2
+      pushnull
       callpropvoid        QName(PackageNamespace(""), "addChild"), 1
 
       popscope
       kill                4
       returnvoid
 
-L49:
+L47:
       getlex              QName(PackageNamespace(""), "StandardStuff")
       getlocal0
       getlex              QName(PrivateNamespace("Main"), "o12497")
       pushshort           800
       callpropvoid        QName(PackageNamespace(""), "showSplash"), 3
 
-      jump                L55
-
-L55:
       returnvoid
      end ; code
-     try from L9 to L9 target L9 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
+     try from L7 to L7 target L7 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
     end ; body
    end ; method
   end ; trait

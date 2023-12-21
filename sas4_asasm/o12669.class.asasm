@@ -661,65 +661,59 @@ L81:
       coerce              QName(PackageNamespace("flash.display"), "BitmapData")
       setlocal            15
 
-      pushdouble          1
-      setlocal            17
-
-      pushdouble          1
-      setlocal            21
-
       getlocal            7
       getlex              QName(PackageNamespace(""), "o493")
       getproperty         QName(PackageNamespace(""), "o18249")
       equals
       dup
-      iffalse             L101
+      iffalse             L97
 
       pop
       getlocal            8
       getlex              QName(PackageNamespace(""), "o493")
       getproperty         QName(PackageNamespace(""), "o18249")
       equals
-L101:
+L97:
       dup
-      iffalse             L107
+      iffalse             L103
 
       pop
       getlocal            9
       pushbyte            0
       equals
-L107:
+L103:
       dup
-      iffalse             L113
+      iffalse             L109
 
       pop
       getlocal            11
       pushnull
       equals
-L113:
+L109:
       dup
-      iffalse             L119
+      iffalse             L115
 
       pop
       getlocal            12
       pushnull
       equals
-L119:
+L115:
       dup
-      iffalse             L131
+      iffalse             L127
 
       pop
       getlocal            13
       pushbyte            1
       equals
       dup
-      iftrue              L131
+      iftrue              L127
 
       pop
       getlocal            13
       pushbyte            6
       equals
-L131:
-      iffalse             L169
+L127:
+      iffalse             L165
 
       getlex              QName(PrivateNamespace("o12669"), "o5579")
       getlocal            5
@@ -762,7 +756,7 @@ L131:
 
       returnvoid
 
-L169:
+L165:
       getlocal1
       getproperty         QName(PackageNamespace(""), "x")
       getlocal1
@@ -795,11 +789,11 @@ L169:
       multiply
       add
       pushint             2250000
-      ifngt               L201
+      ifngt               L197
 
       returnvoid
 
-L201:
+L197:
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0
       getlex              QName(PackageNamespace("flash.geom"), "Matrix")
@@ -860,15 +854,15 @@ L201:
       equals
       not
       dup
-      iftrue              L258
+      iftrue              L254
 
       pop
       getlocal            12
       pushnull
       equals
       not
-L258:
-      iffalse             L286
+L254:
+      iffalse             L282
 
       getlex              QName(PrivateNamespace("o12669"), "o6471")
       coerce              QName(PackageNamespace("flash.geom"), "ColorTransform")
@@ -906,10 +900,10 @@ L258:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "alphaOffset")
 
-L286:
+L282:
       getlocal            11
       pushnull
-      ifeq                L316
+      ifeq                L312
 
       getlocal            11
       getlex              QName(PrivateNamespace("o12669"), "o19404")
@@ -944,10 +938,10 @@ L286:
       pushbyte            4
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
 
-L316:
+L312:
       getlocal            12
       pushnull
-      ifeq                L339
+      ifeq                L335
 
       getlocal            20
       getlocal            12
@@ -973,7 +967,7 @@ L316:
       getproperty         MultinameL([PrivateNamespace("o12669"), ProtectedNamespace("o12669"), StaticProtectedNs("o12669"), StaticProtectedNs("flash.display:Sprite"), StaticProtectedNs("flash.display:DisplayObjectContainer"), StaticProtectedNs("flash.display:InteractiveObject"), StaticProtectedNs("flash.display:DisplayObject"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o12669"), Namespace("http://adobe.com/AS3/2006/builtin")])
       setproperty         QName(PackageNamespace(""), "alphaOffset")
 
-L339:
+L335:
       pushnull
       coerce_s
       setlocal            14
@@ -982,29 +976,29 @@ L339:
       pushbyte            2
       equals
       dup
-      iftrue              L351
+      iftrue              L347
 
       pop
       getlocal            13
       pushbyte            7
       equals
-L351:
-      iffalse             L355
+L347:
+      iffalse             L351
 
       pushstring          "add"
       coerce_s
       setlocal            14
 
-L355:
+L351:
       getlocal            13
       pushbyte            9
-      ifne                L361
+      ifne                L357
 
       pushstring          "subtract"
       coerce_s
       setlocal            14
 
-L361:
+L357:
       getlocal0
       getproperty         QName(PackageNamespace(""), "o20188")
       getlocal            15

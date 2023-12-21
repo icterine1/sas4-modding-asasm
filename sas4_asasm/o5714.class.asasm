@@ -1363,7 +1363,7 @@ L77:
       dup
       setlocal            5
 
-      iffalse             L110
+      iffalse             L114
 
       pushstring          "Chance to win the incredible "
       getlocal            5
@@ -1469,7 +1469,7 @@ L82:
       pop
       getlocal            9
 L101:
-      iffalse             L110
+      iffalse             L114
 
       getlex              QName(PrivateNamespace("o5714"), "o17914")
       getlocal            9
@@ -1481,7 +1481,6 @@ L101:
       pushtrue
       setproperty         QName(PackageNamespace(""), "visible")
 
-L110:
       jump                L114
 
 L111:
@@ -1625,13 +1624,12 @@ L178:
 
       getlex              QName(PackageNamespace(""), "o10013")
       pushnull
-      ifeq                L22
+      ifeq                L64
 
       getlex              QName(PackageNamespace(""), "o10013")
       pushtrue
       setproperty         QName(PackageNamespace(""), "enabled")
 
-L22:
       jump                L64
 
 L23:

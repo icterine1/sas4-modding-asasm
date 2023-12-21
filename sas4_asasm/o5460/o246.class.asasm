@@ -160,9 +160,6 @@ L45:
       pushbyte            0
       setlocal            7
 
-      pushint             200000
-      setlocal3
-
       getlex              QName(PackageNamespace(""), "o10176")
       callproperty        QName(PackageNamespace(""), "o13327"), 0
       findproperty        QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o3840")
@@ -177,7 +174,7 @@ L45:
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o3840")
       pushbyte            1
-      ifne                L33
+      ifne                L31
 
       getlocal2
       pushdouble          0.7
@@ -191,13 +188,13 @@ L45:
       convert_d
       setlocal            4
 
-L33:
+L31:
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o18945")
       findpropstrict      QName(PackageNamespace(""), "o16541")
       getlocal0
       getlocal            5
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            0
@@ -222,7 +219,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            1
@@ -247,7 +244,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            3
@@ -272,7 +269,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            0
@@ -297,7 +294,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            1
@@ -322,7 +319,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            2
@@ -347,7 +344,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            0
@@ -372,7 +369,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            0
@@ -397,7 +394,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            1
@@ -422,7 +419,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            3
@@ -447,7 +444,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            2
@@ -472,7 +469,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            0
@@ -497,7 +494,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            1
@@ -522,7 +519,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            4
@@ -547,7 +544,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            5
@@ -572,7 +569,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            3
@@ -597,7 +594,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            0
@@ -622,7 +619,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            1
@@ -647,7 +644,7 @@ L33:
       getlocal            5
       inclocal_i          7
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       pushbyte            3
@@ -666,14 +663,14 @@ L33:
       constructprop       QName(PackageNamespace(""), "o16541"), 9
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-      getlocal3
+      pushint             200000
       findproperty        QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o11947")
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o11947")
 
       getlocal            5
       getlocal            7
-      getlocal3
+      pushint             200000
       multiply
       add
       findproperty        QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o17792")
@@ -683,9 +680,9 @@ L33:
       pushbyte            0
       setlocal            6
 
-      jump                L509
+      jump                L507
 
-L503:
+L501:
       label
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o18945")
       getlocal            6
@@ -693,15 +690,15 @@ L503:
       callpropvoid        Multiname("o4526", [PrivateNamespace("FilePrivateNS:o5460:o246"), ProtectedNamespace("FilePrivateNS:o5460:o246"), StaticProtectedNs("FilePrivateNS:o5460:o246"), StaticProtectedNs("o3047"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o5460"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")]), 0
 
       inclocal_i          6
-L509:
+L507:
       getlocal            6
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o18945")
       getproperty         QName(PackageNamespace(""), "length")
-      iflt                L503
+      iflt                L501
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o3840")
       pushbyte            1
-      ifne                L524
+      ifne                L522
 
       getlex              QName(PackageNamespace(""), "o1051")
       getlocal0
@@ -711,16 +708,16 @@ L509:
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o14210")
       callpropvoid        QName(PackageNamespace(""), "o9310"), 3
 
-      jump                L529
+      jump                L527
 
-L524:
+L522:
       getlex              QName(PackageNamespace(""), "o1051")
       getlocal0
       pushshort           130
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o14210")
       callpropvoid        QName(PackageNamespace(""), "o9310"), 3
 
-L529:
+L527:
       returnvoid
      end ; code
     end ; body
@@ -1024,7 +1021,7 @@ L63:
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o18593")
       pushbyte            5
-      ifnlt               L49
+      ifnlt               L88
 
       getlex              QName(PackageNamespace(""), "o1051")
       getlocal0
@@ -1034,7 +1031,6 @@ L63:
       getlex              QName(PrivateNamespace("FilePrivateNS:o5460:o246"), "o14210")
       callpropvoid        QName(PackageNamespace(""), "o9310"), 3
 
-L49:
       jump                L88
 
 L50:

@@ -18,9 +18,6 @@ class
      getlocal0
      pushscope
 
-     pushnull
-     setlocal3
-
      pushnan
      setlocal            4
 
@@ -306,9 +303,6 @@ class
      code
       getlocal0
       pushscope
-
-      pushnull
-      setlocal            6
 
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o8708")
       coerce              QName(PackageNamespace(""), "o5173")
@@ -1410,7 +1404,7 @@ L244:
       swap
       setproperty         QName(PrivateNamespace("o15506"), "o7551")
 
-      jump                L412
+      jump                L417
 
 L377:
       getlocal            5
@@ -1419,7 +1413,7 @@ L377:
 
       getlex              QName(PrivateNamespace("o15506"), "o7551")
       pushbyte            1
-      ifeq                L390
+      ifeq                L417
 
       pushbyte            1
       findproperty        QName(PrivateNamespace("o15506"), "o7551")
@@ -1430,8 +1424,7 @@ L377:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-L390:
-      jump                L412
+      jump                L417
 
 L391:
       getlocal            5
@@ -1440,7 +1433,7 @@ L391:
 
       getlex              QName(PrivateNamespace("o15506"), "o7551")
       pushbyte            2
-      ifeq                L404
+      ifeq                L417
 
       pushbyte            2
       findproperty        QName(PrivateNamespace("o15506"), "o7551")
@@ -1451,8 +1444,7 @@ L391:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-L404:
-      jump                L412
+      jump                L417
 
 L405:
       pushbyte            0
@@ -1464,7 +1456,6 @@ L405:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-L412:
       jump                L417
 
 L413:

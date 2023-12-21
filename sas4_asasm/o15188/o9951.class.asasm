@@ -207,12 +207,12 @@ L36:
       add
       callproperty        QName(PackageNamespace(""), "o10418"), 1
       pushdouble          0.33
-      ifnlt               L52
+      ifnlt               L50
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "type")
       convert_i
-      lookupswitch        L44, [L26, L35]
+      lookupswitch        L42, [L26, L34]
 
 L26:
       getlocal1
@@ -220,40 +220,34 @@ L26:
       pushbyte            10
       modulo
       pushbyte            4
-      ifnlt               L34
+      ifnlt               L50
 
       pushtrue
       returnvalue
 
 L34:
-      jump                L52
-
-L35:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5973")
       pushbyte            10
       modulo
       pushbyte            6
-      ifnlt               L43
+      ifnlt               L50
 
       pushtrue
       returnvalue
 
-L43:
-      jump                L52
-
-L44:
+L42:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5973")
       pushbyte            10
       modulo
       pushbyte            8
-      ifnlt               L52
+      ifnlt               L50
 
       pushtrue
       returnvalue
 
-L52:
+L50:
       pushfalse
       returnvalue
      end ; code
@@ -991,18 +985,10 @@ L236:
 L237:
       convert_b
       dup
-      setlocal            20
-
-      dup
-      iffalse             L247
-
       pop
-      getlex              QName(PrivateNamespace("FilePrivateNS:o15188:o9951"), "o19708")
-      getlex              QName(PackageNamespace(""), "o5141")
-      getproperty         QName(PackageNamespace(""), "o13033")
-      greaterequals
-L247:
-      iffalse             L315
+      dup
+      pop
+      iffalse             L310
 
       getlex              QName(PackageNamespace(""), "o5141")
       getproperty         QName(PackageNamespace(""), "o12922")
@@ -1028,7 +1014,7 @@ L247:
 
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifngt               L304
+      ifngt               L299
 
       findpropstrict      QName(PackageNamespace(""), "o8734")
       getlocal0
@@ -1069,7 +1055,7 @@ L247:
       getlocal            12
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L304:
+L299:
       pushbyte            0
       findproperty        QName(PrivateNamespace("FilePrivateNS:o15188:o9951"), "o19708")
       swap
@@ -1082,12 +1068,9 @@ L304:
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o15188:o9951"), "o19516")
 
-      jump                L323
+      jump                L316
 
-L315:
-      getlocal            20
-      iffalse             L323
-
+L310:
       getlex              QName(PrivateNamespace("FilePrivateNS:o15188:o9951"), "o19708")
       convert_d
       increment
@@ -1095,7 +1078,7 @@ L315:
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o15188:o9951"), "o19708")
 
-L323:
+L316:
       getlocal            13
       returnvalue
      end ; code

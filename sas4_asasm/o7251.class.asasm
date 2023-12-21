@@ -281,11 +281,8 @@ L62:
      getlocal0
      pushscope
 
-     pushfalse
-     setlocal            6
-
      getlocal1
-     iffalse             L22
+     iffalse             L20
 
      getlocal1
      getproperty         QName(PackageNamespace(""), "o10239")
@@ -307,47 +304,40 @@ L62:
      pushbyte            -1
      setlocal            5
 
-L22:
+L20:
      getlocal            4
-     iffalse             L26
+     iffalse             L24
 
      pushstring          "None"
      returnvalue
 
-L26:
+L24:
      getlocal3
-     iffalse             L30
+     iffalse             L28
 
      pushstring          "Premium"
      returnvalue
 
-L30:
-     getlocal            6
-     iffalse             L34
-
-     pushstring          "Championship"
-     returnvalue
-
-L34:
+L28:
      getlocal            5
      convert_i
      pushint             1
      subtract_i
-     lookupswitch        L45, [L39, L41, L43]
+     lookupswitch        L39, [L33, L35, L37]
 
-L39:
+L33:
      pushstring          "Halloween"
      returnvalue
 
-L41:
+L35:
      pushstring          "Christmas"
      returnvalue
 
-L43:
+L37:
      pushstring          "Easter"
      returnvalue
 
-L45:
+L39:
      pushstring          "None"
      returnvalue
     end ; code

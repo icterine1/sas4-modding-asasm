@@ -3151,7 +3151,7 @@ L136:
       pushtrue
       setproperty         QName(PackageNamespace(""), "visible")
 
-      jump                L158
+      jump                L164
 
 L153:
       getlocal            32
@@ -3160,7 +3160,6 @@ L153:
       callproperty        QName(PackageNamespace(""), "o10417"), 1
       setproperty         QName(PackageNamespace(""), "text")
 
-L158:
       jump                L164
 
 L159:
@@ -4506,14 +4505,9 @@ L130:
       pushnull
       setlocal3
 
-      pushstring          ""
-      pushstring          "paul"
-      ifne                L7
-
-L7:
       getlex              QName(ProtectedNamespace("o3376"), "o20199")
       pushnull
-      ifeq                L55
+      ifeq                L52
 
       getlex              QName(ProtectedNamespace("o3376"), "o20199")
       getlex              QName(PrivateNamespace("o3376"), "o2045")
@@ -4521,30 +4515,30 @@ L7:
       pushfalse
       equals
       dup
-      iffalse             L21
+      iffalse             L18
 
       pop
       getlocal1
       pushbyte            0
       greaterthan
-L21:
+L18:
       dup
-      iffalse             L27
+      iffalse             L24
 
       pop
       getlocal2
       pushbyte            1
       greaterthan
-L27:
+L24:
       dup
-      iffalse             L32
+      iffalse             L29
 
       pop
       getlex              QName(ProtectedNamespace("o3376"), "o20294")
       getproperty         QName(PackageNamespace(""), "enabled")
-L32:
+L29:
       dup
-      iffalse             L42
+      iffalse             L39
 
       pop
       getlex              QName(PackageNamespace(""), "o14200")
@@ -4554,7 +4548,7 @@ L32:
       pushbyte            2
       equals
       not
-L42:
+L39:
       setproperty         QName(PackageNamespace(""), "visible")
 
       getlocal1
@@ -4566,13 +4560,13 @@ L42:
       getlex              QName(ProtectedNamespace("o3376"), "o20199")
       getproperty         QName(PackageNamespace(""), "o13586")
       getlocal3
-      ifeq                L55
+      ifeq                L52
 
       getlex              QName(ProtectedNamespace("o3376"), "o20199")
       getlocal3
       setproperty         QName(PackageNamespace(""), "o13586")
 
-L55:
+L52:
       returnvoid
      end ; code
     end ; body

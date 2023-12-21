@@ -578,9 +578,6 @@ L10:
      swap
      setslot             4
 
-     jump                L47
-
-L47:
      getlex              QName(PackageInternalNs(""), "loader")
      getlex              QName(PackageInternalNs(""), "o15386")
      callpropvoid        QName(PackageNamespace(""), "load"), 1
@@ -938,18 +935,12 @@ L10:
 
      getlex              QName(PackageInternalNs(""), "o8500")
      pushtrue
-     ifne                L130
+     ifne                L126
 
      pushtrue
      dup
-     iftrue              L109
-
      pop
-     pushstring          ""
-     pushstring          "production"
-     equals
-L109:
-     iffalse             L120
+     iffalse             L116
 
      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
      pushstring          "https://static-api.ninjakiwi.com/"
@@ -961,9 +952,9 @@ L109:
      swap
      setslot             11
 
-     jump                L129
+     jump                L168
 
-L120:
+L116:
      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
      pushstring          "https://static-api-staging.ninjakiwi.com/"
      getlex              QName(PackageInternalNs(""), "o17659")
@@ -974,20 +965,13 @@ L120:
      swap
      setslot             11
 
-L129:
-     jump                L176
+     jump                L168
 
-L130:
+L126:
      pushtrue
      dup
-     iftrue              L137
-
      pop
-     pushstring          ""
-     pushstring          "production"
-     equals
-L137:
-     iffalse             L164
+     iffalse             L156
 
      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
      pushstring          "http://hydar.xyz:5572/api-nk/"
@@ -1015,9 +999,9 @@ L137:
      swap
      setslot             11
 
-     jump                L176
+     jump                L168
 
-L164:
+L156:
      findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
      pushstring          "https://api-staging.ninjakiwi.com/"
      getlex              QName(PackageInternalNs(""), "o17659")
@@ -1031,7 +1015,7 @@ L164:
      swap
      setslot             11
 
-L176:
+L168:
      getlex              QName(PackageInternalNs(""), "o15386")
      pushstring          "POST"
      setproperty         QName(PackageNamespace(""), "method")
@@ -1081,12 +1065,6 @@ L176:
      getlocal0
      pushscope
 
-     pushnull
-     setlocal1
-
-     jump                L5
-
-L5:
      pushstring          ""
      returnvalue
     end ; code

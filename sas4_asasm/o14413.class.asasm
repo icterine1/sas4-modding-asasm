@@ -2107,9 +2107,6 @@ L18:
       setlocal            8
 
       pushbyte            0
-      setlocal            14
-
-      pushbyte            0
       setlocal            5
 
       getlocal2
@@ -2169,7 +2166,7 @@ L18:
       pushstring          "Virus Samples"
       equals
       dup
-      iffalse             L69
+      iffalse             L67
 
       pop
       getlex              QName(PackageNamespace(""), "o4519")
@@ -2177,8 +2174,8 @@ L18:
       getproperty         QName(PackageNamespace(""), "o476")
       getproperty         QName(PackageNamespace(""), "o9392")
       callproperty        QName(PackageNamespace(""), "o16643"), 0
-L69:
-      iffalse             L95
+L67:
+      iffalse             L93
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -2189,7 +2186,7 @@ L69:
       dup
       setlocal            12
 
-      iffalse             L95
+      iffalse             L93
 
       getlocal2
       getlocal            12
@@ -2211,7 +2208,7 @@ L69:
       getproperty         QName(PackageNamespace(""), "o17977")
       setproperty         QName(PackageNamespace(""), "o7219")
 
-L95:
+L93:
       getlocal3
       getlocal            4
       pushstring          "cashBonusMultiplier"
@@ -2226,9 +2223,9 @@ L95:
       pushbyte            0
       setlocal            10
 
-      jump                L119
+      jump                L117
 
-L107:
+L105:
       label
       getlocal2
       getlocal3
@@ -2242,10 +2239,10 @@ L107:
       callpropvoid        QName(PackageNamespace(""), "o20054"), 1
 
       inclocal_i          10
-L119:
+L117:
       getlocal            10
       getlocal            9
-      iflt                L107
+      iflt                L105
 
       getlocal3
       getlocal            4
@@ -2258,9 +2255,9 @@ L119:
       pushbyte            0
       setlocal            10
 
-      jump                L144
+      jump                L142
 
-L132:
+L130:
       label
       getlocal2
       getlocal3
@@ -2274,10 +2271,10 @@ L132:
       callpropvoid        QName(PackageNamespace(""), "o14387"), 1
 
       inclocal_i          10
-L144:
+L142:
       getlocal            10
       getlocal            15
-      iflt                L132
+      iflt                L130
 
       getlocal3
       getlocal            4
@@ -2290,9 +2287,9 @@ L144:
       pushbyte            0
       setlocal            5
 
-      jump                L169
+      jump                L167
 
-L157:
+L155:
       label
       getlocal2
       getlocal3
@@ -2306,10 +2303,10 @@ L157:
       callpropvoid        QName(PackageNamespace(""), "o907"), 1
 
       inclocal_i          5
-L169:
+L167:
       getlocal            5
       getlocal            11
-      iflt                L157
+      iflt                L155
 
       getlocal3
       getlocal            4
@@ -2373,10 +2370,9 @@ L169:
 
       pushstring          "liveOps.rewards"
       coerce_s
-      setlocal            7
-
+      pop
       getlocal1
-      getlocal            7
+      pushstring          "liveOps.rewards"
       callproperty        QName(PackageNamespace(""), "o3554"), 1
       convert_i
       setlocal2
@@ -2388,7 +2384,7 @@ L169:
 
 L26:
       label
-      getlocal            7
+      pushstring          "liveOps.rewards"
       pushstring          "."
       add
       getlocal            8
@@ -3725,8 +3721,7 @@ L555:
       iftrue              L534
 
       getlocal            8
-      setlocal            8
-
+      pop
       findpropstrict      QName(PackageNamespace(""), "o460")
       constructprop       QName(PackageNamespace(""), "o460"), 0
       findproperty        QName(PackageNamespace(""), "o13723")

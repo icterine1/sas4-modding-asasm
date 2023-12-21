@@ -521,24 +521,21 @@ L211:
       pushnan
       setlocal1
 
-      pushdouble          0.03333333333333333
-      setlocal2
-
       getlex              QName(PrivateNamespace("o12779"), "o20488")
       convert_i
-      lookupswitch        L271, [L11, L98, L181]
+      lookupswitch        L269, [L9, L96, L179]
 
-L11:
+L9:
       findpropstrict      QName(PrivateNamespace("o12779"), "o17707")
       dup
       getproperty         QName(PrivateNamespace("o12779"), "o17707")
-      getlocal2
+      pushdouble          0.03333333333333333
       subtract
       setproperty         QName(PrivateNamespace("o12779"), "o17707")
 
       getlex              QName(PrivateNamespace("o12779"), "o17707")
       pushbyte            0
-      ifnlt               L91
+      ifnlt               L89
 
       getlex              QName(PrivateNamespace("o12779"), "o5808")
       not
@@ -547,7 +544,7 @@ L11:
       setproperty         QName(PrivateNamespace("o12779"), "o5808")
 
       getlex              QName(PrivateNamespace("o12779"), "o5808")
-      iffalse             L67
+      iffalse             L65
 
       getlex              QName(PrivateNamespace("o12779"), "o3874")
       callproperty        QName(PackageNamespace(""), "random"), 0
@@ -595,9 +592,9 @@ L11:
       pushdouble          0.06666666666666667
       setproperty         QName(Namespace("o7331"), "frameRate")
 
-      jump                L91
+      jump                L89
 
-L67:
+L65:
       getlex              QName(PrivateNamespace("o12779"), "o3874")
       pushbyte            5
       pushbyte            9
@@ -628,7 +625,7 @@ L67:
       divide
       setproperty         QName(Namespace("o7331"), "frameRate")
 
-L91:
+L89:
       getlex              QName(PackageNamespace(""), "body")
       getlex              QName(PrivateNamespace("o12779"), "o13631")
       getproperty         QName(PackageNamespace(""), "x")
@@ -636,19 +633,19 @@ L91:
       getproperty         QName(PackageNamespace(""), "y")
       callpropvoid        QName(PackageNamespace(""), "o6141"), 2
 
-      jump                L271
+      jump                L269
 
-L98:
+L96:
       findpropstrict      QName(PrivateNamespace("o12779"), "o16630")
       dup
       getproperty         QName(PrivateNamespace("o12779"), "o16630")
-      getlocal2
+      pushdouble          0.03333333333333333
       subtract
       setproperty         QName(PrivateNamespace("o12779"), "o16630")
 
       getlex              QName(PrivateNamespace("o12779"), "o16630")
       pushbyte            0
-      ifngt               L149
+      ifngt               L147
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -699,9 +696,9 @@ L98:
       pushdouble          0.016666666666666667
       setproperty         QName(Namespace("o7331"), "frameRate")
 
-      jump                L180
+      jump                L269
 
-L149:
+L147:
       getlex              QName(PrivateNamespace("o12779"), "o3874")
       pushbyte            2
       pushbyte            4
@@ -740,15 +737,14 @@ L149:
       divide
       setproperty         QName(Namespace("o7331"), "frameRate")
 
-L180:
-      jump                L271
+      jump                L269
 
-L181:
+L179:
       getlex              QName(PrivateNamespace("o12779"), "o4690")
       pushnull
       equals
       dup
-      iftrue              L192
+      iftrue              L190
 
       pop
       getlex              QName(PrivateNamespace("o12779"), "o4690")
@@ -756,8 +752,8 @@ L181:
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
       equals
-L192:
-      iffalse             L217
+L190:
+      iffalse             L215
 
       getlex              QName(PackageNamespace(""), "body")
       pushbyte            0
@@ -768,11 +764,10 @@ L192:
       getlex              QName(PrivateNamespace("o12779"), "o13631")
       pushbyte            0
       dup
-      setlocal            4
-
+      pop
       setproperty         QName(PackageNamespace(""), "y")
 
-      getlocal            4
+      pushbyte            0
       setproperty         QName(PackageNamespace(""), "x")
 
       getlex              QName(PackageNamespace(""), "o16166")
@@ -789,9 +784,9 @@ L192:
       divide
       setproperty         QName(Namespace("o7331"), "frameRate")
 
-      jump                L271
+      jump                L269
 
-L217:
+L215:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       pushdouble          4.5
@@ -826,13 +821,13 @@ L217:
       getlex              QName(PrivateNamespace("o12779"), "o13631")
       getproperty         QName(PackageNamespace(""), "o17573")
       pushbyte            100
-      ifnle               L252
+      ifnle               L250
 
       getlex              QName(PrivateNamespace("o12779"), "o4690")
       getproperty         QName(PackageNamespace(""), "o16255")
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "shift"), 0
 
-L252:
+L250:
       getlex              QName(PrivateNamespace("o12779"), "o13631")
       getlocal3
       setproperty         QName(PackageNamespace(""), "o3215")
@@ -857,7 +852,7 @@ L252:
       pushdouble          0.016666666666666667
       setproperty         QName(Namespace("o7331"), "frameRate")
 
-L271:
+L269:
       returnvoid
      end ; code
     end ; body
@@ -957,9 +952,6 @@ L271:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       returnvoid
      end ; code
     end ; body

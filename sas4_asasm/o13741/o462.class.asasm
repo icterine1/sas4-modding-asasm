@@ -756,9 +756,7 @@ L173:
       pushbyte            1
       setlocal            16
 
-      jump                L255
-
-L178:
+L177:
       label
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o9721")
@@ -773,13 +771,13 @@ L178:
       pushnull
       equals
       dup
-      iftrue              L195
+      iftrue              L194
 
       pop
       getlocal            14
       getproperty         Multiname("o14999", [PrivateNamespace("FilePrivateNS:o13741:o462"), ProtectedNamespace("FilePrivateNS:o13741:o462"), StaticProtectedNs("FilePrivateNS:o13741:o462"), StaticProtectedNs("o15755"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o13741"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
-L195:
-      iftrue              L256
+L194:
+      iftrue              L255
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o13741:o462"), "o20384")
       callproperty        QName(PackageNamespace(""), "random"), 0
@@ -797,9 +795,9 @@ L195:
       getlocal            4
       setlocal            20
 
-      jump                L227
+      jump                L226
 
-L209:
+L208:
       label
       getlocal            20
       getlocal            21
@@ -816,18 +814,18 @@ L209:
 
       getlocal            11
       getlocal            5
-      ifnlt               L227
+      ifnlt               L226
 
       getlocal            13
       setlocal            17
 
-      jump                L229
+      jump                L228
 
-L227:
+L226:
       hasnext2            20, 21
-      iftrue              L209
+      iftrue              L208
 
-L229:
+L228:
       getlocal            14
       getproperty         Multiname("o10555", [PrivateNamespace("FilePrivateNS:o13741:o462"), ProtectedNamespace("FilePrivateNS:o13741:o462"), StaticProtectedNs("FilePrivateNS:o13741:o462"), StaticProtectedNs("o15755"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o13741"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
       getlocal            17
@@ -858,19 +856,18 @@ L229:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
       inclocal_i          16
-L255:
-      jump                L178
+      jump                L177
 
-L256:
+L255:
       pushbyte            0
       setlocal            23
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o13741:o462"), "o16068")
       setlocal            22
 
-      jump                L290
+      jump                L289
 
-L261:
+L260:
       label
       getlocal            22
       getlocal            23
@@ -904,16 +901,16 @@ L261:
       bitor
       setproperty         QName(PackageNamespace(""), "o3046")
 
-L290:
+L289:
       hasnext2            22, 23
-      iftrue              L261
+      iftrue              L260
 
       pushbyte            1
       setlocal            7
 
-      jump                L313
+      jump                L312
 
-L295:
+L294:
       label
       getlex              QName(PackageNamespace(""), "o12891")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -934,10 +931,10 @@ L295:
       callpropvoid        QName(PackageNamespace(""), "o12781"), 2
 
       inclocal_i          7
-L313:
+L312:
       getlocal            7
       pushbyte            8
-      ifle                L295
+      ifle                L294
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -957,9 +954,6 @@ L313:
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o13741:o462"), "o7280")
 
-      jump                L333
-
-L333:
       getlex              QName(PackageNamespace(""), "o1051")
       getlocal0
       pushbyte            1

@@ -2581,7 +2581,7 @@ L123:
 
 L127:
       getlocal            8
-      iffalse             L241
+      iffalse             L238
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o16255")
@@ -2612,9 +2612,7 @@ L127:
       convert_d
       setlocal            6
 
-      jump                L238
-
-L155:
+L154:
       label
       getlocal            7
       pushbyte            1
@@ -2626,7 +2624,7 @@ L155:
 
       getlocal            6
       getlocal            5
-      ifnlt               L181
+      ifnlt               L180
 
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o529")
       dup
@@ -2644,9 +2642,9 @@ L155:
       add
       setproperty         QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o2301")
 
-      jump                L239
+      jump                L236
 
-L181:
+L180:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o2301")
       dup
       getproperty         QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o2301")
@@ -2671,7 +2669,7 @@ L181:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o16255")
       getproperty         QName(PackageNamespace(""), "length")
-      ifnlt               L230
+      ifnlt               L229
 
       getlex              QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o414")
       convert_d
@@ -2703,9 +2701,9 @@ L181:
       convert_d
       setlocal            7
 
-      jump                L238
+      jump                L154
 
-L230:
+L229:
       pushbyte            1
       findproperty        QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o529")
       swap
@@ -2715,16 +2713,11 @@ L230:
       getlex              QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o2393")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o7434"), 1
 
-      jump                L239
-
-L238:
-      jump                L155
-
-L239:
+L236:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o1488")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o8742:o20256"), "o1488"), 0
 
-L241:
+L238:
       findpropstrict      QName(PackageNamespace("flash.utils"), "ByteArray")
       constructprop       QName(PackageNamespace("flash.utils"), "ByteArray"), 0
       coerce              QName(PackageNamespace("flash.utils"), "ByteArray")

@@ -487,18 +487,10 @@ L151:
 L152:
       convert_b
       dup
-      setlocal            16
-
-      dup
-      iffalse             L162
-
       pop
-      getlex              QName(PrivateNamespace("FilePrivateNS:o2637:o3864"), "o19708")
-      getlex              QName(PackageNamespace(""), "o8291")
-      getproperty         QName(PackageNamespace(""), "o13033")
-      greaterequals
-L162:
-      iffalse             L169
+      dup
+      pop
+      iffalse             L164
 
       getlocal            10
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o2637:o3864"), "o4081")
@@ -506,12 +498,9 @@ L162:
       callproperty        QName(PrivateNamespace("FilePrivateNS:o2637:o3864"), "o4081"), 1
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-      jump                L177
+      jump                L170
 
-L169:
-      getlocal            16
-      iffalse             L177
-
+L164:
       getlex              QName(PrivateNamespace("FilePrivateNS:o2637:o3864"), "o19708")
       convert_d
       increment
@@ -519,7 +508,7 @@ L169:
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o2637:o3864"), "o19708")
 
-L177:
+L170:
       getlocal            10
       returnvalue
      end ; code
@@ -1083,12 +1072,12 @@ L17:
       add
       callproperty        QName(PackageNamespace(""), "o10418"), 1
       pushdouble          0.33
-      ifnlt               L52
+      ifnlt               L50
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "type")
       convert_i
-      lookupswitch        L44, [L26, L35]
+      lookupswitch        L42, [L26, L34]
 
 L26:
       getlocal1
@@ -1096,40 +1085,34 @@ L26:
       pushbyte            10
       modulo
       pushbyte            4
-      ifnlt               L34
+      ifnlt               L50
 
       pushtrue
       returnvalue
 
 L34:
-      jump                L52
-
-L35:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5973")
       pushbyte            10
       modulo
       pushbyte            6
-      ifnlt               L43
+      ifnlt               L50
 
       pushtrue
       returnvalue
 
-L43:
-      jump                L52
-
-L44:
+L42:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5973")
       pushbyte            10
       modulo
       pushbyte            8
-      ifnlt               L52
+      ifnlt               L50
 
       pushtrue
       returnvalue
 
-L52:
+L50:
       pushfalse
       returnvalue
      end ; code

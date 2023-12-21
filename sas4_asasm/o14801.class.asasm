@@ -1539,16 +1539,13 @@ L61:
       coerce              QName(PackageNamespace(""), "o14754")
       setlocal2
 
-      pushint             86400000
-      setlocal1
-
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "o15020")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
       getlex              QName(PackageNamespace(""), "o3593")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "getTime"), 0
-      getlocal1
+      pushint             86400000
       add
       greaterthan
       returnvalue
@@ -1603,7 +1600,7 @@ L61:
       pushbyte            2
       equals
 L25:
-      iffalse             L93
+      iffalse             L92
 
       getlocal1
       pushbyte            -1
@@ -1649,7 +1646,7 @@ L56:
       getproperty         QName(PackageNamespace(""), "o9938")
       setlocal            6
 
-      jump                L89
+      jump                L88
 
 L62:
       label
@@ -1660,7 +1657,7 @@ L62:
       setlocal            5
 
       getlocal3
-      iffalse             L82
+      iffalse             L81
 
       getlex              QName(PackageNamespace(""), "o15427")
       pushbyte            0
@@ -1673,59 +1670,56 @@ L75:
       getlocal1
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o2562")
-      ifnle               L81
+      ifnle               L87
 
       getlocal            4
       returnvalue
 
 L81:
-      jump                L88
-
-L82:
       getlocal1
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o2760")
-      ifnle               L88
+      ifnle               L87
 
       getlocal            4
       returnvalue
 
-L88:
+L87:
       inclocal_i          4
-L89:
+L88:
       hasnext2            6, 7
       iftrue              L62
 
       pushbyte            -1
       returnvalue
 
-L93:
+L92:
       getlocal0
       getproperty         QName(PackageNamespace(""), "o19189")
       pushbyte            0
       lessequals
       dup
-      iffalse             L101
+      iffalse             L100
 
       pop
       getlex              QName(PackageNamespace(""), "o11392")
-L101:
+L100:
       dup
-      iffalse             L106
+      iffalse             L105
 
       pop
       getlex              QName(PackageNamespace(""), "o11392")
       getproperty         QName(PackageNamespace(""), "o9938")
-L106:
+L105:
       dup
-      iffalse             L123
+      iffalse             L122
 
       pop
       getlex              QName(PackageNamespace(""), "o11392")
       getproperty         QName(PackageNamespace(""), "o9938")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            1
-      ifnge               L122
+      ifnge               L121
 
       getlex              QName(PackageNamespace(""), "o11392")
       getproperty         QName(PackageNamespace(""), "o9938")
@@ -1734,25 +1728,23 @@ L106:
       getproperty         Multiname("o2760", [PrivateNamespace("o14801"), ProtectedNamespace("o14801"), StaticProtectedNs("o14801"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14801"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushbyte            1
       equals
-      jump                L123
+      jump                L122
 
-L122:
+L121:
       pushtrue
-L123:
+L122:
       dup
-      iffalse             L129
-
+      pop
       pop
       getlex              QName(PackageNamespace(""), "o4210")
       pushfalse
       equals
-L129:
-      iffalse             L132
+      iffalse             L131
 
       pushbyte            -1
       returnvalue
 
-L132:
+L131:
       pushbyte            0
       setlocal            9
 
@@ -1760,9 +1752,9 @@ L132:
       getproperty         QName(PackageNamespace(""), "o9938")
       setlocal            8
 
-      jump                L166
+      jump                L164
 
-L138:
+L137:
       label
       getlocal            8
       getlocal            9
@@ -1771,42 +1763,39 @@ L138:
       setlocal            5
 
       getlocal3
-      iffalse             L158
+      iffalse             L156
 
       getlex              QName(PackageNamespace(""), "o15427")
       pushbyte            0
-      ifnle               L151
+      ifnle               L150
 
       pushbyte            -1
       returnvalue
 
-L151:
+L150:
       getlex              QName(PackageNamespace(""), "o15427")
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o2562")
-      ifnle               L157
+      ifnle               L163
 
       getlocal            4
       returnvalue
 
-L157:
-      jump                L165
-
-L158:
+L156:
       getlocal0
       getproperty         QName(PackageNamespace(""), "o2889")
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o2760")
-      ifnle               L165
+      ifnle               L163
 
       getlocal            4
       returnvalue
 
-L165:
+L163:
       inclocal_i          4
-L166:
+L164:
       hasnext2            8, 9
-      iftrue              L138
+      iftrue              L137
 
       pushbyte            -1
       returnvalue

@@ -122,9 +122,6 @@ class
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       findpropstrict      QName(PrivateNamespace("o12522"), "o14941")
       pushstring          "invalidSession"
       callpropvoid        QName(PrivateNamespace("o12522"), "o14941"), 1
@@ -170,12 +167,8 @@ L3:
       pushfalse
 L7:
       dup
-      iffalse             L11
-
       pop
-      pushfalse
-L11:
-      iffalse             L63
+      iffalse             L61
 
       findpropstrict      QName(PrivateNamespace("o12522"), "o12859")
       dup
@@ -195,7 +188,7 @@ L11:
       getlex              QName(PrivateNamespace("o12522"), "o9154")
       subtract
       pushshort           1000
-      ifnge               L63
+      ifnge               L61
 
       getlex              QName(PrivateNamespace("o12522"), "o1631")
       pushstring          "FPS: "
@@ -234,7 +227,7 @@ L11:
       swap
       setproperty         QName(PrivateNamespace("o12522"), "o12859")
 
-L63:
+L61:
       returnvoid
      end ; code
     end ; body
@@ -294,12 +287,8 @@ L63:
       pushfalse
 L7:
       dup
-      iffalse             L11
-
       pop
-      pushfalse
-L11:
-      iffalse             L42
+      iffalse             L40
 
       findpropstrict      QName(PackageNamespace("flash.text"), "TextField")
       constructprop       QName(PackageNamespace("flash.text"), "TextField"), 0
@@ -339,15 +328,15 @@ L11:
       pushtrue
       callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
 
-L42:
+L40:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o9276")
       pushfalse
-      ifne                L47
+      ifne                L45
 
       returnvoid
 
-L47:
+L45:
       getlex              QName(PackageNamespace(""), "stage")
       getlex              QName(PackageNamespace("com.ninjakiwi.gateway.nk"), "NKGateway")
       getproperty         QName(PackageNamespace(""), "container")
@@ -394,9 +383,6 @@ L47:
       getlex              QName(PrivateNamespace("o12522"), "o14452")
       callpropvoid        QName(PackageNamespace(""), "then"), 1
 
-      jump                L86
-
-L86:
       getlex              QName(PrivateNamespace("o12522"), "o13397")
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o4848")
@@ -1199,9 +1185,6 @@ L60:
       convert_i
       setlocal2
 
-      jump                L68
-
-L68:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o4848")
@@ -1216,7 +1199,7 @@ L68:
       getlocal0
       getproperty         QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o8576")
-      iffalse             L113
+      iffalse             L112
 
       getlocal0
       getproperty         QName(PackageNamespace(""), "o19419")
@@ -1230,7 +1213,7 @@ L68:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o3501")
-      iffalse             L109
+      iffalse             L108
 
       findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
       pushshort           1000
@@ -1250,24 +1233,23 @@ L68:
       getlex              QName(PrivateNamespace("o12522"), "o7668")
       callpropvoid        QName(PackageNamespace(""), "start"), 0
 
-      jump                L112
+      jump                L137
 
-L109:
+L108:
       getlocal0
       pushbyte            5
       setproperty         QName(PackageNamespace(""), "screen")
 
-L112:
-      jump                L138
+      jump                L137
 
-L113:
+L112:
       getlex              QName(PackageNamespace(""), "o16989")
       callpropvoid        QName(PackageNamespace(""), "o19931"), 0
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o3501")
-      iffalse             L135
+      iffalse             L134
 
       findpropstrict      QName(PackageNamespace("flash.utils"), "Timer")
       pushshort           1000
@@ -1287,14 +1269,14 @@ L113:
       getlex              QName(PrivateNamespace("o12522"), "o7668")
       callpropvoid        QName(PackageNamespace(""), "start"), 0
 
-      jump                L138
+      jump                L137
 
-L135:
+L134:
       getlex              QName(PackageNamespace(""), "o16989")
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "screen")
 
-L138:
+L137:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o4848")

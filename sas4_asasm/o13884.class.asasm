@@ -1058,7 +1058,7 @@ L97:
       pushbyte            0
       setlocal            5
 
-      jump                L233
+      jump                L232
 
 L133:
       label
@@ -1114,24 +1114,21 @@ L133:
       setlocal            17
 
       pushbyte            0
-      ifne                L187
+      ifne                L186
 
       getlocal            9
       pushbyte            0
-      ifnlt               L186
+      ifnlt               L223
 
       pushfalse
       returnvalue
 
 L186:
-      jump                L224
-
-L187:
       getlocal            17
       pushbyte            0
       lessthan
       dup
-      iffalse             L198
+      iffalse             L197
 
       pop
       getlocal            9
@@ -1139,8 +1136,8 @@ L187:
       getlocal            17
       multiply
       lessthan
-L198:
-      iffalse             L207
+L197:
+      iffalse             L206
 
       getlocal            9
       getlocal            17
@@ -1151,14 +1148,14 @@ L198:
       getlocal            5
       setlocal            7
 
-      jump                L224
+      jump                L223
 
-L207:
+L206:
       getlocal            17
       pushbyte            0
       greaterthan
       dup
-      iffalse             L218
+      iffalse             L217
 
       pop
       getlocal            9
@@ -1166,8 +1163,8 @@ L207:
       getlocal            17
       multiply
       lessthan
-L218:
-      iffalse             L224
+L217:
+      iffalse             L223
 
       getlocal            9
       getlocal            17
@@ -1175,27 +1172,27 @@ L218:
       convert_d
       setlocal            10
 
-L224:
+L223:
       getlocal            10
       getlocal            15
       getlex              QName(PackageNamespace(""), "Number")
       getproperty         QName(PackageNamespace(""), "MIN_VALUE")
       subtract
-      ifnlt               L232
+      ifnlt               L231
 
       pushfalse
       returnvalue
 
-L232:
+L231:
       inclocal_i          5
-L233:
+L232:
       getlocal            5
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o11880")
       iflt                L133
 
       getlocal            7
       pushbyte            0
-      ifnge               L285
+      ifnge               L284
 
       getlocal1
       getlocal            15
@@ -1249,7 +1246,7 @@ L233:
       pushtrue
       returnvalue
 
-L285:
+L284:
       pushfalse
       returnvalue
      end ; code
@@ -1608,21 +1605,12 @@ L74:
       pushdouble          0
       setlocal            9
 
-      pushdouble          0
-      setlocal            18
-
-      pushdouble          0
-      setlocal            19
-
-      pushdouble          0.3333333333333333
-      setlocal            23
-
       pushbyte            0
       setlocal            17
 
-      jump                L271
+      jump                L265
 
-L91:
+L85:
       label
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17252")
       getlocal            17
@@ -1634,7 +1622,7 @@ L91:
       pushbyte            1
       add
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o11880")
-      ifnlt               L109
+      ifnlt               L103
 
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17252")
       getlocal            17
@@ -1642,40 +1630,40 @@ L91:
       add
       convert_i
       getproperty         MultinameL([PrivateNamespace("o13884"), ProtectedNamespace("o13884"), StaticProtectedNs("o13884"), StaticProtectedNs("o17586"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o13884"), Namespace("http://adobe.com/AS3/2006/builtin")])
-      jump                L112
+      jump                L106
 
-L109:
+L103:
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o17252")
       pushbyte            0
       getproperty         MultinameL([PrivateNamespace("o13884"), ProtectedNamespace("o13884"), StaticProtectedNs("o13884"), StaticProtectedNs("o17586"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o13884"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L112:
+L106:
       coerce              QName(PackageNamespace(""), "o20021")
       setlocal            24
 
       getlocal            10
       getproperty         QName(PackageNamespace(""), "x")
-      getlocal            18
+      pushdouble          0
       subtract
       convert_d
       setlocal            20
 
       getlocal            10
       getproperty         QName(PackageNamespace(""), "y")
-      getlocal            19
+      pushdouble          0
       subtract
       convert_d
       setlocal            4
 
       getlocal            24
       getproperty         QName(PackageNamespace(""), "x")
-      getlocal            18
+      pushdouble          0
       subtract
       convert_d
       setlocal            8
 
       getlocal            24
       getproperty         QName(PackageNamespace(""), "y")
-      getlocal            19
+      pushdouble          0
       subtract
       convert_d
       setlocal            15
@@ -1704,9 +1692,9 @@ L112:
 
       getlocal            12
       getlocal            14
-      getlocal            23
+      pushdouble          0.3333333333333333
       multiply
-      getlocal            18
+      pushdouble          0
       getlocal            10
       getproperty         QName(PackageNamespace(""), "x")
       add
@@ -1720,9 +1708,9 @@ L112:
 
       getlocal            21
       getlocal            14
-      getlocal            23
+      pushdouble          0.3333333333333333
       multiply
-      getlocal            19
+      pushdouble          0
       getlocal            10
       getproperty         QName(PackageNamespace(""), "y")
       add
@@ -1734,10 +1722,10 @@ L112:
       convert_d
       setlocal            21
 
-      getlocal            18
+      pushdouble          0
       setlocal            13
 
-      getlocal            19
+      pushdouble          0
       setlocal            5
 
       getlocal            20
@@ -1752,7 +1740,7 @@ L112:
       getlocal            15
       setlocal            6
 
-      getlocal            23
+      pushdouble          0.3333333333333333
       pushdouble          0.25
       getlocal            7
       getlocal            7
@@ -1784,7 +1772,7 @@ L112:
       convert_d
       setlocal            26
 
-      getlocal            23
+      pushdouble          0.3333333333333333
       pushdouble          0.25
       getlocal            11
       getlocal            11
@@ -1827,10 +1815,10 @@ L112:
       setlocal            9
 
       inclocal_i          17
-L271:
+L265:
       getlocal            17
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o11880")
-      iflt                L91
+      iflt                L85
 
       getlocal1
       getlocal2
@@ -1982,7 +1970,7 @@ L45:
       iffalse             L79
 
       getlocal            24
-      iftrue              L78
+      iftrue              L87
 
       getlocal            14
       pushbyte            1
@@ -1991,7 +1979,6 @@ L45:
       setlocal            6
 
       inclocal_i          15
-L78:
       jump                L87
 
 L79:
@@ -2916,21 +2903,12 @@ L21:
      pushdouble          0
      setlocal            14
 
-     pushdouble          0
-     setlocal            8
-
-     pushdouble          0
-     setlocal            10
-
-     pushdouble          0.3333333333333333
-     setlocal            6
-
      pushbyte            0
      setlocal            7
 
-     jump                L136
+     jump                L130
 
-L35:
+L29:
      label
      getlocal1
      getlocal            7
@@ -2942,7 +2920,7 @@ L35:
      pushbyte            1
      add
      getlocal2
-     ifnlt               L53
+     ifnlt               L47
 
      getlocal1
      getlocal            7
@@ -2950,40 +2928,40 @@ L35:
      add
      convert_i
      getproperty         MultinameL([PrivateNamespace("o13884"), StaticProtectedNs("o13884"), StaticProtectedNs("o17586"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o13884"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     jump                L56
+     jump                L50
 
-L53:
+L47:
      getlocal1
      pushbyte            0
      getproperty         MultinameL([PrivateNamespace("o13884"), StaticProtectedNs("o13884"), StaticProtectedNs("o17586"), StaticProtectedNs("Object"), Namespace("http://www.box2d.org/ns/b2internal"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o13884"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L56:
+L50:
      coerce              QName(PackageNamespace(""), "o20021")
      setlocal            13
 
      getlocal            11
      getproperty         QName(PackageNamespace(""), "x")
-     getlocal            8
+     pushdouble          0
      subtract
      convert_d
      setlocal            12
 
      getlocal            11
      getproperty         QName(PackageNamespace(""), "y")
-     getlocal            10
+     pushdouble          0
      subtract
      convert_d
      setlocal            5
 
      getlocal            13
      getproperty         QName(PackageNamespace(""), "x")
-     getlocal            8
+     pushdouble          0
      subtract
      convert_d
      setlocal            9
 
      getlocal            13
      getproperty         QName(PackageNamespace(""), "y")
-     getlocal            10
+     pushdouble          0
      subtract
      convert_d
      setlocal            16
@@ -3013,9 +2991,9 @@ L56:
      getlocal            4
      getproperty         QName(PackageNamespace(""), "x")
      getlocal            15
-     getlocal            6
+     pushdouble          0.3333333333333333
      multiply
-     getlocal            8
+     pushdouble          0
      getlocal            11
      getproperty         QName(PackageNamespace(""), "x")
      add
@@ -3031,9 +3009,9 @@ L56:
      getlocal            4
      getproperty         QName(PackageNamespace(""), "y")
      getlocal            15
-     getlocal            6
+     pushdouble          0.3333333333333333
      multiply
-     getlocal            10
+     pushdouble          0
      getlocal            11
      getproperty         QName(PackageNamespace(""), "y")
      add
@@ -3047,10 +3025,10 @@ L56:
      setproperty         QName(PackageNamespace(""), "y")
 
      inclocal_i          7
-L136:
+L130:
      getlocal            7
      getlocal2
-     iflt                L35
+     iflt                L29
 
      getlocal            4
      getproperty         QName(PackageNamespace(""), "x")

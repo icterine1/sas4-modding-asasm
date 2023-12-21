@@ -740,7 +740,7 @@ L25:
       getproperty         QName(PackageNamespace(""), "o2685")
       callproperty        QName(PackageNamespace(""), "o7629"), 0
       convert_i
-      lookupswitch        L17, [L8, L8]
+      lookupswitch        L16, [L8, L8]
 
 L8:
       pushfalse
@@ -748,22 +748,19 @@ L8:
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o17872")
 
-      jump                L13
-
-L13:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o20481")
       pushbyte            0
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o20481"), 1
 
-      jump                L21
+      jump                L20
 
-L17:
+L16:
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o17872")
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o17872")
 
-L21:
+L20:
       returnvoid
      end ; code
     end ; body
@@ -1542,21 +1539,18 @@ L32:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o6407")
       callproperty        QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o6407"), 0
       pushbyte            1
       lessequals
       dup
-      iffalse             L12
+      iffalse             L11
 
       pop
       getlex              QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o7997")
       not
-L12:
-      iffalse             L17
+L11:
+      iffalse             L16
 
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o17806")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o17806"), 0
@@ -1564,7 +1558,7 @@ L12:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o20481")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o20481"), 0
 
-L17:
+L16:
       returnvoid
      end ; code
     end ; body
@@ -1677,9 +1671,6 @@ L46:
       getlocal1
       setproperty         QName(PrivateNamespace("FilePrivateNS:o3474"), "o16388")
 
-      jump                L8
-
-L8:
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o3474:o4282"), "o7997")
       swap

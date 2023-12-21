@@ -555,7 +555,7 @@ L18:
       findpropstrict      QName(PrivateNamespace("o7141"), "o20024")
       callpropvoid        QName(PrivateNamespace("o7141"), "o20024"), 0
 
-      jump                L55
+      jump                L58
 
 L26:
       getlex              QName(PackageNamespace(""), "o4519")
@@ -589,7 +589,6 @@ L26:
       getlex              QName(PrivateNamespace("o7141"), "o15742")
       callpropvoid        QName(PackageNamespace(""), "defer"), 1
 
-L55:
       jump                L58
 
 L56:
@@ -944,14 +943,13 @@ L13:
       pushnull
       equals
 L58:
-      iffalse             L63
+      iffalse             L100
 
       pushfalse
       findproperty        QName(PrivateNamespace("o7141"), "o20964")
       swap
       setproperty         QName(PrivateNamespace("o7141"), "o20964")
 
-L63:
       jump                L100
 
 L64:
@@ -1205,7 +1203,7 @@ L48:
       getproperty         QName(PackageNamespace(""), "o4670")
       getproperty         QName(Namespace("o8925"), "o16859")
       pushbyte            2
-      ifne                L100
+      ifne                L164
 
       getlex              QName(PackageNamespace(""), "o1051")
       getlocal0
@@ -1216,8 +1214,7 @@ L48:
       swap
       setproperty         QName(PrivateNamespace("o7141"), "o6804")
 
-L100:
-      jump                L126
+      jump                L164
 
 L101:
       findpropstrict      QName(PrivateNamespace("o7141"), "o10552")
@@ -1229,7 +1226,7 @@ L101:
 
       getlex              QName(PrivateNamespace("o7141"), "o10552")
       pushdouble          0.333
-      ifnge               L126
+      ifnge               L164
 
       pushbyte            0
       findproperty        QName(PrivateNamespace("o7141"), "o10552")
@@ -1249,7 +1246,6 @@ L101:
       swap
       setproperty         QName(PrivateNamespace("o7141"), "o10888")
 
-L126:
       jump                L164
 
 L127:

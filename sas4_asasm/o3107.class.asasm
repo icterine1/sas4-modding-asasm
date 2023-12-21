@@ -286,13 +286,10 @@ L16:
       pushnan
       setlocal            6
 
-      pushdouble          0.03333333333333333
-      setlocal3
-
       findpropstrict      QName(PrivateNamespace("o3107"), "o16388")
       dup
       getproperty         QName(PrivateNamespace("o3107"), "o16388")
-      getlocal3
+      pushdouble          0.03333333333333333
       add
       setproperty         QName(PrivateNamespace("o3107"), "o16388")
 
@@ -311,9 +308,9 @@ L16:
       pushbyte            0
       setlocal            4
 
-      jump                L98
+      jump                L96
 
-L32:
+L30:
       label
       getlex              QName(PrivateNamespace("o3107"), "o5402")
       getlocal            4
@@ -325,7 +322,7 @@ L32:
       getlocal            5
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
       pushbyte            -1
-      ifne                L97
+      ifne                L95
 
       getlex              QName(PackageNamespace(""), "o15460")
       getproperty         QName(PackageNamespace(""), "o4078")
@@ -355,7 +352,7 @@ L32:
       getlocal1
       getlocal1
       multiply
-      ifnlt               L97
+      ifnlt               L95
 
       getlex              QName(PackageNamespace(""), "o14797")
       getlex              QName(PackageNamespace(""), "o8012")
@@ -388,13 +385,13 @@ L32:
       getlocal            5
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L97:
+L95:
       inclocal_i          4
-L98:
+L96:
       getlocal            4
       getlex              QName(PrivateNamespace("o3107"), "o5402")
       getproperty         QName(PackageNamespace(""), "length")
-      iflt                L32
+      iflt                L30
 
       returnvoid
      end ; code

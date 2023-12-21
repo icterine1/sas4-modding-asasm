@@ -94,12 +94,9 @@ class
       swap
       setproperty         QName(PrivateNamespace("o37"), "o12996")
 
-      pushbyte            10
-      setlocal3
-
       findpropstrict      QName(PrivateNamespace("o37"), "o7523")
       getlex              QName(PackageNamespace("assets.ui.hud"), "ResistChemicalText")
-      getlocal3
+      pushbyte            10
       getlex              QName(PrivateNamespace("o37"), "o6432")
       callproperty        QName(PrivateNamespace("o37"), "o7523"), 3
       findproperty        QName(PrivateNamespace("o37"), "o3506")
@@ -108,7 +105,7 @@ class
 
       findpropstrict      QName(PrivateNamespace("o37"), "o7523")
       getlex              QName(PackageNamespace("assets.ui.hud"), "ResistEnergyText")
-      getlocal3
+      pushbyte            10
       getlex              QName(PrivateNamespace("o37"), "o6292")
       callproperty        QName(PrivateNamespace("o37"), "o7523"), 3
       findproperty        QName(PrivateNamespace("o37"), "o9850")
@@ -117,7 +114,7 @@ class
 
       findpropstrict      QName(PrivateNamespace("o37"), "o7523")
       getlex              QName(PackageNamespace("assets.ui.hud"), "ResistPhysicalText")
-      getlocal3
+      pushbyte            10
       getlex              QName(PrivateNamespace("o37"), "o6482")
       callproperty        QName(PrivateNamespace("o37"), "o7523"), 3
       findproperty        QName(PrivateNamespace("o37"), "o17499")
@@ -126,7 +123,7 @@ class
 
       findpropstrict      QName(PrivateNamespace("o37"), "o7523")
       getlex              QName(PackageNamespace("assets.ui.hud"), "ResistThermalText")
-      getlocal3
+      pushbyte            10
       getlex              QName(PrivateNamespace("o37"), "o8790")
       callproperty        QName(PrivateNamespace("o37"), "o7523"), 3
       findproperty        QName(PrivateNamespace("o37"), "o8562")
@@ -158,9 +155,9 @@ class
       getproperty         QName(PackageNamespace(""), "o10696")
       setlocal            4
 
-      jump                L108
+      jump                L106
 
-L86:
+L84:
       label
       getlocal            4
       getlocal            5
@@ -188,9 +185,9 @@ L86:
       pushbyte            1
       callpropvoid        QName(PackageNamespace(""), "gotoAndStop"), 1
 
-L108:
+L106:
       hasnext2            4, 5
-      iftrue              L86
+      iftrue              L84
 
       pushbyte            0
       setlocal            7
@@ -199,9 +196,9 @@ L108:
       getproperty         QName(PackageNamespace(""), "o10696")
       setlocal            6
 
-      jump                L138
+      jump                L136
 
-L116:
+L114:
       label
       getlocal            6
       getlocal            7
@@ -229,9 +226,9 @@ L116:
       pushbyte            1
       callpropvoid        QName(PackageNamespace(""), "gotoAndStop"), 1
 
-L138:
+L136:
       hasnext2            6, 7
-      iftrue              L116
+      iftrue              L114
 
       returnvoid
      end ; code

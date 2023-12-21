@@ -677,11 +677,8 @@ L5:
       coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
       setlocal            4
 
-      pushbyte            15
-      setlocal            5
-
       getlocal            4
-      getlocal            5
+      pushbyte            15
       callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
 
       getlocal            4
@@ -815,12 +812,11 @@ L56:
 L68:
       getlex              QName(PrivateNamespace("o7700"), "o11618")
       pushfalse
-      ifne                L73
+      ifne                L78
 
       findpropstrict      QName(PrivateNamespace("o7700"), "o20970")
       callpropvoid        QName(PrivateNamespace("o7700"), "o20970"), 0
 
-L73:
       jump                L78
 
 L74:
@@ -948,17 +944,14 @@ L131:
       setlocal3
 
       pushbyte            0
-      setlocal2
-
-      pushbyte            0
       setlocal            6
 
       getlocal1
       setlocal            5
 
-      jump                L55
+      jump                L53
 
-L11:
+L9:
       label
       getlocal            5
       getlocal            6
@@ -1008,9 +1001,9 @@ L11:
       callproperty        QName(PackageNamespace(""), "initialise"), 3
       callpropvoid        QName(PackageNamespace(""), "o5725"), 2
 
-L55:
+L53:
       hasnext2            5, 6
-      iftrue              L11
+      iftrue              L9
 
       returnvoid
      end ; code

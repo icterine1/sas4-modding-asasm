@@ -88,15 +88,6 @@ class
       coerce_s
       setlocal3
 
-      pushstring          ""
-      pushstring          "KongTest"
-      ifne                L19
-
-      pushstring          "http://www.kongregate.com/flash/API_AS3_Local.swf"
-      coerce_s
-      setlocal3
-
-L19:
       getlex              QName(PackageNamespace("flash.system"), "Security")
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1

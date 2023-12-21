@@ -638,14 +638,11 @@ L6:
       getproperty         QName(PackageNamespace(""), "stageY")
       setproperty         QName(PackageNamespace(""), "y")
 
-      pushbyte            15
-      setlocal2
-
       getlex              QName(PrivateNamespace("o19067"), "o7204")
       pushfalse
       equals
       dup
-      iffalse             L43
+      iffalse             L41
 
       pop
       getlex              QName(PackageNamespace(""), "Math")
@@ -655,10 +652,10 @@ L6:
       getproperty         QName(PackageNamespace(""), "x")
       subtract
       callproperty        QName(PackageNamespace(""), "abs"), 1
-      getlocal2
+      pushbyte            15
       greaterthan
       dup
-      iftrue              L43
+      iftrue              L41
 
       pop
       getlex              QName(PackageNamespace(""), "Math")
@@ -668,10 +665,10 @@ L6:
       getproperty         QName(PackageNamespace(""), "y")
       subtract
       callproperty        QName(PackageNamespace(""), "abs"), 1
-      getlocal2
+      pushbyte            15
       greaterthan
-L43:
-      iffalse             L57
+L41:
+      iffalse             L55
 
       pushtrue
       findproperty        QName(PrivateNamespace("o19067"), "o7204")
@@ -680,7 +677,7 @@ L43:
 
       getlex              QName(PackageNamespace(""), "o16090")
       pushnull
-      ifeq                L57
+      ifeq                L55
 
       getlex              QName(PackageNamespace(""), "o16090")
       getglobalscope
@@ -688,18 +685,18 @@ L43:
       getlex              QName(PrivateNamespace("o19067"), "o20351")
       call                2
       pop
-L57:
+L55:
       getlex              QName(PrivateNamespace("o19067"), "o7204")
       dup
-      iffalse             L65
+      iffalse             L63
 
       pop
       getlex              QName(PrivateNamespace("o19067"), "o7724")
       pushnull
       equals
       not
-L65:
-      iffalse             L102
+L63:
+      iffalse             L100
 
       pushfalse
       findproperty        QName(PrivateNamespace("o19067"), "o14429")
@@ -708,7 +705,7 @@ L65:
 
       getlex              QName(PackageNamespace(""), "o14029")
       pushnull
-      ifeq                L102
+      ifeq                L100
 
       getlex              QName(PackageNamespace(""), "o14029")
       getglobalscope
@@ -725,29 +722,29 @@ L65:
       pushnull
       equals
       dup
-      iftrue              L92
+      iftrue              L90
 
       pop
       getlex              QName(PrivateNamespace("o19067"), "o14429")
       pushfalse
       equals
-L92:
-      iffalse             L98
+L90:
+      iffalse             L96
 
       getlex              QName(PrivateNamespace("o19067"), "o7724")
       getlex              QName(PrivateNamespace("o19067"), "o1130")
       newarray            1
       setproperty         QName(PackageNamespace(""), "filters")
 
-      jump                L102
+      jump                L100
 
-L98:
+L96:
       getlex              QName(PrivateNamespace("o19067"), "o7724")
       getlex              QName(PrivateNamespace("o19067"), "o3681")
       newarray            1
       setproperty         QName(PackageNamespace(""), "filters")
 
-L102:
+L100:
       returnvoid
      end ; code
     end ; body

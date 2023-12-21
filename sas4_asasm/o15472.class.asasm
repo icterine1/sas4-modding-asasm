@@ -51,8 +51,7 @@ class
 
       pushstring          "loadingBar"
       coerce_s
-      setlocal2
-
+      pop
       getlex              QName(PackageNamespace(""), "asset")
       pushstring          "loadingBar"
       callproperty        QName(PackageNamespace(""), "getChildByName"), 1
@@ -270,20 +269,18 @@ L20:
 
       pushshort           800
       convert_d
-      setlocal            4
-
+      pop
       pushshort           600
       convert_d
-      setlocal1
-
-      getlocal            4
+      pop
+      pushshort           800
       getlex              QName(PackageNamespace(""), "asset")
       getproperty         QName(PackageNamespace(""), "width")
       divide
       convert_d
       setlocal2
 
-      getlocal1
+      pushshort           600
       getlex              QName(PackageNamespace(""), "asset")
       getproperty         QName(PackageNamespace(""), "height")
       divide

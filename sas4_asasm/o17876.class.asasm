@@ -1681,15 +1681,12 @@ L1090:
      convert_i
      setlocal2
 
-     pushshort           255
-     setlocal            5
-
      pushbyte            0
      setlocal3
 
-     jump                L48
+     jump                L46
 
-L18:
+L16:
      label
      getlocal3
      pushbyte            5
@@ -1704,7 +1701,7 @@ L18:
      pushbyte            8
      divide
      getproperty         MultinameL([PrivateNamespace("o17876"), StaticProtectedNs("o17876"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o17876"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     getlocal            5
+     pushshort           255
      bitand
      getlocal3
      pushbyte            32
@@ -1724,10 +1721,10 @@ L18:
      convert_i
      setlocal3
 
-L48:
+L46:
      getlocal3
      getlocal2
-     iflt                L18
+     iflt                L16
 
      getlocal2
      pushbyte            5

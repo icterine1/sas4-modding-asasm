@@ -190,15 +190,12 @@ L15:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       getlocal0
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o4848")
       getproperty         QName(PackageNamespace(""), "o4539")
       pushnull
-      ifeq                L19
+      ifeq                L18
 
       getlocal0
       getproperty         QName(PackageNamespace(""), "o15894")
@@ -211,7 +208,7 @@ L3:
       not
       returnvalue
 
-L19:
+L18:
       pushfalse
       returnvalue
      end ; code
@@ -235,15 +232,12 @@ L19:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       getlocal0
       getproperty         QName(PackageNamespace(""), "o15894")
       getproperty         QName(PackageNamespace(""), "o4848")
       getproperty         QName(PackageNamespace(""), "o4539")
       pushnull
-      ifeq                L20
+      ifeq                L19
 
       getlocal0
       getproperty         QName(PackageNamespace(""), "o15894")
@@ -251,17 +245,17 @@ L3:
       getproperty         QName(PackageNamespace(""), "o4539")
       getproperty         QName(PackageNamespace(""), "saveData")
       getlocal1
-      iffalse             L18
+      iffalse             L17
 
       pushbyte            1
-      jump                L19
+      jump                L18
 
-L18:
+L17:
       pushbyte            0
-L19:
+L18:
       setproperty         QName(PackageNamespace(""), "level")
 
-L20:
+L19:
       returnvoid
      end ; code
     end ; body
@@ -452,12 +446,10 @@ L9:
 
       pushfalse
       dup
-      iftrue              L8
-
+      pop
       pop
       getlex              QName(PrivateNamespace("o14200"), "o9678")
       getproperty         QName(PackageNamespace(""), "value")
-L8:
       iffalse             L11
 
       pushfalse

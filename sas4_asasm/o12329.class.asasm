@@ -187,9 +187,6 @@ L11:
       swap
       setproperty         QName(PackageNamespace(""), "mask")
 
-      jump                L21
-
-L21:
       getlex              QName(PackageNamespace(""), "stage")
       pushstring          "resize"
       getlex              QName(PrivateNamespace("o12329"), "o14115")
@@ -235,7 +232,7 @@ L21:
       getlex              QName(PrivateNamespace("o12329"), "o17659")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifngt               L20
+      ifngt               L139
 
       getlex              QName(PrivateNamespace("o12329"), "o17659")
       pushbyte            0
@@ -248,7 +245,6 @@ L21:
       swap
       setproperty         QName(PrivateNamespace("o12329"), "o17659")
 
-L20:
       jump                L139
 
 L21:
@@ -308,7 +304,7 @@ L56:
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       getproperty         QName(PackageNamespace(""), "height")
       getlex              QName(PrivateNamespace("o12329"), "o13986")
-      ifngt               L78
+      ifngt               L139
 
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       getproperty         QName(PackageNamespace(""), "y")
@@ -321,13 +317,12 @@ L56:
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       getproperty         QName(PackageNamespace(""), "y")
       pushbyte            0
-      ifngt               L78
+      ifngt               L139
 
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-L78:
       jump                L139
 
 L79:
@@ -339,7 +334,7 @@ L79:
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       getproperty         QName(PackageNamespace(""), "height")
       getlex              QName(PrivateNamespace("o12329"), "o13986")
-      ifngt               L109
+      ifngt               L139
 
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       getproperty         QName(PackageNamespace(""), "y")
@@ -356,7 +351,7 @@ L79:
       negate
       getlex              QName(PrivateNamespace("o12329"), "o13986")
       add
-      ifnlt               L109
+      ifnlt               L139
 
       getlex              QName(PrivateNamespace("o12329"), "o15673")
       getlex              QName(PrivateNamespace("o12329"), "o15673")
@@ -366,7 +361,6 @@ L79:
       add
       setproperty         QName(PackageNamespace(""), "y")
 
-L109:
       jump                L139
 
 L110:

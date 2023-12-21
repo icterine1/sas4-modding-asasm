@@ -3161,8 +3161,7 @@ L73:
 
 L87:
       getlocal            11
-      setlocal            11
-
+      pop
 L89:
       hasnext2            38, 39
       iftrue              L73
@@ -4668,8 +4667,7 @@ L393:
       ifne                L429
 
       getlocal            19
-      setlocal            19
-
+      pop
       findpropstrict      QName(PackageNamespace(""), "Error")
       pushstring          "skill error"
       constructprop       QName(PackageNamespace(""), "Error"), 1
@@ -5958,13 +5956,12 @@ L60:
       pushfalse
       equals
 L68:
-      iffalse             L72
+      iffalse             L142
 
       getlocal3
       getlocal2
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L72:
       jump                L142
 
 L73:
@@ -6006,13 +6003,12 @@ L96:
       pushfalse
       equals
 L104:
-      iffalse             L108
+      iffalse             L142
 
       getlocal3
       getlocal2
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L108:
       jump                L142
 
 L109:
@@ -7006,7 +7002,7 @@ L7:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o5292")
       getproperty         QName(PackageNamespace(""), "o11445")
-      ifngt               L23
+      ifngt               L34
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o5292")
@@ -7014,7 +7010,6 @@ L7:
       convert_d
       setlocal2
 
-L23:
       jump                L34
 
 L24:
@@ -7170,7 +7165,7 @@ L61:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o5292")
       getproperty         QName(PackageNamespace(""), "o561")
-      ifngt               L23
+      ifngt               L34
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o5292")
@@ -7178,7 +7173,6 @@ L61:
       convert_d
       setlocal2
 
-L23:
       jump                L34
 
 L24:
@@ -8314,15 +8308,6 @@ L39:
       pushnan
       setlocal3
 
-      pushdouble          30
-      setlocal            6
-
-      pushdouble          0
-      setlocal            12
-
-      pushdouble          0
-      setlocal            10
-
       pushdouble          0
       setlocal            8
 
@@ -8344,7 +8329,7 @@ L39:
       setlocal            9
 
       pushnull
-      ifeq                L40
+      ifeq                L34
 
       getlocal            9
       getproperty         QName(PackageNamespace(""), "o20868")
@@ -8360,16 +8345,16 @@ L39:
       convert_d
       setlocal            5
 
-L40:
+L34:
       pushbyte            0
       setlocal            14
 
       getlocal1
       setlocal            13
 
-      jump                L72
+      jump                L66
 
-L45:
+L39:
       label
       getlocal            13
       getlocal            14
@@ -8379,7 +8364,7 @@ L45:
       setlocal            4
 
       pushnull
-      ifeq                L72
+      ifeq                L66
 
       getlocal            7
       getlocal            4
@@ -8402,11 +8387,11 @@ L45:
       convert_d
       setlocal            5
 
-L72:
+L66:
       hasnext2            13, 14
-      iftrue              L45
+      iftrue              L39
 
-      getlocal            6
+      pushdouble          30
       getlocal            5
       pushbyte            1
       add
@@ -8415,13 +8400,13 @@ L72:
       dup
       setlocal            11
 
-      getlocal            12
-      ifnlt               L86
+      pushdouble          0
+      ifnlt               L80
 
-      getlocal            12
+      pushdouble          0
       setlocal            11
 
-L86:
+L80:
       getlocal            11
       returnvalue
      end ; code

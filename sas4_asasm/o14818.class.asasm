@@ -308,9 +308,6 @@ L87:
       returnvoid
 
 L96:
-      jump                L97
-
-L97:
       getlex              QName(PackageNamespace("flash.utils"), "getTimer")
       getglobalscope
       call                0
@@ -328,7 +325,7 @@ L97:
 
       getlex              QName(PackageNamespace(""), "o12149")
       pushnull
-      ifne                L129
+      ifne                L128
 
       getlex              QName(PackageNamespace(""), "o14355")
       getlex              QName(PackageNamespace(""), "o4519")
@@ -348,7 +345,7 @@ L97:
       swap
       setproperty         QName(PackageNamespace(""), "o6378")
 
-L129:
+L128:
       pushbyte            0
       setlocal            27
 
@@ -356,9 +353,9 @@ L129:
       getproperty         QName(PackageNamespace(""), "o6041")
       setlocal            26
 
-      jump                L158
+      jump                L157
 
-L135:
+L134:
       label
       getlocal            26
       getlocal            27
@@ -385,9 +382,9 @@ L135:
       getlocal            19
       setproperty         MultinameL([PrivateNamespace("o14818"), ProtectedNamespace("o14818"), StaticProtectedNs("o14818"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14818"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L158:
+L157:
       hasnext2            26, 27
-      iftrue              L135
+      iftrue              L134
 
       pushbyte            0
       setlocal            31
@@ -396,9 +393,9 @@ L158:
       getproperty         QName(PackageNamespace(""), "o7352")
       setlocal            30
 
-      jump                L217
+      jump                L216
 
-L166:
+L165:
       label
       getlocal            30
       getlocal            31
@@ -437,9 +434,9 @@ L166:
       getproperty         QName(PackageNamespace(""), "o6041")
       setlocal            28
 
-      jump                L210
+      jump                L209
 
-L198:
+L197:
       label
       getlocal            28
       getlocal            29
@@ -454,9 +451,9 @@ L198:
       getproperty         MultinameL([PrivateNamespace("o14818"), ProtectedNamespace("o14818"), StaticProtectedNs("o14818"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14818"), Namespace("http://adobe.com/AS3/2006/builtin")])
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L210:
+L209:
       hasnext2            28, 29
-      iftrue              L198
+      iftrue              L197
 
       getlex              QName(PackageNamespace(""), "o7352")
       getlocal            17
@@ -464,9 +461,9 @@ L210:
       getlocal            17
       setproperty         MultinameL([PrivateNamespace("o14818"), ProtectedNamespace("o14818"), StaticProtectedNs("o14818"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14818"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L217:
+L216:
       hasnext2            30, 31
-      iftrue              L166
+      iftrue              L165
 
       pushbyte            0
       setlocal            35
@@ -475,9 +472,9 @@ L217:
       getproperty         QName(PackageNamespace(""), "o17242")
       setlocal            34
 
-      jump                L296
+      jump                L295
 
-L225:
+L224:
       label
       getlocal            34
       getlocal            35
@@ -515,9 +512,9 @@ L225:
       getlex              QName(PackageNamespace(""), "o7352")
       setlocal            32
 
-      jump                L294
+      jump                L293
 
-L256:
+L255:
       label
       getlocal            32
       getlocal            33
@@ -533,7 +530,7 @@ L256:
       equals
       not
       dup
-      iffalse             L279
+      iffalse             L278
 
       pop
       getlocal            17
@@ -543,8 +540,8 @@ L256:
       pushbyte            -1
       equals
       not
-L279:
-      iffalse             L294
+L278:
+      iffalse             L293
 
       findpropstrict      QName(PackageNamespace(""), "o4864")
       constructprop       QName(PackageNamespace(""), "o4864"), 0
@@ -564,13 +561,13 @@ L279:
       getlocal            12
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L294:
+L293:
       hasnext2            32, 33
-      iftrue              L256
+      iftrue              L255
 
-L296:
+L295:
       hasnext2            34, 35
-      iftrue              L225
+      iftrue              L224
 
       pushbyte            0
       setlocal            41
@@ -579,9 +576,9 @@ L296:
       getproperty         QName(PackageNamespace(""), "o7001")
       setlocal            40
 
-      jump                L383
+      jump                L381
 
-L304:
+L303:
       label
       getlocal            40
       getlocal            41
@@ -597,7 +594,7 @@ L304:
 
       getlex              QName(PackageNamespace(""), "o20360")
       pushnull
-      ifne                L357
+      ifne                L356
 
       findpropstrict      QName(PackageNamespace(""), "o772")
       getlex              QName(PackageNamespace(""), "o12149")
@@ -643,9 +640,9 @@ L304:
       swap
       setproperty         QName(PackageNamespace(""), "o10946")
 
-      jump                L375
+      jump                L374
 
-L357:
+L356:
       getlex              QName(PackageNamespace(""), "o20360")
       getproperty         QName(PackageNamespace(""), "o2013")
       getlex              QName(PackageNamespace(""), "o20360")
@@ -666,10 +663,7 @@ L357:
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "concat"), 1
       setproperty         QName(PackageNamespace(""), "o6041")
 
-L375:
-      jump                L376
-
-L376:
+L374:
       getlex              QName(PrivateNamespace("o14818"), "o8362")
       getlocal            17
       getproperty         QName(PackageNamespace(""), "o6041")
@@ -678,9 +672,9 @@ L376:
       swap
       setproperty         QName(PrivateNamespace("o14818"), "o8362")
 
-L383:
+L381:
       hasnext2            40, 41
-      iftrue              L304
+      iftrue              L303
 
       newarray            0
       coerce              QName(PackageNamespace(""), "Array")
@@ -697,9 +691,9 @@ L383:
       getproperty         QName(PackageNamespace(""), "o7001")
       setlocal            46
 
-      jump                L454
+      jump                L452
 
-L397:
+L395:
       label
       getlocal            46
       getlocal            47
@@ -720,9 +714,9 @@ L397:
       getproperty         QName(PackageNamespace(""), "o6041")
       setlocal            42
 
-      jump                L429
+      jump                L427
 
-L414:
+L412:
       label
       getlocal            42
       getlocal            43
@@ -740,9 +734,9 @@ L414:
       newarray            3
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L429:
+L427:
       hasnext2            42, 43
-      iftrue              L414
+      iftrue              L412
 
       pushbyte            0
       setlocal            45
@@ -751,9 +745,9 @@ L429:
       getproperty         QName(PackageNamespace(""), "o17242")
       setlocal            44
 
-      jump                L452
+      jump                L450
 
-L437:
+L435:
       label
       getlocal            44
       getlocal            45
@@ -771,13 +765,13 @@ L437:
       newarray            2
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L452:
+L450:
       hasnext2            44, 45
-      iftrue              L437
+      iftrue              L435
 
-L454:
+L452:
       hasnext2            46, 47
-      iftrue              L397
+      iftrue              L395
 
       findpropstrict      QName(PackageNamespace(""), "o3865")
       getlocal1
@@ -791,9 +785,9 @@ L454:
       getproperty         QName(PackageNamespace(""), "o12584")
       setlocal            48
 
-      jump                L472
+      jump                L470
 
-L466:
+L464:
       label
       getlocal            48
       getlocal            49
@@ -801,9 +795,9 @@ L466:
       convert_i
       setlocal            8
 
-L472:
+L470:
       hasnext2            48, 49
-      iftrue              L466
+      iftrue              L464
 
       pushbyte            0
       setlocal            51
@@ -812,9 +806,9 @@ L472:
       getproperty         QName(PackageNamespace(""), "o7642")
       setlocal            50
 
-      jump                L486
+      jump                L484
 
-L480:
+L478:
       label
       getlocal            50
       getlocal            51
@@ -822,9 +816,9 @@ L480:
       convert_i
       setlocal            8
 
-L486:
+L484:
       hasnext2            50, 51
-      iftrue              L480
+      iftrue              L478
 
       pushbyte            0
       setlocal            53
@@ -833,9 +827,9 @@ L486:
       getproperty         QName(PackageNamespace(""), "o16530")
       setlocal            52
 
-      jump                L500
+      jump                L498
 
-L494:
+L492:
       label
       getlocal            52
       getlocal            53
@@ -843,9 +837,9 @@ L494:
       convert_i
       setlocal            8
 
-L500:
+L498:
       hasnext2            52, 53
-      iftrue              L494
+      iftrue              L492
 
       pushbyte            0
       setlocal            55
@@ -854,9 +848,9 @@ L500:
       getproperty         QName(PackageNamespace(""), "o10245")
       setlocal            54
 
-      jump                L514
+      jump                L512
 
-L508:
+L506:
       label
       getlocal            54
       getlocal            55
@@ -864,13 +858,12 @@ L508:
       coerce              QName(PackageNamespace(""), "o16890")
       setlocal            11
 
-L514:
+L512:
       hasnext2            54, 55
-      iftrue              L508
+      iftrue              L506
 
       getlocal0
-      setlocal            16
-
+      pop
       getlex              QName(PackageNamespace(""), "o15714")
       getlocal            7
       getlex              QName(PrivateNamespace("o14818"), "o12300")
@@ -1354,12 +1347,6 @@ L42:
       pushnull
       setlocal            9
 
-      pushbyte            0
-      setlocal            19
-
-      pushnull
-      setlocal            21
-
       getlex              QName(PrivateNamespace("o14818"), "o7543")
       convert_d
       dup
@@ -1393,9 +1380,9 @@ L42:
       getlocal1
       setlocal            43
 
-      jump                L242
+      jump                L238
 
-L66:
+L62:
       label
       getlocal            43
       getlocal            44
@@ -1430,9 +1417,9 @@ L66:
       getproperty         QName(PackageNamespace(""), "o6041")
       setlocal            39
 
-      jump                L219
+      jump                L215
 
-L95:
+L91:
       label
       getlocal            39
       getlocal            40
@@ -1444,7 +1431,7 @@ L95:
       getlocal            24
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
       pushbyte            -1
-      ifne                L219
+      ifne                L215
 
       findpropstrict      QName(PackageNamespace(""), "o3372")
       getlocal            24
@@ -1455,15 +1442,15 @@ L95:
       setlocal            13
 
       pushnull
-      ifeq                L219
+      ifeq                L215
 
       label
       pushbyte            0
       setlocal            23
 
-      jump                L215
+      jump                L211
 
-L119:
+L115:
       label
       getlocal            13
       getlocal            23
@@ -1477,9 +1464,9 @@ L119:
       getlocal            27
       setlocal            33
 
-      jump                L141
+      jump                L137
 
-L130:
+L126:
       label
       getlocal            33
       getlocal            34
@@ -1491,11 +1478,11 @@ L130:
       getlocal            22
       getlocal            10
       callproperty        QName(PackageNamespace(""), "o20048"), 2
-      iftrue              L214
+      iftrue              L210
 
-L141:
+L137:
       hasnext2            33, 34
-      iftrue              L130
+      iftrue              L126
 
       getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
       getlex              QName(PackageNamespace(""), "o18509")
@@ -1510,9 +1497,9 @@ L141:
       getlocal            22
       setlocal            37
 
-      jump                L209
+      jump                L205
 
-L154:
+L150:
       label
       getlocal            37
       getlocal            38
@@ -1531,9 +1518,9 @@ L154:
       getproperty         QName(PackageNamespace(""), "o17242")
       setlocal            35
 
-      jump                L199
+      jump                L195
 
-L169:
+L165:
       label
       getlocal            35
       getlocal            36
@@ -1548,7 +1535,7 @@ L169:
       getproperty         QName(PackageNamespace(""), "id")
       equals
       dup
-      iftrue              L190
+      iftrue              L186
 
       pop
       getlocal            11
@@ -1557,22 +1544,22 @@ L169:
       getlocal            25
       getproperty         QName(PackageNamespace(""), "id")
       equals
-L190:
-      iffalse             L199
+L186:
+      iffalse             L195
 
       getlocal            31
       getlocal            11
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
       pushbyte            -1
-      ifne                L199
+      ifne                L195
 
       getlocal            31
       getlocal            11
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L199:
+L195:
       hasnext2            35, 36
-      iftrue              L169
+      iftrue              L165
 
       getlocal            16
       findpropstrict      QName(PackageNamespace(""), "o18509")
@@ -1583,25 +1570,25 @@ L199:
       constructprop       QName(PackageNamespace(""), "o18509"), 2
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L209:
+L205:
       hasnext2            37, 38
-      iftrue              L154
+      iftrue              L150
 
       getlocal            27
       getlocal            16
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L214:
+L210:
       inclocal_i          23
-L215:
+L211:
       getlocal            23
       getlocal            13
       getproperty         QName(PackageNamespace(""), "length")
-      iflt                L119
+      iflt                L115
 
-L219:
+L215:
       hasnext2            39, 40
-      iftrue              L95
+      iftrue              L91
 
       pushbyte            0
       setlocal            42
@@ -1609,9 +1596,9 @@ L219:
       getlocal            31
       setlocal            41
 
-      jump                L240
+      jump                L236
 
-L226:
+L222:
       label
       getlocal            41
       getlocal            42
@@ -1628,13 +1615,13 @@ L226:
       pushbyte            1
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
 
-L240:
+L236:
       hasnext2            41, 42
-      iftrue              L226
+      iftrue              L222
 
-L242:
+L238:
       hasnext2            43, 44
-      iftrue              L66
+      iftrue              L62
 
       pushbyte            0
       setlocal            50
@@ -1642,9 +1629,9 @@ L242:
       getlocal            27
       setlocal            49
 
-      jump                L423
+      jump                L418
 
-L249:
+L245:
       label
       getlocal            49
       getlocal            50
@@ -1666,7 +1653,7 @@ L249:
       setlocal            8
 
       pushnull
-      ifne                L280
+      ifne                L276
 
       findpropstrict      QName(PackageNamespace(""), "o7406")
       getlocal            7
@@ -1682,7 +1669,7 @@ L249:
       coerce              QName(PackageNamespace(""), "Array")
       setlocal            8
 
-L280:
+L276:
       getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
       getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
       getlex              QName(PackageNamespace(""), "o18509")
@@ -1695,7 +1682,7 @@ L280:
       getlocal            8
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifngt               L314
+      ifngt               L310
 
       getlex              QName(PackageNamespace(""), "o20938")
       getlocal            8
@@ -1709,9 +1696,9 @@ L280:
       getlocal            5
       setlocal            45
 
-      jump                L312
+      jump                L308
 
-L302:
+L298:
       label
       getlocal            45
       getlocal            46
@@ -1724,15 +1711,15 @@ L302:
       getproperty         QName(PackageNamespace(""), "o2625")
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L312:
+L308:
       hasnext2            45, 46
-      iftrue              L302
+      iftrue              L298
 
-L314:
+L310:
       getlocal            17
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifngt               L423
+      ifngt               L418
 
       pushbyte            0
       setlocal            48
@@ -1740,9 +1727,9 @@ L314:
       getlocal            17
       setlocal            47
 
-      jump                L421
+      jump                L416
 
-L323:
+L319:
       label
       getlocal            47
       getlocal            48
@@ -1858,15 +1845,13 @@ L323:
       coerce              QName(PackageNamespace(""), "o18509")
       setlocal            9
 
-      jump                L421
-
-L421:
+L416:
       hasnext2            47, 48
-      iftrue              L323
+      iftrue              L319
 
-L423:
+L418:
       hasnext2            49, 50
-      iftrue              L249
+      iftrue              L245
 
       pushbyte            0
       setlocal            54
@@ -1874,9 +1859,9 @@ L423:
       getlocal1
       setlocal            53
 
-      jump                L508
+      jump                L503
 
-L430:
+L425:
       label
       getlocal            53
       getlocal            54
@@ -1897,9 +1882,9 @@ L430:
       getproperty         QName(PackageNamespace(""), "o17242")
       setlocal            51
 
-      jump                L506
+      jump                L501
 
-L447:
+L442:
       label
       getlocal            51
       getlocal            52
@@ -1968,13 +1953,13 @@ L447:
       getlocal            4
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L506:
+L501:
       hasnext2            51, 52
-      iftrue              L447
+      iftrue              L442
 
-L508:
+L503:
       hasnext2            53, 54
-      iftrue              L430
+      iftrue              L425
 
       getlex              QName(PrivateNamespace("o14818"), "o10511")
       getlocal            30

@@ -267,152 +267,119 @@ L6:
       getlocal0
       pushscope
 
-      pushbyte            0
-      setlocal            6
-
-      pushbyte            1
-      setlocal            10
-
-      pushbyte            2
-      setlocal2
-
-      pushbyte            3
-      setlocal            11
-
-      pushbyte            7
-      setlocal            8
-
-      pushbyte            9
-      setlocal            4
-
-      pushbyte            10
-      setlocal3
-
-      pushbyte            11
-      setlocal            7
-
-      pushbyte            12
-      setlocal            9
-
-      pushbyte            13
-      setlocal            5
-
-      pushbyte            14
-      setlocal            12
-
       getlocal1
       setlocal            13
 
-      jump                L65
+      jump                L43
 
-L27:
+L5:
       label
       pushbyte            2
       returnvalue
 
-L30:
+L8:
       label
       pushbyte            3
       returnvalue
 
-L33:
+L11:
       label
       pushbyte            9
       returnvalue
 
-L36:
+L14:
       label
       pushbyte            4
       returnvalue
 
-L39:
+L17:
       label
       pushbyte            6
       returnvalue
 
-L42:
+L20:
       label
       pushbyte            1
       returnvalue
 
-L45:
+L23:
       label
       pushbyte            5
       returnvalue
 
-L48:
+L26:
       label
       pushbyte            8
       returnvalue
 
-L51:
+L29:
       label
       pushbyte            100
       returnvalue
 
-L54:
+L32:
       label
       pushbyte            10
       returnvalue
 
-L57:
+L35:
       label
       pushbyte            11
       returnvalue
 
-L60:
+L38:
       label
       findpropstrict      QName(PackageNamespace(""), "Error")
       pushstring          "UInknown ammo category"
       constructprop       QName(PackageNamespace(""), "Error"), 1
       throw
 
-L65:
-      getlocal            6
+L43:
+      pushbyte            0
       getlocal            13
-      ifstricteq          L27
+      ifstricteq          L5
 
-      getlocal            10
+      pushbyte            1
       getlocal            13
-      ifstricteq          L30
+      ifstricteq          L8
 
-      getlocal2
+      pushbyte            2
       getlocal            13
-      ifstricteq          L33
+      ifstricteq          L11
 
-      getlocal            11
+      pushbyte            3
       getlocal            13
-      ifstricteq          L36
+      ifstricteq          L14
 
-      getlocal            8
+      pushbyte            7
       getlocal            13
-      ifstricteq          L39
+      ifstricteq          L17
 
-      getlocal            4
+      pushbyte            9
       getlocal            13
-      ifstricteq          L42
+      ifstricteq          L20
 
-      getlocal3
+      pushbyte            10
       getlocal            13
-      ifstricteq          L45
+      ifstricteq          L23
 
-      getlocal            7
+      pushbyte            11
       getlocal            13
-      ifstricteq          L48
+      ifstricteq          L26
 
-      getlocal            9
+      pushbyte            12
       getlocal            13
-      ifstricteq          L51
+      ifstricteq          L29
 
-      getlocal            5
+      pushbyte            13
       getlocal            13
-      ifstricteq          L54
+      ifstricteq          L32
 
-      getlocal            12
+      pushbyte            14
       getlocal            13
-      ifstricteq          L57
+      ifstricteq          L35
 
-      jump                L60
+      jump                L38
      end ; code
     end ; body
    end ; method

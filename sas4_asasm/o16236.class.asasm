@@ -62,7 +62,7 @@ class
      setproperty         QName(PrivateNamespace("o16236"), "o12864")
 
      getlex              QName(PackageNamespace(""), "o2555")
-     pushstring          "nk-static-replica.github.io/assets-nkstatic/Games/gameswfs/sas4/download/banners/MajorUpdates.jpg"
+     pushstring          "assets.nkstatic.com/Games/gameswfs/sas4/download/banners/MajorUpdates.jpg"
      callproperty        QName(PackageNamespace(""), "o17203"), 1
      findproperty        QName(PrivateNamespace("o16236"), "o19362")
      swap
@@ -188,7 +188,7 @@ L18:
       getlocal2
       setlocal            6
 
-      jump                L79
+      jump                L78
 
 L17:
       label
@@ -201,12 +201,12 @@ L17:
 
       getproperty         QName(PackageNamespace(""), "o5897")
       getproperty         QName(PackageNamespace(""), "o13779")
-      iffalse             L79
+      iffalse             L78
 
       getlocal            5
       getproperty         QName(PackageNamespace(""), "type")
       pushbyte            4
-      ifne                L49
+      ifne                L48
 
       getlocal            5
       getlex              QName(PackageNamespace(""), "o12394")
@@ -225,19 +225,16 @@ L17:
       getlocal            4
       getproperty         QName(PackageNamespace(""), "o9470")
 L45:
-      iffalse             L48
+      iffalse             L78
 
       getlocal            4
       returnvalue
 
 L48:
-      jump                L79
-
-L49:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "type")
       pushbyte            4
-      ifne                L79
+      ifne                L78
 
       getlocal            5
       getlex              QName(PackageNamespace(""), "o18422")
@@ -250,13 +247,13 @@ L49:
       getlocal1
       equals
       dup
-      iffalse             L67
+      iffalse             L66
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o9470")
-L67:
-      iffalse             L79
+L66:
+      iffalse             L78
 
       findpropstrict      QName(PackageNamespace(""), "o12394")
       getlocal3
@@ -270,7 +267,7 @@ L67:
       constructprop       QName(PackageNamespace(""), "o12394"), 4
       returnvalue
 
-L79:
+L78:
       hasnext2            6, 7
       iftrue              L17
 
@@ -1480,14 +1477,13 @@ L21:
       setlocal            5
 
       getproperty         QName(PackageNamespace(""), "o9470")
-      iffalse             L47
+      iffalse             L109
 
       getlex              QName(PackageNamespace(""), "o5351")
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o19446")
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L47:
       jump                L109
 
 L48:
@@ -1527,14 +1523,13 @@ L73:
       getlocal            4
       getproperty         QName(PackageNamespace(""), "o7547")
       pushbyte            -1
-      ifeq                L81
+      ifeq                L109
 
       getlex              QName(PackageNamespace(""), "o5351")
       getlocal            4
       getproperty         QName(PackageNamespace(""), "o7547")
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L81:
       jump                L109
 
 L82:

@@ -73,10 +73,9 @@ class
 
       pushstring          "liveOps.contracts"
       coerce_s
-      setlocal            5
-
+      pop
       getlocal1
-      getlocal            5
+      pushstring          "liveOps.contracts"
       callproperty        QName(PackageNamespace(""), "o3554"), 1
       convert_i
       setlocal2
@@ -88,7 +87,7 @@ class
 
 L19:
       label
-      getlocal            5
+      pushstring          "liveOps.contracts"
       pushstring          "."
       add
       getlocal            4

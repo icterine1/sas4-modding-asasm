@@ -533,15 +533,14 @@ L19:
 
       pushshort           550
       convert_d
-      setlocal2
-
+      pop
       getlocal            5
       getproperty         QName(PackageNamespace(""), "x")
-      getlocal2
+      pushshort           550
       ifngt               L77
 
       getlocal            5
-      getlocal2
+      pushshort           550
       setproperty         QName(PackageNamespace(""), "x")
 
       jump                L86
@@ -549,23 +548,23 @@ L19:
 L77:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "x")
-      getlocal2
+      pushshort           550
       negate
       ifnlt               L86
 
       getlocal            5
-      getlocal2
+      pushshort           550
       negate
       setproperty         QName(PackageNamespace(""), "x")
 
 L86:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "y")
-      getlocal2
+      pushshort           550
       ifngt               L94
 
       getlocal            5
-      getlocal2
+      pushshort           550
       setproperty         QName(PackageNamespace(""), "y")
 
       jump                L103
@@ -573,12 +572,12 @@ L86:
 L94:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "y")
-      getlocal2
+      pushshort           550
       negate
       ifnlt               L103
 
       getlocal            5
-      getlocal2
+      pushshort           550
       negate
       setproperty         QName(PackageNamespace(""), "y")
 

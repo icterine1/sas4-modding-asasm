@@ -497,9 +497,7 @@ class
      pushbyte            1
      setlocal            15
 
-     jump                L393
-
-L349:
+L348:
      label
      getlocal1
      getlocal2
@@ -527,23 +525,23 @@ L349:
      pushnull
      equals
      dup
-     iftrue              L379
+     iftrue              L378
 
      pop
      getlocal3
      pushnull
      equals
-L379:
-     iffalse             L384
+L378:
+     iffalse             L383
 
      getlocal            15
      pushbyte            1
-     ifeq                L383
+     ifeq                L382
+
+L382:
+     jump                L393
 
 L383:
-     jump                L394
-
-L384:
      getlex              QName(PackageNamespace(""), "o19142")
      getlocal            9
      convert_i
@@ -555,10 +553,9 @@ L384:
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
      inclocal_i          15
-L393:
-     jump                L349
+     jump                L348
 
-L394:
+L393:
      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
      getlex              QName(PackageNamespace(""), "o11625")
@@ -575,9 +572,7 @@ L394:
      pushbyte            1
      setlocal            26
 
-     jump                L668
-
-L408:
+L406:
      label
      getlocal1
      getlocal2
@@ -593,7 +588,7 @@ L408:
      setlocal            24
 
      pushnull
-     ifeq                L669
+     ifeq                L666
 
      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
      getlex              QName(PackageNamespace(""), "o11625")
@@ -609,9 +604,7 @@ L408:
      pushbyte            1
      setlocal            26
 
-     jump                L666
-
-L435:
+L432:
      label
      getlocal1
      getlocal2
@@ -629,9 +622,9 @@ L435:
      setlocal            20
 
      pushnull
-     ifeq                L667
+     ifeq                L664
 
-L452:
+L449:
      getlocal            20
      pushstring          ","
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
@@ -656,7 +649,7 @@ L452:
      getlocal            18
      getproperty         QName(PackageNamespace(""), "length")
      pushbyte            3
-     ifnge               L478
+     ifnge               L475
 
      getlocal            18
      pushbyte            2
@@ -664,7 +657,7 @@ L452:
      convert_d
      setlocal            13
 
-L478:
+L475:
      getlocal            14
      pushstring          " "
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
@@ -689,72 +682,72 @@ L478:
      getlocal            8
      setlocal            28
 
-     jump                L559
+     jump                L556
 
-L498:
+L495:
      label
-L499:
+L496:
      label
      pushbyte            0
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L503:
+L500:
      label
-L504:
+L501:
      label
      pushbyte            1
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L508:
+L505:
      label
-L509:
+L506:
      label
      pushbyte            2
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L513:
+L510:
      label
-L514:
+L511:
      label
      pushbyte            3
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L518:
+L515:
      label
-L519:
+L516:
      label
      pushbyte            4
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L523:
+L520:
      label
-L524:
+L521:
      label
      pushbyte            5
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L528:
+L525:
      label
-L529:
+L526:
      label
      pushbyte            8
      setlocal            5
 
-     jump                L602
+     jump                L599
 
-L533:
+L530:
      label
      getlex              QName(PackageNamespace(""), "trace")
      getglobalscope
@@ -782,66 +775,66 @@ L533:
      constructprop       QName(PackageNamespace(""), "Error"), 1
      throw
 
-L559:
+L556:
      pushstring          "shambler"
      getlocal            28
-     ifstricteq          L498
+     ifstricteq          L495
 
      pushstring          "shamblers"
      getlocal            28
-     ifstricteq          L499
+     ifstricteq          L496
 
      pushstring          "stalker"
      getlocal            28
-     ifstricteq          L503
+     ifstricteq          L500
 
      pushstring          "stalkers"
      getlocal            28
-     ifstricteq          L504
+     ifstricteq          L501
 
      pushstring          "spitter"
      getlocal            28
-     ifstricteq          L508
+     ifstricteq          L505
 
      pushstring          "spitters"
      getlocal            28
-     ifstricteq          L509
+     ifstricteq          L506
 
      pushstring          "runner"
      getlocal            28
-     ifstricteq          L513
+     ifstricteq          L510
 
      pushstring          "runners"
      getlocal            28
-     ifstricteq          L514
+     ifstricteq          L511
 
      pushstring          "bloater"
      getlocal            28
-     ifstricteq          L518
+     ifstricteq          L515
 
      pushstring          "bloaters"
      getlocal            28
-     ifstricteq          L519
+     ifstricteq          L516
 
      pushstring          "shielder"
      getlocal            28
-     ifstricteq          L523
+     ifstricteq          L520
 
      pushstring          "shielders"
      getlocal            28
-     ifstricteq          L524
+     ifstricteq          L521
 
      pushstring          "worm"
      getlocal            28
-     ifstricteq          L528
+     ifstricteq          L525
 
      pushstring          "worms"
      getlocal            28
-     ifstricteq          L529
+     ifstricteq          L526
 
-     jump                L533
+     jump                L530
 
-L602:
+L599:
      getlocal            19
      pushstring          "-"
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
@@ -863,10 +856,10 @@ L602:
      convert_d
      setlocal            11
 
-L620:
-     jump                L651
+L617:
+     jump                L648
 
-L621:
+L618:
      getlocal0
      pushscope
 
@@ -902,7 +895,7 @@ L621:
      constructprop       QName(PackageNamespace(""), "Error"), 1
      throw
 
-L651:
+L648:
      findpropstrict      QName(PackageNamespace(""), "o11625")
      getlocal            5
      getlocal            16
@@ -920,21 +913,17 @@ L651:
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
      inclocal_i          26
-L666:
-     jump                L435
+     jump                L432
 
-L667:
+L664:
      inclocal_i          10
-L668:
-     jump                L408
+     jump                L406
 
-L669:
+L666:
      pushbyte            1
      setlocal            23
 
-     jump                L708
-
-L672:
+L668:
      label
      getlocal1
      getlocal2
@@ -958,36 +947,35 @@ L672:
      pushnull
      equals
      dup
-     iftrue              L698
+     iftrue              L694
 
      pop
      getlocal            17
      pushnull
      equals
-L698:
-     iffalse             L703
+L694:
+     iffalse             L699
 
      getlocal            17
      pushnull
-     ifne                L702
+     ifne                L698
 
-L702:
-     jump                L709
+L698:
+     jump                L705
 
-L703:
+L699:
      getlex              QName(PackageNamespace(""), "o11978")
      getlocal            17
      convert_d
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
      inclocal_i          23
-L708:
-     jump                L672
+     jump                L668
 
-L709:
+L705:
      returnvoid
     end ; code
-    try from L452 to L620 target L621 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
+    try from L449 to L617 target L618 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
    end ; body
   end ; method
  end ; trait

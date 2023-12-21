@@ -1131,12 +1131,11 @@ L39:
       getlex              QName(PackageNamespace(""), "o3047")
       getproperty         QName(PackageNamespace(""), "o470")
 L48:
-      iffalse             L51
+      iffalse             L74
 
       pushtrue
       setlocal            4
 
-L51:
       jump                L74
 
 L52:
@@ -1209,148 +1208,146 @@ L74:
       convert_i
       pushint             100
       subtract_i
-      lookupswitch        L29, [L17, L13, L9, L25, L21]
+      lookupswitch        L28, [L17, L13, L9, L25, L21]
 
 L9:
       getlex              QName(PackageNamespace(""), "o1279")
       convert_b
       setlocal2
 
-      jump                L29
+      jump                L28
 
 L13:
       getlex              QName(PackageNamespace(""), "o18023")
       convert_b
       setlocal2
 
-      jump                L29
+      jump                L28
 
 L17:
       getlex              QName(PackageNamespace(""), "o2627")
       convert_b
       setlocal2
 
-      jump                L29
+      jump                L28
 
 L21:
       getlex              QName(PackageNamespace(""), "o20245")
       convert_b
       setlocal2
 
-      jump                L29
+      jump                L28
 
 L25:
       getlex              QName(PackageNamespace(""), "o1471")
       convert_b
       setlocal2
 
-      jump                L29
-
-L29:
+L28:
       getlocal2
-      iffalse             L52
+      iffalse             L51
 
       getlex              QName(PackageNamespace(""), "o14031")
       dup
-      iffalse             L38
+      iffalse             L37
 
       pop
       getlex              QName(PackageNamespace(""), "o3047")
       getproperty         QName(PackageNamespace(""), "o470")
       not
-L38:
+L37:
       dup
-      iftrue              L47
+      iftrue              L46
 
       pop
       getlex              QName(PackageNamespace(""), "o2183")
       dup
-      iffalse             L47
+      iffalse             L46
 
       pop
       getlex              QName(PackageNamespace(""), "o3047")
       getproperty         QName(PackageNamespace(""), "o470")
-L47:
-      iffalse             L50
+L46:
+      iffalse             L49
 
       getlocal2
       returnvalue
 
-L50:
+L49:
       pushfalse
       returnvalue
 
-L52:
+L51:
       getlocal1
       convert_i
       pushint             3
       subtract_i
-      lookupswitch        L65, [L57, L61, L59, L65, L63]
+      lookupswitch        L64, [L56, L60, L58, L64, L62]
 
-L57:
+L56:
       getlex              QName(PackageNamespace(""), "o17024")
       returnvalue
 
-L59:
+L58:
       getlex              QName(PackageNamespace(""), "o18255")
       returnvalue
 
-L61:
+L60:
       getlex              QName(PackageNamespace(""), "o16219")
       returnvalue
 
-L63:
+L62:
       getlex              QName(PackageNamespace(""), "o15626")
       returnvalue
 
-L65:
+L64:
       getlocal1
       convert_i
-      lookupswitch        L105, [L70, L70, L68]
+      lookupswitch        L104, [L69, L69, L67]
 
-L68:
+L67:
       getlex              QName(PackageNamespace(""), "o5788")
       returnvalue
 
-L70:
+L69:
       getlex              QName(PackageNamespace(""), "o1654")
       convert_b
       setlocal2
 
       getlocal2
       dup
-      iffalse             L78
+      iffalse             L77
 
       pop
       getlex              QName(PackageNamespace(""), "o14031")
-L78:
+L77:
       dup
-      iffalse             L84
+      iffalse             L83
 
       pop
       getlex              QName(PackageNamespace(""), "o3047")
       getproperty         QName(PackageNamespace(""), "o470")
       not
-L84:
+L83:
       dup
-      iftrue              L97
+      iftrue              L96
 
       pop
       getlocal2
       dup
-      iffalse             L92
+      iffalse             L91
 
       pop
       getlex              QName(PackageNamespace(""), "o2183")
-L92:
+L91:
       dup
-      iffalse             L97
+      iffalse             L96
 
       pop
       getlex              QName(PackageNamespace(""), "o3047")
       getproperty         QName(PackageNamespace(""), "o470")
-L97:
-      iffalse             L103
+L96:
+      iffalse             L102
 
       pushtrue
       dup
@@ -1359,11 +1356,11 @@ L97:
 
       returnvalue
 
-L103:
+L102:
       getlocal2
       returnvalue
 
-L105:
+L104:
       pushfalse
       returnvalue
      end ; code

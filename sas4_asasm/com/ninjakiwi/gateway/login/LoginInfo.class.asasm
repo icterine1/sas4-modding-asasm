@@ -62,47 +62,45 @@ class
 
       pushstring          "\n"
       coerce_s
-      setlocal1
-
+      pop
       pushstring          "\x09"
       coerce_s
-      setlocal2
-
+      pop
       pushstring          "[Object LoginInfo] : {"
-      getlocal1
+      pushstring          "\n"
       add
-      getlocal2
+      pushstring          "\x09"
       add
       pushstring          "id: "
       add
-      getlocal2
+      pushstring          "\x09"
       add
       getlocal0
       getproperty         QName(PackageNamespace(""), "id")
       add
-      getlocal1
+      pushstring          "\n"
       add
-      getlocal2
+      pushstring          "\x09"
       add
       pushstring          "name: "
       add
-      getlocal2
+      pushstring          "\x09"
       add
       getlocal0
       getproperty         QName(PackageNamespace(""), "name")
       add
-      getlocal1
+      pushstring          "\n"
       add
-      getlocal2
+      pushstring          "\x09"
       add
       pushstring          "token: "
       add
-      getlocal2
+      pushstring          "\x09"
       add
       getlocal0
       getproperty         QName(PackageNamespace(""), "token")
       add
-      getlocal1
+      pushstring          "\n"
       add
       pushstring          "}"
       add

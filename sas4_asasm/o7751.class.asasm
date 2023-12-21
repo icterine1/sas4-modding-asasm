@@ -2668,7 +2668,7 @@ L10:
       getproperty         QName(PackageNamespace(""), "o14403")
       setlocal            5
 
-      jump                L35
+      jump                L37
 
 L20:
       label
@@ -2682,58 +2682,60 @@ L20:
       getlocal3
       getproperty         QName(PackageNamespace(""), "id")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
+      pop
+      pushbyte            -1
       pushbyte            0
-      ifnlt               L35
+      ifnlt               L37
 
       getlocal2
       getlocal3
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L35:
+L37:
       hasnext2            5, 6
       iftrue              L20
 
       getlocal1
       convert_i
-      lookupswitch        L64, [L40, L44, L48, L52, L56, L60]
+      lookupswitch        L66, [L42, L46, L50, L54, L58, L62]
 
-L40:
+L42:
       getlocal2
       getlex              QName(PrivateNamespace("o7751"), "o2148")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
       returnvalue
 
-L44:
+L46:
       getlocal2
       getlex              QName(PrivateNamespace("o7751"), "o2631")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
       returnvalue
 
-L48:
+L50:
       getlocal2
       getlex              QName(PrivateNamespace("o7751"), "o10921")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
       returnvalue
 
-L52:
+L54:
       getlocal2
       getlex              QName(PrivateNamespace("o7751"), "o8196")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
       returnvalue
 
-L56:
+L58:
       getlocal2
       getlex              QName(PrivateNamespace("o7751"), "o4330")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
       returnvalue
 
-L60:
+L62:
       getlocal2
       getlex              QName(PrivateNamespace("o7751"), "o705")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "sort"), 1
       returnvalue
 
-L64:
+L66:
       findpropstrict      QName(PackageNamespace(""), "Error")
       pushstring          "Invalid sort"
       constructprop       QName(PackageNamespace(""), "Error"), 1

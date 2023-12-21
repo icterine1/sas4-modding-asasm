@@ -95,7 +95,7 @@ L17:
       add
       setlocal            4
 
-      jump                L41
+      jump                L58
 
 L29:
       findpropstrict      QName(PrivateNamespace("o4356"), "o3571")
@@ -106,14 +106,13 @@ L29:
       setlocal            4
 
       getlocal            7
-      iffalse             L41
+      iffalse             L58
 
       getlocal            4
       pushbyte            1
       add
       setlocal            4
 
-L41:
       jump                L58
 
 L42:
@@ -138,8 +137,7 @@ L50:
 
 L56:
       getlocal            4
-      setlocal            4
-
+      pop
 L58:
       getlocal            6
       findproperty        QName(PrivateNamespace("o4356"), "o14388")
@@ -365,45 +363,42 @@ L21:
       getlocal0
       pushscope
 
-      pushshort           202
-      setlocal3
-
       getlex              QName(PrivateNamespace("o4356"), "o14361")
-      getlocal3
+      pushshort           202
       callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
 
       getlex              QName(PackageNamespace(""), "o16114")
-      iffalse             L13
+      iffalse             L11
 
       getlex              QName(PrivateNamespace("o4356"), "o14361")
       getlex              QName(PackageNamespace(""), "o16114")
       callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
 
-      jump                L27
+      jump                L25
 
-L13:
+L11:
       getlex              QName(PrivateNamespace("o4356"), "o14361")
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "profileData")
       getproperty         QName(PackageNamespace(""), "o20616")
       dup
-      iftrue              L22
+      iftrue              L20
 
       pop
       getlex              QName(PrivateNamespace("o4356"), "o14388")
-L22:
-      iffalse             L25
+L20:
+      iffalse             L23
 
       pushbyte            1
-      jump                L26
+      jump                L24
 
-L25:
+L23:
       pushbyte            0
-L26:
+L24:
       callpropvoid        QName(PackageNamespace(""), "writeInt"), 1
 
-L27:
+L25:
       getlex              QName(PrivateNamespace("o4356"), "o14361")
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -427,9 +422,9 @@ L27:
       getlex              QName(PrivateNamespace("o4356"), "o18098")
       setlocal            4
 
-      jump                L55
+      jump                L53
 
-L46:
+L44:
       label
       getlocal            4
       getlocal            5
@@ -441,9 +436,9 @@ L46:
       getlocal2
       callpropvoid        QName(PackageNamespace(""), "writeShort"), 1
 
-L55:
+L53:
       hasnext2            4, 5
-      iftrue              L46
+      iftrue              L44
 
       returnvoid
      end ; code
@@ -468,6 +463,11 @@ L55:
      code
       getlocal0
       pushscope
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "alert"
+      pushstring          "fail match server"
+      callpropvoid        QName(PackageNamespace(""), "call"), 2
 
       returnvoid
      end ; code
@@ -539,7 +539,7 @@ L28:
       getlex              QName(PrivateNamespace("o4356"), "size")
       equals
 L39:
-      iffalse             L82
+      iffalse             L81
 
       getlex              QName(PrivateNamespace("o4356"), "o14361")
       getlex              QName(PrivateNamespace("o4356"), "size")
@@ -564,9 +564,6 @@ L39:
       convert_i
       setlocal2
 
-      jump                L60
-
-L60:
       findpropstrict      QName(PackageNamespace(""), "dispatchData")
       findpropstrict      QName(PackageNamespace(""), "o1601")
       getlocal            5
@@ -594,7 +591,7 @@ L60:
       getlex              QName(PackageNamespace(""), "o3517")
       callpropvoid        QName(PackageNamespace(""), "removeEventListener"), 2
 
-L82:
+L81:
       returnvoid
      end ; code
     end ; body

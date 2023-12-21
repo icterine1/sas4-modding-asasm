@@ -2068,9 +2068,6 @@ L53:
       coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "int")>)
       setlocal2
 
-      pushbyte            20
-      setlocal3
-
       pushbyte            0
       setlocal            6
 
@@ -2081,9 +2078,9 @@ L53:
       getproperty         QName(PackageNamespace(""), "o8312")
       setlocal            7
 
-      jump                L39
+      jump                L37
 
-L26:
+L24:
       label
       getlocal            7
       getlocal            8
@@ -2092,19 +2089,19 @@ L26:
       setlocal            5
 
       getlocal            6
-      getlocal3
-      ifge                L41
+      pushbyte            20
+      ifge                L39
 
       getlocal2
       getlocal            5
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
       inclocal_i          6
-L39:
+L37:
       hasnext2            7, 8
-      iftrue              L26
+      iftrue              L24
 
-L41:
+L39:
       getlocal0
       callpropvoid        QName(PackageNamespace(""), "o11362"), 0
 
@@ -2134,9 +2131,9 @@ L41:
       getlocal2
       setlocal            9
 
-      jump                L77
+      jump                L75
 
-L64:
+L62:
       label
       getlocal            9
       getlocal            10
@@ -2153,9 +2150,9 @@ L64:
       callproperty        QName(PackageNamespace(""), "o4718"), 1
       callpropvoid        QName(PackageNamespace(""), "o11612"), 1
 
-L77:
+L75:
       hasnext2            9, 10
-      iftrue              L64
+      iftrue              L62
 
       getlocal0
       getlocal            4
@@ -2930,7 +2927,7 @@ L62:
       getlocal            9
       callpropvoid        QName(PrivateNamespace("o13467"), "o6260"), 2
 
-      jump                L190
+      jump                L271
 
 L69:
       findpropstrict      QName(PackageNamespace(""), "o1526")
@@ -2938,7 +2935,7 @@ L69:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-      jump                L190
+      jump                L271
 
 L74:
       getlocal0
@@ -2968,7 +2965,7 @@ L74:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-      jump                L102
+      jump                L271
 
 L98:
       findpropstrict      QName(PackageNamespace(""), "o1526")
@@ -2976,8 +2973,7 @@ L98:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-L102:
-      jump                L190
+      jump                L271
 
 L103:
       getlocal0
@@ -3007,7 +3003,7 @@ L103:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-      jump                L131
+      jump                L271
 
 L127:
       findpropstrict      QName(PackageNamespace(""), "o1526")
@@ -3015,8 +3011,7 @@ L127:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-L131:
-      jump                L190
+      jump                L271
 
 L132:
       getlex              QName(PackageNamespace(""), "o19419")
@@ -3031,7 +3026,7 @@ L132:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-      jump                L190
+      jump                L271
 
 L143:
       getlocal            4
@@ -3081,7 +3076,7 @@ L143:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-      jump                L190
+      jump                L271
 
 L185:
       findpropstrict      QName(PackageNamespace(""), "o1526")
@@ -3090,7 +3085,6 @@ L185:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "o1526"), 2
 
-L190:
       jump                L271
 
 L191:
@@ -4289,7 +4283,7 @@ L56:
       setlocal1
 
       getlex              QName(PackageNamespace(""), "o10740")
-      iffalse             L75
+      iffalse             L73
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o5292")
@@ -4355,7 +4349,7 @@ L42:
       setproperty         QName(PackageNamespace(""), "o8293")
 
 L59:
-      jump                L75
+      jump                L73
 
 L60:
       getlocal0
@@ -4371,15 +4365,12 @@ L60:
       swap
       setslot             1
 
-      pushfalse
-      setlocal            4
-
       popscope
       kill                5
-      getlocal            4
+      pushfalse
       returnvalue
 
-L75:
+L73:
       pushfalse
       returnvalue
      end ; code

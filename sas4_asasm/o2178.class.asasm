@@ -1182,9 +1182,6 @@ L428:
       pushnan
       setlocal            6
 
-      pushdouble          0
-      setlocal3
-
       getlex              QName(Namespace("http://www.box2d.org/ns/b2internal"), "o8708")
       coerce              QName(PackageNamespace(""), "o5173")
       setlocal2
@@ -1194,39 +1191,39 @@ L428:
       setlocal            7
 
       getlex              QName(PrivateNamespace("o2178"), "o8981")
-      iffalse             L21
+      iffalse             L19
 
       getlex              QName(PrivateNamespace("o2178"), "o8981")
       callproperty        QName(PackageNamespace(""), "o17254"), 0
       convert_d
       setlocal            5
 
-      jump                L25
+      jump                L23
 
-L21:
+L19:
       getlex              QName(PrivateNamespace("o2178"), "o12824")
       callproperty        QName(PackageNamespace(""), "o3675"), 0
       convert_d
       setlocal            5
 
-L25:
+L23:
       getlex              QName(PrivateNamespace("o2178"), "o14364")
-      iffalse             L32
+      iffalse             L30
 
       getlex              QName(PrivateNamespace("o2178"), "o14364")
       callproperty        QName(PackageNamespace(""), "o17254"), 0
       convert_d
       setlocal            6
 
-      jump                L36
+      jump                L34
 
-L32:
+L30:
       getlex              QName(PrivateNamespace("o2178"), "o4863")
       callproperty        QName(PackageNamespace(""), "o3675"), 0
       convert_d
       setlocal            6
 
-L36:
+L34:
       getlex              QName(PrivateNamespace("o2178"), "o16395")
       getlocal            5
       getlex              QName(PrivateNamespace("o2178"), "o1401")
@@ -1358,7 +1355,7 @@ L36:
       getlocal            7
       callpropvoid        QName(Namespace("http://www.box2d.org/ns/b2internal"), "o14187"), 0
 
-      getlocal3
+      pushdouble          0
       pushdouble          0.005
       lessthan
       returnvalue

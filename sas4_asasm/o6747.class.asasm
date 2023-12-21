@@ -250,21 +250,20 @@ L153:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o10720")
       pushbyte            0
-      ifngt               L161
+      ifngt               L176
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o10720")
       setproperty         QName(PackageNamespace(""), "o8872")
 
-L161:
       jump                L176
 
 L162:
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o10720")
       pushbyte            0
-      ifnlt               L171
+      ifnlt               L176
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            5
@@ -272,7 +271,6 @@ L162:
       negate
       setproperty         QName(PackageNamespace(""), "o8872")
 
-L171:
       jump                L176
 
 L172:
@@ -300,7 +298,7 @@ L176:
 L189:
       getlocal            7
       pushnull
-      ifeq                L221
+      ifeq                L300
 
       getlocal            7
       getproperty         QName(PackageNamespace(""), "grade")
@@ -335,13 +333,12 @@ L189:
       subtract
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L221:
       jump                L300
 
 L222:
       getlocal            7
       pushnull
-      ifeq                L232
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
@@ -351,13 +348,12 @@ L222:
       multiply
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L232:
       jump                L300
 
 L233:
       getlocal            7
       pushnull
-      ifeq                L243
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
@@ -367,92 +363,84 @@ L233:
       multiply
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L243:
       jump                L300
 
 L244:
       getlocal            7
       pushnull
-      ifeq                L250
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L250:
       jump                L300
 
 L251:
       getlocal            7
       pushnull
-      ifeq                L257
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L257:
       jump                L300
 
 L258:
       getlocal            7
       pushnull
-      ifeq                L264
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L264:
       jump                L300
 
 L265:
       getlocal            7
       pushnull
-      ifeq                L271
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L271:
       jump                L300
 
 L272:
       getlocal            7
       pushnull
-      ifeq                L278
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L278:
       jump                L300
 
 L279:
       getlocal            7
       pushnull
-      ifeq                L286
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       negate
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L286:
       jump                L300
 
 L287:
       getlocal            7
       pushnull
-      ifeq                L293
+      ifeq                L300
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal            4
       setproperty         QName(PackageNamespace(""), "o3353")
 
-L293:
       jump                L300
 
 L294:
@@ -1200,7 +1188,7 @@ L82:
       pushbyte            10
       equals
 L89:
-      iffalse             L104
+      iffalse             L143
 
       getlocal            5
       getlocal            4
@@ -1218,7 +1206,6 @@ L89:
       convert_d
       setlocal            11
 
-L104:
       jump                L143
 
 L105:
@@ -1239,7 +1226,7 @@ L105:
       pushbyte            9
       equals
 L119:
-      iffalse             L129
+      iffalse             L143
 
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getproperty         QName(PackageNamespace(""), "o10825")
@@ -1251,7 +1238,6 @@ L119:
       callproperty        QName(PackageNamespace(""), "o10468"), 3
       setproperty         QName(PackageNamespace(""), "value")
 
-L129:
       jump                L143
 
 L130:
@@ -1310,12 +1296,6 @@ L146:
       getlocal0
       pushscope
 
-      pushnull
-      setlocal            7
-
-      pushnull
-      setlocal            6
-
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "profileData")
@@ -1333,14 +1313,14 @@ L146:
 
       getlocal3
       pushbyte            0
-      ifngt               L92
+      ifngt               L88
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2409")
       pushbyte            4
       equals
       dup
-      iffalse             L35
+      iffalse             L31
 
       pop
       getlocal            8
@@ -1350,8 +1330,8 @@ L146:
       callproperty        QName(PackageNamespace(""), "o9445"), 1
       getlocal2
       equals
-L35:
-      iffalse             L47
+L31:
+      iffalse             L43
 
       getlocal            9
       findpropstrict      QName(PrivateNamespace("o6747"), "o18525")
@@ -1364,13 +1344,13 @@ L35:
       convert_d
       setlocal            9
 
-      jump                L92
+      jump                L88
 
-L47:
+L43:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2409")
       pushbyte            7
-      ifne                L92
+      ifne                L88
 
       getlocal            8
       getlocal1
@@ -1381,7 +1361,7 @@ L47:
       getlocal2
       equals
       dup
-      iftrue              L70
+      iftrue              L66
 
       pop
       getlocal            8
@@ -1392,9 +1372,9 @@ L47:
       callproperty        QName(PackageNamespace(""), "o6194"), 2
       getlocal2
       equals
-L70:
+L66:
       dup
-      iftrue              L81
+      iftrue              L77
 
       pop
       getlocal            8
@@ -1405,8 +1385,8 @@ L70:
       callproperty        QName(PackageNamespace(""), "o6194"), 2
       getlocal2
       equals
-L81:
-      iffalse             L92
+L77:
+      iffalse             L88
 
       getlocal            9
       findpropstrict      QName(PrivateNamespace("o6747"), "o18525")
@@ -1419,7 +1399,7 @@ L81:
       convert_d
       setlocal            9
 
-L92:
+L88:
       getlocal            9
       returnvalue
      end ; code
@@ -1603,8 +1583,7 @@ L21:
       iffalse             L24
 
       getlocal1
-      setlocal1
-
+      pop
 L24:
       getlex              QName(PrivateNamespace("o6747"), "o11453")
       getlocal3

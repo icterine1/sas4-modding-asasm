@@ -134,20 +134,17 @@ class
       getlex              QName(PackageNamespace(""), "o10496")
       callpropvoid        QName(Namespace("o5448"), "o9226"), 1
 
-      jump                L56
-
-L56:
       getlocal1
       getlex              QName(PackageNamespace(""), "o17517")
       istypelate
-      iftrue              L64
+      iftrue              L63
 
       getlocal1
       getlex              QName(PackageNamespace(""), "o13732")
       istypelate
-      iffalse             L64
+      iffalse             L63
 
-L64:
+L63:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o10093")
       getproperty         QName(PackageNamespace(""), "stage")
@@ -186,12 +183,6 @@ L64:
       pushnan
       setlocal            12
 
-      pushbyte            0
-      setlocal2
-
-      pushbyte            0
-      setlocal            14
-
       pushnan
       setlocal3
 
@@ -223,9 +214,6 @@ L64:
       convert_d
       setlocal            6
 
-      jump                L35
-
-L35:
       getlex              QName(PackageNamespace(""), "o10496")
       getproperty         QName(Namespace("o4332"), "position")
       getlocal            10
@@ -236,11 +224,8 @@ L35:
       getlocal            6
       setproperty         QName(PackageNamespace(""), "y")
 
-      jump                L44
-
-L44:
       getlex              QName(PrivateNamespace("o8216"), "o4638")
-      iffalse             L52
+      iffalse             L46
 
       getlex              QName(PrivateNamespace("o8216"), "o4638")
       getlocal            10
@@ -250,7 +235,7 @@ L44:
       getlocal            6
       setproperty         QName(PackageNamespace(""), "o20177")
 
-L52:
+L46:
       getlex              QName(PackageNamespace(""), "Object")
       getglobalscope
       getlex              QName(PackageNamespace(""), "entity")
@@ -273,7 +258,7 @@ L52:
       pushbyte            0
       greaterequals
       dup
-      iffalse             L79
+      iffalse             L73
 
       pop
       getlex              QName(PackageNamespace(""), "o12129")
@@ -281,14 +266,14 @@ L52:
       getlocal            11
       equals
       not
-L79:
-      iffalse             L83
+L73:
+      iffalse             L77
 
       getlex              QName(PackageNamespace(""), "o12129")
       getlocal            11
       callpropvoid        QName(Namespace("o7331"), "gotoAndStop"), 1
 
-L83:
+L77:
       returnvoid
      end ; code
     end ; body
@@ -425,9 +410,6 @@ L5:
       getlex              QName(PackageNamespace(""), "o10496")
       callpropvoid        QName(Namespace("o5448"), "o11867"), 1
 
-      jump                L21
-
-L21:
       getlex              QName(PrivateNamespace("o8216"), "o4638")
       callpropvoid        QName(PackageNamespace(""), "o19115"), 0
 

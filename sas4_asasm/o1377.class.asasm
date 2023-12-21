@@ -273,9 +273,6 @@ class
       getlocal0
       pushscope
 
-      pushdouble          0.001
-      setlocal            5
-
       getlex              QName(PackageNamespace(""), "Math")
       getlocal2
       getlocal3
@@ -283,13 +280,13 @@ class
       add
       subtract
       callproperty        QName(PackageNamespace(""), "abs"), 1
-      getlocal            5
+      pushdouble          0.001
       lessthan
       dup
       setlocal            6
 
       pushfalse
-      ifne                L41
+      ifne                L39
 
       pushstring          "ERR: "
       getlocal1
@@ -316,18 +313,18 @@ class
       add
       returnvalue
 
-L41:
+L39:
       getlocal2
       pushbyte            0
-      ifnle               L46
+      ifnle               L44
 
       pushstring          ""
       returnvalue
 
-L46:
+L44:
       getlocal            4
-      getlocal            5
-      ifnlt               L59
+      pushdouble          0.001
+      ifnlt               L57
 
       getlocal1
       pushstring          ": "
@@ -340,7 +337,7 @@ L46:
       add
       returnvalue
 
-L59:
+L57:
       getlocal1
       pushstring          ": "
       add

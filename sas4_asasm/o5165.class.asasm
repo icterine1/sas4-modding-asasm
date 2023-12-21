@@ -325,14 +325,11 @@ L153:
       coerce              QName(PackageNamespace(""), "o20021")
       setlocal2
 
-      pushtrue
-      setlocal1
-
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0
       getlex              QName(PackageNamespace(""), "o12441")
       getlocal2
-      getlocal1
+      pushtrue
       newarray            2
       callproperty        QName(PackageNamespace(""), "create"), 3
       findproperty        QName(PackageNamespace(""), "o15843")
@@ -1002,7 +999,7 @@ L77:
       getlex              QName(PrivateNamespace("o5165"), "o20498")
       setlocal            13
 
-      jump                L135
+      jump                L134
 
 L82:
       label
@@ -1020,7 +1017,7 @@ L82:
       setlocal            8
 
       pushnull
-      ifeq                L135
+      ifeq                L134
 
       getlocal            8
       callproperty        QName(PackageNamespace(""), "o7117"), 0
@@ -1029,16 +1026,14 @@ L82:
       setlocal            9
 
       pushnull
-      ifeq                L135
+      ifeq                L134
 
-      jump                L134
-
-L104:
+L103:
       label
       getlocal            9
       getlocal            10
       getproperty         QName(PackageNamespace(""), "o19613")
-      ifne                L127
+      ifne                L126
 
       getlocal            11
       pushstring          "body"
@@ -1061,7 +1056,7 @@ L104:
       getlocal            11
       returnvalue
 
-L127:
+L126:
       getlocal            9
       callproperty        QName(PackageNamespace(""), "o10535"), 0
       coerce              QName(PackageNamespace(""), "o11359")
@@ -1069,12 +1064,11 @@ L127:
       setlocal            9
 
       pushnull
-      ifeq                L135
+      ifeq                L134
+
+      jump                L103
 
 L134:
-      jump                L104
-
-L135:
       hasnext2            13, 14
       iftrue              L82
 

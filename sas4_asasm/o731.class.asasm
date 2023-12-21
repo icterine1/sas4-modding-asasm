@@ -41,9 +41,6 @@ class
       pushnull
       setlocal1
 
-      jump                L5
-
-L5:
       pushbyte            0
       setlocal            5
 
@@ -51,9 +48,9 @@ L5:
       getproperty         QName(ProtectedNamespace("o16681"), "o20157")
       setlocal            4
 
-      jump                L35
+      jump                L34
 
-L11:
+L10:
       label
       getlocal            4
       getlocal            5
@@ -64,7 +61,7 @@ L11:
       getlocal1
       getlex              QName(PackageNamespace(""), "o15625")
       istypelate
-      iffalse             L35
+      iffalse             L34
 
       getlocal1
       pushstring          "click"
@@ -82,9 +79,9 @@ L11:
       pushtrue
       callpropvoid        QName(PackageNamespace(""), "addEventListener"), 5
 
-L35:
+L34:
       hasnext2            4, 5
-      iftrue              L11
+      iftrue              L10
 
       getlocal0
       callsupervoid       QName(PackageNamespace(""), "o13640"), 0

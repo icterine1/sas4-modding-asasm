@@ -160,18 +160,15 @@ class
       coerce_s
       setlocal            7
 
-      pushbyte            32
-      setlocal            10
-
       getlocal            7
       pushbyte            0
-      getlocal            10
+      pushbyte            32
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 2
       coerce_s
       setlocal            9
 
       getlocal            7
-      getlocal            10
+      pushbyte            32
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substr"), 1
       coerce_s
       setlocal3
@@ -216,7 +213,7 @@ class
       setlocal            4
 
       getlocal            9
-      ifeq                L70
+      ifeq                L68
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -231,7 +228,7 @@ class
       pushnull
       returnvalue
 
-L70:
+L68:
       getlocal2
       returnvalue
      end ; code
@@ -363,9 +360,6 @@ L74:
       callproperty        QName(PrivateNamespace("o14987"), "o5038"), 1
       setproperty         QName(PackageNamespace(""), "data")
 
-      jump                L80
-
-L80:
       getlocal3
       returnvalue
      end ; code
@@ -457,9 +451,6 @@ L44:
       coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
       setlocal3
 
-      jump                L50
-
-L50:
       getlocal2
       getlocal1
       pushbyte            3
@@ -566,28 +557,26 @@ L50:
 
       pushstring          "\\"
       coerce_s
-      setlocal2
-
+      pop
       pushstring          "\""
       coerce_s
-      setlocal3
-
+      pop
       getlocal1
-      getlocal2
-      getlocal3
+      pushstring          "\\"
+      pushstring          "\""
       add
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
-      getlocal3
+      pushstring          "\""
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
       coerce_s
       setlocal1
 
       getlocal1
-      getlocal3
-      getlocal3
+      pushstring          "\""
+      pushstring          "\""
       add
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
-      getlocal3
+      pushstring          "\""
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
       coerce_s
       setlocal1
@@ -704,9 +693,6 @@ L62:
       coerce              QName(PackageNamespace("flash.utils"), "ByteArray")
       setlocal            8
 
-      jump                L68
-
-L68:
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0
       getlex              QName(PackageNamespace("flash.utils"), "Dictionary")
@@ -743,9 +729,9 @@ L68:
       getlocal3
       setlocal            13
 
-      jump                L136
+      jump                L135
 
-L99:
+L98:
       label
       getlocal            13
       getlocal            14
@@ -789,9 +775,9 @@ L99:
       callproperty        QName(PrivateNamespace("o14987"), "o615"), 1
       setproperty         MultinameL([PrivateNamespace("o14987"), ProtectedNamespace("o14987"), StaticProtectedNs("o14987"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o14987"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L136:
+L135:
       hasnext2            13, 14
-      iftrue              L99
+      iftrue              L98
 
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0

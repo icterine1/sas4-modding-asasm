@@ -664,9 +664,6 @@ L201:
       getproperty         QName(PackageNamespace(""), "o17745")
       iflt                L196
 
-      pushbyte            0
-      setlocal            12
-
       getlocal            9
       pushnull
       callproperty        QName(PackageNamespace(""), "o19133"), 1
@@ -699,7 +696,7 @@ L201:
       getlocal3
       getlocal            9
       getproperty         QName(PackageNamespace(""), "o9139")
-      getlocal            12
+      pushbyte            0
       getlocal            9
       getproperty         QName(PackageNamespace(""), "o2752")
       getproperty         QName(PackageNamespace(""), "o11570")
@@ -1287,7 +1284,7 @@ L21:
       pushbyte            0
       getproperty         MultinameL([PrivateNamespace("o7013"), ProtectedNamespace("o7013"), StaticProtectedNs("o7013"), StaticProtectedNs("o18703"), StaticProtectedNs("o9743"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7013"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifeq                L50
+      ifeq                L79
 
       getlocal            5
       getlex              QName(PackageNamespace(""), "o19419")
@@ -1297,7 +1294,6 @@ L21:
       getproperty         MultinameL([PrivateNamespace("o7013"), ProtectedNamespace("o7013"), StaticProtectedNs("o7013"), StaticProtectedNs("o18703"), StaticProtectedNs("o9743"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7013"), Namespace("http://adobe.com/AS3/2006/builtin")])
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L50:
       jump                L79
 
 L51:
@@ -1598,9 +1594,6 @@ L49:
       setlocal            4
 
       pushnull
-      setlocal            7
-
-      pushnull
       setlocal1
 
       pushbyte            0
@@ -1612,12 +1605,12 @@ L49:
       findpropstrict      QName(PrivateNamespace("o7013"), "o17874")
       callproperty        QName(PrivateNamespace("o7013"), "o17874"), 0
       pushfalse
-      ifne                L20
+      ifne                L18
 
       pushbyte            0
       returnvalue
 
-L20:
+L18:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o202")
       getproperty         QName(PackageNamespace(""), "o16835")
@@ -1628,7 +1621,7 @@ L20:
       setlocal            5
 
       pushbyte            0
-      ifne                L99
+      ifne                L97
 
       findpropstrict      QName(PrivateNamespace("o7013"), "o11415")
       pushbyte            0
@@ -1647,11 +1640,11 @@ L20:
 
       getlex              QName(PackageNamespace(""), "o14413")
       getproperty         QName(PackageNamespace(""), "o20705")
-      ifnlt               L90
+      ifnlt               L88
 
       getlocal3
       getproperty         QName(PackageNamespace(""), "o19940")
-      iffalse             L64
+      iffalse             L62
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o7923")
@@ -1659,23 +1652,22 @@ L20:
       pushbyte            0
       getproperty         MultinameL([PrivateNamespace("o7013"), ProtectedNamespace("o7013"), StaticProtectedNs("o7013"), StaticProtectedNs("o18703"), StaticProtectedNs("o9743"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7013"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifne                L60
+      ifne                L58
 
       getlocal0
       pushbyte            0
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-      jump                L63
+      jump                L91
 
-L60:
+L58:
       getlocal0
       pushbyte            1
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-L63:
-      jump                L89
+      jump                L91
 
-L64:
+L62:
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o7923")
       getproperty         QName(PackageNamespace(""), "o7993")
@@ -1684,7 +1676,7 @@ L64:
       pushnull
       equals
       dup
-      iffalse             L81
+      iffalse             L79
 
       pop
       getlex              QName(PackageNamespace(""), "o19419")
@@ -1694,29 +1686,28 @@ L64:
       getproperty         MultinameL([PrivateNamespace("o7013"), ProtectedNamespace("o7013"), StaticProtectedNs("o7013"), StaticProtectedNs("o18703"), StaticProtectedNs("o9743"), StaticProtectedNs("o6539"), StaticProtectedNs("o731"), StaticProtectedNs("o16681"), StaticProtectedNs("flash.events:EventDispatcher"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o7013"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
       equals
-L81:
-      iffalse             L86
+L79:
+      iffalse             L84
 
       getlocal0
       pushbyte            0
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-      jump                L89
+      jump                L91
 
-L86:
+L84:
       getlocal0
       pushbyte            1
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-L89:
-      jump                L93
+      jump                L91
 
-L90:
+L88:
       getlocal0
       pushbyte            2
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-L93:
+L91:
       pushbyte            1
       findpropstrict      QName(ProtectedNamespace("o7013"), "o18660")
       callproperty        QName(ProtectedNamespace("o7013"), "o18660"), 0
@@ -1724,10 +1715,10 @@ L93:
       add
       returnvalue
 
-L99:
+L97:
       getlocal            5
       pushbyte            1
-      ifne                L146
+      ifne                L144
 
       findpropstrict      QName(PrivateNamespace("o7013"), "o8299")
       pushbyte            0
@@ -1746,7 +1737,7 @@ L99:
 
       getlex              QName(PackageNamespace(""), "o14413")
       getproperty         QName(PackageNamespace(""), "o8383")
-      ifnlt               L137
+      ifnlt               L135
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o7923")
@@ -1759,28 +1750,27 @@ L99:
 
       getlocal2
       pushnull
-      ifne                L133
+      ifne                L131
 
       getlocal0
       pushbyte            0
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-      jump                L136
+      jump                L138
 
-L133:
+L131:
       getlocal0
       pushbyte            1
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-L136:
-      jump                L140
+      jump                L138
 
-L137:
+L135:
       getlocal0
       pushbyte            2
       setproperty         QName(ProtectedNamespace("o18703"), "o4326")
 
-L140:
+L138:
       pushbyte            1
       findpropstrict      QName(ProtectedNamespace("o7013"), "o6291")
       callproperty        QName(ProtectedNamespace("o7013"), "o6291"), 0
@@ -1788,7 +1778,7 @@ L140:
       add
       returnvalue
 
-L146:
+L144:
       pushbyte            0
       returnvalue
      end ; code
@@ -2158,7 +2148,7 @@ L30:
       getlocal            4
       callpropvoid        QName(PrivateNamespace("o7013"), "o14630"), 3
 
-      jump                L68
+      jump                L116
 
 L55:
       findpropstrict      QName(ProtectedNamespace("o7013"), "o18660")
@@ -2176,7 +2166,6 @@ L55:
       getlocal            4
       callpropvoid        QName(PrivateNamespace("o7013"), "o14630"), 3
 
-L68:
       jump                L116
 
 L69:
@@ -2226,8 +2215,7 @@ L87:
       setlocal            11
 
       getlocal            10
-      setlocal            10
-
+      pop
 L106:
       getlocal            11
       getlocal            10
@@ -2656,14 +2644,13 @@ L30:
       getlocal3
       callpropvoid        QName(ProtectedNamespace("o7013"), "o19760"), 1
 
-      jump                L33
+      jump                L53
 
 L30:
       findpropstrict      QName(ProtectedNamespace("o7013"), "o12396")
       getlocal3
       callpropvoid        QName(ProtectedNamespace("o7013"), "o12396"), 1
 
-L33:
       jump                L53
 
 L34:

@@ -814,9 +814,6 @@ L48:
       iffalse             L16
 
 L16:
-      pushtrue
-      setlocal            5
-
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "o476")
@@ -829,9 +826,9 @@ L16:
       getproperty         QName(PackageNamespace(""), "type")
       setlocal            6
 
-      jump                L227
+      jump                L225
 
-L29:
+L27:
       label
       getlex              QName(PackageNamespace(""), "o16166")
       pushstring          "assets.item.cashDrop"
@@ -839,15 +836,15 @@ L29:
 
       getlocal3
       dup
-      iffalse             L41
+      iffalse             L39
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o8896")
       pushstring          "cashAsset"
       getproperty         MultinameL([PrivateNamespace("o6743"), ProtectedNamespace("o6743"), StaticProtectedNs("o6743"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6743"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L41:
-      iffalse             L53
+L39:
+      iffalse             L238
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -861,10 +858,9 @@ L41:
       swap
       setproperty         QName(PackageNamespace(""), "o13559")
 
-L53:
-      jump                L240
+      jump                L238
 
-L54:
+L52:
       label
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
@@ -884,12 +880,11 @@ L54:
 
       getlocal2
       pushbyte            12
-      ifne                L74
+      ifne                L72
 
       getlocal2
-      setlocal2
-
-L74:
+      pop
+L72:
       getlex              QName(PackageNamespace(""), "o16166")
       getlex              QName(ProtectedNamespace("o6743"), "o691")
       getlocal1
@@ -901,48 +896,48 @@ L74:
 
       getlocal3
       dup
-      iffalse             L90
+      iffalse             L88
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o8896")
       pushstring          "grenadeAsset"
       getproperty         MultinameL([PrivateNamespace("o6743"), ProtectedNamespace("o6743"), StaticProtectedNs("o6743"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6743"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L90:
+L88:
       dup
-      iffalse             L97
+      iffalse             L95
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o8896")
       pushstring          "HealthAndTurretAsset"
       getproperty         MultinameL([PrivateNamespace("o6743"), ProtectedNamespace("o6743"), StaticProtectedNs("o6743"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6743"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L97:
-      iffalse             L168
+L95:
+      iffalse             L238
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            1
       equals
       dup
-      iftrue              L109
+      iftrue              L107
 
       pop
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            2
       equals
-L109:
+L107:
       dup
-      iftrue              L116
+      iftrue              L114
 
       pop
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            12
       equals
-L116:
-      iffalse             L129
+L114:
+      iffalse             L127
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -956,23 +951,23 @@ L116:
       swap
       setproperty         QName(PackageNamespace(""), "o13559")
 
-      jump                L168
+      jump                L238
 
-L129:
+L127:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            4
       greaterequals
       dup
-      iffalse             L140
+      iffalse             L138
 
       pop
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            10
       lessequals
-L140:
-      iffalse             L153
+L138:
+      iffalse             L151
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -986,13 +981,13 @@ L140:
       swap
       setproperty         QName(PackageNamespace(""), "o13559")
 
-      jump                L168
+      jump                L238
 
-L153:
+L151:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            11
-      ifne                L168
+      ifne                L238
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -1006,10 +1001,9 @@ L153:
       swap
       setproperty         QName(PackageNamespace(""), "o13559")
 
-L168:
-      jump                L240
+      jump                L238
 
-L169:
+L167:
       label
       getlex              QName(PackageNamespace(""), "o16166")
       getlex              QName(ProtectedNamespace("o6743"), "o148")
@@ -1026,15 +1020,15 @@ L169:
 
       getlocal3
       dup
-      iffalse             L189
+      iffalse             L187
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o8896")
       pushstring          "strongboxAsset"
       getproperty         MultinameL([PrivateNamespace("o6743"), ProtectedNamespace("o6743"), StaticProtectedNs("o6743"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6743"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L189:
-      iffalse             L201
+L187:
+      iffalse             L238
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -1048,10 +1042,9 @@ L189:
       swap
       setproperty         QName(PackageNamespace(""), "o13559")
 
-L201:
-      jump                L240
+      jump                L238
 
-L202:
+L200:
       label
       getlex              QName(PackageNamespace(""), "o16166")
       pushstring          "assets.item.cashDrop"
@@ -1059,15 +1052,15 @@ L202:
 
       getlocal3
       dup
-      iffalse             L214
+      iffalse             L212
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o8896")
       pushstring          "cashAsset"
       getproperty         MultinameL([PrivateNamespace("o6743"), ProtectedNamespace("o6743"), StaticProtectedNs("o6743"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o6743"), Namespace("http://adobe.com/AS3/2006/builtin")])
-L214:
-      iffalse             L226
+L212:
+      iffalse             L238
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -1081,36 +1074,33 @@ L214:
       swap
       setproperty         QName(PackageNamespace(""), "o13559")
 
-L226:
-      jump                L240
+      jump                L238
 
-L227:
+L225:
       getlex              QName(PackageNamespace(""), "o19053")
       getproperty         QName(PackageNamespace(""), "o17861")
       getlocal            6
-      ifstricteq          L29
+      ifstricteq          L27
 
       getlex              QName(PackageNamespace(""), "o19053")
       getproperty         QName(PackageNamespace(""), "o14325")
       getlocal            6
-      ifstricteq          L54
+      ifstricteq          L52
 
       getlex              QName(PackageNamespace(""), "o19053")
       getproperty         QName(PackageNamespace(""), "o14669")
       getlocal            6
-      ifstricteq          L169
+      ifstricteq          L167
 
-      jump                L202
+      jump                L200
 
-L240:
-      getlocal            5
+L238:
+      pushtrue
       dup
-      iffalse             L245
-
+      pop
       pop
       getlex              QName(PackageNamespace(""), "o13559")
-L245:
-      iffalse             L275
+      iffalse             L273
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -1148,7 +1138,7 @@ L245:
       getlex              QName(PrivateNamespace("o6743"), "o5659")
       callpropvoid        QName(Namespace("o5448"), "o9226"), 1
 
-L275:
+L273:
       getlex              QName(PackageNamespace(""), "o16166")
       pushbyte            0
       callpropvoid        QName(Namespace("o7331"), "gotoAndPlay"), 1
@@ -1293,7 +1283,7 @@ L15:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o17401")
       pushbyte            11
-      ifeq                L27
+      ifeq                L59
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o8116")
@@ -1303,7 +1293,6 @@ L15:
       pushbyte            1
       callpropvoid        QName(PackageNamespace(""), "play"), 1
 
-L27:
       jump                L59
 
 L28:

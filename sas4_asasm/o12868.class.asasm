@@ -234,58 +234,52 @@ class
 L5:
       pushshort           800
       convert_d
-      setlocal            4
-
+      pop
       pushshort           620
       convert_d
-      setlocal2
-
+      pop
       pushshort           800
       convert_d
-      setlocal3
-
+      pop
+      findpropstrict      QName(PrivateNamespace("o12868"), "o8772")
+      pushshort           800
+      negate
       pushdouble          2
-      setlocal1
-
-      findpropstrict      QName(PrivateNamespace("o12868"), "o8772")
-      getlocal3
-      negate
-      getlocal1
       subtract
       pushbyte            0
-      getlocal3
-      getlocal2
+      pushshort           800
+      pushshort           620
       pushbyte            0
       callpropvoid        QName(PrivateNamespace("o12868"), "o8772"), 5
 
       findpropstrict      QName(PrivateNamespace("o12868"), "o8772")
-      getlocal            4
-      getlocal1
+      pushshort           800
+      pushdouble          2
       add
       pushbyte            0
-      getlocal3
-      getlocal2
+      pushshort           800
+      pushshort           620
       pushbyte            0
       callpropvoid        QName(PrivateNamespace("o12868"), "o8772"), 5
 
       findpropstrict      QName(PrivateNamespace("o12868"), "o8772")
       pushbyte            0
-      getlocal3
+      pushshort           800
       negate
-      getlocal1
+      pushdouble          2
       subtract
-      getlocal            4
-      getlocal3
+      pushshort           800
+      pushshort           800
       pushbyte            0
       callpropvoid        QName(PrivateNamespace("o12868"), "o8772"), 5
 
       findpropstrict      QName(PrivateNamespace("o12868"), "o8772")
       pushbyte            0
-      getlocal2
-      getlocal1
+      pushshort           620
+      pushdouble          2
       add
-      getlocal            4
-      getlocal3
+      pushshort           800
+      pushshort           800
       pushbyte            0
       callpropvoid        QName(PrivateNamespace("o12868"), "o8772"), 5
 

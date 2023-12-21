@@ -457,11 +457,11 @@ L193:
 
       getlex              QName(PackageNamespace(""), "o13800")
       getproperty         QName(PackageNamespace(""), "o18381")
-      iffalse             L318
+      iffalse             L360
 
       getlex              QName(PackageNamespace(""), "o13800")
       callproperty        QName(PackageNamespace(""), "o4513"), 0
-      iffalse             L318
+      iffalse             L360
 
       getlex              QName(PackageNamespace(""), "o13800")
       getlocal0
@@ -476,7 +476,7 @@ L193:
       setlocal            4
 
       pushbyte            0
-      ifngt               L318
+      ifngt               L360
 
       getlex              QName(PackageNamespace(""), "Math")
       getlocal            4
@@ -607,7 +607,6 @@ L315:
       getlocal            7
       iflt                L253
 
-L318:
       jump                L360
 
 L319:
@@ -788,9 +787,6 @@ L8:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       getlocal0
       getlocal1
       getlocal2
@@ -799,9 +795,6 @@ L3:
       getlocal            5
       getlocal            6
       callsupervoid       QName(PackageNamespace(""), "o13864"), 6
-      jump                L12
-
-L12:
       returnvoid
      end ; code
     end ; body

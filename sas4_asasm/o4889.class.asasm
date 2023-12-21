@@ -642,7 +642,7 @@ L351:
 L357:
       getlocal            26
       pushbyte            3
-      ifeq                L366
+      ifeq                L372
 
       inclocal_i          23
 L361:
@@ -652,7 +652,6 @@ L361:
       getproperty         QName(PackageNamespace(""), "length")
       iflt                L323
 
-L366:
       jump                L372
 
 L367:
@@ -935,9 +934,6 @@ L506:
       swap
       setslot             3
 
-      jump                L43
-
-L43:
       getlex              QName(PackageInternalNs(""), "o10585")
       getlex              QName(PackageInternalNs(""), "o71")
       newarray            2
@@ -1123,7 +1119,7 @@ L66:
 
       getlex              QName(PackageNamespace(""), "o12696")
       callproperty        QName(PackageNamespace(""), "o20082"), 0
-      iffalse             L96
+      iffalse             L100
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -1138,14 +1134,13 @@ L66:
 
       getproperty         QName(PackageNamespace(""), "o16173")
       pushbyte            0
-      ifeq                L96
+      ifeq                L100
 
       getlocal            8
       getlocal            5
       getproperty         QName(PackageNamespace(""), "o16173")
       setproperty         QName(PackageNamespace(""), "o4752")
 
-L96:
       jump                L100
 
 L97:
@@ -1264,7 +1259,7 @@ L18:
 
       getlex              QName(PackageNamespace(""), "o12696")
       callproperty        QName(PackageNamespace(""), "o20082"), 0
-      iffalse             L81
+      iffalse             L85
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -1279,14 +1274,13 @@ L18:
       getlocal3
       getproperty         QName(PackageNamespace(""), "o16173")
       pushbyte            0
-      ifeq                L81
+      ifeq                L85
 
       getlocal            6
       getlocal3
       getproperty         QName(PackageNamespace(""), "o16173")
       setproperty         QName(PackageNamespace(""), "o4752")
 
-L81:
       jump                L85
 
 L82:
@@ -2723,14 +2717,12 @@ L137:
 L152:
       pushtrue
       dup
-      iffalse             L160
-
+      pop
       pop
       getlex              QName(PackageNamespace(""), "o4848")
       getproperty         QName(PackageNamespace(""), "isGuest")
       pushfalse
       equals
-L160:
       iffalse             L192
 
       getlex              QName(PackageNamespace(""), "o4539")
@@ -4370,21 +4362,18 @@ L909:
       pushnull
       setlocal            4
 
-      pushnull
-      setlocal3
-
       getlocal1
       pushstring          "userID"
       getproperty         MultinameL([PrivateNamespace("o4889"), ProtectedNamespace("o4889"), StaticProtectedNs("o4889"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4889"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifeq                L17
+      ifeq                L15
 
       findpropstrict      QName(PackageNamespace(""), "Error")
       pushstring          "Old data format. Data wipe required"
       constructprop       QName(PackageNamespace(""), "Error"), 1
       throw
 
-L17:
+L15:
       getlocal1
       pushshort           222
       getproperty         MultinameL([PrivateNamespace("o4889"), ProtectedNamespace("o4889"), StaticProtectedNs("o4889"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o4889"), Namespace("http://adobe.com/AS3/2006/builtin")])
@@ -4405,7 +4394,7 @@ L17:
       setlocal            7
 
       pushbyte            6
-      ifnge               L76
+      ifnge               L73
 
       getlocal1
       pushshort           222
@@ -4421,17 +4410,17 @@ L17:
       coerce_s
       setlocal            4
 
-L46:
+L44:
       getlocal2
       getlocal1
       callproperty        QName(PackageNamespace(""), "o19990"), 1
       coerce_s
       setlocal            4
 
-L51:
-      jump                L62
+L49:
+      jump                L60
 
-L52:
+L50:
       getlocal0
       pushscope
 
@@ -4446,7 +4435,7 @@ L52:
       setslot             1
 
       popscope
-L62:
+L60:
       getlocal1
       pushshort           222
       getlocal            5
@@ -4457,16 +4446,14 @@ L62:
       equals
       not
       dup
-      iffalse             L74
+      iffalse             L72
 
       pop
       pushfalse
-L74:
-      iffalse             L76
+L72:
+      iffalse             L73
 
-      jump                L76
-
-L76:
+L73:
       findpropstrict      QName(PrivateNamespace("o4889"), "o16315")
       getlocal1
       callproperty        QName(PrivateNamespace("o4889"), "o16315"), 1
@@ -4475,17 +4462,17 @@ L76:
       setlocal            6
 
       pushnull
-      ifeq                L88
+      ifeq                L85
 
       findpropstrict      QName(PackageNamespace(""), "Error")
       getlocal            6
       constructprop       QName(PackageNamespace(""), "Error"), 1
       throw
 
-L88:
+L85:
       returnvoid
      end ; code
-     try from L46 to L51 target L52 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
+     try from L44 to L49 target L50 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o19631") end
     end ; body
    end ; method
   end ; trait
@@ -4516,21 +4503,17 @@ L88:
       pushtrue
 L11:
       dup
-      iffalse             L15
-
+      pop
       pop
       pushtrue
-L15:
       dup
-      iffalse             L23
-
+      pop
       pop
       getlocal0
       getproperty         QName(PackageNamespace(""), "o4848")
       callproperty        QName(PackageNamespace(""), "o5701"), 0
       pushfalse
       equals
-L23:
       iffalse             L36
 
       findpropstrict      QName(PackageNamespace(""), "o16124")

@@ -984,7 +984,7 @@ L42:
      pushbyte            0
      setlocal            7
 
-     jump                L160
+     jump                L159
 
 L34:
      label
@@ -995,9 +995,7 @@ L34:
      coerce_s
      setlocal            11
 
-     jump                L158
-
-L42:
+L41:
      label
      getlocal            13
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toLowerCase"), 0
@@ -1015,7 +1013,7 @@ L42:
      setlocal            8
 
      pushbyte            -1
-     ifeq                L159
+     ifeq                L158
 
      findpropstrict      QName(PrivateNamespace("o5343"), "o4730")
      getlocal            6
@@ -1033,7 +1031,7 @@ L42:
      setlocal            14
 
      pushbyte            -1
-     ifeq                L158
+     ifeq                L41
 
      findpropstrict      QName(PackageNamespace(""), "String")
      getlocal            13
@@ -1064,7 +1062,7 @@ L42:
      add
      getlocal            13
      getproperty         QName(PackageNamespace(""), "length")
-     ifnlt               L111
+     ifnlt               L110
 
      getlocal            10
      getlocal            13
@@ -1078,13 +1076,13 @@ L42:
      coerce_s
      setlocal            10
 
-L111:
+L110:
      pushbyte            0
      setlocal            4
 
-     jump                L141
+     jump                L140
 
-L114:
+L113:
      label
      getlocal1
      getlocal            5
@@ -1097,7 +1095,7 @@ L114:
      getlocal            4
      add
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "charAt"), 1
-     ifne                L134
+     ifne                L133
 
      getlocal            12
      getlex              QName(PackageNamespace(""), "o17275")
@@ -1106,9 +1104,9 @@ L114:
      coerce_s
      setlocal            12
 
-     jump                L140
+     jump                L139
 
-L134:
+L133:
      getlocal            12
      getlex              QName(PackageNamespace(""), "o17275")
      getproperty         QName(PackageNamespace(""), "o8915")
@@ -1116,13 +1114,13 @@ L134:
      coerce_s
      setlocal            12
 
-L140:
+L139:
      inclocal_i          4
-L141:
+L140:
      getlocal            4
      getlocal            9
      getproperty         QName(PackageNamespace(""), "length")
-     iflt                L114
+     iflt                L113
 
      getlocal            12
      dup
@@ -1141,12 +1139,11 @@ L141:
      getlocal            5
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L158:
-     jump                L42
+     jump                L41
 
-L159:
+L158:
      inclocal_i          7
-L160:
+L159:
      getlocal            7
      getlex              QName(PackageNamespace(""), "o4504")
      getproperty         QName(PackageNamespace(""), "o730")
@@ -1576,9 +1573,7 @@ L17:
      coerce_s
      setlocal3
 
-     jump                L57
-
-L12:
+L11:
      label
      findpropstrict      QName(PackageNamespace(""), "String")
      findpropstrict      QName(PrivateNamespace("o5343"), "o15037")
@@ -1600,11 +1595,11 @@ L12:
      setlocal            4
 
      pushbyte            -1
-     ifeq                L45
+     ifeq                L44
 
      getlocal            4
      getlocal2
-     ifngt               L42
+     ifngt               L41
 
      getlocal1
      getlocal            5
@@ -1614,21 +1609,21 @@ L12:
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 2
      returnvalue
 
-L42:
+L41:
      getlocal            4
      setlocal            5
 
-     jump                L57
+     jump                L11
 
-L45:
+L44:
      getlocal            5
      pushbyte            -1
-     ifne                L50
+     ifne                L49
 
      getlocal1
      returnvalue
 
-L50:
+L49:
      getlocal1
      getlocal            5
      pushbyte            1
@@ -1636,9 +1631,6 @@ L50:
      pushint             2147483647
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "substring"), 2
      returnvalue
-
-L57:
-     jump                L12
     end ; code
    end ; body
   end ; method

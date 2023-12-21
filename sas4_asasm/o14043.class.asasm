@@ -452,8 +452,7 @@ L29:
 
       pushstring          "Error"
       coerce_s
-      setlocal2
-
+      pop
       findpropstrict      QName(PrivateNamespace("o14043"), "o12")
       getlocal1
       getproperty         QName(PackageNamespace(""), "error")
@@ -479,7 +478,7 @@ L29:
 
 L24:
       getlocal0
-      getlocal2
+      pushstring          "Error"
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "o12407"), 2
 
@@ -1354,9 +1353,6 @@ L9:
       convert_d
       setlocal            5
 
-      pushdouble          86400000
-      setlocal            6
-
       getlocal            5
       getlocal            4
       subtract
@@ -1364,8 +1360,8 @@ L9:
       setlocal2
 
       getlocal2
-      getlocal            6
-      ifngt               L47
+      pushdouble          86400000
+      ifngt               L45
 
       getlocal0
       getproperty         QName(PackageNamespace(""), "data")
@@ -1393,14 +1389,14 @@ L9:
       getlocal1
       callpropvoid        QName(PackageNamespace(""), "o9072"), 2
 
-      jump                L51
+      jump                L49
 
-L47:
+L45:
       getlocal1
       getlocal0
       call                0
       pop
-L51:
+L49:
       returnvoid
      end ; code
     end ; body
@@ -1520,7 +1516,7 @@ L55:
      setlocal            4
 
 L66:
-     jump                L82
+     jump                L88
 
 L67:
      getlocal0
@@ -1543,7 +1539,6 @@ L67:
      setlocal            4
 
      popscope
-L82:
      jump                L88
 
 L83:
@@ -1563,9 +1558,6 @@ L88:
      setlocal            4
 
 L94:
-     jump                L95
-
-L95:
      pushstring          "V:"
      getlex              QName(PackageNamespace(""), "o9609")
      getproperty         QName(PackageNamespace(""), "o12834")

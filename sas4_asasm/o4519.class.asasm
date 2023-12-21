@@ -96,16 +96,6 @@ L26:
       swap
       setproperty         QName(PackageNamespace(""), "o17061")
 
-      pushstring          ""
-      pushstring          "KongTest"
-      ifne                L36
-
-      pushtrue
-      findproperty        QName(PackageNamespace(""), "o17061")
-      swap
-      setproperty         QName(PackageNamespace(""), "o17061")
-
-L36:
       getlex              QName(PackageNamespace(""), "Mem")
       getlocal0
       getlex              QName(PackageNamespace(""), "o14754")
@@ -129,22 +119,22 @@ L36:
       callpropvoid        QName(PackageNamespace(""), "init"), 1
 
       getlex              QName(PackageNamespace(""), "o17061")
-      iffalse             L61
+      iffalse             L54
 
       getlex              QName(PackageNamespace(""), "HostIconMovieClip")
       pushbyte            2
       setproperty         QName(PackageNamespace(""), "gotoFrameIndex")
 
-      jump                L64
+      jump                L57
 
-L61:
+L54:
       getlex              QName(PackageNamespace(""), "HostIconMovieClip")
       pushbyte            1
       setproperty         QName(PackageNamespace(""), "gotoFrameIndex")
 
-L64:
+L57:
       getlex              QName(PackageNamespace(""), "o17061")
-      iffalse             L74
+      iffalse             L67
 
       findpropstrict      QName(PackageNamespace(""), "o4787")
       constructprop       QName(PackageNamespace(""), "o4787"), 0
@@ -156,17 +146,17 @@ L64:
       getlex              QName(PackageNamespace(""), "stage")
       callpropvoid        QName(PackageNamespace(""), "init"), 1
 
-L74:
+L67:
       getlex              QName(PackageNamespace(""), "o8116")
       getproperty         QName(PackageNamespace(""), "o9745")
-      iffalse             L80
+      iffalse             L73
 
       findpropstrict      QName(PackageNamespace(""), "initialise")
       callpropvoid        QName(PackageNamespace(""), "initialise"), 0
 
-      jump                L86
+      jump                L79
 
-L80:
+L73:
       getlex              QName(PackageNamespace(""), "o8116")
       pushnull
       getlex              QName(PackageNamespace(""), "o14795")
@@ -174,7 +164,7 @@ L80:
       newfunction         "o4519/instance/o4464/inline_method"
       callpropvoid        QName(PackageNamespace(""), "o19926"), 3
 
-L86:
+L79:
       findpropstrict      QName(PackageNamespace(""), "removeEventListener")
       pushstring          "addedToStage"
       getlex              QName(PackageNamespace(""), "o4464")
@@ -266,9 +256,6 @@ L86:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       getlocal0
       pushstring          "enterFrame"
       getlex              QName(PrivateNamespace("o4519"), "o2576")

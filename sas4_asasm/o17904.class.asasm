@@ -787,11 +787,11 @@ L16:
       getlex              QName(PrivateNamespace("o17904"), "o11230")
       getproperty         QName(PackageNamespace(""), "running")
       pushfalse
-      ifne                L151
+      ifne                L150
 
       getlex              QName(PrivateNamespace("o17904"), "o20132")
       pushnull
-      ifeq                L66
+      ifeq                L65
 
       getlex              QName(PrivateNamespace("o17904"), "o16142")
       getlex              QName(PrivateNamespace("o17904"), "o20132")
@@ -835,7 +835,7 @@ L51:
       getlex              QName(PrivateNamespace("o17904"), "o14635")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifne                L65
+      ifne                L82
 
       pushtrue
       findproperty        QName(PrivateNamespace("o17904"), "o12514")
@@ -852,17 +852,14 @@ L51:
       returnvoid
 
 L65:
-      jump                L83
-
-L66:
       getlex              QName(PrivateNamespace("o17904"), "o14635")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifne                L71
+      ifne                L70
 
       returnvoid
 
-L71:
+L70:
       getlex              QName(PackageNamespace(""), "asset")
       pushtrue
       setproperty         QName(PackageNamespace(""), "visible")
@@ -879,15 +876,15 @@ L71:
       findpropstrict      QName(ProtectedNamespace("o17904"), "o16875")
       callpropvoid        QName(ProtectedNamespace("o17904"), "o16875"), 0
 
-L83:
+L82:
       getlex              QName(PrivateNamespace("o17904"), "o14635")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifnle               L88
+      ifnle               L87
 
       returnvoid
 
-L88:
+L87:
       findpropstrict      QName(ProtectedNamespace("o17904"), "o20067")
       callpropvoid        QName(ProtectedNamespace("o17904"), "o20067"), 0
 
@@ -899,7 +896,7 @@ L88:
       setproperty         QName(PrivateNamespace("o17904"), "o20132")
 
       getlex              QName(PrivateNamespace("o17904"), "o17772")
-      iffalse             L105
+      iffalse             L104
 
       getlex              QName(PrivateNamespace("o17904"), "o20132")
       getproperty         QName(PackageNamespace(""), "o1216")
@@ -909,7 +906,7 @@ L88:
       swap
       setproperty         QName(PrivateNamespace("o17904"), "o7710")
 
-L105:
+L104:
       getlex              QName(PrivateNamespace("o17904"), "o14635")
       pushbyte            0
       pushbyte            1
@@ -939,7 +936,7 @@ L105:
       setproperty         QName(PrivateNamespace("o17904"), "o5799")
 
       getlex              QName(PrivateNamespace("o17904"), "o17772")
-      iffalse             L136
+      iffalse             L135
 
       getlex              QName(PrivateNamespace("o17904"), "o44")
       pushbyte            50
@@ -948,22 +945,22 @@ L105:
       getlex              QName(PrivateNamespace("o17904"), "o44")
       callpropvoid        QName(PackageNamespace(""), "start"), 0
 
-      jump                L140
+      jump                L139
 
-L136:
+L135:
       getlex              QName(PackageNamespace(""), "o6871")
       getlex              QName(PrivateNamespace("o17904"), "o20132")
       getproperty         QName(PackageNamespace(""), "o1216")
       setproperty         QName(PackageNamespace(""), "o13586")
 
-L140:
+L139:
       getlex              QName(PrivateNamespace("o17904"), "o11230")
       callpropvoid        QName(PackageNamespace(""), "start"), 0
 
       getlex              QName(PrivateNamespace("o17904"), "o20132")
       getproperty         QName(PackageNamespace(""), "o15258")
       pushnull
-      ifeq                L151
+      ifeq                L150
 
       getlex              QName(PrivateNamespace("o17904"), "o20132")
       callpropvoid        QName(PackageNamespace(""), "o15258"), 0
@@ -972,7 +969,7 @@ L140:
       pushnull
       setproperty         QName(PackageNamespace(""), "o15258")
 
-L151:
+L150:
       returnvoid
      end ; code
     end ; body

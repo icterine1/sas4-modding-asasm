@@ -104,6 +104,26 @@ class
       getlocal0
       pushscope
 
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "gotAVideo"
+      getlex              QName(PackageNamespace(""), "o17711")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "watchedVideo"
+      getlex              QName(PackageNamespace(""), "o1505")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "cancelledVideo"
+      getlex              QName(PackageNamespace(""), "o5295")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "noVideos"
+      getlex              QName(PackageNamespace(""), "o16369")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
       returnvoid
      end ; code
     end ; body
@@ -132,7 +152,7 @@ class
       getproperty         QName(PackageNamespace(""), "o4848")
       getproperty         QName(PackageNamespace(""), "o4539")
       pushnull
-      ifeq                L31
+      ifeq                L39
 
       pushfalse
       findproperty        QName(PackageNamespace(""), "o6382")
@@ -140,7 +160,7 @@ class
       setproperty         QName(PackageNamespace(""), "o6382")
 
       getlex              QName(PrivateNamespace("o17083"), "o388")
-      iffalse             L31
+      iffalse             L36
 
       pushfalse
       findproperty        QName(PrivateNamespace("o17083"), "o388")
@@ -157,9 +177,20 @@ class
       coerce_s
       setlocal1
 
-      jump                L31
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "checkInventory"
+      getlocal1
+      pushstring          "17545"
+      callpropvoid        QName(PackageNamespace(""), "call"), 3
 
-L31:
+      jump                L39
+
+L36:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "_sp_video.backgroundLoad"
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
+
+L39:
       returnvoid
      end ; code
     end ; body
@@ -178,6 +209,10 @@ L31:
      code
       getlocal0
       pushscope
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "getVideo"
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
 
       returnvoid
      end ; code

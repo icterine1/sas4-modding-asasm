@@ -354,18 +354,15 @@ L193:
       swap
       setproperty         QName(ProtectedNamespace("o1770"), "o14240")
 
-      pushbyte            5
-      setlocal            19
-
       pushbyte            0
       setlocal            13
 
       pushbyte            0
       setlocal            13
 
-      jump                L250
+      jump                L248
 
-L232:
+L230:
       label
       getlex              QName(ProtectedNamespace("o1770"), "o14240")
       pushstring          "detailsContainer"
@@ -387,10 +384,10 @@ L232:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
       inclocal_i          13
-L250:
+L248:
       getlocal            13
-      getlocal            19
-      iflt                L232
+      pushbyte            5
+      iflt                L230
 
       getlex              QName(ProtectedNamespace("o1770"), "o14240")
       pushstring          "fullBoost"
@@ -409,14 +406,14 @@ L250:
       setproperty         QName(PackageNamespace(""), "visible")
 
       getlocal            11
-      iffalse             L272
+      iffalse             L270
 
       findpropstrict      QName(ProtectedNamespace("o1770"), "o210")
       pushdouble          0.1
       getlex              QName(ProtectedNamespace("o1770"), "o5221")
       callpropvoid        QName(ProtectedNamespace("o1770"), "o210"), 2
 
-L272:
+L270:
       returnvoid
      end ; code
     end ; body
@@ -722,12 +719,6 @@ L16:
       coerce              QName(PackageNamespace(""), "Array")
       setlocal            20
 
-      pushdouble          0.5
-      setlocal            15
-
-      pushdouble          0.12
-      setlocal            14
-
       pushbyte            0
       setlocal            12
 
@@ -737,9 +728,9 @@ L16:
       getlocal            20
       setlocal            21
 
-      jump                L63
+      jump                L59
 
-L45:
+L41:
       label
       getlocal            21
       getlocal            22
@@ -752,8 +743,8 @@ L45:
       callpropvoid        QName(PrivateNamespace("o1770"), "o922"), 1
 
       findpropstrict      QName(ProtectedNamespace("o1770"), "o210")
-      getlocal            15
-      getlocal            14
+      pushdouble          0.5
+      pushdouble          0.12
       getlocal            12
       multiply
       add
@@ -761,9 +752,9 @@ L45:
       callpropvoid        QName(ProtectedNamespace("o1770"), "o210"), 2
 
       inclocal_i          12
-L63:
+L59:
       hasnext2            21, 22
-      iftrue              L45
+      iftrue              L41
 
       getlex              QName(PackageNamespace(""), "container")
       pushstring          "eventRewardIcon"
@@ -775,13 +766,13 @@ L63:
       setlocal            11
 
       pushnull
-      ifeq                L78
+      ifeq                L74
 
       getlocal            11
       getlocal1
       callpropvoid        QName(PackageNamespace(""), "gotoAndStop"), 1
 
-L78:
+L74:
       pushstring          ""
       coerce_s
       setlocal            19
@@ -793,7 +784,7 @@ L78:
       getlex              QName(PackageNamespace(""), "o14128")
       istypelate
       dup
-      iffalse             L97
+      iffalse             L93
 
       pop
       getlex              QName(PackageNamespace(""), "o10486")
@@ -803,8 +794,8 @@ L78:
       getproperty         QName(PackageNamespace(""), "o9854")
       pushbyte            2
       equals
-L97:
-      iffalse             L161
+L93:
+      iffalse             L157
 
       getlex              QName(PackageNamespace(""), "o10486")
       getproperty         QName(PackageNamespace(""), "o14209")
@@ -823,14 +814,14 @@ L97:
       getlex              QName(PackageNamespace(""), "o16724")
       getlocal            10
       getlocal            16
-      ifngt               L116
+      ifngt               L112
 
       getlocal            16
-      jump                L117
+      jump                L113
 
-L116:
+L112:
       getlocal            10
-L117:
+L113:
       callproperty        QName(PackageNamespace(""), "o10417"), 1
       pushstring          " of "
       add
@@ -851,12 +842,12 @@ L117:
 
       getlocal            10
       getlocal            16
-      ifngt               L138
+      ifngt               L134
 
       getlocal            16
       setlocal            10
 
-L138:
+L134:
       getlex              QName(PackageNamespace(""), "Math")
       getlocal            10
       getlocal            16
@@ -869,12 +860,12 @@ L138:
       setlocal            17
 
       pushbyte            100
-      ifngt               L152
+      ifngt               L148
 
       pushbyte            100
       setlocal            17
 
-L152:
+L148:
       pushstring          "Final Global Event Progress: "
       getlocal            17
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
@@ -884,11 +875,11 @@ L152:
       coerce_s
       setlocal            19
 
-      jump                L190
+      jump                L186
 
-L161:
+L157:
       getlex              QName(PrivateNamespace("o1770"), "o12422")
-      iffalse             L170
+      iffalse             L166
 
       pushstring          "Rank "
       getlocal            4
@@ -897,9 +888,9 @@ L161:
       coerce_s
       setlocal            19
 
-      jump                L190
+      jump                L186
 
-L170:
+L166:
       pushstring          "Rank "
       getlocal            4
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
@@ -921,7 +912,7 @@ L170:
       coerce_s
       setlocal            19
 
-L190:
+L186:
       getlex              QName(ProtectedNamespace("o9743"), "o9679")
       pushstring          "lblRankInfo"
       getlocal            19
@@ -937,7 +928,7 @@ L190:
       setproperty         QName(PackageNamespace(""), "visible")
 
       getlocal            7
-      iffalse             L212
+      iffalse             L208
 
       getlex              QName(PackageNamespace(""), "o11687")
       pushtrue
@@ -951,10 +942,10 @@ L190:
       pushtrue
       setproperty         QName(PackageNamespace(""), "visible")
 
-L212:
+L208:
       getlocal            8
       pushbyte            0
-      ifngt               L228
+      ifngt               L224
 
       getlex              QName(PackageNamespace(""), "o14546")
       getlocal            8
@@ -967,13 +958,13 @@ L212:
 
       getlex              QName(PrivateNamespace("o1770"), "o16603")
       pushnull
-      ifeq                L228
+      ifeq                L224
 
       getlex              QName(PrivateNamespace("o1770"), "o16603")
       pushtrue
       setproperty         QName(PackageNamespace(""), "visible")
 
-L228:
+L224:
       returnvoid
      end ; code
     end ; body

@@ -86,28 +86,26 @@ class
 
       pushstring          "\\"
       coerce_s
-      setlocal2
-
+      pop
       pushstring          "\""
       coerce_s
-      setlocal3
-
+      pop
       getlocal1
-      getlocal2
-      getlocal3
+      pushstring          "\\"
+      pushstring          "\""
       add
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
-      getlocal3
+      pushstring          "\""
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
       coerce_s
       setlocal1
 
       getlocal1
-      getlocal3
-      getlocal3
+      pushstring          "\""
+      pushstring          "\""
       add
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
-      getlocal3
+      pushstring          "\""
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "join"), 1
       coerce_s
       setlocal1

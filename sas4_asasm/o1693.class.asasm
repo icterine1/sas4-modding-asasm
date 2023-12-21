@@ -337,7 +337,7 @@ L40:
       getlocal            16
       getlex              QName(PackageNamespace(""), "Number")
       getproperty         QName(PackageNamespace(""), "MIN_VALUE")
-      ifnlt               L77
+      ifnlt               L76
 
       getlocal            6
       getlex              QName(PackageNamespace(""), "o8628")
@@ -352,15 +352,12 @@ L40:
       getlocal            6
       lessthan
 L73:
-      iffalse             L76
+      iffalse             L132
 
       pushfalse
       returnvalue
 
 L76:
-      jump                L133
-
-L77:
       pushbyte            1
       getlocal            9
       divide
@@ -390,7 +387,7 @@ L77:
 
       getlocal            8
       getlocal            12
-      ifngt               L111
+      ifngt               L110
 
       getlocal            8
       setlocal            15
@@ -404,10 +401,10 @@ L77:
       pushdouble          1
       setlocal3
 
-L111:
+L110:
       getlocal            8
       getlocal            14
-      ifngt               L122
+      ifngt               L121
 
       getlocal            5
       getlocal3
@@ -420,7 +417,7 @@ L111:
       getlocal            8
       setlocal            14
 
-L122:
+L121:
       getlex              QName(PackageNamespace(""), "Math")
       getlocal            10
       getlocal            12
@@ -430,39 +427,36 @@ L122:
 
       getlocal            14
       getlocal            10
-      ifngt               L133
+      ifngt               L132
 
       pushfalse
       returnvalue
 
-L133:
+L132:
       getlocal            7
       getlex              QName(PackageNamespace(""), "Number")
       getproperty         QName(PackageNamespace(""), "MIN_VALUE")
-      ifnlt               L152
+      ifnlt               L150
 
       getlocal            13
       getlex              QName(PackageNamespace(""), "o8628")
       getproperty         QName(PackageNamespace(""), "y")
       lessthan
       dup
-      iftrue              L148
+      iftrue              L147
 
       pop
       getlex              QName(PackageNamespace(""), "o18391")
       getproperty         QName(PackageNamespace(""), "y")
       getlocal            13
       lessthan
-L148:
-      iffalse             L151
+L147:
+      iffalse             L206
 
       pushfalse
       returnvalue
 
-L151:
-      jump                L208
-
-L152:
+L150:
       pushbyte            1
       getlocal            4
       divide
@@ -492,7 +486,7 @@ L152:
 
       getlocal            8
       getlocal            12
-      ifngt               L186
+      ifngt               L184
 
       getlocal            8
       setlocal            15
@@ -506,10 +500,10 @@ L152:
       pushdouble          1
       setlocal3
 
-L186:
+L184:
       getlocal            8
       getlocal            14
-      ifngt               L197
+      ifngt               L195
 
       getlocal            5
       getlocal3
@@ -522,7 +516,7 @@ L186:
       getlocal            8
       setlocal            14
 
-L197:
+L195:
       getlex              QName(PackageNamespace(""), "Math")
       getlocal            10
       getlocal            12
@@ -532,12 +526,12 @@ L197:
 
       getlocal            14
       getlocal            10
-      ifngt               L208
+      ifngt               L206
 
       pushfalse
       returnvalue
 
-L208:
+L206:
       getlocal1
       getlocal            14
       setproperty         QName(PackageNamespace(""), "o9664")

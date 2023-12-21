@@ -595,9 +595,6 @@ L19:
       convert_i
       setlocal            4
 
-      pushdouble          0
-      setlocal3
-
       getlocal1
       getproperty         QName(PackageNamespace(""), "o2752")
       coerce              QName(PackageNamespace(""), "o10481")
@@ -606,9 +603,9 @@ L19:
       getlocal            4
       setlocal            5
 
-      jump                L86
+      jump                L84
 
-L16:
+L14:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o5725")
@@ -617,29 +614,29 @@ L16:
       multiply
       returnvalue
 
-L23:
+L21:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o18640")
       returnvalue
 
-L27:
+L25:
       label
       pushbyte            0
       returnvalue
 
-L30:
+L28:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o30")
       returnvalue
 
-L34:
+L32:
       label
       pushbyte            0
       returnvalue
 
-L37:
+L35:
       label
       pushbyte            1
       getlocal2
@@ -647,117 +644,117 @@ L37:
       divide
       returnvalue
 
-L43:
+L41:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o4687")
       returnvalue
 
-L47:
+L45:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o3603")
       returnvalue
 
-L51:
+L49:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o16832")
       returnvalue
 
-L55:
+L53:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o13369")
       pushbyte            1
       subtract
       pushbyte            0
-      ifnlt               L67
+      ifnlt               L65
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o13369")
       pushbyte            1
       subtract
+      returnvalue
+
+L65:
+      pushbyte            0
       returnvalue
 
 L67:
-      pushbyte            0
-      returnvalue
-
-L69:
       label
       pushbyte            0
       returnvalue
 
-L72:
+L70:
       label
       getlocal2
       getproperty         QName(PackageNamespace(""), "o13369")
       pushbyte            1
       subtract
       pushbyte            0
-      ifngt               L84
+      ifngt               L82
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o13369")
       pushbyte            1
       subtract
+      returnvalue
+
+L82:
+      pushbyte            0
       returnvalue
 
 L84:
-      pushbyte            0
-      returnvalue
-
-L86:
       pushbyte            1
       getlocal            5
-      ifstricteq          L16
+      ifstricteq          L14
 
       pushbyte            2
       getlocal            5
-      ifstricteq          L23
+      ifstricteq          L21
 
       pushbyte            3
       getlocal            5
-      ifstricteq          L27
+      ifstricteq          L25
 
       pushbyte            4
       getlocal            5
-      ifstricteq          L30
+      ifstricteq          L28
 
       pushbyte            5
       getlocal            5
-      ifstricteq          L34
+      ifstricteq          L32
 
       pushbyte            6
       getlocal            5
-      ifstricteq          L37
+      ifstricteq          L35
 
       pushbyte            7
       getlocal            5
-      ifstricteq          L43
+      ifstricteq          L41
 
       pushbyte            8
       getlocal            5
-      ifstricteq          L47
+      ifstricteq          L45
 
       pushbyte            9
       getlocal            5
-      ifstricteq          L51
+      ifstricteq          L49
 
       pushbyte            10
       getlocal            5
-      ifstricteq          L55
+      ifstricteq          L53
 
       pushbyte            11
       getlocal            5
-      ifstricteq          L69
+      ifstricteq          L67
 
       pushbyte            22
       getlocal            5
-      ifstricteq          L72
+      ifstricteq          L70
 
-      getlocal3
+      pushdouble          0
       returnvalue
      end ; code
     end ; body
@@ -1409,9 +1406,6 @@ L36:
       convert_i
       setlocal            6
 
-      pushdouble          0
-      setlocal            8
-
       findpropstrict      QName(PrivateNamespace("o14018"), "o13032")
       getlocal            6
       getlocal2
@@ -1430,15 +1424,15 @@ L36:
 
       getlocal            4
       dup
-      iffalse             L31
+      iffalse             L29
 
       pop
       getlocal            7
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
       greaterthan
-L31:
-      iffalse             L38
+L29:
+      iffalse             L36
 
       findpropstrict      QName(PackageNamespace(""), "o8043")
       getlocal1
@@ -1447,7 +1441,7 @@ L31:
       coerce_s
       setlocal            7
 
-L38:
+L36:
       getlocal            7
       returnvalue
      end ; code
@@ -1485,9 +1479,6 @@ L38:
       convert_i
       setlocal            6
 
-      pushdouble          0
-      setlocal            8
-
       findpropstrict      QName(PrivateNamespace("o14018"), "o19337")
       getlocal            6
       getlocal2
@@ -1506,15 +1497,15 @@ L38:
 
       getlocal            4
       dup
-      iffalse             L31
+      iffalse             L29
 
       pop
       getlocal            7
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
       greaterthan
-L31:
-      iffalse             L38
+L29:
+      iffalse             L36
 
       findpropstrict      QName(PackageNamespace(""), "o16302")
       getlocal1
@@ -1523,7 +1514,7 @@ L31:
       coerce_s
       setlocal            7
 
-L38:
+L36:
       getlocal            7
       returnvalue
      end ; code
@@ -1873,7 +1864,7 @@ L33:
       setlocal            7
 
       pushdouble          0.001
-      ifngt               L57
+      ifngt               L167
 
       getlocal            5
       getlocal            7
@@ -1881,7 +1872,6 @@ L33:
       convert_d
       setlocal            7
 
-L57:
       jump                L167
 
 L58:
@@ -1944,7 +1934,7 @@ L75:
       setlocal            7
 
       pushdouble          -0.001
-      ifnlt               L137
+      ifnlt               L167
 
       pushbyte            1
       getlocal            7
@@ -1979,7 +1969,6 @@ L75:
       convert_d
       setlocal            7
 
-L137:
       jump                L167
 
 L138:
@@ -2872,7 +2861,7 @@ L18:
       iffalse             L35
 
       getlocal2
-      iffalse             L34
+      iffalse             L38
 
       getlocal1
       pushbyte            0
@@ -2881,9 +2870,8 @@ L18:
       ifne                L29
 
       getlocal1
-      setlocal1
-
-      jump                L34
+      pop
+      jump                L38
 
 L29:
       pushstring          "+"
@@ -2892,7 +2880,6 @@ L29:
       coerce_s
       setlocal1
 
-L34:
       jump                L38
 
 L35:
@@ -3712,12 +3699,6 @@ L60:
       getlocal0
       pushscope
 
-      pushnull
-      setlocal            7
-
-      pushnull
-      setlocal            5
-
       getlocal0
       getproperty         QName(PrivateNamespace("o14018"), "o8711")
       getproperty         QName(PackageNamespace(""), "value")
@@ -3741,7 +3722,7 @@ L60:
 
       getlocal3
       pushbyte            0
-      ifngt               L57
+      ifngt               L53
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2409")
@@ -3749,7 +3730,7 @@ L60:
       equals
       not
       dup
-      iftrue              L41
+      iftrue              L37
 
       pop
       getlocal            8
@@ -3759,18 +3740,17 @@ L60:
       callproperty        QName(PackageNamespace(""), "o15484"), 1
       getlocal2
       equals
-L41:
-      iffalse             L57
+L37:
+      iffalse             L53
 
       getlocal2
       getproperty         QName(PackageNamespace(""), "id")
       pushbyte            13
-      ifne                L48
+      ifne                L44
 
       getlocal2
-      setlocal2
-
-L48:
+      pop
+L44:
       getlocal            9
       findpropstrict      QName(PrivateNamespace("o14018"), "o4387")
       getlocal1
@@ -3781,7 +3761,7 @@ L48:
       convert_d
       setlocal            9
 
-L57:
+L53:
       getlocal            9
       returnvalue
      end ; code
@@ -3809,12 +3789,6 @@ L57:
       getlocal0
       pushscope
 
-      pushnull
-      setlocal            7
-
-      pushnull
-      setlocal            5
-
       getlocal0
       getproperty         QName(PrivateNamespace("o14018"), "o8711")
       getproperty         QName(PackageNamespace(""), "value")
@@ -3838,24 +3812,23 @@ L57:
 
       getlocal3
       pushbyte            0
-      ifngt               L64
+      ifngt               L60
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o8395")
       pushbyte            3
-      ifne                L32
+      ifne                L28
 
       getlocal1
-      setlocal1
-
-L32:
+      pop
+L28:
       getlocal2
       getproperty         QName(PackageNamespace(""), "o2409")
       pushbyte            0
       equals
       not
       dup
-      iffalse             L54
+      iffalse             L50
 
       pop
       getlocal2
@@ -3864,7 +3837,7 @@ L32:
       equals
       not
       dup
-      iftrue              L54
+      iftrue              L50
 
       pop
       getlocal            8
@@ -3873,8 +3846,8 @@ L32:
       callproperty        QName(PackageNamespace(""), "o9445"), 1
       getlocal2
       equals
-L54:
-      iffalse             L64
+L50:
+      iffalse             L60
 
       getlocal            9
       findpropstrict      QName(PrivateNamespace("o14018"), "o20578")
@@ -3886,7 +3859,7 @@ L54:
       convert_d
       setlocal            9
 
-L64:
+L60:
       getlocal            9
       returnvalue
      end ; code
@@ -4157,13 +4130,12 @@ L78:
       convert_d
       setlocal3
 
-      jump                L89
+      jump                L116
 
 L87:
       pushdouble          0
       setlocal3
 
-L89:
       jump                L116
 
 L90:
@@ -4177,13 +4149,12 @@ L90:
       convert_d
       setlocal3
 
-      jump                L101
+      jump                L116
 
 L99:
       pushdouble          0
       setlocal3
 
-L101:
       jump                L116
 
 L102:
@@ -4579,7 +4550,7 @@ L21:
       label
       getlocal2
       pushbyte            28
-      ifne                L32
+      ifne                L145
 
       getlocal            4
       getlocal            5
@@ -4589,14 +4560,13 @@ L21:
       convert_d
       setlocal            6
 
-L32:
       jump                L145
 
 L33:
       label
       getlocal2
       pushbyte            1
-      ifne                L45
+      ifne                L145
 
       getlocal            4
       getlocal            5
@@ -4607,14 +4577,13 @@ L33:
       convert_d
       setlocal            6
 
-L45:
       jump                L145
 
 L46:
       label
       getlocal2
       pushbyte            12
-      ifne                L55
+      ifne                L145
 
       getlocal            5
       getlocal3
@@ -4622,14 +4591,13 @@ L46:
       convert_d
       setlocal            6
 
-L55:
       jump                L145
 
 L56:
       label
       getlocal2
       pushbyte            3
-      ifne                L65
+      ifne                L145
 
       getlocal            5
       getlocal3
@@ -4637,14 +4605,13 @@ L56:
       convert_d
       setlocal            6
 
-L65:
       jump                L145
 
 L66:
       label
       getlocal2
       pushbyte            8
-      ifne                L75
+      ifne                L145
 
       getlocal            5
       getlocal3
@@ -4652,14 +4619,13 @@ L66:
       convert_d
       setlocal            6
 
-L75:
       jump                L145
 
 L76:
       label
       getlocal2
       pushbyte            5
-      ifne                L85
+      ifne                L145
 
       getlocal            5
       getlocal3
@@ -4667,14 +4633,13 @@ L76:
       convert_d
       setlocal            6
 
-L85:
       jump                L145
 
 L86:
       label
       getlocal2
       pushbyte            9
-      ifne                L95
+      ifne                L145
 
       getlocal            5
       getlocal3
@@ -4682,14 +4647,13 @@ L86:
       convert_d
       setlocal            6
 
-L95:
       jump                L145
 
 L96:
       label
       getlocal2
       pushbyte            4
-      ifne                L107
+      ifne                L145
 
       getlocal            4
       getlocal            5
@@ -4699,14 +4663,13 @@ L96:
       convert_d
       setlocal            6
 
-L107:
       jump                L145
 
 L108:
       label
       getlocal2
       pushbyte            2
-      ifne                L117
+      ifne                L145
 
       getlocal            5
       getlocal3
@@ -4714,7 +4677,6 @@ L108:
       convert_d
       setlocal            6
 
-L117:
       jump                L145
 
 L118:
@@ -4833,7 +4795,7 @@ L34:
 L39:
       getlocal2
       pushbyte            7
-      ifne                L49
+      ifne                L82
 
       getlocal            5
       getlocal            7
@@ -4843,13 +4805,12 @@ L39:
       convert_d
       setlocal            8
 
-L49:
       jump                L82
 
 L50:
       getlocal2
       pushbyte            7
-      ifne                L60
+      ifne                L82
 
       getlocal            5
       getlocal            7
@@ -4859,13 +4820,12 @@ L50:
       convert_d
       setlocal            8
 
-L60:
       jump                L82
 
 L61:
       getlocal2
       pushbyte            7
-      ifne                L71
+      ifne                L82
 
       getlocal            5
       getlocal            7
@@ -4875,7 +4835,6 @@ L61:
       convert_d
       setlocal            8
 
-L71:
       jump                L82
 
 L72:
@@ -4958,7 +4917,7 @@ L94:
 L18:
       getlocal2
       pushbyte            3
-      ifne                L26
+      ifne                L35
 
       getlocal            4
       getlocal3
@@ -4966,7 +4925,6 @@ L18:
       convert_d
       setlocal            5
 
-L26:
       jump                L35
 
 L27:
@@ -5166,9 +5124,6 @@ L7:
       getlocal0
       pushscope
 
-      pushnull
-      setlocal            6
-
       pushnan
       setlocal            9
 
@@ -5216,9 +5171,9 @@ L7:
       getproperty         QName(PackageNamespace(""), "o2657")
       setlocal            11
 
-      jump                L93
+      jump                L91
 
-L43:
+L41:
       label
       getlocal            11
       getlocal            12
@@ -5228,7 +5183,7 @@ L43:
       setlocal            5
 
       pushnull
-      ifeq                L93
+      ifeq                L91
 
       getlocal            8
       getlocal0
@@ -5242,19 +5197,18 @@ L43:
       pushbyte            17
       equals
       dup
-      iftrue              L68
+      iftrue              L66
 
       pop
       getlocal            7
       pushbyte            16
       equals
-L68:
-      iffalse             L71
+L66:
+      iffalse             L69
 
       getlocal            7
-      setlocal            7
-
-L71:
+      pop
+L69:
       findpropstrict      QName(PackageNamespace(""), "o9229")
       getlocal            5
       getlocal2
@@ -5281,9 +5235,9 @@ L71:
       convert_d
       setlocal            8
 
-L93:
+L91:
       hasnext2            11, 12
-      iftrue              L43
+      iftrue              L41
 
       getlocal            8
       returnvalue
@@ -5410,8 +5364,7 @@ L36:
       ifne                L24
 
       getlocal            8
-      setlocal            8
-
+      pop
 L24:
       findpropstrict      QName(PackageNamespace(""), "o7905")
       getlocal1

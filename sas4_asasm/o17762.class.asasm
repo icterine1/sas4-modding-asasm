@@ -552,13 +552,12 @@ L18:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-      jump                L59
+      jump                L66
 
 L57:
       getlex              QName(PackageNamespace(""), "o10720")
       callpropvoid        QName(PackageNamespace(""), "o14528"), 0
 
-L59:
       jump                L66
 
 L60:
@@ -631,7 +630,7 @@ L85:
       callpropvoid        QName(PackageNamespace(""), "dispatchData"), 1
 
       getlex              QName(PrivateNamespace("o17762"), "o18706")
-      iftrue              L139
+      iftrue              L202
 
       findpropstrict      QName(PackageNamespace(""), "o15777")
       getlex              QName(PackageNamespace(""), "o2511")
@@ -648,7 +647,7 @@ L85:
       getproperty         QName(PackageNamespace(""), "o4670")
       getproperty         QName(Namespace("o8925"), "o16859")
       pushbyte            2
-      ifne                L139
+      ifne                L202
 
       getlex              QName(PackageNamespace(""), "o1051")
       getlex              QName(PrivateNamespace("o17762"), "o10555")
@@ -659,7 +658,6 @@ L85:
       swap
       setproperty         QName(PrivateNamespace("o17762"), "o20819")
 
-L139:
       jump                L202
 
 L140:

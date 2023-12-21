@@ -186,9 +186,7 @@ L40:
       pushbyte            1
       setlocal3
 
-      jump                L25
-
-L7:
+L6:
       label
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o9721")
@@ -207,17 +205,10 @@ L7:
       getproperty         Multiname("o7321", [PrivateNamespace("FilePrivateNS:o6466:o894"), ProtectedNamespace("FilePrivateNS:o6466:o894"), StaticProtectedNs("FilePrivateNS:o6466:o894"), StaticProtectedNs("o15755"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o6466"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
       callpropvoid        Multiname("push", [PrivateNamespace("FilePrivateNS:o6466:o894"), ProtectedNamespace("FilePrivateNS:o6466:o894"), StaticProtectedNs("FilePrivateNS:o6466:o894"), StaticProtectedNs("o15755"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o6466"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")]), 1
 
-      jump                L24
+      inclocal_i          3
+      jump                L6
 
 L23:
-      jump                L26
-
-L24:
-      inclocal_i          3
-L25:
-      jump                L7
-
-L26:
       returnvoid
      end ; code
     end ; body

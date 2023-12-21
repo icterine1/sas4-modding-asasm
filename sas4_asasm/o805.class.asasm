@@ -183,130 +183,109 @@ L10:
      getlocal0
      pushscope
 
-     pushbyte            0
-     setlocal2
-
      getlocal1
      setlocal3
 
-     jump                L49
+     jump                L29
+
+L5:
+     label
+     jump                L65
 
 L7:
      label
-     jump                L85
+     jump                L65
 
 L9:
      label
-     jump                L85
+     jump                L65
 
 L11:
      label
-     jump                L85
+     jump                L65
 
 L13:
      label
-     pushbyte            8
-     pop
-     jump                L85
+     jump                L65
+
+L15:
+     label
+     jump                L65
 
 L17:
      label
-     pushbyte            9
-     pop
-     jump                L85
+     jump                L65
+
+L19:
+     label
+     jump                L65
 
 L21:
      label
-     pushbyte            6
-     pop
-     jump                L85
+     jump                L65
+
+L23:
+     label
+     jump                L65
 
 L25:
      label
-     pushbyte            7
-     pop
-     jump                L85
+     jump                L65
+
+L27:
+     label
+     jump                L65
 
 L29:
-     label
-     pushbyte            12
-     pop
-     jump                L85
-
-L33:
-     label
-     pushbyte            13
-     pop
-     jump                L85
-
-L37:
-     label
-     pushbyte            14
-     pop
-     jump                L85
-
-L41:
-     label
-     pushbyte            10
-     pop
-     jump                L85
-
-L45:
-     label
-     pushbyte            11
-     pop
-     jump                L85
-
-L49:
      pushbyte            2
      getlocal3
-     ifstricteq          L7
+     ifstricteq          L5
 
      pushbyte            1
      getlocal3
-     ifstricteq          L9
+     ifstricteq          L7
 
      pushbyte            6
      getlocal3
-     ifstricteq          L11
+     ifstricteq          L9
 
      pushbyte            3
      getlocal3
-     ifstricteq          L13
+     ifstricteq          L11
 
      pushbyte            7
      getlocal3
-     ifstricteq          L17
+     ifstricteq          L13
 
      pushbyte            4
      getlocal3
-     ifstricteq          L21
+     ifstricteq          L15
 
      pushbyte            5
      getlocal3
-     ifstricteq          L25
+     ifstricteq          L17
 
      pushbyte            101
      getlocal3
-     ifstricteq          L29
+     ifstricteq          L19
 
      pushbyte            102
      getlocal3
-     ifstricteq          L33
+     ifstricteq          L21
 
      pushbyte            104
      getlocal3
-     ifstricteq          L37
+     ifstricteq          L23
 
      pushbyte            103
      getlocal3
-     ifstricteq          L41
+     ifstricteq          L25
 
      pushbyte            100
      getlocal3
-     ifstricteq          L45
+     ifstricteq          L27
 
-L85:
+L65:
      pushbyte            0
      returnvalue
     end ; code

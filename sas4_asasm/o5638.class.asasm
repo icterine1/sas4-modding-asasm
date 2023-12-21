@@ -1094,9 +1094,6 @@ L310:
       add
       setproperty         MultinameL([PrivateNamespace("o5638"), ProtectedNamespace("o5638"), StaticProtectedNs("o5638"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5638"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-      pushdouble          0
-      setlocal            8
-
       pushbyte            0
       setlocal            14
 
@@ -1106,9 +1103,9 @@ L310:
       getlex              QName(PrivateNamespace("o5638"), "o10404")
       setlocal            30
 
-      jump                L354
+      jump                L352
 
-L339:
+L337:
       label
       getlocal            30
       getlocal            31
@@ -1118,7 +1115,7 @@ L339:
       setlocal            13
 
       pushnull
-      ifeq                L354
+      ifeq                L352
 
       getlocal            14
       getlocal            13
@@ -1127,9 +1124,9 @@ L339:
       convert_i
       setlocal            14
 
-L354:
+L352:
       hasnext2            30, 31
-      iftrue              L339
+      iftrue              L337
 
       getlex              QName(PackageNamespace(""), "o9788")
       pushbyte            9
@@ -1141,7 +1138,7 @@ L354:
 
       getlocal1
       pushtrue
-      ifne                L397
+      ifne                L395
 
       getlex              QName(PrivateNamespace("o5638"), "o20827")
       getproperty         QName(PackageNamespace(""), "o4707")
@@ -1154,9 +1151,9 @@ L354:
       getlex              QName(PackageNamespace(""), "o9788")
       setlocal            32
 
-      jump                L395
+      jump                L393
 
-L375:
+L373:
       label
       getlocal            32
       getlocal            33
@@ -1181,11 +1178,11 @@ L375:
       getlocal2
       setproperty         MultinameL([PrivateNamespace("o5638"), ProtectedNamespace("o5638"), StaticProtectedNs("o5638"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o5638"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L395:
+L393:
       hasnext2            32, 33
-      iftrue              L375
+      iftrue              L373
 
-L397:
+L395:
       returnvoid
      end ; code
     end ; body

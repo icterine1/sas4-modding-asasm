@@ -1534,19 +1534,16 @@ L12:
       findpropstrict      QName(PackageNamespace(""), "o3077")
       callpropvoid        QName(PackageNamespace(""), "o3077"), 0
 
-      pushdouble          0.03333333333333333
-      setlocal            4
-
       getlex              QName(PrivateNamespace("o8111"), "o17490")
-      iffalse             L9
+      iffalse             L7
 
       returnvoid
 
-L9:
+L7:
       getlex              QName(PackageNamespace(""), "o2752")
       getproperty         QName(PackageNamespace(""), "o20682")
       pushbyte            0
-      ifnle               L22
+      ifnle               L20
 
       getlex              QName(PackageNamespace(""), "o2752")
       callpropvoid        QName(PackageNamespace(""), "o6976"), 0
@@ -1554,25 +1551,25 @@ L9:
       findpropstrict      QName(PrivateNamespace("o8111"), "o12067")
       callproperty        QName(PrivateNamespace("o8111"), "o12067"), 0
       pushbyte            0
-      ifnle               L21
+      ifnle               L19
 
       findpropstrict      QName(PackageNamespace(""), "o13626")
       callpropvoid        QName(PackageNamespace(""), "o13626"), 0
 
-L21:
+L19:
       returnvoid
 
-L22:
+L20:
       getlex              QName(PrivateNamespace("o8111"), "currentTarget")
       pushnull
-      ifne                L28
+      ifne                L26
 
       getlex              QName(PackageNamespace(""), "o2752")
       callpropvoid        QName(PackageNamespace(""), "o6976"), 0
 
       returnvoid
 
-L28:
+L26:
       getlex              QName(PackageNamespace(""), "o15460")
       getproperty         QName(PackageNamespace(""), "o16789")
       coerce              QName(PackageNamespace(""), "o18509")
@@ -1610,18 +1607,18 @@ L28:
       setlocal1
 
       getlex              QName(PrivateNamespace("o8111"), "o18478")
-      getlocal            4
+      pushdouble          0.03333333333333333
       multiply
       getlocal1
       pushbyte            0
-      ifnlt               L68
+      ifnlt               L66
 
       pushbyte            -1
-      jump                L69
+      jump                L67
 
-L68:
+L66:
       pushbyte            1
-L69:
+L67:
       multiply
       convert_d
       setlocal3
@@ -1632,12 +1629,12 @@ L69:
       getlex              QName(PackageNamespace(""), "Math")
       getlocal1
       callproperty        QName(PackageNamespace(""), "abs"), 1
-      ifngt               L81
+      ifngt               L79
 
       getlocal1
       setlocal3
 
-L81:
+L79:
       getlex              QName(PackageNamespace(""), "o6691")
       getproperty         QName(Namespace("o4332"), "rotation")
       getlocal3
@@ -1652,18 +1649,18 @@ L81:
       getlex              QName(PackageNamespace(""), "o2752")
       getproperty         QName(PackageNamespace(""), "o4670")
       getproperty         QName(Namespace("o8925"), "o12804")
-      ifnle               L98
+      ifnle               L96
 
       getlex              QName(PackageNamespace(""), "o2752")
       callpropvoid        QName(PackageNamespace(""), "trigger"), 0
 
-      jump                L100
+      jump                L98
 
-L98:
+L96:
       getlex              QName(PackageNamespace(""), "o2752")
       callpropvoid        QName(PackageNamespace(""), "o6976"), 0
 
-L100:
+L98:
       returnvoid
      end ; code
     end ; body

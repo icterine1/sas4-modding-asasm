@@ -136,11 +136,8 @@ L21:
       swap
       setproperty         QName(PackageNamespace(""), "o20892")
 
-      pushbyte            17
-      setlocal2
-
       getlocal1
-      getlocal2
+      pushbyte            17
       greaterequals
       findproperty        QName(PackageNamespace(""), "o14559")
       swap
@@ -150,47 +147,47 @@ L21:
       pushbyte            6
       greaterequals
       dup
-      iffalse             L24
+      iffalse             L22
 
       pop
       getlocal1
       pushbyte            9
       equals
       not
-L24:
+L22:
       dup
-      iffalse             L31
+      iffalse             L29
 
       pop
       getlocal1
       pushbyte            10
       equals
       not
-L31:
+L29:
       dup
-      iffalse             L38
+      iffalse             L36
 
       pop
       getlocal1
       pushbyte            19
       equals
       not
-L38:
+L36:
       dup
-      iffalse             L45
+      iffalse             L43
 
       pop
       getlocal1
       pushbyte            20
       equals
       not
-L45:
+L43:
       findproperty        QName(PackageNamespace(""), "o458")
       swap
       setproperty         QName(PackageNamespace(""), "o458")
 
       getlex              QName(PackageNamespace(""), "o14559")
-      iffalse             L57
+      iffalse             L55
 
       getlocal1
       pushbyte            11
@@ -199,15 +196,15 @@ L45:
       swap
       setproperty         QName(PackageNamespace(""), "o4654")
 
-      jump                L61
+      jump                L59
 
-L57:
+L55:
       getlocal1
       findproperty        QName(PackageNamespace(""), "o4654")
       swap
       setproperty         QName(PackageNamespace(""), "o4654")
 
-L61:
+L59:
       returnvoid
      end ; code
     end ; body

@@ -1195,14 +1195,11 @@ L70:
       returnvoid
 
 L84:
-      jump                L85
-
-L85:
       findpropstrict      QName(PrivateNamespace("o15621"), "o18407")
       getlocal3
       callproperty        QName(PrivateNamespace("o15621"), "o18407"), 1
       dup
-      iffalse             L96
+      iffalse             L95
 
       pop
       getlex              QName(PackageNamespace(""), "o19419")
@@ -1210,13 +1207,13 @@ L85:
       getproperty         QName(PackageNamespace(""), "o18479")
       pushfalse
       equals
-L96:
-      iffalse             L99
+L95:
+      iffalse             L98
 
       pushfalse
       setlocal            6
 
-L99:
+L98:
       findpropstrict      QName(PackageNamespace(""), "o8339")
       pushstring          "consumeProduct start: "
       getlocal            6
@@ -1230,21 +1227,21 @@ L99:
       equals
       not
       dup
-      iffalse             L114
+      iffalse             L113
 
       pop
       getlocal            6
-L114:
-      iffalse             L118
+L113:
+      iffalse             L117
 
       findpropstrict      QName(PackageNamespace(""), "o7777")
       getlocal3
       callpropvoid        QName(PackageNamespace(""), "o7777"), 1
 
-L118:
+L117:
       getlocal            6
       pushfalse
-      ifne                L144
+      ifne                L143
 
       getlex              QName(PackageNamespace(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o5099")
@@ -1273,7 +1270,7 @@ L118:
       constructprop       QName(PackageNamespace(""), "o19869"), 2
       callpropvoid        QName(PackageNamespace(""), "dispatchData"), 1
 
-L144:
+L143:
       returnvoid
      end ; code
     end ; body
@@ -2546,8 +2543,7 @@ L110:
       ifne                L117
 
       getlocal1
-      setlocal1
-
+      pop
       jump                L194
 
 L117:
@@ -2857,27 +2853,24 @@ L85:
       getlocal0
       pushscope
 
-      pushbyte            0
-      setlocal2
-
       getlex              QName(PackageNamespace(""), "o20543")
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5693")
       callproperty        QName(PackageNamespace(""), "o1224"), 1
-      iffalse             L10
+      iffalse             L8
 
       returnvoid
 
-L10:
+L8:
       pushbyte            0
       setlocal            5
 
       getlex              QName(ProtectedNamespace("o15621"), "o9805")
       setlocal            4
 
-      jump                L31
+      jump                L29
 
-L15:
+L13:
       label
       getlocal            4
       getlocal            5
@@ -2889,18 +2882,18 @@ L15:
       getproperty         QName(PackageNamespace(""), "o5689")
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5689")
-      ifne                L31
+      ifne                L29
 
       getlex              QName(ProtectedNamespace("o15621"), "o9805")
-      getlocal2
+      pushbyte            0
       pushbyte            1
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
 
       returnvoid
 
-L31:
+L29:
       hasnext2            4, 5
-      iftrue              L15
+      iftrue              L13
 
       findpropstrict      QName(ProtectedNamespace("o15621"), "o7241")
       findpropstrict      QName(PackageNamespace(""), "Error")
@@ -4223,7 +4216,7 @@ L181:
 
      getlex              QName(PrivateNamespace("o15621"), "o18030")
      pushnull
-     ifne                L21
+     ifne                L20
 
      getlex              QName(PackageNamespace(""), "o4519")
      getproperty         QName(PackageNamespace(""), "o17061")
@@ -4239,16 +4232,13 @@ L181:
      returnvalue
 
 L15:
-     jump                L16
-
-L16:
      findpropstrict      QName(PackageNamespace(""), "o10590")
      constructprop       QName(PackageNamespace(""), "o10590"), 0
      findproperty        QName(PrivateNamespace("o15621"), "o18030")
      swap
      setproperty         QName(PrivateNamespace("o15621"), "o18030")
 
-L21:
+L20:
      getlex              QName(PrivateNamespace("o15621"), "o18030")
      returnvalue
     end ; code

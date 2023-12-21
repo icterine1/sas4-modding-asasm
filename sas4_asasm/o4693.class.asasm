@@ -264,18 +264,15 @@ L80:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-      pushdouble          1
-      setlocal3
-
       pushbyte            0
       setlocal            6
 
       getlex              QName(PrivateNamespace("o4693"), "o11675")
       setlocal            5
 
-      jump                L66
+      jump                L64
 
-L19:
+L17:
       label
       getlocal            5
       getlocal            6
@@ -286,66 +283,66 @@ L19:
       getlocal2
       setlocal            4
 
-      jump                L50
+      jump                L48
 
-L28:
+L26:
       label
       getlocal1
-      getlocal3
+      pushdouble          1
       negate
       setproperty         QName(PackageNamespace(""), "y")
 
-      jump                L66
+      jump                L64
 
-L34:
+L32:
       label
       getlocal1
-      getlocal3
+      pushdouble          1
       negate
       setproperty         QName(PackageNamespace(""), "x")
 
-      jump                L66
+      jump                L64
 
-L40:
+L38:
       label
       getlocal1
-      getlocal3
+      pushdouble          1
       setproperty         QName(PackageNamespace(""), "y")
 
-      jump                L66
+      jump                L64
 
-L45:
+L43:
       label
       getlocal1
-      getlocal3
+      pushdouble          1
       setproperty         QName(PackageNamespace(""), "x")
 
-      jump                L66
+      jump                L64
 
-L50:
+L48:
       getlex              QName(PrivateNamespace("o4693"), "o2331")
       getproperty         QName(PackageNamespace(""), "o1718")
       getlocal            4
-      ifstricteq          L28
+      ifstricteq          L26
 
       getlex              QName(PrivateNamespace("o4693"), "o3887")
       getproperty         QName(PackageNamespace(""), "o1718")
       getlocal            4
-      ifstricteq          L34
+      ifstricteq          L32
 
       getlex              QName(PrivateNamespace("o4693"), "o4156")
       getproperty         QName(PackageNamespace(""), "o1718")
       getlocal            4
-      ifstricteq          L40
+      ifstricteq          L38
 
       getlex              QName(PrivateNamespace("o4693"), "o11550")
       getproperty         QName(PackageNamespace(""), "o1718")
       getlocal            4
-      ifstricteq          L45
+      ifstricteq          L43
 
-L66:
+L64:
       hasnext2            5, 6
-      iftrue              L19
+      iftrue              L17
 
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o13206")
@@ -353,19 +350,19 @@ L66:
       pushfalse
       equals
       dup
-      iftrue              L79
+      iftrue              L77
 
       pop
       getlex              QName(PackageNamespace(""), "enabled")
       pushfalse
       equals
-L79:
-      iffalse             L97
+L77:
+      iffalse             L95
 
       getlex              QName(PrivateNamespace("o4693"), "o11675")
       getproperty         QName(PackageNamespace(""), "length")
       pushbyte            0
-      ifngt               L91
+      ifngt               L89
 
       getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
       getlex              QName(PackageNamespace(""), "uint")
@@ -375,7 +372,7 @@ L79:
       swap
       setproperty         QName(PrivateNamespace("o4693"), "o11675")
 
-L91:
+L89:
       getlocal1
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "x")
@@ -384,14 +381,14 @@ L91:
       pushbyte            0
       setproperty         QName(PackageNamespace(""), "y")
 
-L97:
+L95:
       getlocal1
       getproperty         QName(PackageNamespace(""), "x")
       pushbyte            0
       equals
       not
       dup
-      iftrue              L110
+      iftrue              L108
 
       pop
       getlocal1
@@ -399,13 +396,13 @@ L97:
       pushbyte            0
       equals
       not
-L110:
-      iffalse             L113
+L108:
+      iffalse             L111
 
       getlocal1
       callpropvoid        QName(PackageNamespace(""), "o14528"), 0
 
-L113:
+L111:
       getlex              QName(PackageNamespace(""), "o10720")
       getproperty         QName(PackageNamespace(""), "x")
       getlocal1
@@ -413,7 +410,7 @@ L113:
       equals
       not
       dup
-      iftrue              L128
+      iftrue              L126
 
       pop
       getlex              QName(PackageNamespace(""), "o10720")
@@ -422,8 +419,8 @@ L113:
       getproperty         QName(PackageNamespace(""), "y")
       equals
       not
-L128:
-      iffalse             L142
+L126:
+      iffalse             L140
 
       getlex              QName(PackageNamespace(""), "o10720")
       getlocal1
@@ -441,7 +438,7 @@ L128:
       constructprop       QName(PackageNamespace(""), "o282"), 1
       callpropvoid        QName(PackageNamespace(""), "dispatchData"), 1
 
-L142:
+L140:
       returnvoid
      end ; code
     end ; body

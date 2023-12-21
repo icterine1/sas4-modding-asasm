@@ -145,15 +145,12 @@ class
       coerce_s
       setlocal1
 
-      pushbyte            5
-      setlocal3
-
       pushbyte            0
       setlocal            4
 
-      jump                L52
+      jump                L50
 
-L36:
+L34:
       label
       findpropstrict      QName(PackageNamespace(""), "o4266")
       constructprop       QName(PackageNamespace(""), "o4266"), 0
@@ -173,10 +170,10 @@ L36:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
       inclocal_i          4
-L52:
+L50:
       getlocal            4
-      getlocal3
-      iflt                L36
+      pushbyte            5
+      iflt                L34
 
       returnvoid
      end ; code
@@ -312,8 +309,7 @@ L67:
 
 L90:
       getlocal1
-      setlocal1
-
+      pop
       pushfalse
       returnvalue
 

@@ -99,7 +99,7 @@ L3:
       getproperty         QName(PackageNamespace(""), "resolve")
       callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "propagate"), 3
 
-      jump                L43
+      jump                L42
 
 L13:
       label
@@ -112,11 +112,11 @@ L13:
       getproperty         QName(PackageNamespace(""), "reject")
       callpropvoid        QName(PrivateNamespace("com.codecatalyst.promise:Consequence"), "propagate"), 3
 
-      jump                L43
+      jump                L42
 
 L23:
       label
-      jump                L43
+      jump                L42
 
 L25:
       getlocal1
@@ -128,7 +128,7 @@ L25:
       ifstrictne          L33
 
       pushshort           0
-      jump                L41
+      jump                L40
 
 L33:
       getlex              QName(PackageInternalNs("com.codecatalyst.promise"), "CompletionAction")
@@ -137,18 +137,15 @@ L33:
       ifstrictne          L39
 
       pushshort           1
-      jump                L41
-
-L39:
       jump                L40
 
-L40:
+L39:
       pushshort           2
-L41:
+L40:
       kill                3
       lookupswitch        L23, [L3, L13, L23]
 
-L43:
+L42:
       returnvoid
      end ; code
     end ; body

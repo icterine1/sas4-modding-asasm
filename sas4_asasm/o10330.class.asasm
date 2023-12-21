@@ -1677,13 +1677,12 @@ L107:
 
       getlex              QName(PackageInternalNs(""), "o18510")
       pushbyte            4
-      ifnlt               L120
+      ifnlt               L137
 
       getlex              QName(PackageNamespace(""), "o12738")
       getlex              QName(PackageInternalNs(""), "o10486")
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L120:
       jump                L137
 
 L121:
@@ -1711,12 +1710,11 @@ L137:
       getlex              QName(PackageInternalNs(""), "o11392")
       getproperty         QName(PackageNamespace(""), "type")
       pushbyte            3
-      ifne                L143
+      ifne                L195
 
       getlex              QName(PackageInternalNs(""), "o10486")
       callpropvoid        QName(PackageNamespace(""), "o15785"), 0
 
-L143:
       jump                L195
 
 L144:
@@ -2100,7 +2098,7 @@ L169:
       swap
       setproperty         QName(PackageInternalNs(""), "o17150")
 
-      jump                L603
+      jump                L766
 
 L186:
       getlex              QName(PackageInternalNs(""), "o10486")
@@ -2300,7 +2298,7 @@ L306:
 
       getlex              QName(PackageInternalNs(""), "o5284")
       pushnull
-      ifeq                L574
+      ifeq                L766
 
       getlex              QName(PackageInternalNs(""), "o19419")
       getproperty         QName(PackageNamespace(""), "o7923")
@@ -2580,11 +2578,10 @@ L572:
       getlex              QName(PackageInternalNs(""), "o5284")
       callpropvoid        QName(PackageNamespace(""), "o1760"), 0
 
-L574:
-      jump                L603
+      jump                L766
 
 L575:
-      jump                L603
+      jump                L766
 
 L576:
       getlex              QName(PackageInternalNs(""), "o19165")
@@ -2617,7 +2614,6 @@ L576:
       swap
       setproperty         QName(PackageInternalNs(""), "o17150")
 
-L603:
       jump                L766
 
 L604:

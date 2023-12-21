@@ -1155,7 +1155,7 @@ L63:
       setlocal1
 
       getlocal1
-      iffalse             L135
+      iffalse             L177
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o6691")
@@ -1188,7 +1188,6 @@ L63:
 
       setproperty         QName(Namespace("o4332"), "scaleX")
 
-L135:
       jump                L177
 
 L136:
@@ -1449,7 +1448,7 @@ L15:
       subtract
       callproperty        QName(PackageNamespace(""), "abs"), 1
       pushdouble          0.01
-      ifnle               L49
+      ifnle               L81
 
       pushbyte            0
       findproperty        QName(PrivateNamespace("FilePrivateNS:o11918:o14962"), "o20488")
@@ -1471,7 +1470,6 @@ L15:
       getproperty         MultinameL([PrivateNamespace("FilePrivateNS:o11918:o14962"), ProtectedNamespace("FilePrivateNS:o11918:o14962"), StaticProtectedNs("FilePrivateNS:o11918:o14962"), StaticProtectedNs("o5600"), StaticProtectedNs("o18442"), StaticProtectedNs("o7848"), StaticProtectedNs("o8023"), StaticProtectedNs("Object"), PrivateNamespace("FilePrivateNS:o11918"), PackageNamespace(""), Namespace("http://adobe.com/AS3/2006/builtin")])
       callpropvoid        QName(Namespace("o7331"), "o10589"), 1
 
-L49:
       jump                L81
 
 L50:
@@ -1826,9 +1824,6 @@ L80:
       getlocal0
       pushscope
 
-      pushdouble          0.03333333333333333
-      setlocal            5
-
       findpropstrict      QName(PackageNamespace(""), "o18509")
       constructprop       QName(PackageNamespace(""), "o18509"), 0
       coerce              QName(PackageNamespace(""), "o18509")
@@ -1836,12 +1831,12 @@ L80:
 
       getlocal1
       dup
-      iffalse             L13
+      iffalse             L11
 
       pop
       getlex              QName(PrivateNamespace("FilePrivateNS:o11918:o14962"), "o7055")
-L13:
-      iffalse             L35
+L11:
+      iffalse             L33
 
       getlocal            4
       getlex              QName(PrivateNamespace("FilePrivateNS:o11918:o14962"), "o7055")
@@ -1865,9 +1860,9 @@ L13:
       subtract
       setproperty         QName(PackageNamespace(""), "y")
 
-      jump                L45
+      jump                L43
 
-L35:
+L33:
       getlocal            4
       pushbyte            1
       setproperty         QName(PackageNamespace(""), "x")
@@ -1881,25 +1876,25 @@ L35:
       getproperty         QName(Namespace("o4332"), "rotation")
       callpropvoid        QName(PackageNamespace(""), "rotate"), 1
 
-L45:
+L43:
       getlocal            4
       getproperty         QName(PackageNamespace(""), "x")
       pushbyte            0
       equals
       dup
-      iffalse             L56
+      iffalse             L54
 
       pop
       getlocal            4
       getproperty         QName(PackageNamespace(""), "y")
       pushbyte            0
       equals
-L56:
-      iffalse             L58
+L54:
+      iffalse             L56
 
       returnvoid
 
-L58:
+L56:
       getlex              QName(PackageNamespace(""), "o15460")
       getproperty         QName(PackageNamespace(""), "o16789")
       coerce              QName(PackageNamespace(""), "o18509")
@@ -1925,26 +1920,25 @@ L58:
       setlocal3
 
       getlocal2
-      getlocal            5
+      pushdouble          0.03333333333333333
       multiply
       convert_d
       setlocal            6
 
       getlocal3
       pushbyte            0
-      ifnge               L91
+      ifnge               L89
 
       getlocal            6
       getlocal3
-      ifngt               L90
+      ifngt               L99
 
       getlocal3
       setlocal            6
 
-L90:
-      jump                L101
+      jump                L99
 
-L91:
+L89:
       getlocal            6
       pushbyte            -1
       multiply
@@ -1953,12 +1947,12 @@ L91:
       setlocal            6
 
       getlocal3
-      ifnlt               L101
+      ifnlt               L99
 
       getlocal3
       setlocal            6
 
-L101:
+L99:
       getlex              QName(PrivateNamespace("FilePrivateNS:o11918:o14962"), "o10938")
       getproperty         QName(Namespace("o4332"), "rotation")
       getlocal            6
@@ -2721,11 +2715,10 @@ L44:
       getlocal2
       pushbyte            0
       dup
-      setlocal            4
-
+      pop
       setproperty         QName(PackageNamespace(""), "y")
 
-      getlocal            4
+      pushbyte            0
       setproperty         QName(PackageNamespace(""), "x")
 
 L73:

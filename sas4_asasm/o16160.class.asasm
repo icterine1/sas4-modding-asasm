@@ -235,12 +235,10 @@ L16:
 
       pushstring          "#333333"
       coerce_s
-      setlocal3
-
+      pop
       pushstring          "#999999"
       coerce_s
-      setlocal            8
-
+      pop
       pushbyte            0
       setlocal            11
 
@@ -271,11 +269,11 @@ L57:
       getlocal            9
       iffalse             L76
 
-      getlocal3
+      pushstring          "#333333"
       jump                L77
 
 L76:
-      getlocal            8
+      pushstring          "#999999"
 L77:
       add
       pushstring          "\">"

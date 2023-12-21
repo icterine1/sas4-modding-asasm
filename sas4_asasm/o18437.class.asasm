@@ -376,19 +376,16 @@ class
       returnvoid
 
 L5:
-      pushdouble          0.03333333333333333
-      setlocal2
-
       findpropstrict      QName(PrivateNamespace("o18437"), "o13508")
       dup
       getproperty         QName(PrivateNamespace("o18437"), "o13508")
-      getlocal2
+      pushdouble          0.03333333333333333
       add
       setproperty         QName(PrivateNamespace("o18437"), "o13508")
 
       getlex              QName(PrivateNamespace("o18437"), "o13508")
       getlex              QName(PrivateNamespace("o18437"), "o5298")
-      ifnge               L24
+      ifnge               L22
 
       pushtrue
       findproperty        QName(PrivateNamespace("o18437"), "o14994")
@@ -400,7 +397,7 @@ L5:
       swap
       setproperty         QName(PrivateNamespace("o18437"), "o13508")
 
-L24:
+L22:
       getlex              QName(PrivateNamespace("o18437"), "o13508")
       getlex              QName(PrivateNamespace("o18437"), "o5298")
       divide
@@ -437,12 +434,12 @@ L24:
       setproperty         QName(PackageNamespace(""), "y")
 
       getlex              QName(PrivateNamespace("o18437"), "o14994")
-      iffalse             L59
+      iffalse             L57
 
       findpropstrict      QName(PrivateNamespace("o18437"), "o13916")
       callpropvoid        QName(PrivateNamespace("o18437"), "o13916"), 0
 
-L59:
+L57:
       returnvoid
      end ; code
     end ; body
@@ -466,26 +463,23 @@ L59:
       getlocal0
       pushscope
 
-      pushdouble          0.03333333333333333
-      setlocal3
-
       findpropstrict      QName(PackageNamespace(""), "o2779")
       dup
       getproperty         QName(PackageNamespace(""), "o2779")
-      getlocal3
+      pushdouble          0.03333333333333333
       add
       setproperty         QName(PackageNamespace(""), "o2779")
 
       getlex              QName(PackageNamespace(""), "o2779")
       getlex              QName(PackageNamespace(""), "o2241")
-      ifnge               L17
+      ifnge               L15
 
       getlex              QName(PackageNamespace(""), "o2241")
       findproperty        QName(PackageNamespace(""), "o2779")
       swap
       setproperty         QName(PackageNamespace(""), "o2779")
 
-L17:
+L15:
       getlex              QName(PackageNamespace(""), "o2779")
       getlex              QName(PackageNamespace(""), "o2241")
       divide
@@ -531,7 +525,7 @@ L17:
 
       getlex              QName(PackageNamespace(""), "o2779")
       getlex              QName(PackageNamespace(""), "o2241")
-      ifnge               L104
+      ifnge               L102
 
       pushbyte            3
       findproperty        QName(PackageNamespace(""), "o2241")
@@ -585,7 +579,7 @@ L17:
       subtract
       setproperty         QName(PackageNamespace(""), "y")
 
-L104:
+L102:
       returnvoid
      end ; code
     end ; body

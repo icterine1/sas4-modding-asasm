@@ -373,8 +373,7 @@ L231:
 
       pushstring          "Confirm Token Purchase?"
       coerce_s
-      setlocal            4
-
+      pop
       getlocal2
       getproperty         QName(PackageNamespace(""), "o17160")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
@@ -388,7 +387,7 @@ L231:
       getproperty         QName(PackageNamespace(""), "o16989")
       getlex              QName(PackageNamespace(""), "o14043")
       astypelate
-      getlocal            4
+      pushstring          "Confirm Token Purchase?"
       getlocal3
       pushshort           665
       getlex              QName(PrivateNamespace("o19064"), "o9682")
@@ -498,7 +497,7 @@ L231:
       pushbyte            23
       setproperty         QName(PackageNamespace(""), "screen")
 
-      jump                L30
+      jump                L29
 
 L11:
       getlex              QName(PrivateNamespace("o19064"), "o19419")
@@ -527,9 +526,6 @@ L26:
       setproperty         QName(PackageNamespace(""), "screen")
 
 L29:
-      jump                L30
-
-L30:
       returnvoid
      end ; code
     end ; body

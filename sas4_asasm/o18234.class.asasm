@@ -104,6 +104,21 @@ class
       getlocal0
       pushscope
 
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "gotSuperSonicVideo"
+      getlex              QName(PackageNamespace(""), "o3658")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "noSuperSonicVideos"
+      getlex              QName(PackageNamespace(""), "o16369")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "watchedSuperSonicVideo"
+      getlex              QName(PackageNamespace(""), "o1505")
+      callpropvoid        QName(PackageNamespace(""), "addCallback"), 2
+
       returnvoid
      end ; code
     end ; body
@@ -229,7 +244,7 @@ class
       pushfalse
       equals
 L18:
-      iffalse             L36
+      iffalse             L41
 
       pushfalse
       findproperty        QName(PackageNamespace(""), "o6382")
@@ -251,7 +266,13 @@ L18:
       coerce_s
       setlocal1
 
-L36:
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "checkForSuperSonicVideos"
+      getlocal1
+      pushstring          "2e3586b9"
+      callpropvoid        QName(PackageNamespace(""), "call"), 3
+
+L41:
       returnvoid
      end ; code
     end ; body
@@ -270,6 +291,10 @@ L36:
      code
       getlocal0
       pushscope
+
+      getlex              QName(PackageNamespace("flash.external"), "ExternalInterface")
+      pushstring          "watchSuperSonicVideo"
+      callpropvoid        QName(PackageNamespace(""), "call"), 1
 
       returnvoid
      end ; code

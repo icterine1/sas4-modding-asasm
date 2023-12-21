@@ -481,9 +481,7 @@ class
      pushbyte            1
      setlocal            19
 
-     jump                L599
-
-L339:
+L338:
      label
      getlocal1
      getlocal2
@@ -499,7 +497,7 @@ L339:
      setlocal            17
 
      pushnull
-     ifeq                L600
+     ifeq                L598
 
      getlex              QName(PackageNamespace("__AS3__.vec"), "Vector")
      getlex              QName(PackageNamespace(""), "o11625")
@@ -515,9 +513,7 @@ L339:
      pushbyte            1
      setlocal            19
 
-     jump                L597
-
-L366:
+L364:
      label
      getlocal1
      getlocal2
@@ -535,9 +531,9 @@ L366:
      setlocal            12
 
      pushnull
-     ifeq                L598
+     ifeq                L596
 
-L383:
+L381:
      getlocal            12
      pushstring          ","
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
@@ -562,7 +558,7 @@ L383:
      getlocal            6
      getproperty         QName(PackageNamespace(""), "length")
      pushbyte            3
-     ifnge               L409
+     ifnge               L407
 
      getlocal            6
      pushbyte            2
@@ -570,7 +566,7 @@ L383:
      convert_d
      setlocal            20
 
-L409:
+L407:
      getlocal3
      pushstring          " "
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
@@ -595,72 +591,72 @@ L409:
      getlocal            10
      setlocal            22
 
-     jump                L490
+     jump                L488
 
-L429:
+L427:
      label
-L430:
+L428:
      label
      pushbyte            0
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L434:
+L432:
      label
-L435:
+L433:
      label
      pushbyte            1
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L439:
+L437:
      label
-L440:
+L438:
      label
      pushbyte            2
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L444:
+L442:
      label
-L445:
+L443:
      label
      pushbyte            3
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L449:
+L447:
      label
-L450:
+L448:
      label
      pushbyte            4
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L454:
+L452:
      label
-L455:
+L453:
      label
      pushbyte            5
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L459:
+L457:
      label
-L460:
+L458:
      label
      pushbyte            8
      setlocal            7
 
-     jump                L533
+     jump                L531
 
-L464:
+L462:
      label
      getlex              QName(PackageNamespace(""), "trace")
      getglobalscope
@@ -688,66 +684,66 @@ L464:
      constructprop       QName(PackageNamespace(""), "Error"), 1
      throw
 
-L490:
+L488:
      pushstring          "shambler"
      getlocal            22
-     ifstricteq          L429
+     ifstricteq          L427
 
      pushstring          "shamblers"
      getlocal            22
-     ifstricteq          L430
+     ifstricteq          L428
 
      pushstring          "stalker"
      getlocal            22
-     ifstricteq          L434
+     ifstricteq          L432
 
      pushstring          "stalkers"
      getlocal            22
-     ifstricteq          L435
+     ifstricteq          L433
 
      pushstring          "spitter"
      getlocal            22
-     ifstricteq          L439
+     ifstricteq          L437
 
      pushstring          "spitters"
      getlocal            22
-     ifstricteq          L440
+     ifstricteq          L438
 
      pushstring          "runner"
      getlocal            22
-     ifstricteq          L444
+     ifstricteq          L442
 
      pushstring          "runners"
      getlocal            22
-     ifstricteq          L445
+     ifstricteq          L443
 
      pushstring          "bloater"
      getlocal            22
-     ifstricteq          L449
+     ifstricteq          L447
 
      pushstring          "bloaters"
      getlocal            22
-     ifstricteq          L450
+     ifstricteq          L448
 
      pushstring          "shielder"
      getlocal            22
-     ifstricteq          L454
+     ifstricteq          L452
 
      pushstring          "shielders"
      getlocal            22
-     ifstricteq          L455
+     ifstricteq          L453
 
      pushstring          "worm"
      getlocal            22
-     ifstricteq          L459
+     ifstricteq          L457
 
      pushstring          "worms"
      getlocal            22
-     ifstricteq          L460
+     ifstricteq          L458
 
-     jump                L464
+     jump                L462
 
-L533:
+L531:
      getlocal            8
      pushstring          "-"
      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "split"), 1
@@ -769,10 +765,10 @@ L533:
      convert_d
      setlocal            16
 
-L551:
-     jump                L582
+L549:
+     jump                L580
 
-L552:
+L550:
      getlocal0
      pushscope
 
@@ -808,7 +804,7 @@ L552:
      constructprop       QName(PackageNamespace(""), "Error"), 1
      throw
 
-L582:
+L580:
      findpropstrict      QName(PackageNamespace(""), "o11625")
      getlocal            7
      getlocal            4
@@ -826,18 +822,16 @@ L582:
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
      inclocal_i          19
-L597:
-     jump                L366
+     jump                L364
+
+L596:
+     inclocal_i          15
+     jump                L338
 
 L598:
-     inclocal_i          15
-L599:
-     jump                L339
-
-L600:
      returnvoid
     end ; code
-    try from L383 to L551 target L552 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
+    try from L381 to L549 target L550 type QName(PackageNamespace(""), "Error") name QName(PackageInternalNs(""), "o7367") end
    end ; body
   end ; method
  end ; trait

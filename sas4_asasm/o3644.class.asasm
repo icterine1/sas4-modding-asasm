@@ -649,15 +649,12 @@ L28:
       pushfalse
       setlocal            8
 
-      jump                L53
-
-L53:
       getlocal            12
       getlocal            8
       setproperty         QName(PackageNamespace(""), "visible")
 
       getlocal            8
-      iffalse             L73
+      iffalse             L72
 
       getlocal            13
       getlex              QName(PackageNamespace(""), "o4519")
@@ -676,7 +673,7 @@ L53:
       add
       setproperty         QName(PackageNamespace(""), "text")
 
-L73:
+L72:
       getlocal1
       pushstring          "lblSaleCountdown"
       callproperty        QName(PackageNamespace(""), "getChildByName"), 1
@@ -1010,7 +1007,7 @@ L73:
       setlocal            9
 
       pushnull
-      ifeq                L368
+      ifeq                L367
 
       findpropstrict      QName(PackageNamespace(""), "o8867")
       getlocal            9
@@ -1020,7 +1017,7 @@ L73:
       getlocal            9
       callpropvoid        QName(PackageNamespace(""), "removeChild"), 1
 
-L368:
+L367:
       findpropstrict      QName(ProtectedNamespace("o3644"), "o11048")
       callpropvoid        QName(ProtectedNamespace("o3644"), "o11048"), 0
 

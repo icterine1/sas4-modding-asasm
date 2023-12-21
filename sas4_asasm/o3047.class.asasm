@@ -469,12 +469,11 @@ L93:
       findpropstrict      QName(ProtectedNamespace("o3047"), "o14620")
       getlocal            13
       callproperty        QName(ProtectedNamespace("o3047"), "o14620"), 1
-      iffalse             L109
+      iffalse             L121
 
       pushtrue
       setlocal            14
 
-L109:
       jump                L121
 
 L110:
@@ -783,12 +782,12 @@ L21:
       pushbyte            3
       modulo
       pushbyte            0
-      ifne                L53
+      ifne                L51
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "type")
       convert_i
-      lookupswitch        L45, [L27, L36]
+      lookupswitch        L43, [L27, L35]
 
 L27:
       getlocal1
@@ -796,40 +795,34 @@ L27:
       pushbyte            10
       modulo
       pushbyte            4
-      ifnlt               L35
+      ifnlt               L51
 
       pushtrue
       returnvalue
 
 L35:
-      jump                L53
-
-L36:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5973")
       pushbyte            10
       modulo
       pushbyte            6
-      ifnlt               L44
+      ifnlt               L51
 
       pushtrue
       returnvalue
 
-L44:
-      jump                L53
-
-L45:
+L43:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o5973")
       pushbyte            10
       modulo
       pushbyte            8
-      ifnlt               L53
+      ifnlt               L51
 
       pushtrue
       returnvalue
 
-L53:
+L51:
       pushfalse
       returnvalue
      end ; code
@@ -1377,7 +1370,7 @@ L14:
      pushbyte            0
      setlocal1
 
-     jump                L67
+     jump                L65
 
 L20:
      label
@@ -1398,7 +1391,7 @@ L20:
      pushtrue
      equals
 L35:
-     iffalse             L63
+     iffalse             L69
 
      getlocal2
      getproperty         QName(PackageNamespace(""), "o1432")
@@ -1428,23 +1421,17 @@ L35:
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "splice"), 2
 
      inclocal_i          1
-     jump                L64
-
-L63:
-     jump                L71
-
-L64:
      getlocal1
      pushbyte            10
-     ifge                L71
+     ifge                L69
 
-L67:
+L65:
      getlex              QName(PackageNamespace(""), "o10061")
      getproperty         QName(PackageNamespace(""), "length")
      pushbyte            0
      ifgt                L20
 
-L71:
+L69:
      returnvoid
     end ; code
    end ; body

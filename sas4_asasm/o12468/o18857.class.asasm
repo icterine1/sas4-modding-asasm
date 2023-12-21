@@ -481,25 +481,22 @@ L8:
       getlocal0
       pushscope
 
-      jump                L3
-
-L3:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12268")
       callproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12268"), 0
-      iffalse             L10
+      iffalse             L9
 
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o15914")
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o15914")
 
-L10:
+L9:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o13517")
       callproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o13517"), 0
       pushbyte            0
       lessequals
       dup
-      iftrue              L23
+      iftrue              L22
 
       pop
       getlex              QName(PackageNamespace(""), "o4519")
@@ -508,20 +505,20 @@ L10:
       callproperty        QName(PackageNamespace(""), "o7629"), 0
       pushbyte            1
       lessequals
-L23:
+L22:
       dup
-      iftrue              L32
+      iftrue              L31
 
       pop
       getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o15914")
       dup
-      iffalse             L32
+      iffalse             L31
 
       pop
       getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o7997")
       not
-L32:
-      iffalse             L45
+L31:
+      iffalse             L44
 
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o7997")
@@ -539,7 +536,7 @@ L32:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481"), 0
 
-L45:
+L44:
       returnvoid
      end ; code
     end ; body
@@ -628,12 +625,9 @@ L32:
       getproperty         QName(PackageNamespace(""), "o2685")
       callproperty        QName(PackageNamespace(""), "o7629"), 0
       convert_i
-      lookupswitch        L21, [L8, L8]
+      lookupswitch        L20, [L8, L8]
 
 L8:
-      jump                L9
-
-L9:
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o7997")
       swap
@@ -648,9 +642,9 @@ L9:
       pushbyte            0
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481"), 1
 
-      jump                L27
+      jump                L26
 
-L21:
+L20:
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o17872")
       swap
@@ -659,7 +653,7 @@ L21:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o2028")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o2028"), 0
 
-L27:
+L26:
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o13160")
       swap
@@ -700,11 +694,9 @@ L27:
 
       pushfalse
       dup
-      iftrue              L12
-
+      pop
       pop
       getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12270")
-L12:
       iffalse             L14
 
       returnvoid
@@ -1309,7 +1301,7 @@ L7:
 
       getlex              QName(PackageNamespace(""), "o12891")
       getproperty         QName(PackageNamespace(""), "o19505")
-      iffalse             L27
+      iffalse             L58
 
       getlex              QName(PackageNamespace(""), "o12891")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -1320,7 +1312,6 @@ L7:
       getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o4786")
       callpropvoid        QName(PackageNamespace(""), "o16481"), 3
 
-L27:
       jump                L58
 
 L28:
@@ -1345,14 +1336,13 @@ L41:
       label
       getlex              QName(PackageNamespace(""), "o12891")
       getproperty         QName(PackageNamespace(""), "o19505")
-      iffalse             L49
+      iffalse             L58
 
       getlex              QName(PackageNamespace(""), "o12891")
       getproperty         QName(PackageNamespace(""), "o19505")
       getlex              QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o4786")
       callpropvoid        QName(PackageNamespace(""), "o4043"), 1
 
-L49:
       jump                L58
 
 L50:
@@ -1614,7 +1604,7 @@ L8:
       convert_i
       pushint             1
       subtract_i
-      lookupswitch        L43, [L14, L21, L39, L34]
+      lookupswitch        L42, [L14, L21, L38, L33]
 
 L14:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o6660")
@@ -1624,7 +1614,7 @@ L14:
       callproperty        QName(PackageNamespace(""), "readInt"), 0
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o6660"), 2
 
-      jump                L43
+      jump                L42
 
 L21:
       pushtrue
@@ -1637,30 +1627,27 @@ L21:
       pushfalse
       setproperty         QName(PackageNamespace(""), "o16542")
 
-      jump                L30
-
-L30:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481")
       pushbyte            1
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481"), 1
 
-      jump                L43
+      jump                L42
 
-L34:
+L33:
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o17872")
       swap
       setproperty         QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o17872")
 
-      jump                L43
+      jump                L42
 
-L39:
+L38:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o2334")
       getlocal2
       callproperty        QName(PackageNamespace(""), "readInt"), 0
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o2334"), 1
 
-L43:
+L42:
       returnvoid
      end ; code
     end ; body
@@ -1689,9 +1676,6 @@ L43:
       returnvoid
 
 L5:
-      jump                L6
-
-L6:
       getlex              QName(PackageNamespace(""), "o4519")
       getproperty         QName(PackageNamespace(""), "o13206")
       getproperty         QName(PackageNamespace(""), "o2685")
@@ -1699,13 +1683,13 @@ L6:
       pushbyte            1
       lessequals
       dup
-      iftrue              L17
+      iftrue              L16
 
       pop
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12268")
       callproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o12268"), 0
-L17:
-      iffalse             L24
+L16:
+      iffalse             L23
 
       pushtrue
       findproperty        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o7997")
@@ -1715,7 +1699,7 @@ L17:
       findpropstrict      QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481")
       callpropvoid        QName(PrivateNamespace("FilePrivateNS:o12468:o18857"), "o20481"), 0
 
-L24:
+L23:
       returnvoid
      end ; code
     end ; body

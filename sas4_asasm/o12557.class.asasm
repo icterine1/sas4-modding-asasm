@@ -75,9 +75,6 @@ class
       pushscope
 
       pushnull
-      setlocal            5
-
-      pushnull
       setlocal3
 
       pushnull
@@ -137,9 +134,9 @@ class
       pushbyte            1
       setlocal            7
 
-      jump                L59
+      jump                L57
 
-L52:
+L50:
       label
       getlex              QName(PackageNamespace(""), "data")
       getlocal            7
@@ -148,10 +145,10 @@ L52:
       setproperty         MultinameL([PrivateNamespace("o12557"), ProtectedNamespace("o12557"), StaticProtectedNs("o12557"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o12557"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
       inclocal_i          7
-L59:
+L57:
       getlocal            7
       pushbyte            12
-      ifle                L52
+      ifle                L50
 
       pushbyte            0
       setlocal            13
@@ -159,9 +156,9 @@ L59:
       getlocal            8
       setlocal            12
 
-      jump                L227
+      jump                L225
 
-L67:
+L65:
       label
       getlocal            12
       getlocal            13
@@ -174,16 +171,16 @@ L67:
       pushfalse
       equals
       dup
-      iffalse             L84
+      iffalse             L82
 
       pop
       getlocal3
       getproperty         QName(PackageNamespace(""), "o6947")
       pushfalse
       equals
-L84:
+L82:
       dup
-      iffalse             L92
+      iffalse             L90
 
       pop
       getlocal3
@@ -191,15 +188,15 @@ L84:
       pushbyte            13
       equals
       not
-L92:
-      iffalse             L227
+L90:
+      iffalse             L225
 
       getlocal2
       getlocal3
       getproperty         QName(PackageNamespace(""), "id")
       callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "indexOf"), 1
       pushbyte            0
-      ifge                L227
+      ifge                L225
 
       getlocal3
       getproperty         QName(PackageNamespace(""), "o11570")
@@ -235,14 +232,14 @@ L92:
 
       getlocal            11
       pushbyte            1
-      ifeq                L153
+      ifeq                L151
 
       getlocal1
       getlocal3
       getproperty         QName(PackageNamespace(""), "id")
       getproperty         MultinameL([PrivateNamespace("o12557"), ProtectedNamespace("o12557"), StaticProtectedNs("o12557"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o12557"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifeq                L152
+      ifeq                L225
 
       getlocal            4
       getlocal            11
@@ -262,10 +259,9 @@ L92:
       increment
       setproperty         QName(PackageNamespace(""), "o5411")
 
-L152:
-      jump                L227
+      jump                L225
 
-L153:
+L151:
       getlocal1
       getlocal3
       getproperty         QName(PackageNamespace(""), "id")
@@ -279,7 +275,7 @@ L153:
       pushfalse
       equals
       dup
-      iffalse             L172
+      iffalse             L170
 
       pop
       getlocal3
@@ -287,8 +283,8 @@ L153:
       pushnull
       equals
       not
-L172:
-      iffalse             L209
+L170:
+      iffalse             L207
 
       getlocal3
       getproperty         QName(PackageNamespace(""), "o13099")
@@ -308,7 +304,7 @@ L172:
       pushfalse
       equals
       dup
-      iffalse             L196
+      iffalse             L194
 
       pop
       getlocal3
@@ -316,8 +312,8 @@ L172:
       pushnull
       equals
       not
-L196:
-      iffalse             L209
+L194:
+      iffalse             L207
 
       getlocal3
       getproperty         QName(PackageNamespace(""), "o13099")
@@ -333,9 +329,9 @@ L196:
       not
       setlocal            10
 
-L209:
+L207:
       getlocal            10
-      iffalse             L227
+      iffalse             L225
 
       getlocal            4
       getlocal            11
@@ -355,13 +351,12 @@ L209:
       increment
       setproperty         QName(PackageNamespace(""), "o5411")
 
-L227:
+L225:
       hasnext2            12, 13
-      iftrue              L67
+      iftrue              L65
 
       getlocal            6
-      setlocal            6
-
+      pop
       returnvoid
      end ; code
     end ; body
@@ -380,9 +375,6 @@ L227:
      code
       getlocal0
       pushscope
-
-      pushnull
-      setlocal            4
 
       pushnull
       setlocal1
@@ -432,9 +424,9 @@ L227:
       pushbyte            0
       setlocal            6
 
-      jump                L49
+      jump                L47
 
-L42:
+L40:
       label
       getlex              QName(PackageNamespace(""), "data")
       getlocal            6
@@ -443,10 +435,10 @@ L42:
       setproperty         MultinameL([PrivateNamespace("o12557"), ProtectedNamespace("o12557"), StaticProtectedNs("o12557"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o12557"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
       inclocal_i          6
-L49:
+L47:
       getlocal            6
       pushbyte            5
-      iflt                L42
+      iflt                L40
 
       getlex              QName(PackageNamespace(""), "data")
       pushbyte            -1
@@ -462,9 +454,9 @@ L49:
       getlocal            7
       setlocal            11
 
-      jump                L202
+      jump                L200
 
-L64:
+L62:
       label
       getlocal            11
       getlocal            12
@@ -475,7 +467,7 @@ L64:
       getlocal1
       getproperty         QName(PackageNamespace(""), "o11412")
       pushbyte            13
-      ifeq                L202
+      ifeq                L200
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o18072")
@@ -511,14 +503,14 @@ L64:
 
       getlocal            10
       pushbyte            1
-      ifeq                L128
+      ifeq                L126
 
       getlocal2
       getlocal1
       getproperty         QName(PackageNamespace(""), "id")
       getproperty         MultinameL([PrivateNamespace("o12557"), ProtectedNamespace("o12557"), StaticProtectedNs("o12557"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o12557"), Namespace("http://adobe.com/AS3/2006/builtin")])
       pushnull
-      ifeq                L127
+      ifeq                L200
 
       getlocal3
       getlocal            10
@@ -538,10 +530,9 @@ L64:
       increment
       setproperty         QName(PackageNamespace(""), "o5411")
 
-L127:
-      jump                L202
+      jump                L200
 
-L128:
+L126:
       getlocal2
       getlocal1
       getproperty         QName(PackageNamespace(""), "id")
@@ -555,7 +546,7 @@ L128:
       pushfalse
       equals
       dup
-      iffalse             L147
+      iffalse             L145
 
       pop
       getlocal1
@@ -563,8 +554,8 @@ L128:
       pushnull
       equals
       not
-L147:
-      iffalse             L184
+L145:
+      iffalse             L182
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o671")
@@ -584,7 +575,7 @@ L147:
       pushfalse
       equals
       dup
-      iffalse             L171
+      iffalse             L169
 
       pop
       getlocal1
@@ -592,8 +583,8 @@ L147:
       pushnull
       equals
       not
-L171:
-      iffalse             L184
+L169:
+      iffalse             L182
 
       getlocal1
       getproperty         QName(PackageNamespace(""), "o671")
@@ -609,9 +600,9 @@ L171:
       not
       setlocal            9
 
-L184:
+L182:
       getlocal            9
-      iffalse             L202
+      iffalse             L200
 
       getlocal3
       getlocal            10
@@ -631,9 +622,9 @@ L184:
       increment
       setproperty         QName(PackageNamespace(""), "o5411")
 
-L202:
+L200:
       hasnext2            11, 12
-      iftrue              L64
+      iftrue              L62
 
       returnvoid
      end ; code

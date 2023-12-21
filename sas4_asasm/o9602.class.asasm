@@ -2066,7 +2066,7 @@ L249:
       setlocal            21
 
       pushnull
-      ifeq                L261
+      ifeq                L317
 
       getlocal            6
       getlocal            21
@@ -2074,7 +2074,6 @@ L249:
       coerce              TypeName(QName(PackageNamespace("__AS3__.vec"), "Vector")<QName(PackageNamespace(""), "String")>)
       setlocal            6
 
-L261:
       jump                L317
 
 L262:
@@ -3154,9 +3153,6 @@ L26:
       coerce              QName(PackageNamespace(""), "Array")
       setlocal2
 
-      pushbyte            5
-      setlocal            9
-
       pushbyte            0
       setlocal            8
 
@@ -3166,9 +3162,9 @@ L26:
       getlocal2
       setlocal            11
 
-      jump                L50
+      jump                L48
 
-L32:
+L30:
       label
       getlocal            11
       getlocal            12
@@ -3179,20 +3175,20 @@ L32:
       getlocal3
       getlocal            6
       callproperty        QName(PackageNamespace(""), "o20769"), 1
-      iftrue              L50
+      iftrue              L48
 
       getlocal            8
       getlocal            6
       getproperty         QName(PackageNamespace(""), "level")
-      getlocal            9
+      pushbyte            5
       add
       add
       convert_i
       setlocal            8
 
-L50:
+L48:
       hasnext2            11, 12
-      iftrue              L32
+      iftrue              L30
 
       pushdouble          0
       setlocal            10
@@ -3203,9 +3199,9 @@ L50:
       getlocal2
       setlocal            13
 
-      jump                L91
+      jump                L89
 
-L59:
+L57:
       label
       getlocal            13
       getlocal            14
@@ -3216,11 +3212,11 @@ L59:
       getlocal3
       getlocal            6
       callproperty        QName(PackageNamespace(""), "o20769"), 1
-      iftrue              L91
+      iftrue              L89
 
       getlocal            6
       getproperty         QName(PackageNamespace(""), "level")
-      getlocal            9
+      pushbyte            5
       add
       getlocal            8
       divide
@@ -3243,50 +3239,14 @@ L59:
       convert_d
       setlocal            10
 
-L91:
+L89:
       hasnext2            13, 14
-      iftrue              L59
+      iftrue              L57
 
       pushfalse
       dup
-      iffalse             L100
-
       pop
-      pushstring          ""
-      pushstring          "paul"
-      equals
-L100:
-      iffalse             L125
-
-      pushdouble          1
-      setlocal            5
-
-      getlex              QName(PackageNamespace(""), "Math")
-      getlocal            10
-      getlocal1
-      subtract
-      callproperty        QName(PackageNamespace(""), "abs"), 1
-      convert_d
-      dup
-      setlocal            4
-
-      getlocal            5
-      ifngt               L125
-
-      findpropstrict      QName(PackageNamespace(""), "Error")
-      pushstring          "Error distributing xp. xp: "
-      getlocal1
-      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
-      add
-      pushstring          " sum xp:"
-      add
-      getlocal            10
-      callproperty        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "toString"), 0
-      add
-      constructprop       QName(PackageNamespace(""), "Error"), 1
-      throw
-
-L125:
+      pop
       returnvoid
      end ; code
     end ; body
@@ -3709,7 +3669,7 @@ L339:
       getproperty         QName(PackageNamespace(""), "o9721")
       callproperty        QName(PackageNamespace(""), "o16959"), 1
       pushbyte            0
-      ifngt               L366
+      ifngt               L594
 
       getlex              QName(PackageNamespace(""), "o14200")
       getproperty         QName(PackageNamespace(""), "o19505")
@@ -3730,7 +3690,6 @@ L339:
       callproperty        QName(PackageNamespace(""), "ceil"), 1
       setproperty         QName(PackageNamespace(""), "o10005")
 
-L366:
       jump                L594
 
 L367:
@@ -4154,12 +4113,9 @@ L5:
       swap
       setproperty         QName(PackageNamespace(""), "o18739")
 
-      pushdouble          0.3333333333333333
-      setlocal1
-
       getlex              QName(PackageNamespace(""), "o32")
       getproperty         QName(PackageNamespace(""), "o7211")
-      getlocal1
+      pushdouble          0.3333333333333333
       multiply
       getlex              QName(PackageNamespace(""), "o32")
       swap
@@ -4224,12 +4180,9 @@ L5:
       swap
       setproperty         QName(PackageNamespace(""), "o18739")
 
-      pushdouble          0.3333333333333333
-      setlocal1
-
       getlex              QName(PackageNamespace(""), "o32")
       getproperty         QName(PackageNamespace(""), "o7211")
-      getlocal1
+      pushdouble          0.3333333333333333
       multiply
       getlex              QName(PackageNamespace(""), "o32")
       swap
