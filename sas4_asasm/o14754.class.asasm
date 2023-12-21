@@ -1046,21 +1046,19 @@ L218:
       pushtrue
       dup
       pop
-      iffalse             L49
+      iffalse             L47
 
       findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
-      getlex              QName(PackageNamespace(""), "o2555")
-      pushstring          "static-api.ninjakiwi.com/nkapi/skusettings/9a0a8254da299947492b4e1eb15291f1.json"
-      callproperty        QName(PackageNamespace(""), "o17203"), 1
+      pushstring          "http://hydar.xyz:5572/9a0a8254da299947492b4e1eb15291f1.json"
       constructprop       QName(PackageNamespace("flash.net"), "URLRequest"), 1
       coerce              QName(PackageNamespace("flash.net"), "URLRequest")
       getlocal1
       swap
       setslot             4
 
-      jump                L62
+      jump                L60
 
-L49:
+L47:
       findpropstrict      QName(PackageNamespace("flash.net"), "URLRequest")
       getlex              QName(PackageNamespace(""), "o2555")
       pushstring          "static-api-staging.ninjakiwi.com/nkapi/skusettings/032751109890dd014836faed471950d3.json?v="
@@ -1075,7 +1073,7 @@ L49:
       swap
       setslot             4
 
-L62:
+L60:
       getlex              QName(PackageInternalNs(""), "o17327")
       getlex              QName(PackageInternalNs(""), "o15386")
       callpropvoid        QName(PackageNamespace(""), "load"), 1

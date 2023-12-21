@@ -246,10 +246,10 @@ L133:
       getlocal1
       pushstring          "FestivalHoliday"
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
-      iffalse             L228
+      iffalse             L237
 
       getlex              QName(PrivateNamespace("o1611"), "o7131")
-      iffalse             L228
+      iffalse             L237
 
       pushbyte            0
       setlocal            13
@@ -259,7 +259,7 @@ L133:
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
       setlocal            12
 
-      jump                L185
+      jump                L194
 
 L146:
       label
@@ -278,7 +278,7 @@ L146:
       dup
       setlocal            8
 
-      iffalse             L185
+      iffalse             L194
 
       getlex              QName(PrivateNamespace("o1611"), "o7131")
       findpropstrict      QName(PackageNamespace(""), "o20567")
@@ -311,6 +311,18 @@ L176:
       callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
 L185:
+      pushstring          "Christmas"
+      getlocal2
+      ifne                L194
+
+      getlex              QName(PrivateNamespace("o1611"), "o7131")
+      findpropstrict      QName(PackageNamespace(""), "o20567")
+      pushstring          "Christmas2"
+      getlocal            8
+      constructprop       QName(PackageNamespace(""), "o20567"), 2
+      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
+
+L194:
       hasnext2            12, 13
       iftrue              L146
 
@@ -320,9 +332,9 @@ L185:
       getlex              QName(PrivateNamespace("o1611"), "o7131")
       setlocal            14
 
-      jump                L202
+      jump                L211
 
-L192:
+L201:
       label
       getlocal            14
       getlocal            15
@@ -332,16 +344,16 @@ L192:
       setlocal            9
 
       getproperty         QName(PackageNamespace(""), "o13779")
-      iffalse             L202
+      iffalse             L211
 
       inclocal_i          7
-L202:
+L211:
       hasnext2            14, 15
-      iftrue              L192
+      iftrue              L201
 
       getlocal            7
       pushbyte            1
-      ifngt               L228
+      ifngt               L237
 
       pushbyte            0
       setlocal            17
@@ -349,9 +361,9 @@ L202:
       getlex              QName(PrivateNamespace("o1611"), "o7131")
       setlocal            16
 
-      jump                L221
+      jump                L230
 
-L212:
+L221:
       label
       getlocal            16
       getlocal            17
@@ -363,20 +375,20 @@ L212:
       pushfalse
       setproperty         QName(PackageNamespace(""), "o13779")
 
-L221:
+L230:
       hasnext2            16, 17
-      iftrue              L212
+      iftrue              L221
 
       getlex              QName(PackageNamespace(""), "trace")
       getglobalscope
       pushstring          "More than on Festival Holiday active in SKU settings, disabling all"
       call                1
       pop
-L228:
+L237:
       getlocal1
       pushstring          "ServerMessage"
       getproperty         MultinameL([PrivateNamespace("o1611"), ProtectedNamespace("o1611"), StaticProtectedNs("o1611"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o1611"), Namespace("http://adobe.com/AS3/2006/builtin")])
-      iffalse             L256
+      iffalse             L265
 
       getlocal1
       pushstring          "ServerMessage"
@@ -405,7 +417,7 @@ L228:
       swap
       setproperty         QName(PackageNamespace(""), "o18749")
 
-L256:
+L265:
       returnvoid
      end ; code
     end ; body

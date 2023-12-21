@@ -96,7 +96,7 @@ class
      pushbyte            3
      setproperty         QName(PackageNamespace(""), "id")
 
-     jump                L103
+     jump                L125
 
 L66:
      getlocal1
@@ -113,12 +113,44 @@ L66:
      pushbyte            1
      setproperty         QName(PackageNamespace(""), "id")
 
-     jump                L103
+     jump                L125
 
 L78:
      getlocal1
+     pushstring          "Christmas"
+     ifne                L90
+
+     getlocal0
+     getlocal2
+     pushstring          "Active"
+     getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
+     setproperty         QName(PackageNamespace(""), "o13779")
+
+     getlocal0
+     pushbyte            2
+     setproperty         QName(PackageNamespace(""), "id")
+
+     jump                L125
+
+L90:
+     getlocal1
+     pushstring          "Christmas2"
+     ifne                L100
+
+     getlocal0
+     pushbyte            4
+     setproperty         QName(PackageNamespace(""), "id")
+
+     getlocal0
+     pushstring          "Christmas"
+     setproperty         QName(PackageNamespace(""), "name")
+
+     jump                L125
+
+L100:
+     getlocal1
      pushstring          "Halloween2"
-     ifne                L88
+     ifne                L110
 
      getlocal0
      pushbyte            3
@@ -128,12 +160,12 @@ L78:
      pushstring          "Halloween"
      setproperty         QName(PackageNamespace(""), "name")
 
-     jump                L103
+     jump                L125
 
-L88:
+L110:
      getlocal1
      pushstring          "Easter2"
-     ifne                L98
+     ifne                L120
 
      getlocal0
      pushbyte            2
@@ -143,20 +175,20 @@ L88:
      pushstring          "Easter"
      setproperty         QName(PackageNamespace(""), "name")
 
-     jump                L103
+     jump                L125
 
-L98:
+L120:
      getlocal0
      getlocal2
      pushstring          "Active"
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setproperty         QName(PackageNamespace(""), "o13779")
 
-L103:
+L125:
      getlocal2
      pushstring          "FestivalHolidayLootAssets"
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     iffalse             L131
+     iffalse             L153
 
      pushbyte            0
      setlocal            5
@@ -166,9 +198,9 @@ L103:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setlocal            4
 
-     jump                L129
+     jump                L151
 
-L114:
+L136:
      label
      getlocal            4
      getlocal            5
@@ -177,7 +209,7 @@ L114:
      setlocal3
 
      getlocal3
-     iffalse             L129
+     iffalse             L151
 
      getlex              QName(PackageNamespace(""), "o17645")
      getlocal2
@@ -187,15 +219,15 @@ L114:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L129:
+L151:
      hasnext2            4, 5
-     iftrue              L114
+     iftrue              L136
 
-L131:
+L153:
      getlocal2
      pushstring          "LootSpawnDecoration"
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     iffalse             L160
+     iffalse             L182
 
      pushbyte            0
      setlocal            7
@@ -205,9 +237,9 @@ L131:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setlocal            6
 
-     jump                L158
+     jump                L180
 
-L142:
+L164:
      label
      getlocal            6
      getlocal            7
@@ -216,7 +248,7 @@ L142:
      setlocal3
 
      getlocal3
-     iffalse             L158
+     iffalse             L180
 
      getlex              QName(PackageNamespace(""), "o8896")
      getlocal3
@@ -227,15 +259,15 @@ L142:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L158:
+L180:
      hasnext2            6, 7
-     iftrue              L142
+     iftrue              L164
 
-L160:
+L182:
      getlocal2
      pushstring          "AssetChanges"
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     iffalse             L188
+     iffalse             L210
 
      pushbyte            0
      setlocal            9
@@ -245,9 +277,9 @@ L160:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setlocal            8
 
-     jump                L186
+     jump                L208
 
-L171:
+L193:
      label
      getlocal            8
      getlocal            9
@@ -256,7 +288,7 @@ L171:
      setlocal3
 
      getlocal3
-     iffalse             L186
+     iffalse             L208
 
      getlex              QName(PackageNamespace(""), "o7929")
      getlocal2
@@ -266,15 +298,15 @@ L171:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      callpropvoid        QName(Namespace("http://adobe.com/AS3/2006/builtin"), "push"), 1
 
-L186:
+L208:
      hasnext2            8, 9
-     iftrue              L171
+     iftrue              L193
 
-L188:
+L210:
      getlocal2
      pushstring          "FestivalHat"
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     iffalse             L221
+     iffalse             L243
 
      pushtrue
      findproperty        QName(PackageNamespace(""), "o7391")
@@ -289,9 +321,9 @@ L188:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setlocal            10
 
-     jump                L219
+     jump                L241
 
-L203:
+L225:
      label
      getlocal            10
      getlocal            11
@@ -300,7 +332,7 @@ L203:
      setlocal3
 
      getlocal3
-     iffalse             L219
+     iffalse             L241
 
      getlex              QName(PackageNamespace(""), "o5805")
      getlocal3
@@ -311,15 +343,15 @@ L203:
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
      setproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
 
-L219:
+L241:
      hasnext2            10, 11
-     iftrue              L203
+     iftrue              L225
 
-L221:
+L243:
      getlocal2
      pushstring          "VirusSamplesChanges"
      getproperty         MultinameL([PrivateNamespace("o20567"), ProtectedNamespace("o20567"), StaticProtectedNs("o20567"), StaticProtectedNs("Object"), PackageNamespace(""), PackageInternalNs(""), PrivateNamespace("FilePrivateNS:o20567"), Namespace("http://adobe.com/AS3/2006/builtin")])
-     iffalse             L300
+     iffalse             L322
 
      getlocal2
      pushstring          "VirusSamplesChanges"
@@ -406,7 +438,7 @@ L221:
      pushtrue
      setproperty         QName(PackageNamespace(""), "value")
 
-L300:
+L322:
      returnvoid
     end ; code
    end ; body
