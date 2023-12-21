@@ -18,6 +18,14 @@ class
      getlocal0
      constructsuper      0
 
+     getlex              QName(PackageNamespace("flash.system"), "Security")
+     pushstring          "*"
+     callpropvoid        QName(PackageNamespace(""), "allowDomain"), 1
+
+     getlex              QName(PackageNamespace("flash.system"), "Security")
+     pushstring          "https://nk-static-replica.github.io/crossdomain.xml"
+     callpropvoid        QName(PackageNamespace(""), "loadPolicyFile"), 1
+
      getlex              QName(PackageNamespace("flash.system"), "Worker")
      getproperty         QName(PackageNamespace(""), "isSupported")
      findproperty        QName(PackageNamespace(""), "o15767")
